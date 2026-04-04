@@ -1,0 +1,17 @@
+/* 1) 英文字體 Anton：用 Google Fonts（簡單穩） */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* 2) 中文 Source Han Sans Bold：建議你自架 woff2（檔案大，別用 otf 直上） */
+/* 你需要自己準備字體檔：web/public/fonts/SourceHanSansTC-Bold.woff2 */
+@font-face{
+  font-family: "Source Han Sans";
+  src: url("/fonts/SourceHanSansTC-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root{
+  --font-en: "Anton", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --font-zh: "Source Han Sans", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+}

@@ -1,0 +1,64 @@
+:root{
+  --accent: #00afef;
+  --accent-hover: #0096cf;
+
+  /* 深色科技感（我之前推薦的 A 套） */
+  --bg: #071521;
+  --surface: #0b2235;
+  --text: #eaf6ff;
+  --muted: #9fb3c8;
+  --border: #18364d;
+}
+
+html, body{
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  min-height: 100vh;
+
+  color: var(--text);
+  font-family: var(--font-zh);
+
+  /* ✅ 全頁光暈：多層 radial + 一層很淡的線性漸層，避免看起來「分割」 */
+  background:
+    radial-gradient(1400px 900px at 20% 0%,
+      rgba(0,175,239,.22) 0%,
+      rgba(0,175,239,.12) 35%,
+      rgba(0,175,239,0) 78%
+    ),
+    radial-gradient(1200px 800px at 85% 10%,
+      rgba(99,102,241,.18) 0%,
+      rgba(99,102,241,0) 72%
+    ),
+    radial-gradient(900px 700px at 50% 120%,
+      rgba(0,175,239,.10) 0%,
+      rgba(0,175,239,0) 70%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.02) 0%,
+      rgba(255,255,255,0.00) 35%,
+      rgba(0,0,0,0.10) 100%
+    ),
+    var(--bg);
+
+  background-attachment: fixed;
+  background-color: var(--bg);
+}
+
+.card{
+  background: rgba(11,34,53,.88);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 14px 40px rgba(0,0,0,.25);
+}
+
+a.link, a{
+  color: var(--accent);
+}
+a:hover{
+  color: var(--accent-hover);
+}
