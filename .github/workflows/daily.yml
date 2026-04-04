@@ -1,0 +1,56 @@
+name: Daily update
+
+on:
+  schedule:
+    - cron: "0 22 * * *" # 北京时间每天早上 6 点运行 每天 UTC 22:00
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run fetch and build data
+        env:
+          POCKET_GAME_ID: ${{ secrets.POCKET_GAME_ID }}
+          UNLIMITED_DAYS: "true"
+          DAYS_BACK: "30"
+          MIN_PLAYERS: "64"
+          FULL_REBUILD: "false"
+        run: |
+          set -e
+          python scripts/fetch_raw_data.py
+          python scripts/process_data.py    
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: web/package-lock.json
+
+      - name: Build Vue site into /docs
+        run: |
+          cd web
+          npm ci
+          npm run build
+
+      - name: Commit and push (data + docs)
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+
+          git add -A
+          git commit -m "daily update: data + site" || exit 0
+          git push
