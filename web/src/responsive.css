@@ -1,0 +1,10 @@
+/* 全站基礎 */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { width: 100%; }
+body { margin: 0; overflow-x: hidden; }
+
+/* 圖片/影片不要撐爆容器 */
+img, video, canvas, svg { max-width: 100%; height: auto; }
+
+/* iOS 滑動更順 */
+* { -webkit-tap-highlight-color: transparent; }
