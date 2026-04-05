@@ -25,7 +25,7 @@ jobs:
       - name: Run fetch and build data
         env:
           POCKET_GAME_ID: ${{ secrets.POCKET_GAME_ID }}
-          UNLIMITED_DAYS: "true"
+          UNLIMITED_DAYS: "false"
           DAYS_BACK: "30"
           MIN_PLAYERS: "64"
           FULL_REBUILD: "false"
