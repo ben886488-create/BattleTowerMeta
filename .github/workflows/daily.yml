@@ -32,7 +32,9 @@ jobs:
         run: |
           set -e
           python scripts/fetch_raw_data.py
-          python scripts/process_data.py    
+          python scripts/process_data.py
+          python scripts/update_tournament.py
+          python scripts/extract_tournament_players.py
 
       - name: Setup Node
         uses: actions/setup-node@v4
