@@ -10,7 +10,7 @@ GAME_ID = os.environ.get("POCKET_GAME_ID", "POCKET")
 UNLIMITED_DAYS = os.environ.get("UNLIMITED_DAYS", "False").lower() == "true"
 # 兼容原有配置：仅当 UNLIMITED_DAYS=False 时生效
 DAYS_BACK = int(os.environ.get("DAYS_BACK", "30"))
-MIN_PLAYERS = int(os.environ.get("MIN_PLAYERS", "32"))
+MIN_PLAYERS = int(os.environ.get("MIN_PLAYERS", "64"))
 REQUEST_GAP_SEC = float(os.environ.get("REQUEST_GAP_SEC", 2.0))
 BATCH_SIZE = 10
 BATCH_SLEEP_SEC = 5.0
