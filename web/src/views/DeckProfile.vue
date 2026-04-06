@@ -15,13 +15,14 @@
           </p>
         </div>
 
-        <div class="profileFilterGrid profileFilterGrid--sidebar">
+        <div class="profileFilterGrid profileFilterGrid--left">
           <div class="profileFilterField">
             <label>
               {{ isZhUi ? "時間" : "Time" }}
               <span class="hint">{{ isZhUi ? "以 UTC 日期計算" : "Based on UTC date" }}</span>
             </label>
             <select v-model="leftPanelFilters.time">
+              <option value="prev7">Previous 7 days</option>
               <option value="all">{{ isZhUi ? "全部" : "All" }}</option>
               <option value="past7">{{ isZhUi ? "過去一週" : "Past 7 days" }}</option>
               <option value="past4w">{{ isZhUi ? "過去一月" : "Past 4 weeks" }}</option>
@@ -66,13 +67,14 @@
           </p>
         </div>
 
-        <div class="profileFilterGrid">
+        <div class="profileFilterGrid profileFilterGrid--right">
           <div class="profileFilterField">
             <label>
               {{ isZhUi ? "時間" : "Time" }}
               <span class="hint">{{ isZhUi ? "以 UTC 日期計算" : "Based on UTC date" }}</span>
             </label>
             <select v-model="rightCardFilters.time">
+              <option value="prev7">Previous 7 days</option>
               <option value="all">{{ isZhUi ? "全部" : "All" }}</option>
               <option value="past7">{{ isZhUi ? "過去一週" : "Past 7 days" }}</option>
               <option value="past4w">{{ isZhUi ? "過去一月" : "Past 4 weeks" }}</option>
@@ -99,6 +101,32 @@
                 {{ topCutLabel(cut) }}
               </option>
             </select>
+          </div>
+
+          <div class="profileFilterField profileFilterField--toggle">
+            <label>View</label>
+            <div
+              class="view-toggle"
+              role="tablist"
+              aria-label="Right deck panel view"
+            >
+              <button
+                type="button"
+                class="view-toggle__option"
+                :class="{ 'view-toggle__option--active': rightDeckMode === 'cards' }"
+                @click="rightDeckMode = 'cards'"
+              >
+                Card rates
+              </button>
+              <button
+                type="button"
+                class="view-toggle__option"
+                :class="{ 'view-toggle__option--active': rightDeckMode === 'sample' }"
+                @click="rightDeckMode = 'sample'"
+              >
+                Sample deck
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -282,6 +310,9 @@
                 </div>
 
                 <div class="matchup-rate mono">{{ formatPct(item.winRate) }}</div>
+                <div class="matchup-record mono">
+                  {{ formatRecord(item.wins, item.losses, item.draws) }}
+                </div>
               </article>
             </div>
 
@@ -316,6 +347,9 @@
                 </div>
 
                 <div class="matchup-rate mono">{{ formatPct(item.winRate) }}</div>
+                <div class="matchup-record mono">
+                  {{ formatRecord(item.wins, item.losses, item.draws) }}
+                </div>
               </article>
             </div>
 
@@ -326,6 +360,39 @@
 
       <section class="hero-panel hero-panel--decklist">
         <div ref="deckPanelRef" class="decklist-shell">
+          <div class="decklist-head">
+            <div class="decklist-head__copy">
+              <h3 class="panel-title">
+                {{ rightDeckMode === "cards" ? "Card inclusion" : "Best sample deck" }}
+              </h3>
+              <p class="decklist-head__sub">{{ rightDeckPanelSubtitle }}</p>
+            </div>
+
+            <a
+              v-if="rightDeckMode === 'sample' && rightAnalytics.sampleDeck?.listUrl"
+              class="list-btn"
+              :href="rightAnalytics.sampleDeck.listUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Decklist
+            </a>
+          </div>
+
+          <div
+            v-if="rightDeckMode === 'sample' && rightAnalytics.sampleDeck"
+            class="sample-deck-meta"
+          >
+            <span class="sample-deck-meta__item mono">
+              {{ rightAnalytics.sampleDeck.player }}
+            </span>
+            <span class="sample-deck-meta__item mono">
+              {{ rightAnalytics.sampleDeck.placeLabel }}
+            </span>
+            <span class="sample-deck-meta__item">
+              {{ rightAnalytics.sampleDeck.tournamentName }}
+            </span>
+          </div>
           <div v-if="profileLoading" class="cards-empty">
             正在整理牌組資料…
           </div>
@@ -341,7 +408,8 @@
             目前篩選條件下沒有這副牌組
           </div>
 
-          <div v-else-if="rightAnalytics.cardsFlat.length === 0" class="cards-empty">
+          <div v-else-if="rightDeckPanelCards.length === 0" class="cards-empty">
+            <span class="cards-empty__copy">{{ rightDeckPanelEmptyText }}</span>
             目前沒有投入率達 10% 以上的卡片
           </div>
 
@@ -349,12 +417,12 @@
             v-else
             ref="deckCardsViewportRef"
             class="decklist-viewport"
-            :class="{ 'decklist-viewport--scrollable': rightAnalytics.cardsFlat.length > 20 }"
+            :class="{ 'decklist-viewport--scrollable': rightDeckPanelCards.length > 20 }"
             :style="decklistViewportStyle"
           >
             <div ref="deckCardsGridRef" class="cardsGrid cardsGrid--profile">
               <article
-                v-for="card in rightAnalytics.cardsFlat"
+                v-for="card in rightDeckPanelCards"
                 :key="card.key"
                 class="profileCard"
                 :title="`${card.name} • 投入率 ${formatPercentValue(card.slotRatePct)} • 出現 ${formatPercentValue(card.inclusionPct)}`"
@@ -377,8 +445,12 @@
                     </div>
                   </div>
 
-                  <span class="profileCard__rate mono">
-                    {{ formatPercentValue(card.slotRatePct) }}
+                  <span
+                    class="profileCard__rate mono"
+                    :class="{ 'profileCard__rate--count': rightDeckMode === 'sample' }"
+                    :data-rate-label="card.badgeText"
+                  >
+                    {{ rightDeckMode === "sample" ? "" : formatPercentValue(card.slotRatePct) }}
                   </span>
 
                   
@@ -394,7 +466,7 @@
       <button
         type="button"
         class="download-btn mono"
-        :disabled="downloadingDeckPanel || rightAnalytics.cardsFlat.length === 0"
+        :disabled="downloadingDeckPanel || rightDeckPanelCards.length === 0"
         @click="downloadTransparentDeckPanel"
       >
         {{ downloadingDeckPanel ? "下載中..." : "下載透明面板" }}
@@ -405,7 +477,7 @@
       <button
         type="button"
         class="download-btn mono"
-        :disabled="downloadingPanel"
+        :disabled="downloadingPanel || rightDeckPanelCards.length === 0"
         @click="downloadDeckPanelPng"
       >
         {{ downloadingPanel ? "下載中..." : "下載 PNG" }}
@@ -609,6 +681,7 @@ interface DeckProfileAnalytics {
   featuredGoodMatchups: MatchupAggregate[];
   featuredBadMatchups: MatchupAggregate[];
   bestFinishes: FinishRow[];
+  sampleDeck: SampleDeckEntry | null;
   targetSpriteUrls: string[];
   resolvedDeckDisplayName: string;
   resolvedDeckDisplayNameEn: string;
@@ -626,7 +699,33 @@ interface FinishRow {
   listUrl: string;
 }
 
+interface SampleDeckEntry {
+  tournamentId: string;
+  tournamentName: string;
+  player: string;
+  dateMs: number;
+  dateLabel: string;
+  place: number;
+  players: number | null;
+  placeLabel: string;
+  listUrl: string;
+  cards: NormalizedDeckCard[];
+}
+
+interface RightDeckPanelCard {
+  key: string;
+  code: string;
+  set: string;
+  number: string;
+  name: string;
+  image: string;
+  slotRatePct: number;
+  badgeText: string;
+  title: string;
+}
+
 type FinishSortKey = "player" | "tournamentName" | "dateMs" | "place";
+type RightDeckMode = "cards" | "sample";
 
 interface Props {
   deck?: AnyRecord | null;
@@ -657,6 +756,7 @@ const route = useRoute();
 const failedCardImages = ref<Record<string, boolean>>({});
 const deckPanelRef = ref<HTMLElement | null>(null);
 const downloadingDeckPanel = ref(false);
+const rightDeckMode = ref<RightDeckMode>("cards");
 
 const heroCaptureRef = ref<HTMLElement | null>(null);
 const deckCardsViewportRef = ref<HTMLElement | null>(null);
@@ -694,7 +794,7 @@ function handleDeckProfileResize() {
 
 function updateDeckViewportHeight() {
   const grid = deckCardsGridRef.value;
-  const total = rightAnalytics.value.cardsFlat.length;
+  const total = rightDeckPanelCards.value.length;
 
   if (!grid || total <= 0) {
     deckViewportHeight.value = null;
@@ -715,7 +815,7 @@ function updateDeckViewportHeight() {
 }
 
 const decklistViewportStyle = computed<Record<string, string | undefined>>(() => {
-  if (!deckViewportHeight.value || rightAnalytics.value.cardsFlat.length <= 20) {
+  if (!deckViewportHeight.value || rightDeckPanelCards.value.length <= 20) {
     return { maxHeight: undefined };
   }
 
@@ -851,7 +951,7 @@ const activeFilters = computed(() => {
   return routeFilters.value;
 });
 
-type ProfileTimeFilterValue = "all" | "past7" | "past4w" | string;
+type ProfileTimeFilterValue = "all" | "past7" | "prev7" | "past4w" | string;
 
 interface ProfileScopeFilters {
   time: ProfileTimeFilterValue;
@@ -880,6 +980,8 @@ function profileTimeSummaryLabel(value: ProfileTimeFilterValue) {
   if (value === "all") return isZhUi.value ? "全部時間" : "All time";
   if (value === "past7") return isZhUi.value ? "近 7 天" : "Past 7 days";
   if (value === "past4w") return isZhUi.value ? "近 4 週" : "Past 4 weeks";
+
+  if (value === "prev7") return "Previous 7 days";
 
   if (String(value).startsWith("month:")) {
     const ym = String(value).slice("month:".length);
@@ -2309,8 +2411,15 @@ function extractPlayerName(row: AnyRecord) {
   ]);
 }
 
+function normalizePotentialPlayerSlug(value: unknown) {
+  return cleanDeckText(value)
+    .toLowerCase()
+    .replace(/^@+/, "")
+    .replace(/\s+/g, "");
+}
+
 function extractPlayerSlug(row: AnyRecord) {
-  return firstText([
+  const explicit = firstText([
     row.playerSlug,
     row.player_slug,
     row.username,
@@ -2320,7 +2429,10 @@ function extractPlayerSlug(row: AnyRecord) {
     row.account?.username,
     row.profile?.username,
     row.limitless?.username,
-  ]).toLowerCase();
+  ]);
+
+  if (explicit) return explicit.toLowerCase();
+  return normalizePotentialPlayerSlug(extractPlayerName(row));
 }
 
 function makePlayerKey(value: unknown) {
@@ -2606,6 +2718,10 @@ function inProfileTimeRange(t: NormalizedTournament, timeValue: string) {
     return t.startMs >= todayUtcStart - 6 * DAY_MS;
   }
 
+  if (timeValue === "prev7") {
+    return t.startMs >= todayUtcStart - 13 * DAY_MS && t.startMs < todayUtcStart - 6 * DAY_MS;
+  }
+
   if (timeValue === "past4w") {
     return t.startMs >= todayUtcStart - 27 * DAY_MS;
   }
@@ -2667,16 +2783,6 @@ const profileLoading = computed(() => {
 
   return loadedTournamentCount.value < ids.length;
 });
-
-watch(
-  () => rightAnalytics.value.cardsFlat.length,
-  async () => {
-    await nextTick();
-    bindDeckGridObserver();
-    updateDeckViewportHeight();
-  },
-  { immediate: true },
-);
 
 watch(
   () => deckCardsGridRef.value,
@@ -3221,6 +3327,47 @@ function buildFinishRow(tournament: NormalizedTournament, row: AnyRecord): Finis
   };
 }
 
+function buildSampleDeckEntry(
+  tournament: NormalizedTournament,
+  row: AnyRecord,
+  cards: NormalizedDeckCard[],
+): SampleDeckEntry | null {
+  const player = extractPlayerName(row);
+  const place = getPlace(row);
+  if (!player || place == null || cards.length === 0) return null;
+
+  const players =
+    tournament.players != null && Number.isFinite(tournament.players) && tournament.players > 0
+      ? tournament.players
+      : null;
+
+  return {
+    tournamentId: tournament.id,
+    tournamentName: cleanDeckText(String(tournament.name ?? tournament.id)) || tournament.id,
+    player,
+    dateMs: tournament.startMs,
+    dateLabel: formatDate(tournament.startMs),
+    place,
+    players,
+    placeLabel: players ? `${place} / ${players}` : String(place),
+    listUrl: buildLimitlessDecklistUrl(tournament.id, row),
+    cards,
+  };
+}
+
+function compareSampleDeckEntries(a: SampleDeckEntry, b: SampleDeckEntry) {
+  return (
+    a.place - b.place ||
+    (b.players ?? 0) - (a.players ?? 0) ||
+    b.dateMs - a.dateMs ||
+    compareText(a.player, b.player)
+  );
+}
+
+function formatRecord(wins: number, losses: number, draws: number) {
+  return `${wins}-${losses}-${draws}`;
+}
+
 /* -----------------------------
    核心 analytics
 ------------------------------ */
@@ -3236,6 +3383,7 @@ function buildDeckProfileAnalytics(
     string,
     { displayName: string; displayNameEn: string; spriteUrls: string[]; iconKeys: string[] }
   >();
+  let sampleDeck: SampleDeckEntry | null = null;
 
   let totalStandingRows = 0;
   let targetStandingRows = 0;
@@ -3332,6 +3480,14 @@ function buildDeckProfileAnalytics(
 
       const cards = extractDeckCardsFromRow(row);
       if (cards.length > 0) {
+        const sampleCandidate = buildSampleDeckEntry(tournament, row, cards);
+        if (
+          sampleCandidate &&
+          (!sampleDeck || compareSampleDeckEntries(sampleCandidate, sampleDeck) < 0)
+        ) {
+          sampleDeck = sampleCandidate;
+        }
+
         totalSeenDeckRows += 1;
 
         const seenInThisDeck = new Set<string>();
@@ -3629,6 +3785,7 @@ function buildDeckProfileAnalytics(
     featuredGoodMatchups,
     featuredBadMatchups,
     bestFinishes,
+    sampleDeck,
     targetSpriteUrls: finalTargetSprites.slice(0, 3),
     resolvedDeckDisplayName,
     resolvedDeckDisplayNameEn,
@@ -3641,6 +3798,76 @@ const leftAnalytics = computed(() =>
 
 const rightAnalytics = computed(() =>
   buildDeckProfileAnalytics(rightCardTournaments.value, rightCardFilters.topCut),
+);
+
+const rightDeckPanelCards = computed<RightDeckPanelCard[]>(() => {
+  if (rightDeckMode.value === "sample") {
+    const sample = rightAnalytics.value.sampleDeck;
+    if (!sample) return [];
+
+    return sample.cards.map((card, index) => ({
+      key: `${card.key}-${index}`,
+      code: card.code,
+      set: card.set,
+      number: card.number,
+      name: card.name,
+      image: card.image,
+      slotRatePct: card.count,
+      badgeText: `x${card.count}`,
+      title: `${card.name} x${card.count}`,
+    }));
+  }
+
+  return rightAnalytics.value.cardsFlat.map((card) => ({
+    key: card.key,
+    code: card.code,
+    set: card.set,
+    number: card.number,
+    name: card.name,
+    image: card.image,
+    slotRatePct: card.slotRatePct,
+    badgeText: formatPercentValue(card.slotRatePct),
+    title: `${card.name} | Slot ${formatPercentValue(card.slotRatePct)} | Include ${formatPercentValue(card.inclusionPct)}`,
+  }));
+});
+
+const rightDeckPanelSubtitle = computed(() => {
+  if (rightDeckMode.value === "sample") {
+    if (!rightAnalytics.value.sampleDeck) {
+      return "Best-performing filtered sample deck";
+    }
+
+    const sample = rightAnalytics.value.sampleDeck;
+    return `${sample.player} | ${sample.placeLabel}`;
+  }
+
+  return "Card inclusion rates for the filtered deck pool";
+});
+
+const rightDeckPanelEmptyText = computed(() => {
+  if (rightDeckMode.value === "sample") {
+    return "No sample deck is available for the current filters.";
+  }
+
+  return "No cards meet the current display threshold.";
+});
+
+watch(
+  () => rightDeckPanelCards.value.length,
+  async () => {
+    await nextTick();
+    bindDeckGridObserver();
+    updateDeckViewportHeight();
+  },
+  { immediate: true },
+);
+
+watch(
+  () => rightDeckMode.value,
+  async () => {
+    await nextTick();
+    updateDeckViewportHeight();
+  },
 );
 
 const displayDeckName = computed(() => {
@@ -5448,6 +5675,187 @@ const sortedBestFinishes = computed(() => {
 
   .semi-gauge__label {
     top: 46px;
+  }
+}
+
+.profileFilters {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.profileFilterGroup {
+  padding: 16px 18px;
+}
+
+.profileFilterGrid--left {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.profileFilterGrid--right {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.profileFilterField--toggle {
+  display: grid;
+  gap: 8px;
+}
+
+.view-toggle {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+  padding: 6px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(2, 6, 23, 0.35);
+}
+
+.view-toggle__option {
+  appearance: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.72);
+  padding: 8px 10px;
+  font-size: 0.84rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.view-toggle__option--active {
+  color: #eef7ff;
+  border-color: rgba(126, 200, 255, 0.28);
+  background: rgba(18, 83, 143, 0.28);
+}
+
+.decklist-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.decklist-head__copy {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.decklist-head__sub {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.sample-deck-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: -4px 0 16px;
+}
+
+.sample-deck-meta__item {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(115, 192, 255, 0.18);
+  background: rgba(11, 27, 47, 0.84);
+  color: #eef7ff;
+  font-size: 0.82rem;
+}
+
+.matchup-record {
+  font-size: 0.78rem;
+  color: var(--text-soft);
+  white-space: nowrap;
+}
+
+.profileCard__rate--count {
+  font-size: 0;
+}
+
+.profileCard__rate--count::after {
+  content: attr(data-rate-label);
+  font-size: 0.96rem;
+}
+
+.cards-empty__copy {
+  display: block;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 1280px) {
+  .profileFilterGrid--right {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .profileFilterField--toggle {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 1080px) {
+  .profileFilters {
+    grid-template-columns: 1fr;
+  }
+
+  .profileFilterGrid--left,
+  .profileFilterGrid--right {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .profileFilterGrid--left,
+  .profileFilterGrid--right {
+    grid-template-columns: 1fr;
+  }
+
+  .profileFilterField--toggle {
+    grid-column: auto;
+  }
+
+  .decklist-head {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 12px;
+  }
+
+  .sample-deck-meta {
+    margin-bottom: 12px;
+  }
+
+  .decklist-shell {
+    padding: 14px;
+    gap: 14px;
+  }
+
+  .hero-panel--decklist,
+  .decklist-viewport,
+  .decklist-viewport--scrollable {
+    overflow: visible;
+    max-height: none !important;
+  }
+
+  .cardsGrid--profile {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px;
+  }
+
+  .profileCard__rate {
+    min-height: 32px;
+    min-width: 58px;
+    padding: 0 10px;
+    bottom: 8px;
+    font-size: 0.82rem;
   }
 }
 

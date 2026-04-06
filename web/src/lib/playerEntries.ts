@@ -1,7 +1,7 @@
 const BASE_URL = (import.meta as any).env?.BASE_URL ?? "/";
 
 export type TopCutFilter = "" | "winner" | "top2" | "top4" | "top8" | "top16" | "top32";
-export type TimeFilterValue = "all" | "past7" | "past4w";
+export type TimeFilterValue = "all" | "past7" | "prev7" | "past4w" | string;
 
 export interface GameVersion {
   code: string;
@@ -133,7 +133,18 @@ export function inTimeRange(startMs: number, value: TimeFilterValue): boolean {
   const now = Date.now();
   const day = 24 * 60 * 60 * 1000;
   if (value === "past7") return startMs >= now - 7 * day;
+  if (value === "prev7") return startMs >= now - 14 * day && startMs < now - 7 * day;
   if (value === "past4w") return startMs >= now - 28 * day;
+  if (value.startsWith("month:")) {
+    const ym = value.slice("month:".length);
+    const [yearText, monthText] = ym.split("-");
+    const year = Number(yearText);
+    const month = Number(monthText);
+    if (!year || !month) return true;
+    const start = Date.UTC(year, month - 1, 1, 0, 0, 0);
+    const end = Date.UTC(year, month, 1, 0, 0, 0);
+    return startMs >= start && startMs < end;
+  }
   return true;
 }
 

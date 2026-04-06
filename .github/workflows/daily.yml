@@ -25,7 +25,7 @@ jobs:
         env:
           POCKET_GAME_ID: "POCKET"
           PYTHONUTF8: "1"
-          UNLIMITED_DAYS: "true"
+          UNLIMITED_DAYS: "false"
           DAYS_BACK: "30"
           MIN_PLAYERS: "64"
           FULL_REBUILD: "false"
