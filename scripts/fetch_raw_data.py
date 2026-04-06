@@ -9,7 +9,7 @@ GAME_ID = os.environ.get("POCKET_GAME_ID") or "POCKET"
 # 核心优化：新增不限天数开关（True=不限天数，False=按DAYS_BACK过滤）
 UNLIMITED_DAYS = os.environ.get("UNLIMITED_DAYS", "false").lower() == "true"
 # 兼容原有配置：仅当 UNLIMITED_DAYS=False 时生效
-DAYS_BACK = int(os.environ.get("DAYS_BACK", "3"))
+DAYS_BACK = int(os.environ.get("DAYS_BACK", "7"))
 MIN_PLAYERS = int(os.environ.get("MIN_PLAYERS", "64"))
 REQUEST_GAP_SEC = float(os.environ.get("REQUEST_GAP_SEC", 2.0))
 BATCH_SIZE = 10
