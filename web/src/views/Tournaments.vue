@@ -430,7 +430,7 @@ function getDeckDiskKind(rank: number): "gold" | "silver" | "neutral" {
 const BASE_URL = (import.meta as any).env?.BASE_URL ?? "/";
 
 async function fetchJson<T>(url: string): Promise<T> {
-  const res = await fetch(url, { cache: "force-cache" });
+  const res = await fetch(url, { cache: "no-cache" });
   if (!res.ok) throw new Error(`Fetch failed ${res.status} for ${url}`);
   return (await res.json()) as T;
 }

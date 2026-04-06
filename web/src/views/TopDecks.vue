@@ -14,9 +14,9 @@
         </div>
       </header>
 
-      <div class="filters-grid">
-        <label class="filter-card">
-          <span class="filter-label">{{ t("set") }}</span>
+      <div class="filters">
+        <div class="f">
+          <label>{{ t("set") }}</label>
           <select v-model="filters.set" class="filter-select">
             <option
               v-for="option in setOptions"
@@ -26,10 +26,10 @@
               {{ option.label }}
             </option>
           </select>
-        </label>
+        </div>
 
-        <label class="filter-card">
-          <span class="filter-label">{{ t("topCut") }}</span>
+        <div class="f">
+          <label>{{ t("topCut") }}</label>
           <select v-model="filters.topCut" class="filter-select">
             <option
               v-for="option in topCutOptions"
@@ -39,7 +39,7 @@
               {{ option.label }}
             </option>
           </select>
-        </label>
+        </div>
       </div>
 
       <div class="scope-card">
@@ -1662,14 +1662,14 @@ onMounted(() => {
   white-space: nowrap;
 }
 
-.filters-grid {
+.filters {
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.7fr);
-  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
   margin-bottom: 16px;
 }
 
-.filter-card,
+.f,
 .scope-card,
 .table-card {
   border: 1px solid rgba(90, 130, 180, 0.28);
@@ -1679,26 +1679,26 @@ onMounted(() => {
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
 }
 
-.filter-card {
-  padding: 14px;
+.f {
+  padding: 12px;
 }
 
-.filter-label {
+.f label {
   display: block;
-  margin-bottom: 10px;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #c6d6ea;
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.88);
 }
 
 .filter-select {
   width: 100%;
-  border-radius: 12px;
-  border: 1px solid rgba(104, 146, 196, 0.34);
-  background: rgba(8, 22, 40, 0.95);
-  color: #eef4fb;
-  padding: 12px 14px;
-  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(2, 6, 23, 0.35);
+  color: rgba(255, 255, 255, 0.92);
+  padding: 8px 10px;
+  font-size: 0.96rem;
   outline: none;
 }
 
@@ -2001,7 +2001,7 @@ onMounted(() => {
     flex-direction: column;
   }
 
-  .filters-grid {
+  .filters {
     grid-template-columns: 1fr;
   }
 

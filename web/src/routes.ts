@@ -56,6 +56,11 @@ function makeLangRoutes(lang: (typeof langs)[number]): RouteRecordRaw {
         meta: { nav: true, key: 'playerRanking' },
       },
       {
+        path: 'player-ranking/:playerSlug',
+        name: `${lang}-player-profile`,
+        component: () => import('./views/PlayerProfile.vue'),
+      },
+      {
         path: 'country-ranking',
         name: `${lang}-country-ranking`,
         component: () => import('./views/CountryRanking.vue'),

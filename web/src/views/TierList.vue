@@ -19,57 +19,158 @@
         </p>
       </div>
 
-      <div class="filters-grid">
-        <label class="filter-card">
-          <span class="filter-label">Set</span>
-          <select v-model="filters.set" class="filter-select">
+      <div class="filters">
+        <div class="f">
+          <label>{{ locale === "en" ? "Players" : "玩家數" }}</label>
+          <input
+            v-model.number="filters.minPlayers"
+            type="number"
+            inputmode="numeric"
+            min="0"
+            :placeholder="locale === 'en' ? 'e.g. 32' : '例如 32'"
+          />
+          <div class="hint">{{ locale === "en" ? "Minimum player count" : "最少參賽人數" }}</div>
+        </div>
+
+        <div class="f">
+          <label>{{ locale === "en" ? "Time" : "時間" }}</label>
+          <select v-model="filters.time">
+            <option v-for="option in timeOptionGroups.base" :key="option.value" :value="option.value">
+              {{ option.label }}
+            </option>
+            <optgroup v-if="timeOptionGroups.months.length" :label="locale === 'en' ? 'Month' : '月份'">
+              <option v-for="option in timeOptionGroups.months" :key="option.value" :value="option.value">
+                {{ option.label }}
+              </option>
+            </optgroup>
+          </select>
+          <div class="hint">{{ locale === "en" ? "Based on UTC date" : "以 UTC 日期計算" }}</div>
+        </div>
+
+        <div class="f">
+          <label>{{ locale === "en" ? "Set" : "版本" }}</label>
+          <select v-model="filters.set">
             <option v-for="o in setOptions" :key="o.value" :value="o.value">
               {{ o.label }}
             </option>
           </select>
-        </label>
+        </div>
 
-        <label class="filter-card">
-          <span class="filter-label">Top Cut</span>
-          <select v-model="filters.topCut" class="filter-select">
+        <div class="f">
+          <label>Top Cut</label>
+          <select v-model="filters.topCut">
             <option v-for="o in topCutOptions" :key="o.value" :value="o.value">
               {{ o.label }}
             </option>
           </select>
-        </label>
+        </div>
       </div>
     </header>
 
     <div class="tierlist-top-grid">
-      <div class="pie-card">
-        <div class="pie-title-row">
-          <h2 class="section-title">Top 15 Tier Distribution</h2>
-          <span class="mono subtle">{{ topDeckRows.length }}/15</span>
+      <div class="usage-card">
+        <div class="usage-title-row">
+          <div>
+            <h2 class="section-title">Usage Breakdown</h2>
+            <p class="usage-subtitle">Top 10 by usage, plus an aggregated other bucket</p>
+          </div>
+          <span class="mono subtle">{{ usageTopDeckRows.length }} + other</span>
         </div>
 
-        <div class="pie-row">
-          <div class="pie-wrap">
-            <div class="pie" :style="{ backgroundImage: pieConicGradient }" aria-hidden="true"></div>
-            <div class="pie-center mono">
-              <div class="pie-center__top">{{ pieCenterText }}</div>
-              <div class="pie-center__bottom">Decks</div>
-            </div>
-          </div>
+        <div v-if="usageBreakdownRows.length > 0" class="usage-list">
+          <div
+            v-for="(row, index) in usageBreakdownRows"
+            :key="row.deck"
+            class="usage-row"
+            :class="{ 'usage-row--other': row.isOther }"
+          >
+            <div class="usage-row__rank mono">{{ row.isOther ? "OT" : `${index + 1}.` }}</div>
 
-          <div class="pie-legend">
-            <div v-for="seg in pieLegendSegments" :key="seg.tier" class="pie-legend-item">
-              <span class="pie-swatch" :style="{ backgroundColor: tierColor(seg.tier) }"></span>
-              <span class="mono">{{ seg.tier }}</span>
-              <span class="mono subtle">{{ seg.count }}</span>
+            <RouterLink
+              v-if="!row.isOther"
+              :to="deckProfileTo(row.deck)"
+              class="usage-row__identity"
+              :title="usageDeckDisplayName(row)"
+            >
+              <div
+                class="usage-row__spritepair"
+                :class="{ 'usage-row__spritepair--single': (row.spriteUrls?.length ?? 0) < 2 }"
+              >
+                <img
+                  v-for="(src, idx) in row.spriteUrls ?? []"
+                  :key="`${row.deck}-usage-${idx}`"
+                  :src="src"
+                  class="usage-row__sprite"
+                  :alt="usageDeckDisplayName(row)"
+                  loading="lazy"
+                  decoding="async"
+                  draggable="false"
+                />
+
+                <span v-if="!row.spriteUrls?.length" class="usage-row__fallback mono">
+                  {{ deckShortLabel(row.deck) }}
+                </span>
+              </div>
+
+              <div class="usage-row__copy">
+                <div class="usage-row__name">{{ usageDeckDisplayName(row) }}</div>
+                <div class="usage-row__meta mono">
+                  <span
+                    v-if="!row.isOther"
+                    class="usage-row__tier"
+                    :style="{ backgroundImage: tierBadgeGradient(row.tier) }"
+                  >
+                    {{ row.tier }}
+                  </span>
+                  <span class="usage-row__samples">{{ row.total_samples.toLocaleString() }} samples</span>
+                </div>
+              </div>
+            </RouterLink>
+
+            <div v-else class="usage-row__identity usage-row__identity--static" :title="usageDeckDisplayName(row)">
+              <div class="usage-row__spritepair usage-row__spritepair--single">
+                <img
+                  v-for="(src, idx) in row.spriteUrls ?? []"
+                  :key="`${row.deck}-usage-static-${idx}`"
+                  :src="src"
+                  class="usage-row__sprite"
+                  :alt="usageDeckDisplayName(row)"
+                  loading="lazy"
+                  decoding="async"
+                  draggable="false"
+                />
+              </div>
+
+              <div class="usage-row__copy">
+                <div class="usage-row__name">{{ usageDeckDisplayName(row) }}</div>
+                <div class="usage-row__meta mono">
+                  <span class="usage-row__samples">{{ row.total_samples.toLocaleString() }} samples</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="usage-row__pct mono">{{ formatUsagePct(row.usage) }}</div>
+
+            <div class="usage-row__bar">
+              <div class="usage-row__barTrack">
+                <div
+                  class="usage-row__barFill"
+                  :style="{ width: usageBarWidth(row.usage), background: usageBarFill(row) }"
+                ></div>
+              </div>
             </div>
           </div>
+        </div>
+
+        <div v-else class="tier-empty mono">
+          {{ loadingTournaments ? "Loading..." : locale === "en" ? "No usage data" : "No usage data" }}
         </div>
       </div>
 
       <div class="tier-table-card">
         <div class="tier-table-head">
           <h2 class="section-title tier-table-title">Tier List</h2>
-          <span class="mono tier-table-meta">{{ topDeckRows.length }}/15</span>
+          <span class="mono tier-table-meta">{{ topDeckRows.length }}/{{ TOP_DECK_LIMIT }}</span>
         </div>
 
         <div v-if="visibleTierGroups.length > 0" class="tier-lanes">
@@ -129,21 +230,116 @@
 
     <div class="heatmap-card">
       <div class="heatmap-title-row">
-        <h2 class="section-title">Win Rate Matrix</h2>
+        <div>
+          <h2 class="section-title">Win Rate Matrix</h2>
+          <p class="usage-subtitle">Top 10 by score with one image-based custom slot</p>
+        </div>
         <span class="mono subtle">
           <template v-if="heatLoading">Loading matchups…</template>
-          <template v-else>{{ topDeckRows.length }} × {{ topDeckRows.length }}</template>
+          <template v-else>{{ topDeckRows.length }} + 1 slot</template>
         </span>
       </div>
 
-      <div class="heatmap-scroll" v-if="topDeckRows.length > 0">
+      <div v-if="matrixOptionRows.length > 0" class="matrix-picker-panel">
+        <div class="matrix-picker-panel__label">
+          {{ locale === "en" ? "Custom Slot" : "自選牌組" }}
+        </div>
+
+        <details ref="matrixPickerRef" class="matrix-picker">
+          <summary class="matrix-picker__trigger">
+            <div class="matrix-picker__trigger-copy">
+              <div v-if="matrixSelectedDeckRow" class="heatmap-sprite-stack">
+                <img
+                  v-for="(src, idx) in matrixSelectedDeckRow.spriteUrls ?? []"
+                  :key="`${matrixSelectedDeckRow.deck}-picker-trigger-${idx}`"
+                  class="heatmap-sprite heatmap-sprite--picker"
+                  :src="src"
+                  :alt="usageDeckDisplayName(matrixSelectedDeckRow)"
+                  loading="lazy"
+                  decoding="async"
+                  draggable="false"
+                />
+              </div>
+              <div v-else class="matrix-picker__placeholder mono">
+                {{ locale === "en" ? "Select a deck for the custom slot" : "選擇一副牌組放進自選格" }}
+              </div>
+
+              <div v-if="!matrixSelectedDeckRow" class="matrix-picker__trigger-text">
+                {{ locale === "en" ? "All decks in current filter" : "目前篩選內所有牌組" }}
+              </div>
+            </div>
+          </summary>
+
+          <div class="matrix-picker__menu">
+            <button
+              type="button"
+              class="matrix-picker__option matrix-picker__option--clear"
+              :class="{ 'matrix-picker__option--active': !matrixExtraDeck }"
+              @click="clearMatrixDeck"
+            >
+              <span class="matrix-picker__option-copy">
+                {{ locale === "en" ? "Clear custom slot" : "清空自選格" }}
+              </span>
+            </button>
+
+            <button
+              v-for="option in matrixOptionRows"
+              :key="option.deck"
+              type="button"
+              class="matrix-picker__option"
+              :class="{ 'matrix-picker__option--active': matrixExtraDeck === option.deck }"
+              @click="selectMatrixDeck(option.deck)"
+            >
+              <div class="heatmap-sprite-stack">
+                <img
+                  v-for="(src, idx) in option.spriteUrls ?? []"
+                  :key="`${option.deck}-picker-option-${idx}`"
+                  class="heatmap-sprite heatmap-sprite--picker"
+                  :src="src"
+                  :alt="usageDeckDisplayName(option)"
+                  loading="lazy"
+                  decoding="async"
+                  draggable="false"
+                />
+              </div>
+              <span class="matrix-picker__option-copy">
+                {{ usageDeckDisplayName(option) }}
+              </span>
+            </button>
+          </div>
+        </details>
+      </div>
+
+      <div class="heatmap-shell" v-if="topDeckRows.length > 0">
         <table class="heatmap-table" aria-label="Win rate matrix">
           <thead>
             <tr>
               <th class="heatmap-corner"></th>
 
-              <th v-for="c in topDeckRows" :key="c.deck" class="heatmap-col-label">
-                <RouterLink :to="deckProfileTo(c.deck)" class="heatmap-label-link" :title="c.deck">
+              <th
+                v-for="(c, index) in matrixAxisRows"
+                :key="c?.deck ?? `matrix-column-${index}`"
+                class="heatmap-col-label"
+              >
+                <div v-if="index === topDeckRows.length" class="heatmap-picker-cell" :class="{ 'heatmap-picker-cell--empty': !matrixSelectedDeckRow }">
+                  <div v-if="matrixSelectedDeckRow" class="heatmap-sprite-stack">
+                    <img
+                      v-for="(src, idx) in matrixSelectedDeckRow.spriteUrls ?? []"
+                      :key="`${matrixSelectedDeckRow.deck}-picker-col-${idx}`"
+                      class="heatmap-sprite"
+                      :src="src"
+                      :alt="usageDeckDisplayName(matrixSelectedDeckRow)"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </div>
+                  <span v-if="!matrixSelectedDeckRow" class="heatmap-picker-label mono">
+                    {{ locale === "en" ? "Custom slot" : "自選格" }}
+                  </span>
+                </div>
+
+                <RouterLink v-else-if="c" :to="deckProfileTo(c.deck)" class="heatmap-label-link" :title="c.deck">
                   <div class="heatmap-axis-chip">
                     <div class="heatmap-sprite-stack">
                       <img
@@ -164,9 +360,30 @@
           </thead>
 
           <tbody>
-            <tr v-for="(r, i) in topDeckRows" :key="r.deck">
+            <tr v-for="(r, i) in matrixAxisRows" :key="r?.deck ?? `matrix-row-${i}`">
               <th class="heatmap-row-label">
-                <RouterLink :to="deckProfileTo(r.deck)" class="heatmap-label-link" :title="r.deck">
+                <div
+                  v-if="i === topDeckRows.length"
+                  class="heatmap-axis-chip heatmap-axis-chip--row heatmap-axis-chip--picker"
+                >
+                  <div v-if="r" class="heatmap-row-sprite-stack">
+                    <img
+                      v-for="(src, idx) in r.spriteUrls ?? []"
+                      :key="`${r.deck}-picker-row-${idx}`"
+                      class="heatmap-sprite"
+                      :src="src"
+                      :alt="usageDeckDisplayName(r)"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </div>
+                  <span v-if="!r" class="heatmap-picker-row-label mono">
+                    {{ locale === "en" ? "Custom deck" : "自選牌組" }}
+                  </span>
+                </div>
+
+                <RouterLink v-else-if="r" :to="deckProfileTo(r.deck)" class="heatmap-label-link" :title="r.deck">
                   <div class="heatmap-axis-chip heatmap-axis-chip--row">
                     <div class="heatmap-row-sprite-stack">
                       <img
@@ -184,14 +401,21 @@
                 </RouterLink>
               </th>
 
-              <td v-for="(c, j) in topDeckRows" :key="`${r.deck}__${c.deck}`" class="heatmap-cell">
+              <td
+                v-for="(c, j) in matrixAxisRows"
+                :key="`${r?.deck ?? 'matrix-row'}__${c?.deck ?? 'matrix-col'}__${j}`"
+                class="heatmap-cell"
+              >
                 <div
                   v-if="heatCells[i]?.[j]?.winrate != null"
                   class="heatmap-cell__inner"
                   :style="heatCells[i][j].style"
                   :title="heatCells[i][j].tooltip"
                 >
-                  <span class="heatmap-cell__text mono">{{ heatCells[i][j].text }}</span>
+                  <span class="heatmap-cell__copy">
+                    <span class="heatmap-cell__rate mono">{{ heatCells[i][j].text }}</span>
+                    <span class="heatmap-cell__record mono">{{ heatCells[i][j].recordText }}</span>
+                  </span>
                 </div>
 
                 <div v-else class="heatmap-cell__inner heatmap-cell__inner--empty">—</div>
@@ -199,6 +423,69 @@
             </tr>
           </tbody>
         </table>
+      </div>
+
+      <div v-if="topDeckRows.length > 0" class="heatmap-mobile">
+        <section
+          v-for="entry in mobileHeatRows"
+          :key="entry.row?.deck ?? `mobile-matrix-${entry.index}`"
+          class="heatmap-mobile__section"
+        >
+          <div class="heatmap-mobile__header">
+            <div class="heatmap-mobile__deck">
+              <div class="heatmap-row-sprite-stack">
+                <img
+                  v-for="(src, idx) in entry.row?.spriteUrls ?? []"
+                  :key="`${entry.row?.deck ?? 'custom'}-mobile-row-${idx}`"
+                  class="heatmap-sprite heatmap-sprite--mobile"
+                  :src="src"
+                  :alt="entry.row ? usageDeckDisplayName(entry.row) : locale === 'en' ? 'Custom deck' : '自選牌組'"
+                  loading="lazy"
+                  decoding="async"
+                  draggable="false"
+                />
+              </div>
+              <div v-if="entry.index !== topDeckRows.length || !entry.row" class="heatmap-mobile__deck-name">
+                {{ entry.row ? usageDeckDisplayName(entry.row) : locale === "en" ? "Custom deck" : "自選牌組" }}
+              </div>
+            </div>
+          </div>
+
+          <div v-if="entry.row" class="heatmap-mobile__grid">
+            <div
+              v-for="matchup in entry.matchups"
+              :key="`${entry.row.deck}-${matchup.col.deck}-${matchup.index}`"
+              class="heatmap-mobile__cell"
+            >
+              <div
+                v-if="matchup.cell.winrate != null"
+                class="heatmap-mobile__cellInner"
+                :style="matchup.cell.style"
+                :title="matchup.cell.tooltip"
+              >
+                <div class="heatmap-mobile__versus mono">vs.</div>
+                <div class="heatmap-mobile__opponent">
+                  <img
+                    v-for="(src, idx) in matchup.col.spriteUrls ?? []"
+                    :key="`${matchup.col.deck}-mobile-col-${idx}`"
+                    class="heatmap-sprite heatmap-sprite--mobile"
+                    :src="src"
+                    :alt="usageDeckDisplayName(matchup.col)"
+                    loading="lazy"
+                    decoding="async"
+                    draggable="false"
+                  />
+                </div>
+                <div class="heatmap-mobile__rate mono">{{ matchup.cell.text }}</div>
+                <div class="heatmap-mobile__record mono">{{ matchup.cell.recordText }}</div>
+              </div>
+            </div>
+          </div>
+
+          <div v-else class="heatmap-mobile__empty mono">
+            {{ locale === "en" ? "Choose a custom deck above to fill this slot." : "先在上方選擇一副牌組，這裡才會顯示對戰資料。" }}
+          </div>
+        </section>
       </div>
 
       <div v-else class="tier-empty mono">
@@ -210,8 +497,9 @@
 
 <script setup lang="ts">
 import { computed, onMounted, reactive, ref, watch } from "vue";
-import { useRoute } from "vue-router";
+import { RouterLink, useRoute } from "vue-router";
 import deckIconsManifest from "../assets/deck-icons/manifest.json";
+import substituteIcon from "../assets/deck-icons/substitute.png";
 
 const BASE_URL = (import.meta as any).env?.BASE_URL ?? "/";
 
@@ -219,6 +507,8 @@ type TierRow = {
   deck: string;
   tier: string;
   score: number;
+  raw_name?: string;
+  isOther?: boolean;
   iconKeys: string[];
   spriteUrls: string[];
   usage: number;
@@ -240,6 +530,8 @@ type MatchupRecord = {
   deckA: string;
   deckB: string;
   winsA: number;
+  lossesA: number;
+  ties: number;
   total: number;
   winrateA: number;
 };
@@ -251,10 +543,13 @@ type TournamentListItem = {
   game?: string;
   format?: string;
   set?: string;
+  swiss?: string | null;
 };
 
 type NormalizedTournament = TournamentListItem & {
   startMs: number;
+  versionCode: string;
+  swiss?: SwissLabel;
 };
 
 type StandingRow = Record<string, any>;
@@ -332,8 +627,14 @@ const meta = ref<Meta | null>(null);
 const tierRows = ref<TierRow[]>([]);
 
 const DAY_MS = 24 * 60 * 60 * 1000;
+const TOP_DECK_LIMIT = 10;
 const PRESET_CURRENT_7 = "__current_7__";
 const PRESET_CURRENT_14 = "__current_14__";
+type TimeFilterValue = "all" | "past7" | "prev7" | "past4w" | string;
+type SetFilterValue = "" | string;
+type SwissLabel = "BO1" | "BO3" | "Other";
+type SwissValue = "" | SwissLabel;
+type TopCutValue = "all" | "64" | "32" | "16" | "8" | "4" | "2" | "1";
 
 async function fetchJson<T>(url: string): Promise<T> {
   const response = await fetch(url, { cache: "force-cache" });
@@ -345,15 +646,19 @@ function utcMs(year: number, month: number, day: number) {
   return Date.UTC(year, month - 1, day, 0, 0, 0, 0);
 }
 
-type SetFilterValue = "" | typeof PRESET_CURRENT_7 | typeof PRESET_CURRENT_14 | string;
-type TopCutValue = "all" | "64" | "32" | "16" | "8" | "4" | "2" | "1";
-
-const filters = reactive<{ set: SetFilterValue; topCut: TopCutValue }>({
-  set: PRESET_CURRENT_14,
+const filters = reactive<{
+  minPlayers: number | undefined;
+  time: TimeFilterValue;
+  set: SetFilterValue;
+  topCut: TopCutValue;
+}>({
+  minPlayers: undefined,
+  time: "past4w",
+  set: "",
   topCut: "all",
 });
 
-const setOptions = computed(() => {
+const legacySetOptions = computed(() => {
   const isZh = locale.value === "zh";
 
   function versionLabel(version: VersionWindow, includeCurrentSuffix: boolean) {
@@ -379,6 +684,39 @@ const setOptions = computed(() => {
   ];
 });
 
+const legacyTopCutOptions = computed<Array<{ value: TopCutValue; label: string }>>(() => {
+  return [
+    { value: "all", label: locale.value === "en" ? "All" : "全部" },
+    { value: "64", label: "Top 64" },
+    { value: "32", label: "Top 32" },
+    { value: "16", label: "Top 16" },
+    { value: "8", label: "Top 8" },
+    { value: "4", label: "Top 4" },
+    { value: "2", label: "Top 2" },
+    { value: "1", label: locale.value === "en" ? "Winner" : "冠軍" },
+  ];
+});
+
+void legacySetOptions;
+void legacyTopCutOptions;
+
+function versionLabel(version: VersionWindow, includeCurrentSuffix = true) {
+  const isZh = locale.value === "zh";
+  const isCurrent = currentVersionWindow.value?.code === version.code;
+  const suffix = includeCurrentSuffix && isCurrent ? (isZh ? " (目前版本)" : " (current)") : "";
+  return `${version.code} - ${version.name}${suffix}`;
+}
+
+const setOptions = computed<Array<{ value: SetFilterValue; label: string }>>(() => {
+  return [
+    { value: "", label: locale.value === "en" ? "All" : "全部" },
+    ...[...VERSION_WINDOWS].reverse().map((version) => ({
+      value: version.code,
+      label: versionLabel(version),
+    })),
+  ];
+});
+
 const topCutOptions = computed<Array<{ value: TopCutValue; label: string }>>(() => {
   return [
     { value: "all", label: locale.value === "en" ? "All" : "全部" },
@@ -393,7 +731,20 @@ const topCutOptions = computed<Array<{ value: TopCutValue; label: string }>>(() 
 });
 
 const topDeckRows = computed(() => {
-  return [...tierRows.value].sort((a, b) => b.score - a.score).slice(0, 15);
+  return [...tierRows.value].sort((a, b) => b.score - a.score).slice(0, TOP_DECK_LIMIT);
+});
+
+const usageTopDeckRows = computed(() => {
+  return [...tierRows.value]
+    .sort((a, b) => {
+      return (
+        b.usage - a.usage ||
+        b.total_samples - a.total_samples ||
+        b.score - a.score ||
+        a.deck.localeCompare(b.deck)
+      );
+    })
+    .slice(0, TOP_DECK_LIMIT);
 });
 
 function isSetToken(token: string) {
@@ -493,8 +844,7 @@ function deckProfileTo(deckKey: string) {
   };
 }
 
-const TIER_PIE_ORDER = ["SSS", "SS", "S", "A", "B", "C", "D", "E", "F"] as const;
-const TIER_LIST_ORDER = TIER_PIE_ORDER;
+const TIER_LIST_ORDER = ["SSS", "SS", "S", "A", "B", "C", "D", "E", "F"] as const;
 
 const tierGroups = computed<Record<string, TierRow[]>>(() => {
   const out: Record<string, TierRow[]> = {};
@@ -513,21 +863,124 @@ const visibleTierGroups = computed(() => {
   })).filter((group) => group.rows.length > 0);
 });
 
-const pieTierCounts = computed<Record<string, number>>(() => {
-  const out: Record<string, number> = {};
-  for (const row of topDeckRows.value) {
-    const key = String(row.tier ?? "").toUpperCase();
-    out[key] = (out[key] ?? 0) + 1;
-  }
-  return out;
+const topDeckKeySet = computed(() => new Set(topDeckRows.value.map((row) => row.deck)));
+const usageTopDeckKeySet = computed(() => new Set(usageTopDeckRows.value.map((row) => row.deck)));
+
+const otherUsageRow = computed<TierRow | null>(() => {
+  const others = tierRows.value.filter((row) => !usageTopDeckKeySet.value.has(row.deck));
+  if (others.length === 0) return null;
+
+  return {
+    deck: "__other__",
+    tier: "OTHER",
+    score: -1,
+    raw_name: locale.value === "en" ? "Other Decks" : "其他牌組",
+    isOther: true,
+    iconKeys: ["substitute"],
+    spriteUrls: [substituteIcon],
+    usage: others.reduce((sum, row) => sum + row.usage, 0),
+    total_samples: others.reduce((sum, row) => sum + row.total_samples, 0),
+    data1_top32_appearances: others.reduce((sum, row) => sum + row.data1_top32_appearances, 0),
+    data2_weighted_points: others.reduce((sum, row) => sum + row.data2_weighted_points, 0),
+    data3_top32_share_pct: others.reduce((sum, row) => sum + row.data3_top32_share_pct, 0),
+  };
 });
 
-const pieLegendSegments = computed(() => {
-  return TIER_PIE_ORDER.filter((t) => (pieTierCounts.value[t] ?? 0) > 0).map((t) => ({
-    tier: t,
-    count: pieTierCounts.value[t] ?? 0,
+const usageBreakdownRows = computed(() => {
+  return otherUsageRow.value ? [...usageTopDeckRows.value, otherUsageRow.value] : [...usageTopDeckRows.value];
+});
+
+const usageMax = computed(() => {
+  return usageTopDeckRows.value.reduce((max, row) => Math.max(max, row.usage), 0);
+});
+
+function usageDeckDisplayName(row: TierRow) {
+  if (row.isOther) {
+    return locale.value === "en" ? "Other Decks" : "其他牌組";
+  }
+  return String(row.raw_name ?? "").trim() || humanizeDeckId(row.deck);
+}
+
+function formatUsagePct(usage: number) {
+  return `${(usage * 100).toFixed(1)}%`;
+}
+
+function usageBarWidth(usage: number) {
+  const max = usageMax.value;
+  if (!max || usage <= 0) return "0%";
+  return `${Math.max(3, Math.min(100, (usage / max) * 100)).toFixed(2)}%`;
+}
+
+function usageBarFill(row: TierRow) {
+  if (row.isOther) {
+    return "linear-gradient(90deg, rgba(142, 180, 226, 0.95), rgba(117, 138, 166, 0.92))";
+  }
+  const tier = row.tier;
+  const accent = tierColor(tier).replace(/0\.\d+\)/, "0.98)");
+  return `linear-gradient(90deg, rgba(102, 176, 255, 0.98), ${accent})`;
+}
+
+const matrixExtraDeck = ref("");
+const matrixPickerRef = ref<HTMLDetailsElement | null>(null);
+
+const matrixOptionRows = computed(() => {
+  return [...tierRows.value]
+    .sort((a, b) => {
+      return (
+        b.usage - a.usage ||
+        b.total_samples - a.total_samples ||
+        b.score - a.score ||
+        b.data2_weighted_points - a.data2_weighted_points ||
+        b.data1_top32_appearances - a.data1_top32_appearances ||
+        a.deck.localeCompare(b.deck)
+      );
+    });
+});
+
+function closeMatrixPicker() {
+  if (matrixPickerRef.value) {
+    matrixPickerRef.value.open = false;
+  }
+}
+
+function clearMatrixDeck() {
+  matrixExtraDeck.value = "";
+  closeMatrixPicker();
+}
+
+function selectMatrixDeck(deckKey: string) {
+  matrixExtraDeck.value = deckKey;
+  closeMatrixPicker();
+}
+
+const mobileHeatRows = computed(() => {
+  return matrixAxisRows.value.map((row, index) => ({
+    row,
+    index,
+    matchups: matrixAxisRows.value
+      .map((col, matchupIndex) => ({
+        col,
+        index: matchupIndex,
+        cell: heatCells.value[index]?.[matchupIndex] ?? {
+          winrate: null,
+          total: null,
+          wins: null,
+          losses: null,
+          ties: null,
+          text: "",
+          recordText: "",
+          style: {},
+          tooltip: "",
+        },
+      }))
+      .filter(
+        (item): item is { col: TierRow; index: number; cell: HeatCell } =>
+          row !== null && item.col !== null && item.col.deck !== row.deck,
+      ),
   }));
 });
+
+const pieLegendSegments = computed<Array<{ tier: string; count: number }>>(() => []);
 
 const pieConicGradient = computed(() => {
   const total = topDeckRows.value.length || 1;
@@ -552,6 +1005,16 @@ const pieCenterText = computed(() => {
   return seg?.tier ?? "—";
 });
 
+const legacyPieCompat = [pieLegendSegments, pieConicGradient, pieCenterText];
+void legacyPieCompat;
+const matrixSelectedDeckRow = computed(() => {
+  return tierRows.value.find((row) => row.deck === matrixExtraDeck.value) ?? null;
+});
+
+const matrixAxisRows = computed<Array<TierRow | null>>(() => {
+  return [...topDeckRows.value, matrixSelectedDeckRow.value];
+});
+
 const matchupMap = ref<Map<string, MatchupRecord>>(new Map());
 const heatLoading = ref(true);
 
@@ -559,7 +1022,10 @@ type HeatCell = {
   winrate: number | null;
   total: number | null;
   wins: number | null;
+  losses: number | null;
+  ties: number | null;
   text: string;
+  recordText: string;
   style: Record<string, string>;
   tooltip: string;
 };
@@ -720,11 +1186,25 @@ function heatCellStyle(winrate: number | null): Record<string, string> {
 }
 
 const heatCells = computed<HeatCell[][]>(() => {
-  const decks = topDeckRows.value;
+  const decks = matrixAxisRows.value;
   const map = matchupMap.value;
 
   return decks.map((rowDeck) => {
     return decks.map((colDeck) => {
+      if (!rowDeck || !colDeck) {
+        return {
+          winrate: null,
+          total: null,
+          wins: null,
+          losses: null,
+          ties: null,
+          text: "",
+          recordText: "",
+          style: {},
+          tooltip: "",
+        };
+      }
+
       const rowKey = rowDeck.deck;
       const colKey = colDeck.deck;
 
@@ -733,7 +1213,10 @@ const heatCells = computed<HeatCell[][]>(() => {
           winrate: null,
           total: null,
           wins: null,
+          losses: null,
+          ties: null,
           text: "—",
+          recordText: "—",
           style: {},
           tooltip: "",
         };
@@ -747,9 +1230,12 @@ const heatCells = computed<HeatCell[][]>(() => {
           winrate: wr,
           total: direct.total,
           wins: direct.winsA,
+          losses: direct.lossesA,
+          ties: direct.ties,
           text: `${(wr * 100).toFixed(1)}%`,
+          recordText: `${direct.winsA}-${direct.lossesA}-${direct.ties}`,
           style: heatCellStyle(wr),
-          tooltip: `${rowDeck.deck} vs ${colDeck.deck}\n${direct.winsA} / ${direct.total} winrate: ${(wr * 100).toFixed(2)}%`,
+          tooltip: `${rowDeck.deck} vs ${colDeck.deck}\n${direct.winsA}-${direct.lossesA}-${direct.ties} | ${(wr * 100).toFixed(2)}%`,
         };
       }
 
@@ -757,7 +1243,10 @@ const heatCells = computed<HeatCell[][]>(() => {
         winrate: null,
         total: null,
         wins: null,
+        losses: null,
+        ties: null,
         text: "—",
+        recordText: "",
         style: {},
         tooltip: "",
       };
@@ -771,8 +1260,10 @@ const tournamentsError = ref("");
 
 const standingsCache = reactive<Record<string, StandingRow[]>>({});
 const pairingsCache = reactive<Record<string, PairingRow[]>>({});
+const detailsCache = reactive<Record<string, Record<string, any> | null>>({});
 const standingsLoading = reactive<Record<string, boolean>>({});
 const pairingsLoading = reactive<Record<string, boolean>>({});
+const detailsLoading = reactive<Record<string, boolean>>({});
 
 function dataUrl(path: string) {
   return `${BASE_URL}${path}`;
@@ -790,12 +1281,20 @@ function pairingsUrl(id: string) {
   return dataUrl(`data/raw/${id}/pairings.json`);
 }
 
+function detailsUrl(id: string) {
+  return dataUrl(`data/raw/${id}/details.json`);
+}
+
 function hasStandings(id: string) {
   return Object.prototype.hasOwnProperty.call(standingsCache, id);
 }
 
 function hasPairings(id: string) {
   return Object.prototype.hasOwnProperty.call(pairingsCache, id);
+}
+
+function hasDetails(id: string) {
+  return Object.prototype.hasOwnProperty.call(detailsCache, id);
 }
 
 function startOfUtcDayMs(ms: number) {
@@ -806,6 +1305,82 @@ function startOfUtcDayMs(ms: number) {
 function parseMs(value: unknown): number {
   const ms = Date.parse(String(value ?? ""));
   return Number.isFinite(ms) ? ms : NaN;
+}
+
+function normalizeSwissValue(raw: unknown): SwissLabel | undefined {
+  const text = String(raw ?? "").trim().toUpperCase();
+  if (!text) return undefined;
+  if (text === "BO1") return "BO1";
+  if (text === "BO3") return "BO3";
+  return "Other";
+}
+
+function swissLabelFromDetails(details: Record<string, any> | null | undefined): SwissLabel {
+  const phases = Array.isArray(details?.phases) ? details.phases : [];
+  const phase1 = phases.find((phase: any) => phase?.phase === 1) ?? phases[0];
+  const phaseType = String(phase1?.type ?? "").trim().toUpperCase();
+  const phaseMode = String(phase1?.mode ?? "").trim().toUpperCase();
+
+  if (phaseType !== "SWISS") return "Other";
+  if (phaseMode === "BO1") return "BO1";
+  if (phaseMode === "BO3") return "BO3";
+  return "Other";
+}
+
+const monthOptions = computed<Array<{ value: TimeFilterValue; label: string }>>(() => {
+  const seen = new Set<string>();
+  const items: Array<{ value: TimeFilterValue; label: string }> = [];
+
+  for (const tournament of tournaments.value) {
+    const date = new Date(tournament.startMs);
+    const key = `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, "0")}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    items.push({
+      value: `month:${key}`,
+      label: locale.value === "en" ? key : key.replace("-", " 年 ") + " 月",
+    });
+  }
+
+  return items.sort((a, b) => (a.value < b.value ? 1 : -1));
+});
+
+const timeOptionGroups = computed(() => {
+  const baseOptions = [
+    { value: "all" as TimeFilterValue, label: locale.value === "en" ? "All" : "全部" },
+    { value: "past7" as TimeFilterValue, label: locale.value === "en" ? "Past 7 days" : "近 7 天" },
+    { value: "prev7" as TimeFilterValue, label: locale.value === "en" ? "Previous 7 days" : "前 7 天" },
+    { value: "past4w" as TimeFilterValue, label: locale.value === "en" ? "Past 4 weeks" : "近 4 週" },
+  ];
+
+  return {
+    base: baseOptions,
+    months: monthOptions.value,
+  };
+});
+
+function inTimeRange(tournament: NormalizedTournament) {
+  if (filters.time === "all") return true;
+
+  const now = Date.now();
+  if (filters.time === "past7") return tournament.startMs >= now - 7 * DAY_MS;
+  if (filters.time === "prev7") {
+    return tournament.startMs < now - 7 * DAY_MS && tournament.startMs >= now - 14 * DAY_MS;
+  }
+  if (filters.time === "past4w") return tournament.startMs >= now - 28 * DAY_MS;
+
+  if (String(filters.time).startsWith("month:")) {
+    const ym = String(filters.time).slice("month:".length);
+    const [yearText, monthText] = ym.split("-");
+    const year = Number(yearText);
+    const month = Number(monthText);
+    if (!year || !month) return true;
+    const start = Date.UTC(year, month - 1, 1, 0, 0, 0, 0);
+    const end = Date.UTC(year, month, 1, 0, 0, 0, 0);
+    return tournament.startMs >= start && tournament.startMs < end;
+  }
+
+  return true;
 }
 
 async function runWithConcurrency<T>(items: T[], limit: number, worker: (item: T) => Promise<void>) {
@@ -846,6 +1421,32 @@ async function ensureTournamentDataForIds(ids: string[]) {
     } finally {
       pairingsLoading[id] = false;
     }
+  });
+}
+
+async function ensureSwissForIds(ids: string[]) {
+  const missing = ids.filter((id) => !hasDetails(id) && !detailsLoading[id]);
+
+  await runWithConcurrency(missing, 4, async (id) => {
+    detailsLoading[id] = true;
+    try {
+      const details = await fetchJson<Record<string, any>>(detailsUrl(id));
+      detailsCache[id] = details ?? null;
+    } catch {
+      detailsCache[id] = null;
+    } finally {
+      detailsLoading[id] = false;
+    }
+  });
+
+  if (ids.length === 0) return;
+  const idSet = new Set(ids);
+  tournaments.value = tournaments.value.map((tournament) => {
+    if (!idSet.has(tournament.id)) return tournament;
+    const swiss =
+      normalizeSwissValue(tournament.swiss) ??
+      swissLabelFromDetails(detailsCache[tournament.id]);
+    return { ...tournament, swiss };
   });
 }
 
@@ -1106,30 +1707,32 @@ function resolveDeckSpriteUrlsFromIconKeys(iconKeys: string[]) {
 
 const recomputeToken = { tier: 0, heat: 0 };
 
-function filteredTournamentIds() {
-  const ids = tournaments.value.map((t) => t.id);
-  if (filters.set === "") return ids;
+async function filteredTournamentsForCurrentFilters() {
+  return tournaments.value.filter((tournament) => {
+    if (filters.minPlayers != null && Number.isFinite(filters.minPlayers)) {
+      if ((tournament.players ?? 0) < filters.minPlayers) return false;
+    }
 
-  if (filters.set === PRESET_CURRENT_7 || filters.set === PRESET_CURRENT_14) {
-    const current = currentVersionWindow.value;
-    if (!current) return [];
-
-    const days = filters.set === PRESET_CURRENT_7 ? 7 : 14;
-    const todayUtcStart = startOfUtcDayMs(Date.now());
-    const rollingStartMs = todayUtcStart - (days - 1) * DAY_MS;
-    const effectiveStartMs = Math.max(rollingStartMs, current.startMs);
-
-    return tournaments.value
-      .filter((t) => t.startMs >= effectiveStartMs && t.startMs < current.endMs)
-      .map((t) => t.id);
-  }
-
-  return tournaments.value.filter((t) => t.set === filters.set).map((t) => t.id);
+    if (!inTimeRange(tournament)) return false;
+    if (filters.set && tournament.versionCode !== filters.set) return false;
+    return true;
+  });
 }
 
 async function recomputeTierRows() {
   const token = ++recomputeToken.tier;
-  const ids = filteredTournamentIds();
+  const scopedTournaments = await filteredTournamentsForCurrentFilters();
+  const ids = scopedTournaments.map((tournament) => tournament.id);
+
+  if (meta.value) {
+    meta.value = {
+      ...meta.value,
+      days_back:
+        filters.time === "past7" ? 7 : filters.time === "prev7" ? 14 : filters.time === "past4w" ? 28 : 0,
+      min_players: filters.minPlayers ?? 0,
+      tournaments_count: scopedTournaments.length,
+    };
+  }
 
   if (!ids.length) {
     tierRows.value = [];
@@ -1165,6 +1768,7 @@ async function recomputeTierRows() {
       if (!deck) continue;
 
       const place = getPlace(row);
+      if (!qualifiesByTopCut(place, filters.topCut)) continue;
       let hit = deckMap.get(deck.key);
 
       if (!hit) {
@@ -1221,6 +1825,7 @@ async function recomputeTierRows() {
       deck: item.key,
       tier: "F",
       score,
+      raw_name: item.rawName,
       iconKeys: item.iconKeys,
       spriteUrls: resolveDeckSpriteUrlsFromIconKeys(item.iconKeys),
       usage: totalAllSamples > 0 ? item.allSamples / totalAllSamples : 0,
@@ -1251,7 +1856,7 @@ async function recomputeTierRows() {
 
 async function recomputeHeatmapForTopCut() {
   const token = ++recomputeToken.heat;
-  const keys = topDeckRows.value.map((r) => r.deck);
+  const keys = matrixAxisRows.value.filter((row): row is TierRow => row !== null).map((row) => row.deck);
   const keySet = new Set(keys);
 
   if (!keys.length) {
@@ -1259,10 +1864,10 @@ async function recomputeHeatmapForTopCut() {
     return;
   }
 
-  const ids = filteredTournamentIds();
+  const ids = (await filteredTournamentsForCurrentFilters()).map((tournament) => tournament.id);
   await ensureTournamentDataForIds(ids);
 
-  const pairMap = new Map<string, { games: number; matchPoints: number }>();
+  const pairMap = new Map<string, { wins: number; losses: number; ties: number }>();
 
   for (const tid of ids) {
     const standings = standingsCache[tid];
@@ -1306,19 +1911,19 @@ async function recomputeHeatmapForTopCut() {
 
       if (keySet.has(deck1) && keySet.has(deck2) && qualifiesByTopCut(place1, filters.topCut)) {
         const key = `${deck1}__${deck2}`;
-        const rec = pairMap.get(key) ?? { games: 0, matchPoints: 0 };
-        rec.games += 1;
-        if (p1Won) rec.matchPoints += 1;
-        else if (isTie) rec.matchPoints += 0.5;
+        const rec = pairMap.get(key) ?? { wins: 0, losses: 0, ties: 0 };
+        if (p1Won) rec.wins += 1;
+        else if (p2Won) rec.losses += 1;
+        else if (isTie) rec.ties += 1;
         pairMap.set(key, rec);
       }
 
       if (keySet.has(deck2) && keySet.has(deck1) && qualifiesByTopCut(place2, filters.topCut)) {
         const key = `${deck2}__${deck1}`;
-        const rec = pairMap.get(key) ?? { games: 0, matchPoints: 0 };
-        rec.games += 1;
-        if (p2Won) rec.matchPoints += 1;
-        else if (isTie) rec.matchPoints += 0.5;
+        const rec = pairMap.get(key) ?? { wins: 0, losses: 0, ties: 0 };
+        if (p2Won) rec.wins += 1;
+        else if (p1Won) rec.losses += 1;
+        else if (isTie) rec.ties += 1;
         pairMap.set(key, rec);
       }
     }
@@ -1328,8 +1933,8 @@ async function recomputeHeatmapForTopCut() {
 
   const map = new Map<string, MatchupRecord>();
   for (const [key, value] of pairMap.entries()) {
-    const total = value.games;
-    const winrateA = total > 0 ? value.matchPoints / total : 0;
+    const total = value.wins + value.losses + value.ties;
+    const winrateA = total > 0 ? (value.wins + value.ties * 0.5) / total : 0;
 
     const parts = key.split("__");
     const deckA = parts[0] ?? "";
@@ -1340,7 +1945,9 @@ async function recomputeHeatmapForTopCut() {
     map.set(key, {
       deckA,
       deckB,
-      winsA: value.matchPoints,
+      winsA: value.wins,
+      lossesA: value.losses,
+      ties: value.ties,
       total,
       winrateA,
     });
@@ -1362,17 +1969,27 @@ async function loadTournaments() {
           .map((r): NormalizedTournament | null => {
             const startMs = parseMs(r.date);
             if (!Number.isFinite(startMs)) return null;
-            return { ...r, startMs };
+            const versionCode = inferVersionByStartMs(startMs)?.code ?? "";
+            return {
+              ...r,
+              startMs,
+              versionCode,
+              swiss: normalizeSwissValue(r.swiss),
+            };
           })
           .filter((r): r is NormalizedTournament => r !== null)
           .sort((a, b) => b.startMs - a.startMs)
       : [];
 
     tournaments.value = normalized;
+    if (!filters.set && currentVersionWindow.value?.code) {
+      filters.set = currentVersionWindow.value.code;
+    }
     meta.value = {
       generated_at: new Date().toISOString(),
-      days_back: filters.set === PRESET_CURRENT_7 ? 7 : 14,
-      min_players: 0,
+      days_back:
+        filters.time === "past7" ? 7 : filters.time === "prev7" ? 14 : filters.time === "past4w" ? 28 : 0,
+      min_players: filters.minPlayers ?? 0,
       usage_threshold: 0,
       tournaments_count: normalized.length,
     };
@@ -1385,7 +2002,7 @@ async function loadTournaments() {
 }
 
 watch(
-  () => filters.set,
+  () => [filters.minPlayers ?? "", filters.time, filters.set].join("|"),
   async () => {
     heatLoading.value = true;
     await recomputeTierRows();
@@ -1396,6 +2013,25 @@ watch(
 
 watch(
   () => filters.topCut,
+  async () => {
+    heatLoading.value = true;
+    await recomputeTierRows();
+    await recomputeHeatmapForTopCut();
+    heatLoading.value = false;
+  },
+);
+
+watch(
+  () => matrixOptionRows.value.map((row) => row.deck).join("|"),
+  () => {
+    if (matrixExtraDeck.value && !matrixOptionRows.value.some((row) => row.deck === matrixExtraDeck.value)) {
+      matrixExtraDeck.value = "";
+    }
+  },
+);
+
+watch(
+  () => matrixExtraDeck.value,
   async () => {
     heatLoading.value = true;
     await recomputeHeatmapForTopCut();
@@ -1465,49 +2101,49 @@ onMounted(async () => {
   font-size: 0.92rem;
 }
 
-.filters-grid {
+.filters {
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.7fr);
-  gap: 16px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
 }
 
-.filter-card {
-  padding: 14px;
-  border: 1px solid rgba(90, 130, 180, 0.24);
-  background: linear-gradient(180deg, rgba(16, 34, 60, 0.92), rgba(9, 20, 35, 0.96));
-  border-radius: 18px;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+.f {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  background: rgba(15, 23, 42, 0.38);
+  padding: 12px;
 }
 
-.filter-label {
+.f label {
   display: block;
-  margin-bottom: 10px;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #c6d6ea;
+  font-size: 12px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.88);
+  margin-bottom: 6px;
 }
 
-.filter-select {
+.f input,
+.f select {
   width: 100%;
-  border-radius: 12px;
-  border: 1px solid rgba(104, 146, 196, 0.34);
-  background: rgba(8, 22, 40, 0.95);
-  color: #eef4fb;
-  padding: 12px 14px;
-  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(2, 6, 23, 0.35);
+  color: rgba(255, 255, 255, 0.92);
+  padding: 8px 10px;
   outline: none;
 }
 
-.filter-select:focus {
-  border-color: rgba(115, 180, 255, 0.7);
-  box-shadow: 0 0 0 3px rgba(80, 150, 255, 0.14);
+.hint {
+  margin-top: 6px;
+  font-size: 11px;
+  color: rgba(226, 232, 240, 0.65);
 }
 
 .tierlist-top-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.18fr) minmax(320px, 370px);
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 16px;
-  align-items: start;
+  align-items: stretch;
 }
 
 @media (max-width: 1080px) {
@@ -1515,12 +2151,12 @@ onMounted(async () => {
     grid-template-columns: 1fr;
   }
 
-  .filters-grid {
-    grid-template-columns: 1fr;
+  .filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-.pie-card,
+.usage-card,
 .tier-table-card,
 .heatmap-card {
   border: 1px solid rgba(90, 130, 180, 0.24);
@@ -1538,7 +2174,7 @@ onMounted(async () => {
   letter-spacing: 0.01em;
 }
 
-.pie-title-row,
+.usage-title-row,
 .heatmap-title-row {
   display: flex;
   align-items: baseline;
@@ -1547,90 +2183,234 @@ onMounted(async () => {
   margin-bottom: 12px;
 }
 
-.pie-row {
+.usage-card {
+  height: 100%;
+  min-height: 0;
   display: grid;
-  grid-template-columns: 190px 1fr;
-  gap: 16px;
-  align-items: center;
+  grid-template-rows: auto auto;
+  gap: 12px;
 }
 
-@media (max-width: 620px) {
-  .pie-row {
-    grid-template-columns: 1fr;
+.usage-subtitle {
+  margin: 6px 0 0;
+  color: #9fb3cf;
+  font-size: 0.92rem;
+}
+
+.usage-list {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+
+.usage-row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1.35fr) auto minmax(260px, 1fr);
+  gap: 12px;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(90, 130, 180, 0.18);
+  background: linear-gradient(180deg, rgba(10, 23, 40, 0.88), rgba(8, 18, 31, 0.96));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.usage-row--other {
+  position: relative;
+  margin-top: 16px;
+}
+
+.usage-row--other::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: -9px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(120, 165, 215, 0), rgba(120, 165, 215, 0.55), rgba(120, 165, 215, 0));
+}
+
+.usage-row__rank {
+  min-width: 28px;
+  color: #9fb3cf;
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.usage-row__identity {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.usage-row__identity--static {
+  cursor: default;
+}
+
+.usage-row__identity:hover {
+  text-decoration: none;
+}
+
+.usage-row__identity:hover .usage-row__name {
+  color: #8cc4ff;
+}
+
+.usage-row__spritepair {
+  flex: 0 0 auto;
+  min-width: 58px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.usage-row__spritepair--single {
+  min-width: 38px;
+}
+
+.usage-row__sprite {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.28));
+}
+
+.usage-row__sprite + .usage-row__sprite {
+  margin-left: -7px;
+}
+
+.usage-row__fallback {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(18, 36, 58, 0.96);
+  border: 1px solid rgba(111, 156, 212, 0.18);
+  color: #eef4fb;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.usage-row__copy {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.usage-row__name {
+  min-width: 0;
+  color: #eef4fb;
+  font-size: 1rem;
+  font-weight: 800;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.usage-row__meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  color: #9fb3cf;
+  font-size: 0.78rem;
+}
+
+.usage-row__tier {
+  padding: 3px 8px;
+  border-radius: 999px;
+  color: #f8fbff;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.usage-row__samples {
+  color: #8fa4c0;
+}
+
+.usage-row__pct {
+  min-width: 58px;
+  text-align: right;
+  color: #eef4fb;
+  font-size: 0.96rem;
+  font-weight: 900;
+}
+
+.usage-row__bar {
+  min-width: 0;
+}
+
+.usage-row__barTrack {
+  width: 100%;
+  height: 18px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(111, 156, 212, 0.14);
+  border: 1px solid rgba(111, 156, 212, 0.18);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.usage-row__barFill {
+  height: 100%;
+  min-width: 12px;
+  border-radius: inherit;
+  background: linear-gradient(90deg, rgba(96, 166, 255, 0.98), rgba(63, 117, 218, 0.96));
+  box-shadow: 0 0 18px rgba(61, 124, 230, 0.22);
+}
+
+@media (max-width: 1080px) {
+  .usage-card {
+    min-height: auto;
   }
 }
 
-.pie-wrap {
-  position: relative;
-  width: 190px;
-  height: 190px;
-  display: grid;
-  place-items: center;
+@media (max-width: 760px) {
+  .usage-row {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+  }
+
+  .usage-row__bar {
+    grid-column: 2 / -1;
+  }
 }
 
-.pie {
-  width: 190px;
-  height: 190px;
-  border-radius: 50%;
-  filter: drop-shadow(0 10px 22px rgba(0, 0, 0, 0.25));
-}
+@media (max-width: 520px) {
+  .usage-row {
+    gap: 10px;
+    padding: 10px;
+  }
 
-.pie-center {
-  position: absolute;
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  background: rgba(8, 22, 40, 0.94);
-  border: 1px solid rgba(104, 146, 196, 0.22);
-  display: grid;
-  place-items: center;
-  padding: 10px;
-}
+  .usage-row__name {
+    font-size: 0.92rem;
+  }
 
-.pie-center__top {
-  font-weight: 950;
-  font-size: 1.4rem;
-  color: #ffffff;
-  letter-spacing: 0.06em;
-}
-
-.pie-center__bottom {
-  margin-top: 4px;
-  font-size: 0.82rem;
-  color: #a9c7ea;
-}
-
-.pie-legend {
-  display: grid;
-  gap: 10px;
-}
-
-.pie-legend-item {
-  display: grid;
-  grid-template-columns: 18px 1fr auto;
-  gap: 10px;
-  align-items: center;
-}
-
-.pie-swatch {
-  width: 14px;
-  height: 14px;
-  border-radius: 4px;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  .usage-row__pct {
+    min-width: 52px;
+    font-size: 0.88rem;
+  }
 }
 
 .tier-table-card {
   position: relative;
-  justify-self: end;
-  width: 100%;
-  max-width: 370px;
+  justify-self: center;
+  align-self: stretch;
+  width: auto;
+  height: 100%;
+  max-width: min(100%, 420px);
   aspect-ratio: 1 / 2;
-  min-height: 720px;
+  min-height: 0;
   display: grid;
   grid-template-rows: auto 1fr;
-  gap: 10px;
+  gap: 12px;
   overflow: hidden;
-  padding: 14px;
+  padding: 18px;
   border-radius: 22px;
   border: 1px solid rgba(112, 131, 160, 0.22);
   background:
@@ -1644,9 +2424,9 @@ onMounted(async () => {
 .tier-table-card::before {
   content: "";
   position: absolute;
-  left: 14px;
-  right: 14px;
-  top: 54px;
+  left: 18px;
+  right: 18px;
+  top: 58px;
   height: 1px;
   background: linear-gradient(90deg, rgba(255, 206, 101, 0.5), rgba(255, 206, 101, 0));
   pointer-events: none;
@@ -1710,8 +2490,8 @@ onMounted(async () => {
 
 .tier-lane {
   display: grid;
-  grid-template-columns: 84px minmax(0, 1fr);
-  gap: 10px;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 12px;
   align-items: stretch;
 }
 
@@ -1724,7 +2504,7 @@ onMounted(async () => {
 
 .tier-lane__badge {
   position: relative;
-  min-height: 72px;
+  min-height: 82px;
   border-radius: 16px 18px 16px 10px;
   display: flex;
   align-items: center;
@@ -1845,13 +2625,13 @@ onMounted(async () => {
 }
 
 .tier-lane__deckbar {
-  min-height: 72px;
+  min-height: 82px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-auto-flow: row;
   align-content: start;
-  gap: 8px;
-  padding: 8px 10px;
+  gap: 10px;
+  padding: 10px 12px;
   border-radius: 18px;
   border: 1px solid rgba(102, 122, 151, 0.16);
   background: linear-gradient(180deg, rgba(28, 42, 66, 0.78), rgba(13, 20, 32, 0.9));
@@ -1882,7 +2662,7 @@ onMounted(async () => {
 .tier-lane__spritepair {
   width: 100%;
   min-width: 0;
-  min-height: 48px;
+  min-height: 54px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1909,8 +2689,8 @@ onMounted(async () => {
 }
 
 .tier-lane__sprite {
-  width: 45px;
-  height: 40px;
+  width: 48px;
+  height: 44px;
   object-fit: contain;
   image-rendering: auto;
   filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.45));
@@ -1939,6 +2719,8 @@ onMounted(async () => {
 @media (max-width: 1080px) {
   .tier-table-card {
     justify-self: stretch;
+    width: 100%;
+    height: auto;
     max-width: 420px;
     margin: 0 auto;
     aspect-ratio: auto;
@@ -1950,53 +2732,44 @@ onMounted(async () => {
   margin-top: 16px;
 }
 
-.heatmap-scroll {
-  overflow: auto;
-  padding-bottom: 4px;
+.heatmap-shell {
+  width: 100%;
+}
+
+.heatmap-mobile {
+  display: none;
 }
 
 .heatmap-table {
+  width: 100%;
+  table-layout: fixed;
   border-collapse: separate;
   border-spacing: 0;
-  width: 100%;
-  min-width: 1280px;
 }
 
 .heatmap-corner {
-  width: 146px;
-  min-width: 146px;
-  position: sticky;
-  left: 0;
-  top: 0;
-  z-index: 4;
+  width: 148px;
   background: rgba(13, 28, 50, 0.98);
   border-right: 1px solid rgba(97, 134, 179, 0.16);
   border-bottom: 1px solid rgba(97, 134, 179, 0.16);
 }
 
 .heatmap-col-label {
-  min-width: 90px;
-  padding: 8px 6px;
+  width: calc((100% - 148px) / 11);
+  padding: 8px 6px 10px;
   text-align: center;
   background: rgba(13, 28, 50, 0.98);
   border-bottom: 1px solid rgba(97, 134, 179, 0.16);
   vertical-align: bottom;
-  position: sticky;
-  top: 0;
-  z-index: 3;
 }
 
 .heatmap-row-label {
-  width: 146px;
-  min-width: 146px;
+  width: 148px;
   padding: 8px;
-  text-align: right;
+  text-align: center;
   background: rgba(13, 28, 50, 0.98);
   border-right: 1px solid rgba(97, 134, 179, 0.16);
   vertical-align: middle;
-  position: sticky;
-  left: 0;
-  z-index: 2;
 }
 
 .heatmap-label-link {
@@ -2007,12 +2780,12 @@ onMounted(async () => {
 }
 
 .heatmap-axis-chip {
-  min-height: 62px;
+  min-height: 68px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 10px;
-  border-radius: 18px;
+  padding: 10px 8px;
+  border-radius: 16px;
   border: 1px solid rgba(92, 130, 176, 0.22);
   background: rgba(255, 255, 255, 0.04);
   transition:
@@ -2022,7 +2795,13 @@ onMounted(async () => {
 }
 
 .heatmap-axis-chip--row {
-  justify-content: flex-end;
+  justify-content: center;
+}
+
+.heatmap-axis-chip--picker {
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .heatmap-label-link:hover .heatmap-axis-chip {
@@ -2044,16 +2823,25 @@ onMounted(async () => {
 }
 
 .heatmap-sprite {
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   object-fit: contain;
   filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.5));
   border-radius: 0;
 }
 
+.heatmap-sprite--picker {
+  width: 34px;
+  height: 34px;
+}
+
+.heatmap-sprite--mobile {
+  width: 28px;
+  height: 28px;
+}
+
 .heatmap-cell {
-  min-width: 90px;
-  padding: 4px;
+  padding: 6px;
   background: rgba(9, 22, 40, 0.55);
   border-right: 1px solid rgba(97, 134, 179, 0.08);
   border-bottom: 1px solid rgba(97, 134, 179, 0.08);
@@ -2061,12 +2849,12 @@ onMounted(async () => {
 
 .heatmap-cell__inner {
   width: 100%;
-  min-width: 80px;
-  height: 58px;
+  min-width: 0;
+  min-height: 72px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 14px;
+  border-radius: 16px;
   border: 1px solid transparent;
   transition:
     transform 0.12s ease,
@@ -2086,14 +2874,203 @@ onMounted(async () => {
 }
 
 .heatmap-cell__text {
-  font-size: 0.98rem;
+  font-size: 0.92rem;
   font-weight: 800;
   letter-spacing: 0.01em;
+}
+
+.heatmap-cell__copy {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  line-height: 1;
+}
+
+.heatmap-cell__rate {
+  font-size: 1.02rem;
+  font-weight: 900;
+}
+
+.heatmap-cell__record {
+  max-width: 100%;
+  font-size: 0.8rem;
+  letter-spacing: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.heatmap-picker-cell {
+  min-height: 68px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 8px;
+  border-radius: 16px;
+  border: 1px solid rgba(92, 130, 176, 0.22);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.heatmap-picker-cell--empty {
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.heatmap-picker-label {
+  display: block;
+  max-width: 100%;
+  color: #d7e4f3;
+  font-size: 0.8rem;
+  line-height: 1.15;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.heatmap-picker-row-label {
+  color: #d7e4f3;
+  max-width: 100%;
+  font-size: 0.82rem;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.matrix-picker-panel {
+  margin-bottom: 16px;
+  display: grid;
+  gap: 8px;
+}
+
+.matrix-picker-panel__label {
+  color: #8fb0d8;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.matrix-picker {
+  position: relative;
+}
+
+.matrix-picker__trigger {
+  list-style: none;
+  cursor: pointer;
+  border-radius: 16px;
+  border: 1px solid rgba(97, 145, 196, 0.24);
+  background: rgba(10, 23, 40, 0.92);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.matrix-picker__trigger::-webkit-details-marker {
+  display: none;
+}
+
+.matrix-picker__trigger-copy {
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+}
+
+.matrix-picker__placeholder {
+  color: #8fa4c0;
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.matrix-picker__trigger-text {
+  min-width: 0;
+  color: #eef4fb;
+  font-size: 0.95rem;
+  font-weight: 800;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.matrix-picker__menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% + 8px);
+  z-index: 12;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+  padding: 12px;
+  border-radius: 18px;
+  border: 1px solid rgba(97, 145, 196, 0.26);
+  background:
+    linear-gradient(180deg, rgba(14, 28, 48, 0.98), rgba(8, 18, 31, 0.99)),
+    rgba(8, 18, 31, 0.99);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.34);
+  max-height: min(48vh, 380px);
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+.matrix-picker__menu::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.matrix-picker__option {
+  border: 1px solid rgba(97, 145, 196, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 14px;
+  color: #eef4fb;
+  min-height: 56px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    transform 0.14s ease,
+    background-color 0.14s ease,
+    border-color 0.14s ease;
+}
+
+.matrix-picker__option:hover {
+  transform: translateY(-1px);
+  border-color: rgba(126, 190, 255, 0.34);
+  background: rgba(126, 190, 255, 0.08);
+}
+
+.matrix-picker__option--active {
+  border-color: rgba(126, 190, 255, 0.52);
+  background: rgba(126, 190, 255, 0.14);
+}
+
+.matrix-picker__option--clear {
+  justify-content: center;
+}
+
+.matrix-picker__option-copy {
+  min-width: 0;
+  font-size: 0.88rem;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media (max-width: 640px) {
   .tierlist-page {
     padding: 16px;
+  }
+
+  .filters {
+    grid-template-columns: 1fr;
   }
 
   .tier-lane__badge {
@@ -2133,18 +3110,108 @@ onMounted(async () => {
     height: 24px;
   }
 
-  .heatmap-sprite {
-    width: 24px;
-    height: 24px;
+  .matrix-picker__trigger-copy {
+    min-height: 56px;
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 760px) {
+  .heatmap-shell {
+    display: none;
   }
 
-  .heatmap-cell__inner {
-    min-width: 74px;
-    height: 52px;
+  .heatmap-mobile {
+    display: grid;
+    gap: 16px;
   }
 
-  .heatmap-cell__text {
-    font-size: 0.9rem;
+  .heatmap-mobile__section {
+    display: grid;
+    gap: 10px;
+  }
+
+  .heatmap-mobile__header {
+    display: flex;
+  }
+
+  .heatmap-mobile__deck {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 16px;
+    border: 1px solid rgba(92, 130, 176, 0.22);
+    background: rgba(13, 28, 50, 0.72);
+  }
+
+  .heatmap-mobile__deck-name {
+    min-width: 0;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #eef4fb;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .heatmap-mobile__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .heatmap-mobile__cellInner {
+    min-height: 118px;
+    display: grid;
+    justify-items: center;
+    align-content: start;
+    gap: 6px;
+    padding: 10px 8px;
+    border-radius: 14px;
+    border: 1px solid transparent;
+  }
+
+  .heatmap-mobile__versus {
+    color: currentColor;
+    font-size: 0.8rem;
+    opacity: 0.9;
+  }
+
+  .heatmap-mobile__opponent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .heatmap-mobile__rate {
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  .heatmap-mobile__record {
+    font-size: 0.84rem;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .heatmap-mobile__empty {
+    padding: 14px;
+    text-align: center;
+    border-radius: 14px;
+    border: 1px dashed rgba(111, 156, 212, 0.22);
+    color: #a7bdd9;
+    background: rgba(13, 28, 50, 0.52);
+  }
+
+  .matrix-picker__menu {
+    position: static;
+    margin-top: 10px;
+    max-height: none;
+    overflow: visible;
   }
 }
 </style>
