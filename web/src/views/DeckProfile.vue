@@ -484,6 +484,11 @@
       </button>
     </div>
 
+    <DeckDiscussionPanel
+      :deck-key="resolvedDeckKey"
+      :deck-name="displayDeckNameEn || displayDeckName"
+    />
+
     <section class="table-card">
       <div class="section-head">
         <h2 class="section-title">Best Finishes</h2>
@@ -553,6 +558,7 @@
 import { computed, reactive, ref, onMounted, onBeforeUnmount, watch, nextTick } from "vue";
 import { useRoute } from "vue-router";
 import { getLocalizedDeckNameFromIconKeys } from "../assets/pokemonNames";
+import DeckDiscussionPanel from "../components/DeckDiscussionPanel.vue";
 
 type AnyRecord = Record<string, any>;
 

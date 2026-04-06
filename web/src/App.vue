@@ -29,6 +29,9 @@
       </nav>
 
       <div class="topbar__right">
+        <RouterLink :to="`/${lang}/battle-hub`" class="account-link">
+          {{ authProfileState?.display_name || authProfileState?.handle || 'Login' }}
+        </RouterLink>
         <RouterLink :to="switchLangTo('zh')" class="lang" active-class="is-active">中文</RouterLink>
         <RouterLink :to="switchLangTo('en')" class="lang" active-class="is-active">EN</RouterLink>
       </div>
@@ -59,6 +62,9 @@
           </RouterLink>
         </nav>
         <div class="sidebar__footer">
+          <RouterLink :to="`/${lang}/battle-hub`" class="sidebar__account" @click="toggleMenu">
+            {{ authProfileState?.display_name || authProfileState?.handle || 'Login / Sign up' }}
+          </RouterLink>
           <div class="sidebar__lang">
             <RouterLink :to="switchLangTo('zh')" class="lang" active-class="is-active" @click="toggleMenu">中文</RouterLink>
             <RouterLink :to="switchLangTo('en')" class="lang" active-class="is-active" @click="toggleMenu">EN</RouterLink>
@@ -83,9 +89,12 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { useRoute } from 'vue-router'
+import { authProfile, initSupabaseAuth } from './lib/supabase'
 
 const route = useRoute()
 const menuOpen = ref(false)
+void initSupabaseAuth()
+const authProfileState = authProfile
 
 const lang = computed<'zh' | 'en'>(() => (String(route.path).split('/')[1] === 'en' ? 'en' : 'zh'))
 
@@ -96,6 +105,7 @@ const nav = computed(() => {
     { key: 'tournaments', to: `${base}/tournaments` },
     { key: 'topDecks', to: `${base}/top-decks` },
     { key: 'topCards', to: `${base}/top-cards` },
+    { key: 'battleHub', to: `${base}/battle-hub` },
     { key: 'playerRanking', to: `${base}/player-ranking` },
     { key: 'countryRanking', to: `${base}/country-ranking` },
   ] as const
@@ -126,13 +136,16 @@ const dict = {
     tournaments: 'Tournaments',
     topDecks: 'Top Decks',
     topCards: 'Cards Usage',
+    battleHub: 'Battle Hub',
     playerRanking: 'Player Ranking',
     countryRanking: 'Country Ranking',
   },
 } as const
 
-function label(key: keyof typeof dict.zh) {
-  return dict[lang.value][key]
+function label(key: string) {
+  const table = dict[lang.value] as Record<string, string>
+  if (key === 'battleHub') return 'Battle Hub'
+  return table[key] || key
 }
 </script>
 
@@ -223,6 +236,16 @@ function label(key: keyof typeof dict.zh) {
 .navlink.is-active { color: #fff; font-weight: 700; }
 
 .topbar__right { display:flex; gap: 8px; align-items: center; }
+.account-link {
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(115, 192, 255, 0.18);
+  background: rgba(12, 28, 48, 0.88);
+  color: #eef7ff;
+  text-decoration: none;
+  font-size: 12px;
+  white-space: nowrap;
+}
 .lang {
   padding: 4px 8px; border-radius: 8px;
   color: rgba(226,232,240,.75);
@@ -314,6 +337,17 @@ function label(key: keyof typeof dict.zh) {
   margin-top: auto;
   padding-top: 24px;
   border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.sidebar__account {
+  display: block;
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(12, 28, 48, 0.88);
+  border: 1px solid rgba(115, 192, 255, 0.12);
+  color: #eef7ff;
+  text-decoration: none;
 }
 
 .sidebar__lang {

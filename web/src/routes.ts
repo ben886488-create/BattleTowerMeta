@@ -50,6 +50,12 @@ function makeLangRoutes(lang: (typeof langs)[number]): RouteRecordRaw {
         meta: { nav: true, key: 'topCards' },
       },
       {
+        path: 'battle-hub',
+        name: `${lang}-battle-hub`,
+        component: () => import('./views/BattleHub.vue'),
+        meta: { nav: true, key: 'battleHub' },
+      },
+      {
         path: 'player-ranking',
         name: `${lang}-player-ranking`,
         component: () => import('./views/PlayerRanking.vue'),
