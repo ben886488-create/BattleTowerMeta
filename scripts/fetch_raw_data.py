@@ -7,7 +7,7 @@ from urllib.error import HTTPError, URLError
 BASE = "https://play.limitlesstcg.com/api"
 GAME_ID = os.environ.get("POCKET_GAME_ID") or "POCKET"
 # 核心优化：新增不限天数开关（True=不限天数，False=按DAYS_BACK过滤）
-UNLIMITED_DAYS = os.environ.get("UNLIMITED_DAYS", "false").lower() == "true"
+UNLIMITED_DAYS = os.environ.get("UNLIMITED_DAYS", "False").lower() == "true"
 # 兼容原有配置：仅当 UNLIMITED_DAYS=False 时生效
 DAYS_BACK = int(os.environ.get("DAYS_BACK", "3"))
 MIN_PLAYERS = int(os.environ.get("MIN_PLAYERS", "64"))
