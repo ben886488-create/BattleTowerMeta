@@ -29,11 +29,10 @@
                 aria-hidden="true"
               ></span>
             </h1>
-            <p class="playerMeta">
-              {{ countryLabel(primaryCountry) }}
-              <span class="divider">•</span>
-              {{ ui.filteredVersion(summaryVersionLabel) }}
-            </p>
+            <div class="rankChips">
+              <span class="rankChip">{{ countryRankLabel }}</span>
+              <span class="rankChip">{{ worldRankLabel }}</span>
+            </div>
           </div>
 
           <RouterLink class="backLink" :to="{ name: `${lang}-player-ranking` }">
@@ -43,42 +42,97 @@
 
         <div class="heroGrid">
           <section class="summaryPanel">
-            <div class="summaryCards">
-              <article class="summaryCard">
-                <span class="summaryLabel">{{ ui.totalPoints }}</span>
-                <strong class="summaryValue mono">{{ formatPoints(totalPoints) }}</strong>
+            <div class="summaryRows">
+              <div class="summaryRow summaryRow--two">
+                <article class="statCard statCard--primary">
+                  <span class="statLabel">{{ ui.totalPoints }}</span>
+                  <strong class="statValue mono">{{ formatPoints(totalPoints) }}</strong>
+                </article>
+                <article class="statCard statCard--primary">
+                  <span class="statLabel">{{ ui.events }}</span>
+                  <strong class="statValue mono">{{ filteredEntries.length }}</strong>
+                </article>
+              </div>
+
+              <article class="recordCard">
+                <div>
+                  <span class="statLabel">{{ ui.winRate }}</span>
+                  <strong class="recordValue mono">{{ winRateLabel }}</strong>
+                  <p class="recordHint">{{ ui.winRateHint }}</p>
+                </div>
+                <div class="recordSplit"></div>
+                <div class="recordRight">
+                  <span class="statLabel">{{ ui.record }}</span>
+                  <strong class="recordText mono">{{ recordLabel }}</strong>
+                </div>
               </article>
-              <article class="summaryCard">
-                <span class="summaryLabel">{{ ui.events }}</span>
-                <strong class="summaryValue mono">{{ filteredEntries.length }}</strong>
-              </article>
-              <article class="summaryCard">
-                <span class="summaryLabel">{{ ui.first }}</span>
-                <strong class="summaryValue mono">{{ podiumCounts.first }}</strong>
-              </article>
-              <article class="summaryCard">
-                <span class="summaryLabel">{{ ui.second }}</span>
-                <strong class="summaryValue mono">{{ podiumCounts.second }}</strong>
-              </article>
-              <article class="summaryCard">
-                <span class="summaryLabel">{{ ui.third }}</span>
-                <strong class="summaryValue mono">{{ podiumCounts.third }}</strong>
-              </article>
-              <article class="summaryCard">
-                <span class="summaryLabel">{{ ui.fourth }}</span>
-                <strong class="summaryValue mono">{{ podiumCounts.fourth }}</strong>
-              </article>
+
+              <div class="summaryRow summaryRow--three">
+                <article class="finishCard finishCard--gold">
+                  <div class="finishCard__labelGroup">
+                    <span class="finishBadge">1ST</span>
+                    <span class="statLabel">{{ ui.first }}</span>
+                  </div>
+                  <strong class="finishValue mono">{{ finishCounts.first }}</strong>
+                </article>
+                <article class="finishCard finishCard--silver">
+                  <div class="finishCard__labelGroup">
+                    <span class="finishBadge">2ND</span>
+                    <span class="statLabel">{{ ui.second }}</span>
+                  </div>
+                  <strong class="finishValue mono">{{ finishCounts.second }}</strong>
+                </article>
+                <article class="finishCard finishCard--bronze">
+                  <div class="finishCard__labelGroup">
+                    <span class="finishBadge">3RD-4TH</span>
+                    <span class="statLabel">{{ ui.top4 }}</span>
+                  </div>
+                  <strong class="finishValue mono">{{ finishCounts.top4 }}</strong>
+                </article>
+              </div>
+
+              <div class="summaryRow summaryRow--three">
+                <article class="finishCard finishCard--blue">
+                  <div class="finishCard__labelGroup">
+                    <span class="finishBadge">5TH-8TH</span>
+                    <span class="statLabel">{{ ui.top8 }}</span>
+                  </div>
+                  <strong class="finishValue mono">{{ finishCounts.top8 }}</strong>
+                </article>
+                <article class="finishCard finishCard--indigo">
+                  <div class="finishCard__labelGroup">
+                    <span class="finishBadge">9TH-16TH</span>
+                    <span class="statLabel">{{ ui.top16 }}</span>
+                  </div>
+                  <strong class="finishValue mono">{{ finishCounts.top16 }}</strong>
+                </article>
+                <article class="finishCard finishCard--slate">
+                  <div class="finishCard__labelGroup">
+                    <span class="finishBadge">17TH-32ND</span>
+                    <span class="statLabel">{{ ui.top32 }}</span>
+                  </div>
+                  <strong class="finishValue mono">{{ finishCounts.top32 }}</strong>
+                </article>
+              </div>
             </div>
           </section>
 
           <section class="deckPanel">
             <div class="panelHead">
-              <h2>{{ ui.topDecks }}</h2>
-              <span class="muted">{{ ui.deckRule }}</span>
+              <div>
+                <h2>{{ ui.topDecks }}</h2>
+                <p class="muted">{{ ui.deckRule }}</p>
+              </div>
             </div>
+
             <div v-if="topDecks.length === 0" class="panelEmpty">{{ ui.noDeckData }}</div>
             <div v-else class="topDeckList">
-              <article v-for="deck in topDecks" :key="deck.key" class="deckCard">
+              <RouterLink
+                v-for="deck in topDecks"
+                :key="deck.key"
+                class="deckCard"
+                :to="deckProfileTo(deck.key)"
+              >
                 <div class="deckCard__head">
                   <div class="deckIcons">
                     <img
@@ -93,25 +147,50 @@
                       {{ deck.name.slice(0, 2).toUpperCase() }}
                     </span>
                   </div>
-                  <div>
+                  <div class="deckCard__copy">
                     <div class="deckName">{{ deck.name }}</div>
-                    <div class="deckMeta">{{ ui.bestFinish(deck.bestFinishLabel) }}</div>
+                    <div class="deckMeta">
+                      <span class="deckMetaLabel">{{ ui.bestFinishLabel }}</span>
+                      <span class="deckMetaValue">{{ deck.bestFinishLabel }}</span>
+                    </div>
                   </div>
                 </div>
+
+                <div class="deckFinishGrid">
+                  <span class="deckFinishPill deckFinishPill--gold"><span>{{ ui.firstShort }}</span><strong>{{ deck.finishCounts.first }}</strong></span>
+                  <span class="deckFinishPill deckFinishPill--silver"><span>{{ ui.secondShort }}</span><strong>{{ deck.finishCounts.second }}</strong></span>
+                  <span class="deckFinishPill deckFinishPill--bronze"><span>{{ ui.top4Short }}</span><strong>{{ deck.finishCounts.top4 }}</strong></span>
+                  <span class="deckFinishPill deckFinishPill--blue"><span>{{ ui.top8Short }}</span><strong>{{ deck.finishCounts.top8 }}</strong></span>
+                  <span class="deckFinishPill deckFinishPill--indigo"><span>{{ ui.top16Short }}</span><strong>{{ deck.finishCounts.top16 }}</strong></span>
+                  <span class="deckFinishPill deckFinishPill--slate"><span>{{ ui.top32Short }}</span><strong>{{ deck.finishCounts.top32 }}</strong></span>
+                </div>
+
                 <div class="deckStats">
                   <span class="mono">{{ ui.deckEvents(deck.events) }}</span>
                   <span class="mono">{{ ui.deckPoints(deck.points) }}</span>
                 </div>
-              </article>
+              </RouterLink>
             </div>
           </section>
         </div>
       </div>
 
       <section class="tableCard">
-        <div class="panelHead">
-          <h2>{{ ui.bestFinishes }}</h2>
-          <span class="muted">{{ ui.bestFinishesSub }}</span>
+        <div class="tableHead">
+          <div>
+            <h2>{{ ui.bestFinishes }}</h2>
+            <p class="muted">{{ ui.bestFinishesSub }}</p>
+          </div>
+
+          <div class="sortField">
+            <label>{{ ui.sortBy }}</label>
+            <select v-model="finishSort">
+              <option value="placing">{{ ui.sortPlacing }}</option>
+              <option value="latest">{{ ui.sortLatest }}</option>
+              <option value="field">{{ ui.sortField }}</option>
+              <option value="points">{{ ui.sortPoints }}</option>
+            </select>
+          </div>
         </div>
 
         <div class="tableWrap">
@@ -131,7 +210,7 @@
               </tr>
               <tr v-for="item in bestFinishes" :key="item.key">
                 <td>
-                  <div class="deckCell">
+                  <RouterLink class="deckCell deckCell--link" :to="deckProfileTo(item.deckKey)">
                     <div class="deckIcons deckIcons--small">
                       <img
                         v-for="(icon, index) in item.iconUrls"
@@ -146,7 +225,7 @@
                       </span>
                     </div>
                     <span>{{ item.deckName }}</span>
-                  </div>
+                  </RouterLink>
                 </td>
                 <td>{{ item.tournamentName }}</td>
                 <td class="mono">{{ item.dateLabel }}</td>
@@ -161,7 +240,7 @@
                   >
                     {{ ui.matches }}
                   </a>
-                  <span v-else class="muted">—</span>
+                  <span v-else class="muted">--</span>
                 </td>
               </tr>
             </tbody>
@@ -195,6 +274,28 @@ const deckIconModules = import.meta.glob("../assets/deck-icons/*.{png,webp,svg}"
   import: "default",
 }) as Record<string, string>;
 
+type FinishSortKey = "placing" | "latest" | "field" | "points";
+
+type FinishCounts = {
+  first: number;
+  second: number;
+  top4: number;
+  top8: number;
+  top16: number;
+  top32: number;
+};
+
+type RankedPlayer = {
+  player: string;
+  playerSlug: string;
+  country: string;
+  points: number;
+  events: number;
+  firstCount: number;
+  secondCount: number;
+  top4Count: number;
+};
+
 type TopDeckSummary = {
   key: string;
   name: string;
@@ -203,10 +304,12 @@ type TopDeckSummary = {
   bestFinish: number | null;
   bestFinishLabel: string;
   iconUrls: string[];
+  finishCounts: FinishCounts;
 };
 
 type FinishRow = {
   key: string;
+  deckKey: string;
   deckName: string;
   iconUrls: string[];
   tournamentName: string;
@@ -214,6 +317,8 @@ type FinishRow = {
   dateMs: number;
   place: number;
   placeLabel: string;
+  points: number;
+  tournamentPlayers: number;
   listUrl: string;
 };
 
@@ -229,60 +334,93 @@ const isZh = computed(() => lang.value === "zh");
 const ui = computed(() => {
   if (isZh.value) {
     return {
-      loading: "正在載入玩家資料…",
+      loading: "正在載入玩家資料...",
       loadError: "玩家資料載入失敗",
       notFound: "找不到這位玩家",
       set: "版本",
       all: "全部",
       back: "返回玩家排名",
-      filteredVersion: (label: string) => `目前篩選：${label}`,
       totalPoints: "總積分",
       events: "參賽次數",
+      winRate: "Win %",
+      winRateHint: "平局不計入勝率",
+      record: "勝 - 負 - 平",
       first: "冠軍",
       second: "亞軍",
-      third: "第三",
-      fourth: "第四",
+      top4: "四強",
+      top8: "八強",
+      top16: "十六強",
+      top32: "三十二強",
+      firstShort: "1ST",
+      secondShort: "2ND",
+      top4Short: "3RD-4TH",
+      top8Short: "5TH-8TH",
+      top16Short: "9TH-16TH",
+      top32Short: "17TH-32ND",
       topDecks: "最擅長的三副牌組",
       deckRule: "依積分優先，其次參賽次數",
-      noDeckData: "目前篩選條件下沒有牌組資料",
-      bestFinish: (value: string) => `最佳名次：${value}`,
+      noDeckData: "目前篩選下沒有牌組資料",
+      bestFinishLabel: "最佳名次",
       deckEvents: (value: number) => `參賽 ${value} 次`,
       deckPoints: (value: number) => `${formatPointsStatic(value)} 分`,
       bestFinishes: "Best Finishes",
-      bestFinishesSub: "依名次、賽事規模、日期排序",
+      bestFinishesSub: "可依名次、日期、比賽規模或積分排序",
+      sortBy: "排序",
+      sortPlacing: "最佳名次",
+      sortLatest: "最新比賽",
+      sortField: "最大賽場",
+      sortPoints: "最高積分",
       deck: "使用牌組",
       tournament: "賽事",
       date: "日期",
       place: "名次",
       list: "List",
-      noFinishes: "目前沒有可顯示的最佳成績",
+      noFinishes: "沒有可顯示的名次資料",
       matches: "Matches",
       unknown: "未知地區",
+      countryRank: (country: string, rank: number | null) =>
+        rank ? `${country}排名第${rank}（所屬國家/地區）` : `${country}排名未定`,
+      worldRank: (rank: number | null) => (rank ? `世界排名第${rank}` : "世界排名未定"),
     };
   }
 
   return {
-    loading: "Loading player data…",
+    loading: "Loading player data...",
     loadError: "Failed to load player data",
     notFound: "Player not found",
     set: "Set",
     all: "All",
     back: "Back to player ranking",
-    filteredVersion: (label: string) => `Current filter: ${label}`,
     totalPoints: "Total Points",
     events: "Events",
+    winRate: "Win %",
+    winRateHint: "Ties are excluded from the percentage",
+    record: "W - L - T",
     first: "1st",
     second: "2nd",
-    third: "3rd",
-    fourth: "4th",
+    top4: "Top 4",
+    top8: "Top 8",
+    top16: "Top 16",
+    top32: "Top 32",
+    firstShort: "1ST",
+    secondShort: "2ND",
+    top4Short: "3RD-4TH",
+    top8Short: "5TH-8TH",
+    top16Short: "9TH-16TH",
+    top32Short: "17TH-32ND",
     topDecks: "Top 3 Decks",
     deckRule: "Sorted by points, then appearances",
     noDeckData: "No deck data for the current filter",
-    bestFinish: (value: string) => `Best finish: ${value}`,
+    bestFinishLabel: "Best Finish",
     deckEvents: (value: number) => `${value} events`,
     deckPoints: (value: number) => `${formatPointsStatic(value)} pts`,
     bestFinishes: "Best Finishes",
-    bestFinishesSub: "Sorted by placing, field size, then date",
+    bestFinishesSub: "Sort by placing, date, field size, or points",
+    sortBy: "Sort by",
+    sortPlacing: "Best placing",
+    sortLatest: "Latest event",
+    sortField: "Largest field",
+    sortPoints: "Highest points",
     deck: "Deck",
     tournament: "Tournament",
     date: "Date",
@@ -291,6 +429,9 @@ const ui = computed(() => {
     noFinishes: "No finishes available",
     matches: "Matches",
     unknown: "Unknown Region",
+    countryRank: (country: string, rank: number | null) =>
+      rank ? `${country} Rank #${rank} (region)` : `${country} rank unavailable`,
+    worldRank: (rank: number | null) => (rank ? `World Rank #${rank}` : "World rank unavailable"),
   };
 });
 
@@ -298,9 +439,32 @@ const allEntries = ref<DecoratedPlayerEntry[]>([]);
 const loading = ref(true);
 const loadError = ref(false);
 const selectedSet = ref("");
+const finishSort = ref<FinishSortKey>("placing");
+
+function emptyFinishCounts(): FinishCounts {
+  return {
+    first: 0,
+    second: 0,
+    top4: 0,
+    top8: 0,
+    top16: 0,
+    top32: 0,
+  };
+}
+
+function applyFinishBucket(target: FinishCounts, placing: number | null | undefined) {
+  if (placing == null || !Number.isFinite(placing)) return;
+  if (placing === 1) target.first += 1;
+  else if (placing === 2) target.second += 1;
+  else if (placing >= 3 && placing <= 4) target.top4 += 1;
+  else if (placing >= 5 && placing <= 8) target.top8 += 1;
+  else if (placing >= 9 && placing <= 16) target.top16 += 1;
+  else if (placing >= 17 && placing <= 32) target.top32 += 1;
+}
 
 function resolveDeckIconUrl(key: string) {
   const target = key.trim().toLowerCase();
+  if (!target) return "";
   const hit = Object.entries(deckIconModules).find(([path]) =>
     path.toLowerCase().endsWith(`/${target}.png`) ||
     path.toLowerCase().endsWith(`/${target}.webp`) ||
@@ -318,12 +482,17 @@ function formatPoints(value: number) {
 }
 
 function formatDate(ms: number) {
-  if (!ms) return "—";
+  if (!ms) return "--";
   const d = new Date(ms);
   const y = d.getUTCFullYear();
   const m = String(d.getUTCMonth() + 1).padStart(2, "0");
   const day = String(d.getUTCDate()).padStart(2, "0");
   return `${y}/${m}/${day}`;
+}
+
+function formatPercent(value: number | null) {
+  if (value == null || !Number.isFinite(value)) return "--";
+  return `${value.toFixed(1)}%`;
 }
 
 function versionLabel(code?: string) {
@@ -336,6 +505,15 @@ function versionLabel(code?: string) {
 function countryLabel(code?: string) {
   if (!code) return ui.value.unknown;
   return countries.getName(code, isZh.value ? "zh" : "en", { select: "official" }) || code;
+}
+
+function deckProfileTo(deckKey: string) {
+  return {
+    path: `/${lang.value}/top-decks/${encodeURIComponent(deckKey)}`,
+    query: {
+      set: selectedSet.value || undefined,
+    },
+  };
 }
 
 const playerSlug = computed(() => String(route.params.playerSlug ?? ""));
@@ -364,44 +542,124 @@ const filteredEntries = computed(() => {
   return playerEntries.value.filter((entry) => entry.versionCode === selectedSet.value);
 });
 
-const summaryVersionLabel = computed(() => {
-  if (!selectedSet.value) return ui.value.all;
-  return versionLabel(selectedSet.value);
+const rankingEntries = computed(() => {
+  if (!selectedSet.value) return allEntries.value;
+  return allEntries.value.filter((entry) => entry.versionCode === selectedSet.value);
 });
 
 const totalPoints = computed(() =>
   filteredEntries.value.reduce((sum, entry) => sum + Number(entry.points || 0), 0),
 );
 
-const podiumCounts = computed(() => {
-  const counts = { first: 0, second: 0, third: 0, fourth: 0 };
+const recordTotals = computed(() => {
+  let wins = 0;
+  let losses = 0;
+  let ties = 0;
   for (const entry of filteredEntries.value) {
-    if (entry.placing === 1) counts.first += 1;
-    else if (entry.placing === 2) counts.second += 1;
-    else if (entry.placing === 3) counts.third += 1;
-    else if (entry.placing === 4) counts.fourth += 1;
+    wins += Number(entry.wins || 0);
+    losses += Number(entry.losses || 0);
+    ties += Number(entry.ties || 0);
+  }
+  return { wins, losses, ties };
+});
+
+const winRateValue = computed(() => {
+  const denominator = recordTotals.value.wins + recordTotals.value.losses;
+  if (!denominator) return null;
+  return (recordTotals.value.wins / denominator) * 100;
+});
+
+const winRateLabel = computed(() => formatPercent(winRateValue.value));
+const recordLabel = computed(() => `${recordTotals.value.wins}-${recordTotals.value.losses}-${recordTotals.value.ties}`);
+
+const finishCounts = computed(() => {
+  const counts = emptyFinishCounts();
+  for (const entry of filteredEntries.value) {
+    applyFinishBucket(counts, entry.placing);
   }
   return counts;
 });
+
+const rankedPlayers = computed<RankedPlayer[]>(() => {
+  const map = new Map<string, RankedPlayer>();
+
+  for (const entry of rankingEntries.value) {
+    const key = entry.playerSlug || entry.player;
+    const existing = map.get(key) ?? {
+      player: entry.player,
+      playerSlug: key,
+      country: entry.country || "",
+      points: 0,
+      events: 0,
+      firstCount: 0,
+      secondCount: 0,
+      top4Count: 0,
+    };
+
+    existing.points += Number(entry.points || 0);
+    existing.events += 1;
+    if (!existing.country && entry.country) existing.country = entry.country;
+
+    if (entry.placing === 1) existing.firstCount += 1;
+    else if (entry.placing === 2) existing.secondCount += 1;
+    else if (entry.placing === 3 || entry.placing === 4) existing.top4Count += 1;
+
+    map.set(key, existing);
+  }
+
+  return Array.from(map.values()).sort((a, b) => {
+    return (
+      b.points - a.points ||
+      b.events - a.events ||
+      b.firstCount - a.firstCount ||
+      b.secondCount - a.secondCount ||
+      b.top4Count - a.top4Count ||
+      compareText(a.player, b.player)
+    );
+  });
+});
+
+const worldRank = computed(() => {
+  const index = rankedPlayers.value.findIndex((entry) => entry.playerSlug === playerSlug.value);
+  return index >= 0 ? index + 1 : null;
+});
+
+const countryRank = computed(() => {
+  if (!primaryCountry.value) return null;
+  const countryPlayers = rankedPlayers.value.filter((entry) => entry.country === primaryCountry.value);
+  const index = countryPlayers.findIndex((entry) => entry.playerSlug === playerSlug.value);
+  return index >= 0 ? index + 1 : null;
+});
+
+const countryRankLabel = computed(() =>
+  ui.value.countryRank(countryLabel(primaryCountry.value), countryRank.value),
+);
+
+const worldRankLabel = computed(() => ui.value.worldRank(worldRank.value));
 
 const topDecks = computed<TopDeckSummary[]>(() => {
   const deckMap = new Map<string, TopDeckSummary>();
 
   for (const entry of filteredEntries.value) {
-    const key = entry.deckId || entry.deckName || "unknown";
+    const key = String(entry.deckId || entry.deckName || "").trim();
+    if (!key) continue;
+
     const existing = deckMap.get(key) ?? {
       key,
-      name: entry.deckName || "Unknown Deck",
+      name: entry.deckName || key,
       events: 0,
       points: 0,
       bestFinish: null,
-      bestFinishLabel: "—",
+      bestFinishLabel: "--",
       iconUrls: (entry.deckIcons || []).map(resolveDeckIconUrl).filter(Boolean),
+      finishCounts: emptyFinishCounts(),
     };
 
     existing.events += 1;
     existing.points += Number(entry.points || 0);
-    if ((existing.iconUrls.length === 0) && entry.deckIcons?.length) {
+    applyFinishBucket(existing.finishCounts, entry.placing);
+
+    if (!existing.iconUrls.length && entry.deckIcons?.length) {
       existing.iconUrls = entry.deckIcons.map(resolveDeckIconUrl).filter(Boolean);
     }
 
@@ -416,7 +674,6 @@ const topDecks = computed<TopDeckSummary[]>(() => {
   }
 
   return Array.from(deckMap.values())
-    .filter((deck) => deck.key !== "unknown")
     .sort((a, b) => {
       return (
         b.points - a.points ||
@@ -429,19 +686,11 @@ const topDecks = computed<TopDeckSummary[]>(() => {
 });
 
 const bestFinishes = computed<FinishRow[]>(() => {
-  return filteredEntries.value
+  const rows = filteredEntries.value
     .filter((entry) => entry.placing != null && Number.isFinite(entry.placing))
-    .sort((a, b) => {
-      return (
-        (a.placing ?? Number.MAX_SAFE_INTEGER) - (b.placing ?? Number.MAX_SAFE_INTEGER) ||
-        (Number(b.tournamentPlayers || 0) - Number(a.tournamentPlayers || 0)) ||
-        b.startMs - a.startMs ||
-        compareText(a.tournamentName, b.tournamentName)
-      );
-    })
-    .slice(0, 50)
     .map((entry) => ({
       key: `${entry.tournamentId}::${entry.player}::${entry.deckId || entry.deckName}`,
+      deckKey: String(entry.deckId || entry.deckName || ""),
       deckName: entry.deckName || "Unknown Deck",
       iconUrls: (entry.deckIcons || []).map(resolveDeckIconUrl).filter(Boolean),
       tournamentName: entry.tournamentName,
@@ -449,8 +698,48 @@ const bestFinishes = computed<FinishRow[]>(() => {
       dateMs: entry.startMs,
       place: entry.placing || 0,
       placeLabel: entry.tournamentPlayers ? `${entry.placing} / ${entry.tournamentPlayers}` : String(entry.placing),
+      points: Number(entry.points || 0),
+      tournamentPlayers: Number(entry.tournamentPlayers || 0),
       listUrl: entry.matchesUrl || "",
     }));
+
+  rows.sort((a, b) => {
+    if (finishSort.value === "latest") {
+      return (
+        b.dateMs - a.dateMs ||
+        a.place - b.place ||
+        b.tournamentPlayers - a.tournamentPlayers ||
+        compareText(a.tournamentName, b.tournamentName)
+      );
+    }
+
+    if (finishSort.value === "field") {
+      return (
+        b.tournamentPlayers - a.tournamentPlayers ||
+        a.place - b.place ||
+        b.dateMs - a.dateMs ||
+        compareText(a.tournamentName, b.tournamentName)
+      );
+    }
+
+    if (finishSort.value === "points") {
+      return (
+        b.points - a.points ||
+        a.place - b.place ||
+        b.dateMs - a.dateMs ||
+        compareText(a.tournamentName, b.tournamentName)
+      );
+    }
+
+    return (
+      a.place - b.place ||
+      b.tournamentPlayers - a.tournamentPlayers ||
+      b.dateMs - a.dateMs ||
+      compareText(a.tournamentName, b.tournamentName)
+    );
+  });
+
+  return rows.slice(0, 50);
 });
 
 onMounted(async () => {
@@ -470,7 +759,7 @@ onMounted(async () => {
 <style scoped>
 .player-profile {
   width: 100%;
-  max-width: 1180px;
+  max-width: 1320px;
   margin: 0 auto;
 }
 
@@ -548,13 +837,22 @@ onMounted(async () => {
   line-height: 1.05;
 }
 
-.playerMeta {
-  margin: 10px 0 0;
-  color: rgba(226, 232, 240, 0.75);
+.rankChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
 }
 
-.divider {
-  margin: 0 8px;
+.rankChip {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(125, 211, 252, 0.16);
+  background: rgba(15, 23, 42, 0.68);
+  color: rgba(226, 232, 240, 0.82);
+  font-size: 12px;
 }
 
 .backLink {
@@ -568,7 +866,7 @@ onMounted(async () => {
 
 .heroGrid {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
   gap: 18px;
 }
 
@@ -585,46 +883,183 @@ onMounted(async () => {
   padding: 18px;
 }
 
-.summaryCards {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.summaryRows {
+  display: flex;
+  flex-direction: column;
   gap: 12px;
 }
 
-.summaryCard {
-  border-radius: 18px;
-  padding: 14px;
-  background: rgba(15, 23, 42, 0.74);
-  border: 1px solid rgba(125, 211, 252, 0.12);
+.summaryRow {
+  display: grid;
+  gap: 12px;
 }
 
-.summaryLabel {
+.summaryRow--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.summaryRow--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.statCard,
+.recordCard,
+.finishCard {
+  border-radius: 18px;
+  border: 1px solid rgba(125, 211, 252, 0.12);
+  background: rgba(15, 23, 42, 0.74);
+}
+
+.statCard {
+  padding: 14px;
+}
+
+.statCard--primary {
+  min-height: 110px;
+}
+
+.statLabel {
   display: block;
   color: rgba(226, 232, 240, 0.72);
   font-size: 12px;
   margin-bottom: 8px;
 }
 
-.summaryValue {
+.statValue {
   color: #fff;
   font-size: clamp(22px, 3vw, 30px);
+}
+
+.recordCard {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 1px minmax(180px, 0.9fr);
+  align-items: center;
+  gap: 18px;
+  padding: 16px;
+}
+
+.recordValue,
+.recordText {
+  color: #fff;
+  font-size: clamp(24px, 3vw, 32px);
+}
+
+.recordHint {
+  margin: 8px 0 0;
+  color: rgba(226, 232, 240, 0.62);
+  font-size: 12px;
+}
+
+.recordSplit {
+  width: 1px;
+  min-height: 64px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.recordRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.finishCard {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  min-height: 112px;
+  padding: 18px 18px 16px;
+  overflow: hidden;
+}
+
+.finishCard__labelGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.finishBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 78px;
+  min-height: 28px;
+  border-radius: 999px;
+  padding: 0 10px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.finishCard .statLabel {
+  margin-bottom: 0;
+}
+
+.finishValue {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 48px;
+  flex: 0 0 auto;
+  color: #fff;
+  font-size: clamp(34px, 4vw, 46px);
+  line-height: 1;
+  text-align: right;
+}
+
+.finishCard--gold {
+  border-color: rgba(250, 204, 21, 0.26);
+  background: linear-gradient(180deg, rgba(94, 63, 10, 0.22), rgba(15, 23, 42, 0.82));
+}
+
+.finishCard--silver {
+  border-color: rgba(226, 232, 240, 0.24);
+  background: linear-gradient(180deg, rgba(71, 85, 105, 0.2), rgba(15, 23, 42, 0.82));
+}
+
+.finishCard--bronze {
+  border-color: rgba(251, 146, 60, 0.26);
+  background: linear-gradient(180deg, rgba(124, 58, 16, 0.22), rgba(15, 23, 42, 0.82));
+}
+
+.finishCard--blue {
+  border-color: rgba(96, 165, 250, 0.24);
+  background: linear-gradient(180deg, rgba(30, 58, 138, 0.18), rgba(15, 23, 42, 0.82));
+}
+
+.finishCard--indigo {
+  border-color: rgba(129, 140, 248, 0.24);
+  background: linear-gradient(180deg, rgba(49, 46, 129, 0.18), rgba(15, 23, 42, 0.82));
+}
+
+.finishCard--slate {
+  border-color: rgba(148, 163, 184, 0.22);
+  background: linear-gradient(180deg, rgba(51, 65, 85, 0.2), rgba(15, 23, 42, 0.82));
 }
 
 .panelHead {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  align-items: baseline;
+  align-items: flex-start;
   margin-bottom: 14px;
 }
 
-.panelHead h2 {
+.panelHead h2,
+.tableHead h2 {
   margin: 0;
   color: #fff;
   font-size: 24px;
 }
 
 .muted {
+  margin: 6px 0 0;
   color: rgba(226, 232, 240, 0.65);
   font-size: 12px;
 }
@@ -646,13 +1081,29 @@ onMounted(async () => {
   padding: 14px;
   background: rgba(15, 23, 42, 0.74);
   border: 1px solid rgba(125, 211, 252, 0.12);
+  text-decoration: none;
+  transition:
+    transform 140ms ease,
+    border-color 140ms ease,
+    background 140ms ease;
+}
+
+.deckCard:hover {
+  transform: translateY(-1px);
+  border-color: rgba(125, 211, 252, 0.28);
+  background: rgba(18, 30, 54, 0.9);
 }
 
 .deckCard__head {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+}
+
+.deckCard__copy {
+  min-width: 0;
+  flex: 1 1 auto;
 }
 
 .deckIcons {
@@ -698,12 +1149,81 @@ onMounted(async () => {
 .deckName {
   color: #fff;
   font-weight: 800;
+  font-size: 18px;
+  line-height: 1.25;
 }
 
 .deckMeta,
 .deckStats {
   color: rgba(226, 232, 240, 0.72);
   font-size: 12px;
+}
+
+.deckMeta {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.deckMetaLabel {
+  color: rgba(226, 232, 240, 0.72);
+}
+
+.deckMetaValue {
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.deckFinishGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.deckFinishPill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  min-height: 34px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.deckFinishPill strong {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.deckFinishPill--gold {
+  background: rgba(250, 204, 21, 0.16);
+}
+
+.deckFinishPill--silver {
+  background: rgba(226, 232, 240, 0.16);
+}
+
+.deckFinishPill--bronze {
+  background: rgba(251, 146, 60, 0.16);
+}
+
+.deckFinishPill--blue {
+  background: rgba(96, 165, 250, 0.16);
+}
+
+.deckFinishPill--indigo {
+  background: rgba(129, 140, 248, 0.16);
+}
+
+.deckFinishPill--slate {
+  background: rgba(148, 163, 184, 0.14);
 }
 
 .deckStats {
@@ -717,6 +1237,35 @@ onMounted(async () => {
   padding: 18px;
 }
 
+.tableHead {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-end;
+  margin-bottom: 14px;
+}
+
+.sortField {
+  width: min(240px, 100%);
+}
+
+.sortField label {
+  display: block;
+  margin-bottom: 6px;
+  color: rgba(226, 232, 240, 0.8);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.sortField select {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(2, 6, 23, 0.45);
+  color: rgba(255, 255, 255, 0.92);
+  padding: 8px 10px;
+}
+
 .tableWrap {
   overflow: auto;
   border-radius: 16px;
@@ -725,7 +1274,7 @@ onMounted(async () => {
 .tbl {
   width: 100%;
   border-collapse: collapse;
-  min-width: 760px;
+  min-width: 780px;
 }
 
 th,
@@ -752,6 +1301,16 @@ td {
   gap: 10px;
 }
 
+.deckCell--link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.deckCell--link:hover {
+  color: #7dd3fc;
+}
+
 .listLink {
   color: #7dd3fc;
   text-decoration: none;
@@ -770,17 +1329,27 @@ td {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 980px) {
   .heroGrid {
     grid-template-columns: 1fr;
   }
 
-  .summaryCards {
+  .summaryRow--three,
+  .deckFinishGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tableHead {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .sortField {
+    width: 100%;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 680px) {
   .hero {
     padding: 16px;
   }
@@ -790,12 +1359,33 @@ td {
     align-items: flex-start;
   }
 
-  .summaryCards {
+  .summaryRow--two,
+  .summaryRow--three {
+    grid-template-columns: 1fr;
+  }
+
+  .finishCard {
+    align-items: flex-end;
+  }
+
+  .recordCard {
+    grid-template-columns: 1fr;
+  }
+
+  .recordSplit {
+    display: none;
+  }
+
+  .recordRight {
+    align-items: flex-start;
+  }
+
+  .deckFinishGrid {
     grid-template-columns: 1fr 1fr;
   }
 
   .tbl {
-    min-width: 620px;
+    min-width: 720px;
   }
 }
 </style>

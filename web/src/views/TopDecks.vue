@@ -8,13 +8,45 @@
             {{ deckSummaryLabel }}
           </p>
         </div>
-
-        <div class="page-status mono">
-          {{ t("loadedData", { loaded: loadedFilteredTournamentCount, total: filteredTournaments.length }) }}
-        </div>
       </header>
 
       <div class="filters">
+        <div class="f">
+          <label>{{ t("players") }}</label>
+          <input
+            v-model.number="filters.minPlayers"
+            type="number"
+            inputmode="numeric"
+            min="0"
+            class="filter-input"
+            :placeholder="t('playersPlaceholder')"
+          />
+          <div class="hint">{{ t("playersHint") }}</div>
+        </div>
+
+        <div class="f">
+          <label>{{ t("time") }}</label>
+          <select v-model="filters.time" class="filter-select">
+            <option
+              v-for="option in timeOptionGroups.base"
+              :key="option.value"
+              :value="option.value"
+            >
+              {{ option.label }}
+            </option>
+            <optgroup v-if="timeOptionGroups.months.length" :label="t('month')">
+              <option
+                v-for="option in timeOptionGroups.months"
+                :key="option.value"
+                :value="option.value"
+              >
+                {{ option.label }}
+              </option>
+            </optgroup>
+          </select>
+          <div class="hint">{{ t("timeHint") }}</div>
+        </div>
+
         <div class="f">
           <label>{{ t("set") }}</label>
           <select v-model="filters.set" class="filter-select">
@@ -45,7 +77,7 @@
       <div class="scope-card">
         <p class="scope-line">
           <strong>{{ t("scope") }}:</strong>
-          {{ scopeSetLabel }} • {{ topCutLabel }}
+          {{ scopeTimeLabel }} • {{ scopeSetLabel }} • {{ topCutLabel }}
         </p>
 
         <p class="scope-line">
@@ -59,24 +91,10 @@
           <strong>{{ t("note") }}:</strong>
           {{ noteText }}
         </p>
-
-        <p class="scope-line mono muted">
-          {{ t("loadingTournamentData", {
-            loaded: loadedFilteredTournamentCount,
-            total: filteredTournaments.length,
-          }) }}
-        </p>
-
-        <p
-          v-if="filteredTournaments.length > 0 && loadedFilteredTournamentCount < filteredTournaments.length"
-          class="scope-line muted"
-        >
-          {{ t("progressiveLoading") }}
-        </p>
       </div>
 
       <div class="table-card">
-        <div class="table-scroll">
+        <div class="table-scroll desktop-table">
           <table class="decks-table">
             <thead>
               <tr>
@@ -213,6 +231,73 @@
           </table>
         </div>
 
+        <div class="mobile-deck-list">
+          <div v-if="displayRows.length > 0" class="mobile-deck-list__items">
+            <article v-for="row in displayRows" :key="`${row.key}-mobile`" class="mobile-deck-card">
+              <div class="mobile-deck-card__top">
+                <span class="mobile-rank mono">#{{ row.baseRank.toLocaleString() }}</span>
+                <span class="tier-pill" :class="`tier-${row.tier.toLowerCase()}`">
+                  {{ row.tier }}
+                </span>
+              </div>
+
+              <RouterLink :to="deckProfileTo(row.key)" class="mobile-deck-card__identity">
+                <div class="deck-platform">
+                  <div class="deck-sprites-row">
+                    <template
+                      v-for="(icon, iconIndex) in row.iconKeys.slice(0, 2)"
+                      :key="`${row.key}-mobile-${icon}-${iconIndex}`"
+                    >
+                      <img
+                        v-if="shouldRenderDeckIcon(row.key, icon, iconIndex)"
+                        class="deck-sprite"
+                        :class="{ 'deck-sprite--second': iconIndex === 1 }"
+                        :src="currentDeckIconSrc(row.key, icon, iconIndex)"
+                        :alt="row.displayName"
+                        loading="lazy"
+                        decoding="async"
+                        draggable="false"
+                        @error="onDeckIconError(row.key, icon, iconIndex)"
+                      />
+                      <span
+                        v-else
+                        class="deck-sprite-fallback"
+                        :class="{ 'deck-sprite-fallback--second': iconIndex === 1 }"
+                        :title="icon"
+                      >
+                        {{ iconBadgeText(icon) }}
+                      </span>
+                    </template>
+                  </div>
+                </div>
+                <div class="mobile-deck-card__copy">
+                  <div class="mobile-deck-card__name">{{ row.displayName }}</div>
+                  <div class="mobile-deck-card__score mono">{{ t("score") }} {{ formatScore(row.score) }}</div>
+                </div>
+              </RouterLink>
+
+              <div class="mobile-deck-card__stats">
+                <div class="mobile-stat">
+                  <span>{{ t("samples") }}</span>
+                  <strong class="mono">{{ row.selectedSamples.toLocaleString() }}</strong>
+                </div>
+                <div class="mobile-stat">
+                  <span>{{ selectedShareHeader }}</span>
+                  <strong class="mono">{{ formatPct(row.topCutShare) }}</strong>
+                </div>
+                <div class="mobile-stat">
+                  <span>{{ t("winPct") }}</span>
+                  <strong class="mono">{{ row.winRate == null ? "--" : formatPct(row.winRate) }}</strong>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div v-else class="empty-state mobile-empty-state">
+            {{ emptyStateMessage }}
+          </div>
+        </div>
+
         <div v-if="sortedRows.length > DEFAULT_VISIBLE_ROWS" class="table-footer">
           <button
             v-if="!showAllRows"
@@ -252,12 +337,10 @@ const BASE_URL = import.meta.env.BASE_URL || "/";
 const DEFAULT_VISIBLE_ROWS = 20;
 const DAY_MS = 24 * 60 * 60 * 1000;
 
-const PRESET_CURRENT_7 = "__current_7__";
-const PRESET_CURRENT_14 = "__current_14__";
-
 type Locale = "zh" | "en";
 type TopCutValue = "all" | "64" | "32" | "16" | "8" | "4" | "2" | "1";
-type SetFilterValue = "" | typeof PRESET_CURRENT_7 | typeof PRESET_CURRENT_14 | string;
+type TimeFilterValue = "all" | "past7" | "prev7" | "past4w" | string;
+type SetFilterValue = "" | string;
 type SortDir = "asc" | "desc";
 
 type SortKey =
@@ -376,7 +459,12 @@ const VERSION_BY_CODE = new Map<string, VersionWindow>(
 const messages = {
   en: {
     pageTitle: "Top Decks",
-    loadedData: "Loaded data {loaded} / {total}",
+    players: "Players",
+    playersPlaceholder: "e.g. 32",
+    playersHint: "Minimum player count",
+    time: "Time",
+    timeHint: "Based on UTC date",
+    month: "Month",
     set: "Set",
     topCut: "Top Cut",
     scope: "Scope",
@@ -386,8 +474,10 @@ const messages = {
     totalSamples: "total samples",
     selectedSamplePool: "selected sample pool",
     loadingTournamentData: "Loading tournament data: {loaded} / {total}",
-    progressiveLoading: "Results update progressively while standings + pairings are loading.",
     all: "All",
+    past7: "Past 7 days",
+    prev7: "Previous 7 days",
+    past4w: "Past 4 weeks",
     top64: "Top 64",
     top32: "Top 32",
     top16: "Top 16",
@@ -396,8 +486,6 @@ const messages = {
     top2: "Top 2",
     winner: "Winner",
     allData: "All data",
-    past7CurrentOnly: "Past 7 days (current set only)",
-    past14CurrentOnly: "Past 14 days (current set only)",
     currentSuffix: "(current)",
     rank: "#",
     pokemon: "Pokémon",
@@ -414,16 +502,19 @@ const messages = {
     noTournaments: "No tournaments match your filters.",
     noDecks: "No decks found for the current filters.",
     allDataScope: "All data",
-    past7Scope: "Past 7 days · {version}",
-    past14Scope: "Past 14 days · {version}",
-    noteBody: "Tier / Score are based on the current set scope; Samples / {shareLabel} / Win % respond to the Top Cut filter.",
+    noteBody: "Score = 40% Top 32 appearances + 50% placing points + 10% Top 32 share. SSS needs a >0.10 lead over the next deck; SS needs >0.05.",
     summaryLabel: "{decks} decks • {tournaments} tournaments",
     loadTournamentsFailed: "Failed to load tournaments: {message}",
     unknown: "Unknown",
   },
   zh: {
     pageTitle: "熱門牌組",
-    loadedData: "已載入資料 {loaded} / {total}",
+    players: "玩家數",
+    playersPlaceholder: "例如 32",
+    playersHint: "最少參賽人數",
+    time: "時間",
+    timeHint: "以 UTC 日期計算",
+    month: "月份",
     set: "版本",
     topCut: "Top Cut",
     scope: "範圍",
@@ -433,8 +524,10 @@ const messages = {
     totalSamples: "總樣本數",
     selectedSamplePool: "目前篩選樣本池",
     loadingTournamentData: "載入賽事資料中：{loaded} / {total}",
-    progressiveLoading: "standings 與 pairings 載入中，結果會逐步更新。",
     all: "全部",
+    past7: "近 7 天",
+    prev7: "前 7 天",
+    past4w: "近 4 週",
     top64: "前 64",
     top32: "前 32",
     top16: "前 16",
@@ -443,8 +536,6 @@ const messages = {
     top2: "前 2",
     winner: "冠軍",
     allData: "全部資料",
-    past7CurrentOnly: "近 7 天（僅目前版本）",
-    past14CurrentOnly: "近 14 天（僅目前版本）",
     currentSuffix: "（目前版本）",
     rank: "#",
     pokemon: "代表寶可夢",
@@ -461,9 +552,7 @@ const messages = {
     noTournaments: "沒有符合目前篩選條件的賽事。",
     noDecks: "目前篩選條件下沒有牌組資料。",
     allDataScope: "全部資料",
-    past7Scope: "近 7 天 · {version}",
-    past14Scope: "近 14 天 · {version}",
-    noteBody: "Tier / Score 依目前版本範圍計算；Samples / {shareLabel} / Win % 會跟著 Top Cut 篩選變動。",
+    noteBody: "分數 = Top 32 出現數 40% + 名次積分 50% + Top 32 佔比 10%。與下一副牌分差 > 0.10 為 SSS，> 0.05 為 SS。",
     summaryLabel: "{decks} 副牌組 • {tournaments} 場賽事",
     loadTournamentsFailed: "載入賽事失敗：{message}",
     unknown: "未知",
@@ -509,7 +598,9 @@ const standingsLoading = reactive<Record<string, boolean>>({});
 const pairingsLoading = reactive<Record<string, boolean>>({});
 
 const filters = reactive({
-  set: PRESET_CURRENT_7 as SetFilterValue,
+  minPlayers: undefined as number | undefined,
+  time: "past4w" as TimeFilterValue,
+  set: inferVersionByStartMs(Date.now())?.code ?? "" as SetFilterValue,
   topCut: "all" as TopCutValue,
 });
 
@@ -665,12 +756,59 @@ async function ensureTournamentDataForIds(ids: string[]) {
   });
 }
 
-function startOfUtcDayMs(ms: number) {
-  const date = new Date(ms);
-  return Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), 0, 0, 0, 0);
-}
-
 const currentVersionWindow = computed(() => inferVersionByStartMs(Date.now()));
+
+const monthOptions = computed<Array<{ value: TimeFilterValue; label: string }>>(() => {
+  const seen = new Set<string>();
+  const items: Array<{ value: TimeFilterValue; label: string }> = [];
+
+  for (const tournament of tournaments.value) {
+    const date = new Date(tournament.startMs);
+    const key = `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, "0")}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    items.push({
+      value: `month:${key}`,
+      label: key,
+    });
+  }
+
+  return items.sort((a, b) => (a.value < b.value ? 1 : -1));
+});
+
+const timeOptionGroups = computed(() => ({
+  base: [
+    { value: "all" as TimeFilterValue, label: t("all") },
+    { value: "past7" as TimeFilterValue, label: t("past7") },
+    { value: "prev7" as TimeFilterValue, label: t("prev7") },
+    { value: "past4w" as TimeFilterValue, label: t("past4w") },
+  ],
+  months: monthOptions.value,
+}));
+
+function inTimeRange(tournament: NormalizedTournament) {
+  if (filters.time === "all") return true;
+
+  const now = Date.now();
+  if (filters.time === "past7") return tournament.startMs >= now - 7 * DAY_MS;
+  if (filters.time === "prev7") {
+    return tournament.startMs < now - 7 * DAY_MS && tournament.startMs >= now - 14 * DAY_MS;
+  }
+  if (filters.time === "past4w") return tournament.startMs >= now - 28 * DAY_MS;
+
+  if (String(filters.time).startsWith("month:")) {
+    const ym = String(filters.time).slice("month:".length);
+    const [yearText, monthText] = ym.split("-");
+    const year = Number(yearText);
+    const month = Number(monthText);
+    if (!year || !month) return true;
+    const start = Date.UTC(year, month - 1, 1, 0, 0, 0, 0);
+    const end = Date.UTC(year, month, 1, 0, 0, 0, 0);
+    return tournament.startMs >= start && tournament.startMs < end;
+  }
+
+  return true;
+}
 
 const topCutOptions = computed<Array<{ value: TopCutValue; label: string }>>(() => [
   { value: "all", label: t("all") },
@@ -698,8 +836,6 @@ function versionDisplayLabel(version: VersionWindow, includeCurrentSuffix = fals
 const setOptions = computed<Array<{ value: SetFilterValue; label: string }>>(() => {
   return [
     { value: "", label: t("allData") },
-    { value: PRESET_CURRENT_7, label: t("past7CurrentOnly") },
-    { value: PRESET_CURRENT_14, label: t("past14CurrentOnly") },
     ...[...VERSION_WINDOWS]
       .reverse()
       .map((version) => ({
@@ -710,30 +846,15 @@ const setOptions = computed<Array<{ value: SetFilterValue; label: string }>>(() 
 });
 
 const filteredTournaments = computed(() => {
-  const list = tournaments.value;
+  return tournaments.value.filter((tournament) => {
+    if ((filters.minPlayers ?? 0) > 0 && Number(tournament.players ?? 0) < Number(filters.minPlayers)) {
+      return false;
+    }
 
-  if (!filters.set) {
-    return list;
-  }
-
-  if (filters.set === PRESET_CURRENT_7 || filters.set === PRESET_CURRENT_14) {
-    const current = currentVersionWindow.value;
-    if (!current) return [];
-
-    const days = filters.set === PRESET_CURRENT_7 ? 7 : 14;
-    const todayUtcStart = startOfUtcDayMs(Date.now());
-    const rollingStartMs = todayUtcStart - (days - 1) * DAY_MS;
-    const effectiveStartMs = Math.max(rollingStartMs, current.startMs);
-
-    return list.filter(
-      (t) =>
-        t.versionCode === current.code &&
-        t.startMs >= effectiveStartMs &&
-        t.startMs < current.endMs,
-    );
-  }
-
-  return list.filter((t) => t.versionCode === filters.set);
+    if (!inTimeRange(tournament)) return false;
+    if (filters.set && tournament.versionCode !== filters.set) return false;
+    return true;
+  });
 });
 
 const filteredTournamentIds = computed(() => filteredTournaments.value.map((t) => t.id));
@@ -749,7 +870,7 @@ watch(
 );
 
 watch(
-  () => `${filters.set}|${filters.topCut}`,
+  () => `${filters.minPlayers ?? ""}|${filters.time}|${filters.set}|${filters.topCut}`,
   () => {
     showAllRows.value = false;
   },
@@ -994,20 +1115,15 @@ function minmaxScale(input: Record<string, number>): Record<string, number> {
   );
 }
 
-function isPerfectScore(score: number) {
-  return Math.abs(score - 1) < 1e-9;
-}
-
 function tierLabel(
   score: number,
   top32SharePct: number,
-  hasAnotherDeckScoreAtLeast09: boolean,
+  nextScoreGap: number,
 ) {
   if (top32SharePct < 0.5) return "F";
 
-  if (isPerfectScore(score)) {
-    return hasAnotherDeckScoreAtLeast09 ? "SS" : "SSS";
-  }
+  if (score >= 0.9 && nextScoreGap > 0.1) return "SSS";
+  if (score >= 0.9 && nextScoreGap > 0.05) return "SS";
 
   if (score >= 0.9) return "S";
   if (score >= 0.8) return "A";
@@ -1417,9 +1533,8 @@ const aggregated = computed(() => {
       );
     })
     .map((row, index, arr) => {
-      const hasAnotherDeckScoreAtLeast09 = arr.some(
-        (other) => other.key !== row.key && other.score >= 0.9,
-      );
+      const nextScore = arr[index + 1]?.score ?? null;
+      const nextScoreGap = nextScore == null ? row.score : row.score - nextScore;
 
       return {
         ...row,
@@ -1427,7 +1542,7 @@ const aggregated = computed(() => {
         tier: tierLabel(
           row.score,
           row.baselineTop32SharePct,
-          hasAnotherDeckScoreAtLeast09,
+          nextScoreGap,
         ),
       };
     });
@@ -1550,26 +1665,16 @@ const selectedShareHeader = computed(() => {
 });
 
 const noteText = computed(() => {
-  return t("noteBody", {
-    shareLabel: selectedShareHeader.value,
-  });
+  return t("noteBody");
+});
+
+const scopeTimeLabel = computed(() => {
+  const option = timeOptionGroups.value.base.find((item) => item.value === filters.time)
+    ?? timeOptionGroups.value.months.find((item) => item.value === filters.time);
+  return option?.label ?? t("all");
 });
 
 const scopeSetLabel = computed(() => {
-  if (filters.set === PRESET_CURRENT_7) {
-    const current = currentVersionWindow.value;
-    return current
-      ? t("past7Scope", { version: current.label })
-      : t("past7CurrentOnly");
-  }
-
-  if (filters.set === PRESET_CURRENT_14) {
-    const current = currentVersionWindow.value;
-    return current
-      ? t("past14Scope", { version: current.label })
-      : t("past14CurrentOnly");
-  }
-
   if (!filters.set) {
     return t("allDataScope");
   }
@@ -1602,10 +1707,7 @@ const emptyStateMessage = computed(() => {
     sortedRows.value.length === 0 &&
     loadedFilteredTournamentCount.value < filteredTournaments.value.length
   ) {
-    return t("loadingTournamentData", {
-      loaded: loadedFilteredTournamentCount.value,
-      total: filteredTournaments.value.length,
-    });
+    return t("loadingTournaments");
   }
 
   if (sortedRows.value.length === 0) {
@@ -1664,7 +1766,7 @@ onMounted(() => {
 
 .filters {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px;
   margin-bottom: 16px;
 }
@@ -1691,6 +1793,13 @@ onMounted(() => {
   color: rgba(255, 255, 255, 0.88);
 }
 
+.hint {
+  margin-top: 6px;
+  color: #97adc8;
+  font-size: 0.76rem;
+}
+
+.filter-input,
 .filter-select {
   width: 100%;
   border-radius: 10px;
@@ -1702,6 +1811,7 @@ onMounted(() => {
   outline: none;
 }
 
+.filter-input:focus,
 .filter-select:focus {
   border-color: rgba(115, 180, 255, 0.7);
   box-shadow: 0 0 0 3px rgba(80, 150, 255, 0.14);
@@ -1729,6 +1839,10 @@ onMounted(() => {
 .table-scroll {
   width: 100%;
   overflow-x: auto;
+}
+
+.mobile-deck-list {
+  display: none;
 }
 
 .decks-table {
@@ -1870,6 +1984,32 @@ onMounted(() => {
   word-break: break-word;
 }
 
+.mobile-deck-card__identity {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.mobile-deck-card__copy {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.mobile-deck-card__name {
+  color: #eef5fb;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.mobile-deck-card__score {
+  margin-top: 4px;
+  color: #9fb3cf;
+  font-size: 0.84rem;
+}
+
 .tier-pill {
   display: inline-flex;
   align-items: center;
@@ -1991,7 +2131,7 @@ onMounted(() => {
     monospace;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1080px) {
   .top-decks-page {
     padding: 16px;
   }
@@ -2002,7 +2142,7 @@ onMounted(() => {
   }
 
   .filters {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .page-title {
@@ -2023,7 +2163,88 @@ onMounted(() => {
   .deck-sprite--second {
     margin-left: -7px;
   }
+}
 
- 
+@media (max-width: 640px) {
+  .filters {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .desktop-table {
+    display: none;
+  }
+
+  .mobile-deck-list {
+    display: block;
+    padding: 14px;
+  }
+
+  .mobile-deck-list__items {
+    display: grid;
+    gap: 12px;
+  }
+
+  .mobile-deck-card {
+    display: grid;
+    gap: 12px;
+    padding: 14px;
+    border-radius: 16px;
+    border: 1px solid rgba(97, 134, 179, 0.18);
+    background: rgba(11, 24, 42, 0.84);
+  }
+
+  .mobile-deck-card__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .mobile-rank {
+    color: #9fc6ff;
+    font-size: 0.9rem;
+  }
+
+  .mobile-deck-card__stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .mobile-stat {
+    display: grid;
+    gap: 4px;
+    padding: 10px;
+    border-radius: 12px;
+    background: rgba(19, 35, 58, 0.92);
+    border: 1px solid rgba(117, 180, 255, 0.12);
+  }
+
+  .mobile-stat span {
+    color: #9fb3cf;
+    font-size: 0.72rem;
+    font-weight: 700;
+  }
+
+  .mobile-stat strong {
+    color: #eef6ff;
+    font-size: 0.92rem;
+  }
+
+  .mobile-empty-state {
+    padding: 10px 0 0 !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .mobile-deck-card__identity {
+    align-items: flex-start;
+  }
+
+  .mobile-deck-card__stats {
+    grid-template-columns: 1fr;
+  }
 }
 </style>

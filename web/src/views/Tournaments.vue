@@ -30,8 +30,9 @@
         </label>
         <select v-model="filters.time">
           <option value="all">{{ isZh ? "全部" : "All" }}</option>
-          <option value="past7">{{ isZh ? "過去一週" : "Past 7 days" }}</option>
-          <option value="past4w">{{ isZh ? "過去一月" : "Past 4 weeks" }}</option>
+          <option value="past7">{{ isZh ? "近 7 天" : "Past 7 days" }}</option>
+          <option value="prev7">{{ isZh ? "前 7 天" : "Previous 7 days" }}</option>
+          <option value="past4w">{{ isZh ? "近 4 週" : "Past 4 weeks" }}</option>
           <optgroup :label="isZh ? '月份' : 'Month'">
             <option v-for="m in monthOptions" :key="m.value" :value="m.value">
               {{ m.label }}
@@ -932,6 +933,7 @@ function inTimeRange(t: TournamentRow) {
   const day = 24 * 60 * 60 * 1000;
 
   if (filters.time === "past7") return t.dateMs >= now - 7 * day;
+  if (filters.time === "prev7") return t.dateMs >= now - 14 * day && t.dateMs < now - 7 * day;
   if (filters.time === "past4w") return t.dateMs >= now - 28 * day;
 
   if (filters.time.startsWith("month:")) {

@@ -19,9 +19,22 @@
           <span class="hint">{{ ui.timeHint }}</span>
         </label>
         <select v-model="filters.time">
-          <option value="all">{{ ui.all }}</option>
-          <option value="past7">{{ ui.past7 }}</option>
-          <option value="past4w">{{ ui.past4w }}</option>
+          <option
+            v-for="option in timeOptionGroups.base"
+            :key="option.value"
+            :value="option.value"
+          >
+            {{ option.label }}
+          </option>
+          <optgroup v-if="timeOptionGroups.months.length" :label="ui.month">
+            <option
+              v-for="option in timeOptionGroups.months"
+              :key="option.value"
+              :value="option.value"
+            >
+              {{ option.label }}
+            </option>
+          </optgroup>
         </select>
       </div>
 
@@ -53,27 +66,30 @@
       <span>{{ ui.rule }}</span>
     </div>
 
-    <div class="tableWrap">
+    <div class="tableWrap desktopTable">
       <table class="tbl">
         <thead>
           <tr>
             <th>#</th>
             <th>{{ ui.player }}</th>
             <th>{{ ui.region }}</th>
+            <th>{{ ui.mostUsedDeck }}</th>
             <th class="num">{{ ui.points }}</th>
             <th class="num">{{ ui.events }}</th>
-            <th class="num">{{ ui.bestFinish }}</th>
+            <th class="num">{{ ui.first }}</th>
+            <th class="num">{{ ui.second }}</th>
+            <th class="num">{{ ui.top4 }}</th>
           </tr>
         </thead>
         <tbody>
           <tr v-if="loading">
-            <td colspan="6" class="empty">{{ ui.loading }}</td>
+            <td colspan="9" class="empty">{{ ui.loading }}</td>
           </tr>
           <tr v-else-if="loadError">
-            <td colspan="6" class="empty">{{ ui.loadError }}</td>
+            <td colspan="9" class="empty">{{ ui.loadError }}</td>
           </tr>
           <tr v-else-if="pagedRows.length === 0">
-            <td colspan="6" class="empty">{{ ui.noData }}</td>
+            <td colspan="9" class="empty">{{ ui.noData }}</td>
           </tr>
           <tr v-for="(row, index) in pagedRows" :key="row.player">
             <td class="muted">{{ (currentPage - 1) * pageSize + index + 1 }}</td>
@@ -95,12 +111,95 @@
               <span v-else class="flag-icon flag-icon--empty"></span>
               <span>{{ countryName(row.country) }}</span>
             </td>
+            <td>
+              <div class="deckIcons deckIcons--small" :title="row.mostUsedDeckName || ui.unknown">
+                <img
+                  v-for="(icon, iconIndex) in row.mostUsedDeckIconUrls"
+                  :key="`${row.player}-${icon}-${iconIndex}`"
+                  :src="icon"
+                  :alt="row.mostUsedDeckName || ui.unknown"
+                  loading="lazy"
+                  decoding="async"
+                  draggable="false"
+                />
+                <span v-if="row.mostUsedDeckIconUrls.length === 0" class="deckFallback mono">--</span>
+              </div>
+            </td>
             <td class="num mono">{{ formatPoints(row.points) }}</td>
             <td class="num mono">{{ row.games }}</td>
-            <td class="num mono">{{ row.bestFinishLabel }}</td>
+            <td class="num mono">{{ row.firstCount }}</td>
+            <td class="num mono">{{ row.secondCount }}</td>
+            <td class="num mono">{{ row.top4Count }}</td>
           </tr>
         </tbody>
       </table>
+    </div>
+
+    <div class="mobileList">
+      <div v-if="loading" class="mobileEmpty">{{ ui.loading }}</div>
+      <div v-else-if="loadError" class="mobileEmpty">{{ ui.loadError }}</div>
+      <div v-else-if="pagedRows.length === 0" class="mobileEmpty">{{ ui.noData }}</div>
+      <article v-for="(row, index) in pagedRows" v-else :key="`${row.player}-mobile`" class="mobileCard">
+        <div class="mobileCard__top">
+          <span class="mobileRank mono">#{{ (currentPage - 1) * pageSize + index + 1 }}</span>
+          <RouterLink
+            class="playerLink mobilePlayer"
+            :to="{ name: `${lang}-player-profile`, params: { playerSlug: row.playerSlug } }"
+          >
+            {{ row.player }}
+          </RouterLink>
+        </div>
+
+        <div class="mobileRegion">
+          <span
+            v-if="row.country"
+            class="flag-icon"
+            :class="`fi fi-${row.country.toLowerCase()}`"
+            aria-hidden="true"
+          ></span>
+          <span v-else class="flag-icon flag-icon--empty"></span>
+          <span>{{ countryName(row.country) }}</span>
+        </div>
+
+        <div class="mobileDeckRow">
+          <span class="mobileLabel">{{ ui.mostUsedDeck }}</span>
+          <div class="deckIcons deckIcons--small" :title="row.mostUsedDeckName || ui.unknown">
+            <img
+              v-for="(icon, iconIndex) in row.mostUsedDeckIconUrls"
+              :key="`${row.player}-mobile-${icon}-${iconIndex}`"
+              :src="icon"
+              :alt="row.mostUsedDeckName || ui.unknown"
+              loading="lazy"
+              decoding="async"
+              draggable="false"
+            />
+            <span v-if="row.mostUsedDeckIconUrls.length === 0" class="deckFallback mono">--</span>
+          </div>
+        </div>
+
+        <div class="mobileStats">
+          <div class="mobileStat">
+            <span class="mobileLabel">{{ ui.points }}</span>
+            <strong class="mono">{{ formatPoints(row.points) }}</strong>
+          </div>
+          <div class="mobileStat">
+            <span class="mobileLabel">{{ ui.events }}</span>
+            <strong class="mono">{{ row.games }}</strong>
+          </div>
+          <div class="mobileStat">
+            <span class="mobileLabel">{{ ui.first }}</span>
+            <strong class="mono">{{ row.firstCount }}</strong>
+          </div>
+          <div class="mobileStat">
+            <span class="mobileLabel">{{ ui.second }}</span>
+            <strong class="mono">{{ row.secondCount }}</strong>
+          </div>
+          <div class="mobileStat">
+            <span class="mobileLabel">{{ ui.top4 }}</span>
+            <strong class="mono">{{ row.top4Count }}</strong>
+          </div>
+        </div>
+      </article>
     </div>
 
     <div class="pagination" v-if="pageCount > 1">
@@ -136,14 +235,35 @@ import {
 countries.registerLocale(enLang);
 countries.registerLocale(zhCnLang);
 
+const deckIconModules = import.meta.glob("../assets/deck-icons/*.{png,webp,svg}", {
+  eager: true,
+  import: "default",
+}) as Record<string, string>;
+
 type PlayerSummary = {
   player: string;
   playerSlug: string;
   country: string;
   points: number;
   games: number;
+  firstCount: number;
+  secondCount: number;
+  top4Count: number;
+  mostUsedDeckName: string;
+  mostUsedDeckIconUrls: string[];
+};
+
+type DeckBucket = {
+  key: string;
+  name: string;
+  events: number;
+  points: number;
   bestFinish: number | null;
-  bestFinishLabel: string;
+  iconUrls: string[];
+};
+
+type PlayerAccumulator = PlayerSummary & {
+  deckBuckets: Map<string, DeckBucket>;
 };
 
 const route = useRoute();
@@ -159,24 +279,29 @@ const ui = computed(() => {
   if (isZh.value) {
     return {
       title: "玩家排名",
-      subtitle: (count: number) => `符合篩選條件的玩家：${count} 名`,
+      subtitle: (count: number) => `符合篩選條件的玩家: ${count} 名`,
       player: "玩家",
       playerPlaceholder: "輸入玩家名稱",
-      time: "日期",
+      time: "時間",
       timeHint: "以 UTC 日期計算",
+      month: "月份",
       set: "版本",
       region: "國家 / 地區",
+      mostUsedDeck: "最常用牌組",
       points: "積分",
       events: "參賽次數",
-      bestFinish: "最佳名次",
+      first: "冠軍",
+      second: "亞軍",
+      top4: "四強",
       topCutWinner: "冠軍",
       all: "全部",
-      past7: "過去一週",
-      past4w: "過去一月",
-      rule: "積分按你的名次規則累計：1=10，2=8，3-4=6，5-8=4，9-16=2，17-32=1。",
-      loading: "正在載入玩家資料…",
+      past7: "近 7 天",
+      prev7: "前 7 天",
+      past4w: "近 4 週",
+      rule: "積分按你的名次規則累計: 1=10, 2=8, 3-4=6, 5-8=4, 9-16=2, 17-32=1。",
+      loading: "正在載入玩家資料...",
       loadError: "玩家資料載入失敗",
-      noData: "目前沒有符合條件的玩家",
+      noData: "沒有符合目前篩選條件的玩家",
       prev: "上一頁",
       next: "下一頁",
       page: (current: number, total: number) => `第 ${current} / ${total} 頁`,
@@ -191,17 +316,22 @@ const ui = computed(() => {
     playerPlaceholder: "Enter player name",
     time: "Time",
     timeHint: "Based on UTC date",
+    month: "Month",
     set: "Set",
     region: "Country / Region",
+    mostUsedDeck: "Most Used Deck",
     points: "Points",
     events: "Events",
-    bestFinish: "Best Finish",
+    first: "1st",
+    second: "2nd",
+    top4: "Top 4",
     topCutWinner: "Winner",
     all: "All",
     past7: "Past 7 days",
+    prev7: "Previous 7 days",
     past4w: "Past 4 weeks",
     rule: "Points follow your placing weights: 1=10, 2=8, 3-4=6, 5-8=4, 9-16=2, 17-32=1.",
-    loading: "Loading player data…",
+    loading: "Loading player data...",
     loadError: "Failed to load player data",
     noData: "No players match the current filters",
     prev: "Previous",
@@ -215,6 +345,9 @@ const entries = ref<DecoratedPlayerEntry[]>([]);
 const loading = ref(true);
 const loadError = ref(false);
 
+const currentVersionCode =
+  [...GAME_VERSIONS].filter((version) => version.releaseMs <= Date.now()).at(-1)?.code ?? "";
+
 const filters = reactive<{
   player: string;
   time: TimeFilterValue;
@@ -223,11 +356,43 @@ const filters = reactive<{
 }>({
   player: "",
   time: "all",
-  set: "",
+  set: currentVersionCode,
   topCut: "",
 });
 
 const setOptions = computed(() => [...GAME_VERSIONS].reverse());
+
+const monthOptions = computed<Array<{ value: TimeFilterValue; label: string }>>(() => {
+  const seen = new Set<string>();
+  const items: Array<{ value: TimeFilterValue; label: string }> = [];
+
+  for (const entry of entries.value) {
+    if (!entry.startMs) continue;
+    const date = new Date(entry.startMs);
+    const key = `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, "0")}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+
+    items.push({
+      value: `month:${key}`,
+      label: isZh.value
+        ? `${date.getUTCFullYear()} 年 ${date.getUTCMonth() + 1} 月`
+        : key,
+    });
+  }
+
+  return items.sort((a, b) => (a.value < b.value ? 1 : -1));
+});
+
+const timeOptionGroups = computed(() => ({
+  base: [
+    { value: "all" as TimeFilterValue, label: ui.value.all },
+    { value: "past7" as TimeFilterValue, label: ui.value.past7 },
+    { value: "prev7" as TimeFilterValue, label: ui.value.prev7 },
+    { value: "past4w" as TimeFilterValue, label: ui.value.past4w },
+  ],
+  months: monthOptions.value,
+}));
 
 function versionLabel(code?: string) {
   if (!code) return ui.value.unknown;
@@ -245,6 +410,17 @@ function formatPoints(value: number) {
   return Number.isInteger(value) ? String(value) : value.toFixed(1);
 }
 
+function resolveDeckIconUrl(key: string) {
+  const target = key.trim().toLowerCase();
+  if (!target) return "";
+  const hit = Object.entries(deckIconModules).find(([path]) =>
+    path.toLowerCase().endsWith(`/${target}.png`) ||
+    path.toLowerCase().endsWith(`/${target}.webp`) ||
+    path.toLowerCase().endsWith(`/${target}.svg`),
+  );
+  return hit?.[1] ?? "";
+}
+
 const filteredEntries = computed(() =>
   filterPlayerEntries(entries.value, {
     playerKeyword: filters.player,
@@ -255,7 +431,7 @@ const filteredEntries = computed(() =>
 );
 
 const rows = computed<PlayerSummary[]>(() => {
-  const map = new Map<string, PlayerSummary>();
+  const map = new Map<string, PlayerAccumulator>();
 
   for (const entry of filteredEntries.value) {
     const existing = map.get(entry.player) ?? {
@@ -264,33 +440,83 @@ const rows = computed<PlayerSummary[]>(() => {
       country: entry.country || "",
       points: 0,
       games: 0,
-      bestFinish: null,
-      bestFinishLabel: "—",
+      firstCount: 0,
+      secondCount: 0,
+      top4Count: 0,
+      mostUsedDeckName: "",
+      mostUsedDeckIconUrls: [],
+      deckBuckets: new Map<string, DeckBucket>(),
     };
 
     existing.points += Number(entry.points || 0);
     existing.games += 1;
     if (!existing.country && entry.country) existing.country = entry.country;
 
-    const placing = entry.placing;
-    if (placing != null && Number.isFinite(placing)) {
-      if (existing.bestFinish == null || placing < existing.bestFinish) {
-        existing.bestFinish = placing;
-        existing.bestFinishLabel = String(placing);
+    if (entry.placing === 1) existing.firstCount += 1;
+    else if (entry.placing === 2) existing.secondCount += 1;
+    else if (entry.placing === 3 || entry.placing === 4) existing.top4Count += 1;
+
+    const deckKey = String(entry.deckId || entry.deckName || "").trim();
+    if (deckKey) {
+      const bucket = existing.deckBuckets.get(deckKey) ?? {
+        key: deckKey,
+        name: String(entry.deckName || deckKey),
+        events: 0,
+        points: 0,
+        bestFinish: null,
+        iconUrls: [],
+      };
+
+      bucket.events += 1;
+      bucket.points += Number(entry.points || 0);
+      if (entry.placing != null && Number.isFinite(entry.placing)) {
+        bucket.bestFinish =
+          bucket.bestFinish == null ? entry.placing : Math.min(bucket.bestFinish, entry.placing);
       }
+      if (bucket.iconUrls.length === 0 && entry.deckIcons?.length) {
+        bucket.iconUrls = entry.deckIcons.map(resolveDeckIconUrl).filter(Boolean);
+      }
+
+      existing.deckBuckets.set(deckKey, bucket);
     }
 
     map.set(entry.player, existing);
   }
 
-  return Array.from(map.values()).sort((a, b) => {
-    return (
-      b.points - a.points ||
-      b.games - a.games ||
-      (a.bestFinish ?? Number.MAX_SAFE_INTEGER) - (b.bestFinish ?? Number.MAX_SAFE_INTEGER) ||
-      compareText(a.player, b.player)
-    );
-  });
+  return Array.from(map.values())
+    .map((player) => {
+      const topDeck = Array.from(player.deckBuckets.values()).sort((a, b) => {
+        return (
+          b.events - a.events ||
+          b.points - a.points ||
+          (a.bestFinish ?? Number.MAX_SAFE_INTEGER) - (b.bestFinish ?? Number.MAX_SAFE_INTEGER) ||
+          compareText(a.name, b.name)
+        );
+      })[0];
+
+      return {
+        player: player.player,
+        playerSlug: player.playerSlug,
+        country: player.country,
+        points: player.points,
+        games: player.games,
+        firstCount: player.firstCount,
+        secondCount: player.secondCount,
+        top4Count: player.top4Count,
+        mostUsedDeckName: topDeck?.name || "",
+        mostUsedDeckIconUrls: topDeck?.iconUrls || [],
+      };
+    })
+    .sort((a, b) => {
+      return (
+        b.points - a.points ||
+        b.games - a.games ||
+        b.firstCount - a.firstCount ||
+        b.secondCount - a.secondCount ||
+        b.top4Count - a.top4Count ||
+        compareText(a.player, b.player)
+      );
+    });
 });
 
 const pageSize = 20;
@@ -332,7 +558,7 @@ onMounted(async () => {
 <style scoped>
 .page {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1380px;
   margin: 0 auto;
 }
 
@@ -410,10 +636,14 @@ onMounted(async () => {
   background: rgba(15, 23, 42, 0.35);
 }
 
+.mobileList {
+  display: none;
+}
+
 .tbl {
   width: 100%;
+  min-width: 980px;
   border-collapse: collapse;
-  min-width: 720px;
 }
 
 th,
@@ -427,6 +657,7 @@ th {
   font-size: 12px;
   color: rgba(226, 232, 240, 0.72);
   font-weight: 700;
+  white-space: nowrap;
 }
 
 td {
@@ -465,6 +696,38 @@ td {
   background: rgba(148, 163, 184, 0.22);
 }
 
+.deckIcons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 28px;
+}
+
+.deckIcons img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.deckIcons--small {
+  min-width: 44px;
+}
+
+.deckFallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  height: 28px;
+  padding: 0 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(226, 232, 240, 0.72);
+  font-size: 11px;
+}
+
 .playerLink {
   color: #ffffff;
   text-decoration: none;
@@ -479,6 +742,78 @@ td {
   text-align: center;
   color: rgba(226, 232, 240, 0.72);
   padding: 22px 12px;
+}
+
+.mobileEmpty {
+  text-align: center;
+  color: rgba(226, 232, 240, 0.72);
+  padding: 22px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.35);
+}
+
+.mobileCard {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.35);
+}
+
+.mobileCard__top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mobileRank {
+  color: rgba(125, 211, 252, 0.9);
+  font-size: 13px;
+}
+
+.mobilePlayer {
+  font-size: 18px;
+}
+
+.mobileRegion,
+.mobileDeckRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.mobileRegion {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.mobileLabel {
+  color: rgba(226, 232, 240, 0.62);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.mobileStats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.mobileStat {
+  display: grid;
+  gap: 4px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(125, 211, 252, 0.12);
+  background: rgba(2, 6, 23, 0.28);
+}
+
+.mobileStat strong {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 16px;
 }
 
 .pagination {
@@ -523,8 +858,17 @@ td {
     grid-template-columns: 1fr;
   }
 
-  .tbl {
-    min-width: 620px;
+  .desktopTable {
+    display: none;
+  }
+
+  .mobileList {
+    display: grid;
+    gap: 12px;
+  }
+
+  .meta {
+    margin-bottom: 14px;
   }
 }
 </style>
