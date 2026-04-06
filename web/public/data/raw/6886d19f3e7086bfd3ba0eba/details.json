@@ -1,0 +1,29 @@
+{
+  "id": "6886d19f3e7086bfd3ba0eba",
+  "game": "POCKET",
+  "format": null,
+  "name": "#3 포켓몬 카드 게임 pocket 한국대회 [대회 총 예산 60만원]",
+  "date": "2025-08-03T05:00:00.000Z",
+  "players": 96,
+  "organizer": {
+    "id": 1971,
+    "name": "Pokémon 한국서버"
+  },
+  "decklists": true,
+  "isPublic": true,
+  "isOnline": true,
+  "phases": [
+    {
+      "phase": 1,
+      "type": "SWISS",
+      "rounds": 7,
+      "mode": "BO1"
+    },
+    {
+      "phase": 2,
+      "type": "DOUBLE_BRACKET",
+      "rounds": 1,
+      "mode": "BO3"
+    }
+  ]
+}

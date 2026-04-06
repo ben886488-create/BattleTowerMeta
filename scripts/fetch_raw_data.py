@@ -1,15 +1,15 @@
 import shutil
-import json, os, datetime, time, random
+import json, os, datetime, time, random, sys
 from urllib.request import urlopen, Request
 from urllib.error import HTTPError, URLError
 
 # ===================== 公共配置 =====================
 BASE = "https://play.limitlesstcg.com/api"
-GAME_ID = os.environ.get("POCKET_GAME_ID", "POCKET")
+GAME_ID = os.environ.get("POCKET_GAME_ID") or "POCKET"
 # 核心优化：新增不限天数开关（True=不限天数，False=按DAYS_BACK过滤）
-UNLIMITED_DAYS = os.environ.get("UNLIMITED_DAYS", "False").lower() == "true"
+UNLIMITED_DAYS = os.environ.get("UNLIMITED_DAYS", "false").lower() == "true"
 # 兼容原有配置：仅当 UNLIMITED_DAYS=False 时生效
-DAYS_BACK = int(os.environ.get("DAYS_BACK", "30"))
+DAYS_BACK = int(os.environ.get("DAYS_BACK", "3"))
 MIN_PLAYERS = int(os.environ.get("MIN_PLAYERS", "64"))
 REQUEST_GAP_SEC = float(os.environ.get("REQUEST_GAP_SEC", 2.0))
 BATCH_SIZE = 10
@@ -22,6 +22,11 @@ _last_request_ts = 0.0
 failed_tournaments = []
 # 赛事列表文件路径（抽离为常量，便于维护）
 TOURNAMENTS_JSON_PATH = "web/public/data/tournaments.json"
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(errors="replace")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(errors="replace")
 
 # ===================== 工具函数 =====================
 def get_json(url: str, api_type: str = "unknown", tid: str = "unknown"):
@@ -140,6 +145,10 @@ def get_phase1(details):
         return None
     return next((p for p in phases if p.get("phase") == 1), phases[0])
 
+def has_banned_cards(details):
+    banned_cards = (details or {}).get("bannedCards")
+    return isinstance(banned_cards, list) and len(banned_cards) > 0
+
 def validate_tournament(summary, details):
     game = str(
         (details or {}).get("game")
@@ -160,6 +169,9 @@ def validate_tournament(summary, details):
     phase1_type = str((phase1 or {}).get("type", "")).upper()
     if phase1_type != "SWISS":
         return False, f"phase1.type={phase1_type or 'EMPTY'}"
+
+    if has_banned_cards(details):
+        return False, f"bannedCards={len((details or {}).get('bannedCards') or [])}"
 
     return True, "ok"
 

@@ -1,4 +1,5 @@
-import json, os, datetime, math
+import json, os, datetime, math, re, hashlib
+from urllib.parse import quote
 
 # ===================== 公共配置（和原代码一致） =====================
 MIN_PLAYERS = int(os.environ.get("MIN_PLAYERS", "32"))
@@ -38,6 +39,10 @@ def get_phase1(details):
         return None
     return next((p for p in phases if p.get("phase") == 1), phases[0])
 
+def has_banned_cards(details):
+    banned_cards = (details or {}).get("bannedCards")
+    return isinstance(banned_cards, list) and len(banned_cards) > 0
+
 def validate_tournament(summary, details):
     summary = summary or {}
     details = details or {}
@@ -60,11 +65,86 @@ def validate_tournament(summary, details):
     if phase1_type != "SWISS":
         return False, f"phase1.type={phase1_type or 'EMPTY'}"
 
+    if has_banned_cards(details):
+        return False, f"bannedCards={len(details.get('bannedCards') or [])}"
+
     return True, "ok"
 
 def get_deck_id_from_standing(standing):
     deck_info = standing.get("deck", {})
     return normalize_deck_id(deck_info.get("id"))
+
+def safe_int(value, default=0):
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return default
+
+def normalize_icon_list(raw):
+    if not isinstance(raw, list):
+        return []
+    return [str(item).strip() for item in raw if str(item).strip()]
+
+def make_player_slug(player_name):
+    text = str(player_name or "").strip()
+    if not text:
+        return ""
+    base = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+    if not base:
+        base = "player"
+    digest = hashlib.sha1(text.encode("utf-8")).hexdigest()[:8]
+    return f"{base}-{digest}"
+
+def build_limitless_matches_url(tournament_id, player_name):
+    tid = str(tournament_id or "").strip()
+    player = str(player_name or "").strip()
+    if not tid or not player:
+        return ""
+    return (
+        f"https://play.limitlesstcg.com/tournament/{quote(tid, safe='')}"
+        f"/player/{quote(player, safe='')}"
+    )
+
+def build_player_entry(summary, details, standing):
+    player_name = str((standing or {}).get("player") or "").strip()
+    if not player_name:
+        return None
+
+    deck_info = (standing or {}).get("deck")
+    deck_info = deck_info if isinstance(deck_info, dict) else {}
+    record = (standing or {}).get("record")
+    record = record if isinstance(record, dict) else {}
+
+    placing_raw = (standing or {}).get("placing")
+    placing = safe_int(placing_raw, None)
+    points = points_by_placing(placing) if placing is not None else 0.0
+
+    tournament_id = str((summary or {}).get("id") or (details or {}).get("id") or "").strip()
+    tournament_date = (details or {}).get("date") or (summary or {}).get("date")
+    tournament_players = safe_int(
+        (details or {}).get("players") or (summary or {}).get("players"),
+        0,
+    ) or None
+
+    return {
+        "player": player_name,
+        "playerSlug": make_player_slug(player_name),
+        "country": (standing or {}).get("country") or "",
+        "points": points,
+        "placing": placing,
+        "tournamentId": tournament_id,
+        "tournamentName": (details or {}).get("name") or (summary or {}).get("name") or tournament_id,
+        "tournamentDate": tournament_date,
+        "tournamentPlayers": tournament_players,
+        "matchesUrl": build_limitless_matches_url(tournament_id, player_name),
+        "deckId": normalize_deck_id(deck_info.get("id")),
+        "deckName": str(deck_info.get("name") or "").strip(),
+        "deckIcons": normalize_icon_list(deck_info.get("icons")),
+        "wins": safe_int(record.get("wins"), 0),
+        "losses": safe_int(record.get("losses"), 0),
+        "ties": safe_int(record.get("ties"), 0),
+        "drop": (standing or {}).get("drop"),
+    }
 
 def points_by_placing(placing):
     """根据排名计算得分（原代码中的逻辑，需和原代码保持一致）"""
@@ -144,6 +224,7 @@ def main():
     player_points = {}
     player_country = {}
     player_games = {}  # 选手出场次数
+    player_entries = []
     
     matchup = {}  # 胜率矩阵
     
@@ -179,15 +260,19 @@ def main():
         
         # 统计：全赛事牌组出场数 + 选手出场次数
         for s in standings:
+            entry = build_player_entry(t, details, s)
+            if entry:
+                player_entries.append(entry)
+                player_name = entry["player"]
+                player_games[player_name] = player_games.get(player_name, 0) + 1
+                if entry["country"] and not player_country.get(player_name):
+                    player_country[player_name] = entry["country"]
+
             deck = get_deck_id_from_standing(s)
             if deck == "unknown":
                 continue
             deck_total_counts[deck] = deck_total_counts.get(deck, 0) + 1
             total_entries_all += 1
-            
-            # 统计选手出场次数
-            player = s["player"]
-            player_games[player] = player_games.get(player, 0) + 1
         
         # 统计：Top32数据
         for s in standings:
@@ -259,7 +344,10 @@ def main():
     print(f"\n===== 已更新tournaments.json =====")
     print(f"原赛事数量：{len(original_tournaments)}")
     print(f"过滤后赛事数量：{len(filtered_tournaments)}")
-    print(f"已移除 {len(original_tournaments) - len(filtered_tournaments)} 条缺失数据的赛事记录")
+    print(
+        f"已移除 {len(excluded_ids)} 场赛事"
+        f"（缺少原始数据：{len(missing_tournament_ids)}，不符合收录条件：{len(invalid_tournament_ids)}）"
+    )
     
     # 4. 筛选有效牌组（使用率≥1%）
     if total_entries_all == 0:
@@ -368,12 +456,14 @@ def main():
     # 10. 保存所有结果文件
     write_json("web/public/data/tier.json", tier_rows)
     write_json("web/public/data/players.json", players)
+    write_json("web/public/data/player_entries.json", player_entries)
     write_json("web/public/data/matchups.json", matchup_out)
     write_json("web/public/data/meta.json", meta)
     
     print("\n统计分析完成！已生成：")
     print("- tier.json（牌组Tier数据）")
     print("- players.json（玩家排名，含出场次数）")
+    print("- player_entries.json（玩家逐场成绩明细）")
     print("- matchups.json（胜率矩阵）")
     print("- meta.json（统计元信息，含缺失赛事ID）")
     print(f"- 已更新 {tournaments_path}（移除缺失数据的赛事）")

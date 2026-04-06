@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-04-06T02:15:49.453360Z",
+  "days_back": 14,
+  "min_players": 32,
+  "usage_threshold": 0.01,
+  "top_cut_n": 32,
+  "tournaments_count": 1344,
+  "total_entries_all": 283547,
+  "top32_total_slots": 41566,
+  "weights": {
+    "data1": 0.4,
+    "data2": 0.5,
+    "data3": 0.1
+  },
+  "tier_thresholds": {
+    "SSS": "score=1.0 and no second deck score>=0.9",
+    "SS": "score=1.0",
+    "S": 0.9,
+    "A": 0.8,
+    "B": 0.7,
+    "C": 0.5,
+    "D": 0.3,
+    "E": 0.1,
+    "F": "<0.1 or top32_share_pct<0.5"
+  },
+  "min_top32_share_pct_for_tiering": 0.5,
+  "missing_tournament_ids": [],
+  "invalid_tournament_ids": [],
+  "invalid_tournament_details": []
+}

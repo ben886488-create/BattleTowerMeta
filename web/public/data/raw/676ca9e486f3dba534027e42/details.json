@@ -1,0 +1,29 @@
+{
+  "id": "676ca9e486f3dba534027e42",
+  "game": "POCKET",
+  "format": null,
+  "name": "🏆 포켓 케이리그 🇰🇷 (시범대회)",
+  "date": "2025-01-04T05:00:00.000Z",
+  "players": 84,
+  "organizer": {
+    "id": 2092,
+    "name": "KR Ranking"
+  },
+  "decklists": true,
+  "isPublic": true,
+  "isOnline": true,
+  "phases": [
+    {
+      "phase": 1,
+      "type": "SWISS",
+      "rounds": 6,
+      "mode": "BO3"
+    },
+    {
+      "phase": 2,
+      "type": "SINGLE_BRACKET",
+      "rounds": 1,
+      "mode": "BO3"
+    }
+  ]
+}

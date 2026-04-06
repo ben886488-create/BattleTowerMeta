@@ -10,7 +10,6 @@ permissions:
 
 jobs:
   build:
-    if: false
     runs-on: ubuntu-latest
 
     steps:
@@ -24,17 +23,16 @@ jobs:
 
       - name: Run fetch and build data
         env:
-          POCKET_GAME_ID: ${{ secrets.POCKET_GAME_ID }}
-          UNLIMITED_DAYS: "false"
+          POCKET_GAME_ID: "POCKET"
+          PYTHONUTF8: "1"
+          UNLIMITED_DAYS: "true"
           DAYS_BACK: "30"
           MIN_PLAYERS: "64"
           FULL_REBUILD: "false"
         run: |
           set -e
           python scripts/fetch_raw_data.py
-          python scripts/process_data.py
-          python scripts/update_tournament.py
-          python scripts/extract_tournament_players.py
+          python scripts/process_data.py    
 
       - name: Setup Node
         uses: actions/setup-node@v4
