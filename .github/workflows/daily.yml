@@ -27,13 +27,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          lfs: true
 
       - name: Setup Python
+        if: github.event_name != 'push'
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Run fetch and build data
+        if: github.event_name != 'push'
         env:
           POCKET_GAME_ID: "POCKET"
           PYTHONUTF8: "1"
@@ -72,12 +76,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-      - name: Commit and push (data + docs)
-        run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-
-          git add -A
-          git commit -m "daily update: data + site" || exit 0
-          git push
