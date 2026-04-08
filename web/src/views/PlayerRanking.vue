@@ -215,9 +215,6 @@
 import { computed, onMounted, reactive, ref, shallowRef, watch } from "vue";
 import { useRoute } from "vue-router";
 import "flag-icons/css/flag-icons.min.css";
-import countries from "i18n-iso-countries";
-import enLang from "i18n-iso-countries/langs/en.json";
-import zhCnLang from "i18n-iso-countries/langs/zh.json";
 import {
   GAME_VERSIONS,
   VERSION_BY_CODE,
@@ -228,9 +225,7 @@ import {
   type TimeFilterValue,
   type TopCutFilter,
 } from "../lib/playerEntries";
-
-countries.registerLocale(enLang);
-countries.registerLocale(zhCnLang);
+import { getCountryDisplayName } from "../lib/countryNames";
 
 const deckIconModules = import.meta.glob("../assets/deck-icons/*.{png,webp,svg}", {
   eager: true,
@@ -408,8 +403,7 @@ function versionLabel(code?: string) {
 }
 
 function countryName(code?: string) {
-  if (!code) return ui.value.unknown;
-  return countries.getName(code, isZh.value ? "zh" : "en", { select: "official" }) || code;
+  return getCountryDisplayName(code, isZh.value ? "zh" : "en", ui.value.unknown);
 }
 
 function formatPoints(value: number) {

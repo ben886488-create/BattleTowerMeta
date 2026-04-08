@@ -255,9 +255,6 @@
 import { computed, onMounted, ref, shallowRef } from "vue";
 import { useRoute } from "vue-router";
 import "flag-icons/css/flag-icons.min.css";
-import countries from "i18n-iso-countries";
-import enLang from "i18n-iso-countries/langs/en.json";
-import zhCnLang from "i18n-iso-countries/langs/zh.json";
 import {
   GAME_VERSIONS,
   VERSION_BY_CODE,
@@ -265,10 +262,8 @@ import {
   loadPlayerEntries,
   type DecoratedPlayerEntry,
 } from "../lib/playerEntries";
+import { getCountryDisplayName } from "../lib/countryNames";
 import { getLocalizedDeckName } from "../assets/pokemonNames";
-
-countries.registerLocale(enLang);
-countries.registerLocale(zhCnLang);
 
 const deckIconModules = import.meta.glob("../assets/deck-icons/*.{png,webp,svg}", {
   eager: true,
@@ -518,8 +513,7 @@ function versionLabel(code?: string) {
 }
 
 function countryLabel(code?: string) {
-  if (!code) return ui.value.unknown;
-  return countries.getName(code, isZh.value ? "zh" : "en", { select: "official" }) || code;
+  return getCountryDisplayName(code, isZh.value ? "zh" : "en", ui.value.unknown);
 }
 
 function deckProfileTo(deckKey: string) {
