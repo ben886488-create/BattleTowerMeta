@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: "0 22 * * *" # 北京时间每天早上 6 点运行 每天 UTC 22:00
+    - cron: "0 22 * * *" # Hong Kong time 06:00 daily (UTC 22:00)
   workflow_dispatch:
 
 permissions:
@@ -49,7 +49,7 @@ jobs:
           set -e
           python scripts/fetch_raw_data.py
           python scripts/process_data.py
-          python scripts/update_tournament.py
+          python scripts/build_tournament_pages.py
           python scripts/extract_tournament_players.py
 
       - name: Setup Node
