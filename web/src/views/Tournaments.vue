@@ -13,7 +13,6 @@
     <div class="filters">
       <div class="f">
         <label>{{ isZh ? "玩家數" : "Players " }}
-          <span class="hint">{{ isZh ? "多於或等於（>=）" : "More than or equal to (>=)" }}</span>
         </label>
         <input
           v-model.number="filters.minPlayers"
@@ -26,7 +25,6 @@
 
       <div class="f">
         <label>{{ isZh ? "日期" : "Time" }}
-          <span class="hint">{{ isZh ? "以 UTC 日期計算" : "Based on UTC date" }}</span>
         </label>
         <select v-model="filters.time">
           <option value="all">{{ isZh ? "全部" : "All" }}</option>
@@ -49,7 +47,6 @@
             {{ versionLabel(s) }}
           </option>
         </select>
-        <div class="hint">{{ isZh ? " " : " " }}</div>
       </div>
 
       <div class="f">
@@ -60,7 +57,6 @@
           <option value="BO3">BO3</option>
           <option value="Other">Other</option>
         </select>
-        <div class="hint">{{ isZh ? " " : " " }}</div>
       </div>
 
       

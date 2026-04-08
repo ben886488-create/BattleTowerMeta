@@ -14,10 +14,7 @@
       </div>
 
       <div class="f">
-        <label>
-          {{ ui.time }}
-          <span class="hint">{{ ui.timeHint }}</span>
-        </label>
+        <label>{{ ui.time }}</label>
         <select v-model="filters.time">
           <option
             v-for="option in timeOptionGroups.base"
@@ -215,7 +212,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, reactive, ref, watch } from "vue";
+import { computed, onMounted, reactive, ref, shallowRef, watch } from "vue";
 import { useRoute } from "vue-router";
 import "flag-icons/css/flag-icons.min.css";
 import countries from "i18n-iso-countries";
@@ -239,6 +236,17 @@ const deckIconModules = import.meta.glob("../assets/deck-icons/*.{png,webp,svg}"
   eager: true,
   import: "default",
 }) as Record<string, string>;
+
+const deckIconIndex: Record<string, string> = (() => {
+  const index: Record<string, string> = {};
+  for (const [path, url] of Object.entries(deckIconModules)) {
+    const key = path.split("/").pop()?.replace(/\.[^.]+$/, "").toLowerCase() ?? "";
+    if (key && !index[key]) {
+      index[key] = url;
+    }
+  }
+  return index;
+})();
 
 type PlayerSummary = {
   player: string;
@@ -283,7 +291,6 @@ const ui = computed(() => {
       player: "玩家",
       playerPlaceholder: "輸入玩家名稱",
       time: "時間",
-      timeHint: "以 UTC 日期計算",
       month: "月份",
       set: "版本",
       region: "國家 / 地區",
@@ -298,7 +305,7 @@ const ui = computed(() => {
       past7: "近 7 天",
       prev7: "前 7 天",
       past4w: "近 4 週",
-      rule: "積分按你的名次規則累計: 1=10, 2=8, 3-4=6, 5-8=4, 9-16=2, 17-32=1。",
+      rule: "積分按你的名次規則累計: 第1名=10, 第2名=8, 第3-4名=6, 第5-8名=4, 第9-16名=2, 第17-32名=1。",
       loading: "正在載入玩家資料...",
       loadError: "玩家資料載入失敗",
       noData: "沒有符合目前篩選條件的玩家",
@@ -315,7 +322,6 @@ const ui = computed(() => {
     player: "Player",
     playerPlaceholder: "Enter player name",
     time: "Time",
-    timeHint: "Based on UTC date",
     month: "Month",
     set: "Set",
     region: "Country / Region",
@@ -330,7 +336,7 @@ const ui = computed(() => {
     past7: "Past 7 days",
     prev7: "Previous 7 days",
     past4w: "Past 4 weeks",
-    rule: "Points follow your placing weights: 1=10, 2=8, 3-4=6, 5-8=4, 9-16=2, 17-32=1.",
+    rule: "Points follow your placing weights: 1st=10, 2nd=8, 3rd-4th=6, 5th-8th=4, 9th-16th=2, 17th-32nd=1.",
     loading: "Loading player data...",
     loadError: "Failed to load player data",
     noData: "No players match the current filters",
@@ -341,7 +347,7 @@ const ui = computed(() => {
   };
 });
 
-const entries = ref<DecoratedPlayerEntry[]>([]);
+const entries = shallowRef<DecoratedPlayerEntry[]>([]);
 const loading = ref(true);
 const loadError = ref(false);
 
@@ -413,12 +419,7 @@ function formatPoints(value: number) {
 function resolveDeckIconUrl(key: string) {
   const target = key.trim().toLowerCase();
   if (!target) return "";
-  const hit = Object.entries(deckIconModules).find(([path]) =>
-    path.toLowerCase().endsWith(`/${target}.png`) ||
-    path.toLowerCase().endsWith(`/${target}.webp`) ||
-    path.toLowerCase().endsWith(`/${target}.svg`),
-  );
-  return hit?.[1] ?? "";
+  return deckIconIndex[target] ?? "";
 }
 
 const filteredEntries = computed(() =>
@@ -558,7 +559,7 @@ onMounted(async () => {
 <style scoped>
 .page {
   width: 100%;
-  max-width: 1380px;
+  max-width: 1120px;
   margin: 0 auto;
 }
 
@@ -642,7 +643,7 @@ onMounted(async () => {
 
 .tbl {
   width: 100%;
-  min-width: 980px;
+  min-width: 860px;
   border-collapse: collapse;
 }
 

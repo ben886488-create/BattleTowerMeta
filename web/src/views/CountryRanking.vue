@@ -9,10 +9,7 @@
 
     <div class="filters">
       <div class="f">
-        <label>
-          {{ ui.time }}
-          <span class="hint">{{ ui.timeHint }}</span>
-        </label>
+        <label>{{ ui.time }}</label>
         <select v-model="filters.time">
           <option
             v-for="option in timeOptionGroups.base"
@@ -267,7 +264,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, reactive, ref, watch } from "vue";
+import { computed, onMounted, reactive, ref, shallowRef, watch } from "vue";
 import { useRoute } from "vue-router";
 import "flag-icons/css/flag-icons.min.css";
 import countries from "i18n-iso-countries";
@@ -318,7 +315,6 @@ const ui = computed(() => {
       title: "國家 / 地區玩家排名",
       subtitle: (count: number) => `符合篩選條件的國家 / 地區: ${count} 個`,
       time: "時間",
-      timeHint: "以 UTC 日期計算",
       month: "月份",
       set: "版本",
       all: "全部",
@@ -349,7 +345,6 @@ const ui = computed(() => {
     title: "Country / Region Ranking",
     subtitle: (count: number) => `${count} countries / regions match the current filters`,
     time: "Time",
-    timeHint: "Based on UTC date",
     month: "Month",
     set: "Set",
     all: "All",
@@ -376,7 +371,7 @@ const ui = computed(() => {
   };
 });
 
-const entries = ref<DecoratedPlayerEntry[]>([]);
+const entries = shallowRef<DecoratedPlayerEntry[]>([]);
 const loading = ref(true);
 const loadError = ref(false);
 

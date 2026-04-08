@@ -12,14 +12,28 @@ create table if not exists public.profiles (
 create table if not exists public.rank_logs (
   id uuid primary key default gen_random_uuid(),
   user_id uuid not null references public.profiles(id) on delete cascade,
+  player_deck text,
   opponent_deck text not null,
   result text not null check (result in ('win', 'loss', 'draw')),
   queue_type text not null default 'Ranked',
   first_player boolean,
   notes text,
   rank_tier text,
+  version_code text,
   created_at timestamptz not null default now()
 );
+
+alter table public.rank_logs add column if not exists player_deck text;
+alter table public.rank_logs add column if not exists version_code text;
+
+create index if not exists rank_logs_user_created_at_idx
+  on public.rank_logs (user_id, created_at desc);
+
+create index if not exists rank_logs_matchup_idx
+  on public.rank_logs (user_id, player_deck, opponent_deck);
+
+create index if not exists rank_logs_version_idx
+  on public.rank_logs (version_code);
 
 create table if not exists public.trade_posts (
   id uuid primary key default gen_random_uuid(),
@@ -39,6 +53,43 @@ create table if not exists public.deck_discussions (
   body text not null,
   created_at timestamptz not null default now()
 );
+
+create or replace view public.rank_matchup_rollups as
+select
+  rl.user_id,
+  p.handle,
+  p.display_name,
+  p.country_code,
+  coalesce(nullif(rl.version_code, ''), 'all') as version_code,
+  rl.queue_type,
+  coalesce(nullif(rl.player_deck, ''), 'Unknown deck') as player_deck,
+  coalesce(nullif(rl.opponent_deck, ''), 'Unknown deck') as opponent_deck,
+  count(*) filter (where rl.result = 'win')::int as wins,
+  count(*) filter (where rl.result = 'loss')::int as losses,
+  count(*) filter (where rl.result = 'draw')::int as draws,
+  count(*)::int as games,
+  case
+    when count(*) filter (where rl.result in ('win', 'loss')) > 0 then
+      round(
+        (count(*) filter (where rl.result = 'win'))::numeric
+        / (count(*) filter (where rl.result in ('win', 'loss'))),
+        4
+      )
+    else null
+  end as win_rate,
+  max(rl.created_at) as last_logged_at
+from public.rank_logs rl
+join public.profiles p on p.id = rl.user_id
+where nullif(rl.player_deck, '') is not null
+group by
+  rl.user_id,
+  p.handle,
+  p.display_name,
+  p.country_code,
+  coalesce(nullif(rl.version_code, ''), 'all'),
+  rl.queue_type,
+  coalesce(nullif(rl.player_deck, ''), 'Unknown deck'),
+  coalesce(nullif(rl.opponent_deck, ''), 'Unknown deck');
 
 alter table public.profiles enable row level security;
 alter table public.rank_logs enable row level security;

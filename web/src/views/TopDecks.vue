@@ -21,7 +21,6 @@
             class="filter-input"
             :placeholder="t('playersPlaceholder')"
           />
-          <div class="hint">{{ t("playersHint") }}</div>
         </div>
 
         <div class="f">
@@ -44,7 +43,6 @@
               </option>
             </optgroup>
           </select>
-          <div class="hint">{{ t("timeHint") }}</div>
         </div>
 
         <div class="f">
@@ -77,14 +75,14 @@
       <div class="scope-card">
         <p class="scope-line">
           <strong>{{ t("scope") }}:</strong>
-          {{ scopeTimeLabel }} • {{ scopeSetLabel }} • {{ topCutLabel }}
+          {{ scopeTimeLabel }} / {{ scopeSetLabel }} / {{ topCutLabel }}
         </p>
 
         <p class="scope-line">
           <strong>{{ t("stats") }}:</strong>
           {{ filteredTournaments.length.toLocaleString() }} {{ t("tournamentsUnit") }}
-          • {{ aggregated.totalAllSamples.toLocaleString() }} {{ t("totalSamples") }}
-          • {{ aggregated.totalSelectedSamples.toLocaleString() }} {{ t("selectedSamplePool") }}
+          / {{ aggregated.totalAllSamples.toLocaleString() }} {{ t("totalSamples") }}
+          / {{ aggregated.totalSelectedSamples.toLocaleString() }} {{ t("selectedSamplePool") }}
         </p>
 
         <p class="scope-line">
@@ -217,7 +215,7 @@
                 <td class="mono">{{ formatScore(row.score) }}</td>
                 <td class="mono">{{ row.selectedSamples.toLocaleString() }}</td>
                 <td class="mono">{{ formatPct(row.topCutShare) }}</td>
-                <td class="mono">{{ row.winRate == null ? "—" : formatPct(row.winRate) }}</td>
+                <td class="mono">{{ row.winRate == null ? "-" : formatPct(row.winRate) }}</td>
               </tr>
             </tbody>
 
@@ -328,12 +326,18 @@ import {
   onMounted,
   reactive,
   ref,
+  shallowRef,
   watch,
 } from "vue";
 import { useRoute } from "vue-router";
-import { getLocalizedDeckNameFromIconKeys } from "../assets/pokemonNames";
+import { getLocalizedDeckName, getLocalizedDeckNameFromIconKeys } from "../assets/pokemonNames";
+import { resolveDeckTier } from "../lib/deckTier";
+import {
+  loadTournamentList,
+  loadTournamentPairings,
+  loadTournamentStandings,
+} from "../lib/publicData";
 
-const BASE_URL = import.meta.env.BASE_URL || "/";
 const DEFAULT_VISIBLE_ROWS = 20;
 const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -461,9 +465,7 @@ const messages = {
     pageTitle: "Top Decks",
     players: "Players",
     playersPlaceholder: "e.g. 32",
-    playersHint: "Minimum player count",
     time: "Time",
-    timeHint: "Based on UTC date",
     month: "Month",
     set: "Set",
     topCut: "Top Cut",
@@ -488,12 +490,12 @@ const messages = {
     allData: "All data",
     currentSuffix: "(current)",
     rank: "#",
-    pokemon: "Pokémon",
+    pokemon: "Pok\u00e9mon",
     deckName: "Deck Name",
     tier: "Tier",
     score: "Score",
     samples: "Samples",
-    fieldPct: "Field %",
+    fieldPct: "Share %",
     topCutPct: "Top Cut %",
     winPct: "Win %",
     showAll: "Show all ({count})",
@@ -502,60 +504,58 @@ const messages = {
     noTournaments: "No tournaments match your filters.",
     noDecks: "No decks found for the current filters.",
     allDataScope: "All data",
-    noteBody: "Score = 40% Top 32 appearances + 50% placing points + 10% Top 32 share. SSS needs a >0.10 lead over the next deck; SS needs >0.05.",
-    summaryLabel: "{decks} decks • {tournaments} tournaments",
+    noteBody: "Tier rules: <=0.10 F, <=0.30 E, <=0.50 D, <=0.70 C, <=0.80 B, <=0.90 A, >0.90 S. Only the #1 S-tier deck can be promoted: a >0.05 lead over #2 becomes SS, and >0.10 becomes SSS.",
+    summaryLabel: "{decks} decks / {tournaments} tournaments",
     loadTournamentsFailed: "Failed to load tournaments: {message}",
     unknown: "Unknown",
   },
   zh: {
-    pageTitle: "熱門牌組",
-    players: "玩家數",
-    playersPlaceholder: "例如 32",
-    playersHint: "最少參賽人數",
-    time: "時間",
-    timeHint: "以 UTC 日期計算",
-    month: "月份",
-    set: "版本",
+    pageTitle: "\u71b1\u9580\u724c\u7d44",
+    players: "\u73a9\u5bb6\u6578",
+    playersPlaceholder: "\u4f8b\u5982 32",
+    time: "\u6642\u9593",
+    month: "\u6708\u4efd",
+    set: "\u7248\u672c",
     topCut: "Top Cut",
-    scope: "範圍",
-    stats: "統計",
-    note: "說明",
-    tournamentsUnit: "場賽事",
-    totalSamples: "總樣本數",
-    selectedSamplePool: "目前篩選樣本池",
-    loadingTournamentData: "載入賽事資料中：{loaded} / {total}",
-    all: "全部",
-    past7: "近 7 天",
-    prev7: "前 7 天",
-    past4w: "近 4 週",
-    top64: "前 64",
-    top32: "前 32",
-    top16: "前 16",
-    top8: "前 8",
-    top4: "前 4",
-    top2: "前 2",
-    winner: "冠軍",
-    allData: "全部資料",
-    currentSuffix: "（目前版本）",
+    scope: "\u7bc4\u570d",
+    stats: "\u7d71\u8a08",
+    note: "\u8aaa\u660e",
+    tournamentsUnit: "\u5834\u8cfd\u4e8b",
+    totalSamples: "\u7e3d\u6a23\u672c\u6578",
+    selectedSamplePool: "\u76ee\u524d\u7be9\u9078\u6a23\u672c\u6c60",
+    loadingTournamentData: "\u8f09\u5165\u8cfd\u4e8b\u8cc7\u6599\u4e2d\uff1a{loaded} / {total}",
+    all: "\u5168\u90e8",
+    past7: "\u8fd1 7 \u5929",
+    prev7: "\u524d 7 \u5929",
+    past4w: "\u8fd1 4 \u9031",
+    top64: "\u524d 64",
+    top32: "\u524d 32",
+    top16: "\u524d 16",
+    top8: "\u524d 8",
+    top4: "\u524d 4",
+    top2: "\u524d 2",
+    winner: "\u51a0\u8ecd",
+    allData: "\u5168\u90e8\u8cc7\u6599",
+    currentSuffix: "\uff08\u76ee\u524d\u7248\u672c\uff09",
     rank: "#",
-    pokemon: "代表寶可夢",
-    deckName: "牌組名稱",
+    pokemon: "\u4ee3\u8868\u5bf6\u53ef\u5922",
+    deckName: "\u724c\u7d44\u540d\u7a31",
     tier: "Tier",
-    score: "分數",
-    samples: "樣本數",
-    fieldPct: "場域占比",
-    topCutPct: "Top Cut 占比",
-    winPct: "勝率",
-    showAll: "顯示全部（{count}）",
-    showLess: "顯示較少",
-    loadingTournaments: "載入賽事中...",
-    noTournaments: "沒有符合目前篩選條件的賽事。",
-    noDecks: "目前篩選條件下沒有牌組資料。",
-    allDataScope: "全部資料",
-    noteBody: "分數 = Top 32 出現數 40% + 名次積分 50% + Top 32 佔比 10%。與下一副牌分差 > 0.10 為 SSS，> 0.05 為 SS。",
-    summaryLabel: "{decks} 副牌組 • {tournaments} 場賽事",
-    loadTournamentsFailed: "載入賽事失敗：{message}",
-    unknown: "未知",
+    score: "\u5206\u6578",
+    samples: "\u6a23\u672c\u6578",
+    fieldPct: "\u4f7f\u7528\u7387",
+    topCutPct: "Top Cut \u5360\u6bd4",
+    winPct: "\u52dd\u7387",
+    showAll: "\u986f\u793a\u5168\u90e8\uff08{count}\uff09",
+    showLess: "\u986f\u793a\u8f03\u5c11",
+    loadingTournaments: "\u8f09\u5165\u8cfd\u4e8b\u4e2d...",
+    noTournaments: "\u6c92\u6709\u7b26\u5408\u76ee\u524d\u7be9\u9078\u689d\u4ef6\u7684\u8cfd\u4e8b\u3002",
+    noDecks: "\u76ee\u524d\u7be9\u9078\u689d\u4ef6\u4e0b\u6c92\u6709\u724c\u7d44\u8cc7\u6599\u3002",
+    allDataScope: "\u5168\u90e8\u8cc7\u6599",
+    noteBody: "\u8a55\u7d1a\u898f\u5247\uff1a<=0.10 \u70ba F\u3001<=0.30 \u70ba E\u3001<=0.50 \u70ba D\u3001<=0.70 \u70ba C\u3001<=0.80 \u70ba B\u3001<=0.90 \u70ba A\u3001>0.90 \u70ba S\uff1b\u53ea\u6709\u699c\u9996\u7684 S \u7d1a\u724c\u7d44\u6703\u518d\u5347\u7d1a\uff0c\u8207\u7b2c 2 \u540d\u5206\u5dee >0.05 \u70ba SS\uff0c>0.10 \u70ba SSS\u3002",
+    summaryLabel: "{decks} \u526f\u724c\u7d44 / {tournaments} \u5834\u8cfd\u4e8b",
+    loadTournamentsFailed: "\u8f09\u5165\u8cfd\u4e8b\u5931\u6557\uff1a{message}",
+    unknown: "\u672a\u77e5",
   },
 } as const;
 
@@ -587,7 +587,7 @@ function deckProfileTo(deckKey: string) {
   };
 }
 
-const tournaments = ref<NormalizedTournament[]>([]);
+const tournaments = shallowRef<NormalizedTournament[]>([]);
 const loadingTournaments = ref(true);
 const tournamentsError = ref("");
 
@@ -607,30 +607,6 @@ const filters = reactive({
 const sortKey = ref<SortKey>("baseRank");
 const sortDir = ref<SortDir>("asc");
 const showAllRows = ref(false);
-
-function dataUrl(path: string) {
-  return `${BASE_URL}${path}`;
-}
-
-function tournamentsUrl() {
-  return dataUrl("data/tournaments.json");
-}
-
-function standingsUrl(id: string) {
-  return dataUrl(`data/raw/${id}/standings.json`);
-}
-
-function pairingsUrl(id: string) {
-  return dataUrl(`data/raw/${id}/pairings.json`);
-}
-
-async function fetchJson<T>(url: string): Promise<T> {
-  const response = await fetch(url, { cache: "no-store" });
-  if (!response.ok) {
-    throw new Error(`Failed to fetch ${url} (${response.status})`);
-  }
-  return response.json() as Promise<T>;
-}
 
 function parseMs(value: unknown): number {
   const ms = Date.parse(String(value ?? ""));
@@ -673,7 +649,7 @@ async function loadTournaments() {
   tournamentsError.value = "";
 
   try {
-    const rows = await fetchJson<TournamentListItem[]>(tournamentsUrl());
+    const rows = await loadTournamentList<TournamentListItem[]>();
     const dedup = new Map<string, NormalizedTournament>();
 
     for (const row of rows ?? []) {
@@ -733,7 +709,7 @@ async function ensureTournamentDataForIds(ids: string[]) {
     if (!hasStandings(id) && !standingsLoading[id]) {
       standingsLoading[id] = true;
       try {
-        const rows = await fetchJson<StandingRow[]>(standingsUrl(id));
+        const rows = await loadTournamentStandings<StandingRow[]>(id);
         standingsCache[id] = Array.isArray(rows) ? rows : [];
       } catch {
         standingsCache[id] = [];
@@ -745,7 +721,7 @@ async function ensureTournamentDataForIds(ids: string[]) {
     if (!hasPairings(id) && !pairingsLoading[id]) {
       pairingsLoading[id] = true;
       try {
-        const rows = await fetchJson<PairingRow[]>(pairingsUrl(id));
+        const rows = await loadTournamentPairings<PairingRow[]>(id);
         pairingsCache[id] = Array.isArray(rows) ? rows : [];
       } catch {
         pairingsCache[id] = [];
@@ -1115,23 +1091,8 @@ function minmaxScale(input: Record<string, number>): Record<string, number> {
   );
 }
 
-function tierLabel(
-  score: number,
-  top32SharePct: number,
-  nextScoreGap: number,
-) {
-  if (top32SharePct < 0.5) return "F";
-
-  if (score >= 0.9 && nextScoreGap > 0.1) return "SSS";
-  if (score >= 0.9 && nextScoreGap > 0.05) return "SS";
-
-  if (score >= 0.9) return "S";
-  if (score >= 0.8) return "A";
-  if (score >= 0.7) return "B";
-  if (score >= 0.5) return "C";
-  if (score >= 0.3) return "D";
-  if (score >= 0.1) return "E";
-  return "F";
+function tierLabel(score: number, nextScoreGap: number, isLeader: boolean) {
+  return resolveDeckTier(score, nextScoreGap, isLeader);
 }
 
 function formatPct(value: number) {
@@ -1319,13 +1280,13 @@ function buildPreferredDeckName(
   key: string,
   targetLocale: Locale,
 ) {
-  const fromIcons = getLocalizedDeckNameFromIconKeys(iconKeys, targetLocale);
+  const localizedName = getLocalizedDeckName(rawName, iconKeys, targetLocale);
 
   if (targetLocale === "zh") {
-    return fromIcons || rawName || humanizeDeckId(key);
+    return localizedName || rawName || humanizeDeckId(key);
   }
 
-  return rawName || fromIcons || humanizeDeckId(key);
+  return rawName || localizedName || getLocalizedDeckNameFromIconKeys(iconKeys, targetLocale) || humanizeDeckId(key);
 }
 
 
@@ -1539,11 +1500,7 @@ const aggregated = computed(() => {
       return {
         ...row,
         baseRank: index + 1,
-        tier: tierLabel(
-          row.score,
-          row.baselineTop32SharePct,
-          nextScoreGap,
-        ),
+        tier: tierLabel(row.score, nextScoreGap, index === 0),
       };
     });
 
@@ -1582,8 +1539,8 @@ function toggleSort(key: SortKey) {
 }
 
 function sortIndicator(key: SortKey) {
-  if (sortKey.value !== key) return "↕";
-  return sortDir.value === "asc" ? "↑" : "↓";
+  if (sortKey.value !== key) return "\u2195";
+  return sortDir.value === "asc" ? "\u2191" : "\u2193";
 }
 
 function sortMetric(row: DeckRow, key: SortKey): number | string | null {

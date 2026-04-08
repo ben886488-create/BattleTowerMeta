@@ -19,7 +19,6 @@
           <div class="profileFilterField">
             <label>
               {{ isZhUi ? "時間" : "Time" }}
-              <span class="hint">{{ isZhUi ? "以 UTC 日期計算" : "Based on UTC date" }}</span>
             </label>
             <select v-model="leftPanelFilters.time">
               <option value="prev7">Previous 7 days</option>
@@ -71,7 +70,6 @@
           <div class="profileFilterField">
             <label>
               {{ isZhUi ? "時間" : "Time" }}
-              <span class="hint">{{ isZhUi ? "以 UTC 日期計算" : "Based on UTC date" }}</span>
             </label>
             <select v-model="rightCardFilters.time">
               <option value="prev7">Previous 7 days</option>
@@ -555,14 +553,20 @@
 </template>
 
 <script setup lang="ts">
-import { computed, reactive, ref, onMounted, onBeforeUnmount, watch, nextTick } from "vue";
+import { computed, defineAsyncComponent, reactive, ref, shallowRef, onMounted, onBeforeUnmount, watch, nextTick } from "vue";
 import { useRoute } from "vue-router";
-import { getLocalizedDeckNameFromIconKeys } from "../assets/pokemonNames";
-import DeckDiscussionPanel from "../components/DeckDiscussionPanel.vue";
+import { getLocalizedDeckName } from "../assets/pokemonNames";
+import { resolveDeckTier } from "../lib/deckTier";
+import {
+  loadTournamentList,
+  loadTournamentPairings,
+  loadTournamentStandings,
+} from "../lib/publicData";
+
+const DeckDiscussionPanel = defineAsyncComponent(() => import("../components/DeckDiscussionPanel.vue"));
 
 type AnyRecord = Record<string, any>;
 
-const BASE_URL = import.meta.env.BASE_URL || "/";
 const DAY_MS = 24 * 60 * 60 * 1000;
 const PRESET_CURRENT_7 = "__current_7__";
 const PRESET_CURRENT_14 = "__current_14__";
@@ -888,7 +892,7 @@ const finishSort = reactive<{
    route / external / fallback data
 ------------------------------ */
 
-const internalTournaments = ref<IndexedTournament[]>([]);
+const internalTournaments = shallowRef<IndexedTournament[]>([]);
 const loadingTournaments = ref(false);
 
 const internalStandingsCache = reactive<Record<string, AnyRecord[]>>({});
@@ -1036,30 +1040,6 @@ watch(
   { immediate: true },
 );
 
-function dataUrl(path: string) {
-  return `${BASE_URL}${path}`;
-}
-
-function tournamentsUrl() {
-  return dataUrl("data/tournaments.json");
-}
-
-function standingsUrl(id: string) {
-  return dataUrl(`data/raw/${id}/standings.json`);
-}
-
-function pairingsUrl(id: string) {
-  return dataUrl(`data/raw/${id}/pairings.json`);
-}
-
-async function fetchJson<T>(url: string): Promise<T> {
-  const response = await fetch(url, { cache: "no-store" });
-  if (!response.ok) {
-    throw new Error(`Failed to fetch ${url} (${response.status})`);
-  }
-  return response.json() as Promise<T>;
-}
-
 
 
 function utcMs(year: number, month: number, day: number) {
@@ -1139,7 +1119,7 @@ async function loadTournaments() {
   loadingTournaments.value = true;
 
   try {
-    const rows = await fetchJson<TournamentListItem[]>(tournamentsUrl());
+    const rows = await loadTournamentList<TournamentListItem[]>();
     const dedup = new Map<string, IndexedTournament>();
 
     for (const row of rows ?? []) {
@@ -1199,7 +1179,7 @@ async function ensureTournamentDataForIds(ids: string[]) {
     if (!hasStandings(id) && !internalStandingsLoading[id]) {
       internalStandingsLoading[id] = true;
       try {
-        const rows = await fetchJson<AnyRecord[]>(standingsUrl(id));
+        const rows = await loadTournamentStandings<AnyRecord[]>(id);
         internalStandingsCache[id] = Array.isArray(rows) ? rows : [];
       } catch {
         internalStandingsCache[id] = [];
@@ -1211,7 +1191,7 @@ async function ensureTournamentDataForIds(ids: string[]) {
     if (!hasPairings(id) && !internalPairingsLoading[id]) {
       internalPairingsLoading[id] = true;
       try {
-        const rows = await fetchJson<AnyRecord[]>(pairingsUrl(id));
+        const rows = await loadTournamentPairings<AnyRecord[]>(id);
         internalPairingsCache[id] = Array.isArray(rows) ? rows : [];
       } catch {
         internalPairingsCache[id] = [];
@@ -1496,28 +1476,8 @@ function minmaxScale(input: Record<string, number>) {
   );
 }
 
-function isPerfectScore(score: number) {
-  return Math.abs(score - 1) < 1e-9;
-}
-
-function tierLabel(
-  score: number,
-  top32SharePct: number,
-  hasAnotherDeckScoreAtLeast09: boolean,
-) {
-  if (top32SharePct < 0.5) return "F";
-
-  if (isPerfectScore(score)) {
-    return hasAnotherDeckScoreAtLeast09 ? "SS" : "SSS";
-  }
-
-  if (score >= 0.9) return "S";
-  if (score >= 0.8) return "A";
-  if (score >= 0.7) return "B";
-  if (score >= 0.5) return "C";
-  if (score >= 0.3) return "D";
-  if (score >= 0.1) return "E";
-  return "F";
+function tierLabel(score: number, nextScoreGap: number, isLeader: boolean) {
+  return resolveDeckTier(score, nextScoreGap, isLeader);
 }
 
 function compareText(a: unknown, b: unknown) {
@@ -2374,8 +2334,9 @@ function extractDeckIdentityFromRow(row: AnyRecord): DeckIdentity {
     row.meta?.deck?.en_name,
   ]);
 
-  const zhNameFromIcons = getLocalizedDeckNameFromIconKeys(iconKeys, "zh");
-  const enNameFromIcons = getLocalizedDeckNameFromIconKeys(iconKeys, "en");
+  const rawSourceName = firstText([rawDisplayNameEn, rawDisplayName]);
+  const zhNameFromIcons = getLocalizedDeckName(rawSourceName, iconKeys, "zh");
+  const enNameFromIcons = getLocalizedDeckName(rawSourceName, iconKeys, "en");
   const fallbackName = defaultDeckLabelFromKey(buildDerivedDeckKey(row) || candidateKeys[0] || "");
 
   return {
@@ -2674,17 +2635,12 @@ const tierRows = computed<TierRow[]>(() => {
       );
     })
     .map((row, index, arr) => {
-      const hasAnotherDeckScoreAtLeast09 = arr.some(
-        (other, otherIndex) => otherIndex !== index && other.score >= 0.9,
-      );
+      const nextScore = arr[index + 1]?.score ?? null;
+      const nextScoreGap = nextScore == null ? row.score : row.score - nextScore;
 
       return {
         ...row,
-        tier: tierLabel(
-          row.score,
-          row.top32SharePct ?? 0,
-          hasAnotherDeckScoreAtLeast09,
-        ),
+        tier: tierLabel(row.score, nextScoreGap, index === 0),
       };
     });
 });
@@ -2759,6 +2715,18 @@ const leftPanelTournaments = computed(() =>
 
 const rightCardTournaments = computed(() =>
   filterTournamentsByTime(normalizedTournaments.value, rightCardFilters.time),
+);
+
+const analyticsFiltersMatch = computed(
+  () =>
+    leftPanelFilters.time === rightCardFilters.time &&
+    leftPanelFilters.topCut === rightCardFilters.topCut,
+);
+
+const sharedAnalytics = computed(() =>
+  analyticsFiltersMatch.value
+    ? buildDeckProfileAnalytics(leftPanelTournaments.value, leftPanelFilters.topCut)
+    : null,
 );
 
 const loadedTournamentCount = computed(() => {
@@ -3764,15 +3732,14 @@ function buildDeckProfileAnalytics(
   if (!resolvedDeckDisplayName) {
     resolvedDeckDisplayName =
       (routeLang.value === "zh"
-        ? getLocalizedDeckNameFromIconKeys(finalTargetIconKeys, "zh")
-        : getLocalizedDeckNameFromIconKeys(finalTargetIconKeys, "en")) ||
+        ? getLocalizedDeckName(undefined, finalTargetIconKeys, "zh")
+        : getLocalizedDeckName(undefined, finalTargetIconKeys, "en")) ||
       defaultDeckLabelFromKey(resolvedDeckKey.value) ||
       "Unknown Deck";
   }
 
   if (!resolvedDeckDisplayNameEn) {
-    resolvedDeckDisplayNameEn =
-      getLocalizedDeckNameFromIconKeys(finalTargetIconKeys, "en") || "";
+    resolvedDeckDisplayNameEn = getLocalizedDeckName(undefined, finalTargetIconKeys, "en") || "";
   }
 
   return {
@@ -3798,12 +3765,16 @@ function buildDeckProfileAnalytics(
   };
 }
 
-const leftAnalytics = computed(() =>
-  buildDeckProfileAnalytics(leftPanelTournaments.value, leftPanelFilters.topCut),
+const leftAnalytics = computed(
+  () =>
+    sharedAnalytics.value ??
+    buildDeckProfileAnalytics(leftPanelTournaments.value, leftPanelFilters.topCut),
 );
 
-const rightAnalytics = computed(() =>
-  buildDeckProfileAnalytics(rightCardTournaments.value, rightCardFilters.topCut),
+const rightAnalytics = computed(
+  () =>
+    sharedAnalytics.value ??
+    buildDeckProfileAnalytics(rightCardTournaments.value, rightCardFilters.topCut),
 );
 
 const rightDeckPanelCards = computed<RightDeckPanelCard[]>(() => {

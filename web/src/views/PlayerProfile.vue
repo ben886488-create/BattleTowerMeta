@@ -252,7 +252,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, ref } from "vue";
+import { computed, onMounted, ref, shallowRef } from "vue";
 import { useRoute } from "vue-router";
 import "flag-icons/css/flag-icons.min.css";
 import countries from "i18n-iso-countries";
@@ -265,6 +265,7 @@ import {
   loadPlayerEntries,
   type DecoratedPlayerEntry,
 } from "../lib/playerEntries";
+import { getLocalizedDeckName } from "../assets/pokemonNames";
 
 countries.registerLocale(enLang);
 countries.registerLocale(zhCnLang);
@@ -273,6 +274,17 @@ const deckIconModules = import.meta.glob("../assets/deck-icons/*.{png,webp,svg}"
   eager: true,
   import: "default",
 }) as Record<string, string>;
+
+const deckIconIndex: Record<string, string> = (() => {
+  const index: Record<string, string> = {};
+  for (const [path, url] of Object.entries(deckIconModules)) {
+    const key = path.split("/").pop()?.replace(/\.[^.]+$/, "").toLowerCase() ?? "";
+    if (key && !index[key]) {
+      index[key] = url;
+    }
+  }
+  return index;
+})();
 
 type FinishSortKey = "placing" | "latest" | "field" | "points";
 
@@ -379,7 +391,7 @@ const ui = computed(() => {
       matches: "Matches",
       unknown: "未知地區",
       countryRank: (country: string, rank: number | null) =>
-        rank ? `${country}排名第${rank}（所屬國家/地區）` : `${country}排名未定`,
+        rank ? `${country}排名第${rank}` : `${country}排名未定`,
       worldRank: (rank: number | null) => (rank ? `世界排名第${rank}` : "世界排名未定"),
     };
   }
@@ -435,7 +447,7 @@ const ui = computed(() => {
   };
 });
 
-const allEntries = ref<DecoratedPlayerEntry[]>([]);
+const allEntries = shallowRef<DecoratedPlayerEntry[]>([]);
 const loading = ref(true);
 const loadError = ref(false);
 const selectedSet = ref("");
@@ -465,12 +477,15 @@ function applyFinishBucket(target: FinishCounts, placing: number | null | undefi
 function resolveDeckIconUrl(key: string) {
   const target = key.trim().toLowerCase();
   if (!target) return "";
-  const hit = Object.entries(deckIconModules).find(([path]) =>
-    path.toLowerCase().endsWith(`/${target}.png`) ||
-    path.toLowerCase().endsWith(`/${target}.webp`) ||
-    path.toLowerCase().endsWith(`/${target}.svg`),
-  );
-  return hit?.[1] ?? "";
+  return deckIconIndex[target] ?? "";
+}
+
+function localizedDeckName(deckName: string | undefined, deckIcons: string[] | undefined) {
+  const fallback = deckName || (lang.value === "en" ? "Unknown Deck" : "未知牌組");
+  if (lang.value !== "zh") return fallback;
+
+  const localized = getLocalizedDeckName(deckName, deckIcons ?? [], "zh");
+  return localized || fallback;
 }
 
 function formatPointsStatic(value: number) {
@@ -646,7 +661,7 @@ const topDecks = computed<TopDeckSummary[]>(() => {
 
     const existing = deckMap.get(key) ?? {
       key,
-      name: entry.deckName || key,
+      name: localizedDeckName(entry.deckName || key, entry.deckIcons),
       events: 0,
       points: 0,
       bestFinish: null,
@@ -691,7 +706,7 @@ const bestFinishes = computed<FinishRow[]>(() => {
     .map((entry) => ({
       key: `${entry.tournamentId}::${entry.player}::${entry.deckId || entry.deckName}`,
       deckKey: String(entry.deckId || entry.deckName || ""),
-      deckName: entry.deckName || "Unknown Deck",
+      deckName: localizedDeckName(entry.deckName, entry.deckIcons),
       iconUrls: (entry.deckIcons || []).map(resolveDeckIconUrl).filter(Boolean),
       tournamentName: entry.tournamentName,
       dateLabel: formatDate(entry.startMs),

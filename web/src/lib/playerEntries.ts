@@ -1,4 +1,4 @@
-const BASE_URL = (import.meta as any).env?.BASE_URL ?? "/";
+import { loadPublicJson } from "./publicData";
 
 export type TopCutFilter = "" | "winner" | "top2" | "top4" | "top8" | "top16" | "top32";
 export type TimeFilterValue = "all" | "past7" | "prev7" | "past4w" | string;
@@ -61,11 +61,8 @@ export const VERSION_BY_CODE: Record<string, GameVersion> = Object.fromEntries(
   GAME_VERSIONS.map((version) => [version.code, version]),
 );
 
-async function fetchJson<T>(url: string): Promise<T> {
-  const res = await fetch(url, { cache: "no-cache" });
-  if (!res.ok) throw new Error(`Fetch failed ${res.status} for ${url}`);
-  return (await res.json()) as T;
-}
+let decoratedEntriesCache: DecoratedPlayerEntry[] | null = null;
+let decoratedEntriesTask: Promise<DecoratedPlayerEntry[]> | null = null;
 
 export function parseMs(value: unknown): number {
   if (typeof value === "number" && Number.isFinite(value)) return value;
@@ -109,10 +106,26 @@ function decorateEntry(entry: PlayerEntry): DecoratedPlayerEntry {
 }
 
 export async function loadPlayerEntries(): Promise<DecoratedPlayerEntry[]> {
-  const primary = `${BASE_URL}data/player_entries.json`;
-  const fallback = new URL("../data/player_entries.json", import.meta.url).toString();
-  const rows = await fetchJson<PlayerEntry[]>(primary).catch(() => fetchJson<PlayerEntry[]>(fallback));
-  return Array.isArray(rows) ? rows.map(decorateEntry) : [];
+  if (decoratedEntriesCache) {
+    return decoratedEntriesCache;
+  }
+
+  if (decoratedEntriesTask) {
+    return decoratedEntriesTask;
+  }
+
+  decoratedEntriesTask = loadPublicJson<PlayerEntry[]>("data/player_entries.json")
+    .then((rows) => {
+      decoratedEntriesCache = Array.isArray(rows) ? rows.map(decorateEntry) : [];
+      decoratedEntriesTask = null;
+      return decoratedEntriesCache;
+    })
+    .catch((error) => {
+      decoratedEntriesTask = null;
+      throw error;
+    });
+
+  return decoratedEntriesTask;
 }
 
 export function matchesTopCut(placing: number | null | undefined, filter: TopCutFilter): boolean {

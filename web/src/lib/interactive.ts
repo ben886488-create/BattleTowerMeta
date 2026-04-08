@@ -3,12 +3,14 @@ import { supabase, authProfile, authUser, hasSupabaseConfig, type UserProfile } 
 export interface RankLogEntry {
   id: string;
   user_id: string;
+  player_deck: string | null;
   opponent_deck: string;
   result: "win" | "loss" | "draw";
   queue_type: string;
   first_player: boolean | null;
   notes: string | null;
   rank_tier: string | null;
+  version_code: string | null;
   created_at: string;
 }
 
@@ -66,7 +68,7 @@ export async function fetchRankLogs(limit = 100) {
 
   const { data, error } = await client
     .from("rank_logs")
-    .select("id, user_id, opponent_deck, result, queue_type, first_player, notes, rank_tier, created_at")
+    .select("id, user_id, player_deck, opponent_deck, result, queue_type, first_player, notes, rank_tier, version_code, created_at")
     .eq("user_id", userId)
     .order("created_at", { ascending: false })
     .limit(limit)
@@ -77,25 +79,62 @@ export async function fetchRankLogs(limit = 100) {
 }
 
 export async function createRankLog(input: {
+  playerDeck: string;
   opponentDeck: string;
   result: "win" | "loss" | "draw";
   queueType: string;
   firstPlayer: boolean | null;
   notes: string;
   rankTier: string;
+  versionCode: string;
 }) {
   const client = ensureSupabase();
   const userId = ensureAuthUserId();
 
-  const { error } = await client.from("rank_logs").insert({
-    user_id: userId,
-    opponent_deck: input.opponentDeck.trim(),
-    result: input.result,
-    queue_type: input.queueType.trim() || "Ranked",
-    first_player: input.firstPlayer,
-    notes: input.notes.trim() || null,
-    rank_tier: input.rankTier.trim() || null,
-  });
+  const { data, error } = await client
+    .from("rank_logs")
+    .insert({
+      user_id: userId,
+      player_deck: input.playerDeck.trim() || null,
+      opponent_deck: input.opponentDeck.trim(),
+      result: input.result,
+      queue_type: input.queueType.trim() || "Ranked",
+      first_player: input.firstPlayer,
+      notes: input.notes.trim() || null,
+      rank_tier: input.rankTier.trim() || null,
+      version_code: input.versionCode.trim() || null,
+    })
+    .select("id, user_id, player_deck, opponent_deck, result, queue_type, first_player, notes, rank_tier, version_code, created_at")
+    .single<RankLogEntry>();
+
+  if (error) throw error;
+  return data;
+}
+
+export async function deleteRankLog(id: string) {
+  const client = ensureSupabase();
+  const userId = ensureAuthUserId();
+
+  const { error } = await client
+    .from("rank_logs")
+    .delete()
+    .eq("id", id)
+    .eq("user_id", userId);
+
+  if (error) throw error;
+}
+
+export async function deleteRankLogs(ids: string[]) {
+  const client = ensureSupabase();
+  const userId = ensureAuthUserId();
+  const filteredIds = ids.map((id) => String(id).trim()).filter(Boolean);
+  if (!filteredIds.length) return;
+
+  const { error } = await client
+    .from("rank_logs")
+    .delete()
+    .eq("user_id", userId)
+    .in("id", filteredIds);
 
   if (error) throw error;
 }

@@ -29,7 +29,6 @@
             min="0"
             :placeholder="locale === 'en' ? 'e.g. 32' : '例如 32'"
           />
-          <div class="hint">{{ locale === "en" ? "Minimum player count" : "最少參賽人數" }}</div>
         </div>
 
         <div class="f">
@@ -44,7 +43,6 @@
               </option>
             </optgroup>
           </select>
-          <div class="hint">{{ locale === "en" ? "Based on UTC date" : "以 UTC 日期計算" }}</div>
         </div>
 
         <div class="f">
@@ -261,7 +259,7 @@
                 />
               </div>
               <div v-else class="matrix-picker__placeholder mono">
-                {{ locale === "en" ? "Select a deck for the custom slot" : "選擇一副牌組放進自選格" }}
+                {{ locale === "en" ? "Select a deck for the custom slot" : "選擇一副牌組放進自選牌組格" }}
               </div>
 
               <div v-if="!matrixSelectedDeckRow" class="matrix-picker__trigger-text">
@@ -278,7 +276,7 @@
               @click="clearMatrixDeck"
             >
               <span class="matrix-picker__option-copy">
-                {{ locale === "en" ? "Clear custom slot" : "清空自選格" }}
+                {{ locale === "en" ? "Clear custom slot" : "清空自選牌組格" }}
               </span>
             </button>
 
@@ -335,7 +333,7 @@
                     />
                   </div>
                   <span v-if="!matrixSelectedDeckRow" class="heatmap-picker-label mono">
-                    {{ locale === "en" ? "Custom slot" : "自選格" }}
+                    {{ locale === "en" ? "Custom slot" : "自選牌組" }}
                   </span>
                 </div>
 
@@ -500,6 +498,8 @@ import { computed, onMounted, reactive, ref, watch } from "vue";
 import { RouterLink, useRoute } from "vue-router";
 import deckIconsManifest from "../assets/deck-icons/manifest.json";
 import substituteIcon from "../assets/deck-icons/substitute.png";
+import { getLocalizedDeckName } from "../assets/pokemonNames";
+import { resolveDeckTier } from "../lib/deckTier";
 
 const BASE_URL = (import.meta as any).env?.BASE_URL ?? "/";
 
@@ -898,6 +898,12 @@ function usageDeckDisplayName(row: TierRow) {
   if (row.isOther) {
     return locale.value === "en" ? "Other Decks" : "其他牌組";
   }
+
+  if (locale.value === "zh") {
+    const localized = getLocalizedDeckName(row.raw_name, row.iconKeys ?? [], "zh");
+    if (localized) return localized;
+  }
+
   return String(row.raw_name ?? "").trim() || humanizeDeckId(row.deck);
 }
 
@@ -1627,20 +1633,8 @@ function minmaxScale(input: Record<string, number>) {
   return Object.fromEntries(entries.map(([key, value]) => [key, (value - min) / (max - min)]));
 }
 
-function isPerfectScore(score: number) {
-  return Math.abs(score - 1) < 1e-9;
-}
-
-function tierLabel(score: number, top32SharePct: number, hasAnotherDeckScoreAtLeast09: boolean) {
-  if (top32SharePct < 0.5) return "F";
-  if (isPerfectScore(score)) return hasAnotherDeckScoreAtLeast09 ? "SS" : "SSS";
-  if (score >= 0.9) return "S";
-  if (score >= 0.8) return "A";
-  if (score >= 0.7) return "B";
-  if (score >= 0.5) return "C";
-  if (score >= 0.3) return "D";
-  if (score >= 0.1) return "E";
-  return "F";
+function tierLabel(score: number, nextScoreGap: number, isLeader: boolean) {
+  return resolveDeckTier(score, nextScoreGap, isLeader);
 }
 
 function uniqStrings(list: string[]) {
@@ -1846,8 +1840,9 @@ async function recomputeTierRows() {
   });
 
   const finalized = baseRows.map((row, index, arr) => {
-    const hasAnotherDeckScoreAtLeast09 = arr.some((other, otherIndex) => otherIndex !== index && other.score >= 0.9);
-    const tier = tierLabel(row.score, row.data3_top32_share_pct ?? 0, hasAnotherDeckScoreAtLeast09);
+    const nextScore = arr[index + 1]?.score ?? null;
+    const nextScoreGap = nextScore == null ? row.score : row.score - nextScore;
+    const tier = tierLabel(row.score, nextScoreGap, index === 0);
     return { ...row, tier };
   });
 
