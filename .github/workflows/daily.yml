@@ -1,16 +1,28 @@
 name: Daily update
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: "0 22 * * *" # 北京时间每天早上 6 点运行 每天 UTC 22:00
   workflow_dispatch:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout
@@ -48,6 +60,18 @@ jobs:
           cd web
           npm ci
           npm run build
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
       - name: Commit and push (data + docs)
         run: |
