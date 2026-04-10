@@ -165,10 +165,21 @@
         </div>
       </div>
 
-      <div class="tier-table-card">
+      <div ref="tierPanelCaptureRef" class="tier-table-card">
         <div class="tier-table-head">
           <h2 class="section-title tier-table-title">Tier List</h2>
-          <span class="mono tier-table-meta">{{ topDeckRows.length }}/{{ TOP_DECK_LIMIT }}</span>
+          <div class="tier-table-actions">
+            <span class="mono tier-table-meta">{{ topDeckRows.length }}/{{ TOP_DECK_LIMIT }}</span>
+            <button
+              type="button"
+              class="tier-download-btn"
+              data-export-ignore="true"
+              :disabled="downloadingTierPanel || topDeckRows.length === 0"
+              @click="downloadTierPanelPng"
+            >
+              {{ downloadingTierPanel ? tierPanelDownloadingLabel : tierPanelDownloadLabel }}
+            </button>
+          </div>
         </div>
 
         <div v-if="visibleTierGroups.length > 0" class="tier-lanes">
@@ -494,9 +505,8 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, reactive, ref, watch } from "vue";
+import { computed, nextTick, onMounted, reactive, ref, watch } from "vue";
 import { RouterLink, useRoute } from "vue-router";
-import deckIconsManifest from "../assets/deck-icons/manifest.json";
 import substituteIcon from "../assets/deck-icons/substitute.png";
 import { getLocalizedDeckName } from "../assets/pokemonNames";
 import { resolveDeckTier } from "../lib/deckTier";
@@ -621,6 +631,8 @@ function inferVersionByStartMs(ms: number): VersionWindow | null {
 }
 
 const route = useRoute();
+const tierPanelCaptureRef = ref<HTMLElement | null>(null);
+const downloadingTierPanel = ref(false);
 
 const locale = computed<"zh" | "en">(() => {
   return String(route.path).split("/")[1] === "en" ? "en" : "zh";
@@ -1493,6 +1505,76 @@ function slugify(value: string) {
     .replace(/^-+|-+$/g, "");
 }
 
+const tierPanelDownloadLabel = computed(() => {
+  return locale.value === "en" ? "Download PNG" : "\u4e0b\u8f09 PNG";
+});
+
+const tierPanelDownloadingLabel = computed(() => {
+  return locale.value === "en" ? "Downloading..." : "\u4e0b\u8f09\u4e2d...";
+});
+
+async function waitForTierPanelImages(root: HTMLElement) {
+  const images = Array.from(root.querySelectorAll("img"));
+
+  await Promise.all(
+    images.map((img) => {
+      if (img.complete) return Promise.resolve();
+
+      return new Promise<void>((resolve) => {
+        let settled = false;
+
+        const finish = () => {
+          if (settled) return;
+          settled = true;
+          img.removeEventListener("load", finish);
+          img.removeEventListener("error", finish);
+          resolve();
+        };
+
+        img.addEventListener("load", finish, { once: true });
+        img.addEventListener("error", finish, { once: true });
+        window.setTimeout(finish, 2000);
+      });
+    }),
+  );
+}
+
+async function downloadTierPanelPng() {
+  if (downloadingTierPanel.value || !tierPanelCaptureRef.value || topDeckRows.value.length === 0) return;
+
+  downloadingTierPanel.value = true;
+
+  try {
+    await nextTick();
+    await waitForTierPanelImages(tierPanelCaptureRef.value);
+    await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
+
+    const { toPng } = await import("html-to-image");
+    const dataUrl = await toPng(tierPanelCaptureRef.value, {
+      cacheBust: true,
+      pixelRatio: 2,
+      filter: (node) => {
+        return !(node instanceof HTMLElement && node.dataset.exportIgnore === "true");
+      },
+    });
+
+    const setSegment = filters.set || currentVersionWindow.value?.code || "all-sets";
+    const timeSegment = filters.time || "all-time";
+    const topCutSegment = filters.topCut === "all" ? "all" : `top-${filters.topCut}`;
+    const fileName =
+      slugify(`tier-list-${timeSegment}-${setSegment}-${topCutSegment}`) || "tier-list-top10";
+
+    const link = document.createElement("a");
+    link.href = dataUrl;
+    link.download = `${fileName}.png`;
+    link.click();
+  } catch (error) {
+    console.error("[TierList] downloadTierPanelPng failed:", error);
+  } finally {
+    downloadingTierPanel.value = false;
+  }
+}
+
 function humanizeDeckId(id: string) {
   return id
     .split("-")
@@ -1646,9 +1728,12 @@ function uniqStrings(list: string[]) {
   return [...new Set(list)];
 }
 
-const deckIconSrcBySlug = new Map<string, string>(
-  (deckIconsManifest as any[]).map((item) => [String(item.slug), String(item.src)]),
-);
+const deckIconModules = import.meta.glob("../assets/deck-icons/*.{png,webp,jpg,jpeg,svg}", {
+  eager: true,
+  import: "default",
+}) as Record<string, string>;
+
+const deckIconSrcBySlug = new Map<string, string>();
 
 function normalizeIconLookupKey(raw: string) {
   let text = String(raw ?? "").trim();
@@ -1682,6 +1767,16 @@ function rawIconVariants(raw: string) {
   return [...seen];
 }
 
+for (const [filePath, url] of Object.entries(deckIconModules)) {
+  const fileName = filePath.split("/").pop() ?? "";
+
+  for (const key of rawIconVariants(fileName)) {
+    if (!deckIconSrcBySlug.has(key)) {
+      deckIconSrcBySlug.set(key, url);
+    }
+  }
+}
+
 function resolveDeckSpriteUrlsFromIconKeys(iconKeys: string[]) {
   const urls: string[] = [];
 
@@ -1692,12 +1787,19 @@ function resolveDeckSpriteUrlsFromIconKeys(iconKeys: string[]) {
     }
 
     const candidates = rawIconVariants(String(iconKey));
+    let resolved = false;
+
     for (const cand of candidates) {
       const hit = deckIconSrcBySlug.get(cand);
       if (hit) {
         urls.push(hit);
+        resolved = true;
         break;
       }
+    }
+
+    if (!resolved) {
+      urls.push(substituteIcon);
     }
   }
 
@@ -2441,6 +2543,14 @@ onMounted(async () => {
   padding-right: 44px;
 }
 
+.tier-table-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .tier-table-title {
   margin: 0;
   font-family:
@@ -2461,6 +2571,41 @@ onMounted(async () => {
   color: #8fa4c0;
   font-size: 0.82rem;
   letter-spacing: 0.08em;
+}
+
+.tier-download-btn {
+  appearance: none;
+  border: 1px solid rgba(96, 162, 214, 0.34);
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(17, 46, 78, 0.96), rgba(9, 24, 42, 0.98));
+  color: #f2f8ff;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  transition:
+    transform 0.16s ease,
+    border-color 0.16s ease,
+    box-shadow 0.16s ease,
+    opacity 0.16s ease;
+  box-shadow:
+    0 10px 18px rgba(0, 0, 0, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.tier-download-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  border-color: rgba(120, 196, 255, 0.5);
+  box-shadow:
+    0 14px 24px rgba(0, 0, 0, 0.26),
+    0 0 0 1px rgba(110, 190, 255, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.tier-download-btn:disabled {
+  cursor: wait;
+  opacity: 0.72;
 }
 
 .tier-lanes {
