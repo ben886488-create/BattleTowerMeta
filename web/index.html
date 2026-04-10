@@ -5,6 +5,18 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>web</title>
+    <script>
+      ;(() => {
+        const pendingRoute = sessionStorage.getItem('gh-pages-route')
+        if (!pendingRoute) return
+
+        sessionStorage.removeItem('gh-pages-route')
+        const currentUrl = `${window.location.pathname}${window.location.search}${window.location.hash}`
+        if (pendingRoute !== currentUrl) {
+          window.history.replaceState(null, '', pendingRoute)
+        }
+      })()
+    </script>
   </head>
   <body>
     <div id="app"></div>

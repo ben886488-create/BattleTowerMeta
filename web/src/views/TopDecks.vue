@@ -333,6 +333,11 @@ import { useRoute } from "vue-router";
 import { getLocalizedDeckName, getLocalizedDeckNameFromIconKeys } from "../assets/pokemonNames";
 import { resolveDeckTier } from "../lib/deckTier";
 import {
+  buildStandingLookup,
+  lookupStandingForPairingSide,
+  parsePairingResult,
+} from "../lib/pairingResolver";
+import {
   loadTournamentList,
   loadTournamentPairings,
   loadTournamentStandings,
@@ -1303,9 +1308,6 @@ const aggregated = computed(() => {
 
     if (!Array.isArray(standings)) continue;
 
-    const playerDeckKey = new Map<string, string>();
-    const playerPlace = new Map<string, number | null>();
-
     for (const row of standings) {
       const deck = buildDeckIdentity(row);
       if (!deck) continue;
@@ -1357,58 +1359,38 @@ const aggregated = computed(() => {
         totalSelectedSamples += 1;
       }
 
-      const playerId = String(row?.player ?? "").trim();
-      if (playerId) {
-        playerDeckKey.set(playerId, deck.key);
-        playerPlace.set(playerId, place);
-      }
     }
 
     if (!Array.isArray(pairings)) continue;
 
+    const standingLookup = buildStandingLookup(standings, (standingRow) => {
+      const deck = buildDeckIdentity(standingRow);
+      if (!deck) return null;
+      return { key: deck.key };
+    });
+
     for (const match of pairings) {
-      const p1 = String(match?.player1 ?? "").trim();
-      const p2 = String(match?.player2 ?? "").trim();
+      const side1 = lookupStandingForPairingSide(standingLookup, match, 1);
+      const side2 = lookupStandingForPairingSide(standingLookup, match, 2);
 
-      if (!p1 || !p2) continue;
+      if (!side1 || !side2) continue;
 
-      const deck1 = playerDeckKey.get(p1);
-      const deck2 = playerDeckKey.get(p2);
+      const result = parsePairingResult(match, side1.player, side2.player);
+      if (!result) continue;
 
-      const place1 = playerPlace.get(p1) ?? null;
-      const place2 = playerPlace.get(p2) ?? null;
-
-      const winner = match?.winner;
-
-      const isTie =
-        winner === 0 ||
-        winner === "0" ||
-        winner === "draw" ||
-        winner === "tie";
-
-      const isDoubleLoss = winner === -1 || winner === "-1";
-      const p1Won = winner === p1;
-      const p2Won = winner === p2;
-
-      if (!isTie && !isDoubleLoss && !p1Won && !p2Won) {
-        continue;
-      }
-
-      if (deck1 && qualifiesByTopCut(place1, filters.topCut)) {
-        const hit = map.get(deck1);
+      if (qualifiesByTopCut(side1.place, filters.topCut)) {
+        const hit = map.get(side1.deck.key);
         if (hit) {
           hit.selectedGames += 1;
-          if (p1Won) hit.selectedMatchPoints += 1;
-          else if (isTie) hit.selectedMatchPoints += 0.5;
+          hit.selectedMatchPoints += result.p1;
         }
       }
 
-      if (deck2 && qualifiesByTopCut(place2, filters.topCut)) {
-        const hit = map.get(deck2);
+      if (qualifiesByTopCut(side2.place, filters.topCut)) {
+        const hit = map.get(side2.deck.key);
         if (hit) {
           hit.selectedGames += 1;
-          if (p2Won) hit.selectedMatchPoints += 1;
-          else if (isTie) hit.selectedMatchPoints += 0.5;
+          hit.selectedMatchPoints += result.p2;
         }
       }
     }

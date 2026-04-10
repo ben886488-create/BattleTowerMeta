@@ -412,7 +412,60 @@
           </div>
 
           <div
-            v-else
+            v-else-if="rightDeckMode === 'cards'"
+            ref="deckCardsViewportRef"
+            class="decklist-viewport"
+            :class="{ 'decklist-viewport--scrollable': rightDeckPanelCards.length > 20 }"
+            :style="decklistViewportStyle"
+          >
+            <div ref="deckCardsGridRef" class="decklist-groups">
+              <section
+                v-for="group in rightDeckPanelGroups"
+                :key="group.key"
+                class="decklist-group"
+              >
+                <header class="decklist-group__header">
+                  <h4 class="decklist-group__title">{{ group.label }}</h4>
+                  <span class="decklist-group__count mono">{{ group.cards.length }}</span>
+                </header>
+
+                <div class="cardsGrid cardsGrid--profile">
+                  <article
+                    v-for="card in group.cards"
+                    :key="card.key"
+                    class="profileCard"
+                    :title="card.title"
+                  >
+                    <div class="profileCard__imageWrap">
+                      <img
+                        v-if="card.image && !failedCardImages[card.key]"
+                        class="profileCard__image"
+                        :src="card.image"
+                        :alt="card.name"
+                        crossorigin="anonymous"
+                        draggable="false"
+                        @error="onCardImageError(card.key)"
+                      />
+
+                      <div v-else class="profileCard__fallback">
+                        <div class="profileCard__fallbackName">{{ card.name }}</div>
+                        <div class="profileCard__fallbackCode mono">
+                          {{ card.set || "?" }} {{ card.number || card.code || "?" }}
+                        </div>
+                      </div>
+
+                      <span class="profileCard__rate mono" :data-rate-label="card.badgeText">
+                        {{ formatPercentValue(card.slotRatePct) }}
+                      </span>
+                    </div>
+                  </article>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div
+            v-else-if="rightDeckMode === 'sample'"
             ref="deckCardsViewportRef"
             class="decklist-viewport"
             :class="{ 'decklist-viewport--scrollable': rightDeckPanelCards.length > 20 }"
@@ -557,6 +610,7 @@ import { computed, defineAsyncComponent, reactive, ref, shallowRef, onMounted, o
 import { useRoute } from "vue-router";
 import { getLocalizedDeckName } from "../assets/pokemonNames";
 import { resolveDeckTier } from "../lib/deckTier";
+import { inTimeRange as matchesTimeFilter } from "../lib/playerEntries";
 import {
   loadTournamentList,
   loadTournamentPairings,
@@ -729,9 +783,18 @@ interface RightDeckPanelCard {
   number: string;
   name: string;
   image: string;
+  category: string;
   slotRatePct: number;
+  inclusionPct: number;
   badgeText: string;
   title: string;
+}
+
+interface RightDeckPanelGroup {
+  key: string;
+  label: string;
+  showLabel: boolean;
+  cards: RightDeckPanelCard[];
 }
 
 type FinishSortKey = "player" | "tournamentName" | "dateMs" | "place";
@@ -805,6 +868,7 @@ function handleDeckProfileResize() {
 function updateDeckViewportHeight() {
   const grid = deckCardsGridRef.value;
   const total = rightDeckPanelCards.value.length;
+  const groups = rightDeckPanelGroups.value;
 
   if (!grid || total <= 0) {
     deckViewportHeight.value = null;
@@ -816,12 +880,36 @@ function updateDeckViewportHeight() {
 
   const cols = getDeckGridColumns(window.innerWidth);
   const visibleCards = Math.min(total, 20);
-  const rows = Math.ceil(visibleCards / cols);
   const gap = 12;
   const cardWidth = (width - gap * (cols - 1)) / cols;
   const cardHeight = cardWidth * (7 / 5);
+  let totalRows = 0;
+  let totalRowGaps = 0;
+  let visibleGroupCount = 0;
+  let consumed = 0;
 
-  deckViewportHeight.value = Math.ceil(cardHeight * rows + gap * Math.max(0, rows - 1));
+  for (const group of groups) {
+    if (consumed >= visibleCards) break;
+
+    const groupVisibleCards = Math.min(group.cards.length, visibleCards - consumed);
+    if (groupVisibleCards <= 0) continue;
+
+    const groupRows = Math.ceil(groupVisibleCards / cols);
+    totalRows += groupRows;
+    totalRowGaps += gap * Math.max(0, groupRows - 1);
+    consumed += groupVisibleCards;
+
+    if (group.showLabel) visibleGroupCount += 1;
+  }
+
+  const sectionHeaderHeight = rightDeckMode.value === "cards" ? 34 : 0;
+  const sectionGap = rightDeckMode.value === "cards" ? 18 : 0;
+  const sectionSpacing = visibleGroupCount * sectionHeaderHeight;
+  const groupSpacing = Math.max(0, visibleGroupCount - 1) * sectionGap;
+
+  deckViewportHeight.value = Math.ceil(
+    cardHeight * totalRows + totalRowGaps + sectionSpacing + groupSpacing,
+  );
 }
 
 const decklistViewportStyle = computed<Record<string, string | undefined>>(() => {
@@ -991,7 +1079,7 @@ function profileTimeSummaryLabel(value: ProfileTimeFilterValue) {
   if (value === "past7") return isZhUi.value ? "近 7 天" : "Past 7 days";
   if (value === "past4w") return isZhUi.value ? "近 4 週" : "Past 4 weeks";
 
-  if (value === "prev7") return "Previous 7 days";
+  if (value === "prev7") return isZhUi.value ? "前 7 天" : "Previous 7 days";
 
   if (String(value).startsWith("month:")) {
     const ym = String(value).slice("month:".length);
@@ -2258,6 +2346,14 @@ const targetDeckKeySet = computed(() => {
   const deckSource =
     props.deck && typeof props.deck === "object" ? (props.deck as AnyRecord) : null;
 
+  // When the page is opened from a route like /top-decks/:deckKey, keep the
+  // aggregation scoped to that exact deck row. Expanding aliases here can merge
+  // nearby archetype variants and make the profile win rate diverge from TopDecks.
+  if (!deckSource || Object.keys(deckSource).length === 0) {
+    const exact = normalizeDeckKey(resolvedDeckKey.value);
+    return new Set(exact ? [exact] : []);
+  }
+
   const candidates = uniqStrings([
     resolvedDeckKey.value,
     buildDerivedDeckKey(deckSource),
@@ -2671,38 +2767,7 @@ const monthOptions = computed(() => {
 });
 
 function inProfileTimeRange(t: NormalizedTournament, timeValue: string) {
-  if (timeValue === "all") return true;
-  if (!t.startMs || !Number.isFinite(t.startMs)) return false;
-
-  const todayUtcStart = startOfUtcDayMs(Date.now());
-
-  if (timeValue === "past7") {
-    return t.startMs >= todayUtcStart - 6 * DAY_MS;
-  }
-
-  if (timeValue === "prev7") {
-    return t.startMs >= todayUtcStart - 13 * DAY_MS && t.startMs < todayUtcStart - 6 * DAY_MS;
-  }
-
-  if (timeValue === "past4w") {
-    return t.startMs >= todayUtcStart - 27 * DAY_MS;
-  }
-
-  if (timeValue.startsWith("month:")) {
-    const ym = timeValue.slice("month:".length);
-    const [yS, mS] = ym.split("-");
-    const y = Number(yS);
-    const m = Number(mS);
-
-    if (!y || !m) return true;
-
-    const start = Date.UTC(y, m - 1, 1, 0, 0, 0, 0);
-    const end = Date.UTC(y, m, 1, 0, 0, 0, 0);
-
-    return t.startMs >= start && t.startMs < end;
-  }
-
-  return true;
+  return matchesTimeFilter(t.startMs, timeValue as any);
 }
 
 function filterTournamentsByTime(list: NormalizedTournament[], timeValue: string) {
@@ -3410,6 +3475,47 @@ function buildDeckProfileAnalytics(
     }
   }
 
+  function applyTargetResult(points: number) {
+    targetGames += 1;
+    targetPoints += points;
+
+    if (points === 1) wins += 1;
+    else if (points === 0.5) draws += 1;
+    else losses += 1;
+  }
+
+  function addMatchupResult(opponent: DeckIdentity, points: number) {
+    const oppKey = opponent.key || opponent.candidateKeys[0];
+    if (!oppKey) return;
+
+    const existing = matchupMap.get(oppKey) ?? {
+      key: oppKey,
+      displayName: opponent.displayName,
+      spriteUrls: opponent.spriteUrls,
+      wins: 0,
+      losses: 0,
+      draws: 0,
+      games: 0,
+      winRate: 0,
+    };
+
+    existing.games += 1;
+
+    if (points === 1) existing.wins += 1;
+    else if (points === 0.5) existing.draws += 1;
+    else existing.losses += 1;
+
+    if (!existing.spriteUrls.length && opponent.spriteUrls.length) {
+      existing.spriteUrls = opponent.spriteUrls;
+    }
+
+    if (!existing.displayName && opponent.displayName) {
+      existing.displayName = opponent.displayName;
+    }
+
+    matchupMap.set(oppKey, existing);
+  }
+
   for (const tournament of tournaments) {
     const standings = tournament.standings;
     const pairings = tournament.pairings;
@@ -3524,81 +3630,17 @@ function buildDeckProfileAnalytics(
       const side1IsTarget = isTargetDeckIdentity(deck1);
       const side2IsTarget = isTargetDeckIdentity(deck2);
 
-      if (side1IsTarget && !side2IsTarget && qualifiesByTopCut(side1.place, topCut)) {
-        targetGames += 1;
-        targetPoints += result.p1;
-
-        if (result.p1 === 1) wins += 1;
-        else if (result.p1 === 0.5) draws += 1;
-        else losses += 1;
-
-        const oppKey = deck2.key || deck2.candidateKeys[0];
-        if (oppKey) {
-          const existing = matchupMap.get(oppKey) ?? {
-            key: oppKey,
-            displayName: deck2.displayName,
-            spriteUrls: deck2.spriteUrls,
-            wins: 0,
-            losses: 0,
-            draws: 0,
-            games: 0,
-            winRate: 0,
-          };
-
-          existing.games += 1;
-
-          if (result.p1 === 1) existing.wins += 1;
-          else if (result.p1 === 0.5) existing.draws += 1;
-          else existing.losses += 1;
-
-          if (!existing.spriteUrls.length && deck2.spriteUrls.length) {
-            existing.spriteUrls = deck2.spriteUrls;
-          }
-
-          if (!existing.displayName && deck2.displayName) {
-            existing.displayName = deck2.displayName;
-          }
-
-          matchupMap.set(oppKey, existing);
+      if (side1IsTarget && qualifiesByTopCut(side1.place, topCut)) {
+        applyTargetResult(result.p1);
+        if (!side2IsTarget) {
+          addMatchupResult(deck2, result.p1);
         }
       }
 
-      if (side2IsTarget && !side1IsTarget && qualifiesByTopCut(side2.place, topCut)) {
-        targetGames += 1;
-        targetPoints += result.p2;
-
-        if (result.p2 === 1) wins += 1;
-        else if (result.p2 === 0.5) draws += 1;
-        else losses += 1;
-
-        const oppKey = deck1.key || deck1.candidateKeys[0];
-        if (oppKey) {
-          const existing = matchupMap.get(oppKey) ?? {
-            key: oppKey,
-            displayName: deck1.displayName,
-            spriteUrls: deck1.spriteUrls,
-            wins: 0,
-            losses: 0,
-            draws: 0,
-            games: 0,
-            winRate: 0,
-          };
-
-          existing.games += 1;
-
-          if (result.p2 === 1) existing.wins += 1;
-          else if (result.p2 === 0.5) existing.draws += 1;
-          else existing.losses += 1;
-
-          if (!existing.spriteUrls.length && deck1.spriteUrls.length) {
-            existing.spriteUrls = deck1.spriteUrls;
-          }
-
-          if (!existing.displayName && deck1.displayName) {
-            existing.displayName = deck1.displayName;
-          }
-
-          matchupMap.set(oppKey, existing);
+      if (side2IsTarget && qualifiesByTopCut(side2.place, topCut)) {
+        applyTargetResult(result.p2);
+        if (!side1IsTarget) {
+          addMatchupResult(deck1, result.p2);
         }
       }
     }
@@ -3629,8 +3671,8 @@ function buildDeckProfileAnalytics(
     .filter((item) => item.slotRatePct >= MIN_SLOT_RATE_PCT)
     .sort((a, b) => {
       return (
-        b.slotRatePct - a.slotRatePct ||
         b.inclusionPct - a.inclusionPct ||
+        b.slotRatePct - a.slotRatePct ||
         compareText(a.name, b.name)
       );
     });
@@ -3777,35 +3819,72 @@ const rightAnalytics = computed(
     buildDeckProfileAnalytics(rightCardTournaments.value, rightCardFilters.topCut),
 );
 
-const rightDeckPanelCards = computed<RightDeckPanelCard[]>(() => {
+function getRightDeckPanelGroupLabel(groupKey: string) {
+  const isZh = routeLang.value === "zh";
+
+  switch (groupKey) {
+    case "pokemon":
+      return isZh ? "寶可夢卡" : "Pokemon Cards";
+    case "trainer":
+      return isZh ? "訓練家卡" : "Trainer Cards";
+    case "energy":
+      return isZh ? "能量卡" : "Energy Cards";
+    default:
+      return isZh ? "其他卡" : "Other Cards";
+  }
+}
+
+const rightDeckPanelGroups = computed<RightDeckPanelGroup[]>(() => {
   if (rightDeckMode.value === "sample") {
     const sample = rightAnalytics.value.sampleDeck;
     if (!sample) return [];
 
-    return sample.cards.map((card, index) => ({
-      key: `${card.key}-${index}`,
+    return [
+      {
+        key: "sample",
+        label: "",
+        showLabel: false,
+        cards: sample.cards.map((card, index) => ({
+          key: `${card.key}-${index}`,
+          code: card.code,
+          set: card.set,
+          number: card.number,
+          name: card.name,
+          image: card.image,
+          category: "",
+          slotRatePct: card.count,
+          inclusionPct: 0,
+          badgeText: `x${card.count}`,
+          title: `${card.name} x${card.count}`,
+        })),
+      },
+    ];
+  }
+
+  return rightAnalytics.value.cardGroups.map((group) => ({
+    key: group.key,
+    label: getRightDeckPanelGroupLabel(group.key),
+    showLabel: true,
+    cards: group.cards.map((card) => ({
+      key: card.key,
       code: card.code,
       set: card.set,
       number: card.number,
       name: card.name,
       image: card.image,
-      slotRatePct: card.count,
-      badgeText: `x${card.count}`,
-      title: `${card.name} x${card.count}`,
-    }));
-  }
-
-  return rightAnalytics.value.cardsFlat.map((card) => ({
-    key: card.key,
-    code: card.code,
-    set: card.set,
-    number: card.number,
-    name: card.name,
-    image: card.image,
-    slotRatePct: card.slotRatePct,
-    badgeText: formatPercentValue(card.slotRatePct),
-    title: `${card.name} | Slot ${formatPercentValue(card.slotRatePct)} | Include ${formatPercentValue(card.inclusionPct)}`,
+      category: card.category,
+      slotRatePct: card.inclusionPct,
+      inclusionPct: card.inclusionPct,
+      badgeText: formatPercentValue(card.inclusionPct),
+      title:
+        `${card.name} | Include ${formatPercentValue(card.inclusionPct)} | ` +
+        `Avg copies ${card.avgCopies.toFixed(1)}`,
+    })),
   }));
+});
+
+const rightDeckPanelCards = computed<RightDeckPanelCard[]>(() => {
+  return rightDeckPanelGroups.value.flatMap((group) => group.cards);
 });
 
 const rightDeckPanelSubtitle = computed(() => {
@@ -3818,7 +3897,9 @@ const rightDeckPanelSubtitle = computed(() => {
     return `${sample.player} | ${sample.placeLabel}`;
   }
 
-  return "Card inclusion rates for the filtered deck pool";
+  return routeLang.value === "zh"
+    ? "依投入率分組顯示寶可夢卡與訓練家卡"
+    : "Pokemon and Trainer cards grouped by inclusion rate";
 });
 
 const rightDeckPanelEmptyText = computed(() => {
@@ -5728,6 +5809,46 @@ const sortedBestFinishes = computed(() => {
   color: var(--text-soft);
   font-size: 0.88rem;
   line-height: 1.45;
+}
+
+.decklist-groups {
+  display: grid;
+  gap: 18px;
+}
+
+.decklist-group {
+  display: grid;
+  gap: 10px;
+}
+
+.decklist-group__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.decklist-group__title {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.decklist-group__count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(126, 200, 255, 0.24);
+  background: rgba(7, 19, 31, 0.6);
+  color: var(--text-soft);
+  font-size: 0.78rem;
 }
 
 .sample-deck-meta {

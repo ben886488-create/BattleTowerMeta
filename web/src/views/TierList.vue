@@ -500,6 +500,11 @@ import deckIconsManifest from "../assets/deck-icons/manifest.json";
 import substituteIcon from "../assets/deck-icons/substitute.png";
 import { getLocalizedDeckName } from "../assets/pokemonNames";
 import { resolveDeckTier } from "../lib/deckTier";
+import {
+  buildStandingLookup,
+  lookupStandingForPairingSide,
+  parsePairingResult,
+} from "../lib/pairingResolver";
 
 const BASE_URL = (import.meta as any).env?.BASE_URL ?? "/";
 
@@ -1869,56 +1874,38 @@ async function recomputeHeatmapForTopCut() {
     const pairings = pairingsCache[tid];
     if (!Array.isArray(standings) || !Array.isArray(pairings)) continue;
 
-    const playerDeckKey = new Map<string, string>();
-    const playerPlace = new Map<string, number | null>();
-
-    for (const row of standings) {
-      const deck = buildDeckIdentity(row);
-      if (!deck) continue;
-
-      const playerId = String(row?.player ?? "").trim();
-      if (!playerId) continue;
-
-      playerDeckKey.set(playerId, deck.key);
-      playerPlace.set(playerId, getPlace(row));
-    }
+    const standingLookup = buildStandingLookup(standings, (standingRow) => {
+      const deck = buildDeckIdentity(standingRow);
+      if (!deck) return null;
+      return { key: deck.key };
+    });
 
     for (const match of pairings) {
-      const p1 = String(match?.player1 ?? "").trim();
-      const p2 = String(match?.player2 ?? "").trim();
-      if (!p1 || !p2) continue;
+      const side1 = lookupStandingForPairingSide(standingLookup, match, 1);
+      const side2 = lookupStandingForPairingSide(standingLookup, match, 2);
+      if (!side1 || !side2) continue;
 
-      const deck1 = playerDeckKey.get(p1);
-      const deck2 = playerDeckKey.get(p2);
-      if (!deck1 || !deck2) continue;
+      const result = parsePairingResult(match, side1.player, side2.player);
+      if (!result) continue;
 
-      const place1 = playerPlace.get(p1) ?? null;
-      const place2 = playerPlace.get(p2) ?? null;
+      const deck1 = side1.deck.key;
+      const deck2 = side2.deck.key;
 
-      const winner = match?.winner;
-      const isTie = winner === 0 || winner === "0" || winner === "draw" || winner === "tie";
-      const isDoubleLoss = winner === -1 || winner === "-1";
-      const p1Won = winner === p1;
-      const p2Won = winner === p2;
-
-      if (!isTie && !isDoubleLoss && !p1Won && !p2Won) continue;
-      if (isDoubleLoss) continue;
-
-      if (keySet.has(deck1) && keySet.has(deck2) && qualifiesByTopCut(place1, filters.topCut)) {
+      if (keySet.has(deck1) && keySet.has(deck2) && qualifiesByTopCut(side1.place, filters.topCut)) {
         const key = `${deck1}__${deck2}`;
         const rec = pairMap.get(key) ?? { wins: 0, losses: 0, ties: 0 };
-        if (p1Won) rec.wins += 1;
-        else if (p2Won) rec.losses += 1;
-        else if (isTie) rec.ties += 1;
+        if (result.p1 === 1) rec.wins += 1;
+        else if (result.p1 === 0) rec.losses += 1;
+        else rec.ties += 1;
         pairMap.set(key, rec);
       }
 
-      if (keySet.has(deck2) && keySet.has(deck1) && qualifiesByTopCut(place2, filters.topCut)) {
+      if (keySet.has(deck2) && keySet.has(deck1) && qualifiesByTopCut(side2.place, filters.topCut)) {
         const key = `${deck2}__${deck1}`;
         const rec = pairMap.get(key) ?? { wins: 0, losses: 0, ties: 0 };
-        if (p2Won) rec.wins += 1;
-        else if (p1Won) rec.losses += 1;
-        else if (isTie) rec.ties += 1;
+        if (result.p2 === 1) rec.wins += 1;
+        else if (result.p2 === 0) rec.losses += 1;
+        else rec.ties += 1;
         pairMap.set(key, rec);
       }
     }
