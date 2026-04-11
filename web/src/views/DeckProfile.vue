@@ -391,7 +391,7 @@
               {{ rightAnalytics.sampleDeck.tournamentName }}
             </span>
           </div>
-          <div v-if="profileLoading" class="cards-empty">
+          <div v-if="decklistLoading" class="cards-empty">
             正在整理牌組資料…
           </div>
 
@@ -1254,38 +1254,36 @@ async function runWithConcurrency<T>(
   );
 }
 
-async function ensureTournamentDataForIds(ids: string[]) {
-  const missing = ids.filter(
-    (id) =>
-      ((!hasStandings(id) && !internalStandingsLoading[id]) ||
-        (!hasPairings(id) && !internalPairingsLoading[id])),
-  );
-
+async function ensureStandingsForIds(ids: string[]) {
+  const missing = ids.filter((id) => !hasStandings(id) && !internalStandingsLoading[id]);
   if (missing.length === 0) return;
 
   await runWithConcurrency(missing, 4, async (id) => {
-    if (!hasStandings(id) && !internalStandingsLoading[id]) {
-      internalStandingsLoading[id] = true;
-      try {
-        const rows = await loadTournamentStandings<AnyRecord[]>(id);
-        internalStandingsCache[id] = Array.isArray(rows) ? rows : [];
-      } catch {
-        internalStandingsCache[id] = [];
-      } finally {
-        internalStandingsLoading[id] = false;
-      }
+    internalStandingsLoading[id] = true;
+    try {
+      const rows = await loadTournamentStandings<AnyRecord[]>(id);
+      internalStandingsCache[id] = Array.isArray(rows) ? rows : [];
+    } catch {
+      internalStandingsCache[id] = [];
+    } finally {
+      internalStandingsLoading[id] = false;
     }
+  });
+}
 
-    if (!hasPairings(id) && !internalPairingsLoading[id]) {
-      internalPairingsLoading[id] = true;
-      try {
-        const rows = await loadTournamentPairings<AnyRecord[]>(id);
-        internalPairingsCache[id] = Array.isArray(rows) ? rows : [];
-      } catch {
-        internalPairingsCache[id] = [];
-      } finally {
-        internalPairingsLoading[id] = false;
-      }
+async function ensurePairingsForIds(ids: string[]) {
+  const missing = ids.filter((id) => !hasPairings(id) && !internalPairingsLoading[id]);
+  if (missing.length === 0) return;
+
+  await runWithConcurrency(missing, 3, async (id) => {
+    internalPairingsLoading[id] = true;
+    try {
+      const rows = await loadTournamentPairings<AnyRecord[]>(id);
+      internalPairingsCache[id] = Array.isArray(rows) ? rows : [];
+    } catch {
+      internalPairingsCache[id] = [];
+    } finally {
+      internalPairingsLoading[id] = false;
     }
   });
 }
@@ -1322,12 +1320,45 @@ const internalFilteredTournamentIds = computed(() =>
   internalFilteredTournaments.value.map((t) => t.id),
 );
 
+const internalRelevantPairingIds = computed(() => {
+  if (hasExternalData.value) return [];
+
+  const relevant: string[] = [];
+
+  for (const tournament of internalFilteredTournaments.value) {
+    const standings = internalStandingsCache[tournament.id];
+    if (!Array.isArray(standings) || standings.length === 0) continue;
+
+    const hasQualifiedTarget = standings.some((row) => {
+      const place = getPlace(row);
+      if (!qualifiesByTopCut(place, leftPanelFilters.topCut)) return false;
+      return isTargetDeckIdentity(extractDeckIdentityFromRow(row));
+    });
+
+    if (hasQualifiedTarget) {
+      relevant.push(tournament.id);
+    }
+  }
+
+  return relevant;
+});
+
 watch(
   () => internalFilteredTournamentIds.value.join("|"),
   () => {
     if (hasExternalData.value) return;
     if (internalFilteredTournamentIds.value.length === 0) return;
-    void ensureTournamentDataForIds(internalFilteredTournamentIds.value);
+    void ensureStandingsForIds(internalFilteredTournamentIds.value);
+  },
+  { immediate: true },
+);
+
+watch(
+  () => `${leftPanelFilters.topCut}|${internalRelevantPairingIds.value.join("|")}`,
+  () => {
+    if (hasExternalData.value) return;
+    if (internalRelevantPairingIds.value.length === 0) return;
+    void ensurePairingsForIds(internalRelevantPairingIds.value);
   },
   { immediate: true },
 );
@@ -2801,26 +2832,22 @@ const loadedTournamentCount = computed(() => {
   }
 
   return internalFilteredTournaments.value.filter(
-    (t) => hasStandings(t.id) && hasPairings(t.id),
+    (t) => hasStandings(t.id),
   ).length;
 });
 
-const profileLoading = computed(() => {
+const decklistLoading = computed(() => {
   if (hasExternalData.value) return false;
   if (loadingTournaments.value) return true;
 
   const ids = internalFilteredTournamentIds.value;
   if (ids.length === 0) return false;
 
-  if (
-    leftAnalytics.value.targetStandingRows > 0 ||
-    rightAnalytics.value.cardsFlat.length > 0 ||
-    rightAnalytics.value.totalSeenDeckRows > 0
-  ) {
-    return false;
+  if (loadedTournamentCount.value < ids.length) {
+    return rightAnalytics.value.totalSeenDeckRows === 0;
   }
 
-  return loadedTournamentCount.value < ids.length;
+  return false;
 });
 
 watch(
@@ -3519,6 +3546,7 @@ function buildDeckProfileAnalytics(
   for (const tournament of tournaments) {
     const standings = tournament.standings;
     const pairings = tournament.pairings;
+    let tournamentHasQualifiedTarget = false;
 
     const standingMap = new Map<
       string,
@@ -3544,6 +3572,7 @@ function buildDeckProfileAnalytics(
 
       if (!isTargetDeckIdentity(identity)) continue;
 
+      tournamentHasQualifiedTarget = true;
       targetStandingRows += 1;
 
       if (place === 1 || place === 2 || place === 3 || place === 4) {
@@ -3613,6 +3642,10 @@ function buildDeckProfileAnalytics(
           cardMap.set(key, existing);
         }
       }
+    }
+
+    if (!tournamentHasQualifiedTarget || pairings.length === 0) {
+      continue;
     }
 
     for (const row of pairings) {

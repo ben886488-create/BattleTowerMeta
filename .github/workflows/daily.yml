@@ -31,13 +31,11 @@ jobs:
           lfs: true
 
       - name: Setup Python
-        if: github.event_name != 'push'
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Run fetch and build data
-        if: github.event_name != 'push'
         env:
           POCKET_GAME_ID: "POCKET"
           PYTHONUTF8: "1"
