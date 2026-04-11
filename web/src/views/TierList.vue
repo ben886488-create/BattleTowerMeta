@@ -1172,14 +1172,17 @@ function heatCellStyle(winrate: number | null): Record<string, string> {
 
   if (winrate == null) return neutral;
 
-  const pct = winrate * 100;
+  const pct = Number((winrate * 100).toFixed(1));
 
-  if (pct >= 46 && pct <= 54) {
+  if (pct === 50) {
     return neutral;
   }
 
-  if (pct >= 55) {
-    const idx = Math.min(ADVANTAGE_TONES.length - 1, Math.max(0, Math.floor((pct - 55) / 5)));
+  if (pct > 50) {
+    const idx = Math.min(
+      ADVANTAGE_TONES.length - 1,
+      Math.max(0, Math.floor((pct - 50.0001) / 5)),
+    );
     const tone = ADVANTAGE_TONES[idx] ?? ADVANTAGE_TONES[ADVANTAGE_TONES.length - 1];
     if (!tone) return neutral;
     return {
@@ -1193,7 +1196,7 @@ function heatCellStyle(winrate: number | null): Record<string, string> {
   const idx =
     pct <= 10
       ? DISADVANTAGE_TONES.length - 1
-      : Math.min(DISADVANTAGE_TONES.length - 2, Math.floor((45 - pct) / 5));
+      : Math.min(DISADVANTAGE_TONES.length - 2, Math.floor((49.9999 - pct) / 5));
 
   const tone =
     DISADVANTAGE_TONES[Math.max(0, Math.min(idx, DISADVANTAGE_TONES.length - 1))] ??
