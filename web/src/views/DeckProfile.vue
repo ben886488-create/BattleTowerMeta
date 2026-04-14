@@ -5480,6 +5480,7 @@ const sortedBestFinishes = computed(() => {
   border-radius: 12px;
   background: rgba(15, 23, 42, 0.35);
   padding: 10px;
+  min-width: 0;
 }
 
 .profileFilterField label {
@@ -5497,6 +5498,7 @@ const sortedBestFinishes = computed(() => {
   background: rgba(2, 6, 23, 0.35);
   color: rgba(255, 255, 255, 0.92);
   padding: 8px 10px;
+  min-height: 40px;
   outline: none;
 }
 
@@ -5770,7 +5772,7 @@ const sortedBestFinishes = computed(() => {
 }
 
 .profileFilters {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(440px, 0.9fr) minmax(560px, 1.1fr);
   gap: 16px;
 }
 
@@ -5779,26 +5781,31 @@ const sortedBestFinishes = computed(() => {
 }
 
 .profileFilterGrid--left {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(180px, 240px));
+  justify-content: start;
 }
 
 .profileFilterGrid--right {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: minmax(140px, 0.9fr) minmax(140px, 0.9fr) minmax(180px, 1.2fr);
+  justify-content: start;
 }
 
 .profileFilterField--toggle {
   display: grid;
   gap: 8px;
+  min-width: 0;
 }
 
 .view-toggle {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 6px;
-  padding: 6px;
+  padding: 4px;
+  min-height: 40px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(2, 6, 23, 0.35);
+  align-items: stretch;
 }
 
 .view-toggle__option {
@@ -5807,9 +5814,14 @@ const sortedBestFinishes = computed(() => {
   border-radius: 10px;
   background: transparent;
   color: rgba(255, 255, 255, 0.72);
-  padding: 8px 10px;
-  font-size: 0.84rem;
+  padding: 6px 8px;
+  font-size: 0.78rem;
   font-weight: 800;
+  line-height: 1.05;
+  min-height: 30px;
+  min-width: 0;
+  white-space: normal;
+  word-break: break-word;
   cursor: pointer;
   transition:
     color 0.2s ease,

@@ -9,14 +9,7 @@
 
     <div class="filters">
       <div class="f">
-<<<<<<< Updated upstream
         <label>{{ ui.time }}</label>
-=======
-        <label>
-          {{ ui.time }}
-          <!-- <span class="hint">{{ ui.timeHint }}</span> -->
-        </label>
->>>>>>> Stashed changes
         <select v-model="filters.time">
           <option
             v-for="option in timeOptionGroups.base"
@@ -377,8 +370,8 @@ const entries = shallowRef<DecoratedPlayerEntry[]>([]);
 const loading = ref(true);
 const loadError = ref(false);
 
-const currentVersionCode =
-  [...GAME_VERSIONS].filter((version) => version.releaseMs <= Date.now()).at(-1)?.code ?? "";
+const releasedVersions = [...GAME_VERSIONS].filter((version) => version.releaseMs <= Date.now());
+const currentVersionCode = releasedVersions[releasedVersions.length - 1]?.code ?? "";
 
 const filters = reactive<{
   time: TimeFilterValue;
@@ -594,7 +587,7 @@ onMounted(async () => {
   justify-content: space-between;
   gap: 12px;
   align-items: flex-end;
-  margin-bottom: 12px;
+  margin: 12px 0;
 }
 
 .pageTitle {

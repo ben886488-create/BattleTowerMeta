@@ -2,15 +2,13 @@
   <section class="tierlist-page">
     <header class="tierlist-header">
       <div>
-        <h1 class="page-title">Tier List</h1>
+        <h1 class="page-title">{{ ui.pageTitle }}</h1>
         <p class="page-subtitle mono">
           {{
             loadingTournaments
-              ? locale === "en"
-                ? "Loading tournaments…"
-                : "載入賽事中…"
+              ? ui.loadingTournaments
               : meta?.generated_at
-                ? `Generated: ${meta.generated_at}`
+                ? `${ui.generatedAt} ${meta.generated_at}`
                 : "—"
           }}
         </p>
@@ -21,23 +19,23 @@
 
       <div class="filters">
         <div class="f">
-          <label>{{ locale === "en" ? "Players" : "玩家數" }}</label>
+          <label>{{ ui.players }}</label>
           <input
             v-model.number="filters.minPlayers"
             type="number"
             inputmode="numeric"
             min="0"
-            :placeholder="locale === 'en' ? 'e.g. 32' : '例如 32'"
+            :placeholder="ui.playersPlaceholder"
           />
         </div>
 
         <div class="f">
-          <label>{{ locale === "en" ? "Time" : "時間" }}</label>
+          <label>{{ ui.time }}</label>
           <select v-model="filters.time">
             <option v-for="option in timeOptionGroups.base" :key="option.value" :value="option.value">
               {{ option.label }}
             </option>
-            <optgroup v-if="timeOptionGroups.months.length" :label="locale === 'en' ? 'Month' : '月份'">
+            <optgroup v-if="timeOptionGroups.months.length" :label="ui.month">
               <option v-for="option in timeOptionGroups.months" :key="option.value" :value="option.value">
                 {{ option.label }}
               </option>
@@ -46,7 +44,7 @@
         </div>
 
         <div class="f">
-          <label>{{ locale === "en" ? "Set" : "版本" }}</label>
+          <label>{{ ui.set }}</label>
           <select v-model="filters.set">
             <option v-for="o in setOptions" :key="o.value" :value="o.value">
               {{ o.label }}
@@ -55,7 +53,7 @@
         </div>
 
         <div class="f">
-          <label>Top Cut</label>
+          <label>{{ ui.topCut }}</label>
           <select v-model="filters.topCut">
             <option v-for="o in topCutOptions" :key="o.value" :value="o.value">
               {{ o.label }}
@@ -69,10 +67,10 @@
       <div class="usage-card">
         <div class="usage-title-row">
           <div>
-            <h2 class="section-title">Usage Breakdown</h2>
-            <p class="usage-subtitle">Top 10 by usage, plus an aggregated other bucket</p>
+            <h2 class="section-title">{{ ui.usageBreakdown }}</h2>
+            <p class="usage-subtitle">{{ ui.usageSubtitle }}</p>
           </div>
-          <span class="mono subtle">{{ usageTopDeckRows.length }} + other</span>
+          <span class="mono subtle">{{ usageTopDeckRows.length }} + {{ ui.other }}</span>
         </div>
 
         <div v-if="usageBreakdownRows.length > 0" class="usage-list">
@@ -120,7 +118,9 @@
                   >
                     {{ row.tier }}
                   </span>
-                  <span class="usage-row__samples">{{ row.total_samples.toLocaleString() }} samples</span>
+                  <span class="usage-row__samples">
+                    {{ row.total_samples.toLocaleString() }} {{ ui.samples }}
+                  </span>
                 </div>
               </div>
             </RouterLink>
@@ -142,7 +142,9 @@
               <div class="usage-row__copy">
                 <div class="usage-row__name">{{ usageDeckDisplayName(row) }}</div>
                 <div class="usage-row__meta mono">
-                  <span class="usage-row__samples">{{ row.total_samples.toLocaleString() }} samples</span>
+                  <span class="usage-row__samples">
+                    {{ row.total_samples.toLocaleString() }} {{ ui.samples }}
+                  </span>
                 </div>
               </div>
             </div>
@@ -161,13 +163,13 @@
         </div>
 
         <div v-else class="tier-empty mono">
-          {{ loadingTournaments ? "Loading..." : locale === "en" ? "No usage data" : "No usage data" }}
+          {{ loadingTournaments ? ui.loading : ui.noUsageData }}
         </div>
       </div>
 
       <div ref="tierPanelCaptureRef" class="tier-table-card">
         <div class="tier-table-head">
-          <h2 class="section-title tier-table-title">Tier List</h2>
+          <h2 class="section-title tier-table-title">{{ ui.tierList }}</h2>
           <div class="tier-table-actions">
             <span class="mono tier-table-meta">{{ topDeckRows.length }}/{{ TOP_DECK_LIMIT }}</span>
             <button
@@ -232,7 +234,7 @@
         </div>
 
         <div v-else class="tier-empty mono">
-          {{ loadingTournaments ? "Loading…" : locale === "en" ? "No tier data" : "沒有可顯示的牌組" }}
+          {{ loadingTournaments ? ui.loadingEllipsis : ui.noTierData }}
         </div>
       </div>
     </div>
@@ -240,18 +242,18 @@
     <div class="heatmap-card">
       <div class="heatmap-title-row">
         <div>
-          <h2 class="section-title">Win Rate Matrix</h2>
-          <p class="usage-subtitle">Top 10 by score with one image-based custom slot</p>
+          <h2 class="section-title">{{ ui.winRateMatrix }}</h2>
+          <p class="usage-subtitle">{{ ui.winRateSubtitle }}</p>
         </div>
         <span class="mono subtle">
-          <template v-if="heatLoading">Loading matchups…</template>
-          <template v-else>{{ topDeckRows.length }} + 1 slot</template>
+          <template v-if="heatLoading">{{ ui.loadingMatchups }}</template>
+          <template v-else>{{ topDeckRows.length }} + 1 {{ ui.slot }}</template>
         </span>
       </div>
 
       <div v-if="matrixOptionRows.length > 0" class="matrix-picker-panel">
         <div class="matrix-picker-panel__label">
-          {{ locale === "en" ? "Custom Slot" : "自選牌組" }}
+          {{ ui.customSlot }}
         </div>
 
         <details ref="matrixPickerRef" class="matrix-picker">
@@ -270,11 +272,11 @@
                 />
               </div>
               <div v-else class="matrix-picker__placeholder mono">
-                {{ locale === "en" ? "Select a deck for the custom slot" : "選擇一副牌組放進自選牌組格" }}
+                {{ ui.selectCustomSlot }}
               </div>
 
               <div v-if="!matrixSelectedDeckRow" class="matrix-picker__trigger-text">
-                {{ locale === "en" ? "All decks in current filter" : "目前篩選內所有牌組" }}
+                {{ ui.allDecksInFilter }}
               </div>
             </div>
           </summary>
@@ -287,7 +289,7 @@
               @click="clearMatrixDeck"
             >
               <span class="matrix-picker__option-copy">
-                {{ locale === "en" ? "Clear custom slot" : "清空自選牌組格" }}
+                {{ ui.clearCustomSlot }}
               </span>
             </button>
 
@@ -320,7 +322,7 @@
       </div>
 
       <div class="heatmap-shell" v-if="topDeckRows.length > 0">
-        <table class="heatmap-table" aria-label="Win rate matrix">
+        <table class="heatmap-table" :aria-label="ui.winRateMatrix">
           <thead>
             <tr>
               <th class="heatmap-corner"></th>
@@ -344,7 +346,7 @@
                     />
                   </div>
                   <span v-if="!matrixSelectedDeckRow" class="heatmap-picker-label mono">
-                    {{ locale === "en" ? "Custom slot" : "自選牌組" }}
+                    {{ ui.customSlot }}
                   </span>
                 </div>
 
@@ -388,7 +390,7 @@
                     />
                   </div>
                   <span v-if="!r" class="heatmap-picker-row-label mono">
-                    {{ locale === "en" ? "Custom deck" : "自選牌組" }}
+                    {{ ui.customDeck }}
                   </span>
                 </div>
 
@@ -448,14 +450,14 @@
                   :key="`${entry.row?.deck ?? 'custom'}-mobile-row-${idx}`"
                   class="heatmap-sprite heatmap-sprite--mobile"
                   :src="src"
-                  :alt="entry.row ? usageDeckDisplayName(entry.row) : locale === 'en' ? 'Custom deck' : '自選牌組'"
+                  :alt="entry.row ? usageDeckDisplayName(entry.row) : ui.customDeck"
                   loading="lazy"
                   decoding="async"
                   draggable="false"
                 />
               </div>
               <div v-if="entry.index !== topDeckRows.length || !entry.row" class="heatmap-mobile__deck-name">
-                {{ entry.row ? usageDeckDisplayName(entry.row) : locale === "en" ? "Custom deck" : "自選牌組" }}
+                {{ entry.row ? usageDeckDisplayName(entry.row) : ui.customDeck }}
               </div>
             </div>
           </div>
@@ -472,7 +474,7 @@
                 :style="matchup.cell.style"
                 :title="matchup.cell.tooltip"
               >
-                <div class="heatmap-mobile__versus mono">vs.</div>
+                <div class="heatmap-mobile__versus mono">{{ ui.versus }}</div>
                 <div class="heatmap-mobile__opponent">
                   <img
                     v-for="(src, idx) in matchup.col.spriteUrls ?? []"
@@ -492,13 +494,13 @@
           </div>
 
           <div v-else class="heatmap-mobile__empty mono">
-            {{ locale === "en" ? "Choose a custom deck above to fill this slot." : "先在上方選擇一副牌組，這裡才會顯示對戰資料。" }}
+            {{ ui.chooseCustomDeck }}
           </div>
         </section>
       </div>
 
       <div v-else class="tier-empty mono">
-        {{ heatLoading ? "Loading…" : locale === "en" ? "No matchup data" : "沒有對戰資料" }}
+        {{ heatLoading ? ui.loadingEllipsis : ui.noMatchupData }}
       </div>
     </div>
   </section>
@@ -636,6 +638,76 @@ const downloadingTierPanel = ref(false);
 
 const locale = computed<"zh" | "en">(() => {
   return String(route.path).split("/")[1] === "en" ? "en" : "zh";
+});
+
+const ui = computed(() => {
+  if (locale.value === "en") {
+    return {
+      pageTitle: "Tier List",
+      loadingTournaments: "Loading tournaments…",
+      generatedAt: "Generated:",
+      players: "Players",
+      playersPlaceholder: "e.g. 32",
+      time: "Time",
+      month: "Month",
+      set: "Set",
+      topCut: "Top Cut",
+      usageBreakdown: "Usage Breakdown",
+      usageSubtitle: "Top 10 by usage, plus an aggregated other bucket",
+      other: "other",
+      samples: "samples",
+      loading: "Loading...",
+      loadingEllipsis: "Loading…",
+      noUsageData: "No usage data",
+      tierList: "Tier List",
+      noTierData: "No tier data",
+      winRateMatrix: "Win Rate Matrix",
+      winRateSubtitle: "Top 10 by score with one image-based custom slot",
+      loadingMatchups: "Loading matchups…",
+      slot: "slot",
+      customSlot: "Custom slot",
+      selectCustomSlot: "Select a deck for the custom slot",
+      allDecksInFilter: "All decks in current filter",
+      clearCustomSlot: "Clear custom slot",
+      customDeck: "Custom deck",
+      versus: "vs.",
+      chooseCustomDeck: "Choose a custom deck above to fill this slot.",
+      noMatchupData: "No matchup data",
+    };
+  }
+
+  return {
+    pageTitle: "排名列表",
+    loadingTournaments: "載入賽事中…",
+    generatedAt: "生成時間:",
+    players: "玩家數",
+    playersPlaceholder: "例如 32",
+    time: "時間",
+    month: "月份",
+    set: "版本",
+    topCut: "淘汰賽段位",
+    usageBreakdown: "使用率分布",
+    usageSubtitle: "依使用率顯示前 10，並合併其餘牌組為 other",
+    other: "其他",
+    samples: "樣本",
+    loading: "載入中...",
+    loadingEllipsis: "載入中…",
+    noUsageData: "沒有使用率資料",
+    tierList: "牌組分級",
+    noTierData: "沒有可顯示的牌組",
+    winRateMatrix: "勝率矩陣",
+    winRateSubtitle: "依分數前 10 名，外加 1 個自選牌組欄位",
+    loadingMatchups: "載入對戰中…",
+    slot: "欄位",
+    customSlot: "自選牌組",
+    selectCustomSlot: "選擇一副牌組放進自選牌組格",
+    allDecksInFilter: "目前篩選內所有牌組",
+    clearCustomSlot: "清空自選牌組格",
+    customDeck: "自選牌組",
+    versus: "對",
+    chooseCustomDeck: "先在上方選擇一副牌組，這裡才會顯示對戰資料。",
+    noMatchupData: "沒有對戰資料",
+  };
 });
 
 const currentVersionWindow = computed(() => inferVersionByStartMs(Date.now()));
@@ -2137,31 +2209,32 @@ onMounted(async () => {
 
 <style scoped>
 .tierlist-page {
-  color: #e7edf6;
-  padding: 24px;
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 1120px;
+  margin: 0 auto;
   width: 100%;
 }
 
 .tierlist-header {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 16px;
-  margin-bottom: 18px;
+  gap: 12px;
+  margin: 12px 0;
 }
 
 .page-title {
   margin: 0;
-  font-size: 2rem;
-  line-height: 1.1;
+  font-size: 18px;
+  line-height: 1.2;
   font-weight: 800;
-  color: #f5f8fc;
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .page-subtitle {
-  margin: 10px 0 0;
-  color: #8fb0d8;
-  font-size: 1.05rem;
-  font-weight: 600;
+  margin: 4px 0 0;
+  color: rgba(226, 232, 240, 0.72);
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .page-error {
@@ -2184,8 +2257,8 @@ onMounted(async () => {
 }
 
 .subtle {
-  color: #9fb3cf;
-  font-size: 0.92rem;
+  color: rgba(226, 232, 240, 0.7);
+  font-size: 12px;
 }
 
 .filters {
@@ -2196,16 +2269,16 @@ onMounted(async () => {
 
 .f {
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
-  background: rgba(15, 23, 42, 0.38);
-  padding: 12px;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.35);
+  padding: 10px;
 }
 
 .f label {
   display: block;
   font-size: 12px;
   font-weight: 800;
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: 6px;
 }
 
@@ -2214,21 +2287,22 @@ onMounted(async () => {
   width: 100%;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(2, 6, 23, 0.35);
+  background: rgba(2, 6, 23, 0.45);
   color: rgba(255, 255, 255, 0.92);
   padding: 8px 10px;
   outline: none;
 }
 
 .hint {
-  margin-top: 6px;
-  font-size: 11px;
-  color: rgba(226, 232, 240, 0.65);
+  display: block;
+  margin-top: 4px;
+  font-size: 10px;
+  color: rgba(226, 232, 240, 0.58);
 }
 
 .tierlist-top-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1.45fr) minmax(420px, 0.95fr);
   gap: 16px;
   align-items: stretch;
 }
@@ -2246,18 +2320,17 @@ onMounted(async () => {
 .usage-card,
 .tier-table-card,
 .heatmap-card {
-  border: 1px solid rgba(90, 130, 180, 0.24);
-  background: linear-gradient(180deg, rgba(16, 34, 60, 0.92), rgba(9, 20, 35, 0.96));
-  border-radius: 18px;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
-  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 23, 42, 0.35);
+  border-radius: 12px;
+  padding: 12px;
 }
 
 .section-title {
   margin: 0;
-  font-size: 1.16rem;
-  font-weight: 900;
-  color: #f5f8fc;
+  font-size: 14px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.92);
   letter-spacing: 0.01em;
 }
 
@@ -2280,8 +2353,8 @@ onMounted(async () => {
 
 .usage-subtitle {
   margin: 6px 0 0;
-  color: #9fb3cf;
-  font-size: 0.92rem;
+  color: rgba(226, 232, 240, 0.72);
+  font-size: 12px;
 }
 
 .usage-list {
@@ -2296,10 +2369,9 @@ onMounted(async () => {
   gap: 12px;
   align-items: center;
   padding: 10px 12px;
-  border-radius: 14px;
-  border: 1px solid rgba(90, 130, 180, 0.18);
-  background: linear-gradient(180deg, rgba(10, 23, 40, 0.88), rgba(8, 18, 31, 0.96));
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 23, 42, 0.45);
 }
 
 .usage-row--other {
@@ -2486,56 +2558,30 @@ onMounted(async () => {
 
 .tier-table-card {
   position: relative;
-  justify-self: center;
+  justify-self: stretch;
   align-self: stretch;
-  width: auto;
+  width: 100%;
   height: 100%;
-  max-width: min(100%, 420px);
+  max-width: none;
   aspect-ratio: 1 / 2;
   min-height: 0;
   display: grid;
   grid-template-rows: auto 1fr;
   gap: 12px;
   overflow: hidden;
-  padding: 18px;
-  border-radius: 22px;
-  border: 1px solid rgba(112, 131, 160, 0.22);
-  background:
-    radial-gradient(circle at 100% 0%, rgba(255, 194, 104, 0.08), transparent 32%),
-    linear-gradient(180deg, rgba(12, 22, 36, 0.98), rgba(8, 14, 24, 0.99));
-  box-shadow:
-    0 18px 40px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 23, 42, 0.35);
+  box-shadow: none;
 }
 
 .tier-table-card::before {
-  content: "";
-  position: absolute;
-  left: 18px;
-  right: 18px;
-  top: 58px;
-  height: 1px;
-  background: linear-gradient(90deg, rgba(255, 206, 101, 0.5), rgba(255, 206, 101, 0));
-  pointer-events: none;
+  content: none;
 }
 
 .tier-table-card::after {
-  content: "TL-01";
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  font-family:
-    "Rajdhani",
-    "Orbitron",
-    "Eurostile",
-    "Bank Gothic",
-    "Segoe UI",
-    sans-serif;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  color: rgba(255, 214, 112, 0.52);
-  pointer-events: none;
+  content: none;
 }
 
 .tier-table-head {
@@ -2543,7 +2589,7 @@ onMounted(async () => {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  padding-right: 44px;
+  padding-right: 0;
 }
 
 .tier-table-actions {
@@ -2552,6 +2598,7 @@ onMounted(async () => {
   justify-content: flex-end;
   gap: 10px;
   flex-wrap: wrap;
+  margin-left: auto;
 }
 
 .tier-table-title {
@@ -2571,39 +2618,32 @@ onMounted(async () => {
 }
 
 .tier-table-meta {
-  color: #8fa4c0;
-  font-size: 0.82rem;
-  letter-spacing: 0.08em;
+  color: rgba(226, 232, 240, 0.72);
+  font-size: 12px;
+  letter-spacing: 0;
 }
 
 .tier-download-btn {
   appearance: none;
-  border: 1px solid rgba(96, 162, 214, 0.34);
+  min-width: 96px;
+  border: 1px solid rgba(125, 211, 252, 0.22);
   border-radius: 999px;
-  background: linear-gradient(180deg, rgba(17, 46, 78, 0.96), rgba(9, 24, 42, 0.98));
-  color: #f2f8ff;
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  padding: 0.6rem 1rem;
+  background: rgba(8, 20, 35, 0.76);
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+  padding: 8px 14px;
   cursor: pointer;
-  transition:
-    transform 0.16s ease,
-    border-color 0.16s ease,
-    box-shadow 0.16s ease,
-    opacity 0.16s ease;
-  box-shadow:
-    0 10px 18px rgba(0, 0, 0, 0.22),
-    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  box-shadow: none;
 }
 
 .tier-download-btn:hover:not(:disabled) {
   transform: translateY(-1px);
-  border-color: rgba(120, 196, 255, 0.5);
-  box-shadow:
-    0 14px 24px rgba(0, 0, 0, 0.26),
-    0 0 0 1px rgba(110, 190, 255, 0.16),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  border-color: rgba(125, 211, 252, 0.36);
+  color: #7dd3fc;
+  background: rgba(10, 24, 42, 0.9);
 }
 
 .tier-download-btn:disabled {
@@ -2633,125 +2673,68 @@ onMounted(async () => {
 }
 
 .tier-lane__badge {
-  position: relative;
   min-height: 82px;
-  border-radius: 16px 18px 16px 10px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  isolation: isolate;
-  clip-path: polygon(0 12px, 12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  background-color: rgba(46, 55, 68, 0.96);
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.05),
-    0 8px 18px rgba(0, 0, 0, 0.18);
+  background: rgba(15, 23, 42, 0.55);
+  box-shadow: none;
 }
 
 .tier-lane__badge::before,
 .tier-lane__badge::after {
-  position: absolute;
-  pointer-events: none;
-  z-index: 0;
+  content: none;
 }
 
 .tier-lane__badge::before {
-  content: "";
-  inset: 0;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 42%),
-    repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0 1px, transparent 1px 6px);
-  opacity: 0.72;
+  content: none;
 }
 
 .tier-lane__badge::after {
-  content: "";
-  right: 8px;
-  top: 8px;
-  width: 16px;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.28);
-  box-shadow: 0 6px 0 rgba(255, 255, 255, 0.18);
-  opacity: 0.72;
+  content: none;
 }
 
 .tier-lane__badge-text {
-  position: relative;
-  z-index: 1;
-  font-family:
-    "Orbitron",
-    "Rajdhani",
-    "Eurostile",
-    "Bank Gothic",
-    "Segoe UI",
-    sans-serif;
-  font-size: 2.08rem;
-  font-weight: 900;
+  font-size: 1.9rem;
+  font-weight: 800;
   line-height: 1;
-  letter-spacing: 0.04em;
-  color: #eef4fc;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: none;
 }
 
 .tier-lane__badge--sss,
 .tier-lane__badge--ss,
 .tier-lane__badge--s {
-  border-color: rgba(226, 164, 98, 0.24);
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
 .tier-lane__badge--sss::before {
-  background:
-    radial-gradient(circle at 22% 22%, rgba(255, 233, 152, 0.18), transparent 18%),
-    linear-gradient(135deg, rgba(255, 240, 180, 0.12), transparent 44%),
-    repeating-linear-gradient(180deg, rgba(255, 243, 196, 0.04) 0 1px, transparent 1px 6px);
+  content: none;
 }
 
 .tier-lane__badge-text--sss {
   font-size: 1.9rem;
-  letter-spacing: 0.08em;
-  background: linear-gradient(180deg, #fff5b4 0%, #ffd95e 38%, #d69a20 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: none;
-  filter: drop-shadow(0 0 12px rgba(255, 210, 84, 0.16));
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .tier-lane__badge--ss::after {
-  content: "//";
-  top: 8px;
-  right: 8px;
-  width: auto;
-  height: auto;
-  background: none;
-  box-shadow: none;
-  font-family:
-    "Orbitron",
-    "Rajdhani",
-    sans-serif;
-  font-size: 0.72rem;
-  line-height: 1;
-  font-weight: 900;
-  color: rgba(255, 216, 92, 0.82);
-  opacity: 1;
+  content: none;
 }
 
 .tier-lane__badge-text--ss {
-  font-size: 1.92rem;
-  letter-spacing: 0.08em;
-  color: #ffd85a;
-  text-shadow:
-    0 0 12px rgba(255, 213, 93, 0.12),
-    0 1px 0 rgba(0, 0, 0, 0.4);
+  font-size: 1.9rem;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .tier-lane__badge-text--s {
-  font-size: 1.96rem;
-  color: #f7f2de;
-  letter-spacing: 0.08em;
+  font-size: 1.9rem;
+  color: rgba(255, 255, 255, 0.92);
+  letter-spacing: 0.02em;
 }
 
 .tier-lane__deckbar {
@@ -2762,19 +2745,17 @@ onMounted(async () => {
   align-content: start;
   gap: 10px;
   padding: 10px 12px;
-  border-radius: 18px;
-  border: 1px solid rgba(102, 122, 151, 0.16);
-  background: linear-gradient(180deg, rgba(28, 42, 66, 0.78), rgba(13, 20, 32, 0.9));
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.03),
-    0 8px 16px rgba(0, 0, 0, 0.14);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 23, 42, 0.45);
+  box-shadow: none;
 }
 
 .tier-lane--sss .tier-lane__deckbar,
 .tier-lane--ss .tier-lane__deckbar,
 .tier-lane--s .tier-lane__deckbar {
-  border-color: rgba(226, 164, 98, 0.18);
-  background: linear-gradient(180deg, rgba(38, 50, 73, 0.8), rgba(15, 21, 31, 0.92));
+  border-color: rgba(255, 255, 255, 0.08);
+  background: rgba(15, 23, 42, 0.45);
 }
 
 .tier-lane__decklink {
@@ -2798,7 +2779,7 @@ onMounted(async () => {
   justify-content: center;
   gap: 10px;
   padding: 9px 14px;
-  border-radius: 16px;
+  border-radius: 12px;
   border: 1px solid rgba(115, 134, 162, 0.14);
   background: linear-gradient(180deg, rgba(10, 18, 30, 0.75), rgba(7, 13, 22, 0.94));
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
@@ -2810,8 +2791,8 @@ onMounted(async () => {
 
 .tier-lane__decklink:hover .tier-lane__spritepair {
   transform: translateY(-1px);
-  border-color: rgba(255, 204, 96, 0.24);
-  background: linear-gradient(180deg, rgba(16, 28, 45, 0.84), rgba(8, 15, 26, 0.96));
+  border-color: rgba(125, 211, 252, 0.3);
+  background: rgba(15, 23, 42, 0.65);
 }
 
 .tier-lane__spritepair--single {
@@ -2851,15 +2832,15 @@ onMounted(async () => {
     justify-self: stretch;
     width: 100%;
     height: auto;
-    max-width: 420px;
-    margin: 0 auto;
+    max-width: none;
+    margin: 0;
     aspect-ratio: auto;
     min-height: auto;
   }
 }
 
 .heatmap-card {
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 .heatmap-shell {
@@ -2879,17 +2860,17 @@ onMounted(async () => {
 
 .heatmap-corner {
   width: 148px;
-  background: rgba(13, 28, 50, 0.98);
-  border-right: 1px solid rgba(97, 134, 179, 0.16);
-  border-bottom: 1px solid rgba(97, 134, 179, 0.16);
+  background: rgba(15, 23, 42, 0.72);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .heatmap-col-label {
   width: calc((100% - 148px) / 11);
   padding: 8px 6px 10px;
   text-align: center;
-  background: rgba(13, 28, 50, 0.98);
-  border-bottom: 1px solid rgba(97, 134, 179, 0.16);
+  background: rgba(15, 23, 42, 0.72);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   vertical-align: bottom;
 }
 
@@ -2897,8 +2878,8 @@ onMounted(async () => {
   width: 148px;
   padding: 8px;
   text-align: center;
-  background: rgba(13, 28, 50, 0.98);
-  border-right: 1px solid rgba(97, 134, 179, 0.16);
+  background: rgba(15, 23, 42, 0.72);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
   vertical-align: middle;
 }
 
@@ -2915,9 +2896,9 @@ onMounted(async () => {
   align-items: center;
   justify-content: center;
   padding: 10px 8px;
-  border-radius: 16px;
-  border: 1px solid rgba(92, 130, 176, 0.22);
-  background: rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 23, 42, 0.5);
   transition:
     background-color 0.15s ease,
     transform 0.15s ease,
@@ -2935,9 +2916,9 @@ onMounted(async () => {
 }
 
 .heatmap-label-link:hover .heatmap-axis-chip {
-  background: rgba(110, 175, 255, 0.12);
+  background: rgba(30, 41, 59, 0.7);
   transform: translateY(-1px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  box-shadow: none;
 }
 
 .heatmap-sprite-stack,
@@ -2972,9 +2953,9 @@ onMounted(async () => {
 
 .heatmap-cell {
   padding: 6px;
-  background: rgba(9, 22, 40, 0.55);
-  border-right: 1px solid rgba(97, 134, 179, 0.08);
-  border-bottom: 1px solid rgba(97, 134, 179, 0.08);
+  background: rgba(15, 23, 42, 0.45);
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .heatmap-cell__inner {
@@ -2997,9 +2978,9 @@ onMounted(async () => {
 }
 
 .heatmap-cell__inner--empty {
-  color: rgba(199, 215, 235, 0.55);
-  background: rgba(13, 28, 50, 0.62);
-  border-color: rgba(97, 134, 179, 0.1);
+  color: rgba(226, 232, 240, 0.55);
+  background: rgba(15, 23, 42, 0.55);
+  border-color: rgba(255, 255, 255, 0.08);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
 }
 
@@ -3196,7 +3177,7 @@ onMounted(async () => {
 
 @media (max-width: 640px) {
   .tierlist-page {
-    padding: 16px;
+    max-width: 100%;
   }
 
   .filters {
@@ -3273,7 +3254,7 @@ onMounted(async () => {
     padding: 12px;
     border-radius: 16px;
     border: 1px solid rgba(92, 130, 176, 0.22);
-    background: rgba(13, 28, 50, 0.72);
+    background: rgba(15, 23, 42, 0.55);
   }
 
   .heatmap-mobile__deck-name {

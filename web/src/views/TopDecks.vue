@@ -1663,13 +1663,11 @@ onMounted(() => {
 
 <style scoped>
 .top-decks-page {
-  color: #e7edf6;
-  padding: 24px;
   width: 100%;
 }
 
 .top-decks-wrap {
-  max-width: 1320px;
+  max-width: 1120px;
   margin: 0 auto;
   width: 100%;
 }
@@ -1678,28 +1676,27 @@ onMounted(() => {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 16px;
+  gap: 12px;
+  margin: 12px 0;
 }
 
 .page-title {
   margin: 0;
-  font-size: 2rem;
-  line-height: 1.1;
+  font-size: 18px;
+  line-height: 1.2;
   font-weight: 800;
-  color: #f5f8fc;
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .page-subtitle {
-  margin: 8px 0 0;
-  color: #8fb0d8;
-  font-size: 1.05rem;
-  font-weight: 600;
+  margin: 4px 0 0;
+  color: rgba(226, 232, 240, 0.72);
+  font-size: 12px;
 }
 
 .page-status {
-  color: #9fb3cf;
-  font-size: 0.98rem;
+  color: rgba(226, 232, 240, 0.7);
+  font-size: 12px;
   white-space: nowrap;
 }
 
@@ -1707,21 +1704,19 @@ onMounted(() => {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .f,
 .scope-card,
 .table-card {
-  border: 1px solid rgba(90, 130, 180, 0.28);
-  background:
-    linear-gradient(180deg, rgba(18, 40, 73, 0.92), rgba(10, 25, 45, 0.95));
-  border-radius: 18px;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.35);
 }
 
 .f {
-  padding: 12px;
+  padding: 10px;
 }
 
 .f label {
@@ -1729,13 +1724,14 @@ onMounted(() => {
   margin-bottom: 6px;
   font-size: 12px;
   font-weight: 800;
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .hint {
-  margin-top: 6px;
-  color: #97adc8;
-  font-size: 0.76rem;
+  display: block;
+  margin-top: 4px;
+  font-size: 10px;
+  color: rgba(226, 232, 240, 0.58);
 }
 
 .filter-input,
@@ -1743,10 +1739,9 @@ onMounted(() => {
   width: 100%;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(2, 6, 23, 0.35);
+  background: rgba(2, 6, 23, 0.45);
   color: rgba(255, 255, 255, 0.92);
   padding: 8px 10px;
-  font-size: 0.96rem;
   outline: none;
 }
 
@@ -1757,14 +1752,20 @@ onMounted(() => {
 }
 
 .scope-card {
-  padding: 16px;
-  margin-bottom: 16px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
 }
 
 .scope-line {
   margin: 0;
-  color: #d5e2f2;
-  line-height: 1.6;
+  color: rgba(226, 232, 240, 0.75);
+  line-height: 1.55;
+  font-size: 12px;
+}
+
+.scope-line strong {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 700;
 }
 
 .scope-line + .scope-line {
@@ -1794,24 +1795,26 @@ onMounted(() => {
   position: sticky;
   top: 0;
   z-index: 1;
-  background: rgba(13, 28, 50, 0.98);
-  color: #c7d7eb;
-  font-size: 0.95rem;
-  font-weight: 800;
+  background: rgba(15, 23, 42, 0.78);
+  color: rgba(226, 232, 240, 0.72);
+  font-size: 12px;
+  font-weight: 700;
   text-align: left;
-  padding: 14px 16px;
-  border-bottom: 1px solid rgba(97, 134, 179, 0.22);
+  padding: 11px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   white-space: nowrap;
 }
 
 .decks-table tbody td {
-  padding: 16px;
-  border-top: 1px solid rgba(97, 134, 179, 0.16);
+  padding: 11px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   vertical-align: middle;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .decks-table tbody tr:hover {
-  background: rgba(34, 64, 104, 0.16);
+  background: rgba(148, 163, 184, 0.04);
 }
 
 .rank-col {
@@ -1835,7 +1838,7 @@ onMounted(() => {
 }
 
 .divider-left {
-  border-left: 2px solid rgba(78, 127, 191, 0.45);
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .sort-btn {
@@ -1852,7 +1855,7 @@ onMounted(() => {
 }
 
 .sort-indicator {
-  color: #70b4ff;
+  color: rgba(148, 197, 255, 0.9);
   font-size: 0.95rem;
   line-height: 1;
 }
@@ -1954,107 +1957,108 @@ onMounted(() => {
   align-items: center;
   justify-content: center;
   min-width: 44px;
-  height: 38px;
-  padding: 0 12px;
+  height: 30px;
+  padding: 0 10px;
   border-radius: 999px;
-  font-weight: 900;
-  letter-spacing: 0.04em;
-  border: 1px solid transparent;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.08),
-    0 8px 16px rgba(0, 0, 0, 0.14);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  text-shadow: none;
+  box-shadow: none;
 }
 
 .tier-sss,
 .tier-ss,
 .tier-s {
-  background: linear-gradient(180deg, rgba(178, 97, 56, 0.96) 0%, rgba(103, 49, 22, 0.98) 100%);
-  border-color: rgba(226, 164, 98, 0.38);
+  background: rgba(180, 112, 66, 0.26);
+  border-color: rgba(226, 164, 98, 0.26);
 }
 
 .tier-sss {
-  color: #fff4d1;
+  color: rgba(255, 236, 196, 0.96);
 }
 
 .tier-ss {
-  color: #ffe7bf;
+  color: rgba(255, 232, 190, 0.95);
 }
 
 .tier-s {
-  color: #f8f1e3;
+  color: rgba(246, 236, 218, 0.95);
 }
 
 .tier-a {
-  background: linear-gradient(180deg, rgba(156, 110, 53, 0.95) 0%, rgba(89, 61, 23, 0.98) 100%);
-  color: #fff0d6;
-  border-color: rgba(203, 154, 92, 0.34);
+  background: rgba(160, 118, 72, 0.22);
+  color: rgba(255, 236, 210, 0.95);
+  border-color: rgba(203, 154, 92, 0.24);
 }
 
 .tier-b {
-  background: linear-gradient(180deg, rgba(145, 128, 55, 0.95) 0%, rgba(84, 73, 24, 0.98) 100%);
-  color: #fff6cc;
-  border-color: rgba(188, 169, 86, 0.3);
+  background: rgba(148, 132, 67, 0.2);
+  color: rgba(255, 243, 204, 0.94);
+  border-color: rgba(188, 169, 86, 0.22);
 }
 
 .tier-c {
-  background: linear-gradient(180deg, rgba(97, 146, 82, 0.94) 0%, rgba(55, 92, 46, 0.98) 100%);
-  color: #ebffe8;
-  border-color: rgba(132, 181, 118, 0.3);
+  background: rgba(99, 146, 87, 0.2);
+  color: rgba(230, 255, 225, 0.94);
+  border-color: rgba(132, 181, 118, 0.22);
 }
 
 .tier-d {
-  background: linear-gradient(180deg, rgba(84, 110, 144, 0.94) 0%, rgba(46, 61, 86, 0.98) 100%);
-  color: #e8f1ff;
-  border-color: rgba(118, 145, 184, 0.32);
+  background: rgba(92, 116, 148, 0.2);
+  color: rgba(228, 238, 255, 0.94);
+  border-color: rgba(118, 145, 184, 0.22);
 }
 
 .tier-e {
-  background: linear-gradient(180deg, rgba(105, 92, 140, 0.94) 0%, rgba(59, 49, 84, 0.98) 100%);
-  color: #ece5ff;
-  border-color: rgba(145, 128, 190, 0.26);
+  background: rgba(111, 99, 146, 0.2);
+  color: rgba(236, 229, 255, 0.94);
+  border-color: rgba(145, 128, 190, 0.2);
 }
 
 .tier-f {
-  background: linear-gradient(180deg, rgba(78, 86, 99, 0.94) 0%, rgba(41, 46, 55, 0.98) 100%);
-  color: #dde5ef;
-  border-color: rgba(122, 132, 146, 0.24);
+  background: rgba(84, 93, 107, 0.2);
+  color: rgba(222, 229, 239, 0.92);
+  border-color: rgba(122, 132, 146, 0.2);
 }
 
 
 .empty-state {
   text-align: center;
-  color: #c7d4e6;
-  padding: 28px 20px !important;
-  font-size: 1rem;
+  color: rgba(226, 232, 240, 0.72);
+  padding: 22px 12px !important;
+  font-size: 13px;
 }
 
 .table-footer {
   display: flex;
   justify-content: center;
-  padding: 16px 18px 18px;
-  border-top: 1px solid rgba(97, 134, 179, 0.16);
+  padding: 14px 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .more-btn {
-  border: 1px solid rgba(117, 180, 255, 0.32);
-  background: rgba(25, 67, 116, 0.46);
-  color: #eef6ff;
+  min-width: 96px;
+  border: 1px solid rgba(125, 211, 252, 0.22);
+  background: rgba(8, 20, 35, 0.76);
+  color: rgba(255, 255, 255, 0.92);
   border-radius: 999px;
-  padding: 10px 16px;
-  font-size: 0.96rem;
-  font-weight: 700;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 600;
   cursor: pointer;
   transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .more-btn:hover {
-  background: rgba(36, 88, 148, 0.62);
+  border-color: rgba(125, 211, 252, 0.36);
+  color: #7dd3fc;
+  background: rgba(10, 24, 42, 0.9);
   transform: translateY(-1px);
 }
 
 .muted {
-  color: #97adc8;
+  color: rgba(226, 232, 240, 0.55);
 }
 
 .mono {
@@ -2071,10 +2075,6 @@ onMounted(() => {
 }
 
 @media (max-width: 1080px) {
-  .top-decks-page {
-    padding: 16px;
-  }
-
   .page-header {
     align-items: flex-start;
     flex-direction: column;
@@ -2085,7 +2085,7 @@ onMounted(() => {
   }
 
   .page-title {
-    font-size: 1.7rem;
+    font-size: 16px;
   }
 
   .deck-platform {
@@ -2129,9 +2129,9 @@ onMounted(() => {
     display: grid;
     gap: 12px;
     padding: 14px;
-    border-radius: 16px;
-    border: 1px solid rgba(97, 134, 179, 0.18);
-    background: rgba(11, 24, 42, 0.84);
+    border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(15, 23, 42, 0.3);
   }
 
   .mobile-deck-card__top {
@@ -2142,8 +2142,8 @@ onMounted(() => {
   }
 
   .mobile-rank {
-    color: #9fc6ff;
-    font-size: 0.9rem;
+    color: rgba(125, 211, 252, 0.9);
+    font-size: 13px;
   }
 
   .mobile-deck-card__stats {
@@ -2157,8 +2157,8 @@ onMounted(() => {
     gap: 4px;
     padding: 10px;
     border-radius: 12px;
-    background: rgba(19, 35, 58, 0.92);
-    border: 1px solid rgba(117, 180, 255, 0.12);
+  background: rgba(15, 23, 42, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.07);
   }
 
   .mobile-stat span {

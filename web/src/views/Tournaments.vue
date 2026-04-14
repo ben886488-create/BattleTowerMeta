@@ -1043,7 +1043,7 @@ watch([total, pageSize], () => {
   justify-content: space-between;
   gap: 12px;
   align-items: flex-end;
-  margin-bottom: 12px;
+  margin: 12px 0;
 }
 
 .title {

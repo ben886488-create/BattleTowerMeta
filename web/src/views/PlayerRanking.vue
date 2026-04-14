@@ -14,14 +14,7 @@
       </div>
 
       <div class="f">
-<<<<<<< Updated upstream
         <label>{{ ui.time }}</label>
-=======
-        <label>
-          {{ ui.time }}
-          <!-- <span class="hint">{{ ui.timeHint }}</span> -->
-        </label>
->>>>>>> Stashed changes
         <select v-model="filters.time">
           <option
             v-for="option in timeOptionGroups.base"
@@ -105,15 +98,17 @@
                 {{ row.player }}
               </RouterLink>
             </td>
-            <td class="regionCell">
-              <span
-                v-if="row.country"
-                class="flag-icon"
-                :class="`fi fi-${row.country.toLowerCase()}`"
-                aria-hidden="true"
-              ></span>
-              <span v-else class="flag-icon flag-icon--empty"></span>
-              <span>{{ countryName(row.country) }}</span>
+            <td>
+              <div class="regionCell">
+                <span
+                  v-if="row.country"
+                  class="flag-icon"
+                  :class="`fi fi-${row.country.toLowerCase()}`"
+                  aria-hidden="true"
+                ></span>
+                <span v-else class="flag-icon flag-icon--empty"></span>
+                <span>{{ countryName(row.country) }}</span>
+              </div>
             </td>
             <td>
               <div class="deckIcons deckIcons--small" :title="row.mostUsedDeckName || ui.unknown">
@@ -353,8 +348,8 @@ const entries = shallowRef<DecoratedPlayerEntry[]>([]);
 const loading = ref(true);
 const loadError = ref(false);
 
-const currentVersionCode =
-  [...GAME_VERSIONS].filter((version) => version.releaseMs <= Date.now()).at(-1)?.code ?? "";
+const releasedVersions = [...GAME_VERSIONS].filter((version) => version.releaseMs <= Date.now());
+const currentVersionCode = releasedVersions[releasedVersions.length - 1]?.code ?? "";
 
 const filters = reactive<{
   player: string;
@@ -569,7 +564,7 @@ onMounted(async () => {
   justify-content: space-between;
   gap: 12px;
   align-items: flex-end;
-  margin-bottom: 12px;
+  margin: 12px 0;
 }
 
 .pageTitle {
