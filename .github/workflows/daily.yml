@@ -50,6 +50,19 @@ jobs:
           python scripts/build_tournament_pages.py
           python scripts/extract_tournament_players.py
 
+      - name: Commit updated data back to repo
+        run: |
+          if git diff --quiet -- web/public/data; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+
+          git add web/public/data
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(data): daily refresh [skip ci]"
+          git push
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
