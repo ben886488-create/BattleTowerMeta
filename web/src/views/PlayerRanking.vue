@@ -14,7 +14,14 @@
       </div>
 
       <div class="f">
+<<<<<<< Updated upstream
         <label>{{ ui.time }}</label>
+=======
+        <label>
+          {{ ui.time }}
+          <!-- <span class="hint">{{ ui.timeHint }}</span> -->
+        </label>
+>>>>>>> Stashed changes
         <select v-model="filters.time">
           <option
             v-for="option in timeOptionGroups.base"
