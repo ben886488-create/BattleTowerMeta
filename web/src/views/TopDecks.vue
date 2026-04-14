@@ -85,6 +85,12 @@
           / {{ aggregated.totalSelectedSamples.toLocaleString() }} {{ t("selectedSamplePool") }}
         </p>
 
+        <p class="scope-line" v-if="filteredTournaments.length > 0">
+          <strong>{{ t("loaded") }}:</strong>
+          {{ loadedFilteredTournamentCount }} / {{ loadedTournamentIds.length }}
+          {{ t("tournamentsUnit") }}
+        </p>
+
         <p class="scope-line">
           <strong>{{ t("note") }}:</strong>
           {{ noteText }}
@@ -296,24 +302,32 @@
           </div>
         </div>
 
-        <div v-if="sortedRows.length > DEFAULT_VISIBLE_ROWS" class="table-footer">
-          <button
-            v-if="!showAllRows"
-            type="button"
-            class="more-btn"
-            @click="showAllRows = true"
-          >
-            {{ t("showAll", { count: sortedRows.length }) }}
-          </button>
-
-          <button
-            v-else
-            type="button"
-            class="more-btn"
-            @click="showAllRows = false"
-          >
-            {{ t("showLess") }}
-          </button>
+        <div
+          v-if="deckPageCount > 1 || loadedTournamentPage < tournamentPageCount"
+          class="table-footer"
+        >
+          <div class="pager-group">
+            <span class="pager-label">{{ t("decksPage") }}</span>
+            <button
+              type="button"
+              class="more-btn"
+              :disabled="currentDeckPage === 1"
+              @click="currentDeckPage -= 1"
+            >
+              {{ t("prev") }}
+            </button>
+            <span class="pager-info mono">
+              {{ t("pageInfo", { current: currentDeckPage, total: deckPageCount }) }}
+            </span>
+            <button
+              type="button"
+              class="more-btn"
+              :disabled="isLoadingNextDeckPage || (currentDeckPage >= deckPageCount && loadedTournamentPage >= tournamentPageCount)"
+              @click="nextDeckPage"
+            >
+              {{ isLoadingNextDeckPage ? t("loadingMore") : t("next") }}
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -343,7 +357,8 @@ import {
   loadTournamentStandings,
 } from "../lib/publicData";
 
-const DEFAULT_VISIBLE_ROWS = 20;
+const TOURNAMENTS_PER_PAGE = 30;
+const DECK_ROWS_PER_PAGE = 20;
 const DAY_MS = 24 * 60 * 60 * 1000;
 
 type Locale = "zh" | "en";
@@ -503,6 +518,13 @@ const messages = {
     fieldPct: "Share %",
     topCutPct: "Top Cut %",
     winPct: "Win %",
+    prev: "Previous",
+    next: "Next",
+    pageInfo: "Page {current} / {total}",
+    tournamentPage: "Tournament page",
+    decksPage: "Deck page",
+    loaded: "loaded",
+    loadingMore: "Loading more...",
     showAll: "Show all ({count})",
     showLess: "Show less",
     loadingTournaments: "Loading tournaments...",
@@ -551,6 +573,13 @@ const messages = {
     fieldPct: "\u4f7f\u7528\u7387",
     topCutPct: "Top Cut \u5360\u6bd4",
     winPct: "\u52dd\u7387",
+    prev: "\u4e0a\u4e00\u9801",
+    next: "\u4e0b\u4e00\u9801",
+    pageInfo: "\u7b2c {current} / {total} \u9801",
+    tournamentPage: "\u8cfd\u4e8b\u9801",
+    decksPage: "\u724c\u7d44\u9801",
+    loaded: "\u5df2\u8f09\u5165",
+    loadingMore: "\u8f09\u5165\u66f4\u591a\u4e2d...",
     showAll: "\u986f\u793a\u5168\u90e8\uff08{count}\uff09",
     showLess: "\u986f\u793a\u8f03\u5c11",
     loadingTournaments: "\u8f09\u5165\u8cfd\u4e8b\u4e2d...",
@@ -611,7 +640,9 @@ const filters = reactive({
 
 const sortKey = ref<SortKey>("baseRank");
 const sortDir = ref<SortDir>("asc");
-const showAllRows = ref(false);
+const loadedTournamentPage = ref(1);
+const currentDeckPage = ref(1);
+const advanceDeckAfterLoad = ref(false);
 
 function parseMs(value: unknown): number {
   const ms = Date.parse(String(value ?? ""));
@@ -838,14 +869,31 @@ const filteredTournaments = computed(() => {
   });
 });
 
-const filteredTournamentIds = computed(() => filteredTournaments.value.map((t) => t.id));
-const filteredTournamentIdsKey = computed(() => filteredTournamentIds.value.join("|"));
+const tournamentPageCount = computed(() => {
+  return Math.max(1, Math.ceil(filteredTournaments.value.length / TOURNAMENTS_PER_PAGE));
+});
+
+const loadedFilteredTournaments = computed(() => {
+  const end = loadedTournamentPage.value * TOURNAMENTS_PER_PAGE;
+  return filteredTournaments.value.slice(0, end);
+});
+
+const loadedTournamentIds = computed(() => loadedFilteredTournaments.value.map((t) => t.id));
+const loadedTournamentIdsKey = computed(() => loadedTournamentIds.value.join("|"));
 
 watch(
-  filteredTournamentIdsKey,
+  tournamentPageCount,
+  (count) => {
+    if (loadedTournamentPage.value > count) loadedTournamentPage.value = count;
+  },
+  { immediate: true },
+);
+
+watch(
+  loadedTournamentIdsKey,
   () => {
-    if (filteredTournamentIds.value.length === 0) return;
-    void ensureTournamentDataForIds(filteredTournamentIds.value);
+    if (loadedTournamentIds.value.length === 0) return;
+    void ensureTournamentDataForIds(loadedTournamentIds.value);
   },
   { immediate: true },
 );
@@ -853,12 +901,14 @@ watch(
 watch(
   () => `${filters.minPlayers ?? ""}|${filters.time}|${filters.set}|${filters.topCut}`,
   () => {
-    showAllRows.value = false;
+    loadedTournamentPage.value = 1;
+    currentDeckPage.value = 1;
+    advanceDeckAfterLoad.value = false;
   },
 );
 
 const loadedFilteredTournamentCount = computed(() => {
-  return filteredTournamentIds.value.filter(
+  return loadedTournamentIds.value.filter(
     (id) => hasStandings(id) && hasPairings(id),
   ).length;
 });
@@ -1302,7 +1352,7 @@ const aggregated = computed(() => {
   let totalBaselineTop32Samples = 0;
   let totalSelectedSamples = 0;
 
-  for (const tournament of filteredTournaments.value) {
+  for (const tournament of loadedFilteredTournaments.value) {
     const standings = standingsCache[tournament.id];
     const pairings = pairingsCache[tournament.id];
 
@@ -1591,10 +1641,53 @@ const sortedRows = computed(() => {
   return rows;
 });
 
+const deckPageCount = computed(() => {
+  return Math.max(1, Math.ceil(sortedRows.value.length / DECK_ROWS_PER_PAGE));
+});
+
+watch(
+  deckPageCount,
+  (count) => {
+    if (currentDeckPage.value > count) currentDeckPage.value = count;
+    if (advanceDeckAfterLoad.value && currentDeckPage.value < count) {
+      currentDeckPage.value += 1;
+      advanceDeckAfterLoad.value = false;
+    }
+  },
+  { immediate: true },
+);
+
+function nextDeckPage() {
+  if (currentDeckPage.value < deckPageCount.value) {
+    currentDeckPage.value += 1;
+    return;
+  }
+
+  if (loadedTournamentPage.value < tournamentPageCount.value) {
+    advanceDeckAfterLoad.value = true;
+    loadedTournamentPage.value += 1;
+  }
+}
+
+const isLoadingNextDeckPage = computed(() => {
+  return advanceDeckAfterLoad.value && loadedFilteredTournamentCount.value < loadedTournamentIds.value.length;
+});
+
+watch(
+  () => loadedFilteredTournamentCount.value,
+  () => {
+    if (
+      advanceDeckAfterLoad.value &&
+      loadedFilteredTournamentCount.value >= loadedTournamentIds.value.length
+    ) {
+      advanceDeckAfterLoad.value = false;
+    }
+  },
+);
+
 const displayRows = computed(() => {
-  return showAllRows.value
-    ? sortedRows.value
-    : sortedRows.value.slice(0, DEFAULT_VISIBLE_ROWS);
+  const start = (currentDeckPage.value - 1) * DECK_ROWS_PER_PAGE;
+  return sortedRows.value.slice(start, start + DECK_ROWS_PER_PAGE);
 });
 
 const topCutLabel = computed(() => topCutLabelMap.value.get(filters.topCut) ?? t("all"));
@@ -1644,7 +1737,7 @@ const emptyStateMessage = computed(() => {
 
   if (
     sortedRows.value.length === 0 &&
-    loadedFilteredTournamentCount.value < filteredTournaments.value.length
+    loadedFilteredTournamentCount.value < loadedTournamentIds.value.length
   ) {
     return t("loadingTournaments");
   }
@@ -2032,9 +2125,29 @@ onMounted(() => {
 
 .table-footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
   padding: 14px 16px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pager-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pager-label {
+  color: rgba(226, 232, 240, 0.72);
+  font-size: 12px;
+}
+
+.pager-info {
+  color: rgba(226, 232, 240, 0.78);
+  font-size: 12px;
+  min-width: 92px;
+  text-align: center;
 }
 
 .more-btn {
@@ -2055,6 +2168,12 @@ onMounted(() => {
   color: #7dd3fc;
   background: rgba(10, 24, 42, 0.9);
   transform: translateY(-1px);
+}
+
+.more-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
 }
 
 .muted {

@@ -5498,7 +5498,7 @@ const sortedBestFinishes = computed(() => {
   background: rgba(2, 6, 23, 0.35);
   color: rgba(255, 255, 255, 0.92);
   padding: 8px 10px;
-  min-height: 40px;
+  height: 40px;
   outline: none;
 }
 
@@ -5801,11 +5801,11 @@ const sortedBestFinishes = computed(() => {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 6px;
   padding: 4px;
-  min-height: 40px;
+  height: 40px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(2, 6, 23, 0.35);
-  align-items: stretch;
+  align-items: center;
 }
 
 .view-toggle__option {
@@ -5817,11 +5817,11 @@ const sortedBestFinishes = computed(() => {
   padding: 6px 8px;
   font-size: 0.78rem;
   font-weight: 800;
-  line-height: 1.05;
-  min-height: 30px;
+  line-height: 1;
+  height: 30px;
   min-width: 0;
-  white-space: normal;
-  word-break: break-word;
+  white-space: nowrap;
+  word-break: normal;
   cursor: pointer;
   transition:
     color 0.2s ease,
