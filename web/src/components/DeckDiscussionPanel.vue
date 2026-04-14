@@ -2,18 +2,18 @@
   <section class="discussion-card">
     <div class="discussion-card__head">
       <div>
-        <p class="discussion-card__kicker">DISCUSSION</p>
-        <h2 class="discussion-card__title">Deck discussion</h2>
+        <p class="discussion-card__kicker">{{ isZhUi ? "討論" : "DISCUSSION" }}</p>
+        <h2 class="discussion-card__title">{{ isZhUi ? "牌組討論" : "Deck discussion" }}</h2>
       </div>
-      <span class="discussion-card__count">{{ posts.length }} posts</span>
+      <span class="discussion-card__count">{{ posts.length }} {{ isZhUi ? "篇貼文" : "posts" }}</span>
     </div>
 
     <p class="discussion-card__intro">
-      Share lines, tech choices, matchup tips, and side notes for this deck.
+      {{ isZhUi ? "分享此牌組的戰術、技術選擇、對局技巧和備註。" : "Share lines, tech choices, matchup tips, and side notes for this deck." }}
     </p>
 
     <div v-if="!hasSupabaseConfig" class="discussion-card__empty">
-      Configure Supabase to enable deck discussions for the community.
+      {{ isZhUi ? "請配置 Supabase 以啟用社區牌組討論功能。" : "Configure Supabase to enable deck discussions for the community." }}
     </div>
 
     <template v-else>
@@ -22,36 +22,36 @@
           v-model="draft"
           rows="4"
           maxlength="800"
-          :placeholder="`Share how you pilot ${deckName || 'this deck'}...`"
+          :placeholder="isZhUi ? `分享你如何操作 ${deckName || '此牌組'}...` : `Share how you pilot ${deckName || 'this deck'}...`"
           required
         ></textarea>
 
         <div class="discussion-form__actions">
           <span>{{ draft.length }}/800</span>
           <button type="submit" class="discussion-btn" :disabled="busy || !draft.trim()">
-            Post
+            {{ isZhUi ? "發佈" : "Post" }}
           </button>
         </div>
       </form>
 
       <div v-else class="discussion-card__empty">
-        Sign in to join this deck discussion.
+        {{ isZhUi ? "請登入以加入此牌組討論。" : "Sign in to join this deck discussion." }}
       </div>
 
-      <p v-if="message" class="discussion-card__message">{{ message }}</p>
-      <p v-if="errorMessage" class="discussion-card__error">{{ errorMessage }}</p>
+      <p v-if="message" class="discussion-card__message">{{ isZhUi ? "討論貼文已發佈。" : message }}</p>
+      <p v-if="errorMessage" class="discussion-card__error">{{ isZhUi ? "載入討論失敗。" : errorMessage }}</p>
 
       <div class="discussion-list">
         <article v-for="post in posts" :key="post.id" class="discussion-post">
           <div class="discussion-post__head">
-            <strong>{{ post.profile?.display_name || post.profile?.handle || "Trainer" }}</strong>
+            <strong>{{ post.profile?.display_name || post.profile?.handle || (isZhUi ? "訓練家" : "Trainer") }}</strong>
             <span>{{ formatDateTime(post.created_at) }}</span>
           </div>
           <p>{{ post.body }}</p>
         </article>
 
         <div v-if="posts.length === 0" class="discussion-card__empty">
-          No comments for this deck yet.
+          {{ isZhUi ? "此牌組尚未有評論。" : "No comments for this deck yet." }}
         </div>
       </div>
     </template>
@@ -59,9 +59,13 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref, watch } from "vue";
+import { onMounted, ref, watch, computed } from "vue";
+import { useRoute } from "vue-router";
 import { authProfile, hasSupabaseConfig, initSupabaseAuth } from "../lib/supabase";
 import { createDeckDiscussion, fetchDeckDiscussion, type DeckDiscussionEntry } from "../lib/interactive";
+
+const route = useRoute();
+const isZhUi = computed(() => String(route.path).split("/")[1] === "zh");
 
 const props = defineProps<{
   deckKey: string;

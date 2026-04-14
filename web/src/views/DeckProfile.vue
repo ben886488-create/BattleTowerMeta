@@ -3,16 +3,21 @@
     <div class="profileFilters">
       <section class="profileFilterGroup">
         <div class="profileFilterGroup__head">
-          <h3 class="profileFilterGroup__title">
-            {{ isZhUi ? "左側面板篩選" : "Left panel filters" }}
-          </h3>
-          <p class="profileFilterGroup__sub">
-            {{
-              isZhUi
-                ? "影響 Top 4、勝負、場域佔比、Win %、優劣勢對局"
-                : "Affects Top 4, record, meta share, Win %, and matchups"
-            }}
-          </p>
+          <div class="profileFilterGroup__head__content">
+            <h3 class="profileFilterGroup__title">
+              {{ isZhUi ? "左側面板篩選" : "Left panel filters" }}
+            </h3>
+            <p class="profileFilterGroup__sub">
+              {{ 
+                isZhUi 
+                  ? "影響 Top 4、勝負、場域佔比、Win %、優劣勢對局" 
+                  : "Affects Top 4, record, meta share, Win %, and matchups" 
+              }}
+            </p>
+          </div>
+          <div class="profileFilterGroup__head__actions">
+            <!-- 空容器，用于保持与右边的高度一致 -->
+          </div>
         </div>
 
         <div class="profileFilterGrid profileFilterGrid--left">
@@ -54,16 +59,36 @@
 
       <section class="profileFilterGroup">
         <div class="profileFilterGroup__head">
-          <h3 class="profileFilterGroup__title">
-            {{ isZhUi ? "右側卡牌投入率篩選" : "Card inclusion filters" }}
-          </h3>
-          <p class="profileFilterGroup__sub">
-            {{
-              isZhUi
-                ? "只影響右側卡牌投入率與平均張數"
-                : "Affects only card inclusion % and average copies"
-            }}
-          </p>
+          <div class="profileFilterGroup__head__content">
+            <h3 class="profileFilterGroup__title">
+              {{ isZhUi ? "右側卡牌投入率篩選" : "Card inclusion filters" }}
+            </h3>
+            <p class="profileFilterGroup__sub">
+              {{ 
+                isZhUi 
+                  ? "只影響右側卡牌投入率與平均張數" 
+                  : "Affects only card inclusion % and average copies" 
+              }}
+            </p>
+          </div>
+          <div class="profileFilterGroup__head__actions">
+            <button
+              type="button"
+              class="download-btn mono"
+              :disabled="downloadingDeckPanel || rightDeckPanelCards.length === 0"
+              @click="downloadTransparentDeckPanel"
+            >
+              {{ downloadingDeckPanel ? (isZhUi ? "下載中..." : "Downloading...") : (isZhUi ? "下載透明面板" : "Download transparent panel") }}
+            </button>
+            <button
+              type="button"
+              class="download-btn mono"
+              :disabled="downloadingPanel || rightDeckPanelCards.length === 0"
+              @click="downloadDeckPanelPng"
+            >
+              {{ downloadingPanel ? (isZhUi ? "下載中..." : "Downloading...") : (isZhUi ? "下載 PNG" : "Download PNG") }}
+            </button>
+          </div>
         </div>
 
         <div class="profileFilterGrid profileFilterGrid--right">
@@ -102,11 +127,11 @@
           </div>
 
           <div class="profileFilterField profileFilterField--toggle">
-            <label>View</label>
+            <label>{{ isZhUi ? "檢視" : "View" }}</label>
             <div
               class="view-toggle"
               role="tablist"
-              aria-label="Right deck panel view"
+              :aria-label="isZhUi ? '右側牌組面板檢視' : 'Right deck panel view'"
             >
               <button
                 type="button"
@@ -114,7 +139,7 @@
                 :class="{ 'view-toggle__option--active': rightDeckMode === 'cards' }"
                 @click="rightDeckMode = 'cards'"
               >
-                Card rates
+                {{ isZhUi ? "卡片投入率" : "Card rates" }}
               </button>
               <button
                 type="button"
@@ -122,7 +147,7 @@
                 :class="{ 'view-toggle__option--active': rightDeckMode === 'sample' }"
                 @click="rightDeckMode = 'sample'"
               >
-                Sample deck
+                {{ isZhUi ? "範例牌組" : "Sample deck" }}
               </button>
             </div>
           </div>
@@ -132,7 +157,7 @@
     <div ref="heroCaptureRef" class="hero-grid">
       <aside class="hero-sidebar">
       <section class="hero-panel hero-panel--title">
-        <span class="panel-kicker mono">DECK SPOTLIGHT</span>
+        <span class="panel-kicker mono">{{ isZhUi ? "精選牌組" : "DECK SPOTLIGHT" }}</span>
 
         <div class="deck-title-block deck-title-block--classic">
           <div class="deck-title-text deck-title-text--classic">
@@ -147,38 +172,38 @@
               {{ displayDeckNameEn }}
             </p>
 
-            <p class="deck-context-line mono">
-              {{ leftPanelSummaryText }}
-            </p>
-          </div>
+            <div class="deck-title-media">
+              <div class="sprite-stack sprite-stack--title" :title="displayDeckName">
+                <template v-if="titleSpriteUrls.length > 0">
+                  <img
+                    v-for="(sprite, index) in titleSpriteUrls"
+                    :key="`${sprite}-${index}`"
+                    class="sprite-chip sprite-chip--title"
+                    :src="sprite"
+                    :alt="displayDeckName"
+                    draggable="false"
+                  />
+                </template>
 
-          <div class="deck-title-right deck-title-right--classic">
-            <div class="sprite-stack sprite-stack--title" :title="displayDeckName">
-              <template v-if="titleSpriteUrls.length > 0">
-                <img
-                  v-for="(sprite, index) in titleSpriteUrls"
-                  :key="`${sprite}-${index}`"
-                  class="sprite-chip sprite-chip--title"
-                  :src="sprite"
-                  :alt="displayDeckName"
-                  draggable="false"
-                />
-              </template>
+                <div v-else class="sprite-fallback mono">
+                  {{ cardInitials(displayDeckName) }}
+                </div>
+              </div>
 
-              <div v-else class="sprite-fallback mono">
-                {{ cardInitials(displayDeckName) }}
+              <div
+                v-if="deckTierInfo"
+                class="tier-badge"
+                :class="tierClassName(deckTierInfo.tier)"
+                :title="`Tier ${deckTierInfo.tier}`"
+              >
+                <span class="tier-badge__label mono">{{ isZhUi ? "等級" : "TIER" }}</span>
+                <strong class="tier-badge__value mono">{{ deckTierInfo.tier }}</strong>
               </div>
             </div>
 
-            <div
-              v-if="deckTierInfo"
-              class="tier-badge"
-              :class="tierClassName(deckTierInfo.tier)"
-              :title="`Tier ${deckTierInfo.tier}`"
-            >
-              <span class="tier-badge__label mono">TIER</span>
-              <strong class="tier-badge__value mono">{{ deckTierInfo.tier }}</strong>
-            </div>
+            <p class="deck-context-line mono">
+              {{ leftPanelSummaryText }}
+            </p>
           </div>
         </div>
       </section>  
@@ -236,7 +261,7 @@
                 <div class="semi-gauge__label">
                   <strong class="mono">{{ formatPct(leftAnalytics.metaShare) }}</strong>
                 </div>
-                <div class="semi-gauge__caption">Top Cut %</div>
+                <div class="semi-gauge__caption">{{ isZhUi ? "晉級占比" : "Top Cut %" }}</div>
               </div>
             </div>
 
@@ -267,7 +292,7 @@
                     {{ leftAnalytics.winRate == null ? "—" : formatPct(leftAnalytics.winRate) }}
                   </strong>
                 </div>
-                <div class="semi-gauge__caption">Win %</div>
+                <div class="semi-gauge__caption">{{ isZhUi ? "勝率" : "Win %" }}</div>
               </div>
             </div>
           </div>
@@ -361,20 +386,22 @@
           <div class="decklist-head">
             <div class="decklist-head__copy">
               <h3 class="panel-title">
-                {{ rightDeckMode === "cards" ? "Card inclusion" : "Best sample deck" }}
+                {{ rightDeckMode === "cards" ? (isZhUi ? "卡片投入率" : "Card inclusion") : (isZhUi ? "最佳範例牌組" : "Best sample deck") }}
               </h3>
               <p class="decklist-head__sub">{{ rightDeckPanelSubtitle }}</p>
             </div>
 
-            <a
-              v-if="rightDeckMode === 'sample' && rightAnalytics.sampleDeck?.listUrl"
-              class="list-btn"
-              :href="rightAnalytics.sampleDeck.listUrl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Decklist
-            </a>
+            <div class="decklist-head__actions">
+              <a
+                v-if="rightDeckMode === 'sample' && rightAnalytics.sampleDeck?.listUrl"
+                class="list-btn"
+                :href="rightAnalytics.sampleDeck.listUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Decklist
+              </a>
+            </div>
           </div>
 
           <div
@@ -513,27 +540,7 @@
       </section>
     </div>
 
-    <div class="deck-actions">
-      <button
-        type="button"
-        class="download-btn mono"
-        :disabled="downloadingDeckPanel || rightDeckPanelCards.length === 0"
-        @click="downloadTransparentDeckPanel"
-      >
-        {{ downloadingDeckPanel ? "下載中..." : "下載透明面板" }}
-      </button>
-    </div>
 
-    <div class="deck-actions">
-      <button
-        type="button"
-        class="download-btn mono"
-        :disabled="downloadingPanel || rightDeckPanelCards.length === 0"
-        @click="downloadDeckPanelPng"
-      >
-        {{ downloadingPanel ? "下載中..." : "下載 PNG" }}
-      </button>
-    </div>
 
     <DeckDiscussionPanel
       :deck-key="resolvedDeckKey"
@@ -542,7 +549,7 @@
 
     <section class="table-card">
       <div class="section-head">
-        <h2 class="section-title">Best Finishes</h2>
+        <h2 class="section-title">{{ isZhUi ? "最佳成績" : "Best Finishes" }}</h2>
       </div>
 
       <div class="table-scroll">
@@ -551,30 +558,30 @@
             <tr>
               <th>
                 <button type="button" class="sort-btn" @click="toggleFinishSort('player')">
-                  Player <span class="sort-mark">{{ finishSortMark("player") }}</span>
+                  {{ isZhUi ? "玩家" : "Player" }} <span class="sort-mark">{{ finishSortMark("player") }}</span>
                 </button>
               </th>
               <th>
                 <button type="button" class="sort-btn" @click="toggleFinishSort('tournamentName')">
-                  Tournament <span class="sort-mark">{{ finishSortMark("tournamentName") }}</span>
+                  {{ isZhUi ? "賽事" : "Tournament" }} <span class="sort-mark">{{ finishSortMark("tournamentName") }}</span>
                 </button>
               </th>
               <th>
                 <button type="button" class="sort-btn" @click="toggleFinishSort('dateMs')">
-                  Date <span class="sort-mark">{{ finishSortMark("dateMs") }}</span>
+                  {{ isZhUi ? "日期" : "Date" }} <span class="sort-mark">{{ finishSortMark("dateMs") }}</span>
                 </button>
               </th>
               <th>
                 <button type="button" class="sort-btn" @click="toggleFinishSort('place')">
-                  Place <span class="sort-mark">{{ finishSortMark("place") }}</span>
+                  {{ isZhUi ? "排名" : "Place" }} <span class="sort-mark">{{ finishSortMark("place") }}</span>
                 </button>
               </th>
-              <th>List</th>
+              <th>{{ isZhUi ? "牌表" : "List" }}</th>
             </tr>
           </thead>
 
-          <tbody v-if="sortedBestFinishes.length > 0">
-            <tr v-for="item in sortedBestFinishes" :key="item.key">
+          <tbody v-if="paginatedBestFinishes.length > 0">
+            <tr v-for="item in paginatedBestFinishes" :key="item.key">
               <td class="player-col">{{ item.player }}</td>
               <td class="tournament-col">{{ item.tournamentName }}</td>
               <td class="mono">{{ item.dateLabel }}</td>
@@ -600,6 +607,45 @@
             </tr>
           </tbody>
         </table>
+
+        <!-- 分页控件 -->
+        <div v-if="totalPages > 1" class="pagination">
+          <button 
+            type="button" 
+            class="pagination-btn" 
+            :disabled="currentPage === 1"
+            @click="changePage(1)"
+          >
+            {{ isZhUi ? "首頁" : "First" }}
+          </button>
+          <button 
+            type="button" 
+            class="pagination-btn" 
+            :disabled="currentPage === 1"
+            @click="changePage(currentPage - 1)"
+          >
+            {{ isZhUi ? "上一頁" : "Prev" }}
+          </button>
+          <span class="pagination-info">
+            {{ isZhUi ? `第 ${currentPage} / ${totalPages} 頁` : `Page ${currentPage} / ${totalPages}` }}
+          </span>
+          <button 
+            type="button" 
+            class="pagination-btn" 
+            :disabled="currentPage === totalPages"
+            @click="changePage(currentPage + 1)"
+          >
+            {{ isZhUi ? "下一頁" : "Next" }}
+          </button>
+          <button 
+            type="button" 
+            class="pagination-btn" 
+            :disabled="currentPage === totalPages"
+            @click="changePage(totalPages)"
+          >
+            {{ isZhUi ? "末頁" : "Last" }}
+          </button>
+        </div>
       </div>
     </section>
   </section>
@@ -975,6 +1021,10 @@ const finishSort = reactive<{
   key: "place",
   dir: "asc",
 });
+
+// 分页相关数据
+const currentPage = ref(1);
+const pageSize = ref(10);
 
 /* -----------------------------
    route / external / fallback data
@@ -4154,11 +4204,12 @@ async function downloadTransparentDeckPanel() {
 function toggleFinishSort(key: FinishSortKey) {
   if (finishSort.key === key) {
     finishSort.dir = finishSort.dir === "asc" ? "desc" : "asc";
-    return;
+  } else {
+    finishSort.key = key;
+    finishSort.dir = key === "dateMs" ? "desc" : "asc";
   }
-
-  finishSort.key = key;
-  finishSort.dir = key === "dateMs" ? "desc" : "asc";
+  // 排序条件改变时重置页码
+  resetPage();
 }
 
 function finishSortMark(key: FinishSortKey) {
@@ -4183,11 +4234,7 @@ const sortedBestFinishes = computed(() => {
         result = a.dateMs - b.dateMs;
         break;
       case "place":
-        result =
-          a.place - b.place ||
-          (b.players ?? 0) - (a.players ?? 0) ||
-          b.dateMs - a.dateMs ||
-          compareText(a.player, b.player);
+        result = a.place - b.place || (b.players ?? 0) - (a.players ?? 0) || b.dateMs - a.dateMs || compareText(a.player, b.player);
         break;
     }
 
@@ -4196,6 +4243,29 @@ const sortedBestFinishes = computed(() => {
 
   return rows;
 });
+
+// 分页后的数据
+const paginatedBestFinishes = computed(() => {
+  const rows = sortedBestFinishes.value;
+  const start = (currentPage.value - 1) * pageSize.value;
+  const end = start + pageSize.value;
+  return rows.slice(start, end);
+});
+
+// 总页数
+const totalPages = computed(() => {
+  return Math.ceil(sortedBestFinishes.value.length / pageSize.value);
+});
+
+// 切换页码
+function changePage(page: number) {
+  currentPage.value = page;
+}
+
+// 重置页码（当排序或筛选条件改变时）
+function resetPage() {
+  currentPage.value = 1;
+}
 </script>
 
 <style scoped>
@@ -4331,7 +4401,10 @@ const sortedBestFinishes = computed(() => {
   background:
     linear-gradient(180deg, rgba(18, 43, 76, 0.18), rgba(8, 16, 28, 0.18)),
     var(--bg-panel);
-  border: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  border-left: none;
+  border-top: none;
   border-radius: 20px;
   box-shadow: var(--shadow);
 }
@@ -4341,12 +4414,13 @@ const sortedBestFinishes = computed(() => {
 }
 
 .hero-panel--title {
-  padding-bottom: 12px;
+  padding: 20px;
+  text-align: center;
 }
 
 .panel-kicker {
-  display: block;
-  margin-bottom: 8px;
+  display: none;
+  margin-bottom: 12px;
   color: #8ed2ff;
   font-size: 0.82rem;
   font-weight: 800;
@@ -4355,9 +4429,10 @@ const sortedBestFinishes = computed(() => {
 
 .deck-title-block {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   gap: 12px;
+  width: 100%;
 }
 
 .deck-title-text {
@@ -4479,8 +4554,9 @@ const sortedBestFinishes = computed(() => {
 
 .hero-panel--stats {
   display: grid;
-  gap: 10px;
+  gap: 16px;
   align-content: start;
+  padding: 20px;
 }
 
 .stats-head {
@@ -4493,14 +4569,16 @@ const sortedBestFinishes = computed(() => {
 .panel-title {
   margin: 0;
   color: var(--text-main);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 900;
+  text-align: center;
+  width: 100%;
 }
 
 .placement-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 8px;
+  gap: 12px;
 }
 
 .placement-card {
@@ -4546,7 +4624,7 @@ const sortedBestFinishes = computed(() => {
   margin-top: 2px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
+  gap: 16px;
 }
 
 .metric-card {
@@ -4605,14 +4683,16 @@ const sortedBestFinishes = computed(() => {
 }
 
 .record-line {
-  margin-top: 4px;
+  margin-top: 8px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 8px;
+  flex-wrap: nowrap;
+  gap: 10px;
   text-align: center;
   color: #d7e8ff;
   font-size: 0.92rem;
+  overflow-x: auto;
+  padding: 0 4px;
 }
 
 .record-bubble {
@@ -4621,14 +4701,21 @@ const sortedBestFinishes = computed(() => {
   justify-content: center;
   min-height: 36px;
   padding: 0 12px;
-  border-radius: 14px;
+  border-radius: 18px;
   border: 1px solid rgba(115, 192, 255, 0.18);
   background: rgba(18, 32, 56, 0.72);
   color: #dceeff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.03em;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition: all 0.2s ease;
+  flex: 0 0 auto;
+}
+
+.record-bubble:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .record-bubble--win {
@@ -4648,19 +4735,21 @@ const sortedBestFinishes = computed(() => {
 
 .hero-panel--matchups {
   display: grid;
-  gap: 10px;
+  gap: 16px;
   align-content: start;
+  padding: 20px;
 }
 
 .matchup-group {
   display: grid;
-  gap: 8px;
+  gap: 12px;
 }
 
 .matchup-group__title {
   font-size: 1.2rem;
   font-weight: 900;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .matchup-group__title--good {
@@ -4674,7 +4763,7 @@ const sortedBestFinishes = computed(() => {
 .matchup-row {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 8px;
+  gap: 12px;
 }
 
 .matchup-tile {
@@ -4971,7 +5060,10 @@ const sortedBestFinishes = computed(() => {
   background:
     linear-gradient(180deg, rgba(18, 43, 76, 0.2), rgba(6, 12, 22, 0.2)),
     rgba(9, 22, 39, 0.96);
-  border: 1px solid rgba(77, 154, 220, 0.26);
+  border-right: 1px solid rgba(77, 154, 220, 0.26);
+  border-bottom: 1px solid rgba(77, 154, 220, 0.26);
+  border-left: none;
+  border-top: none;
   box-shadow:
     0 18px 50px rgba(0, 0, 0, 0.28),
     inset 0 1px 0 rgba(255, 255, 255, 0.04),
@@ -4983,7 +5075,7 @@ const sortedBestFinishes = computed(() => {
   content: "";
   position: absolute;
   inset: 10px;
-  border: 1px solid rgba(126, 200, 255, 0.08);
+  border: none;
   border-radius: 14px;
   pointer-events: none;
 }
@@ -5202,13 +5294,15 @@ const sortedBestFinishes = computed(() => {
   background: rgba(18, 83, 143, 0.22);
   color: #eef7ff;
   border-radius: 999px;
-  padding: 10px 14px;
+  padding: 8px 12px;
   font-weight: 900;
+  font-size: 0.85rem;
   cursor: pointer;
   transition:
     background 0.2s ease,
     border-color 0.2s ease,
     transform 0.2s ease;
+  white-space: nowrap;
 }
 
 .download-btn:hover:not(:disabled) {
@@ -5444,9 +5538,26 @@ const sortedBestFinishes = computed(() => {
 }
 
 .profileFilterGroup__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
   position: relative;
   z-index: 1;
   margin-bottom: 10px;
+}
+
+.profileFilterGroup__head__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.profileFilterGroup__head__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .profileFilterGroup__title {
@@ -5537,41 +5648,55 @@ const sortedBestFinishes = computed(() => {
 .deck-title-text--classic {
   min-width: 0;
   flex: 1 1 auto;
-  display: grid;
-  gap: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 4px 0;
+  align-items: center;
+  text-align: center;
+}
+
+/* 优化文字显示效果 */
+.deck-title-block--classic {
+  align-items: center;
+  gap: 12px;
 }
 
 .deck-display-name--classic {
   margin: 0;
-  font-size: 2rem;
-  line-height: 1.04;
+  font-size: 1.4rem;
+  line-height: 1.1;
   font-weight: 900;
   color: #f8fbff;
   letter-spacing: 0.01em;
-  word-break: break-word;
+  white-space: nowrap;
 }
 
 .deck-english-name--classic {
   margin: 0;
   color: #9ed6ff;
-  font-size: 0.98rem;
+  font-size: 0.8rem;
+  opacity: 0.9;
+  white-space: nowrap;
 }
 
 .deck-context-line {
-  margin: 2px 0 0;
+  margin: 0;
   color: rgba(226, 232, 240, 0.78);
-  font-size: 0.84rem;
+  font-size: 0.75rem;
   letter-spacing: 0.04em;
+  white-space: nowrap;
+  opacity: 0.8;
 }
 
-.deck-title-right--classic {
-  flex: 0 0 auto;
-  min-width: 92px;
+.deck-title-media {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   gap: 10px;
+  margin: 4px 0;
 }
+
+
 
 .sprite-stack--title {
   min-width: 0;
@@ -5791,8 +5916,8 @@ const sortedBestFinishes = computed(() => {
 }
 
 .profileFilterField--toggle {
-  display: grid;
-  gap: 8px;
+  display: flex;
+  flex-direction: column;
   min-width: 0;
 }
 
@@ -5843,10 +5968,27 @@ const sortedBestFinishes = computed(() => {
   margin-bottom: 14px;
 }
 
+.decklist-head__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
 .decklist-head__copy {
   min-width: 0;
   display: grid;
   gap: 4px;
+  text-align: left;
+}
+
+.decklist-head__copy .panel-title {
+  text-align: left;
+}
+
+.decklist-head__copy .decklist-head__sub {
+  text-align: left;
 }
 
 .decklist-head__sub {
@@ -5999,6 +6141,121 @@ const sortedBestFinishes = computed(() => {
     padding: 0 10px;
     bottom: 8px;
     font-size: 0.82rem;
+  }
+}
+
+/* 分页样式 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  margin-bottom: 20px;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(115, 192, 255, 0.2);
+  background: linear-gradient(180deg, rgba(126, 200, 255, 0.02), rgba(126, 200, 255, 0));
+}
+
+.pagination-btn {
+  appearance: none;
+  border: 1px solid rgba(115, 192, 255, 0.3);
+  border-radius: 10px;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, rgba(44, 130, 201, 0.6), rgba(17, 60, 122, 0.9));
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.pagination-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, rgba(54, 140, 211, 0.7), rgba(27, 70, 132, 1));
+  border-color: rgba(115, 192, 255, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.pagination-btn:hover:not(:disabled)::before {
+  left: 100%;
+}
+
+.pagination-btn:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: rgba(44, 130, 201, 0.2);
+  border-color: rgba(115, 192, 255, 0.15);
+  box-shadow: none;
+}
+
+.pagination-info {
+  color: #d7ebff;
+  font-weight: 700;
+  font-size: 1rem;
+  min-width: 140px;
+  text-align: center;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: rgba(11, 27, 47, 0.8);
+  border: 1px solid rgba(115, 192, 255, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 720px) {
+  .pagination {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  
+  .pagination-btn {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+  
+  .pagination-info {
+    min-width: 120px;
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagination {
+    gap: 8px;
+  }
+  
+  .pagination-btn {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+  
+  .pagination-info {
+    min-width: 100px;
+    padding: 6px 12px;
+    font-size: 0.85rem;
   }
 }
 

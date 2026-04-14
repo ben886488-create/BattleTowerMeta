@@ -549,7 +549,7 @@ const messages = {
     time: "\u6642\u9593",
     month: "\u6708\u4efd",
     set: "\u7248\u672c",
-    topCut: "Top Cut",
+    topCut: "\u667a\u8fbe",
     scope: "\u7bc4\u570d",
     stats: "\u7d71\u8a08",
     note: "\u8aaa\u660e",
@@ -573,11 +573,11 @@ const messages = {
     rank: "#",
     pokemon: "\u4ee3\u8868\u5bf6\u53ef\u5922",
     deckName: "\u724c\u7d44\u540d\u7a31",
-    tier: "Tier",
+    tier: "\u7d1a\u7ea7",
     score: "\u5206\u6578",
     samples: "\u6a23\u672c\u6578",
     fieldPct: "\u4f7f\u7528\u7387",
-    topCutPct: "Top Cut \u5360\u6bd4",
+    topCutPct: "\u667a\u8fbe\u5360\u6bd4",
     winPct: "\u52dd\u7387",
     prev: "\u4e0a\u4e00\u9801",
     next: "\u4e0b\u4e00\u9801",
@@ -741,16 +741,12 @@ async function runWithConcurrency<T>(
 }
 
 async function ensureTournamentDataForIds(ids: string[]) {
-  const missing = ids.filter(
-    (id) =>
-      ((!hasStandings(id) && !standingsLoading[id]) ||
-        (!hasPairings(id) && !pairingsLoading[id])),
-  );
+  const missingStandings = ids.filter((id) => !hasStandings(id) && !standingsLoading[id]);
+  const missingPairings = ids.filter((id) => !hasPairings(id) && !pairingsLoading[id]);
 
-  if (missing.length === 0) return;
-
-  await runWithConcurrency(missing, 4, async (id) => {
-    if (!hasStandings(id) && !standingsLoading[id]) {
+  // Prioritize standings so ranking rows render quickly.
+  if (missingStandings.length > 0) {
+    await runWithConcurrency(missingStandings, 8, async (id) => {
       standingsLoading[id] = true;
       try {
         const rows = await loadTournamentStandings<StandingRow[]>(id);
@@ -760,9 +756,12 @@ async function ensureTournamentDataForIds(ids: string[]) {
       } finally {
         standingsLoading[id] = false;
       }
-    }
+    });
+  }
 
-    if (!hasPairings(id) && !pairingsLoading[id]) {
+  // Load pairings in background; Win% fills in progressively.
+  if (missingPairings.length > 0) {
+    void runWithConcurrency(missingPairings, 4, async (id) => {
       pairingsLoading[id] = true;
       try {
         const rows = await loadTournamentPairings<PairingRow[]>(id);
@@ -772,8 +771,8 @@ async function ensureTournamentDataForIds(ids: string[]) {
       } finally {
         pairingsLoading[id] = false;
       }
-    }
-  });
+    });
+  }
 }
 
 const currentVersionWindow = computed(() => inferVersionByStartMs(Date.now()));
