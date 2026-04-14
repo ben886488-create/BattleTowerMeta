@@ -89,6 +89,7 @@
           <strong>{{ t("loaded") }}:</strong>
           {{ loadedFilteredTournamentCount }} / {{ loadedTournamentIds.length }}
           {{ t("tournamentsUnit") }}
+          <span v-if="isLoadingPageData">({{ t("loadingMore") }})</span>
         </p>
 
         <p class="scope-line">
@@ -303,7 +304,7 @@
         </div>
 
         <div
-          v-if="deckPageCount > 1 || loadedTournamentPage < tournamentPageCount"
+          v-if="deckPageCount > 1 || loadedTournamentPage < tournamentPageCount || noMoreDeckPagesNotice"
           class="table-footer"
         >
           <div class="pager-group">
@@ -322,12 +323,15 @@
             <button
               type="button"
               class="more-btn"
-              :disabled="isLoadingNextDeckPage || (currentDeckPage >= deckPageCount && loadedTournamentPage >= tournamentPageCount)"
+              :disabled="(isLoadingNextDeckPage && currentDeckPage >= deckPageCount) || (currentDeckPage >= deckPageCount && loadedTournamentPage >= tournamentPageCount)"
               @click="nextDeckPage"
             >
-              {{ isLoadingNextDeckPage ? t("loadingMore") : t("next") }}
+              {{ (isLoadingNextDeckPage && currentDeckPage >= deckPageCount) ? t("loadingMore") : t("next") }}
             </button>
           </div>
+          <span v-if="noMoreDeckPagesNotice" class="pager-end-note mono">
+            {{ t("noMoreDeckPages") }}
+          </span>
         </div>
       </div>
     </div>
@@ -525,6 +529,7 @@ const messages = {
     decksPage: "Deck page",
     loaded: "loaded",
     loadingMore: "Loading more...",
+    noMoreDeckPages: "All tournaments loaded. No more deck pages.",
     showAll: "Show all ({count})",
     showLess: "Show less",
     loadingTournaments: "Loading tournaments...",
@@ -533,6 +538,7 @@ const messages = {
     allDataScope: "All data",
     noteBody: "Tier rules: <=0.10 F, <=0.30 E, <=0.50 D, <=0.70 C, <=0.80 B, <=0.90 A, >0.90 S. Only the #1 S-tier deck can be promoted: a >0.05 lead over #2 becomes SS, and >0.10 becomes SSS.",
     summaryLabel: "{decks} decks / {tournaments} tournaments",
+    summaryLabelEstimated: "{loadedDecks} loaded / ~{estimatedDecks} decks / {tournaments} tournaments",
     loadTournamentsFailed: "Failed to load tournaments: {message}",
     unknown: "Unknown",
   },
@@ -580,6 +586,7 @@ const messages = {
     decksPage: "\u724c\u7d44\u9801",
     loaded: "\u5df2\u8f09\u5165",
     loadingMore: "\u8f09\u5165\u66f4\u591a\u4e2d...",
+    noMoreDeckPages: "\u8cfd\u4e8b\u5df2\u5168\u90e8\u8f09\u5165\uff0c\u6c92\u6709\u66f4\u591a\u724c\u7d44\u9801\u4e86\u3002",
     showAll: "\u986f\u793a\u5168\u90e8\uff08{count}\uff09",
     showLess: "\u986f\u793a\u8f03\u5c11",
     loadingTournaments: "\u8f09\u5165\u8cfd\u4e8b\u4e2d...",
@@ -588,6 +595,7 @@ const messages = {
     allDataScope: "\u5168\u90e8\u8cc7\u6599",
     noteBody: "\u8a55\u7d1a\u898f\u5247\uff1a<=0.10 \u70ba F\u3001<=0.30 \u70ba E\u3001<=0.50 \u70ba D\u3001<=0.70 \u70ba C\u3001<=0.80 \u70ba B\u3001<=0.90 \u70ba A\u3001>0.90 \u70ba S\uff1b\u53ea\u6709\u699c\u9996\u7684 S \u7d1a\u724c\u7d44\u6703\u518d\u5347\u7d1a\uff0c\u8207\u7b2c 2 \u540d\u5206\u5dee >0.05 \u70ba SS\uff0c>0.10 \u70ba SSS\u3002",
     summaryLabel: "{decks} \u526f\u724c\u7d44 / {tournaments} \u5834\u8cfd\u4e8b",
+    summaryLabelEstimated: "\u5df2\u8f09\u5165 {loadedDecks} / \u9810\u4f30 {estimatedDecks} \u526f\u724c\u7d44 / {tournaments} \u5834\u8cfd\u4e8b",
     loadTournamentsFailed: "\u8f09\u5165\u8cfd\u4e8b\u5931\u6557\uff1a{message}",
     unknown: "\u672a\u77e5",
   },
@@ -642,7 +650,7 @@ const sortKey = ref<SortKey>("baseRank");
 const sortDir = ref<SortDir>("asc");
 const loadedTournamentPage = ref(1);
 const currentDeckPage = ref(1);
-const advanceDeckAfterLoad = ref(false);
+const isLoadingNextDeckPage = ref(false);
 
 function parseMs(value: unknown): number {
   const ms = Date.parse(String(value ?? ""));
@@ -903,7 +911,7 @@ watch(
   () => {
     loadedTournamentPage.value = 1;
     currentDeckPage.value = 1;
-    advanceDeckAfterLoad.value = false;
+    isLoadingNextDeckPage.value = false;
   },
 );
 
@@ -1649,41 +1657,71 @@ watch(
   deckPageCount,
   (count) => {
     if (currentDeckPage.value > count) currentDeckPage.value = count;
-    if (advanceDeckAfterLoad.value && currentDeckPage.value < count) {
-      currentDeckPage.value += 1;
-      advanceDeckAfterLoad.value = false;
+    if (isLoadingNextDeckPage.value && count > currentDeckPage.value) {
+      isLoadingNextDeckPage.value = false;
     }
   },
   { immediate: true },
 );
 
-function nextDeckPage() {
-  if (currentDeckPage.value < deckPageCount.value) {
-    currentDeckPage.value += 1;
+async function waitForLoadedTournamentBatch() {
+  if (loadedFilteredTournamentCount.value >= loadedTournamentIds.value.length) return;
+
+  await new Promise<void>((resolve) => {
+    const stop = watch(
+      [() => loadedFilteredTournamentCount.value, () => loadedTournamentIds.value.length],
+      ([loaded, total]) => {
+        if (loaded >= total) {
+          stop();
+          resolve();
+        }
+      },
+      { immediate: true },
+    );
+  });
+}
+
+async function nextDeckPage() {
+  if (isLoadingNextDeckPage.value) return;
+
+  const targetDeckPage = currentDeckPage.value + 1;
+  if (targetDeckPage <= deckPageCount.value) {
+    currentDeckPage.value = targetDeckPage;
     return;
   }
 
-  if (loadedTournamentPage.value < tournamentPageCount.value) {
-    advanceDeckAfterLoad.value = true;
-    loadedTournamentPage.value += 1;
+  if (loadedTournamentPage.value >= tournamentPageCount.value) return;
+
+  isLoadingNextDeckPage.value = true;
+  try {
+    while (
+      deckPageCount.value < targetDeckPage &&
+      loadedTournamentPage.value < tournamentPageCount.value
+    ) {
+      loadedTournamentPage.value += 1;
+      await waitForLoadedTournamentBatch();
+    }
+
+    if (deckPageCount.value >= targetDeckPage) {
+      currentDeckPage.value = targetDeckPage;
+    }
+  } finally {
+    isLoadingNextDeckPage.value = false;
   }
 }
 
-const isLoadingNextDeckPage = computed(() => {
-  return advanceDeckAfterLoad.value && loadedFilteredTournamentCount.value < loadedTournamentIds.value.length;
+const isLoadingPageData = computed(() => {
+  return loadedFilteredTournamentCount.value < loadedTournamentIds.value.length;
 });
 
-watch(
-  () => loadedFilteredTournamentCount.value,
-  () => {
-    if (
-      advanceDeckAfterLoad.value &&
-      loadedFilteredTournamentCount.value >= loadedTournamentIds.value.length
-    ) {
-      advanceDeckAfterLoad.value = false;
-    }
-  },
-);
+const noMoreDeckPagesNotice = computed(() => {
+  return (
+    !isLoadingNextDeckPage.value &&
+    loadedTournamentPage.value >= tournamentPageCount.value &&
+    currentDeckPage.value >= deckPageCount.value &&
+    deckPageCount.value > 0
+  );
+});
 
 const displayRows = computed(() => {
   const start = (currentDeckPage.value - 1) * DECK_ROWS_PER_PAGE;
@@ -1716,9 +1754,28 @@ const scopeSetLabel = computed(() => {
 });
 
 const deckSummaryLabel = computed(() => {
+  const loadedDecks = aggregated.value.rows.length;
+  const totalTournaments = filteredTournaments.value.length;
+  const loadedTournaments = loadedFilteredTournaments.value.length;
+  const fullyLoaded = loadedTournamentPage.value >= tournamentPageCount.value;
+
+  if (!fullyLoaded && loadedTournaments > 0 && totalTournaments > loadedTournaments) {
+    const ratio = loadedTournaments / totalTournaments;
+    const estimatedDecks = Math.max(
+      loadedDecks,
+      Math.round(loadedDecks / Math.max(ratio, 0.01)),
+    );
+
+    return t("summaryLabelEstimated", {
+      loadedDecks: loadedDecks.toLocaleString(),
+      estimatedDecks: estimatedDecks.toLocaleString(),
+      tournaments: totalTournaments.toLocaleString(),
+    });
+  }
+
   return t("summaryLabel", {
-    decks: aggregated.value.rows.length.toLocaleString(),
-    tournaments: filteredTournaments.value.length.toLocaleString(),
+    decks: loadedDecks.toLocaleString(),
+    tournaments: totalTournaments.toLocaleString(),
   });
 });
 
@@ -2148,6 +2205,11 @@ onMounted(() => {
   font-size: 12px;
   min-width: 92px;
   text-align: center;
+}
+
+.pager-end-note {
+  color: rgba(226, 232, 240, 0.68);
+  font-size: 12px;
 }
 
 .more-btn {
