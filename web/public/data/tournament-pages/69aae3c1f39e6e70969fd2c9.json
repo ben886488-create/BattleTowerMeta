@@ -1,0 +1,2095 @@
+{
+  "meta": {
+    "generatedAt": "2026-04-14T15:33:09.287430Z",
+    "script": "build_tournament_pages.py",
+    "version": 1,
+    "errors": []
+  },
+  "tournament": {
+    "id": "69aae3c1f39e6e70969fd2c9",
+    "name": "🐦‍🔥 GALAR LEAGUE • Edição 5 • Prize $300 BRL",
+    "date": "2026-03-09T15:00:00.000Z",
+    "dateMs": 1773068400000,
+    "players": 36,
+    "game": "POCKET",
+    "format": null,
+    "status": null,
+    "swiss": null,
+    "topCut": null,
+    "set": null,
+    "setNameZh": null,
+    "setNameEn": null,
+    "formatUi": null,
+    "decklists": false,
+    "pagePath": "/data/tournament-pages/69aae3c1f39e6e70969fd2c9.json",
+    "rawPaths": {
+      "details": "/data/raw/69aae3c1f39e6e70969fd2c9/details.json",
+      "standings": "/data/raw/69aae3c1f39e6e70969fd2c9/standings.json",
+      "pairings": "/data/raw/69aae3c1f39e6e70969fd2c9/pairings.json"
+    },
+    "url": "https://play.limitlesstcg.com/tournament/69aae3c1f39e6e70969fd2c9",
+    "standingsUrl": "https://play.limitlesstcg.com/tournament/69aae3c1f39e6e70969fd2c9/standings"
+  },
+  "summary": {
+    "entrants": 36,
+    "playersWithCountry": 36,
+    "playersWithDeck": 0,
+    "playersWithDecklist": 0,
+    "playersDropped": 3,
+    "uniqueCountries": 1,
+    "uniqueArchetypes": 1,
+    "pairingsRounds": 6,
+    "pairingsMatches": 104,
+    "top8Decklists": 0,
+    "top32Decklists": 0
+  },
+  "featured": {
+    "winner": {
+      "placing": 1,
+      "name": "NLCPinguim",
+      "player": "nlcpinguim",
+      "country": "BR",
+      "record": {
+        "wins": 7,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "7-2-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    "top8": [
+      {
+        "placing": 1,
+        "name": "NLCPinguim",
+        "player": "nlcpinguim",
+        "country": "BR",
+        "record": {
+          "wins": 7,
+          "losses": 2,
+          "ties": 0
+        },
+        "recordText": "7-2-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 2,
+        "name": "IMO PIKAPOOL",
+        "player": "richardmarighetti",
+        "country": "BR",
+        "record": {
+          "wins": 6,
+          "losses": 2,
+          "ties": 1
+        },
+        "recordText": "6-2-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 3,
+        "name": "𝙏𝙂𝘼 | Correia",
+        "player": "346correia",
+        "country": "BR",
+        "record": {
+          "wins": 6,
+          "losses": 1,
+          "ties": 1
+        },
+        "recordText": "6-1-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 4,
+        "name": "𝗖𝗔𝗢𝗦 | Mdg",
+        "player": "marradg",
+        "country": "BR",
+        "record": {
+          "wins": 5,
+          "losses": 2,
+          "ties": 1
+        },
+        "recordText": "5-2-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 5,
+        "name": "Kaiser",
+        "player": "rikelmematos",
+        "country": "BR",
+        "record": {
+          "wins": 5,
+          "losses": 1,
+          "ties": 1
+        },
+        "recordText": "5-1-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 6,
+        "name": "RNG mathdamon",
+        "player": "mathdamoncs13",
+        "country": "BR",
+        "record": {
+          "wins": 5,
+          "losses": 2,
+          "ties": 0
+        },
+        "recordText": "5-2-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 7,
+        "name": "RNG Ki11z",
+        "player": "ki11z",
+        "country": "BR",
+        "record": {
+          "wins": 4,
+          "losses": 2,
+          "ties": 1
+        },
+        "recordText": "4-2-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 8,
+        "name": "CARLIN_6",
+        "player": "carlin_6",
+        "country": "BR",
+        "record": {
+          "wins": 4,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "4-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      }
+    ],
+    "top16": [
+      {
+        "placing": 1,
+        "name": "NLCPinguim",
+        "player": "nlcpinguim",
+        "country": "BR",
+        "record": {
+          "wins": 7,
+          "losses": 2,
+          "ties": 0
+        },
+        "recordText": "7-2-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 2,
+        "name": "IMO PIKAPOOL",
+        "player": "richardmarighetti",
+        "country": "BR",
+        "record": {
+          "wins": 6,
+          "losses": 2,
+          "ties": 1
+        },
+        "recordText": "6-2-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 3,
+        "name": "𝙏𝙂𝘼 | Correia",
+        "player": "346correia",
+        "country": "BR",
+        "record": {
+          "wins": 6,
+          "losses": 1,
+          "ties": 1
+        },
+        "recordText": "6-1-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 4,
+        "name": "𝗖𝗔𝗢𝗦 | Mdg",
+        "player": "marradg",
+        "country": "BR",
+        "record": {
+          "wins": 5,
+          "losses": 2,
+          "ties": 1
+        },
+        "recordText": "5-2-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 5,
+        "name": "Kaiser",
+        "player": "rikelmematos",
+        "country": "BR",
+        "record": {
+          "wins": 5,
+          "losses": 1,
+          "ties": 1
+        },
+        "recordText": "5-1-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 6,
+        "name": "RNG mathdamon",
+        "player": "mathdamoncs13",
+        "country": "BR",
+        "record": {
+          "wins": 5,
+          "losses": 2,
+          "ties": 0
+        },
+        "recordText": "5-2-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 7,
+        "name": "RNG Ki11z",
+        "player": "ki11z",
+        "country": "BR",
+        "record": {
+          "wins": 4,
+          "losses": 2,
+          "ties": 1
+        },
+        "recordText": "4-2-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 8,
+        "name": "CARLIN_6",
+        "player": "carlin_6",
+        "country": "BR",
+        "record": {
+          "wins": 4,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "4-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 9,
+        "name": "𝐈𝐌𝐎 | Barnabé",
+        "player": "barnabebryan",
+        "country": "BR",
+        "record": {
+          "wins": 3,
+          "losses": 2,
+          "ties": 1
+        },
+        "recordText": "3-2-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 10,
+        "name": "TGA| Chronos",
+        "player": "castro37",
+        "country": "BR",
+        "record": {
+          "wins": 3,
+          "losses": 2,
+          "ties": 1
+        },
+        "recordText": "3-2-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 11,
+        "name": "Mart95 𝙉𝙇𝘾",
+        "player": "mart95nlc",
+        "country": "BR",
+        "record": {
+          "wins": 3,
+          "losses": 2,
+          "ties": 1
+        },
+        "recordText": "3-2-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 12,
+        "name": "C4cto",
+        "player": "c4cto",
+        "country": "BR",
+        "record": {
+          "wins": 3,
+          "losses": 2,
+          "ties": 1
+        },
+        "recordText": "3-2-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 13,
+        "name": "𝐁𝐓 | Shikamaru BR",
+        "player": "shikamaru_br",
+        "country": "BR",
+        "record": {
+          "wins": 3,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "3-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 14,
+        "name": "KlausNY",
+        "player": "klausny",
+        "country": "BR",
+        "record": {
+          "wins": 3,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "3-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 15,
+        "name": "𝐈𝐌𝐎 | Kazuno",
+        "player": "lucaskazuno",
+        "country": "BR",
+        "record": {
+          "wins": 3,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "3-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 16,
+        "name": "𝙏𝙂𝘼 | LEOJ",
+        "player": "leoj",
+        "country": "BR",
+        "record": {
+          "wins": 3,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "3-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      }
+    ],
+    "top32": [
+      {
+        "placing": 1,
+        "name": "NLCPinguim",
+        "player": "nlcpinguim",
+        "country": "BR",
+        "record": {
+          "wins": 7,
+          "losses": 2,
+          "ties": 0
+        },
+        "recordText": "7-2-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 2,
+        "name": "IMO PIKAPOOL",
+        "player": "richardmarighetti",
+        "country": "BR",
+        "record": {
+          "wins": 6,
+          "losses": 2,
+          "ties": 1
+        },
+        "recordText": "6-2-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 3,
+        "name": "𝙏𝙂𝘼 | Correia",
+        "player": "346correia",
+        "country": "BR",
+        "record": {
+          "wins": 6,
+          "losses": 1,
+          "ties": 1
+        },
+        "recordText": "6-1-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 4,
+        "name": "𝗖𝗔𝗢𝗦 | Mdg",
+        "player": "marradg",
+        "country": "BR",
+        "record": {
+          "wins": 5,
+          "losses": 2,
+          "ties": 1
+        },
+        "recordText": "5-2-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 5,
+        "name": "Kaiser",
+        "player": "rikelmematos",
+        "country": "BR",
+        "record": {
+          "wins": 5,
+          "losses": 1,
+          "ties": 1
+        },
+        "recordText": "5-1-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 6,
+        "name": "RNG mathdamon",
+        "player": "mathdamoncs13",
+        "country": "BR",
+        "record": {
+          "wins": 5,
+          "losses": 2,
+          "ties": 0
+        },
+        "recordText": "5-2-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 7,
+        "name": "RNG Ki11z",
+        "player": "ki11z",
+        "country": "BR",
+        "record": {
+          "wins": 4,
+          "losses": 2,
+          "ties": 1
+        },
+        "recordText": "4-2-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 8,
+        "name": "CARLIN_6",
+        "player": "carlin_6",
+        "country": "BR",
+        "record": {
+          "wins": 4,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "4-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 9,
+        "name": "𝐈𝐌𝐎 | Barnabé",
+        "player": "barnabebryan",
+        "country": "BR",
+        "record": {
+          "wins": 3,
+          "losses": 2,
+          "ties": 1
+        },
+        "recordText": "3-2-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 10,
+        "name": "TGA| Chronos",
+        "player": "castro37",
+        "country": "BR",
+        "record": {
+          "wins": 3,
+          "losses": 2,
+          "ties": 1
+        },
+        "recordText": "3-2-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 11,
+        "name": "Mart95 𝙉𝙇𝘾",
+        "player": "mart95nlc",
+        "country": "BR",
+        "record": {
+          "wins": 3,
+          "losses": 2,
+          "ties": 1
+        },
+        "recordText": "3-2-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 12,
+        "name": "C4cto",
+        "player": "c4cto",
+        "country": "BR",
+        "record": {
+          "wins": 3,
+          "losses": 2,
+          "ties": 1
+        },
+        "recordText": "3-2-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 13,
+        "name": "𝐁𝐓 | Shikamaru BR",
+        "player": "shikamaru_br",
+        "country": "BR",
+        "record": {
+          "wins": 3,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "3-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 14,
+        "name": "KlausNY",
+        "player": "klausny",
+        "country": "BR",
+        "record": {
+          "wins": 3,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "3-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 15,
+        "name": "𝐈𝐌𝐎 | Kazuno",
+        "player": "lucaskazuno",
+        "country": "BR",
+        "record": {
+          "wins": 3,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "3-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 16,
+        "name": "𝙏𝙂𝘼 | LEOJ",
+        "player": "leoj",
+        "country": "BR",
+        "record": {
+          "wins": 3,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "3-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 17,
+        "name": "{𝐏𝐃𝐋} Lenny",
+        "player": "aggerlenny",
+        "country": "BR",
+        "record": {
+          "wins": 3,
+          "losses": 2,
+          "ties": 0
+        },
+        "recordText": "3-2-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 18,
+        "name": "DrBrandao",
+        "player": "drbrandao",
+        "country": "BR",
+        "record": {
+          "wins": 2,
+          "losses": 2,
+          "ties": 1
+        },
+        "recordText": "2-2-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 19,
+        "name": "Escriso",
+        "player": "escriso",
+        "country": "BR",
+        "record": {
+          "wins": 2,
+          "losses": 2,
+          "ties": 1
+        },
+        "recordText": "2-2-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 20,
+        "name": "Camarada_thi",
+        "player": "camarada_thi",
+        "country": "BR",
+        "record": {
+          "wins": 2,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "2-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 21,
+        "name": "vitinho.do.sus",
+        "player": "vitu",
+        "country": "BR",
+        "record": {
+          "wins": 2,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "2-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 22,
+        "name": "𝙏𝙂𝘼 | glione",
+        "player": "glione",
+        "country": "BR",
+        "record": {
+          "wins": 2,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "2-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 23,
+        "name": "𝙏𝙂𝘼| ICyriaco",
+        "player": "icyriaco",
+        "country": "BR",
+        "record": {
+          "wins": 2,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "2-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 24,
+        "name": "𝙏𝙂𝘼 | Black Lucas",
+        "player": "lucario98",
+        "country": "BR",
+        "record": {
+          "wins": 2,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "2-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 25,
+        "name": "G7zinn",
+        "player": "g7zinn",
+        "country": "BR",
+        "record": {
+          "wins": 2,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "2-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 26,
+        "name": "𝙏𝙂𝘼 | Grande AJ",
+        "player": "grandeaj",
+        "country": "BR",
+        "record": {
+          "wins": 1,
+          "losses": 3,
+          "ties": 1
+        },
+        "recordText": "1-3-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 27,
+        "name": "Blum_TGA",
+        "player": "blum_tga",
+        "country": "BR",
+        "record": {
+          "wins": 1,
+          "losses": 3,
+          "ties": 1
+        },
+        "recordText": "1-3-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 28,
+        "name": "𝐈𝐌𝐎 | Tracci09",
+        "player": "victor09tracci",
+        "country": "BR",
+        "record": {
+          "wins": 1,
+          "losses": 4,
+          "ties": 0
+        },
+        "recordText": "1-4-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 29,
+        "name": "𝙏𝙂𝘼| Escobar",
+        "player": "josepaulo",
+        "country": "BR",
+        "record": {
+          "wins": 1,
+          "losses": 4,
+          "ties": 0
+        },
+        "recordText": "1-4-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 30,
+        "name": "CAOS | Ayolosss",
+        "player": "ayolosss",
+        "country": "BR",
+        "record": {
+          "wins": 1,
+          "losses": 4,
+          "ties": 0
+        },
+        "recordText": "1-4-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 31,
+        "name": "Styll",
+        "player": "styll",
+        "country": "BR",
+        "record": {
+          "wins": 1,
+          "losses": 4,
+          "ties": 0
+        },
+        "recordText": "1-4-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 32,
+        "name": "Nessawerty",
+        "player": "nessawerty",
+        "country": "BR",
+        "record": {
+          "wins": 1,
+          "losses": 4,
+          "ties": 0
+        },
+        "recordText": "1-4-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      }
+    ]
+  },
+  "archetypes": [
+    {
+      "id": null,
+      "name": "Unknown",
+      "icons": [],
+      "count": 36,
+      "bestPlacing": 1,
+      "top8": 8,
+      "top16": 16,
+      "top32": 32,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "NLCPinguim",
+          "player": "nlcpinguim",
+          "country": "BR",
+          "placing": 1
+        },
+        {
+          "name": "IMO PIKAPOOL",
+          "player": "richardmarighetti",
+          "country": "BR",
+          "placing": 2
+        },
+        {
+          "name": "𝙏𝙂𝘼 | Correia",
+          "player": "346correia",
+          "country": "BR",
+          "placing": 3
+        },
+        {
+          "name": "𝗖𝗔𝗢𝗦 | Mdg",
+          "player": "marradg",
+          "country": "BR",
+          "placing": 4
+        },
+        {
+          "name": "Kaiser",
+          "player": "rikelmematos",
+          "country": "BR",
+          "placing": 5
+        }
+      ],
+      "share": 1.0,
+      "sharePct": 100.0,
+      "rank": 1
+    }
+  ],
+  "top32Archetypes": [
+    {
+      "id": null,
+      "name": "Unknown",
+      "icons": [],
+      "count": 32,
+      "bestPlacing": 1,
+      "top8": 8,
+      "top16": 16,
+      "top32": 32,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "NLCPinguim",
+          "player": "nlcpinguim",
+          "country": "BR",
+          "placing": 1
+        },
+        {
+          "name": "IMO PIKAPOOL",
+          "player": "richardmarighetti",
+          "country": "BR",
+          "placing": 2
+        },
+        {
+          "name": "𝙏𝙂𝘼 | Correia",
+          "player": "346correia",
+          "country": "BR",
+          "placing": 3
+        },
+        {
+          "name": "𝗖𝗔𝗢𝗦 | Mdg",
+          "player": "marradg",
+          "country": "BR",
+          "placing": 4
+        },
+        {
+          "name": "Kaiser",
+          "player": "rikelmematos",
+          "country": "BR",
+          "placing": 5
+        }
+      ],
+      "share": 1.0,
+      "sharePct": 100.0,
+      "rank": 1
+    }
+  ],
+  "countries": [
+    {
+      "country": "BR",
+      "label": "BR",
+      "count": 36,
+      "share": 1.0,
+      "sharePct": 100.0
+    }
+  ],
+  "cardUsage": [],
+  "energyUsage": [],
+  "pairingsSummary": {
+    "available": true,
+    "kind": "list",
+    "rounds": 6,
+    "matches": 104,
+    "roundBreakdown": [
+      {
+        "round": "1",
+        "matches": 18
+      },
+      {
+        "round": "2",
+        "matches": 18
+      },
+      {
+        "round": "3",
+        "matches": 18
+      },
+      {
+        "round": "4",
+        "matches": 18
+      },
+      {
+        "round": "5",
+        "matches": 17
+      },
+      {
+        "round": "6",
+        "matches": 15
+      }
+    ]
+  },
+  "standings": [
+    {
+      "placing": 1,
+      "name": "NLCPinguim",
+      "player": "nlcpinguim",
+      "country": "BR",
+      "record": {
+        "wins": 7,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "7-2-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 2,
+      "name": "IMO PIKAPOOL",
+      "player": "richardmarighetti",
+      "country": "BR",
+      "record": {
+        "wins": 6,
+        "losses": 2,
+        "ties": 1
+      },
+      "recordText": "6-2-1",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 3,
+      "name": "𝙏𝙂𝘼 | Correia",
+      "player": "346correia",
+      "country": "BR",
+      "record": {
+        "wins": 6,
+        "losses": 1,
+        "ties": 1
+      },
+      "recordText": "6-1-1",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 4,
+      "name": "𝗖𝗔𝗢𝗦 | Mdg",
+      "player": "marradg",
+      "country": "BR",
+      "record": {
+        "wins": 5,
+        "losses": 2,
+        "ties": 1
+      },
+      "recordText": "5-2-1",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 5,
+      "name": "Kaiser",
+      "player": "rikelmematos",
+      "country": "BR",
+      "record": {
+        "wins": 5,
+        "losses": 1,
+        "ties": 1
+      },
+      "recordText": "5-1-1",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 6,
+      "name": "RNG mathdamon",
+      "player": "mathdamoncs13",
+      "country": "BR",
+      "record": {
+        "wins": 5,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "5-2-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 7,
+      "name": "RNG Ki11z",
+      "player": "ki11z",
+      "country": "BR",
+      "record": {
+        "wins": 4,
+        "losses": 2,
+        "ties": 1
+      },
+      "recordText": "4-2-1",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 8,
+      "name": "CARLIN_6",
+      "player": "carlin_6",
+      "country": "BR",
+      "record": {
+        "wins": 4,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "4-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 9,
+      "name": "𝐈𝐌𝐎 | Barnabé",
+      "player": "barnabebryan",
+      "country": "BR",
+      "record": {
+        "wins": 3,
+        "losses": 2,
+        "ties": 1
+      },
+      "recordText": "3-2-1",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 10,
+      "name": "TGA| Chronos",
+      "player": "castro37",
+      "country": "BR",
+      "record": {
+        "wins": 3,
+        "losses": 2,
+        "ties": 1
+      },
+      "recordText": "3-2-1",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 11,
+      "name": "Mart95 𝙉𝙇𝘾",
+      "player": "mart95nlc",
+      "country": "BR",
+      "record": {
+        "wins": 3,
+        "losses": 2,
+        "ties": 1
+      },
+      "recordText": "3-2-1",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 12,
+      "name": "C4cto",
+      "player": "c4cto",
+      "country": "BR",
+      "record": {
+        "wins": 3,
+        "losses": 2,
+        "ties": 1
+      },
+      "recordText": "3-2-1",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 13,
+      "name": "𝐁𝐓 | Shikamaru BR",
+      "player": "shikamaru_br",
+      "country": "BR",
+      "record": {
+        "wins": 3,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "3-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 14,
+      "name": "KlausNY",
+      "player": "klausny",
+      "country": "BR",
+      "record": {
+        "wins": 3,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "3-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 15,
+      "name": "𝐈𝐌𝐎 | Kazuno",
+      "player": "lucaskazuno",
+      "country": "BR",
+      "record": {
+        "wins": 3,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "3-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 16,
+      "name": "𝙏𝙂𝘼 | LEOJ",
+      "player": "leoj",
+      "country": "BR",
+      "record": {
+        "wins": 3,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "3-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 17,
+      "name": "{𝐏𝐃𝐋} Lenny",
+      "player": "aggerlenny",
+      "country": "BR",
+      "record": {
+        "wins": 3,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "3-2-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 18,
+      "name": "DrBrandao",
+      "player": "drbrandao",
+      "country": "BR",
+      "record": {
+        "wins": 2,
+        "losses": 2,
+        "ties": 1
+      },
+      "recordText": "2-2-1",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 19,
+      "name": "Escriso",
+      "player": "escriso",
+      "country": "BR",
+      "record": {
+        "wins": 2,
+        "losses": 2,
+        "ties": 1
+      },
+      "recordText": "2-2-1",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 20,
+      "name": "Camarada_thi",
+      "player": "camarada_thi",
+      "country": "BR",
+      "record": {
+        "wins": 2,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "2-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 21,
+      "name": "vitinho.do.sus",
+      "player": "vitu",
+      "country": "BR",
+      "record": {
+        "wins": 2,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "2-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 22,
+      "name": "𝙏𝙂𝘼 | glione",
+      "player": "glione",
+      "country": "BR",
+      "record": {
+        "wins": 2,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "2-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 23,
+      "name": "𝙏𝙂𝘼| ICyriaco",
+      "player": "icyriaco",
+      "country": "BR",
+      "record": {
+        "wins": 2,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "2-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 24,
+      "name": "𝙏𝙂𝘼 | Black Lucas",
+      "player": "lucario98",
+      "country": "BR",
+      "record": {
+        "wins": 2,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "2-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 25,
+      "name": "G7zinn",
+      "player": "g7zinn",
+      "country": "BR",
+      "record": {
+        "wins": 2,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "2-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 26,
+      "name": "𝙏𝙂𝘼 | Grande AJ",
+      "player": "grandeaj",
+      "country": "BR",
+      "record": {
+        "wins": 1,
+        "losses": 3,
+        "ties": 1
+      },
+      "recordText": "1-3-1",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 27,
+      "name": "Blum_TGA",
+      "player": "blum_tga",
+      "country": "BR",
+      "record": {
+        "wins": 1,
+        "losses": 3,
+        "ties": 1
+      },
+      "recordText": "1-3-1",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 28,
+      "name": "𝐈𝐌𝐎 | Tracci09",
+      "player": "victor09tracci",
+      "country": "BR",
+      "record": {
+        "wins": 1,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "1-4-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 29,
+      "name": "𝙏𝙂𝘼| Escobar",
+      "player": "josepaulo",
+      "country": "BR",
+      "record": {
+        "wins": 1,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "1-4-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 30,
+      "name": "CAOS | Ayolosss",
+      "player": "ayolosss",
+      "country": "BR",
+      "record": {
+        "wins": 1,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "1-4-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 31,
+      "name": "Styll",
+      "player": "styll",
+      "country": "BR",
+      "record": {
+        "wins": 1,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "1-4-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 32,
+      "name": "Nessawerty",
+      "player": "nessawerty",
+      "country": "BR",
+      "record": {
+        "wins": 1,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "1-4-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 33,
+      "name": "Marthi09",
+      "player": "marthi09",
+      "country": "BR",
+      "record": {
+        "wins": 1,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "1-4-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "𝐈𝐌𝐎 | Eddie",
+      "player": "eddiespfc",
+      "country": "BR",
+      "record": {
+        "wins": 1,
+        "losses": 2,
+        "ties": 1
+      },
+      "recordText": "1-2-1",
+      "drop": 4,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "𝐁𝐓 | Lessa",
+      "player": "wlessa",
+      "country": "BR",
+      "record": {
+        "wins": 1,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "1-3-0",
+      "drop": 4,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "𝐈𝐌𝐎 | CR7!",
+      "player": "elbert",
+      "country": "BR",
+      "record": {
+        "wins": 0,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "0-2-0",
+      "drop": 2,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    }
+  ],
+  "source": {
+    "index": {
+      "game": "POCKET",
+      "name": "🐦‍🔥 GALAR LEAGUE • Edição 5 • Prize $300 BRL",
+      "date": "2026-03-09T15:00:00.000Z",
+      "format": null,
+      "id": "69aae3c1f39e6e70969fd2c9",
+      "players": 36,
+      "organizerId": 2442
+    },
+    "details": {
+      "id": "69aae3c1f39e6e70969fd2c9",
+      "game": "POCKET",
+      "format": null,
+      "name": "🐦‍🔥 GALAR LEAGUE • Edição 5 • Prize $300 BRL",
+      "date": "2026-03-09T15:00:00.000Z",
+      "players": 36,
+      "organizer": {
+        "id": 2442,
+        "name": "TEAM GALAR"
+      },
+      "decklists": false,
+      "isPublic": true,
+      "isOnline": true,
+      "phases": [
+        {
+          "phase": 1,
+          "type": "SWISS",
+          "rounds": 5,
+          "mode": "BO3"
+        },
+        {
+          "phase": 2,
+          "type": "SINGLE_BRACKET",
+          "rounds": 1,
+          "mode": "BO3"
+        }
+      ]
+    }
+  }
+}

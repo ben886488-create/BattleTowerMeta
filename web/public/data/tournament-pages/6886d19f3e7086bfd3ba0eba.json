@@ -1,0 +1,5198 @@
+{
+  "meta": {
+    "generatedAt": "2026-04-14T15:33:44.645743Z",
+    "script": "build_tournament_pages.py",
+    "version": 1,
+    "errors": []
+  },
+  "tournament": {
+    "id": "6886d19f3e7086bfd3ba0eba",
+    "name": "#3 포켓몬 카드 게임 pocket 한국대회 [대회 총 예산 60만원]",
+    "date": "2025-08-03T05:00:00.000Z",
+    "dateMs": 1754197200000,
+    "players": 96,
+    "game": "POCKET",
+    "format": null,
+    "status": null,
+    "swiss": null,
+    "topCut": null,
+    "set": null,
+    "setNameZh": null,
+    "setNameEn": null,
+    "formatUi": null,
+    "decklists": true,
+    "pagePath": "/data/tournament-pages/6886d19f3e7086bfd3ba0eba.json",
+    "rawPaths": {
+      "details": "/data/raw/6886d19f3e7086bfd3ba0eba/details.json",
+      "standings": "/data/raw/6886d19f3e7086bfd3ba0eba/standings.json",
+      "pairings": "/data/raw/6886d19f3e7086bfd3ba0eba/pairings.json"
+    },
+    "url": "https://play.limitlesstcg.com/tournament/6886d19f3e7086bfd3ba0eba",
+    "standingsUrl": "https://play.limitlesstcg.com/tournament/6886d19f3e7086bfd3ba0eba/standings"
+  },
+  "summary": {
+    "entrants": 96,
+    "playersWithCountry": 82,
+    "playersWithDeck": 96,
+    "playersWithDecklist": 0,
+    "playersDropped": 24,
+    "uniqueCountries": 18,
+    "uniqueArchetypes": 29,
+    "pairingsRounds": 8,
+    "pairingsMatches": 425,
+    "top8Decklists": 0,
+    "top32Decklists": 0
+  },
+  "featured": {
+    "winner": {
+      "placing": 1,
+      "name": "suugarwater",
+      "player": "suugarwater",
+      "country": "KR",
+      "record": {
+        "wins": 11,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "11-3-0",
+      "drop": null,
+      "deck": {
+        "id": "buzzwole-ex-celesteela-a3a",
+        "name": "Buzzwole ex Celesteela",
+        "icons": [
+          "buzzwole",
+          "celesteela"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    "top8": [
+      {
+        "placing": 1,
+        "name": "suugarwater",
+        "player": "suugarwater",
+        "country": "KR",
+        "record": {
+          "wins": 11,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "11-3-0",
+        "drop": null,
+        "deck": {
+          "id": "buzzwole-ex-celesteela-a3a",
+          "name": "Buzzwole ex Celesteela",
+          "icons": [
+            "buzzwole",
+            "celesteela"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 2,
+        "name": "alpyapiw",
+        "player": "alpyapiw",
+        "country": "ID",
+        "record": {
+          "wins": 11,
+          "losses": 4,
+          "ties": 0
+        },
+        "recordText": "11-4-0",
+        "drop": null,
+        "deck": {
+          "id": "flareon-ex-a3b-leafeon-ex-a2a",
+          "name": "Flareon ex Leafeon ex",
+          "icons": [
+            "flareon",
+            "leafeon"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 3,
+        "name": "Jarviss",
+        "player": "jarviss",
+        "country": "KR",
+        "record": {
+          "wins": 11,
+          "losses": 4,
+          "ties": 0
+        },
+        "recordText": "11-4-0",
+        "drop": null,
+        "deck": {
+          "id": "luxray-a2-oricorio-a3",
+          "name": "Luxray Oricorio",
+          "icons": [
+            "luxray",
+            "oricorio-pom-pom"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 4,
+        "name": "Ester",
+        "player": "ester",
+        "country": "UA",
+        "record": {
+          "wins": 10,
+          "losses": 4,
+          "ties": 0
+        },
+        "recordText": "10-4-0",
+        "drop": null,
+        "deck": {
+          "id": "sylveon-ex-a3b-greninja-a1",
+          "name": "Sylveon ex Greninja",
+          "icons": [
+            "sylveon",
+            "greninja"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 5,
+        "name": "bigmoon",
+        "player": "bigmoon",
+        "country": "KR",
+        "record": {
+          "wins": 9,
+          "losses": 5,
+          "ties": 0
+        },
+        "recordText": "9-5-0",
+        "drop": null,
+        "deck": {
+          "id": "buzzwole-ex-pheromosa-a3a",
+          "name": "Buzzwole ex Pheromosa",
+          "icons": [
+            "buzzwole",
+            "pheromosa"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 6,
+        "name": "SnowSpring",
+        "player": "snowspring",
+        "country": "KR",
+        "record": {
+          "wins": 9,
+          "losses": 7,
+          "ties": 0
+        },
+        "recordText": "9-7-0",
+        "drop": null,
+        "deck": {
+          "id": "giratina-ex-a2b-darkrai-ex-a2",
+          "name": "Giratina ex Darkrai ex",
+          "icons": [
+            "giratina",
+            "darkrai"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 7,
+        "name": "Adropa",
+        "player": "adropa",
+        "country": null,
+        "record": {
+          "wins": 10,
+          "losses": 5,
+          "ties": 0
+        },
+        "recordText": "10-5-0",
+        "drop": null,
+        "deck": {
+          "id": "silvally-a3a-oricorio-a3",
+          "name": "Silvally Oricorio",
+          "icons": [
+            "silvally",
+            "oricorio-pom-pom"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 8,
+        "name": "Spicy_Radish",
+        "player": "spicy_radish",
+        "country": "KR",
+        "record": {
+          "wins": 9,
+          "losses": 6,
+          "ties": 0
+        },
+        "recordText": "9-6-0",
+        "drop": null,
+        "deck": {
+          "id": "garchomp-ex-a2a-sylveon-ex-a3b",
+          "name": "Garchomp ex Sylveon ex",
+          "icons": [
+            "garchomp",
+            "sylveon"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      }
+    ],
+    "top16": [
+      {
+        "placing": 1,
+        "name": "suugarwater",
+        "player": "suugarwater",
+        "country": "KR",
+        "record": {
+          "wins": 11,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "11-3-0",
+        "drop": null,
+        "deck": {
+          "id": "buzzwole-ex-celesteela-a3a",
+          "name": "Buzzwole ex Celesteela",
+          "icons": [
+            "buzzwole",
+            "celesteela"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 2,
+        "name": "alpyapiw",
+        "player": "alpyapiw",
+        "country": "ID",
+        "record": {
+          "wins": 11,
+          "losses": 4,
+          "ties": 0
+        },
+        "recordText": "11-4-0",
+        "drop": null,
+        "deck": {
+          "id": "flareon-ex-a3b-leafeon-ex-a2a",
+          "name": "Flareon ex Leafeon ex",
+          "icons": [
+            "flareon",
+            "leafeon"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 3,
+        "name": "Jarviss",
+        "player": "jarviss",
+        "country": "KR",
+        "record": {
+          "wins": 11,
+          "losses": 4,
+          "ties": 0
+        },
+        "recordText": "11-4-0",
+        "drop": null,
+        "deck": {
+          "id": "luxray-a2-oricorio-a3",
+          "name": "Luxray Oricorio",
+          "icons": [
+            "luxray",
+            "oricorio-pom-pom"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 4,
+        "name": "Ester",
+        "player": "ester",
+        "country": "UA",
+        "record": {
+          "wins": 10,
+          "losses": 4,
+          "ties": 0
+        },
+        "recordText": "10-4-0",
+        "drop": null,
+        "deck": {
+          "id": "sylveon-ex-a3b-greninja-a1",
+          "name": "Sylveon ex Greninja",
+          "icons": [
+            "sylveon",
+            "greninja"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 5,
+        "name": "bigmoon",
+        "player": "bigmoon",
+        "country": "KR",
+        "record": {
+          "wins": 9,
+          "losses": 5,
+          "ties": 0
+        },
+        "recordText": "9-5-0",
+        "drop": null,
+        "deck": {
+          "id": "buzzwole-ex-pheromosa-a3a",
+          "name": "Buzzwole ex Pheromosa",
+          "icons": [
+            "buzzwole",
+            "pheromosa"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 6,
+        "name": "SnowSpring",
+        "player": "snowspring",
+        "country": "KR",
+        "record": {
+          "wins": 9,
+          "losses": 7,
+          "ties": 0
+        },
+        "recordText": "9-7-0",
+        "drop": null,
+        "deck": {
+          "id": "giratina-ex-a2b-darkrai-ex-a2",
+          "name": "Giratina ex Darkrai ex",
+          "icons": [
+            "giratina",
+            "darkrai"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 7,
+        "name": "Adropa",
+        "player": "adropa",
+        "country": null,
+        "record": {
+          "wins": 10,
+          "losses": 5,
+          "ties": 0
+        },
+        "recordText": "10-5-0",
+        "drop": null,
+        "deck": {
+          "id": "silvally-a3a-oricorio-a3",
+          "name": "Silvally Oricorio",
+          "icons": [
+            "silvally",
+            "oricorio-pom-pom"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 8,
+        "name": "Spicy_Radish",
+        "player": "spicy_radish",
+        "country": "KR",
+        "record": {
+          "wins": 9,
+          "losses": 6,
+          "ties": 0
+        },
+        "recordText": "9-6-0",
+        "drop": null,
+        "deck": {
+          "id": "garchomp-ex-a2a-sylveon-ex-a3b",
+          "name": "Garchomp ex Sylveon ex",
+          "icons": [
+            "garchomp",
+            "sylveon"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 9,
+        "name": "Dile",
+        "player": "dile",
+        "country": "KR",
+        "record": {
+          "wins": 10,
+          "losses": 2,
+          "ties": 0
+        },
+        "recordText": "10-2-0",
+        "drop": null,
+        "deck": {
+          "id": "flareon-ex-a3b-leafeon-ex-a2a",
+          "name": "Flareon ex Leafeon ex",
+          "icons": [
+            "flareon",
+            "leafeon"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 10,
+        "name": "N1777",
+        "player": "n1777",
+        "country": "KR",
+        "record": {
+          "wins": 8,
+          "losses": 4,
+          "ties": 0
+        },
+        "recordText": "8-4-0",
+        "drop": null,
+        "deck": {
+          "id": "flareon-ex-a3b-leafeon-ex-a2a",
+          "name": "Flareon ex Leafeon ex",
+          "icons": [
+            "flareon",
+            "leafeon"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 11,
+        "name": "cura222222",
+        "player": "cura222222",
+        "country": "JP",
+        "record": {
+          "wins": 7,
+          "losses": 5,
+          "ties": 0
+        },
+        "recordText": "7-5-0",
+        "drop": null,
+        "deck": {
+          "id": "sylveon-ex-a3b-giratina-ex-a2b",
+          "name": "Sylveon ex Giratina ex",
+          "icons": [
+            "sylveon",
+            "giratina"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 12,
+        "name": "stormcastle21",
+        "player": "stormcastle21",
+        "country": "SG",
+        "record": {
+          "wins": 7,
+          "losses": 6,
+          "ties": 0
+        },
+        "recordText": "7-6-0",
+        "drop": null,
+        "deck": {
+          "id": "sylveon-ex-a3b-greninja-a1",
+          "name": "Sylveon ex Greninja",
+          "icons": [
+            "sylveon",
+            "greninja"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 13,
+        "name": "PDon",
+        "player": "pdon",
+        "country": "KR",
+        "record": {
+          "wins": 10,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "10-3-0",
+        "drop": null,
+        "deck": {
+          "id": "giratina-ex-a2b-darkrai-ex-a2",
+          "name": "Giratina ex Darkrai ex",
+          "icons": [
+            "giratina",
+            "darkrai"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 14,
+        "name": "𝗠𝗮𝗴𝗺𝗮 TheViice",
+        "player": "theviice",
+        "country": "DE",
+        "record": {
+          "wins": 10,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "10-3-0",
+        "drop": null,
+        "deck": {
+          "id": "giratina-ex-a2b-darkrai-ex-a2",
+          "name": "Giratina ex Darkrai ex",
+          "icons": [
+            "giratina",
+            "darkrai"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 15,
+        "name": "HeadochE",
+        "player": "headoche",
+        "country": "KR",
+        "record": {
+          "wins": 8,
+          "losses": 5,
+          "ties": 0
+        },
+        "recordText": "8-5-0",
+        "drop": null,
+        "deck": {
+          "id": "sylveon-ex-a3b-greninja-a1",
+          "name": "Sylveon ex Greninja",
+          "icons": [
+            "sylveon",
+            "greninja"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 16,
+        "name": "mikun",
+        "player": "mikun",
+        "country": "JP",
+        "record": {
+          "wins": 7,
+          "losses": 6,
+          "ties": 0
+        },
+        "recordText": "7-6-0",
+        "drop": null,
+        "deck": {
+          "id": "flareon-ex-a3b-leafeon-ex-a2a",
+          "name": "Flareon ex Leafeon ex",
+          "icons": [
+            "flareon",
+            "leafeon"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      }
+    ],
+    "top32": [
+      {
+        "placing": 1,
+        "name": "suugarwater",
+        "player": "suugarwater",
+        "country": "KR",
+        "record": {
+          "wins": 11,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "11-3-0",
+        "drop": null,
+        "deck": {
+          "id": "buzzwole-ex-celesteela-a3a",
+          "name": "Buzzwole ex Celesteela",
+          "icons": [
+            "buzzwole",
+            "celesteela"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 2,
+        "name": "alpyapiw",
+        "player": "alpyapiw",
+        "country": "ID",
+        "record": {
+          "wins": 11,
+          "losses": 4,
+          "ties": 0
+        },
+        "recordText": "11-4-0",
+        "drop": null,
+        "deck": {
+          "id": "flareon-ex-a3b-leafeon-ex-a2a",
+          "name": "Flareon ex Leafeon ex",
+          "icons": [
+            "flareon",
+            "leafeon"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 3,
+        "name": "Jarviss",
+        "player": "jarviss",
+        "country": "KR",
+        "record": {
+          "wins": 11,
+          "losses": 4,
+          "ties": 0
+        },
+        "recordText": "11-4-0",
+        "drop": null,
+        "deck": {
+          "id": "luxray-a2-oricorio-a3",
+          "name": "Luxray Oricorio",
+          "icons": [
+            "luxray",
+            "oricorio-pom-pom"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 4,
+        "name": "Ester",
+        "player": "ester",
+        "country": "UA",
+        "record": {
+          "wins": 10,
+          "losses": 4,
+          "ties": 0
+        },
+        "recordText": "10-4-0",
+        "drop": null,
+        "deck": {
+          "id": "sylveon-ex-a3b-greninja-a1",
+          "name": "Sylveon ex Greninja",
+          "icons": [
+            "sylveon",
+            "greninja"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 5,
+        "name": "bigmoon",
+        "player": "bigmoon",
+        "country": "KR",
+        "record": {
+          "wins": 9,
+          "losses": 5,
+          "ties": 0
+        },
+        "recordText": "9-5-0",
+        "drop": null,
+        "deck": {
+          "id": "buzzwole-ex-pheromosa-a3a",
+          "name": "Buzzwole ex Pheromosa",
+          "icons": [
+            "buzzwole",
+            "pheromosa"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 6,
+        "name": "SnowSpring",
+        "player": "snowspring",
+        "country": "KR",
+        "record": {
+          "wins": 9,
+          "losses": 7,
+          "ties": 0
+        },
+        "recordText": "9-7-0",
+        "drop": null,
+        "deck": {
+          "id": "giratina-ex-a2b-darkrai-ex-a2",
+          "name": "Giratina ex Darkrai ex",
+          "icons": [
+            "giratina",
+            "darkrai"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 7,
+        "name": "Adropa",
+        "player": "adropa",
+        "country": null,
+        "record": {
+          "wins": 10,
+          "losses": 5,
+          "ties": 0
+        },
+        "recordText": "10-5-0",
+        "drop": null,
+        "deck": {
+          "id": "silvally-a3a-oricorio-a3",
+          "name": "Silvally Oricorio",
+          "icons": [
+            "silvally",
+            "oricorio-pom-pom"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 8,
+        "name": "Spicy_Radish",
+        "player": "spicy_radish",
+        "country": "KR",
+        "record": {
+          "wins": 9,
+          "losses": 6,
+          "ties": 0
+        },
+        "recordText": "9-6-0",
+        "drop": null,
+        "deck": {
+          "id": "garchomp-ex-a2a-sylveon-ex-a3b",
+          "name": "Garchomp ex Sylveon ex",
+          "icons": [
+            "garchomp",
+            "sylveon"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 9,
+        "name": "Dile",
+        "player": "dile",
+        "country": "KR",
+        "record": {
+          "wins": 10,
+          "losses": 2,
+          "ties": 0
+        },
+        "recordText": "10-2-0",
+        "drop": null,
+        "deck": {
+          "id": "flareon-ex-a3b-leafeon-ex-a2a",
+          "name": "Flareon ex Leafeon ex",
+          "icons": [
+            "flareon",
+            "leafeon"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 10,
+        "name": "N1777",
+        "player": "n1777",
+        "country": "KR",
+        "record": {
+          "wins": 8,
+          "losses": 4,
+          "ties": 0
+        },
+        "recordText": "8-4-0",
+        "drop": null,
+        "deck": {
+          "id": "flareon-ex-a3b-leafeon-ex-a2a",
+          "name": "Flareon ex Leafeon ex",
+          "icons": [
+            "flareon",
+            "leafeon"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 11,
+        "name": "cura222222",
+        "player": "cura222222",
+        "country": "JP",
+        "record": {
+          "wins": 7,
+          "losses": 5,
+          "ties": 0
+        },
+        "recordText": "7-5-0",
+        "drop": null,
+        "deck": {
+          "id": "sylveon-ex-a3b-giratina-ex-a2b",
+          "name": "Sylveon ex Giratina ex",
+          "icons": [
+            "sylveon",
+            "giratina"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 12,
+        "name": "stormcastle21",
+        "player": "stormcastle21",
+        "country": "SG",
+        "record": {
+          "wins": 7,
+          "losses": 6,
+          "ties": 0
+        },
+        "recordText": "7-6-0",
+        "drop": null,
+        "deck": {
+          "id": "sylveon-ex-a3b-greninja-a1",
+          "name": "Sylveon ex Greninja",
+          "icons": [
+            "sylveon",
+            "greninja"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 13,
+        "name": "PDon",
+        "player": "pdon",
+        "country": "KR",
+        "record": {
+          "wins": 10,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "10-3-0",
+        "drop": null,
+        "deck": {
+          "id": "giratina-ex-a2b-darkrai-ex-a2",
+          "name": "Giratina ex Darkrai ex",
+          "icons": [
+            "giratina",
+            "darkrai"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 14,
+        "name": "𝗠𝗮𝗴𝗺𝗮 TheViice",
+        "player": "theviice",
+        "country": "DE",
+        "record": {
+          "wins": 10,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "10-3-0",
+        "drop": null,
+        "deck": {
+          "id": "giratina-ex-a2b-darkrai-ex-a2",
+          "name": "Giratina ex Darkrai ex",
+          "icons": [
+            "giratina",
+            "darkrai"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 15,
+        "name": "HeadochE",
+        "player": "headoche",
+        "country": "KR",
+        "record": {
+          "wins": 8,
+          "losses": 5,
+          "ties": 0
+        },
+        "recordText": "8-5-0",
+        "drop": null,
+        "deck": {
+          "id": "sylveon-ex-a3b-greninja-a1",
+          "name": "Sylveon ex Greninja",
+          "icons": [
+            "sylveon",
+            "greninja"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 16,
+        "name": "mikun",
+        "player": "mikun",
+        "country": "JP",
+        "record": {
+          "wins": 7,
+          "losses": 6,
+          "ties": 0
+        },
+        "recordText": "7-6-0",
+        "drop": null,
+        "deck": {
+          "id": "flareon-ex-a3b-leafeon-ex-a2a",
+          "name": "Flareon ex Leafeon ex",
+          "icons": [
+            "flareon",
+            "leafeon"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 17,
+        "name": "vivE",
+        "player": "vive",
+        "country": "SG",
+        "record": {
+          "wins": 7,
+          "losses": 4,
+          "ties": 0
+        },
+        "recordText": "7-4-0",
+        "drop": null,
+        "deck": {
+          "id": "flareon-ex-a3b-leafeon-ex-a2a",
+          "name": "Flareon ex Leafeon ex",
+          "icons": [
+            "flareon",
+            "leafeon"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 18,
+        "name": "kuro1",
+        "player": "kuro1",
+        "country": "KR",
+        "record": {
+          "wins": 7,
+          "losses": 4,
+          "ties": 0
+        },
+        "recordText": "7-4-0",
+        "drop": null,
+        "deck": {
+          "id": "charizard-ex-a2b-sylveon-ex-a3b",
+          "name": "Charizard ex Sylveon ex",
+          "icons": [
+            "charizard",
+            "sylveon"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 19,
+        "name": "KatsuoNakahara",
+        "player": "katsuonakahara",
+        "country": "UA",
+        "record": {
+          "wins": 6,
+          "losses": 5,
+          "ties": 0
+        },
+        "recordText": "6-5-0",
+        "drop": null,
+        "deck": {
+          "id": "buzzwole-ex-pheromosa-a3a",
+          "name": "Buzzwole ex Pheromosa",
+          "icons": [
+            "buzzwole",
+            "pheromosa"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 20,
+        "name": "Owen Aw",
+        "player": "owen_aw",
+        "country": "MY",
+        "record": {
+          "wins": 6,
+          "losses": 5,
+          "ties": 0
+        },
+        "recordText": "6-5-0",
+        "drop": null,
+        "deck": {
+          "id": "sylveon-ex-a3b-greninja-a1",
+          "name": "Sylveon ex Greninja",
+          "icons": [
+            "sylveon",
+            "greninja"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 21,
+        "name": "My",
+        "player": "my",
+        "country": "JP",
+        "record": {
+          "wins": 5,
+          "losses": 6,
+          "ties": 0
+        },
+        "recordText": "5-6-0",
+        "drop": null,
+        "deck": {
+          "id": "guzzlord-ex-naganadel-a3a",
+          "name": "Guzzlord ex Naganadel",
+          "icons": [
+            "guzzlord",
+            "naganadel"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 22,
+        "name": "YeonSeonHan",
+        "player": "yeonseonhan",
+        "country": "KR",
+        "record": {
+          "wins": 5,
+          "losses": 6,
+          "ties": 0
+        },
+        "recordText": "5-6-0",
+        "drop": null,
+        "deck": {
+          "id": "sylveon-ex-a3b-greninja-a1",
+          "name": "Sylveon ex Greninja",
+          "icons": [
+            "sylveon",
+            "greninja"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 23,
+        "name": "CaptainQ",
+        "player": "captainq",
+        "country": null,
+        "record": {
+          "wins": 6,
+          "losses": 6,
+          "ties": 0
+        },
+        "recordText": "6-6-0",
+        "drop": null,
+        "deck": {
+          "id": "beedrill-ex-a2b",
+          "name": "Beedrill ex",
+          "icons": [
+            "beedrill"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 24,
+        "name": "J00NBAE",
+        "player": "j00nbae",
+        "country": null,
+        "record": {
+          "wins": 5,
+          "losses": 6,
+          "ties": 0
+        },
+        "recordText": "5-6-0",
+        "drop": null,
+        "deck": {
+          "id": "silvally-zeraora-a3a",
+          "name": "Silvally Zeraora",
+          "icons": [
+            "silvally",
+            "zeraora"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 25,
+        "name": "kdkd",
+        "player": "kdkd",
+        "country": null,
+        "record": {
+          "wins": 7,
+          "losses": 4,
+          "ties": 0
+        },
+        "recordText": "7-4-0",
+        "drop": null,
+        "deck": {
+          "id": "sylveon-ex-a3b-greninja-a1",
+          "name": "Sylveon ex Greninja",
+          "icons": [
+            "sylveon",
+            "greninja"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 26,
+        "name": "qqoo",
+        "player": "qqoo",
+        "country": null,
+        "record": {
+          "wins": 6,
+          "losses": 5,
+          "ties": 0
+        },
+        "recordText": "6-5-0",
+        "drop": null,
+        "deck": {
+          "id": "buzzwole-ex-pheromosa-a3a",
+          "name": "Buzzwole ex Pheromosa",
+          "icons": [
+            "buzzwole",
+            "pheromosa"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 27,
+        "name": "Team_humble",
+        "player": "team_humble",
+        "country": "HK",
+        "record": {
+          "wins": 6,
+          "losses": 5,
+          "ties": 0
+        },
+        "recordText": "6-5-0",
+        "drop": null,
+        "deck": {
+          "id": "buzzwole-ex-pheromosa-a3a",
+          "name": "Buzzwole ex Pheromosa",
+          "icons": [
+            "buzzwole",
+            "pheromosa"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 28,
+        "name": "saripac",
+        "player": "saripac",
+        "country": "MY",
+        "record": {
+          "wins": 6,
+          "losses": 5,
+          "ties": 0
+        },
+        "recordText": "6-5-0",
+        "drop": null,
+        "deck": {
+          "id": "arceus-ex-a2a-tapu-koko-ex-a3a",
+          "name": "Arceus ex Tapu Koko ex",
+          "icons": [
+            "arceus",
+            "tapu-koko"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 29,
+        "name": "ekzm3073",
+        "player": "ekzm3073",
+        "country": "KR",
+        "record": {
+          "wins": 5,
+          "losses": 6,
+          "ties": 0
+        },
+        "recordText": "5-6-0",
+        "drop": null,
+        "deck": {
+          "id": "buzzwole-ex-pheromosa-a3a",
+          "name": "Buzzwole ex Pheromosa",
+          "icons": [
+            "buzzwole",
+            "pheromosa"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 30,
+        "name": "joeun",
+        "player": "joeun",
+        "country": "KR",
+        "record": {
+          "wins": 5,
+          "losses": 6,
+          "ties": 0
+        },
+        "recordText": "5-6-0",
+        "drop": null,
+        "deck": {
+          "id": "charizard-ex-a2b-sylveon-ex-a3b",
+          "name": "Charizard ex Sylveon ex",
+          "icons": [
+            "charizard",
+            "sylveon"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 31,
+        "name": "jyj120904",
+        "player": "jyj120904",
+        "country": "KR",
+        "record": {
+          "wins": 5,
+          "losses": 6,
+          "ties": 0
+        },
+        "recordText": "5-6-0",
+        "drop": null,
+        "deck": {
+          "id": "giratina-ex-a2b-eevee-ex-a3b",
+          "name": "Giratina ex Eevee ex",
+          "icons": [
+            "giratina",
+            "eevee"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 32,
+        "name": "Deerlord",
+        "player": "deerlord",
+        "country": "BR",
+        "record": {
+          "wins": 5,
+          "losses": 6,
+          "ties": 0
+        },
+        "recordText": "5-6-0",
+        "drop": null,
+        "deck": {
+          "id": "darkrai-ex-a2-nidoking-a1",
+          "name": "Darkrai ex Nidoking",
+          "icons": [
+            "darkrai",
+            "nidoking"
+          ]
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      }
+    ]
+  },
+  "archetypes": [
+    {
+      "id": "sylveon-ex-a3b-greninja-a1",
+      "name": "Sylveon ex Greninja",
+      "icons": [
+        "sylveon",
+        "greninja"
+      ],
+      "count": 15,
+      "bestPlacing": 4,
+      "top8": 1,
+      "top16": 3,
+      "top32": 6,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "Ester",
+          "player": "ester",
+          "country": "UA",
+          "placing": 4
+        },
+        {
+          "name": "stormcastle21",
+          "player": "stormcastle21",
+          "country": "SG",
+          "placing": 12
+        },
+        {
+          "name": "HeadochE",
+          "player": "headoche",
+          "country": "KR",
+          "placing": 15
+        },
+        {
+          "name": "Owen Aw",
+          "player": "owen_aw",
+          "country": "MY",
+          "placing": 20
+        },
+        {
+          "name": "YeonSeonHan",
+          "player": "yeonseonhan",
+          "country": "KR",
+          "placing": 22
+        }
+      ],
+      "share": 0.15625,
+      "sharePct": 15.62,
+      "rank": 1
+    },
+    {
+      "id": "buzzwole-ex-pheromosa-a3a",
+      "name": "Buzzwole ex Pheromosa",
+      "icons": [
+        "buzzwole",
+        "pheromosa"
+      ],
+      "count": 15,
+      "bestPlacing": 5,
+      "top8": 1,
+      "top16": 1,
+      "top32": 5,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "bigmoon",
+          "player": "bigmoon",
+          "country": "KR",
+          "placing": 5
+        },
+        {
+          "name": "KatsuoNakahara",
+          "player": "katsuonakahara",
+          "country": "UA",
+          "placing": 19
+        },
+        {
+          "name": "qqoo",
+          "player": "qqoo",
+          "country": null,
+          "placing": 26
+        },
+        {
+          "name": "Team_humble",
+          "player": "team_humble",
+          "country": "HK",
+          "placing": 27
+        },
+        {
+          "name": "ekzm3073",
+          "player": "ekzm3073",
+          "country": "KR",
+          "placing": 29
+        }
+      ],
+      "share": 0.15625,
+      "sharePct": 15.62,
+      "rank": 2
+    },
+    {
+      "id": "giratina-ex-a2b-darkrai-ex-a2",
+      "name": "Giratina ex Darkrai ex",
+      "icons": [
+        "giratina",
+        "darkrai"
+      ],
+      "count": 13,
+      "bestPlacing": 6,
+      "top8": 1,
+      "top16": 3,
+      "top32": 3,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "SnowSpring",
+          "player": "snowspring",
+          "country": "KR",
+          "placing": 6
+        },
+        {
+          "name": "PDon",
+          "player": "pdon",
+          "country": "KR",
+          "placing": 13
+        },
+        {
+          "name": "𝗠𝗮𝗴𝗺𝗮 TheViice",
+          "player": "theviice",
+          "country": "DE",
+          "placing": 14
+        },
+        {
+          "name": "AggerLenny",
+          "player": "aggerlenny",
+          "country": "BR",
+          "placing": 33
+        },
+        {
+          "name": "Pedron",
+          "player": "pedron",
+          "country": "MY",
+          "placing": 37
+        }
+      ],
+      "share": 0.135417,
+      "sharePct": 13.54,
+      "rank": 3
+    },
+    {
+      "id": "flareon-ex-a3b-leafeon-ex-a2a",
+      "name": "Flareon ex Leafeon ex",
+      "icons": [
+        "flareon",
+        "leafeon"
+      ],
+      "count": 8,
+      "bestPlacing": 2,
+      "top8": 1,
+      "top16": 4,
+      "top32": 5,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "alpyapiw",
+          "player": "alpyapiw",
+          "country": "ID",
+          "placing": 2
+        },
+        {
+          "name": "Dile",
+          "player": "dile",
+          "country": "KR",
+          "placing": 9
+        },
+        {
+          "name": "N1777",
+          "player": "n1777",
+          "country": "KR",
+          "placing": 10
+        },
+        {
+          "name": "mikun",
+          "player": "mikun",
+          "country": "JP",
+          "placing": 16
+        },
+        {
+          "name": "vivE",
+          "player": "vive",
+          "country": "SG",
+          "placing": 17
+        }
+      ],
+      "share": 0.083333,
+      "sharePct": 8.33,
+      "rank": 4
+    },
+    {
+      "id": "charizard-ex-a2b-sylveon-ex-a3b",
+      "name": "Charizard ex Sylveon ex",
+      "icons": [
+        "charizard",
+        "sylveon"
+      ],
+      "count": 8,
+      "bestPlacing": 18,
+      "top8": 0,
+      "top16": 0,
+      "top32": 2,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "kuro1",
+          "player": "kuro1",
+          "country": "KR",
+          "placing": 18
+        },
+        {
+          "name": "joeun",
+          "player": "joeun",
+          "country": "KR",
+          "placing": 30
+        },
+        {
+          "name": "CBN12345",
+          "player": "cbn12345",
+          "country": "SG",
+          "placing": 60
+        },
+        {
+          "name": "10CM",
+          "player": "10cm",
+          "country": "KR",
+          "placing": 71
+        },
+        {
+          "name": "Seedax",
+          "player": "seedax",
+          "country": "US",
+          "placing": null
+        }
+      ],
+      "share": 0.083333,
+      "sharePct": 8.33,
+      "rank": 5
+    },
+    {
+      "id": "silvally-a3a-oricorio-a3",
+      "name": "Silvally Oricorio",
+      "icons": [
+        "silvally",
+        "oricorio-pom-pom"
+      ],
+      "count": 5,
+      "bestPlacing": 7,
+      "top8": 1,
+      "top16": 1,
+      "top32": 1,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "Adropa",
+          "player": "adropa",
+          "country": null,
+          "placing": 7
+        },
+        {
+          "name": "Yorunoyuhi",
+          "player": "yorunoyuhi",
+          "country": null,
+          "placing": 40
+        },
+        {
+          "name": "Lai_Lia",
+          "player": "lai_lia",
+          "country": "KR",
+          "placing": 45
+        },
+        {
+          "name": "akaarowana0607",
+          "player": "akaarowana0607",
+          "country": "JP",
+          "placing": 47
+        },
+        {
+          "name": "NWJNS_PHAM",
+          "player": "nwjns_pham",
+          "country": "KR",
+          "placing": 74
+        }
+      ],
+      "share": 0.052083,
+      "sharePct": 5.21,
+      "rank": 6
+    },
+    {
+      "id": "guzzlord-ex-naganadel-a3a",
+      "name": "Guzzlord ex Naganadel",
+      "icons": [
+        "guzzlord",
+        "naganadel"
+      ],
+      "count": 4,
+      "bestPlacing": 21,
+      "top8": 0,
+      "top16": 0,
+      "top32": 1,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "My",
+          "player": "my",
+          "country": "JP",
+          "placing": 21
+        },
+        {
+          "name": "Warpis",
+          "player": "warpis",
+          "country": "ID",
+          "placing": 65
+        },
+        {
+          "name": "matsuuu",
+          "player": "matsuuu",
+          "country": "JP",
+          "placing": null
+        },
+        {
+          "name": "syr",
+          "player": "syr",
+          "country": "ID",
+          "placing": null
+        }
+      ],
+      "share": 0.041667,
+      "sharePct": 4.17,
+      "rank": 7
+    },
+    {
+      "id": "buzzwole-ex-celesteela-a3a",
+      "name": "Buzzwole ex Celesteela",
+      "icons": [
+        "buzzwole",
+        "celesteela"
+      ],
+      "count": 2,
+      "bestPlacing": 1,
+      "top8": 1,
+      "top16": 1,
+      "top32": 1,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "suugarwater",
+          "player": "suugarwater",
+          "country": "KR",
+          "placing": 1
+        },
+        {
+          "name": "Raigun",
+          "player": "raigun",
+          "country": "PH",
+          "placing": 51
+        }
+      ],
+      "share": 0.020833,
+      "sharePct": 2.08,
+      "rank": 8
+    },
+    {
+      "id": "garchomp-ex-a2a-sylveon-ex-a3b",
+      "name": "Garchomp ex Sylveon ex",
+      "icons": [
+        "garchomp",
+        "sylveon"
+      ],
+      "count": 2,
+      "bestPlacing": 8,
+      "top8": 1,
+      "top16": 1,
+      "top32": 1,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "Spicy_Radish",
+          "player": "spicy_radish",
+          "country": "KR",
+          "placing": 8
+        },
+        {
+          "name": "Eimaru524 E",
+          "player": "eilix524",
+          "country": "JP",
+          "placing": 53
+        }
+      ],
+      "share": 0.020833,
+      "sharePct": 2.08,
+      "rank": 9
+    },
+    {
+      "id": "sylveon-ex-a3b-giratina-ex-a2b",
+      "name": "Sylveon ex Giratina ex",
+      "icons": [
+        "sylveon",
+        "giratina"
+      ],
+      "count": 2,
+      "bestPlacing": 11,
+      "top8": 0,
+      "top16": 1,
+      "top32": 1,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "cura222222",
+          "player": "cura222222",
+          "country": "JP",
+          "placing": 11
+        },
+        {
+          "name": "Pikachu_hango",
+          "player": "pikachu_hango",
+          "country": "KR",
+          "placing": 66
+        }
+      ],
+      "share": 0.020833,
+      "sharePct": 2.08,
+      "rank": 10
+    },
+    {
+      "id": "silvally-zeraora-a3a",
+      "name": "Silvally Zeraora",
+      "icons": [
+        "silvally",
+        "zeraora"
+      ],
+      "count": 2,
+      "bestPlacing": 24,
+      "top8": 0,
+      "top16": 0,
+      "top32": 1,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "J00NBAE",
+          "player": "j00nbae",
+          "country": null,
+          "placing": 24
+        },
+        {
+          "name": "6jun",
+          "player": "6jun",
+          "country": "US",
+          "placing": null
+        }
+      ],
+      "share": 0.020833,
+      "sharePct": 2.08,
+      "rank": 11
+    },
+    {
+      "id": "flareon-ex-sylveon-ex-a3b",
+      "name": "Flareon ex Sylveon ex",
+      "icons": [
+        "flareon",
+        "sylveon"
+      ],
+      "count": 2,
+      "bestPlacing": 67,
+      "top8": 0,
+      "top16": 0,
+      "top32": 0,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "Kangs",
+          "player": "kangs",
+          "country": "KR",
+          "placing": 67
+        },
+        {
+          "name": "이 은세",
+          "player": "bbdac",
+          "country": "KR",
+          "placing": null
+        }
+      ],
+      "share": 0.020833,
+      "sharePct": 2.08,
+      "rank": 12
+    },
+    {
+      "id": "lugia-ex-a4-stoutland-a3a",
+      "name": "Lugia ex Stoutland",
+      "icons": [
+        "lugia",
+        "stoutland"
+      ],
+      "count": 2,
+      "bestPlacing": null,
+      "top8": 0,
+      "top16": 0,
+      "top32": 0,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "RaitoAz",
+          "player": "raitoaz",
+          "country": "VE",
+          "placing": null
+        },
+        {
+          "name": "Rayhardxxx",
+          "player": "rayhardxxx",
+          "country": "VE",
+          "placing": null
+        }
+      ],
+      "share": 0.020833,
+      "sharePct": 2.08,
+      "rank": 13
+    },
+    {
+      "id": "luxray-a2-oricorio-a3",
+      "name": "Luxray Oricorio",
+      "icons": [
+        "luxray",
+        "oricorio-pom-pom"
+      ],
+      "count": 1,
+      "bestPlacing": 3,
+      "top8": 1,
+      "top16": 1,
+      "top32": 1,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "Jarviss",
+          "player": "jarviss",
+          "country": "KR",
+          "placing": 3
+        }
+      ],
+      "share": 0.010417,
+      "sharePct": 1.04,
+      "rank": 14
+    },
+    {
+      "id": "beedrill-ex-a2b",
+      "name": "Beedrill ex",
+      "icons": [
+        "beedrill"
+      ],
+      "count": 1,
+      "bestPlacing": 23,
+      "top8": 0,
+      "top16": 0,
+      "top32": 1,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "CaptainQ",
+          "player": "captainq",
+          "country": null,
+          "placing": 23
+        }
+      ],
+      "share": 0.010417,
+      "sharePct": 1.04,
+      "rank": 15
+    },
+    {
+      "id": "arceus-ex-a2a-tapu-koko-ex-a3a",
+      "name": "Arceus ex Tapu Koko ex",
+      "icons": [
+        "arceus",
+        "tapu-koko"
+      ],
+      "count": 1,
+      "bestPlacing": 28,
+      "top8": 0,
+      "top16": 0,
+      "top32": 1,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "saripac",
+          "player": "saripac",
+          "country": "MY",
+          "placing": 28
+        }
+      ],
+      "share": 0.010417,
+      "sharePct": 1.04,
+      "rank": 16
+    },
+    {
+      "id": "giratina-ex-a2b-eevee-ex-a3b",
+      "name": "Giratina ex Eevee ex",
+      "icons": [
+        "giratina",
+        "eevee"
+      ],
+      "count": 1,
+      "bestPlacing": 31,
+      "top8": 0,
+      "top16": 0,
+      "top32": 1,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "jyj120904",
+          "player": "jyj120904",
+          "country": "KR",
+          "placing": 31
+        }
+      ],
+      "share": 0.010417,
+      "sharePct": 1.04,
+      "rank": 17
+    },
+    {
+      "id": "darkrai-ex-a2-nidoking-a1",
+      "name": "Darkrai ex Nidoking",
+      "icons": [
+        "darkrai",
+        "nidoking"
+      ],
+      "count": 1,
+      "bestPlacing": 32,
+      "top8": 0,
+      "top16": 0,
+      "top32": 1,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "Deerlord",
+          "player": "deerlord",
+          "country": "BR",
+          "placing": 32
+        }
+      ],
+      "share": 0.010417,
+      "sharePct": 1.04,
+      "rank": 18
+    },
+    {
+      "id": "gallade-ex-a2-stoutland-a3a",
+      "name": "Gallade ex Stoutland",
+      "icons": [
+        "gallade",
+        "stoutland"
+      ],
+      "count": 1,
+      "bestPlacing": 34,
+      "top8": 0,
+      "top16": 0,
+      "top32": 0,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "onnanjunsun1",
+          "player": "onnanjunsun1",
+          "country": "KR",
+          "placing": 34
+        }
+      ],
+      "share": 0.010417,
+      "sharePct": 1.04,
+      "rank": 19
+    },
+    {
+      "id": "leafeon-ex-a2a-serperior-a1a",
+      "name": "Leafeon ex Serperior",
+      "icons": [
+        "leafeon",
+        "serperior"
+      ],
+      "count": 1,
+      "bestPlacing": 42,
+      "top8": 0,
+      "top16": 0,
+      "top32": 0,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "V_TRJN",
+          "player": "v_trjn",
+          "country": "UA",
+          "placing": 42
+        }
+      ],
+      "share": 0.010417,
+      "sharePct": 1.04,
+      "rank": 20
+    },
+    {
+      "id": "tapu-koko-ex-silvally-a3a",
+      "name": "Tapu Koko ex Silvally",
+      "icons": [
+        "tapu-koko",
+        "silvally"
+      ],
+      "count": 1,
+      "bestPlacing": 46,
+      "top8": 0,
+      "top16": 0,
+      "top32": 0,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "deisislan",
+          "player": "deisislan",
+          "country": "BR",
+          "placing": 46
+        }
+      ],
+      "share": 0.010417,
+      "sharePct": 1.04,
+      "rank": 21
+    },
+    {
+      "id": "sylveon-ex-a3b-staraptor-a2a",
+      "name": "Sylveon ex Staraptor",
+      "icons": [
+        "sylveon",
+        "staraptor"
+      ],
+      "count": 1,
+      "bestPlacing": 52,
+      "top8": 0,
+      "top16": 0,
+      "top32": 0,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "opled",
+          "player": "opled",
+          "country": "KR",
+          "placing": 52
+        }
+      ],
+      "share": 0.010417,
+      "sharePct": 1.04,
+      "rank": 22
+    },
+    {
+      "id": "guzzlord-ex-nihilego-a3a",
+      "name": "Guzzlord ex Nihilego",
+      "icons": [
+        "guzzlord",
+        "nihilego"
+      ],
+      "count": 1,
+      "bestPlacing": 56,
+      "top8": 0,
+      "top16": 0,
+      "top32": 0,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "Especialista22",
+          "player": "especialista22",
+          "country": "BR",
+          "placing": 56
+        }
+      ],
+      "share": 0.010417,
+      "sharePct": 1.04,
+      "rank": 23
+    },
+    {
+      "id": "garchomp-ex-a2a-rampardos-a2",
+      "name": "Garchomp ex Rampardos",
+      "icons": [
+        "garchomp",
+        "rampardos"
+      ],
+      "count": 1,
+      "bestPlacing": 57,
+      "top8": 0,
+      "top16": 0,
+      "top32": 0,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "RajTage",
+          "player": "rajtage",
+          "country": "IN",
+          "placing": 57
+        }
+      ],
+      "share": 0.010417,
+      "sharePct": 1.04,
+      "rank": 24
+    },
+    {
+      "id": "arcanine-ex-a1-eevee-ex-a3b",
+      "name": "Arcanine ex Eevee ex",
+      "icons": [
+        "arcanine",
+        "eevee"
+      ],
+      "count": 1,
+      "bestPlacing": 68,
+      "top8": 0,
+      "top16": 0,
+      "top32": 0,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "wts",
+          "player": "wts",
+          "country": null,
+          "placing": 68
+        }
+      ],
+      "share": 0.010417,
+      "sharePct": 1.04,
+      "rank": 25
+    },
+    {
+      "id": "charizard-ex-a2b-flareon-ex-a3b",
+      "name": "Charizard ex Flareon ex",
+      "icons": [
+        "charizard",
+        "flareon"
+      ],
+      "count": 1,
+      "bestPlacing": 69,
+      "top8": 0,
+      "top16": 0,
+      "top32": 0,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "Itati",
+          "player": "itati",
+          "country": "JP",
+          "placing": 69
+        }
+      ],
+      "share": 0.010417,
+      "sharePct": 1.04,
+      "rank": 26
+    },
+    {
+      "id": "sylveon-ex-a3b-magnezone-a2",
+      "name": "Sylveon ex Magnezone",
+      "icons": [
+        "sylveon",
+        "magnezone"
+      ],
+      "count": 1,
+      "bestPlacing": 72,
+      "top8": 0,
+      "top16": 0,
+      "top32": 0,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "Carla Bustamante",
+          "player": "tequilajoestar",
+          "country": "PE",
+          "placing": 72
+        }
+      ],
+      "share": 0.010417,
+      "sharePct": 1.04,
+      "rank": 27
+    },
+    {
+      "id": "silvally-a3a-tapu-lele-a3",
+      "name": "Silvally Tapu Lele",
+      "icons": [
+        "silvally",
+        "tapu-lele"
+      ],
+      "count": 1,
+      "bestPlacing": null,
+      "top8": 0,
+      "top16": 0,
+      "top32": 0,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "jeyksu",
+          "player": "jeyksu",
+          "country": "PH",
+          "placing": null
+        }
+      ],
+      "share": 0.010417,
+      "sharePct": 1.04,
+      "rank": 28
+    },
+    {
+      "id": "solgaleo-ex-a3-shiinotic-a3a",
+      "name": "Solgaleo ex Shiinotic",
+      "icons": [
+        "solgaleo",
+        "shiinotic"
+      ],
+      "count": 1,
+      "bestPlacing": null,
+      "top8": 0,
+      "top16": 0,
+      "top32": 0,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "crustpunx2442",
+          "player": "crustpunx2442",
+          "country": "PH",
+          "placing": null
+        }
+      ],
+      "share": 0.010417,
+      "sharePct": 1.04,
+      "rank": 29
+    }
+  ],
+  "top32Archetypes": [
+    {
+      "id": "sylveon-ex-a3b-greninja-a1",
+      "name": "Sylveon ex Greninja",
+      "icons": [
+        "sylveon",
+        "greninja"
+      ],
+      "count": 6,
+      "bestPlacing": 4,
+      "top8": 1,
+      "top16": 3,
+      "top32": 6,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "Ester",
+          "player": "ester",
+          "country": "UA",
+          "placing": 4
+        },
+        {
+          "name": "stormcastle21",
+          "player": "stormcastle21",
+          "country": "SG",
+          "placing": 12
+        },
+        {
+          "name": "HeadochE",
+          "player": "headoche",
+          "country": "KR",
+          "placing": 15
+        },
+        {
+          "name": "Owen Aw",
+          "player": "owen_aw",
+          "country": "MY",
+          "placing": 20
+        },
+        {
+          "name": "YeonSeonHan",
+          "player": "yeonseonhan",
+          "country": "KR",
+          "placing": 22
+        }
+      ],
+      "share": 0.1875,
+      "sharePct": 18.75,
+      "rank": 1
+    },
+    {
+      "id": "flareon-ex-a3b-leafeon-ex-a2a",
+      "name": "Flareon ex Leafeon ex",
+      "icons": [
+        "flareon",
+        "leafeon"
+      ],
+      "count": 5,
+      "bestPlacing": 2,
+      "top8": 1,
+      "top16": 4,
+      "top32": 5,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "alpyapiw",
+          "player": "alpyapiw",
+          "country": "ID",
+          "placing": 2
+        },
+        {
+          "name": "Dile",
+          "player": "dile",
+          "country": "KR",
+          "placing": 9
+        },
+        {
+          "name": "N1777",
+          "player": "n1777",
+          "country": "KR",
+          "placing": 10
+        },
+        {
+          "name": "mikun",
+          "player": "mikun",
+          "country": "JP",
+          "placing": 16
+        },
+        {
+          "name": "vivE",
+          "player": "vive",
+          "country": "SG",
+          "placing": 17
+        }
+      ],
+      "share": 0.15625,
+      "sharePct": 15.62,
+      "rank": 2
+    },
+    {
+      "id": "buzzwole-ex-pheromosa-a3a",
+      "name": "Buzzwole ex Pheromosa",
+      "icons": [
+        "buzzwole",
+        "pheromosa"
+      ],
+      "count": 5,
+      "bestPlacing": 5,
+      "top8": 1,
+      "top16": 1,
+      "top32": 5,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "bigmoon",
+          "player": "bigmoon",
+          "country": "KR",
+          "placing": 5
+        },
+        {
+          "name": "KatsuoNakahara",
+          "player": "katsuonakahara",
+          "country": "UA",
+          "placing": 19
+        },
+        {
+          "name": "qqoo",
+          "player": "qqoo",
+          "country": null,
+          "placing": 26
+        },
+        {
+          "name": "Team_humble",
+          "player": "team_humble",
+          "country": "HK",
+          "placing": 27
+        },
+        {
+          "name": "ekzm3073",
+          "player": "ekzm3073",
+          "country": "KR",
+          "placing": 29
+        }
+      ],
+      "share": 0.15625,
+      "sharePct": 15.62,
+      "rank": 3
+    },
+    {
+      "id": "giratina-ex-a2b-darkrai-ex-a2",
+      "name": "Giratina ex Darkrai ex",
+      "icons": [
+        "giratina",
+        "darkrai"
+      ],
+      "count": 3,
+      "bestPlacing": 6,
+      "top8": 1,
+      "top16": 3,
+      "top32": 3,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "SnowSpring",
+          "player": "snowspring",
+          "country": "KR",
+          "placing": 6
+        },
+        {
+          "name": "PDon",
+          "player": "pdon",
+          "country": "KR",
+          "placing": 13
+        },
+        {
+          "name": "𝗠𝗮𝗴𝗺𝗮 TheViice",
+          "player": "theviice",
+          "country": "DE",
+          "placing": 14
+        }
+      ],
+      "share": 0.09375,
+      "sharePct": 9.38,
+      "rank": 4
+    },
+    {
+      "id": "charizard-ex-a2b-sylveon-ex-a3b",
+      "name": "Charizard ex Sylveon ex",
+      "icons": [
+        "charizard",
+        "sylveon"
+      ],
+      "count": 2,
+      "bestPlacing": 18,
+      "top8": 0,
+      "top16": 0,
+      "top32": 2,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "kuro1",
+          "player": "kuro1",
+          "country": "KR",
+          "placing": 18
+        },
+        {
+          "name": "joeun",
+          "player": "joeun",
+          "country": "KR",
+          "placing": 30
+        }
+      ],
+      "share": 0.0625,
+      "sharePct": 6.25,
+      "rank": 5
+    },
+    {
+      "id": "buzzwole-ex-celesteela-a3a",
+      "name": "Buzzwole ex Celesteela",
+      "icons": [
+        "buzzwole",
+        "celesteela"
+      ],
+      "count": 1,
+      "bestPlacing": 1,
+      "top8": 1,
+      "top16": 1,
+      "top32": 1,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "suugarwater",
+          "player": "suugarwater",
+          "country": "KR",
+          "placing": 1
+        }
+      ],
+      "share": 0.03125,
+      "sharePct": 3.12,
+      "rank": 6
+    },
+    {
+      "id": "luxray-a2-oricorio-a3",
+      "name": "Luxray Oricorio",
+      "icons": [
+        "luxray",
+        "oricorio-pom-pom"
+      ],
+      "count": 1,
+      "bestPlacing": 3,
+      "top8": 1,
+      "top16": 1,
+      "top32": 1,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "Jarviss",
+          "player": "jarviss",
+          "country": "KR",
+          "placing": 3
+        }
+      ],
+      "share": 0.03125,
+      "sharePct": 3.12,
+      "rank": 7
+    },
+    {
+      "id": "silvally-a3a-oricorio-a3",
+      "name": "Silvally Oricorio",
+      "icons": [
+        "silvally",
+        "oricorio-pom-pom"
+      ],
+      "count": 1,
+      "bestPlacing": 7,
+      "top8": 1,
+      "top16": 1,
+      "top32": 1,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "Adropa",
+          "player": "adropa",
+          "country": null,
+          "placing": 7
+        }
+      ],
+      "share": 0.03125,
+      "sharePct": 3.12,
+      "rank": 8
+    },
+    {
+      "id": "garchomp-ex-a2a-sylveon-ex-a3b",
+      "name": "Garchomp ex Sylveon ex",
+      "icons": [
+        "garchomp",
+        "sylveon"
+      ],
+      "count": 1,
+      "bestPlacing": 8,
+      "top8": 1,
+      "top16": 1,
+      "top32": 1,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "Spicy_Radish",
+          "player": "spicy_radish",
+          "country": "KR",
+          "placing": 8
+        }
+      ],
+      "share": 0.03125,
+      "sharePct": 3.12,
+      "rank": 9
+    },
+    {
+      "id": "sylveon-ex-a3b-giratina-ex-a2b",
+      "name": "Sylveon ex Giratina ex",
+      "icons": [
+        "sylveon",
+        "giratina"
+      ],
+      "count": 1,
+      "bestPlacing": 11,
+      "top8": 0,
+      "top16": 1,
+      "top32": 1,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "cura222222",
+          "player": "cura222222",
+          "country": "JP",
+          "placing": 11
+        }
+      ],
+      "share": 0.03125,
+      "sharePct": 3.12,
+      "rank": 10
+    },
+    {
+      "id": "guzzlord-ex-naganadel-a3a",
+      "name": "Guzzlord ex Naganadel",
+      "icons": [
+        "guzzlord",
+        "naganadel"
+      ],
+      "count": 1,
+      "bestPlacing": 21,
+      "top8": 0,
+      "top16": 0,
+      "top32": 1,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "My",
+          "player": "my",
+          "country": "JP",
+          "placing": 21
+        }
+      ],
+      "share": 0.03125,
+      "sharePct": 3.12,
+      "rank": 11
+    },
+    {
+      "id": "beedrill-ex-a2b",
+      "name": "Beedrill ex",
+      "icons": [
+        "beedrill"
+      ],
+      "count": 1,
+      "bestPlacing": 23,
+      "top8": 0,
+      "top16": 0,
+      "top32": 1,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "CaptainQ",
+          "player": "captainq",
+          "country": null,
+          "placing": 23
+        }
+      ],
+      "share": 0.03125,
+      "sharePct": 3.12,
+      "rank": 12
+    },
+    {
+      "id": "silvally-zeraora-a3a",
+      "name": "Silvally Zeraora",
+      "icons": [
+        "silvally",
+        "zeraora"
+      ],
+      "count": 1,
+      "bestPlacing": 24,
+      "top8": 0,
+      "top16": 0,
+      "top32": 1,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "J00NBAE",
+          "player": "j00nbae",
+          "country": null,
+          "placing": 24
+        }
+      ],
+      "share": 0.03125,
+      "sharePct": 3.12,
+      "rank": 13
+    },
+    {
+      "id": "arceus-ex-a2a-tapu-koko-ex-a3a",
+      "name": "Arceus ex Tapu Koko ex",
+      "icons": [
+        "arceus",
+        "tapu-koko"
+      ],
+      "count": 1,
+      "bestPlacing": 28,
+      "top8": 0,
+      "top16": 0,
+      "top32": 1,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "saripac",
+          "player": "saripac",
+          "country": "MY",
+          "placing": 28
+        }
+      ],
+      "share": 0.03125,
+      "sharePct": 3.12,
+      "rank": 14
+    },
+    {
+      "id": "giratina-ex-a2b-eevee-ex-a3b",
+      "name": "Giratina ex Eevee ex",
+      "icons": [
+        "giratina",
+        "eevee"
+      ],
+      "count": 1,
+      "bestPlacing": 31,
+      "top8": 0,
+      "top16": 0,
+      "top32": 1,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "jyj120904",
+          "player": "jyj120904",
+          "country": "KR",
+          "placing": 31
+        }
+      ],
+      "share": 0.03125,
+      "sharePct": 3.12,
+      "rank": 15
+    },
+    {
+      "id": "darkrai-ex-a2-nidoking-a1",
+      "name": "Darkrai ex Nidoking",
+      "icons": [
+        "darkrai",
+        "nidoking"
+      ],
+      "count": 1,
+      "bestPlacing": 32,
+      "top8": 0,
+      "top16": 0,
+      "top32": 1,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "Deerlord",
+          "player": "deerlord",
+          "country": "BR",
+          "placing": 32
+        }
+      ],
+      "share": 0.03125,
+      "sharePct": 3.12,
+      "rank": 16
+    }
+  ],
+  "countries": [
+    {
+      "country": "KR",
+      "label": "KR",
+      "count": 32,
+      "share": 0.333333,
+      "sharePct": 33.33
+    },
+    {
+      "country": null,
+      "label": "Unknown",
+      "count": 14,
+      "share": 0.145833,
+      "sharePct": 14.58
+    },
+    {
+      "country": "JP",
+      "label": "JP",
+      "count": 11,
+      "share": 0.114583,
+      "sharePct": 11.46
+    },
+    {
+      "country": "ID",
+      "label": "ID",
+      "count": 6,
+      "share": 0.0625,
+      "sharePct": 6.25
+    },
+    {
+      "country": "BR",
+      "label": "BR",
+      "count": 5,
+      "share": 0.052083,
+      "sharePct": 5.21
+    },
+    {
+      "country": "PH",
+      "label": "PH",
+      "count": 4,
+      "share": 0.041667,
+      "sharePct": 4.17
+    },
+    {
+      "country": "US",
+      "label": "US",
+      "count": 4,
+      "share": 0.041667,
+      "sharePct": 4.17
+    },
+    {
+      "country": "MY",
+      "label": "MY",
+      "count": 3,
+      "share": 0.03125,
+      "sharePct": 3.12
+    },
+    {
+      "country": "SG",
+      "label": "SG",
+      "count": 3,
+      "share": 0.03125,
+      "sharePct": 3.12
+    },
+    {
+      "country": "UA",
+      "label": "UA",
+      "count": 3,
+      "share": 0.03125,
+      "sharePct": 3.12
+    },
+    {
+      "country": "HK",
+      "label": "HK",
+      "count": 2,
+      "share": 0.020833,
+      "sharePct": 2.08
+    },
+    {
+      "country": "MX",
+      "label": "MX",
+      "count": 2,
+      "share": 0.020833,
+      "sharePct": 2.08
+    },
+    {
+      "country": "VE",
+      "label": "VE",
+      "count": 2,
+      "share": 0.020833,
+      "sharePct": 2.08
+    },
+    {
+      "country": "DE",
+      "label": "DE",
+      "count": 1,
+      "share": 0.010417,
+      "sharePct": 1.04
+    },
+    {
+      "country": "IN",
+      "label": "IN",
+      "count": 1,
+      "share": 0.010417,
+      "sharePct": 1.04
+    },
+    {
+      "country": "PA",
+      "label": "PA",
+      "count": 1,
+      "share": 0.010417,
+      "sharePct": 1.04
+    },
+    {
+      "country": "PE",
+      "label": "PE",
+      "count": 1,
+      "share": 0.010417,
+      "sharePct": 1.04
+    },
+    {
+      "country": "TW",
+      "label": "TW",
+      "count": 1,
+      "share": 0.010417,
+      "sharePct": 1.04
+    }
+  ],
+  "cardUsage": [],
+  "energyUsage": [],
+  "pairingsSummary": {
+    "available": true,
+    "kind": "list",
+    "rounds": 8,
+    "matches": 425,
+    "roundBreakdown": [
+      {
+        "round": "1",
+        "matches": 48
+      },
+      {
+        "round": "2",
+        "matches": 46
+      },
+      {
+        "round": "3",
+        "matches": 44
+      },
+      {
+        "round": "4",
+        "matches": 43
+      },
+      {
+        "round": "5",
+        "matches": 41
+      },
+      {
+        "round": "6",
+        "matches": 39
+      },
+      {
+        "round": "7",
+        "matches": 38
+      },
+      {
+        "round": "8",
+        "matches": 126
+      }
+    ]
+  },
+  "standings": [
+    {
+      "placing": 1,
+      "name": "suugarwater",
+      "player": "suugarwater",
+      "country": "KR",
+      "record": {
+        "wins": 11,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "11-3-0",
+      "drop": null,
+      "deck": {
+        "id": "buzzwole-ex-celesteela-a3a",
+        "name": "Buzzwole ex Celesteela",
+        "icons": [
+          "buzzwole",
+          "celesteela"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 2,
+      "name": "alpyapiw",
+      "player": "alpyapiw",
+      "country": "ID",
+      "record": {
+        "wins": 11,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "11-4-0",
+      "drop": null,
+      "deck": {
+        "id": "flareon-ex-a3b-leafeon-ex-a2a",
+        "name": "Flareon ex Leafeon ex",
+        "icons": [
+          "flareon",
+          "leafeon"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 3,
+      "name": "Jarviss",
+      "player": "jarviss",
+      "country": "KR",
+      "record": {
+        "wins": 11,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "11-4-0",
+      "drop": null,
+      "deck": {
+        "id": "luxray-a2-oricorio-a3",
+        "name": "Luxray Oricorio",
+        "icons": [
+          "luxray",
+          "oricorio-pom-pom"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 4,
+      "name": "Ester",
+      "player": "ester",
+      "country": "UA",
+      "record": {
+        "wins": 10,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "10-4-0",
+      "drop": null,
+      "deck": {
+        "id": "sylveon-ex-a3b-greninja-a1",
+        "name": "Sylveon ex Greninja",
+        "icons": [
+          "sylveon",
+          "greninja"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 5,
+      "name": "bigmoon",
+      "player": "bigmoon",
+      "country": "KR",
+      "record": {
+        "wins": 9,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "9-5-0",
+      "drop": null,
+      "deck": {
+        "id": "buzzwole-ex-pheromosa-a3a",
+        "name": "Buzzwole ex Pheromosa",
+        "icons": [
+          "buzzwole",
+          "pheromosa"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 6,
+      "name": "SnowSpring",
+      "player": "snowspring",
+      "country": "KR",
+      "record": {
+        "wins": 9,
+        "losses": 7,
+        "ties": 0
+      },
+      "recordText": "9-7-0",
+      "drop": null,
+      "deck": {
+        "id": "giratina-ex-a2b-darkrai-ex-a2",
+        "name": "Giratina ex Darkrai ex",
+        "icons": [
+          "giratina",
+          "darkrai"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 7,
+      "name": "Adropa",
+      "player": "adropa",
+      "country": null,
+      "record": {
+        "wins": 10,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "10-5-0",
+      "drop": null,
+      "deck": {
+        "id": "silvally-a3a-oricorio-a3",
+        "name": "Silvally Oricorio",
+        "icons": [
+          "silvally",
+          "oricorio-pom-pom"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 8,
+      "name": "Spicy_Radish",
+      "player": "spicy_radish",
+      "country": "KR",
+      "record": {
+        "wins": 9,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "9-6-0",
+      "drop": null,
+      "deck": {
+        "id": "garchomp-ex-a2a-sylveon-ex-a3b",
+        "name": "Garchomp ex Sylveon ex",
+        "icons": [
+          "garchomp",
+          "sylveon"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 9,
+      "name": "Dile",
+      "player": "dile",
+      "country": "KR",
+      "record": {
+        "wins": 10,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "10-2-0",
+      "drop": null,
+      "deck": {
+        "id": "flareon-ex-a3b-leafeon-ex-a2a",
+        "name": "Flareon ex Leafeon ex",
+        "icons": [
+          "flareon",
+          "leafeon"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 10,
+      "name": "N1777",
+      "player": "n1777",
+      "country": "KR",
+      "record": {
+        "wins": 8,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "8-4-0",
+      "drop": null,
+      "deck": {
+        "id": "flareon-ex-a3b-leafeon-ex-a2a",
+        "name": "Flareon ex Leafeon ex",
+        "icons": [
+          "flareon",
+          "leafeon"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 11,
+      "name": "cura222222",
+      "player": "cura222222",
+      "country": "JP",
+      "record": {
+        "wins": 7,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "7-5-0",
+      "drop": null,
+      "deck": {
+        "id": "sylveon-ex-a3b-giratina-ex-a2b",
+        "name": "Sylveon ex Giratina ex",
+        "icons": [
+          "sylveon",
+          "giratina"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 12,
+      "name": "stormcastle21",
+      "player": "stormcastle21",
+      "country": "SG",
+      "record": {
+        "wins": 7,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "7-6-0",
+      "drop": null,
+      "deck": {
+        "id": "sylveon-ex-a3b-greninja-a1",
+        "name": "Sylveon ex Greninja",
+        "icons": [
+          "sylveon",
+          "greninja"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 13,
+      "name": "PDon",
+      "player": "pdon",
+      "country": "KR",
+      "record": {
+        "wins": 10,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "10-3-0",
+      "drop": null,
+      "deck": {
+        "id": "giratina-ex-a2b-darkrai-ex-a2",
+        "name": "Giratina ex Darkrai ex",
+        "icons": [
+          "giratina",
+          "darkrai"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 14,
+      "name": "𝗠𝗮𝗴𝗺𝗮 TheViice",
+      "player": "theviice",
+      "country": "DE",
+      "record": {
+        "wins": 10,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "10-3-0",
+      "drop": null,
+      "deck": {
+        "id": "giratina-ex-a2b-darkrai-ex-a2",
+        "name": "Giratina ex Darkrai ex",
+        "icons": [
+          "giratina",
+          "darkrai"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 15,
+      "name": "HeadochE",
+      "player": "headoche",
+      "country": "KR",
+      "record": {
+        "wins": 8,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "8-5-0",
+      "drop": null,
+      "deck": {
+        "id": "sylveon-ex-a3b-greninja-a1",
+        "name": "Sylveon ex Greninja",
+        "icons": [
+          "sylveon",
+          "greninja"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 16,
+      "name": "mikun",
+      "player": "mikun",
+      "country": "JP",
+      "record": {
+        "wins": 7,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "7-6-0",
+      "drop": null,
+      "deck": {
+        "id": "flareon-ex-a3b-leafeon-ex-a2a",
+        "name": "Flareon ex Leafeon ex",
+        "icons": [
+          "flareon",
+          "leafeon"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 17,
+      "name": "vivE",
+      "player": "vive",
+      "country": "SG",
+      "record": {
+        "wins": 7,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "7-4-0",
+      "drop": null,
+      "deck": {
+        "id": "flareon-ex-a3b-leafeon-ex-a2a",
+        "name": "Flareon ex Leafeon ex",
+        "icons": [
+          "flareon",
+          "leafeon"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 18,
+      "name": "kuro1",
+      "player": "kuro1",
+      "country": "KR",
+      "record": {
+        "wins": 7,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "7-4-0",
+      "drop": null,
+      "deck": {
+        "id": "charizard-ex-a2b-sylveon-ex-a3b",
+        "name": "Charizard ex Sylveon ex",
+        "icons": [
+          "charizard",
+          "sylveon"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 19,
+      "name": "KatsuoNakahara",
+      "player": "katsuonakahara",
+      "country": "UA",
+      "record": {
+        "wins": 6,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "6-5-0",
+      "drop": null,
+      "deck": {
+        "id": "buzzwole-ex-pheromosa-a3a",
+        "name": "Buzzwole ex Pheromosa",
+        "icons": [
+          "buzzwole",
+          "pheromosa"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 20,
+      "name": "Owen Aw",
+      "player": "owen_aw",
+      "country": "MY",
+      "record": {
+        "wins": 6,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "6-5-0",
+      "drop": null,
+      "deck": {
+        "id": "sylveon-ex-a3b-greninja-a1",
+        "name": "Sylveon ex Greninja",
+        "icons": [
+          "sylveon",
+          "greninja"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 21,
+      "name": "My",
+      "player": "my",
+      "country": "JP",
+      "record": {
+        "wins": 5,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "5-6-0",
+      "drop": null,
+      "deck": {
+        "id": "guzzlord-ex-naganadel-a3a",
+        "name": "Guzzlord ex Naganadel",
+        "icons": [
+          "guzzlord",
+          "naganadel"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 22,
+      "name": "YeonSeonHan",
+      "player": "yeonseonhan",
+      "country": "KR",
+      "record": {
+        "wins": 5,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "5-6-0",
+      "drop": null,
+      "deck": {
+        "id": "sylveon-ex-a3b-greninja-a1",
+        "name": "Sylveon ex Greninja",
+        "icons": [
+          "sylveon",
+          "greninja"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 23,
+      "name": "CaptainQ",
+      "player": "captainq",
+      "country": null,
+      "record": {
+        "wins": 6,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "6-6-0",
+      "drop": null,
+      "deck": {
+        "id": "beedrill-ex-a2b",
+        "name": "Beedrill ex",
+        "icons": [
+          "beedrill"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 24,
+      "name": "J00NBAE",
+      "player": "j00nbae",
+      "country": null,
+      "record": {
+        "wins": 5,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "5-6-0",
+      "drop": null,
+      "deck": {
+        "id": "silvally-zeraora-a3a",
+        "name": "Silvally Zeraora",
+        "icons": [
+          "silvally",
+          "zeraora"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 25,
+      "name": "kdkd",
+      "player": "kdkd",
+      "country": null,
+      "record": {
+        "wins": 7,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "7-4-0",
+      "drop": null,
+      "deck": {
+        "id": "sylveon-ex-a3b-greninja-a1",
+        "name": "Sylveon ex Greninja",
+        "icons": [
+          "sylveon",
+          "greninja"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 26,
+      "name": "qqoo",
+      "player": "qqoo",
+      "country": null,
+      "record": {
+        "wins": 6,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "6-5-0",
+      "drop": null,
+      "deck": {
+        "id": "buzzwole-ex-pheromosa-a3a",
+        "name": "Buzzwole ex Pheromosa",
+        "icons": [
+          "buzzwole",
+          "pheromosa"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 27,
+      "name": "Team_humble",
+      "player": "team_humble",
+      "country": "HK",
+      "record": {
+        "wins": 6,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "6-5-0",
+      "drop": null,
+      "deck": {
+        "id": "buzzwole-ex-pheromosa-a3a",
+        "name": "Buzzwole ex Pheromosa",
+        "icons": [
+          "buzzwole",
+          "pheromosa"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 28,
+      "name": "saripac",
+      "player": "saripac",
+      "country": "MY",
+      "record": {
+        "wins": 6,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "6-5-0",
+      "drop": null,
+      "deck": {
+        "id": "arceus-ex-a2a-tapu-koko-ex-a3a",
+        "name": "Arceus ex Tapu Koko ex",
+        "icons": [
+          "arceus",
+          "tapu-koko"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 29,
+      "name": "ekzm3073",
+      "player": "ekzm3073",
+      "country": "KR",
+      "record": {
+        "wins": 5,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "5-6-0",
+      "drop": null,
+      "deck": {
+        "id": "buzzwole-ex-pheromosa-a3a",
+        "name": "Buzzwole ex Pheromosa",
+        "icons": [
+          "buzzwole",
+          "pheromosa"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 30,
+      "name": "joeun",
+      "player": "joeun",
+      "country": "KR",
+      "record": {
+        "wins": 5,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "5-6-0",
+      "drop": null,
+      "deck": {
+        "id": "charizard-ex-a2b-sylveon-ex-a3b",
+        "name": "Charizard ex Sylveon ex",
+        "icons": [
+          "charizard",
+          "sylveon"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 31,
+      "name": "jyj120904",
+      "player": "jyj120904",
+      "country": "KR",
+      "record": {
+        "wins": 5,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "5-6-0",
+      "drop": null,
+      "deck": {
+        "id": "giratina-ex-a2b-eevee-ex-a3b",
+        "name": "Giratina ex Eevee ex",
+        "icons": [
+          "giratina",
+          "eevee"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 32,
+      "name": "Deerlord",
+      "player": "deerlord",
+      "country": "BR",
+      "record": {
+        "wins": 5,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "5-6-0",
+      "drop": null,
+      "deck": {
+        "id": "darkrai-ex-a2-nidoking-a1",
+        "name": "Darkrai ex Nidoking",
+        "icons": [
+          "darkrai",
+          "nidoking"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 33,
+      "name": "AggerLenny",
+      "player": "aggerlenny",
+      "country": "BR",
+      "record": {
+        "wins": 7,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "7-3-0",
+      "drop": null,
+      "deck": {
+        "id": "giratina-ex-a2b-darkrai-ex-a2",
+        "name": "Giratina ex Darkrai ex",
+        "icons": [
+          "giratina",
+          "darkrai"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 34,
+      "name": "onnanjunsun1",
+      "player": "onnanjunsun1",
+      "country": "KR",
+      "record": {
+        "wins": 6,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "6-4-0",
+      "drop": null,
+      "deck": {
+        "id": "gallade-ex-a2-stoutland-a3a",
+        "name": "Gallade ex Stoutland",
+        "icons": [
+          "gallade",
+          "stoutland"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 35,
+      "name": "TeamPocket",
+      "player": "teampocket",
+      "country": "KR",
+      "record": {
+        "wins": 6,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "6-4-0",
+      "drop": null,
+      "deck": {
+        "id": "sylveon-ex-a3b-greninja-a1",
+        "name": "Sylveon ex Greninja",
+        "icons": [
+          "sylveon",
+          "greninja"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 36,
+      "name": "Sunkken",
+      "player": "sunkken",
+      "country": "PH",
+      "record": {
+        "wins": 6,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "6-4-0",
+      "drop": null,
+      "deck": {
+        "id": "buzzwole-ex-pheromosa-a3a",
+        "name": "Buzzwole ex Pheromosa",
+        "icons": [
+          "buzzwole",
+          "pheromosa"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 37,
+      "name": "Pedron",
+      "player": "pedron",
+      "country": "MY",
+      "record": {
+        "wins": 5,
+        "losses": 4,
+        "ties": 1
+      },
+      "recordText": "5-4-1",
+      "drop": null,
+      "deck": {
+        "id": "giratina-ex-a2b-darkrai-ex-a2",
+        "name": "Giratina ex Darkrai ex",
+        "icons": [
+          "giratina",
+          "darkrai"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 38,
+      "name": "HazeYohan",
+      "player": "hazeyohan",
+      "country": "KR",
+      "record": {
+        "wins": 5,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "5-5-0",
+      "drop": null,
+      "deck": {
+        "id": "buzzwole-ex-pheromosa-a3a",
+        "name": "Buzzwole ex Pheromosa",
+        "icons": [
+          "buzzwole",
+          "pheromosa"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 39,
+      "name": "Pixel902",
+      "player": "pixel902",
+      "country": "KR",
+      "record": {
+        "wins": 5,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "5-5-0",
+      "drop": null,
+      "deck": {
+        "id": "flareon-ex-a3b-leafeon-ex-a2a",
+        "name": "Flareon ex Leafeon ex",
+        "icons": [
+          "flareon",
+          "leafeon"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 40,
+      "name": "Yorunoyuhi",
+      "player": "yorunoyuhi",
+      "country": null,
+      "record": {
+        "wins": 5,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "5-5-0",
+      "drop": null,
+      "deck": {
+        "id": "silvally-a3a-oricorio-a3",
+        "name": "Silvally Oricorio",
+        "icons": [
+          "silvally",
+          "oricorio-pom-pom"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 41,
+      "name": "glione",
+      "player": "glione",
+      "country": "BR",
+      "record": {
+        "wins": 4,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "4-6-0",
+      "drop": null,
+      "deck": {
+        "id": "giratina-ex-a2b-darkrai-ex-a2",
+        "name": "Giratina ex Darkrai ex",
+        "icons": [
+          "giratina",
+          "darkrai"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 42,
+      "name": "V_TRJN",
+      "player": "v_trjn",
+      "country": "UA",
+      "record": {
+        "wins": 4,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "4-6-0",
+      "drop": null,
+      "deck": {
+        "id": "leafeon-ex-a2a-serperior-a1a",
+        "name": "Leafeon ex Serperior",
+        "icons": [
+          "leafeon",
+          "serperior"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 43,
+      "name": "yoshitake",
+      "player": "yoshitake",
+      "country": "JP",
+      "record": {
+        "wins": 4,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "4-6-0",
+      "drop": null,
+      "deck": {
+        "id": "buzzwole-ex-pheromosa-a3a",
+        "name": "Buzzwole ex Pheromosa",
+        "icons": [
+          "buzzwole",
+          "pheromosa"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 44,
+      "name": "cinnamonD",
+      "player": "cinnamond",
+      "country": null,
+      "record": {
+        "wins": 4,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "4-6-0",
+      "drop": null,
+      "deck": {
+        "id": "sylveon-ex-a3b-greninja-a1",
+        "name": "Sylveon ex Greninja",
+        "icons": [
+          "sylveon",
+          "greninja"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 45,
+      "name": "Lai_Lia",
+      "player": "lai_lia",
+      "country": "KR",
+      "record": {
+        "wins": 4,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "4-6-0",
+      "drop": null,
+      "deck": {
+        "id": "silvally-a3a-oricorio-a3",
+        "name": "Silvally Oricorio",
+        "icons": [
+          "silvally",
+          "oricorio-pom-pom"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 46,
+      "name": "deisislan",
+      "player": "deisislan",
+      "country": "BR",
+      "record": {
+        "wins": 3,
+        "losses": 7,
+        "ties": 0
+      },
+      "recordText": "3-7-0",
+      "drop": null,
+      "deck": {
+        "id": "tapu-koko-ex-silvally-a3a",
+        "name": "Tapu Koko ex Silvally",
+        "icons": [
+          "tapu-koko",
+          "silvally"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 47,
+      "name": "akaarowana0607",
+      "player": "akaarowana0607",
+      "country": "JP",
+      "record": {
+        "wins": 6,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "6-3-0",
+      "drop": null,
+      "deck": {
+        "id": "silvally-a3a-oricorio-a3",
+        "name": "Silvally Oricorio",
+        "icons": [
+          "silvally",
+          "oricorio-pom-pom"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 48,
+      "name": "Ani_P",
+      "player": "ani_p",
+      "country": null,
+      "record": {
+        "wins": 6,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "6-3-0",
+      "drop": null,
+      "deck": {
+        "id": "sylveon-ex-a3b-greninja-a1",
+        "name": "Sylveon ex Greninja",
+        "icons": [
+          "sylveon",
+          "greninja"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 49,
+      "name": "septianhp",
+      "player": "septianhp",
+      "country": "ID",
+      "record": {
+        "wins": 5,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "5-4-0",
+      "drop": null,
+      "deck": {
+        "id": "buzzwole-ex-pheromosa-a3a",
+        "name": "Buzzwole ex Pheromosa",
+        "icons": [
+          "buzzwole",
+          "pheromosa"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 50,
+      "name": "SSAMBAJANGGUN",
+      "player": "ssambajanggun",
+      "country": "KR",
+      "record": {
+        "wins": 5,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "5-4-0",
+      "drop": null,
+      "deck": {
+        "id": "giratina-ex-a2b-darkrai-ex-a2",
+        "name": "Giratina ex Darkrai ex",
+        "icons": [
+          "giratina",
+          "darkrai"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 51,
+      "name": "Raigun",
+      "player": "raigun",
+      "country": "PH",
+      "record": {
+        "wins": 4,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "4-5-0",
+      "drop": null,
+      "deck": {
+        "id": "buzzwole-ex-celesteela-a3a",
+        "name": "Buzzwole ex Celesteela",
+        "icons": [
+          "buzzwole",
+          "celesteela"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 52,
+      "name": "opled",
+      "player": "opled",
+      "country": "KR",
+      "record": {
+        "wins": 4,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "4-5-0",
+      "drop": null,
+      "deck": {
+        "id": "sylveon-ex-a3b-staraptor-a2a",
+        "name": "Sylveon ex Staraptor",
+        "icons": [
+          "sylveon",
+          "staraptor"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 53,
+      "name": "Eimaru524 E",
+      "player": "eilix524",
+      "country": "JP",
+      "record": {
+        "wins": 4,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "4-5-0",
+      "drop": null,
+      "deck": {
+        "id": "garchomp-ex-a2a-sylveon-ex-a3b",
+        "name": "Garchomp ex Sylveon ex",
+        "icons": [
+          "garchomp",
+          "sylveon"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 54,
+      "name": "JAL15",
+      "player": "jal15",
+      "country": null,
+      "record": {
+        "wins": 4,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "4-5-0",
+      "drop": null,
+      "deck": {
+        "id": "giratina-ex-a2b-darkrai-ex-a2",
+        "name": "Giratina ex Darkrai ex",
+        "icons": [
+          "giratina",
+          "darkrai"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 55,
+      "name": "Samttt_HKplayer",
+      "player": "samttt_hkplayer",
+      "country": "HK",
+      "record": {
+        "wins": 4,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "4-5-0",
+      "drop": null,
+      "deck": {
+        "id": "buzzwole-ex-pheromosa-a3a",
+        "name": "Buzzwole ex Pheromosa",
+        "icons": [
+          "buzzwole",
+          "pheromosa"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 56,
+      "name": "Especialista22",
+      "player": "especialista22",
+      "country": "BR",
+      "record": {
+        "wins": 4,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "4-5-0",
+      "drop": null,
+      "deck": {
+        "id": "guzzlord-ex-nihilego-a3a",
+        "name": "Guzzlord ex Nihilego",
+        "icons": [
+          "guzzlord",
+          "nihilego"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 57,
+      "name": "RajTage",
+      "player": "rajtage",
+      "country": "IN",
+      "record": {
+        "wins": 4,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "4-5-0",
+      "drop": null,
+      "deck": {
+        "id": "garchomp-ex-a2a-rampardos-a2",
+        "name": "Garchomp ex Rampardos",
+        "icons": [
+          "garchomp",
+          "rampardos"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 58,
+      "name": "Hanwha",
+      "player": "hanwha",
+      "country": "KR",
+      "record": {
+        "wins": 4,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "4-5-0",
+      "drop": null,
+      "deck": {
+        "id": "sylveon-ex-a3b-greninja-a1",
+        "name": "Sylveon ex Greninja",
+        "icons": [
+          "sylveon",
+          "greninja"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 59,
+      "name": "Laaans",
+      "player": "laaans",
+      "country": "ID",
+      "record": {
+        "wins": 3,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "3-6-0",
+      "drop": null,
+      "deck": {
+        "id": "flareon-ex-a3b-leafeon-ex-a2a",
+        "name": "Flareon ex Leafeon ex",
+        "icons": [
+          "flareon",
+          "leafeon"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 60,
+      "name": "CBN12345",
+      "player": "cbn12345",
+      "country": "SG",
+      "record": {
+        "wins": 3,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "3-6-0",
+      "drop": null,
+      "deck": {
+        "id": "charizard-ex-a2b-sylveon-ex-a3b",
+        "name": "Charizard ex Sylveon ex",
+        "icons": [
+          "charizard",
+          "sylveon"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 61,
+      "name": "Yuhhhuru",
+      "player": "yuhhhuru",
+      "country": null,
+      "record": {
+        "wins": 3,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "3-6-0",
+      "drop": null,
+      "deck": {
+        "id": "sylveon-ex-a3b-greninja-a1",
+        "name": "Sylveon ex Greninja",
+        "icons": [
+          "sylveon",
+          "greninja"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 65,
+      "name": "Warpis",
+      "player": "warpis",
+      "country": "ID",
+      "record": {
+        "wins": 2,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "2-5-0",
+      "drop": null,
+      "deck": {
+        "id": "guzzlord-ex-naganadel-a3a",
+        "name": "Guzzlord ex Naganadel",
+        "icons": [
+          "guzzlord",
+          "naganadel"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 66,
+      "name": "Pikachu_hango",
+      "player": "pikachu_hango",
+      "country": "KR",
+      "record": {
+        "wins": 2,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "2-5-0",
+      "drop": null,
+      "deck": {
+        "id": "sylveon-ex-a3b-giratina-ex-a2b",
+        "name": "Sylveon ex Giratina ex",
+        "icons": [
+          "sylveon",
+          "giratina"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 67,
+      "name": "Kangs",
+      "player": "kangs",
+      "country": "KR",
+      "record": {
+        "wins": 2,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "2-5-0",
+      "drop": null,
+      "deck": {
+        "id": "flareon-ex-sylveon-ex-a3b",
+        "name": "Flareon ex Sylveon ex",
+        "icons": [
+          "flareon",
+          "sylveon"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 68,
+      "name": "wts",
+      "player": "wts",
+      "country": null,
+      "record": {
+        "wins": 2,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "2-5-0",
+      "drop": null,
+      "deck": {
+        "id": "arcanine-ex-a1-eevee-ex-a3b",
+        "name": "Arcanine ex Eevee ex",
+        "icons": [
+          "arcanine",
+          "eevee"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 69,
+      "name": "Itati",
+      "player": "itati",
+      "country": "JP",
+      "record": {
+        "wins": 2,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "2-5-0",
+      "drop": null,
+      "deck": {
+        "id": "charizard-ex-a2b-flareon-ex-a3b",
+        "name": "Charizard ex Flareon ex",
+        "icons": [
+          "charizard",
+          "flareon"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 70,
+      "name": "Terryble",
+      "player": "terryble",
+      "country": null,
+      "record": {
+        "wins": 1,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "1-6-0",
+      "drop": null,
+      "deck": {
+        "id": "sylveon-ex-a3b-greninja-a1",
+        "name": "Sylveon ex Greninja",
+        "icons": [
+          "sylveon",
+          "greninja"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 71,
+      "name": "10CM",
+      "player": "10cm",
+      "country": "KR",
+      "record": {
+        "wins": 1,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "1-6-0",
+      "drop": null,
+      "deck": {
+        "id": "charizard-ex-a2b-sylveon-ex-a3b",
+        "name": "Charizard ex Sylveon ex",
+        "icons": [
+          "charizard",
+          "sylveon"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 72,
+      "name": "Carla Bustamante",
+      "player": "tequilajoestar",
+      "country": "PE",
+      "record": {
+        "wins": 1,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "1-6-0",
+      "drop": null,
+      "deck": {
+        "id": "sylveon-ex-a3b-magnezone-a2",
+        "name": "Sylveon ex Magnezone",
+        "icons": [
+          "sylveon",
+          "magnezone"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 73,
+      "name": "Yorusosa507",
+      "player": "yorusosa507",
+      "country": "PA",
+      "record": {
+        "wins": 0,
+        "losses": 7,
+        "ties": 0
+      },
+      "recordText": "0-7-0",
+      "drop": null,
+      "deck": {
+        "id": "buzzwole-ex-pheromosa-a3a",
+        "name": "Buzzwole ex Pheromosa",
+        "icons": [
+          "buzzwole",
+          "pheromosa"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 74,
+      "name": "NWJNS_PHAM",
+      "player": "nwjns_pham",
+      "country": "KR",
+      "record": {
+        "wins": 0,
+        "losses": 7,
+        "ties": 0
+      },
+      "recordText": "0-7-0",
+      "drop": null,
+      "deck": {
+        "id": "silvally-a3a-oricorio-a3",
+        "name": "Silvally Oricorio",
+        "icons": [
+          "silvally",
+          "oricorio-pom-pom"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 75,
+      "name": "ClapKingJake",
+      "player": "clapkingjake",
+      "country": "US",
+      "record": {
+        "wins": 0,
+        "losses": 7,
+        "ties": 0
+      },
+      "recordText": "0-7-0",
+      "drop": null,
+      "deck": {
+        "id": "buzzwole-ex-pheromosa-a3a",
+        "name": "Buzzwole ex Pheromosa",
+        "icons": [
+          "buzzwole",
+          "pheromosa"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "Chuchin24",
+      "player": "chuchin24",
+      "country": "MX",
+      "record": {
+        "wins": 6,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "6-4-0",
+      "drop": 8,
+      "deck": {
+        "id": "giratina-ex-a2b-darkrai-ex-a2",
+        "name": "Giratina ex Darkrai ex",
+        "icons": [
+          "giratina",
+          "darkrai"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "siroyuki",
+      "player": "siroyuki",
+      "country": "KR",
+      "record": {
+        "wins": 4,
+        "losses": 4,
+        "ties": 1
+      },
+      "recordText": "4-4-1",
+      "drop": 7,
+      "deck": {
+        "id": "charizard-ex-a2b-sylveon-ex-a3b",
+        "name": "Charizard ex Sylveon ex",
+        "icons": [
+          "charizard",
+          "sylveon"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "Zoroark7",
+      "player": "zoroark7",
+      "country": "KR",
+      "record": {
+        "wins": 4,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "4-6-0",
+      "drop": 7,
+      "deck": {
+        "id": "flareon-ex-a3b-leafeon-ex-a2a",
+        "name": "Flareon ex Leafeon ex",
+        "icons": [
+          "flareon",
+          "leafeon"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "そう そう",
+      "player": "so_so",
+      "country": null,
+      "record": {
+        "wins": 3,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "3-2-0",
+      "drop": 5,
+      "deck": {
+        "id": "charizard-ex-a2b-sylveon-ex-a3b",
+        "name": "Charizard ex Sylveon ex",
+        "icons": [
+          "charizard",
+          "sylveon"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "TavoJV",
+      "player": "tavojv",
+      "country": "MX",
+      "record": {
+        "wins": 2,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "2-3-0",
+      "drop": 5,
+      "deck": {
+        "id": "sylveon-ex-a3b-greninja-a1",
+        "name": "Sylveon ex Greninja",
+        "icons": [
+          "sylveon",
+          "greninja"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "Waireal",
+      "player": "waireal",
+      "country": null,
+      "record": {
+        "wins": 2,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "2-3-0",
+      "drop": 5,
+      "deck": {
+        "id": "sylveon-ex-a3b-greninja-a1",
+        "name": "Sylveon ex Greninja",
+        "icons": [
+          "sylveon",
+          "greninja"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "crustpunx2442",
+      "player": "crustpunx2442",
+      "country": "PH",
+      "record": {
+        "wins": 2,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "2-3-0",
+      "drop": 5,
+      "deck": {
+        "id": "solgaleo-ex-a3-shiinotic-a3a",
+        "name": "Solgaleo ex Shiinotic",
+        "icons": [
+          "solgaleo",
+          "shiinotic"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "jeyksu",
+      "player": "jeyksu",
+      "country": "PH",
+      "record": {
+        "wins": 2,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "2-4-0",
+      "drop": 6,
+      "deck": {
+        "id": "silvally-a3a-tapu-lele-a3",
+        "name": "Silvally Tapu Lele",
+        "icons": [
+          "silvally",
+          "tapu-lele"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "York XD",
+      "player": "york1",
+      "country": "TW",
+      "record": {
+        "wins": 1,
+        "losses": 1,
+        "ties": 0
+      },
+      "recordText": "1-1-0",
+      "drop": 2,
+      "deck": {
+        "id": "buzzwole-ex-pheromosa-a3a",
+        "name": "Buzzwole ex Pheromosa",
+        "icons": [
+          "buzzwole",
+          "pheromosa"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "1996_Philip_1206",
+      "player": "1996_philip_1206",
+      "country": "JP",
+      "record": {
+        "wins": 1,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "1-3-0",
+      "drop": 4,
+      "deck": {
+        "id": "sylveon-ex-a3b-greninja-a1",
+        "name": "Sylveon ex Greninja",
+        "icons": [
+          "sylveon",
+          "greninja"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "Seedax",
+      "player": "seedax",
+      "country": "US",
+      "record": {
+        "wins": 1,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "1-3-0",
+      "drop": 4,
+      "deck": {
+        "id": "charizard-ex-a2b-sylveon-ex-a3b",
+        "name": "Charizard ex Sylveon ex",
+        "icons": [
+          "charizard",
+          "sylveon"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "Zegger",
+      "player": "zegger",
+      "country": "ID",
+      "record": {
+        "wins": 1,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "1-3-0",
+      "drop": 4,
+      "deck": {
+        "id": "buzzwole-ex-pheromosa-a3a",
+        "name": "Buzzwole ex Pheromosa",
+        "icons": [
+          "buzzwole",
+          "pheromosa"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "iyla sutherland / darksiderstcg",
+      "player": "joshuasutherland21",
+      "country": "US",
+      "record": {
+        "wins": 1,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "1-3-0",
+      "drop": 4,
+      "deck": {
+        "id": "giratina-ex-a2b-darkrai-ex-a2",
+        "name": "Giratina ex Darkrai ex",
+        "icons": [
+          "giratina",
+          "darkrai"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "onlyjungsi",
+      "player": "onlyjungsi",
+      "country": "KR",
+      "record": {
+        "wins": 1,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "1-5-0",
+      "drop": 6,
+      "deck": {
+        "id": "charizard-ex-a2b-sylveon-ex-a3b",
+        "name": "Charizard ex Sylveon ex",
+        "icons": [
+          "charizard",
+          "sylveon"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "6jun",
+      "player": "6jun",
+      "country": "US",
+      "record": {
+        "wins": 1,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "1-6-0",
+      "drop": 7,
+      "deck": {
+        "id": "silvally-zeraora-a3a",
+        "name": "Silvally Zeraora",
+        "icons": [
+          "silvally",
+          "zeraora"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "RaitoAz",
+      "player": "raitoaz",
+      "country": "VE",
+      "record": {
+        "wins": 0,
+        "losses": 1,
+        "ties": 0
+      },
+      "recordText": "0-1-0",
+      "drop": 1,
+      "deck": {
+        "id": "lugia-ex-a4-stoutland-a3a",
+        "name": "Lugia ex Stoutland",
+        "icons": [
+          "lugia",
+          "stoutland"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "Rayhardxxx",
+      "player": "rayhardxxx",
+      "country": "VE",
+      "record": {
+        "wins": 0,
+        "losses": 1,
+        "ties": 0
+      },
+      "recordText": "0-1-0",
+      "drop": 1,
+      "deck": {
+        "id": "lugia-ex-a4-stoutland-a3a",
+        "name": "Lugia ex Stoutland",
+        "icons": [
+          "lugia",
+          "stoutland"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "jungin2002",
+      "player": "jungin2002",
+      "country": "KR",
+      "record": {
+        "wins": 0,
+        "losses": 1,
+        "ties": 0
+      },
+      "recordText": "0-1-0",
+      "drop": 1,
+      "deck": {
+        "id": "giratina-ex-a2b-darkrai-ex-a2",
+        "name": "Giratina ex Darkrai ex",
+        "icons": [
+          "giratina",
+          "darkrai"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "matsuuu",
+      "player": "matsuuu",
+      "country": "JP",
+      "record": {
+        "wins": 0,
+        "losses": 1,
+        "ties": 0
+      },
+      "recordText": "0-1-0",
+      "drop": 1,
+      "deck": {
+        "id": "guzzlord-ex-naganadel-a3a",
+        "name": "Guzzlord ex Naganadel",
+        "icons": [
+          "guzzlord",
+          "naganadel"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "nayaraPOKE",
+      "player": "nayarapoke",
+      "country": "JP",
+      "record": {
+        "wins": 0,
+        "losses": 1,
+        "ties": 0
+      },
+      "recordText": "0-1-0",
+      "drop": 1,
+      "deck": {
+        "id": "buzzwole-ex-pheromosa-a3a",
+        "name": "Buzzwole ex Pheromosa",
+        "icons": [
+          "buzzwole",
+          "pheromosa"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "Yul K",
+      "player": "keyqed",
+      "country": "KR",
+      "record": {
+        "wins": 0,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "0-2-0",
+      "drop": 2,
+      "deck": {
+        "id": "giratina-ex-a2b-darkrai-ex-a2",
+        "name": "Giratina ex Darkrai ex",
+        "icons": [
+          "giratina",
+          "darkrai"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "syr",
+      "player": "syr",
+      "country": "ID",
+      "record": {
+        "wins": 0,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "0-2-0",
+      "drop": 2,
+      "deck": {
+        "id": "guzzlord-ex-naganadel-a3a",
+        "name": "Guzzlord ex Naganadel",
+        "icons": [
+          "guzzlord",
+          "naganadel"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "Sample Sample",
+      "player": "shin_3680",
+      "country": "JP",
+      "record": {
+        "wins": 0,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "0-3-0",
+      "drop": 3,
+      "deck": {
+        "id": "giratina-ex-a2b-darkrai-ex-a2",
+        "name": "Giratina ex Darkrai ex",
+        "icons": [
+          "giratina",
+          "darkrai"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "이 은세",
+      "player": "bbdac",
+      "country": "KR",
+      "record": {
+        "wins": 0,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "0-3-0",
+      "drop": 3,
+      "deck": {
+        "id": "flareon-ex-sylveon-ex-a3b",
+        "name": "Flareon ex Sylveon ex",
+        "icons": [
+          "flareon",
+          "sylveon"
+        ]
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    }
+  ],
+  "source": {
+    "index": {
+      "game": "POCKET",
+      "name": "#3 포켓몬 카드 게임 pocket 한국대회 [대회 총 예산 60만원]",
+      "date": "2025-08-03T05:00:00.000Z",
+      "format": null,
+      "id": "6886d19f3e7086bfd3ba0eba",
+      "players": 96,
+      "organizerId": 1971
+    },
+    "details": {
+      "id": "6886d19f3e7086bfd3ba0eba",
+      "game": "POCKET",
+      "format": null,
+      "name": "#3 포켓몬 카드 게임 pocket 한국대회 [대회 총 예산 60만원]",
+      "date": "2025-08-03T05:00:00.000Z",
+      "players": 96,
+      "organizer": {
+        "id": 1971,
+        "name": "Pokémon 한국서버"
+      },
+      "decklists": true,
+      "isPublic": true,
+      "isOnline": true,
+      "phases": [
+        {
+          "phase": 1,
+          "type": "SWISS",
+          "rounds": 7,
+          "mode": "BO1"
+        },
+        {
+          "phase": 2,
+          "type": "DOUBLE_BRACKET",
+          "rounds": 1,
+          "mode": "BO3"
+        }
+      ]
+    }
+  }
+}
