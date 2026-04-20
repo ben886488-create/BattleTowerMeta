@@ -2693,7 +2693,10 @@ const normalizedTournaments = computed(() => {
   return sourceTournaments.value.map((item) => normalizeTournament(item as AnyRecord));
 });
 
-const tierRows = computed<TierRow[]>(() => {
+function buildTierRowsFromScope(
+  tournaments: NormalizedTournament[],
+  topCut: TopCutValue,
+): TierRow[] {
   const deckMap = new Map<
     string,
     {
@@ -2709,7 +2712,7 @@ const tierRows = computed<TierRow[]>(() => {
   let totalAllSamples = 0;
   let totalBaselineTop32Samples = 0;
 
-  for (const tournament of normalizedTournaments.value) {
+  for (const tournament of tournaments) {
     for (const row of tournament.standings) {
       const identity = extractDeckIdentityFromRow(row);
       const deckKey = identity.key || identity.candidateKeys[0] || buildDerivedDeckKey(row);
@@ -2717,6 +2720,8 @@ const tierRows = computed<TierRow[]>(() => {
       if (!deckKey) continue;
 
       const place = getPlace(row);
+      if (!qualifiesByTopCut(place, topCut)) continue;
+
       let hit = deckMap.get(deckKey);
 
       if (!hit) {
@@ -2820,7 +2825,7 @@ const tierRows = computed<TierRow[]>(() => {
         tier: tierLabel(row.score, nextScoreGap, index === 0),
       };
     });
-});
+}
 
 const monthOptions = computed(() => {
   const seen = new Set<string>();
@@ -2857,6 +2862,10 @@ function filterTournamentsByTime(list: NormalizedTournament[], timeValue: string
 
 const leftPanelTournaments = computed(() =>
   filterTournamentsByTime(normalizedTournaments.value, leftPanelFilters.time),
+);
+
+const tierRows = computed<TierRow[]>(() =>
+  buildTierRowsFromScope(leftPanelTournaments.value, leftPanelFilters.topCut),
 );
 
 const rightCardTournaments = computed(() =>
