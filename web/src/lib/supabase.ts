@@ -17,8 +17,13 @@ export interface UserProfile {
   created_at?: string;
 }
 
-const supabaseUrl = String(import.meta.env.VITE_SUPABASE_URL ?? "").trim();
-const supabaseAnonKey = String(import.meta.env.VITE_SUPABASE_ANON_KEY ?? "").trim();
+const DEFAULT_SUPABASE_URL = "https://xgtdechtjoicpzqlotth.supabase.co";
+const DEFAULT_SUPABASE_PUBLISHABLE_KEY = "sb_publishable_fg7WZNKJKKxWXrCqmWL57Q_bHfYs-Qk";
+
+const supabaseUrl = String(import.meta.env.VITE_SUPABASE_URL ?? DEFAULT_SUPABASE_URL).trim();
+const supabaseAnonKey = String(
+  import.meta.env.VITE_SUPABASE_ANON_KEY ?? DEFAULT_SUPABASE_PUBLISHABLE_KEY,
+).trim();
 
 export const hasSupabaseConfig = Boolean(supabaseUrl && supabaseAnonKey);
 

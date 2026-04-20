@@ -71,6 +71,9 @@ jobs:
           cache-dependency-path: web/package-lock.json
 
       - name: Build Vue site into /docs
+        env:
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
         run: |
           cd web
           npm ci
