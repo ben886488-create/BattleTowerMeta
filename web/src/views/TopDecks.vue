@@ -623,8 +623,13 @@ function deckProfileTo(deckKey: string) {
   return {
     path: `/${locale.value}/top-decks/${encodeURIComponent(deckKey)}`,
     query: {
+      time: filters.time,
       set: filters.set,
       topCut: filters.topCut,
+      minPlayers:
+        filters.minPlayers != null && Number.isFinite(filters.minPlayers)
+          ? String(filters.minPlayers)
+          : undefined,
     },
   };
 }

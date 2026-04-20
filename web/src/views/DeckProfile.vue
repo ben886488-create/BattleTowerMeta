@@ -96,7 +96,7 @@
             <label>
               {{ isZhUi ? "時間" : "Time" }}
             </label>
-            <select v-model="rightCardFilters.time">
+            <select v-model="leftPanelFilters.time">
               <option value="prev7">Previous 7 days</option>
               <option value="all">{{ isZhUi ? "全部" : "All" }}</option>
               <option value="past7">{{ isZhUi ? "過去一週" : "Past 7 days" }}</option>
@@ -115,7 +115,7 @@
 
           <div class="profileFilterField">
             <label>Top Cut</label>
-            <select v-model="rightCardFilters.topCut">
+            <select v-model="leftPanelFilters.topCut">
               <option
                 v-for="cut in TOP_CUT_OPTIONS"
                 :key="`right-topcut-${cut}`"
@@ -1070,6 +1070,25 @@ function sanitizeTopCut(value: unknown): TopCutValue {
   return "all";
 }
 
+function sanitizeProfileTime(value: unknown): ProfileTimeFilterValue {
+  const text = cleanDeckText(value).toLowerCase();
+  if (["all", "past7", "prev7", "past4w"].includes(text)) {
+    return text as ProfileTimeFilterValue;
+  }
+  if (/^month:\d{4}-\d{2}$/.test(text)) {
+    return text;
+  }
+  return "past7";
+}
+
+function sanitizeMinPlayers(value: unknown): number | undefined {
+  const parsed = toNumber(value);
+  if (parsed == null || !Number.isFinite(parsed) || parsed <= 0) {
+    return undefined;
+  }
+  return parsed;
+}
+
 /** Match TopDecks default: no `set` in URL → 近 7 天（僅目前版本）. Explicit `?set=` keeps「全部資料」. */
 function parseRouteSetFilter(raw: unknown): SetFilterValue {
   if (raw === undefined || raw === null) {
@@ -1085,6 +1104,8 @@ const routeFilters = computed(() => {
   return {
     set: parseRouteSetFilter(firstQueryValue(route.query.set)),
     topCut: sanitizeTopCut(firstQueryValue(route.query.topCut)),
+    time: sanitizeProfileTime(firstQueryValue(route.query.time)),
+    minPlayers: sanitizeMinPlayers(firstQueryValue(route.query.minPlayers)),
   };
 });
 
@@ -1093,6 +1114,8 @@ const activeFilters = computed(() => {
     return {
       set: cleanDeckText(props.filters?.set) as SetFilterValue,
       topCut: sanitizeTopCut(props.filters?.topCut),
+      time: sanitizeProfileTime(props.filters?.time),
+      minPlayers: sanitizeMinPlayers(props.filters?.minPlayers),
     };
   }
 
@@ -1174,6 +1197,16 @@ watch(
   (value) => {
     leftPanelFilters.topCut = value || "all";
     rightCardFilters.topCut = value || "all";
+  },
+  { immediate: true },
+);
+
+watch(
+  () => activeFilters.value.time,
+  (value) => {
+    const nextValue = sanitizeProfileTime(value);
+    leftPanelFilters.time = nextValue;
+    rightCardFilters.time = nextValue;
   },
   { immediate: true },
 );
@@ -1340,13 +1373,14 @@ async function ensurePairingsForIds(ids: string[]) {
 
 const internalFilteredTournaments = computed(() => {
   const list = internalTournaments.value;
-  const setValue = routeFilters.value.set;
+  const setValue = activeFilters.value.set;
+  const minPlayers = activeFilters.value.minPlayers;
+
+  let filtered = list;
 
   if (!setValue) {
-    return list;
-  }
-
-  if (setValue === PRESET_CURRENT_7 || setValue === PRESET_CURRENT_14) {
+    filtered = list;
+  } else if (setValue === PRESET_CURRENT_7 || setValue === PRESET_CURRENT_14) {
     const current = currentVersionWindow.value;
     if (!current) return [];
 
@@ -1355,15 +1389,21 @@ const internalFilteredTournaments = computed(() => {
     const rollingStartMs = todayUtcStart - (days - 1) * DAY_MS;
     const effectiveStartMs = Math.max(rollingStartMs, current.startMs);
 
-    return list.filter(
+    filtered = list.filter(
       (t) =>
         t.versionCode === current.code &&
         t.startMs >= effectiveStartMs &&
         t.startMs < current.endMs,
     );
+  } else {
+    filtered = list.filter((t) => t.versionCode === setValue);
   }
 
-  return list.filter((t) => t.versionCode === setValue);
+  if (minPlayers != null) {
+    filtered = filtered.filter((t) => Number(t.players ?? 0) >= minPlayers);
+  }
+
+  return filtered;
 });
 
 const internalFilteredTournamentIds = computed(() =>
@@ -2868,20 +2908,10 @@ const tierRows = computed<TierRow[]>(() =>
   buildTierRowsFromScope(leftPanelTournaments.value, leftPanelFilters.topCut),
 );
 
-const rightCardTournaments = computed(() =>
-  filterTournamentsByTime(normalizedTournaments.value, rightCardFilters.time),
-);
+const rightCardTournaments = computed(() => leftPanelTournaments.value);
 
-const analyticsFiltersMatch = computed(
-  () =>
-    leftPanelFilters.time === rightCardFilters.time &&
-    leftPanelFilters.topCut === rightCardFilters.topCut,
-);
-
-const sharedAnalytics = computed(() =>
-  analyticsFiltersMatch.value
-    ? buildDeckProfileAnalytics(leftPanelTournaments.value, leftPanelFilters.topCut)
-    : null,
+const pageAnalytics = computed(() =>
+  buildDeckProfileAnalytics(leftPanelTournaments.value, leftPanelFilters.topCut),
 );
 
 const loadedTournamentCount = computed(() => {
@@ -3899,17 +3929,9 @@ function buildDeckProfileAnalytics(
   };
 }
 
-const leftAnalytics = computed(
-  () =>
-    sharedAnalytics.value ??
-    buildDeckProfileAnalytics(leftPanelTournaments.value, leftPanelFilters.topCut),
-);
+const leftAnalytics = computed(() => pageAnalytics.value);
 
-const rightAnalytics = computed(
-  () =>
-    sharedAnalytics.value ??
-    buildDeckProfileAnalytics(rightCardTournaments.value, rightCardFilters.topCut),
-);
+const rightAnalytics = computed(() => pageAnalytics.value);
 
 function getRightDeckPanelGroupLabel(groupKey: string) {
   const isZh = routeLang.value === "zh";
