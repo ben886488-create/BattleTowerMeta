@@ -1,15 +1,24 @@
 import { ViteSSG } from 'vite-ssg'
 import App from './App.vue'
 import { routes } from './routes'
+import { initGoogleAnalytics } from './lib/analytics'
 
 import './assets/theme.css'
 import './assets/fonts.css'
 import './responsive.css'
 
-export const createApp = ViteSSG(App, {
-  routes,
-  base: import.meta.env.BASE_URL,
-})
+export const createApp = ViteSSG(
+  App,
+  {
+    routes,
+    base: import.meta.env.BASE_URL,
+  },
+  ({ router, isClient }) => {
+    if (isClient) {
+      initGoogleAnalytics(router)
+    }
+  },
+)
 
 type TierRow = {
   deck?: string
