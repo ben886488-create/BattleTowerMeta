@@ -388,7 +388,7 @@
               <h3 class="panel-title">
                 {{ rightDeckMode === "cards" ? (isZhUi ? "卡片投入率" : "Card inclusion") : (isZhUi ? "最佳範例牌組" : "Best sample deck") }}
               </h3>
-              <p class="decklist-head__sub">{{ rightDeckPanelSubtitle }}</p>
+              <p class="decklist-head__sub">{{ rightDeckPanelSubtitleText }}</p>
             </div>
 
             <div class="decklist-head__actions">
@@ -460,10 +460,10 @@
                   <article
                     v-for="card in group.cards"
                     :key="card.key"
-                    class="profileCard"
+                    class="profileCard profileCard--breakdown"
                     :title="card.title"
                   >
-                    <div class="profileCard__imageWrap">
+                    <div class="profileCard__imageWrap profileCard__imageWrap--breakdown">
                       <img
                         v-if="card.image && !failedCardImages[card.key]"
                         class="profileCard__image"
@@ -480,10 +480,37 @@
                           {{ card.set || "?" }} {{ card.number || card.code || "?" }}
                         </div>
                       </div>
+                    </div>
 
-                      <span class="profileCard__rate mono" :data-rate-label="card.badgeText">
-                        {{ formatPercentValue(card.slotRatePct) }}
-                      </span>
+                    <div class="profileCard__stats">
+                      <div class="profileCard__statsTop">
+                        <span class="profileCard__statsLabel mono">
+                          {{ isZhUi ? "\u7e3d\u6295\u5165" : "Total" }}
+                        </span>
+                        <strong class="profileCard__statsValue mono">{{ card.badgeText }}</strong>
+                      </div>
+
+                      <div class="profileCard__mixBar" aria-hidden="true">
+                        <span
+                          class="profileCard__mixBarSegment profileCard__mixBarSegment--two"
+                          :style="{ width: `${card.twoCopyPct}%` }"
+                        />
+                        <span
+                          class="profileCard__mixBarSegment profileCard__mixBarSegment--one"
+                          :style="{ width: `${card.oneCopyPct}%` }"
+                        />
+                      </div>
+
+                      <div class="profileCard__copyBreakdown">
+                        <span class="profileCard__copyStat profileCard__copyStat--two">
+                          <span class="profileCard__copyStatKey mono">2x</span>
+                          <strong class="mono">{{ formatPercentValue(card.twoCopyPct) }}</strong>
+                        </span>
+                        <span class="profileCard__copyStat profileCard__copyStat--one">
+                          <span class="profileCard__copyStatKey mono">1x</span>
+                          <strong class="mono">{{ formatPercentValue(card.oneCopyPct) }}</strong>
+                        </span>
+                      </div>
                     </div>
                   </article>
                 </div>
@@ -753,9 +780,13 @@ interface CardAggregate {
   category: string;
   totalCopies: number;
   deckCount: number;
+  oneCopyDeckCount: number;
+  twoCopyDeckCount: number;
   slotRatePct: number;
   inclusionPct: number;
   avgCopies: number;
+  oneCopyPct: number;
+  twoCopyPct: number;
 }
 
 interface MatchupAggregate {
@@ -832,6 +863,8 @@ interface RightDeckPanelCard {
   category: string;
   slotRatePct: number;
   inclusionPct: number;
+  oneCopyPct: number;
+  twoCopyPct: number;
   badgeText: string;
   title: string;
 }
@@ -3688,9 +3721,48 @@ function buildDeckProfileAnalytics(
 
         totalSeenDeckRows += 1;
 
-        const seenInThisDeck = new Set<string>();
+        const deckCardMap = new Map<string, NormalizedDeckCard>();
 
         for (const card of cards) {
+          const key = card.key || card.code || slugify(card.name);
+          const count = Math.max(0, Number(card.count) || 0);
+          if (!key || count <= 0) continue;
+
+          const deckCard = deckCardMap.get(key);
+          if (deckCard) {
+            deckCard.count += count;
+            if (!deckCard.set && card.set) deckCard.set = card.set;
+            if (!deckCard.number && card.number) deckCard.number = card.number;
+            if (!deckCard.code && card.code) deckCard.code = card.code;
+            if (!deckCard.name && card.name) deckCard.name = card.name;
+            if (!deckCard.category && card.category) deckCard.category = card.category;
+            if (!deckCard.image) {
+              deckCard.image = resolveCardImageUrl({
+                set: card.set || deckCard.set,
+                number: card.number || deckCard.number,
+                code: card.code || deckCard.code,
+                name: card.name || deckCard.name,
+                fallbackImage: card.image || deckCard.image,
+              });
+            }
+            continue;
+          }
+
+          deckCardMap.set(key, {
+            ...card,
+            key,
+            count,
+            image: resolveCardImageUrl({
+              set: card.set,
+              number: card.number,
+              code: card.code,
+              name: card.name,
+              fallbackImage: card.image,
+            }),
+          });
+        }
+
+        for (const card of deckCardMap.values()) {
           const key = card.key || card.code || slugify(card.name);
           const existing: CardAggregate = cardMap.get(key) ?? {
             key,
@@ -3702,9 +3774,13 @@ function buildDeckProfileAnalytics(
             category: card.category,
             totalCopies: 0,
             deckCount: 0,
+            oneCopyDeckCount: 0,
+            twoCopyDeckCount: 0,
             slotRatePct: 0,
             inclusionPct: 0,
             avgCopies: 0,
+            oneCopyPct: 0,
+            twoCopyPct: 0,
           };
 
           existing.totalCopies += card.count;
@@ -3722,11 +3798,10 @@ function buildDeckProfileAnalytics(
           }
           if (!existing.code && card.code) existing.code = card.code;
           if (!existing.name && card.name) existing.name = card.name;
+          existing.deckCount += 1;
 
-          if (!seenInThisDeck.has(key)) {
-            existing.deckCount += 1;
-            seenInThisDeck.add(key);
-          }
+          if (card.count >= 2) existing.twoCopyDeckCount += 1;
+          else existing.oneCopyDeckCount += 1;
 
           cardMap.set(key, existing);
         }
@@ -3773,6 +3848,10 @@ function buildDeckProfileAnalytics(
       const slotRatePct = totalSeenDeckRows > 0 ? (item.totalCopies / totalSeenDeckRows) * 100 : 0;
       const inclusionPct = totalSeenDeckRows > 0 ? (item.deckCount / totalSeenDeckRows) * 100 : 0;
       const avgCopies = item.deckCount > 0 ? item.totalCopies / item.deckCount : 0;
+      const oneCopyPct =
+        totalSeenDeckRows > 0 ? (item.oneCopyDeckCount / totalSeenDeckRows) * 100 : 0;
+      const twoCopyPct =
+        totalSeenDeckRows > 0 ? (item.twoCopyDeckCount / totalSeenDeckRows) * 100 : 0;
 
       return {
         ...item,
@@ -3788,6 +3867,8 @@ function buildDeckProfileAnalytics(
         slotRatePct,
         inclusionPct,
         avgCopies,
+        oneCopyPct,
+        twoCopyPct,
       };
     })
     .filter((item) => item.slotRatePct >= MIN_SLOT_RATE_PCT)
@@ -3968,6 +4049,8 @@ const rightDeckPanelGroups = computed<RightDeckPanelGroup[]>(() => {
           category: "",
           slotRatePct: card.count,
           inclusionPct: 0,
+          oneCopyPct: 0,
+          twoCopyPct: 0,
           badgeText: `x${card.count}`,
           title: `${card.name} x${card.count}`,
         })),
@@ -3989,9 +4072,13 @@ const rightDeckPanelGroups = computed<RightDeckPanelGroup[]>(() => {
       category: card.category,
       slotRatePct: card.inclusionPct,
       inclusionPct: card.inclusionPct,
+      oneCopyPct: card.oneCopyPct,
+      twoCopyPct: card.twoCopyPct,
       badgeText: formatPercentValue(card.inclusionPct),
       title:
-        `${card.name} | Include ${formatPercentValue(card.inclusionPct)} | ` +
+        `${card.name} | Total ${formatPercentValue(card.inclusionPct)} | ` +
+        `2x ${formatPercentValue(card.twoCopyPct)} | ` +
+        `1x ${formatPercentValue(card.oneCopyPct)} | ` +
         `Avg copies ${card.avgCopies.toFixed(1)}`,
     })),
   }));
@@ -3999,6 +4086,21 @@ const rightDeckPanelGroups = computed<RightDeckPanelGroup[]>(() => {
 
 const rightDeckPanelCards = computed<RightDeckPanelCard[]>(() => {
   return rightDeckPanelGroups.value.flatMap((group) => group.cards);
+});
+
+const rightDeckPanelSubtitleText = computed(() => {
+  if (rightDeckMode.value === "sample") {
+    if (!rightAnalytics.value.sampleDeck) {
+      return "Best-performing filtered sample deck";
+    }
+
+    const sample = rightAnalytics.value.sampleDeck;
+    return `${sample.player} | ${sample.placeLabel}`;
+  }
+
+  return routeLang.value === "zh"
+    ? "\u4f9d\u7e3d\u6295\u5165\u7387\u5206\u7d44\u986f\u793a\u5bf6\u53ef\u5922\u8207\u8a13\u7df4\u5bb6\u5361\uff0c\u4e26\u986f\u793a 2x / 1x \u6bd4\u4f8b"
+    : "Pokemon and Trainer cards grouped by total inclusion, with 2x / 1x breakdown";
 });
 
 const rightDeckPanelSubtitle = computed(() => {
@@ -5454,6 +5556,109 @@ function resetPage() {
   display: none;
 }
 
+.profileCard--breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profileCard__imageWrap--breakdown {
+  flex: 0 0 auto;
+}
+
+.profileCard__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 10px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(115, 192, 255, 0.16);
+  background:
+    linear-gradient(180deg, rgba(18, 46, 79, 0.92), rgba(10, 22, 39, 0.94)),
+    rgba(9, 20, 35, 0.92);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.profileCard__statsTop {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.profileCard__statsLabel {
+  color: rgba(214, 235, 255, 0.68);
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.profileCard__statsValue {
+  color: #f4fbff;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.profileCard__mixBar {
+  display: flex;
+  overflow: hidden;
+  height: 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(115, 192, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.profileCard__mixBarSegment {
+  height: 100%;
+}
+
+.profileCard__mixBarSegment--two {
+  background: linear-gradient(90deg, rgba(255, 178, 78, 0.9), rgba(255, 131, 92, 0.96));
+}
+
+.profileCard__mixBarSegment--one {
+  background: linear-gradient(90deg, rgba(91, 176, 255, 0.86), rgba(54, 128, 255, 0.94));
+}
+
+.profileCard__copyBreakdown {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.profileCard__copyStat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 34px;
+  padding: 7px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(115, 192, 255, 0.12);
+  background: rgba(10, 22, 38, 0.92);
+  color: #eef7ff;
+  font-size: 0.82rem;
+  line-height: 1;
+}
+
+.profileCard__copyStat--two {
+  border-color: rgba(255, 167, 79, 0.26);
+  background: rgba(68, 37, 24, 0.68);
+}
+
+.profileCard__copyStat--one {
+  border-color: rgba(91, 176, 255, 0.2);
+  background: rgba(16, 42, 77, 0.72);
+}
+
+.profileCard__copyStatKey {
+  color: rgba(214, 235, 255, 0.72);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
 .cards-empty {
   min-height: 220px;
   border-radius: 16px;
@@ -5522,6 +5727,29 @@ function resetPage() {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .profileCard--breakdown {
+    gap: 8px;
+  }
+
+  .profileCard__stats {
+    gap: 7px;
+    padding: 8px 8px 10px;
+  }
+
+  .profileCard__statsValue {
+    font-size: 0.92rem;
+  }
+
+  .profileCard__mixBar {
+    height: 8px;
+  }
+
+  .profileCard__copyStat {
+    min-height: 30px;
+    padding: 6px 8px;
+    font-size: 0.76rem;
+  }
+
   .deck-actions {
     justify-content: stretch;
   }
@@ -5534,6 +5762,27 @@ function resetPage() {
 @media (max-width: 520px) {
   .cardsGrid--profile {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .profileCard__statsTop {
+    align-items: center;
+  }
+
+  .profileCard__statsLabel,
+  .profileCard__copyStatKey {
+    font-size: 0.64rem;
+  }
+
+  .profileCard__statsValue {
+    font-size: 0.88rem;
+  }
+
+  .profileCard__copyBreakdown {
+    gap: 5px;
+  }
+
+  .profileCard__copyStat {
+    padding: 6px 7px;
   }
 }
 
