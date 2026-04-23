@@ -87,7 +87,7 @@
 
         <p class="scope-line" v-if="filteredTournaments.length > 0">
           <strong>{{ t("loaded") }}:</strong>
-          {{ loadedFilteredTournamentCount }} / {{ loadedTournamentIds.length }}
+          {{ loadedFilteredTournamentCount }} / {{ filteredTournaments.length }}
           {{ t("tournamentsUnit") }}
           <span v-if="isLoadingPageData">({{ t("loadingMore") }})</span>
         </p>
@@ -303,10 +303,7 @@
           </div>
         </div>
 
-        <div
-          v-if="deckPageCount > 1 || loadedTournamentPage < tournamentPageCount || noMoreDeckPagesNotice"
-          class="table-footer"
-        >
+        <div v-if="deckPageCount > 1" class="table-footer">
           <div class="pager-group">
             <span class="pager-label">{{ t("decksPage") }}</span>
             <button
@@ -323,15 +320,12 @@
             <button
               type="button"
               class="more-btn"
-              :disabled="(isLoadingNextDeckPage && currentDeckPage >= deckPageCount) || (currentDeckPage >= deckPageCount && loadedTournamentPage >= tournamentPageCount)"
+              :disabled="currentDeckPage >= deckPageCount"
               @click="nextDeckPage"
             >
-              {{ (isLoadingNextDeckPage && currentDeckPage >= deckPageCount) ? t("loadingMore") : t("next") }}
+              {{ t("next") }}
             </button>
           </div>
-          <span v-if="noMoreDeckPagesNotice" class="pager-end-note mono">
-            {{ t("noMoreDeckPages") }}
-          </span>
         </div>
       </div>
     </div>
@@ -361,7 +355,6 @@ import {
   loadTournamentStandings,
 } from "../lib/publicData";
 
-const TOURNAMENTS_PER_PAGE = 30;
 const DECK_ROWS_PER_PAGE = 20;
 const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -646,16 +639,14 @@ const pairingsLoading = reactive<Record<string, boolean>>({});
 
 const filters = reactive({
   minPlayers: undefined as number | undefined,
-  time: "past4w" as TimeFilterValue,
+  time: "past7" as TimeFilterValue,
   set: inferVersionByStartMs(Date.now())?.code ?? "" as SetFilterValue,
   topCut: "all" as TopCutValue,
 });
 
 const sortKey = ref<SortKey>("baseRank");
 const sortDir = ref<SortDir>("asc");
-const loadedTournamentPage = ref(1);
 const currentDeckPage = ref(1);
-const isLoadingNextDeckPage = ref(false);
 
 function parseMs(value: unknown): number {
   const ms = Date.parse(String(value ?? ""));
@@ -881,31 +872,14 @@ const filteredTournaments = computed(() => {
   });
 });
 
-const tournamentPageCount = computed(() => {
-  return Math.max(1, Math.ceil(filteredTournaments.value.length / TOURNAMENTS_PER_PAGE));
-});
-
-const loadedFilteredTournaments = computed(() => {
-  const end = loadedTournamentPage.value * TOURNAMENTS_PER_PAGE;
-  return filteredTournaments.value.slice(0, end);
-});
-
-const loadedTournamentIds = computed(() => loadedFilteredTournaments.value.map((t) => t.id));
-const loadedTournamentIdsKey = computed(() => loadedTournamentIds.value.join("|"));
+const filteredTournamentIds = computed(() => filteredTournaments.value.map((t) => t.id));
+const filteredTournamentIdsKey = computed(() => filteredTournamentIds.value.join("|"));
 
 watch(
-  tournamentPageCount,
-  (count) => {
-    if (loadedTournamentPage.value > count) loadedTournamentPage.value = count;
-  },
-  { immediate: true },
-);
-
-watch(
-  loadedTournamentIdsKey,
+  filteredTournamentIdsKey,
   () => {
-    if (loadedTournamentIds.value.length === 0) return;
-    void ensureTournamentDataForIds(loadedTournamentIds.value);
+    if (filteredTournamentIds.value.length === 0) return;
+    void ensureTournamentDataForIds(filteredTournamentIds.value);
   },
   { immediate: true },
 );
@@ -913,14 +887,12 @@ watch(
 watch(
   () => `${filters.minPlayers ?? ""}|${filters.time}|${filters.set}|${filters.topCut}`,
   () => {
-    loadedTournamentPage.value = 1;
     currentDeckPage.value = 1;
-    isLoadingNextDeckPage.value = false;
   },
 );
 
 const loadedFilteredTournamentCount = computed(() => {
-  return loadedTournamentIds.value.filter(
+  return filteredTournamentIds.value.filter(
     (id) => hasStandings(id) && hasPairings(id),
   ).length;
 });
@@ -1364,17 +1336,18 @@ const aggregated = computed(() => {
   let totalBaselineTop32Samples = 0;
   let totalSelectedSamples = 0;
 
-  for (const tournament of loadedFilteredTournaments.value) {
+  for (const tournament of filteredTournaments.value) {
     const standings = standingsCache[tournament.id];
     const pairings = pairingsCache[tournament.id];
 
     if (!Array.isArray(standings)) continue;
 
     for (const row of standings) {
+      const place = getPlace(row);
+      if (!qualifiesByTopCut(place, filters.topCut)) continue;
+
       const deck = buildDeckIdentity(row);
       if (!deck) continue;
-
-      const place = getPlace(row);
 
       let hit = map.get(deck.key);
       if (!hit) {
@@ -1416,10 +1389,8 @@ const aggregated = computed(() => {
         hit.weightedPoints += pointsForPlace(place);
       }
 
-      if (qualifiesByTopCut(place, filters.topCut)) {
-        hit.selectedSamples += 1;
-        totalSelectedSamples += 1;
-      }
+      hit.selectedSamples += 1;
+      totalSelectedSamples += 1;
 
     }
 
@@ -1661,70 +1632,18 @@ watch(
   deckPageCount,
   (count) => {
     if (currentDeckPage.value > count) currentDeckPage.value = count;
-    if (isLoadingNextDeckPage.value && count > currentDeckPage.value) {
-      isLoadingNextDeckPage.value = false;
-    }
   },
   { immediate: true },
 );
 
-async function waitForLoadedTournamentBatch() {
-  if (loadedFilteredTournamentCount.value >= loadedTournamentIds.value.length) return;
-
-  await new Promise<void>((resolve) => {
-    const stop = watch(
-      [() => loadedFilteredTournamentCount.value, () => loadedTournamentIds.value.length],
-      ([loaded, total]) => {
-        if (loaded >= total) {
-          stop();
-          resolve();
-        }
-      },
-      { immediate: true },
-    );
-  });
-}
-
-async function nextDeckPage() {
-  if (isLoadingNextDeckPage.value) return;
-
-  const targetDeckPage = currentDeckPage.value + 1;
-  if (targetDeckPage <= deckPageCount.value) {
-    currentDeckPage.value = targetDeckPage;
-    return;
-  }
-
-  if (loadedTournamentPage.value >= tournamentPageCount.value) return;
-
-  isLoadingNextDeckPage.value = true;
-  try {
-    while (
-      deckPageCount.value < targetDeckPage &&
-      loadedTournamentPage.value < tournamentPageCount.value
-    ) {
-      loadedTournamentPage.value += 1;
-      await waitForLoadedTournamentBatch();
-    }
-
-    if (deckPageCount.value >= targetDeckPage) {
-      currentDeckPage.value = targetDeckPage;
-    }
-  } finally {
-    isLoadingNextDeckPage.value = false;
+function nextDeckPage() {
+  if (currentDeckPage.value < deckPageCount.value) {
+    currentDeckPage.value += 1;
   }
 }
 
 const isLoadingPageData = computed(() => {
-  return loadedFilteredTournamentCount.value < loadedTournamentIds.value.length;
-});
-
-const noMoreDeckPagesNotice = computed(() => {
-  return (
-    !isLoadingNextDeckPage.value &&
-    loadedTournamentPage.value >= tournamentPageCount.value &&
-    currentDeckPage.value >= deckPageCount.value &&
-    deckPageCount.value > 0
-  );
+  return loadedFilteredTournamentCount.value < filteredTournaments.value.length;
 });
 
 const displayRows = computed(() => {
@@ -1758,28 +1677,9 @@ const scopeSetLabel = computed(() => {
 });
 
 const deckSummaryLabel = computed(() => {
-  const loadedDecks = aggregated.value.rows.length;
-  const totalTournaments = filteredTournaments.value.length;
-  const loadedTournaments = loadedFilteredTournaments.value.length;
-  const fullyLoaded = loadedTournamentPage.value >= tournamentPageCount.value;
-
-  if (!fullyLoaded && loadedTournaments > 0 && totalTournaments > loadedTournaments) {
-    const ratio = loadedTournaments / totalTournaments;
-    const estimatedDecks = Math.max(
-      loadedDecks,
-      Math.round(loadedDecks / Math.max(ratio, 0.01)),
-    );
-
-    return t("summaryLabelEstimated", {
-      loadedDecks: loadedDecks.toLocaleString(),
-      estimatedDecks: estimatedDecks.toLocaleString(),
-      tournaments: totalTournaments.toLocaleString(),
-    });
-  }
-
   return t("summaryLabel", {
-    decks: loadedDecks.toLocaleString(),
-    tournaments: totalTournaments.toLocaleString(),
+    decks: aggregated.value.rows.length.toLocaleString(),
+    tournaments: filteredTournaments.value.length.toLocaleString(),
   });
 });
 
@@ -1798,7 +1698,7 @@ const emptyStateMessage = computed(() => {
 
   if (
     sortedRows.value.length === 0 &&
-    loadedFilteredTournamentCount.value < loadedTournamentIds.value.length
+    loadedFilteredTournamentCount.value < filteredTournaments.value.length
   ) {
     return t("loadingTournaments");
   }

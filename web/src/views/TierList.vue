@@ -171,12 +171,12 @@
         <div class="tier-table-head">
           <h2 class="section-title tier-table-title">{{ ui.tierList }}</h2>
           <div class="tier-table-actions">
-            <span class="mono tier-table-meta">{{ topDeckRows.length }}/{{ TOP_DECK_LIMIT }}</span>
+            <span class="mono tier-table-meta">{{ tierPanelDeckCount }}/{{ tierRows.length }}</span>
             <button
               type="button"
               class="tier-download-btn"
               data-export-ignore="true"
-              :disabled="downloadingTierPanel || topDeckRows.length === 0"
+              :disabled="downloadingTierPanel || tierPanelDeckCount === 0"
               @click="downloadTierPanelPng"
             >
               {{ downloadingTierPanel ? tierPanelDownloadingLabel : tierPanelDownloadLabel }}
@@ -742,7 +742,7 @@ const filters = reactive<{
   topCut: TopCutValue;
 }>({
   minPlayers: undefined,
-  time: "past4w",
+  time: "past7",
   set: "",
   topCut: "all",
 });
@@ -938,11 +938,16 @@ function deckProfileTo(deckKey: string) {
   };
 }
 
-const TIER_LIST_ORDER = ["SSS", "SS", "S", "A", "B", "C", "D", "E", "F"] as const;
+const TIER_PANEL_ORDER = ["SSS", "SS", "S", "A", "B", "C"] as const;
+
+const tierPanelRows = computed(() => {
+  const tierSet = new Set<string>(TIER_PANEL_ORDER);
+  return tierRows.value.filter((row) => tierSet.has(String(row.tier ?? "F").toUpperCase()));
+});
 
 const tierGroups = computed<Record<string, TierRow[]>>(() => {
   const out: Record<string, TierRow[]> = {};
-  for (const r of topDeckRows.value) {
+  for (const r of tierPanelRows.value) {
     const t = String(r.tier ?? "F").toUpperCase();
     if (!out[t]) out[t] = [];
     out[t].push(r);
@@ -951,11 +956,13 @@ const tierGroups = computed<Record<string, TierRow[]>>(() => {
 });
 
 const visibleTierGroups = computed(() => {
-  return TIER_LIST_ORDER.map((tier) => ({
+  return TIER_PANEL_ORDER.map((tier) => ({
     tier,
     rows: tierGroups.value[tier] ?? [],
   })).filter((group) => group.rows.length > 0);
 });
+
+const tierPanelDeckCount = computed(() => tierPanelRows.value.length);
 
 const topDeckKeySet = computed(() => new Set(topDeckRows.value.map((row) => row.deck)));
 const usageTopDeckKeySet = computed(() => new Set(usageTopDeckRows.value.map((row) => row.deck)));
@@ -1620,7 +1627,7 @@ async function waitForTierPanelImages(root: HTMLElement) {
 }
 
 async function downloadTierPanelPng() {
-  if (downloadingTierPanel.value || !tierPanelCaptureRef.value || topDeckRows.value.length === 0) return;
+  if (downloadingTierPanel.value || !tierPanelCaptureRef.value || tierPanelDeckCount.value === 0) return;
 
   downloadingTierPanel.value = true;
 
@@ -2309,7 +2316,7 @@ onMounted(async () => {
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(420px, 0.95fr);
   gap: 16px;
-  align-items: stretch;
+  align-items: start;
 }
 
 @media (max-width: 1080px) {
@@ -2564,16 +2571,16 @@ onMounted(async () => {
 .tier-table-card {
   position: relative;
   justify-self: stretch;
-  align-self: stretch;
+  align-self: start;
   width: 100%;
-  height: 100%;
+  height: auto;
   max-width: none;
-  aspect-ratio: 1 / 2;
-  min-height: 0;
+  aspect-ratio: auto;
+  min-height: auto;
   display: grid;
   grid-template-rows: auto 1fr;
   gap: 12px;
-  overflow: hidden;
+  overflow: visible;
   padding: 12px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.08);
