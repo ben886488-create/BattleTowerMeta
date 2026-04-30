@@ -55,6 +55,7 @@ export const GAME_VERSIONS: GameVersion[] = [
   { code: "B2", nameZh: "幻遊奇境", nameEn: "Fantastical Parade", releaseUtcIso: "2026-01-29T01:00:00Z", releaseMs: Date.parse("2026-01-29T01:00:00Z") },
   { code: "B2a", nameZh: "帕底亞的冒險", nameEn: "Paldean Wonders", releaseUtcIso: "2026-02-26T01:00:00Z", releaseMs: Date.parse("2026-02-26T01:00:00Z") },
   { code: "B2b", nameZh: "超級異彩", nameEn: "Mega Shine", releaseUtcIso: "2026-03-26T01:00:00Z", releaseMs: Date.parse("2026-03-26T01:00:00Z") },
+  { code: "B3", nameZh: "Pulsing Aura", nameEn: "Pulsing Aura", releaseUtcIso: "2026-04-28T01:00:00Z", releaseMs: Date.parse("2026-04-28T01:00:00Z") },
 ].sort((a, b) => a.releaseMs - b.releaseMs);
 
 export const VERSION_BY_CODE: Record<string, GameVersion> = Object.fromEntries(

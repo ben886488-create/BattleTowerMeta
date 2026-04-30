@@ -496,7 +496,7 @@ function deckAlt(rank: number, slot: number) {
 type GameVersionCode =
   | "A1" | "A1a" | "A2" | "A2a" | "A2b"
   | "A3" | "A3a" | "A3b" | "A4" | "A4a" | "A4b"
-  | "B1" | "B1a" | "B2" | "B2a" | "B2b";
+  | "B1" | "B1a" | "B2" | "B2a" | "B2b" | "B3";
 
 type GameVersion = {
   code: GameVersionCode;
@@ -523,6 +523,7 @@ const GAME_VERSIONS: GameVersion[] = [
   { code: "B2", nameZh: "幻夢遊行", nameEn: "Fantastical Parade", releaseUtcIso: "2026-01-29T01:00:00Z", releaseMs: Date.parse("2026-01-29T01:00:00Z") },
   { code: "B2a", nameZh: "帕底亞驚奇", nameEn: "Paldean Wonders", releaseUtcIso: "2026-02-26T01:00:00Z", releaseMs: Date.parse("2026-02-26T01:00:00Z") },
   { code: "B2b", nameZh: "超級異彩", nameEn: "Mega Shine", releaseUtcIso: "2026-03-26T01:00:00Z", releaseMs: Date.parse("2026-03-26T01:00:00Z") },
+  { code: "B3", nameZh: "Pulsing Aura", nameEn: "Pulsing Aura", releaseUtcIso: "2026-04-28T01:00:00Z", releaseMs: Date.parse("2026-04-28T01:00:00Z") },
 ];
 
 GAME_VERSIONS.sort((a, b) => a.releaseMs - b.releaseMs);
