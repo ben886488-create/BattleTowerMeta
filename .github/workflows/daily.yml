@@ -47,6 +47,7 @@ jobs:
           set -e
           python scripts/fetch_raw_data.py
           python scripts/process_data.py
+          python scripts/build_precomputed_views.py
           python scripts/build_tournament_pages.py
           python scripts/extract_tournament_players.py
 

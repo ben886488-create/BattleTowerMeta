@@ -80,14 +80,14 @@
 
         <p class="scope-line">
           <strong>{{ t("stats") }}:</strong>
-          {{ filteredTournaments.length.toLocaleString() }} {{ t("tournamentsUnit") }}
+          {{ scopeTournamentCount.toLocaleString() }} {{ t("tournamentsUnit") }}
           / {{ aggregated.totalAllSamples.toLocaleString() }} {{ t("totalSamples") }}
           / {{ aggregated.totalSelectedSamples.toLocaleString() }} {{ t("selectedSamplePool") }}
         </p>
 
-        <p class="scope-line" v-if="filteredTournaments.length > 0">
+        <p class="scope-line" v-if="scopeTournamentCount > 0">
           <strong>{{ t("loaded") }}:</strong>
-          {{ loadedFilteredTournamentCount }} / {{ filteredTournaments.length }}
+          {{ loadedFilteredTournamentCount }} / {{ scopeTournamentCount }}
           {{ t("tournamentsUnit") }}
           <span v-if="isLoadingPageData">({{ t("loadingMore") }})</span>
         </p>
@@ -349,6 +349,11 @@ import {
   lookupStandingForPairingSide,
   parsePairingResult,
 } from "../lib/pairingResolver";
+import {
+  buildTopDecksScopeKey,
+  loadTopDecksPrecomputed,
+  type PrecomputedTopDecksPayload,
+} from "../lib/precomputedViews";
 import {
   loadTournamentList,
   loadTournamentPairings,
@@ -638,6 +643,9 @@ const pairingsCache = reactive<Record<string, PairingRow[]>>({});
 const standingsLoading = reactive<Record<string, boolean>>({});
 const pairingsLoading = reactive<Record<string, boolean>>({});
 
+const precomputedTopDecks = shallowRef<PrecomputedTopDecksPayload | null>(null);
+const precomputedTopDecksLoading = ref(true);
+
 const filters = reactive({
   minPlayers: undefined as number | undefined,
   time: "past7" as TimeFilterValue,
@@ -707,6 +715,19 @@ async function loadTournaments() {
     tournamentsError.value = error?.message ?? "Unknown error";
   } finally {
     loadingTournaments.value = false;
+  }
+}
+
+async function loadPrecomputedTopDecks() {
+  precomputedTopDecksLoading.value = true;
+
+  try {
+    precomputedTopDecks.value = await loadTopDecksPrecomputed();
+  } catch (error) {
+    precomputedTopDecks.value = null;
+    console.warn("[TopDecks] precomputed data unavailable; falling back to raw JSON.", error);
+  } finally {
+    precomputedTopDecksLoading.value = false;
   }
 }
 
@@ -876,9 +897,28 @@ const filteredTournaments = computed(() => {
 const filteredTournamentIds = computed(() => filteredTournaments.value.map((t) => t.id));
 const filteredTournamentIdsKey = computed(() => filteredTournamentIds.value.join("|"));
 
+const activePrecomputedTopDecksScope = computed(() => {
+  if (!precomputedTopDecks.value) return null;
+  if ((filters.minPlayers ?? 0) > 0) return null;
+
+  const key = buildTopDecksScopeKey({
+    time: String(filters.time),
+    set: String(filters.set ?? ""),
+    topCut: filters.topCut,
+    minPlayers: filters.minPlayers,
+  });
+
+  return precomputedTopDecks.value.scopes[key] ?? null;
+});
+
+const scopeTournamentCount = computed(() => {
+  return activePrecomputedTopDecksScope.value?.tournamentCount ?? filteredTournaments.value.length;
+});
+
 watch(
-  filteredTournamentIdsKey,
+  () => `${filteredTournamentIdsKey.value}|${precomputedTopDecksLoading.value}|${Boolean(activePrecomputedTopDecksScope.value)}`,
   () => {
+    if (precomputedTopDecksLoading.value || activePrecomputedTopDecksScope.value) return;
     if (filteredTournamentIds.value.length === 0) return;
     void ensureTournamentDataForIds(filteredTournamentIds.value);
   },
@@ -893,6 +933,10 @@ watch(
 );
 
 const loadedFilteredTournamentCount = computed(() => {
+  if (activePrecomputedTopDecksScope.value) {
+    return activePrecomputedTopDecksScope.value.tournamentCount;
+  }
+
   return filteredTournamentIds.value.filter(
     (id) => hasStandings(id) && hasPairings(id),
   ).length;
@@ -1331,6 +1375,25 @@ function buildPreferredDeckName(
 
 
 const aggregated = computed(() => {
+  const precomputedScope = activePrecomputedTopDecksScope.value;
+  if (precomputedScope) {
+    return {
+      rows: precomputedScope.rows.map((item) => {
+        const englishName = buildPreferredDeckName(item.iconKeys, item.rawName, item.key, "en");
+        const chineseName = buildPreferredDeckName(item.iconKeys, item.rawName, item.key, "zh");
+        const displayName = locale.value === "zh" ? chineseName : englishName;
+
+        return {
+          ...item,
+          displayName,
+          sortName: (item.sortName || englishName || item.rawName || item.key).toLowerCase(),
+        } satisfies DeckRow;
+      }),
+      totalAllSamples: precomputedScope.totalAllSamples,
+      totalSelectedSamples: precomputedScope.totalSelectedSamples,
+    };
+  }
+
   const map = new Map<string, MutableDeckAggregate>();
 
   let totalAllSamples = 0;
@@ -1644,6 +1707,7 @@ function nextDeckPage() {
 }
 
 const isLoadingPageData = computed(() => {
+  if (activePrecomputedTopDecksScope.value) return false;
   return loadedFilteredTournamentCount.value < filteredTournaments.value.length;
 });
 
@@ -1680,12 +1744,12 @@ const scopeSetLabel = computed(() => {
 const deckSummaryLabel = computed(() => {
   return t("summaryLabel", {
     decks: aggregated.value.rows.length.toLocaleString(),
-    tournaments: filteredTournaments.value.length.toLocaleString(),
+    tournaments: scopeTournamentCount.value.toLocaleString(),
   });
 });
 
 const emptyStateMessage = computed(() => {
-  if (loadingTournaments.value) {
+  if (loadingTournaments.value && !activePrecomputedTopDecksScope.value) {
     return t("loadingTournaments");
   }
 
@@ -1712,6 +1776,7 @@ const emptyStateMessage = computed(() => {
 });
 
 onMounted(() => {
+  void loadPrecomputedTopDecks();
   void loadTournaments();
 });
 </script>

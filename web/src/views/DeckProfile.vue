@@ -155,7 +155,7 @@
       </section>
     </div>
     <div ref="heroCaptureRef" class="hero-grid">
-      <aside class="hero-sidebar">
+      <aside ref="leftPanelRef" class="hero-sidebar">
       <section class="hero-panel hero-panel--title">
         <span class="panel-kicker mono">{{ isZhUi ? "精選牌組" : "DECK SPOTLIGHT" }}</span>
 
@@ -382,7 +382,11 @@
       </aside>
 
       <section class="hero-panel hero-panel--decklist">
-        <div ref="deckPanelRef" class="decklist-shell">
+        <div
+          ref="deckPanelRef"
+          class="decklist-shell"
+          :class="{ 'decklist-shell--rates': rightDeckMode === 'cards' }"
+        >
           <div class="decklist-head">
             <div class="decklist-head__copy">
               <h3 class="panel-title">
@@ -456,7 +460,7 @@
                   <span class="decklist-group__count mono">{{ group.cards.length }}</span>
                 </header>
 
-                <div class="cardsGrid cardsGrid--profile">
+                <div class="cardsGrid cardsGrid--profile cardsGrid--rates">
                   <article
                     v-for="card in group.cards"
                     :key="card.key"
@@ -567,14 +571,156 @@
       </section>
     </div>
 
+    <div v-if="exportStageActive" class="export-stage" aria-hidden="true">
+      <section
+        v-for="panel in exportTopDeckPanels"
+        :key="`export-card-panel-${panel.key}`"
+        :ref="(el) => setTopDeckExportPanelRef(el, panel.key)"
+        class="export-panel export-card-panel"
+      >
+        <div class="export-panel__head">
+          <div>
+            <span class="panel-kicker panel-kicker--visible mono">
+              {{ isZhUi ? `TOP ${panel.index + 1}` : `TOP ${panel.index + 1}` }}
+            </span>
+            <h3>{{ panel.displayName }}</h3>
+            <p>{{ isZhUi ? "卡片投入率" : "Card inclusion" }}</p>
+          </div>
+
+          <div class="sprite-stack sprite-stack--export">
+            <img
+              v-for="(sprite, index) in panel.spriteUrls"
+              :key="`export-card-title-${panel.key}-${sprite}-${index}`"
+              class="sprite-chip sprite-chip--export"
+              :src="sprite"
+              :alt="panel.displayName"
+              draggable="false"
+            />
+          </div>
+        </div>
+
+        <div class="decklist-groups export-card-groups">
+          <section
+            v-for="group in panel.groups"
+            :key="`export-card-group-${panel.key}-${group.key}`"
+            class="decklist-group"
+          >
+            <header class="decklist-group__header">
+              <h4 class="decklist-group__title">{{ group.label }}</h4>
+              <span class="decklist-group__count mono">{{ group.cards.length }}</span>
+            </header>
+
+            <div class="cardsGrid cardsGrid--profile cardsGrid--rates">
+              <article
+                v-for="card in group.cards"
+                :key="`export-card-${panel.key}-${card.key}`"
+                class="profileCard profileCard--breakdown"
+                :title="card.title"
+              >
+                <div class="profileCard__imageWrap profileCard__imageWrap--breakdown">
+                  <img
+                    v-if="card.image && !failedCardImages[card.key]"
+                    class="profileCard__image"
+                    :src="card.image"
+                    :alt="card.name"
+                    crossorigin="anonymous"
+                    draggable="false"
+                    @error="onCardImageError(card.key)"
+                  />
+                  <div v-else class="profileCard__fallback">
+                    <div class="profileCard__fallbackName">{{ card.name }}</div>
+                  </div>
+                </div>
+
+                <div class="profileCard__stats">
+                  <div class="profileCard__statsTop">
+                    <span class="profileCard__statsLabel mono">{{ isZhUi ? "總投入" : "Total" }}</span>
+                    <strong class="profileCard__statsValue mono">{{ card.badgeText }}</strong>
+                  </div>
+                  <div class="profileCard__mixBar" aria-hidden="true">
+                    <span class="profileCard__mixBarSegment profileCard__mixBarSegment--two" :style="{ width: `${card.twoCopyPct}%` }" />
+                    <span class="profileCard__mixBarSegment profileCard__mixBarSegment--one" :style="{ width: `${card.oneCopyPct}%` }" />
+                  </div>
+                  <div class="profileCard__copyBreakdown">
+                    <span class="profileCard__copyStat profileCard__copyStat--two">
+                      <span class="profileCard__copyStatKey mono">2x</span>
+                      <strong class="mono">{{ formatPercentValue(card.twoCopyPct) }}</strong>
+                    </span>
+                    <span class="profileCard__copyStat profileCard__copyStat--one">
+                      <span class="profileCard__copyStatKey mono">1x</span>
+                      <strong class="mono">{{ formatPercentValue(card.oneCopyPct) }}</strong>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section
+        v-for="panel in exportSampleDeckPanels"
+        :key="`export-sample-panel-${panel.key}`"
+        :ref="(el) => setSampleDeckExportPanelRef(el, panel.key)"
+        class="export-panel export-sample-panel"
+      >
+        <div class="export-panel__head">
+          <div>
+            <span class="panel-kicker panel-kicker--visible mono">
+              {{ isZhUi ? `TOP ${panel.index + 1} 牌組` : `TOP ${panel.index + 1} DECKLIST` }}
+            </span>
+            <h3>{{ panel.displayName }}</h3>
+            <p>{{ panel.sample?.player }} | {{ panel.sample?.placeLabel }}</p>
+          </div>
+
+          <div class="sprite-stack sprite-stack--export">
+            <img
+              v-for="(sprite, index) in panel.spriteUrls"
+              :key="`export-sample-title-${panel.key}-${sprite}-${index}`"
+              class="sprite-chip sprite-chip--export"
+              :src="sprite"
+              :alt="panel.displayName"
+              draggable="false"
+            />
+          </div>
+        </div>
+
+        <div class="cardsGrid cardsGrid--profile export-sample-grid">
+          <article
+            v-for="card in panel.cards"
+            :key="`export-sample-${panel.key}-${card.key}`"
+            class="profileCard"
+            :title="card.title"
+          >
+            <div class="profileCard__imageWrap">
+              <img
+                v-if="card.image && !failedCardImages[card.key]"
+                class="profileCard__image"
+                :src="card.image"
+                :alt="card.name"
+                crossorigin="anonymous"
+                draggable="false"
+                @error="onCardImageError(card.key)"
+              />
+              <div v-else class="profileCard__fallback">
+                <div class="profileCard__fallbackName">{{ card.name }}</div>
+              </div>
+              <span class="profileCard__rate profileCard__rate--count mono" :data-rate-label="card.badgeText" />
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
 
 
     <DeckDiscussionPanel
+      v-if="!props.autoDownloadCreatorPack"
       :deck-key="resolvedDeckKey"
       :deck-name="displayDeckNameEn || displayDeckName"
     />
 
-    <section class="table-card">
+    <section v-if="!props.autoDownloadCreatorPack" class="table-card">
       <div class="section-head">
         <h2 class="section-title">{{ isZhUi ? "最佳成績" : "Best Finishes" }}</h2>
       </div>
@@ -684,6 +830,17 @@ import { useRoute } from "vue-router";
 import { getLocalizedDeckName } from "../assets/pokemonNames";
 import { resolveDeckTier } from "../lib/deckTier";
 import { inTimeRange as matchesTimeFilter } from "../lib/playerEntries";
+import cardsCatalogUrl from "../assets/limitless_dump/limitless_cards.json?url";
+import {
+  buildDeckProfileScopeKey,
+  buildTopDecksScopeKey,
+  loadDeckProfilePrecomputed,
+  loadTopDecksPrecomputed,
+  type PrecomputedDeckProfilePayload,
+  type PrecomputedDeckProfileScope,
+  type PrecomputedTopDeckRow,
+  type PrecomputedTopDecksPayload,
+} from "../lib/precomputedViews";
 import {
   loadTournamentList,
   loadTournamentPairings,
@@ -698,6 +855,8 @@ const DAY_MS = 24 * 60 * 60 * 1000;
 const PRESET_CURRENT_7 = "__current_7__";
 const PRESET_CURRENT_14 = "__current_14__";
 const MIN_SLOT_RATE_PCT = 10;
+const EXPORT_TOP_DECK_LIMIT = 15;
+const CREATOR_EXPORT_PIXEL_RATIO = 1.5;
 
 type LocaleCode = "zh" | "en";
 type TopCutValue = "all" | "64" | "32" | "16" | "8" | "4" | "2" | "1";
@@ -754,6 +913,8 @@ interface TierRow {
   score: number;
   usage: number;
   total_samples: number;
+  rawName?: string;
+  iconKeys?: string[];
   baselineTop32Samples?: number;
   weightedPoints?: number;
   top32SharePct?: number;
@@ -767,6 +928,24 @@ interface NormalizedDeckCard {
   name: string;
   count: number;
   image: string;
+  category: string;
+}
+
+interface RawCatalogCard {
+  id?: string;
+  name?: string;
+  set_code?: string;
+  number?: string | number;
+  page_line?: string;
+  extra_text?: string;
+  supertype?: string | null;
+  subtypes?: unknown[];
+  display_type?: string | null;
+}
+
+interface CatalogCardInfo {
+  code: string;
+  name: string;
   category: string;
 }
 
@@ -824,6 +1003,7 @@ interface DeckProfileAnalytics {
   bestFinishes: FinishRow[];
   sampleDeck: SampleDeckEntry | null;
   targetSpriteUrls: string[];
+  targetIconKeys?: string[];
   resolvedDeckDisplayName: string;
   resolvedDeckDisplayNameEn: string;
 }
@@ -882,6 +1062,7 @@ type RightDeckMode = "cards" | "sample";
 interface Props {
   deck?: AnyRecord | null;
   deckKey?: string;
+  autoDownloadCreatorPack?: boolean;
   tournaments?: AnyRecord[];
   filteredTournaments?: AnyRecord[];
   loadedFilteredTournamentCount?: number;
@@ -894,6 +1075,7 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
   deck: null,
   deckKey: "",
+  autoDownloadCreatorPack: false,
   tournaments: () => [],
   filteredTournaments: () => [],
   loadedFilteredTournamentCount: 0,
@@ -903,11 +1085,17 @@ const props = withDefaults(defineProps<Props>(), {
   locale: "zh-Hant",
 });
 
+const emit = defineEmits<{
+  creatorPackFinished: [];
+}>();
+
 const route = useRoute();
 
 const failedCardImages = ref<Record<string, boolean>>({});
+const leftPanelRef = ref<HTMLElement | null>(null);
 const deckPanelRef = ref<HTMLElement | null>(null);
 const downloadingDeckPanel = ref(false);
+const downloadingCreatorPack = ref(false);
 const rightDeckMode = ref<RightDeckMode>("cards");
 
 const heroCaptureRef = ref<HTMLElement | null>(null);
@@ -915,6 +1103,13 @@ const deckCardsViewportRef = ref<HTMLElement | null>(null);
 const deckCardsGridRef = ref<HTMLElement | null>(null);
 const downloadingPanel = ref(false);
 const deckViewportHeight = ref<number | null>(null);
+const exportStageActive = ref(false);
+const topDeckExportPanelRefs = new Map<string, HTMLElement>();
+const sampleDeckExportPanelRefs = new Map<string, HTMLElement>();
+const cardCatalogByCode = shallowRef(new Map<string, CatalogCardInfo>());
+const cardCatalogByName = shallowRef(new Map<string, CatalogCardInfo[]>());
+const cardCatalogLoaded = ref(false);
+const autoCreatorStarted = ref(false);
 
 let deckGridResizeObserver: ResizeObserver | null = null;
 
@@ -957,8 +1152,8 @@ function updateDeckViewportHeight() {
   const width = grid.clientWidth;
   if (!width) return;
 
-  const cols = getDeckGridColumns(window.innerWidth);
   const visibleCards = Math.min(total, 20);
+  const cols = getDeckGridColumns(window.innerWidth);
   const gap = 12;
   const cardWidth = (width - gap * (cols - 1)) / cols;
   const cardHeight = cardWidth * (7 / 5);
@@ -1029,7 +1224,7 @@ async function downloadDeckPanelPng() {
 
     const link = document.createElement("a");
     const fileName =
-      slugify(displayDeckNameEn.value || displayDeckName.value || resolvedDeckKey.value) ||
+      slugify(displayDeckNameEn.value || displayDeckName.value || analysisDeckKey.value) ||
       "deck-profile";
 
     link.href = dataUrl;
@@ -1071,6 +1266,14 @@ const internalPairingsCache = reactive<Record<string, AnyRecord[]>>({});
 
 const internalStandingsLoading = reactive<Record<string, boolean>>({});
 const internalPairingsLoading = reactive<Record<string, boolean>>({});
+
+const precomputedProfile = shallowRef<PrecomputedDeckProfilePayload | null>(null);
+const precomputedProfileLoading = ref(false);
+const precomputedProfileDeckKey = ref("");
+const precomputedTopDecks = shallowRef<PrecomputedTopDecksPayload | null>(null);
+const precomputedTopDecksLoading = ref(false);
+const creatorTopDeckProfiles = shallowRef(new Map<string, PrecomputedDeckProfilePayload>());
+const creatorTopDeckProfilesLoading = ref(false);
 
 
 
@@ -1132,6 +1335,41 @@ function parseRouteSetFilter(raw: unknown): SetFilterValue {
 
 const routeDeckKey = computed(() => cleanDeckText(firstQueryValue(route.params.deckKey)));
 const resolvedDeckKey = computed(() => cleanDeckText(props.deckKey || routeDeckKey.value));
+
+async function loadPrecomputedProfileForDeck(deckKey: string) {
+  if (import.meta.env.SSR) return;
+
+  const normalizedKey = cleanDeckText(deckKey);
+  if (!normalizedKey) return;
+  precomputedProfileDeckKey.value = normalizedKey;
+  precomputedProfileLoading.value = true;
+
+  try {
+    precomputedProfile.value = await loadDeckProfilePrecomputed(normalizedKey);
+  } catch (error) {
+    precomputedProfile.value = null;
+    console.warn("[DeckProfile] precomputed data unavailable; falling back to raw JSON.", error);
+  } finally {
+    if (precomputedProfileDeckKey.value === normalizedKey) {
+      precomputedProfileLoading.value = false;
+    }
+  }
+}
+
+async function loadCreatorTopDecks() {
+  if (import.meta.env.SSR || precomputedTopDecks.value || precomputedTopDecksLoading.value) return;
+
+  precomputedTopDecksLoading.value = true;
+
+  try {
+    precomputedTopDecks.value = await loadTopDecksPrecomputed();
+  } catch (error) {
+    precomputedTopDecks.value = null;
+    console.warn("[DeckProfile] top decks precomputed data unavailable for creator pack.", error);
+  } finally {
+    precomputedTopDecksLoading.value = false;
+  }
+}
 
 const routeFilters = computed(() => {
   return {
@@ -1244,6 +1482,49 @@ watch(
   { immediate: true },
 );
 
+watch(
+  () => resolvedDeckKey.value,
+  (deckKey) => {
+    if (!deckKey || hasExternalData.value) return;
+    void loadPrecomputedProfileForDeck(deckKey);
+  },
+  { immediate: true },
+);
+
+const activePrecomputedProfileScope = computed<PrecomputedDeckProfileScope | null>(() => {
+  if (hasExternalData.value || !precomputedProfile.value) return null;
+  if ((activeFilters.value.minPlayers ?? 0) > 0) return null;
+
+  const exactKey = buildDeckProfileScopeKey({
+    set: String(activeFilters.value.set ?? ""),
+    time: String(leftPanelFilters.time),
+    topCut: leftPanelFilters.topCut,
+    minPlayers: activeFilters.value.minPlayers,
+  });
+
+  const exact = precomputedProfile.value.scopes[exactKey];
+  if (exact) return exact;
+
+  const currentVersion = currentVersionWindow.value;
+  const isCurrentVersionPast7 =
+    currentVersion &&
+    activeFilters.value.set === currentVersion.code &&
+    leftPanelFilters.time === "past7";
+
+  if (isCurrentVersionPast7) {
+    const current7Key = buildDeckProfileScopeKey({
+      set: PRESET_CURRENT_7,
+      time: "past7",
+      topCut: leftPanelFilters.topCut,
+      minPlayers: activeFilters.value.minPlayers,
+    });
+
+    return precomputedProfile.value.scopes[current7Key] ?? null;
+  }
+
+  return null;
+});
+
 
 
 function utcMs(year: number, month: number, day: number) {
@@ -1301,6 +1582,140 @@ function startOfUtcDayMs(ms: number) {
 }
 
 const currentVersionWindow = computed(() => inferVersionByStartMs(Date.now()));
+
+function activeTopDeckSetValue() {
+  const setValue = String(activeFilters.value.set ?? "");
+  if (setValue === PRESET_CURRENT_7 || setValue === PRESET_CURRENT_14) {
+    return currentVersionWindow.value?.code ?? "";
+  }
+  return setValue;
+}
+
+const activeCreatorTopDeckScope = computed(() => {
+  const payload = precomputedTopDecks.value;
+  if (!payload) return null;
+
+  const primaryKey = buildTopDecksScopeKey({
+    time: String(leftPanelFilters.time),
+    set: activeTopDeckSetValue(),
+    topCut: leftPanelFilters.topCut,
+    minPlayers: activeFilters.value.minPlayers,
+  });
+
+  const primary = payload.scopes[primaryKey];
+  if (primary) return primary;
+
+  const fallbackKey = buildTopDecksScopeKey({
+    time: String(leftPanelFilters.time),
+    set: "",
+    topCut: leftPanelFilters.topCut,
+    minPlayers: activeFilters.value.minPlayers,
+  });
+
+  return payload.scopes[fallbackKey] ?? null;
+});
+
+const creatorPreviousTopDeckScope = computed(() => {
+  const payload = precomputedTopDecks.value;
+  if (!payload) return null;
+
+  const primaryKey = buildTopDecksScopeKey({
+    time: "prev7",
+    set: activeTopDeckSetValue(),
+    topCut: leftPanelFilters.topCut,
+    minPlayers: activeFilters.value.minPlayers,
+  });
+
+  const primary = payload.scopes[primaryKey];
+  if (primary) return primary;
+
+  const fallbackKey = buildTopDecksScopeKey({
+    time: "prev7",
+    set: "",
+    topCut: leftPanelFilters.topCut,
+    minPlayers: activeFilters.value.minPlayers,
+  });
+
+  return payload.scopes[fallbackKey] ?? null;
+});
+
+const creatorTopDeckRows = computed(() =>
+  (activeCreatorTopDeckScope.value?.rows ?? []).slice(0, EXPORT_TOP_DECK_LIMIT),
+);
+
+const creatorDefaultDeckKey = computed(() => cleanDeckText(creatorTopDeckRows.value[0]?.key));
+
+function findDeckProfileScopeFromPayload(payload: PrecomputedDeckProfilePayload | null) {
+  if (!payload) return null;
+
+  const exactKey = buildDeckProfileScopeKey({
+    set: String(activeFilters.value.set ?? ""),
+    time: String(leftPanelFilters.time),
+    topCut: leftPanelFilters.topCut,
+    minPlayers: activeFilters.value.minPlayers,
+  });
+
+  const exact = payload.scopes[exactKey];
+  if (exact) return exact;
+
+  const currentVersion = currentVersionWindow.value;
+  const isCurrentVersionPast7 =
+    currentVersion &&
+    activeFilters.value.set === currentVersion.code &&
+    leftPanelFilters.time === "past7";
+
+  if (isCurrentVersionPast7 || activeFilters.value.set === PRESET_CURRENT_7) {
+    const current7Key = buildDeckProfileScopeKey({
+      set: PRESET_CURRENT_7,
+      time: "past7",
+      topCut: leftPanelFilters.topCut,
+      minPlayers: activeFilters.value.minPlayers,
+    });
+
+    return payload.scopes[current7Key] ?? null;
+  }
+
+  return null;
+}
+
+watch(
+  () => (props.autoDownloadCreatorPack ? creatorDefaultDeckKey.value : ""),
+  (deckKey) => {
+    if (!deckKey || hasExternalData.value) return;
+    void loadPrecomputedProfileForDeck(deckKey);
+  },
+);
+
+watch(
+  () => (props.autoDownloadCreatorPack ? creatorTopDeckRows.value.map((row) => row.key).join("|") : ""),
+  async () => {
+    if (!props.autoDownloadCreatorPack || creatorTopDeckRows.value.length === 0) return;
+
+    const missing = creatorTopDeckRows.value.filter(
+      (row) => !creatorTopDeckProfiles.value.has(row.key),
+    );
+
+    if (missing.length === 0) return;
+
+    creatorTopDeckProfilesLoading.value = true;
+
+    try {
+      const loaded = new Map(creatorTopDeckProfiles.value);
+      await Promise.all(
+        missing.map(async (row) => {
+          try {
+            loaded.set(row.key, await loadDeckProfilePrecomputed(row.key));
+          } catch (error) {
+            console.warn("[DeckProfile] creator pack deck profile unavailable:", row.key, error);
+          }
+        }),
+      );
+      creatorTopDeckProfiles.value = loaded;
+    } finally {
+      creatorTopDeckProfilesLoading.value = false;
+    }
+  },
+);
 
 function normalizeTournamentIndex(raw: TournamentListItem): IndexedTournament | null {
   if (!raw?.id) return null;
@@ -1468,9 +1883,10 @@ const internalRelevantPairingIds = computed(() => {
 });
 
 watch(
-  () => internalFilteredTournamentIds.value.join("|"),
+  () => `${internalFilteredTournamentIds.value.join("|")}|${precomputedProfileLoading.value}|${Boolean(activePrecomputedProfileScope.value)}`,
   () => {
     if (hasExternalData.value) return;
+    if (precomputedProfileLoading.value || activePrecomputedProfileScope.value) return;
     if (internalFilteredTournamentIds.value.length === 0) return;
     void ensureStandingsForIds(internalFilteredTournamentIds.value);
   },
@@ -1478,9 +1894,10 @@ watch(
 );
 
 watch(
-  () => `${leftPanelFilters.topCut}|${internalRelevantPairingIds.value.join("|")}`,
+  () => `${leftPanelFilters.topCut}|${internalRelevantPairingIds.value.join("|")}|${precomputedProfileLoading.value}|${Boolean(activePrecomputedProfileScope.value)}`,
   () => {
     if (hasExternalData.value) return;
+    if (precomputedProfileLoading.value || activePrecomputedProfileScope.value) return;
     if (internalRelevantPairingIds.value.length === 0) return;
     void ensurePairingsForIds(internalRelevantPairingIds.value);
   },
@@ -1488,7 +1905,13 @@ watch(
 );
 
 onMounted(async () => {
-  if (!hasExternalData.value) {
+  void loadDeckProfileCardCatalog();
+
+  if (props.autoDownloadCreatorPack) {
+    void loadCreatorTopDecks();
+  }
+
+  if (!hasExternalData.value && !props.autoDownloadCreatorPack) {
     void loadTournaments();
   }
 
@@ -2497,6 +2920,13 @@ function extractDeckCandidateTexts(source: AnyRecord | null | undefined) {
   ]);
 }
 
+const analysisDeckKey = computed(() =>
+  cleanDeckText(
+    resolvedDeckKey.value ||
+      (props.autoDownloadCreatorPack ? creatorDefaultDeckKey.value : ""),
+  ),
+);
+
 const targetDeckKeySet = computed(() => {
   const deckSource =
     props.deck && typeof props.deck === "object" ? (props.deck as AnyRecord) : null;
@@ -2505,12 +2935,12 @@ const targetDeckKeySet = computed(() => {
   // aggregation scoped to that exact deck row. Expanding aliases here can merge
   // nearby archetype variants and make the profile win rate diverge from TopDecks.
   if (!deckSource || Object.keys(deckSource).length === 0) {
-    const exact = normalizeDeckKey(resolvedDeckKey.value);
+    const exact = normalizeDeckKey(analysisDeckKey.value);
     return new Set(exact ? [exact] : []);
   }
 
   const candidates = uniqStrings([
-    resolvedDeckKey.value,
+    analysisDeckKey.value,
     buildDerivedDeckKey(deckSource),
     ...extractDeckCandidateTexts(deckSource),
   ]);
@@ -2944,11 +3374,129 @@ const tierRows = computed<TierRow[]>(() =>
 
 const rightCardTournaments = computed(() => leftPanelTournaments.value);
 
+function hydratePrecomputedCard(card: AnyRecord): CardAggregate {
+  return {
+    key: cleanDeckText(card.key) || cleanDeckText(card.code) || slugify(card.name),
+    code: cleanDeckText(card.code),
+    set: cleanDeckText(card.set),
+    number: cleanDeckText(card.number),
+    name: cleanDeckText(card.name),
+    image:
+      cleanDeckText(card.image) ||
+      resolveCardImageUrl({
+        set: card.set,
+        number: card.number,
+        code: card.code,
+        name: card.name,
+        fallbackImage: card.image,
+      }),
+    category: inferDeckCardCategory({
+      category: card.category,
+      set: card.set,
+      number: card.number,
+      code: card.code,
+      name: card.name,
+    }) || "Other",
+    totalCopies: Number(card.totalCopies ?? 0),
+    deckCount: Number(card.deckCount ?? 0),
+    oneCopyDeckCount: Number(card.oneCopyDeckCount ?? 0),
+    twoCopyDeckCount: Number(card.twoCopyDeckCount ?? 0),
+    slotRatePct: Number(card.slotRatePct ?? 0),
+    inclusionPct: Number(card.inclusionPct ?? 0),
+    avgCopies: Number(card.avgCopies ?? 0),
+    oneCopyPct: Number(card.oneCopyPct ?? 0),
+    twoCopyPct: Number(card.twoCopyPct ?? 0),
+  };
+}
+
+function hydratePrecomputedAnalytics(scope: PrecomputedDeckProfileScope): DeckProfileAnalytics {
+  const raw = (scope.analytics ?? {}) as AnyRecord;
+  const iconKeys = Array.isArray(raw.targetIconKeys) ? raw.targetIconKeys.map(cleanDeckText).filter(Boolean) : [];
+  const targetSpriteUrls =
+    Array.isArray(raw.targetSpriteUrls) && raw.targetSpriteUrls.length > 0
+      ? raw.targetSpriteUrls.map(cleanDeckText).filter(Boolean)
+      : resolveDeckSpriteUrlsFromIconKeys(iconKeys);
+
+  const hydrateMatchup = (item: AnyRecord): MatchupAggregate => {
+    const matchupIconKeys = Array.isArray(item.iconKeys) ? item.iconKeys.map(cleanDeckText).filter(Boolean) : [];
+    const spriteUrls =
+      Array.isArray(item.spriteUrls) && item.spriteUrls.length > 0
+        ? item.spriteUrls.map(cleanDeckText).filter(Boolean)
+        : resolveDeckSpriteUrlsFromIconKeys(matchupIconKeys);
+
+    return {
+      key: cleanDeckText(item.key),
+      displayName: cleanDeckText(item.displayName || item.key),
+      spriteUrls,
+      wins: Number(item.wins ?? 0),
+      losses: Number(item.losses ?? 0),
+      draws: Number(item.draws ?? 0),
+      games: Number(item.games ?? 0),
+      winRate: Number(item.winRate ?? 0),
+    };
+  };
+
+  const sampleDeck = raw.sampleDeck && typeof raw.sampleDeck === "object"
+    ? {
+        ...(raw.sampleDeck as SampleDeckEntry),
+        cards: unwrapCollection<AnyRecord>((raw.sampleDeck as AnyRecord).cards).map((card) => ({
+          ...card,
+          image:
+            cleanDeckText(card.image) ||
+            resolveCardImageUrl({
+              set: card.set,
+              number: card.number,
+              code: card.code,
+              name: card.name,
+              fallbackImage: card.image,
+            }),
+        })),
+      }
+    : null;
+
+  const cardsFlat = unwrapCollection<AnyRecord>(raw.cardsFlat).map(hydratePrecomputedCard);
+  const cardGroups = buildDeckCardGroups(cardsFlat);
+
+  return {
+    totalStandingRows: Number(raw.totalStandingRows ?? 0),
+    targetStandingRows: Number(raw.targetStandingRows ?? 0),
+    totalSeenDeckRows: Number(raw.totalSeenDeckRows ?? 0),
+    top4Counts: {
+      1: Number(raw.top4Counts?.[1] ?? raw.top4Counts?.["1"] ?? 0),
+      2: Number(raw.top4Counts?.[2] ?? raw.top4Counts?.["2"] ?? 0),
+      3: Number(raw.top4Counts?.[3] ?? raw.top4Counts?.["3"] ?? 0),
+      4: Number(raw.top4Counts?.[4] ?? raw.top4Counts?.["4"] ?? 0),
+    },
+    metaShare: Number(raw.metaShare ?? 0),
+    winRate: raw.winRate == null ? null : Number(raw.winRate),
+    wins: Number(raw.wins ?? 0),
+    losses: Number(raw.losses ?? 0),
+    draws: Number(raw.draws ?? 0),
+    matchCount: Number(raw.matchCount ?? 0),
+    cardsFlat,
+    cardGroups,
+    featuredGoodMatchups: unwrapCollection<AnyRecord>(raw.featuredGoodMatchups).map(hydrateMatchup),
+    featuredBadMatchups: unwrapCollection<AnyRecord>(raw.featuredBadMatchups).map(hydrateMatchup),
+    bestFinishes: unwrapCollection<FinishRow>(raw.bestFinishes),
+    sampleDeck,
+    targetSpriteUrls,
+    targetIconKeys: iconKeys,
+    resolvedDeckDisplayName: cleanDeckText(raw.resolvedDeckDisplayName),
+    resolvedDeckDisplayNameEn: cleanDeckText(raw.resolvedDeckDisplayNameEn),
+  };
+}
+
 const pageAnalytics = computed(() =>
-  buildDeckProfileAnalytics(leftPanelTournaments.value, leftPanelFilters.topCut),
+  activePrecomputedProfileScope.value
+    ? hydratePrecomputedAnalytics(activePrecomputedProfileScope.value)
+    : buildDeckProfileAnalytics(leftPanelTournaments.value, leftPanelFilters.topCut),
 );
 
 const loadedTournamentCount = computed(() => {
+  if (activePrecomputedProfileScope.value) {
+    return activePrecomputedProfileScope.value.tournamentCount;
+  }
+
   if (hasExternalData.value) {
     if (props.loadedFilteredTournamentCount > 0) return props.loadedFilteredTournamentCount;
     return sourceTournaments.value.length;
@@ -2960,6 +3508,8 @@ const loadedTournamentCount = computed(() => {
 });
 
 const decklistLoading = computed(() => {
+  if (activePrecomputedProfileScope.value) return false;
+  if (precomputedProfileLoading.value) return true;
   if (hasExternalData.value) return false;
   if (loadingTournaments.value) return true;
 
@@ -3202,16 +3752,204 @@ function parsePairingResult(row: AnyRecord, p1Name = "", p2Name = "") {
 ------------------------------ */
 
 function normalizeCardCategory(value: unknown) {
-  const text = cleanDeckText(value).toLowerCase();
+  const text = normalizeCatalogText(value).toLowerCase();
 
-  if (text.includes("pokemon")) return "Pokemon";
-  if (text.includes("trainer")) return "Trainer";
-  if (text.includes("energy")) return "Energy";
-  if (text.includes("supporter")) return "Trainer";
-  if (text.includes("item")) return "Trainer";
-  if (text.includes("stadium")) return "Trainer";
+  if (/\bsupporter\b/.test(text)) return "Supporter";
+  if (/\btrainer\b|\bitem\b|\bstadium\b|\btool\b/.test(text)) return "Trainer";
+  if (/\bpokemon\b/.test(text)) return "Pokemon";
+  if (/\benergy\b/.test(text)) return "Energy";
 
   return "Other";
+}
+
+function normalizeCatalogText(value: unknown) {
+  return cleanDeckText(value)
+    .replace(/Pokémon/gi, "Pokemon")
+    .replace(/é/g, "e")
+    .replace(/’/g, "'");
+}
+
+function normalizeCatalogCardCodeKey(value: unknown) {
+  const normalized = normalizeCardCode(value);
+  const match = normalized.match(/^((?:[A-Z]\d+[a-z]?|P-[A-Z]))-(\d+[a-z]?)$/i);
+  const setCode = match?.[1];
+  const number = match?.[2];
+  if (!setCode || !number) return "";
+
+  return `${normalizeSetCode(setCode)}-${number.replace(/^0+(?=\d)/, "").toLowerCase()}`;
+}
+
+function classifyTrainerSubtype(source: string) {
+  if (/\bsupporter\b/.test(source)) return "Supporter";
+  if (/\btrainer\b|\bitem\b|\bstadium\b|\bpokemon\s+tool\b|\btool\b/.test(source)) return "Trainer";
+  return "";
+}
+
+function inferCatalogDeckCategory(card: RawCatalogCard) {
+  const pageLine = normalizeCatalogText(card.page_line).toLowerCase();
+  const extraText = normalizeCatalogText(card.extra_text).toLowerCase();
+  const structuredText = normalizeCatalogText(
+    [
+      card.supertype,
+      card.display_type,
+      ...(Array.isArray(card.subtypes) ? card.subtypes : []),
+    ].join(" "),
+  ).toLowerCase();
+
+  const trainerPrefix = pageLine.match(/^\s*trainer\s*-\s*([a-z ]+)/);
+  if (trainerPrefix) {
+    return classifyTrainerSubtype(`trainer ${trainerPrefix[1]}`) || "Trainer";
+  }
+
+  const shorthandTrainerPrefix = pageLine.match(/^\s*-\s*(supporter|item|stadium|pokemon\s+tool|tool)\b/);
+  if (shorthandTrainerPrefix) {
+    return classifyTrainerSubtype(`trainer ${shorthandTrainerPrefix[1]}`) || "Trainer";
+  }
+
+  const extraTrainerPrefix = extraText.match(/^\s*trainer\s*-\s*([a-z ]+)/);
+  if (extraTrainerPrefix) {
+    return classifyTrainerSubtype(`trainer ${extraTrainerPrefix[1]}`) || "Trainer";
+  }
+
+  const extraTrainerDescriptor = extraText.match(/\btrainer\s*-\s*([a-z ]+)/);
+  if (extraTrainerDescriptor) {
+    return classifyTrainerSubtype(`trainer ${extraTrainerDescriptor[1]}`) || "Trainer";
+  }
+
+  const extraTrainerIndex = extraText.indexOf("trainer");
+  if (extraTrainerIndex >= 0 && extraTrainerIndex < 80) {
+    return classifyTrainerSubtype(extraText.slice(extraTrainerIndex, extraTrainerIndex + 80)) || "Trainer";
+  }
+
+  if (/\b\d+\s*hp\s+pokemon\b/.test(extraText) || /\b\d+\s*hp\s+pokemon\b/.test(pageLine)) {
+    return "Pokemon";
+  }
+
+  if (/\bpokemon\s*-\s*(basic|stage|mega|restored|fossil)\b/.test(extraText)) {
+    return "Pokemon";
+  }
+
+  if (/^\s*(basic|special)?\s*energy\b/.test(pageLine) || /^\s*energy\s*-\s*/.test(pageLine)) {
+    return "Energy";
+  }
+
+  const structuredCategory = normalizeCardCategory(structuredText);
+  if (structuredCategory !== "Other") return structuredCategory;
+
+  const earlyText = `${pageLine.slice(0, 120)} ${extraText.slice(0, 120)}`;
+  if (/\b\d+\s*hp\s+pokemon\b/.test(earlyText)) return "Pokemon";
+  if (/^\s*trainer\s*-/.test(earlyText)) {
+    return classifyTrainerSubtype(earlyText) || "Trainer";
+  }
+  if (/\benergy\b/.test(earlyText) && !/\benergy\s+from\b|\benergy\s+attached\b/.test(earlyText)) {
+    return "Energy";
+  }
+
+  return "Other";
+}
+
+function buildCatalogCardInfo(raw: RawCatalogCard): CatalogCardInfo | null {
+  const setCode = normalizeSetCode(raw.set_code);
+  const number = String(raw.number ?? "").trim();
+  const code = normalizeCardCode(setCode && number ? `${setCode}-${number}` : raw.id);
+  const codeKey = normalizeCatalogCardCodeKey(code || raw.id);
+  const name = cleanDeckText(raw.name);
+  if (!code && !name) return null;
+
+  return {
+    code: codeKey || code,
+    name,
+    category: inferCatalogDeckCategory(raw),
+  };
+}
+
+async function loadDeckProfileCardCatalog() {
+  if (import.meta.env.SSR || cardCatalogLoaded.value) return;
+
+  try {
+    const response = await fetch(cardsCatalogUrl, { cache: "force-cache" });
+    if (!response.ok) return;
+
+    const payload = (await response.json()) as RawCatalogCard[];
+    const byCode = new Map<string, CatalogCardInfo>();
+    const byName = new Map<string, CatalogCardInfo[]>();
+
+    for (const raw of Array.isArray(payload) ? payload : []) {
+      const card = buildCatalogCardInfo(raw);
+      if (!card) continue;
+
+      const codeKey = normalizeCatalogCardCodeKey(card.code);
+      if (codeKey && !byCode.has(codeKey)) {
+        byCode.set(codeKey, card);
+      }
+
+      const nameKey = slugify(normalizeCatalogText(card.name));
+      if (!nameKey) continue;
+
+      const bucket = byName.get(nameKey) ?? [];
+      bucket.push(card);
+      byName.set(nameKey, bucket);
+    }
+
+    cardCatalogByCode.value = byCode;
+    cardCatalogByName.value = byName;
+  } catch (error) {
+    console.warn("[DeckProfile] card catalog failed to load:", error);
+  } finally {
+    cardCatalogLoaded.value = true;
+  }
+}
+
+function lookupCatalogCard(input: {
+  code?: unknown;
+  set?: unknown;
+  number?: unknown;
+  name?: unknown;
+}) {
+  const directCode = normalizeCatalogCardCodeKey(input.code);
+  if (directCode) {
+    const direct = cardCatalogByCode.value.get(directCode);
+    if (direct) return direct;
+  }
+
+  const setCode = normalizeSetCode(input.set);
+  const number = normalizeCardImageNumber(input.number);
+  const setNumberCode = normalizeCatalogCardCodeKey(setCode && number ? `${setCode}-${number}` : "");
+  if (setNumberCode) {
+    const bySetNumber = cardCatalogByCode.value.get(setNumberCode);
+    if (bySetNumber) return bySetNumber;
+  }
+
+  const nameKey = slugify(normalizeCatalogText(input.name));
+  const byName = nameKey ? cardCatalogByName.value.get(nameKey) : null;
+  if (!byName || byName.length === 0) return null;
+
+  return byName.find((item) => item.category === "Supporter") ?? byName[0] ?? null;
+}
+
+function inferDeckCardCategory(input: {
+  category?: unknown;
+  section?: unknown;
+  supertype?: unknown;
+  type?: unknown;
+  code?: unknown;
+  set?: unknown;
+  number?: unknown;
+  name?: unknown;
+}) {
+  const catalogCard = lookupCatalogCard(input);
+  if (catalogCard?.category) return catalogCard.category;
+
+  const sourceText = normalizeCatalogText(
+    [input.category, input.section, input.supertype, input.type, input.name].join(" "),
+  ).toLowerCase();
+
+  if (/\bsupporter\b/.test(sourceText)) return "Supporter";
+  if (/\bpokemon\b/.test(sourceText)) return "Pokemon";
+  if (/\btrainer\b|\bitem\b|\bstadium\b|\btool\b/.test(sourceText)) return "Trainer";
+  if (/\benergy\b/.test(sourceText)) return "Energy";
+
+  return normalizeCardCategory(input.category ?? input.section ?? input.supertype ?? input.type);
 }
 
 function looksLikeCardEntry(value: AnyRecord) {
@@ -3268,7 +4006,13 @@ function parseDecklistText(source: string, categoryHint = "Other"): NormalizedDe
           name,
           fallbackImage: "",
         }),
-        category: normalizeCardCategory(categoryHint),
+        category: inferDeckCardCategory({
+          category: categoryHint,
+          set: codeParts.set,
+          number: codeParts.number,
+          code,
+          name,
+        }),
       };
     })
     .filter((item): item is NormalizedDeckCard => item !== null);
@@ -3360,15 +4104,16 @@ function normalizeDeckCardsSource(source: unknown, categoryHint = "Other"): Norm
         name,
         count,
         image,
-        category: normalizeCardCategory(
-          String(
-            merged.category ??
-              merged.section ??
-              merged.supertype ??
-              merged.type ??
-              categoryHint,
-          ),
-        ),
+        category: inferDeckCardCategory({
+          category: merged.category ?? categoryHint,
+          section: merged.section,
+          supertype: merged.supertype,
+          type: merged.type,
+          set,
+          number,
+          code,
+          name,
+        }),
       },
     ];
   }
@@ -3881,30 +4626,7 @@ function buildDeckProfileAnalytics(
       );
     });
 
-  const cardGroups: CardGroup[] = [
-    {
-      key: "pokemon",
-      label: "POKÉMON",
-      cards: cardsFlat.filter((item) => item.category === "Pokemon"),
-    },
-    {
-      key: "trainer",
-      label: "TRAINER",
-      cards: cardsFlat.filter((item) => item.category === "Trainer"),
-    },
-    {
-      key: "energy",
-      label: "ENERGY",
-      cards: cardsFlat.filter((item) => item.category === "Energy"),
-    },
-    {
-      key: "other",
-      label: routeLang.value === "zh" ? "其他" : "OTHER",
-      cards: cardsFlat.filter(
-        (item) => !["Pokemon", "Trainer", "Energy"].includes(item.category),
-      ),
-    },
-  ].filter((group) => group.cards.length > 0);
+  const cardGroups = buildDeckCardGroups(cardsFlat);
 
   const matchupRows: MatchupAggregate[] = [...matchupMap.values()]
     .map((item) => {
@@ -3980,7 +4702,7 @@ function buildDeckProfileAnalytics(
       (routeLang.value === "zh"
         ? getLocalizedDeckName(undefined, finalTargetIconKeys, "zh")
         : getLocalizedDeckName(undefined, finalTargetIconKeys, "en")) ||
-      defaultDeckLabelFromKey(resolvedDeckKey.value) ||
+      defaultDeckLabelFromKey(analysisDeckKey.value) ||
       "Unknown Deck";
   }
 
@@ -4018,6 +4740,10 @@ const rightAnalytics = computed(() => pageAnalytics.value);
 function getRightDeckPanelGroupLabel(groupKey: string) {
   const isZh = routeLang.value === "zh";
 
+  if (groupKey === "pokemon") return isZh ? "寶可夢" : "Pokemon";
+  if (groupKey === "supporter") return isZh ? "支援者" : "Supporters";
+  if (groupKey === "trainer") return isZh ? "其他訓練家" : "Other Trainers";
+
   switch (groupKey) {
     case "pokemon":
       return isZh ? "寶可夢卡" : "Pokemon Cards";
@@ -4028,6 +4754,63 @@ function getRightDeckPanelGroupLabel(groupKey: string) {
     default:
       return isZh ? "其他卡" : "Other Cards";
   }
+}
+
+function buildDeckCardGroups(cardsFlat: CardAggregate[]): CardGroup[] {
+  return [
+    {
+      key: "pokemon",
+      label: "POKÉMON",
+      cards: cardsFlat.filter((item) => item.category === "Pokemon"),
+    },
+    {
+      key: "supporter",
+      label: "SUPPORTER",
+      cards: cardsFlat.filter((item) => item.category === "Supporter"),
+    },
+    {
+      key: "trainer",
+      label: routeLang.value === "zh" ? "其他" : "OTHER",
+      cards: cardsFlat.filter(
+        (item) => item.category !== "Pokemon" && item.category !== "Supporter",
+      ),
+    },
+  ].filter((group) => group.cards.length > 0);
+}
+
+function buildCardPanelGroupsFromAnalytics(analytics: DeckProfileAnalytics): RightDeckPanelGroup[] {
+  return analytics.cardGroups.map((group) => ({
+    key: group.key,
+    label: getRightDeckPanelGroupLabel(group.key),
+    showLabel: true,
+    cards: group.cards.map((card) => ({
+      key: card.key,
+      code: card.code,
+      set: card.set,
+      number: card.number,
+      name: card.name,
+      image:
+        card.image ||
+        resolveCardImageUrl({
+          set: card.set,
+          number: card.number,
+          code: card.code,
+          name: card.name,
+          fallbackImage: card.image,
+        }),
+      category: card.category,
+      slotRatePct: card.inclusionPct,
+      inclusionPct: card.inclusionPct,
+      oneCopyPct: card.oneCopyPct,
+      twoCopyPct: card.twoCopyPct,
+      badgeText: formatPercentValue(card.inclusionPct),
+      title:
+        `${card.name} | Total ${formatPercentValue(card.inclusionPct)} | ` +
+        `2x ${formatPercentValue(card.twoCopyPct)} | ` +
+        `1x ${formatPercentValue(card.oneCopyPct)} | ` +
+        `Avg copies ${card.avgCopies.toFixed(1)}`,
+    })),
+  }));
 }
 
 const rightDeckPanelGroups = computed<RightDeckPanelGroup[]>(() => {
@@ -4046,7 +4829,15 @@ const rightDeckPanelGroups = computed<RightDeckPanelGroup[]>(() => {
           set: card.set,
           number: card.number,
           name: card.name,
-          image: card.image,
+          image:
+            card.image ||
+            resolveCardImageUrl({
+              set: card.set,
+              number: card.number,
+              code: card.code,
+              name: card.name,
+              fallbackImage: card.image,
+            }),
           category: "",
           slotRatePct: card.count,
           inclusionPct: 0,
@@ -4059,30 +4850,7 @@ const rightDeckPanelGroups = computed<RightDeckPanelGroup[]>(() => {
     ];
   }
 
-  return rightAnalytics.value.cardGroups.map((group) => ({
-    key: group.key,
-    label: getRightDeckPanelGroupLabel(group.key),
-    showLabel: true,
-    cards: group.cards.map((card) => ({
-      key: card.key,
-      code: card.code,
-      set: card.set,
-      number: card.number,
-      name: card.name,
-      image: card.image,
-      category: card.category,
-      slotRatePct: card.inclusionPct,
-      inclusionPct: card.inclusionPct,
-      oneCopyPct: card.oneCopyPct,
-      twoCopyPct: card.twoCopyPct,
-      badgeText: formatPercentValue(card.inclusionPct),
-      title:
-        `${card.name} | Total ${formatPercentValue(card.inclusionPct)} | ` +
-        `2x ${formatPercentValue(card.twoCopyPct)} | ` +
-        `1x ${formatPercentValue(card.oneCopyPct)} | ` +
-        `Avg copies ${card.avgCopies.toFixed(1)}`,
-    })),
-  }));
+  return buildCardPanelGroupsFromAnalytics(rightAnalytics.value);
 });
 
 const rightDeckPanelCards = computed<RightDeckPanelCard[]>(() => {
@@ -4100,8 +4868,8 @@ const rightDeckPanelSubtitleText = computed(() => {
   }
 
   return routeLang.value === "zh"
-    ? "\u4f9d\u7e3d\u6295\u5165\u7387\u5206\u7d44\u986f\u793a\u5bf6\u53ef\u5922\u8207\u8a13\u7df4\u5bb6\u5361\uff0c\u4e26\u986f\u793a 2x / 1x \u6bd4\u4f8b"
-    : "Pokemon and Trainer cards grouped by total inclusion, with 2x / 1x breakdown";
+    ? "依總投入率分為寶可夢、支援者、其他訓練家，並顯示 2x / 1x 比例"
+    : "Pokemon, Supporters, and other Trainer cards grouped by inclusion, with 2x / 1x breakdown";
 });
 
 const rightDeckPanelSubtitle = computed(() => {
@@ -4115,8 +4883,8 @@ const rightDeckPanelSubtitle = computed(() => {
   }
 
   return routeLang.value === "zh"
-    ? "依投入率分組顯示寶可夢卡與訓練家卡"
-    : "Pokemon and Trainer cards grouped by inclusion rate";
+    ? "寶可夢、支援者、其他訓練家依投入率分組"
+    : "Pokemon, Supporters, and other Trainer cards grouped by inclusion rate";
 });
 
 const rightDeckPanelEmptyText = computed(() => {
@@ -4188,7 +4956,7 @@ const displayDeckName = computed(() => {
 
       leftAnalytics.value.resolvedDeckDisplayName,
       rightAnalytics.value.resolvedDeckDisplayName,
-      defaultDeckLabelFromKey(resolvedDeckKey.value),
+      defaultDeckLabelFromKey(analysisDeckKey.value),
     ]) || "Unknown Deck"
   );
 });
@@ -4253,10 +5021,15 @@ const primaryNameLines = computed(() => {
 });
 
 const activeTierRow = computed<TierRow | null>(() => {
+  const precomputedTierRow = activePrecomputedProfileScope.value?.tierRow;
+  if (precomputedTierRow?.tier) {
+    return precomputedTierRow as TierRow;
+  }
+
   const rows = tierRows.value;
   if (!rows.length) return null;
 
-  const exactKey = normalizeDeckKey(resolvedDeckKey.value);
+  const exactKey = normalizeDeckKey(analysisDeckKey.value);
   if (exactKey) {
     const exact = rows.find((row) => normalizeDeckKey(row.deck) === exactKey);
     if (exact) return exact;
@@ -4283,6 +5056,634 @@ const deckTierInfo = computed(() => {
     samples: row.total_samples,
   };
 });
+
+interface ExportZipFile {
+  name: string;
+  blob: Blob;
+}
+
+const exportTopDeckPanels = computed(() =>
+  creatorTopDeckRows.value
+    .map((row, index) => {
+      const scope = findDeckProfileScopeFromPayload(creatorTopDeckProfiles.value.get(row.key) ?? null);
+      if (!scope) return null;
+
+      const analytics = hydratePrecomputedAnalytics(scope);
+      const groups = buildCardPanelGroupsFromAnalytics(analytics);
+      const cards = groups.flatMap((group) => group.cards);
+      if (cards.length === 0) return null;
+
+      return {
+        key: row.key || `top-${index + 1}`,
+        index,
+        row,
+        groups,
+        cards,
+        displayName:
+          (routeLang.value === "zh"
+            ? getLocalizedDeckName(row.rawName, row.iconKeys ?? [], "zh")
+            : "") ||
+          analytics.resolvedDeckDisplayName ||
+          row.rawName ||
+          defaultDeckLabelFromKey(row.key) ||
+          row.key,
+        displayNameEn:
+          analytics.resolvedDeckDisplayNameEn ||
+          getLocalizedDeckName(row.rawName, row.iconKeys ?? [], "en") ||
+          row.rawName ||
+          row.key,
+        spriteUrls:
+          analytics.targetSpriteUrls.length > 0
+            ? analytics.targetSpriteUrls
+            : resolveDeckSpriteUrlsFromIconKeys(row.iconKeys ?? parseTwoFromDeckId(row.key)),
+      };
+    })
+    .filter((panel): panel is NonNullable<typeof panel> => panel !== null),
+);
+
+function sampleDeckToPanelCards(sample: SampleDeckEntry | null): RightDeckPanelCard[] {
+  if (!sample) return [];
+
+  return sample.cards.map((card, index) => ({
+    key: `${card.key}-${index}`,
+    code: card.code,
+    set: card.set,
+    number: card.number,
+    name: card.name,
+    image:
+      card.image ||
+      resolveCardImageUrl({
+        set: card.set,
+        number: card.number,
+        code: card.code,
+        name: card.name,
+        fallbackImage: card.image,
+      }),
+    category: card.category,
+    slotRatePct: card.count,
+    inclusionPct: 0,
+    oneCopyPct: 0,
+    twoCopyPct: 0,
+    badgeText: `x${card.count}`,
+    title: `${card.name} x${card.count}`,
+  }));
+}
+
+const exportSampleDeckPanels = computed(() =>
+  creatorTopDeckRows.value
+    .map((row, index) => {
+      const scope = findDeckProfileScopeFromPayload(creatorTopDeckProfiles.value.get(row.key) ?? null);
+      if (!scope) return null;
+
+      const analytics = hydratePrecomputedAnalytics(scope);
+      const cards = sampleDeckToPanelCards(analytics.sampleDeck);
+      if (cards.length === 0) return null;
+
+      return {
+        key: row.key || `top-${index + 1}`,
+        index,
+        row,
+        cards,
+        sample: analytics.sampleDeck,
+        displayName:
+          (routeLang.value === "zh"
+            ? getLocalizedDeckName(row.rawName, row.iconKeys ?? [], "zh")
+            : "") ||
+          analytics.resolvedDeckDisplayName ||
+          row.rawName ||
+          defaultDeckLabelFromKey(row.key) ||
+          row.key,
+        displayNameEn:
+          analytics.resolvedDeckDisplayNameEn ||
+          getLocalizedDeckName(row.rawName, row.iconKeys ?? [], "en") ||
+          row.rawName ||
+          row.key,
+        spriteUrls:
+          analytics.targetSpriteUrls.length > 0
+            ? analytics.targetSpriteUrls
+            : resolveDeckSpriteUrlsFromIconKeys(row.iconKeys ?? parseTwoFromDeckId(row.key)),
+      };
+    })
+    .filter((panel): panel is NonNullable<typeof panel> => panel !== null),
+);
+
+function creatorDeckNameZh(row: PrecomputedTopDeckRow) {
+  return (
+    getLocalizedDeckName(row.rawName, row.iconKeys ?? [], "zh") ||
+    row.rawName ||
+    defaultDeckLabelFromKey(row.key) ||
+    row.key
+  );
+}
+
+function creatorDeckNameEn(row: PrecomputedTopDeckRow) {
+  return (
+    getLocalizedDeckName(row.rawName, row.iconKeys ?? [], "en") ||
+    row.rawName ||
+    defaultDeckLabelFromKey(row.key) ||
+    row.key
+  );
+}
+
+function creatorCurrentRank(row: PrecomputedTopDeckRow, fallbackIndex: number) {
+  const rank = Number(row.baseRank ?? fallbackIndex + 1);
+  return Number.isFinite(rank) && rank > 0 ? Math.round(rank) : fallbackIndex + 1;
+}
+
+function creatorPreviousRank(row: PrecomputedTopDeckRow) {
+  const previousRow = creatorPreviousTopDeckScope.value?.rows.find((item) => item.key === row.key);
+  if (!previousRow) return "—";
+
+  const rank = Number(previousRow.baseRank ?? 0);
+  return Number.isFinite(rank) && rank > 0 ? `#${Math.round(rank)}` : "—";
+}
+
+function htmlEscape(value: unknown) {
+  return cleanDeckText(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function getTopDeckMatchup(sourceKey: string, targetKey: string) {
+  const matchups = activeCreatorTopDeckScope.value?.matchups ?? [];
+  const direct = matchups.find((item) => item.deckA === sourceKey && item.deckB === targetKey);
+  if (direct) {
+    const wins = Number(direct.winsA ?? 0);
+    const losses = Number(direct.lossesA ?? 0);
+    const ties = Number(direct.ties ?? 0);
+    const total = Number(direct.total ?? wins + losses + ties);
+    return {
+      wins,
+      losses,
+      ties,
+      total,
+      winRate: total > 0 ? (wins + ties * 0.5) / total : 0,
+    };
+  }
+
+  const reverse = matchups.find((item) => item.deckA === targetKey && item.deckB === sourceKey);
+  if (reverse) {
+    const wins = Number(reverse.lossesA ?? 0);
+    const losses = Number(reverse.winsA ?? 0);
+    const ties = Number(reverse.ties ?? 0);
+    const total = Number(reverse.total ?? wins + losses + ties);
+    return {
+      wins,
+      losses,
+      ties,
+      total,
+      winRate: total > 0 ? (wins + ties * 0.5) / total : 0,
+    };
+  }
+
+  return {
+    wins: 0,
+    losses: 0,
+    ties: 0,
+    total: 0,
+    winRate: null as number | null,
+  };
+}
+
+const creatorReportHtml = computed(() => {
+  const rows = creatorTopDeckRows.value;
+  if (rows.length === 0) return "";
+
+  const generatedAt = activeCreatorTopDeckScope.value
+    ? new Date(precomputedTopDecks.value?.generatedAtMs ?? Date.now()).toLocaleString("zh-HK")
+    : new Date().toLocaleString("zh-HK");
+
+  const summaryRows = rows
+    .map((row, index) => {
+      const currentRank = creatorCurrentRank(row, index);
+      const previousRank = creatorPreviousRank(row);
+      const tier = cleanDeckText(row.tier) || "—";
+      return `
+        <tr>
+          <td class="rank">#${currentRank}</td>
+          <td>${htmlEscape(previousRank)}</td>
+          <td><span class="tier-pill">${htmlEscape(tier)}</span></td>
+          <td>${htmlEscape(creatorDeckNameZh(row))}</td>
+          <td>${htmlEscape(creatorDeckNameEn(row))}</td>
+          <td>${formatPercentValue((row.topCutShare ?? 0) * 100)}</td>
+          <td>${formatPct(row.winRate)}</td>
+        </tr>`;
+    })
+    .join("");
+
+  const matchupHead = rows
+    .map((row, index) => `<th><span>#${index + 1}</span><small>${htmlEscape(creatorDeckNameEn(row))}</small></th>`)
+    .join("");
+
+  const matchupRows = rows
+    .map((source, sourceIndex) => {
+      const cells = rows
+        .map((target) => {
+          if (source.key === target.key) return `<td class="self">—</td>`;
+          const matchup = getTopDeckMatchup(source.key, target.key);
+          if (!matchup.total || matchup.winRate == null) {
+            return `<td><span class="muted">0勝 0敗 0平</span><span class="muted">0場</span></td>`;
+          }
+          return `<td><strong>${matchup.wins}勝 ${matchup.losses}敗 ${matchup.ties}平</strong><span>${matchup.total}場 · ${formatPct(matchup.winRate)}</span></td>`;
+        })
+        .join("");
+
+      return `
+        <tr>
+          <th class="row-head">
+            <span>#${sourceIndex + 1}</span>
+            <strong>${htmlEscape(creatorDeckNameZh(source))}</strong>
+            <small>${htmlEscape(creatorDeckNameEn(source))}</small>
+          </th>
+          ${cells}
+        </tr>`;
+    })
+    .join("");
+
+  return `<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Battle Tower Meta Creator Pack - Top 15</title>
+  <style>
+    :root { color-scheme: dark; font-family: Arial, "Microsoft JhengHei", sans-serif; background: #07131f; color: #eef6ff; }
+    body { margin: 0; padding: 32px; background: radial-gradient(circle at top left, #0b3340, #07131f 48%, #080d1a); }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    h2 { margin: 32px 0 12px; font-size: 20px; }
+    p { margin: 0 0 18px; color: #9fb4c7; }
+    table { width: 100%; border-collapse: collapse; background: rgba(9, 21, 36, 0.82); border: 1px solid rgba(125, 211, 252, 0.24); }
+    th, td { border: 1px solid rgba(148, 163, 184, 0.18); padding: 10px; vertical-align: middle; }
+    th { color: #bfe8ff; background: rgba(37, 99, 235, 0.12); text-align: left; }
+    td { color: #f8fbff; }
+    .rank { width: 52px; color: #7dd3fc; font-weight: 800; }
+    .tier-pill { display: inline-flex; align-items: center; justify-content: center; min-width: 40px; min-height: 26px; padding: 0 10px; border-radius: 999px; border: 1px solid rgba(251, 191, 36, 0.38); background: rgba(120, 79, 28, 0.48); color: #fff5d6; font-weight: 900; }
+    .matrix-wrap { overflow-x: auto; }
+    .matrix { min-width: 1280px; font-size: 12px; }
+    .matrix th span, .matrix td span { display: block; color: #9fb4c7; margin-top: 3px; }
+    .matrix td strong { display: block; white-space: nowrap; }
+    .matrix th small, .row-head small { display: block; color: #8aa1b5; font-weight: 500; line-height: 1.25; }
+    .row-head { min-width: 210px; }
+    .row-head span { color: #7dd3fc; }
+    .row-head strong { display: block; margin: 3px 0; color: #fff; }
+    .self, .muted { color: #6b7f92; }
+    strong { color: #fff; }
+  </style>
+</head>
+<body>
+  <h1>Battle Tower Meta Top 15 Creator Report</h1>
+  <p>Generated: ${htmlEscape(generatedAt)} · Current: ${htmlEscape(leftPanelFilters.time)} / Top Cut ${htmlEscape(leftPanelFilters.topCut)} · Last week: previous 7 days</p>
+
+  <h2>Top 15 牌組總覽</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>目前排名</th>
+        <th>上周排名</th>
+        <th>Tier</th>
+        <th>中文名</th>
+        <th>English Name</th>
+        <th>Top Cut %</th>
+        <th>Win %</th>
+      </tr>
+    </thead>
+    <tbody>${summaryRows}</tbody>
+  </table>
+
+  <h2>Top 15 對戰矩陣</h2>
+  <p>每格格式：該列牌組視角的勝-敗-平，下一行為總對戰數與勝率。</p>
+  <div class="matrix-wrap">
+    <table class="matrix">
+      <thead>
+        <tr>
+          <th>Deck</th>
+          ${matchupHead}
+        </tr>
+      </thead>
+      <tbody>${matchupRows}</tbody>
+    </table>
+  </div>
+</body>
+</html>`;
+});
+
+const creatorTopDeckProfilesReady = computed(() => {
+  const rows = creatorTopDeckRows.value;
+  return rows.length > 0 && rows.every((row) => creatorTopDeckProfiles.value.has(row.key));
+});
+
+const creatorPackAvailable = computed(() => {
+  if (!creatorTopDeckProfilesReady.value) return false;
+
+  return (
+    exportTopDeckPanels.value.length > 0 ||
+    exportSampleDeckPanels.value.length > 0 ||
+    creatorReportHtml.value.length > 0
+  );
+});
+
+const creatorPackDataLoading = computed(() => {
+  return (
+    precomputedTopDecksLoading.value ||
+    creatorTopDeckProfilesLoading.value ||
+    precomputedProfileLoading.value
+  );
+});
+
+function setTopDeckExportPanelRef(el: Element | null | unknown, key: string) {
+  if (el instanceof HTMLElement) {
+    topDeckExportPanelRefs.set(key, el);
+  } else {
+    topDeckExportPanelRefs.delete(key);
+  }
+}
+
+function setSampleDeckExportPanelRef(el: Element | null | unknown, key: string) {
+  if (el instanceof HTMLElement) {
+    sampleDeckExportPanelRefs.set(key, el);
+  } else {
+    sampleDeckExportPanelRefs.delete(key);
+  }
+}
+
+async function waitForImages(root: HTMLElement) {
+  const images = Array.from(root.querySelectorAll("img"));
+
+  await Promise.all(
+    images.map((img) => {
+      if (img.complete) return Promise.resolve();
+
+      return new Promise<void>((resolve) => {
+        let settled = false;
+        const finish = () => {
+          if (settled) return;
+          settled = true;
+          img.removeEventListener("load", finish);
+          img.removeEventListener("error", finish);
+          resolve();
+        };
+
+        img.addEventListener("load", finish, { once: true });
+        img.addEventListener("error", finish, { once: true });
+        window.setTimeout(finish, 2500);
+      });
+    }),
+  );
+}
+
+function triggerBlobDownload(blob: Blob, fileName: string) {
+  const link = document.createElement("a");
+  const url = URL.createObjectURL(blob);
+  link.href = url;
+  link.download = fileName;
+  link.click();
+  window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+function zipSafePngPath(value: string) {
+  const parts = value
+    .split(/[\\/]+/)
+    .map((part) => slugify(part))
+    .filter(Boolean);
+
+  return `${parts.join("/") || "battle-tower-panel"}.png`;
+}
+
+function createTextZipFile(name: string, content: string, type = "text/html;charset=utf-8"): ExportZipFile {
+  return {
+    name: name.replace(/\\/g, "/"),
+    blob: new Blob([content], { type }),
+  };
+}
+
+async function renderElementAsTransparentPng(
+  element: HTMLElement,
+  fileName: string,
+): Promise<ExportZipFile | null> {
+  await waitForImages(element);
+  await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
+
+  const { toBlob } = await import("html-to-image");
+  const blob = await toBlob(element, {
+    cacheBust: true,
+    pixelRatio: CREATOR_EXPORT_PIXEL_RATIO,
+    backgroundColor: "rgba(0,0,0,0)",
+    filter: (node) => !(node instanceof HTMLElement && node.dataset.exportIgnore === "true"),
+  });
+
+  if (!blob) return null;
+
+  return {
+    name: zipSafePngPath(fileName),
+    blob,
+  };
+}
+
+const CRC32_TABLE = (() => {
+  const table = new Uint32Array(256);
+
+  for (let i = 0; i < 256; i += 1) {
+    let value = i;
+    for (let bit = 0; bit < 8; bit += 1) {
+      value = value & 1 ? 0xedb88320 ^ (value >>> 1) : value >>> 1;
+    }
+    table[i] = value >>> 0;
+  }
+
+  return table;
+})();
+
+function crc32(bytes: Uint8Array) {
+  let crc = 0xffffffff;
+
+  for (const byte of bytes) {
+    crc = CRC32_TABLE[(crc ^ byte) & 0xff] ^ (crc >>> 8);
+  }
+
+  return (crc ^ 0xffffffff) >>> 0;
+}
+
+function dosDateTime(date = new Date()) {
+  const year = Math.max(1980, date.getFullYear());
+  const dosTime =
+    (date.getHours() << 11) |
+    (date.getMinutes() << 5) |
+    Math.floor(date.getSeconds() / 2);
+  const dosDate =
+    ((year - 1980) << 9) |
+    ((date.getMonth() + 1) << 5) |
+    date.getDate();
+
+  return { dosTime, dosDate };
+}
+
+function writeZipHeader(
+  signature: number,
+  size: number,
+  nameBytes: Uint8Array,
+  dataSize: number,
+  crc: number,
+  localOffset = 0,
+) {
+  const header = new Uint8Array(size + nameBytes.length);
+  const view = new DataView(header.buffer);
+  const { dosTime, dosDate } = dosDateTime();
+
+  view.setUint32(0, signature, true);
+
+  if (signature === 0x04034b50) {
+    view.setUint16(4, 20, true);
+    view.setUint16(6, 0, true);
+    view.setUint16(8, 0, true);
+    view.setUint16(10, dosTime, true);
+    view.setUint16(12, dosDate, true);
+    view.setUint32(14, crc, true);
+    view.setUint32(18, dataSize, true);
+    view.setUint32(22, dataSize, true);
+    view.setUint16(26, nameBytes.length, true);
+    view.setUint16(28, 0, true);
+    header.set(nameBytes, 30);
+    return header;
+  }
+
+  view.setUint16(4, 20, true);
+  view.setUint16(6, 20, true);
+  view.setUint16(8, 0, true);
+  view.setUint16(10, 0, true);
+  view.setUint16(12, dosTime, true);
+  view.setUint16(14, dosDate, true);
+  view.setUint32(16, crc, true);
+  view.setUint32(20, dataSize, true);
+  view.setUint32(24, dataSize, true);
+  view.setUint16(28, nameBytes.length, true);
+  view.setUint16(30, 0, true);
+  view.setUint16(32, 0, true);
+  view.setUint16(34, 0, true);
+  view.setUint16(36, 0, true);
+  view.setUint32(38, 0, true);
+  view.setUint32(42, localOffset, true);
+  header.set(nameBytes, 46);
+
+  return header;
+}
+
+function createEndOfCentralDirectory(fileCount: number, centralSize: number, centralOffset: number) {
+  const end = new Uint8Array(22);
+  const view = new DataView(end.buffer);
+
+  view.setUint32(0, 0x06054b50, true);
+  view.setUint16(4, 0, true);
+  view.setUint16(6, 0, true);
+  view.setUint16(8, fileCount, true);
+  view.setUint16(10, fileCount, true);
+  view.setUint32(12, centralSize, true);
+  view.setUint32(16, centralOffset, true);
+  view.setUint16(20, 0, true);
+
+  return end;
+}
+
+async function createZipBlob(files: ExportZipFile[]) {
+  const encoder = new TextEncoder();
+  const localParts: BlobPart[] = [];
+  const centralParts: BlobPart[] = [];
+  let localOffset = 0;
+  let centralSize = 0;
+
+  for (const file of files) {
+    const data = new Uint8Array(await file.blob.arrayBuffer());
+    const nameBytes = encoder.encode(file.name.replace(/\\/g, "/"));
+    const checksum = crc32(data);
+    const localHeader = writeZipHeader(0x04034b50, 30, nameBytes, data.byteLength, checksum);
+    const centralHeader = writeZipHeader(
+      0x02014b50,
+      46,
+      nameBytes,
+      data.byteLength,
+      checksum,
+      localOffset,
+    );
+
+    localParts.push(localHeader, data);
+    centralParts.push(centralHeader);
+    localOffset += localHeader.byteLength + data.byteLength;
+    centralSize += centralHeader.byteLength;
+  }
+
+  const end = createEndOfCentralDirectory(files.length, centralSize, localOffset);
+
+  return new Blob([...localParts, ...centralParts, end], { type: "application/zip" });
+}
+
+async function downloadCreatorPack() {
+  if (downloadingCreatorPack.value || !creatorPackAvailable.value) return;
+
+  downloadingCreatorPack.value = true;
+  exportStageActive.value = true;
+  topDeckExportPanelRefs.clear();
+  sampleDeckExportPanelRefs.clear();
+
+  try {
+    await nextTick();
+    await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
+
+    const baseName = "battle-tower-meta-top-15";
+    const downloads: Array<{ element: HTMLElement | null; fileName: string }> = [
+      ...exportTopDeckPanels.value.map((panel) => ({
+        element: topDeckExportPanelRefs.get(panel.key) ?? null,
+        fileName: `card-rates/top-${String(panel.index + 1).padStart(2, "0")}-${panel.displayNameEn || panel.displayName}-card-rates`,
+      })),
+      ...exportSampleDeckPanels.value.map((panel) => ({
+        element: sampleDeckExportPanelRefs.get(panel.key) ?? null,
+        fileName: `decklists/top-${String(panel.index + 1).padStart(2, "0")}-${panel.displayNameEn || panel.displayName}-decklist`,
+      })),
+    ];
+    const files: ExportZipFile[] = [];
+
+    if (creatorReportHtml.value) {
+      files.push(createTextZipFile("index.html", creatorReportHtml.value));
+    }
+
+    for (const item of downloads) {
+      if (!item.element) continue;
+      const rendered = await renderElementAsTransparentPng(item.element, item.fileName);
+      if (rendered) files.push(rendered);
+      await new Promise<void>((resolve) => window.setTimeout(resolve, 80));
+    }
+
+    if (files.length === 0) return;
+
+    const zipBlob = await createZipBlob(files);
+    triggerBlobDownload(zipBlob, `${baseName}-creator-pack.zip`);
+  } catch (error) {
+    console.error("[DeckProfile] downloadCreatorPack failed:", error);
+  } finally {
+    exportStageActive.value = false;
+    downloadingCreatorPack.value = false;
+  }
+}
+
+watch(
+  () =>
+    [
+      props.autoDownloadCreatorPack,
+      creatorPackAvailable.value,
+      creatorPackDataLoading.value,
+      cardCatalogLoaded.value,
+    ] as const,
+  async ([shouldDownload, available, loading, catalogReady]) => {
+    if (!shouldDownload || !available || loading || !catalogReady || autoCreatorStarted.value) return;
+
+    autoCreatorStarted.value = true;
+    await nextTick();
+    await downloadCreatorPack();
+    emit("creatorPackFinished");
+  },
+  { immediate: true },
+);
 
 async function downloadTransparentDeckPanel() {
   if (downloadingDeckPanel.value) return;
@@ -4313,7 +5714,7 @@ async function downloadTransparentDeckPanel() {
 
     const link = document.createElement("a");
     const fileName =
-      slugify(displayDeckNameEn.value || displayDeckName.value || resolvedDeckKey.value) ||
+      slugify(displayDeckNameEn.value || displayDeckName.value || analysisDeckKey.value) ||
       "deck-panel";
 
     link.href = dataUrl;
@@ -6284,6 +7685,31 @@ function resetPage() {
   gap: 18px;
 }
 
+.decklist-shell--rates {
+  gap: 18px;
+}
+
+.decklist-shell--rates .decklist-groups {
+  align-items: stretch;
+  gap: 26px;
+}
+
+.cardsGrid--rates {
+  gap: 14px;
+}
+
+.decklist-shell--rates .profileCard__imageWrap {
+  border-radius: 12px;
+}
+
+.decklist-shell--rates .decklist-group {
+  gap: 12px;
+}
+
+.decklist-shell--rates .decklist-group + .decklist-group {
+  margin-top: 0;
+}
+
 .decklist-group {
   display: grid;
   gap: 10px;
@@ -6422,6 +7848,137 @@ function resetPage() {
     padding: 0 10px;
     bottom: 8px;
     font-size: 0.82rem;
+  }
+}
+
+.export-stage {
+  position: fixed;
+  left: -12000px;
+  top: 0;
+  z-index: -1;
+  display: grid;
+  gap: 24px;
+  width: 1600px;
+  pointer-events: none;
+}
+
+.export-panel {
+  position: relative;
+  overflow: hidden;
+  width: 1500px;
+  padding: 28px;
+  border-radius: 20px;
+  border: 1px solid rgba(77, 154, 220, 0.26);
+  background:
+    linear-gradient(180deg, rgba(18, 43, 76, 0.2), rgba(6, 12, 22, 0.2)),
+    rgba(9, 22, 39, 0.96);
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    inset 0 0 0 1px rgba(86, 173, 255, 0.06);
+}
+
+.export-panel__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.panel-kicker--visible {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.export-panel__head h3 {
+  margin: 0;
+  color: #f6fbff;
+  font-size: 1.55rem;
+  font-weight: 950;
+}
+
+.export-panel__head p {
+  margin: 6px 0 0;
+  color: var(--text-soft);
+  font-weight: 800;
+}
+
+.export-tier-panel {
+  width: 860px;
+}
+
+.export-tier-lanes {
+  display: grid;
+  gap: 14px;
+}
+
+.export-tier-lane {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
+.export-tier-lane__badge {
+  display: grid;
+  place-items: center;
+  min-height: 118px;
+  border-radius: 18px;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 950;
+  background: linear-gradient(180deg, rgba(239, 74, 56, 0.96), rgba(124, 74, 18, 0.96));
+}
+
+.export-tier-lane__decks {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.export-tier-deck {
+  min-height: 96px;
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(126, 200, 255, 0.14);
+  background: rgba(3, 11, 22, 0.52);
+}
+
+.export-tier-deck__name {
+  color: #eef7ff;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.sprite-stack--export {
+  min-width: 0;
+  justify-content: center;
+}
+
+.sprite-chip--export {
+  width: 42px;
+  height: 42px;
+}
+
+.export-card-groups {
+  grid-template-columns: 1fr;
+  align-items: stretch;
+  gap: 28px;
+}
+
+.export-sample-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  gap: 16px;
+}
+
+@media (max-width: 1080px) {
+  .export-card-groups {
+    grid-template-columns: 1fr;
   }
 }
 

@@ -1,6 +1,14 @@
 <template>
   <div>
-    <h1 class="pageTitle">{{ lang === 'en' ? 'PTCG Pocket Stats' : 'PTCG Pocket 數據' }}</h1>
+    <div class="homeHero">
+      <div>
+        <div class="homeHero__kicker">{{ lang === 'en' ? 'Creator kit' : '創作者素材' }}</div>
+        <h1 class="pageTitle">{{ lang === 'en' ? 'PTCG Pocket Stats' : 'PTCG Pocket 數據' }}</h1>
+      </div>
+      <button class="creatorPackButton mono" type="button" :disabled="creatorPackActive" @click="creatorPackActive = true">
+        {{ creatorPackActive ? (lang === 'en' ? 'Building ZIP...' : '製作 ZIP 中...') : (lang === 'en' ? 'Download creator ZIP' : '一鍵下載素材 ZIP') }}
+      </button>
+    </div>
 
     <div class="grid">
       <RouterLink v-for="c in cards" :key="c.to" :to="c.to" class="card">
@@ -9,16 +17,26 @@
         <div class="desc">{{ c.desc }}</div>
       </RouterLink>
     </div>
+
+    <DeckProfile
+      v-if="creatorPackActive"
+      class="homeCreatorMount"
+      auto-download-creator-pack
+      @creator-pack-finished="creatorPackActive = false"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, defineAsyncComponent, ref } from 'vue'
 import { useRoute } from 'vue-router'
+
+const DeckProfile = defineAsyncComponent(() => import('./DeckProfile.vue'))
 
 const route = useRoute()
 const lang = computed(() => (String(route.path).split('/')[1] === 'en' ? 'en' : 'zh'))
 const base = computed(() => `/${lang.value}`)
+const creatorPackActive = ref(false)
 
 const cards = computed(() => {
   if (lang.value === 'en') {
@@ -43,12 +61,52 @@ const cards = computed(() => {
 </script>
 
 <style scoped>
+.homeHero {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 14px;
+  margin: 0 0 16px;
+}
+
+.homeHero__kicker {
+  margin-bottom: 6px;
+  color: rgba(125, 211, 252, 0.86);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
 .pageTitle {
-  margin: 0 0 14px;
+  margin: 0;
   color: rgba(255,255,255,0.92);
   font-size: 18px;
   font-weight: 800;
-  letter-spacing: .2px;
+  letter-spacing: 0;
+}
+
+.creatorPackButton {
+  min-height: 38px;
+  padding: 0 14px;
+  border: 1px solid rgba(96, 165, 250, 0.55);
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(37, 99, 235, 0.36), rgba(14, 116, 144, 0.22));
+  color: rgba(239, 246, 255, 0.96);
+  font-size: 12px;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0 10px 26px rgba(14, 116, 144, 0.18);
+}
+
+.creatorPackButton:hover:not(:disabled) {
+  border-color: rgba(125, 211, 252, 0.8);
+  background: linear-gradient(180deg, rgba(37, 99, 235, 0.48), rgba(14, 116, 144, 0.28));
+}
+
+.creatorPackButton:disabled {
+  cursor: wait;
+  opacity: 0.72;
 }
 
 .grid {
@@ -75,4 +133,24 @@ const cards = computed(() => {
 .kicker { font-size: 12px; color: rgba(226,232,240,.7); }
 .title { margin-top: 8px; font-size: 18px; font-weight: 800; color: #fff; }
 .desc { margin-top: 6px; font-size: 13px; color: rgba(226,232,240,.75); }
+
+.homeCreatorMount {
+  position: fixed;
+  top: 0;
+  left: -10000px;
+  width: 1440px;
+  min-height: 100vh;
+  pointer-events: none;
+}
+
+@media (max-width: 640px) {
+  .homeHero {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .creatorPackButton {
+    width: 100%;
+  }
+}
 </style>

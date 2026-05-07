@@ -517,6 +517,12 @@ import {
   lookupStandingForPairingSide,
   parsePairingResult,
 } from "../lib/pairingResolver";
+import {
+  buildTopDecksScopeKey,
+  loadTopDecksPrecomputed,
+  type PrecomputedTopDeckScope,
+  type PrecomputedTopDecksPayload,
+} from "../lib/precomputedViews";
 
 const BASE_URL = (import.meta as any).env?.BASE_URL ?? "/";
 
@@ -715,6 +721,8 @@ const currentVersionWindow = computed(() => inferVersionByStartMs(Date.now()));
 
 const meta = ref<Meta | null>(null);
 const tierRows = ref<TierRow[]>([]);
+const precomputedTopDecks = ref<PrecomputedTopDecksPayload | null>(null);
+const precomputedTopDecksLoading = ref(false);
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 const TOP_DECK_LIMIT = 10;
@@ -818,6 +826,34 @@ const topCutOptions = computed<Array<{ value: TopCutValue; label: string }>>(() 
     { value: "2", label: "Top 2" },
     { value: "1", label: locale.value === "en" ? "Winner" : "冠軍" },
   ];
+});
+
+async function loadPrecomputedTopDecksForTierList() {
+  if (import.meta.env.SSR) return;
+  precomputedTopDecksLoading.value = true;
+
+  try {
+    precomputedTopDecks.value = await loadTopDecksPrecomputed();
+  } catch (error) {
+    precomputedTopDecks.value = null;
+    console.warn("[TierList] precomputed data unavailable; falling back to raw JSON.", error);
+  } finally {
+    precomputedTopDecksLoading.value = false;
+  }
+}
+
+const activePrecomputedTierScope = computed<PrecomputedTopDeckScope | null>(() => {
+  if (!precomputedTopDecks.value) return null;
+  if ((filters.minPlayers ?? 0) > 0) return null;
+
+  const key = buildTopDecksScopeKey({
+    time: String(filters.time),
+    set: String(filters.set ?? ""),
+    topCut: filters.topCut,
+    minPlayers: filters.minPlayers,
+  });
+
+  return precomputedTopDecks.value.scopes[key] ?? null;
 });
 
 const topDeckRows = computed(() => {
@@ -1912,6 +1948,7 @@ async function recomputeTierRows() {
   const token = ++recomputeToken.tier;
   const scopedTournaments = await filteredTournamentsForCurrentFilters();
   const ids = scopedTournaments.map((tournament) => tournament.id);
+  const precomputedScope = activePrecomputedTierScope.value;
 
   if (meta.value) {
     meta.value = {
@@ -1921,6 +1958,23 @@ async function recomputeTierRows() {
       min_players: filters.minPlayers ?? 0,
       tournaments_count: scopedTournaments.length,
     };
+  }
+
+  if (precomputedScope) {
+    tierRows.value = precomputedScope.rows.slice(0, 2000).map((row) => ({
+      deck: row.key,
+      tier: row.tier,
+      score: row.score,
+      raw_name: row.rawName,
+      iconKeys: row.iconKeys,
+      spriteUrls: resolveDeckSpriteUrlsFromIconKeys(row.iconKeys),
+      usage: row.topCutShare,
+      total_samples: row.selectedSamples,
+      data1_top32_appearances: row.baselineTop32Samples,
+      data2_weighted_points: row.weightedPoints,
+      data3_top32_share_pct: row.baselineTop32SharePct,
+    }));
+    return;
   }
 
   if (!ids.length) {
@@ -2048,9 +2102,28 @@ async function recomputeHeatmapForTopCut() {
   const token = ++recomputeToken.heat;
   const keys = matrixAxisRows.value.filter((row): row is TierRow => row !== null).map((row) => row.deck);
   const keySet = new Set(keys);
+  const precomputedScope = activePrecomputedTierScope.value;
 
   if (!keys.length) {
     matchupMap.value = new Map();
+    return;
+  }
+
+  if (precomputedScope) {
+    const map = new Map<string, MatchupRecord>();
+    for (const item of precomputedScope.matchups ?? []) {
+      if (!keySet.has(item.deckA) || !keySet.has(item.deckB)) continue;
+      map.set(`${item.deckA}__${item.deckB}`, {
+        deckA: item.deckA,
+        deckB: item.deckB,
+        winsA: Number(item.winsA ?? 0),
+        lossesA: Number(item.lossesA ?? 0),
+        ties: Number(item.ties ?? 0),
+        total: Number(item.total ?? 0),
+        winrateA: Number(item.winrateA ?? 0),
+      });
+    }
+    matchupMap.value = map;
     return;
   }
 
@@ -2212,6 +2285,7 @@ watch(
 );
 
 onMounted(async () => {
+  await loadPrecomputedTopDecksForTierList();
   await loadTournaments();
   heatLoading.value = true;
   await recomputeTierRows();
