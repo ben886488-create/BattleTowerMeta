@@ -484,36 +484,35 @@
                           {{ card.set || "?" }} {{ card.number || card.code || "?" }}
                         </div>
                       </div>
-                    </div>
 
-                    <div class="profileCard__stats">
-                      <div class="profileCard__statsTop">
-                        <span class="profileCard__statsLabel mono">
-                          {{ isZhUi ? "\u7e3d\u6295\u5165" : "Total" }}
-                        </span>
-                        <strong class="profileCard__statsValue mono">{{ card.badgeText }}</strong>
-                      </div>
+                      <div
+                        class="profileCard__stats"
+                        :style="{
+                          '--one-rate': `${card.oneCopyPct}%`,
+                          '--two-rate': `${card.twoCopyPct}%`,
+                        }"
+                      >
+                        <div class="profileCard__rateDial">
+                          <span class="profileCard__rateDialLabel">{{ isZhUi ? "投入率" : "Rate" }}</span>
+                          <strong class="profileCard__rateDialValue mono">{{ card.badgeText }}</strong>
+                        </div>
 
-                      <div class="profileCard__mixBar" aria-hidden="true">
-                        <span
-                          class="profileCard__mixBarSegment profileCard__mixBarSegment--two"
-                          :style="{ width: `${card.twoCopyPct}%` }"
-                        />
-                        <span
-                          class="profileCard__mixBarSegment profileCard__mixBarSegment--one"
-                          :style="{ width: `${card.oneCopyPct}%` }"
-                        />
-                      </div>
-
-                      <div class="profileCard__copyBreakdown">
-                        <span class="profileCard__copyStat profileCard__copyStat--two">
-                          <span class="profileCard__copyStatKey mono">2x</span>
-                          <strong class="mono">{{ formatPercentValue(card.twoCopyPct) }}</strong>
-                        </span>
-                        <span class="profileCard__copyStat profileCard__copyStat--one">
-                          <span class="profileCard__copyStatKey mono">1x</span>
-                          <strong class="mono">{{ formatPercentValue(card.oneCopyPct) }}</strong>
-                        </span>
+                        <div class="profileCard__copyBreakdown">
+                          <span
+                            class="profileCard__copyStat profileCard__copyStat--two"
+                            :aria-label="`2 copies ${formatPercentValue(card.twoCopyPct)}`"
+                          >
+                            <img class="profileCard__copyIcon" :src="twoCopyDiskIcon" alt="" draggable="false" />
+                            <strong class="profileCard__copyValue mono">{{ formatPercentValue(card.twoCopyPct) }}</strong>
+                          </span>
+                          <span
+                            class="profileCard__copyStat profileCard__copyStat--one"
+                            :aria-label="`1 copy ${formatPercentValue(card.oneCopyPct)}`"
+                          >
+                            <img class="profileCard__copyIcon" :src="oneCopyDiskIcon" alt="" draggable="false" />
+                            <strong class="profileCard__copyValue mono">{{ formatPercentValue(card.oneCopyPct) }}</strong>
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </article>
@@ -830,6 +829,8 @@ import { useRoute } from "vue-router";
 import { getLocalizedDeckName } from "../assets/pokemonNames";
 import { resolveDeckTier } from "../lib/deckTier";
 import { inTimeRange as matchesTimeFilter } from "../lib/playerEntries";
+import oneCopyDiskIcon from "../assets/deck-disks/3.png";
+import twoCopyDiskIcon from "../assets/deck-disks/4.png";
 import cardsCatalogUrl from "../assets/limitless_dump/limitless_cards.json?url";
 import {
   buildDeckProfileScopeKey,
@@ -6959,9 +6960,7 @@ function resetPage() {
 }
 
 .profileCard--breakdown {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: block;
 }
 
 .profileCard__imageWrap--breakdown {
@@ -6969,96 +6968,148 @@ function resetPage() {
 }
 
 .profileCard__stats {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 10px 10px 12px;
-  border-radius: 14px;
-  border: 1px solid rgba(115, 192, 255, 0.16);
+  --one-rate: 0%;
+  --two-rate: 0%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  height: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: 7px;
+  padding: 8px 9px;
+  border-radius: 0 0 12px 12px;
+  border-top: 1px solid rgba(126, 200, 255, 0.22);
   background:
-    linear-gradient(180deg, rgba(18, 46, 79, 0.92), rgba(10, 22, 39, 0.94)),
-    rgba(9, 20, 35, 0.92);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    linear-gradient(180deg, rgba(4, 14, 26, 0.1) 0%, rgba(4, 14, 26, 0.88) 24%, rgba(3, 10, 19, 0.98) 100%),
+    rgba(7, 18, 32, 0.94);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 -12px 24px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(4px);
 }
 
-.profileCard__statsTop {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 8px;
-}
-
-.profileCard__statsLabel {
-  color: rgba(214, 235, 255, 0.68);
-  font-size: 0.68rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-}
-
-.profileCard__statsValue {
-  color: #f4fbff;
-  font-size: 1rem;
-  font-weight: 900;
-  line-height: 1;
-}
-
-.profileCard__mixBar {
-  display: flex;
-  overflow: hidden;
-  height: 10px;
-  border-radius: 999px;
-  border: 1px solid rgba(115, 192, 255, 0.14);
-  background: rgba(255, 255, 255, 0.06);
-}
-
-.profileCard__mixBarSegment {
+.profileCard__rateDial {
+  position: relative;
+  width: 100%;
   height: 100%;
+  justify-self: center;
+  display: grid;
+  align-content: start;
+  justify-items: center;
+  gap: 5px;
+  padding-top: 5px;
 }
 
-.profileCard__mixBarSegment--two {
-  background: linear-gradient(90deg, rgba(255, 178, 78, 0.9), rgba(255, 131, 92, 0.96));
+.profileCard__rateDialLabel {
+  color: rgba(236, 247, 255, 0.92);
+  font-size: 0.86rem;
+  font-weight: 950;
+  line-height: 1;
+  letter-spacing: 0;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
 }
 
-.profileCard__mixBarSegment--one {
-  background: linear-gradient(90deg, rgba(91, 176, 255, 0.86), rgba(54, 128, 255, 0.94));
+.profileCard__rateDialValue {
+  position: relative;
+  width: min(122px, calc(100% - 4px));
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.06rem;
+  font-weight: 950;
+  line-height: 1;
+  letter-spacing: 0;
+  background:
+    radial-gradient(circle, rgba(5, 16, 29, 0.98) 0 52%, transparent 53%),
+    conic-gradient(
+      from 0deg,
+      rgba(64, 148, 255, 0.98) 0 var(--one-rate),
+      rgba(255, 122, 82, 0.98) var(--one-rate) calc(var(--one-rate) + var(--two-rate)),
+      rgba(255, 255, 255, 0.18) calc(var(--two-rate) + var(--one-rate)) 100%
+    );
+  box-shadow:
+    0 7px 15px rgba(0, 0, 0, 0.28),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.48);
 }
 
 .profileCard__copyBreakdown {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 6px;
+  grid-template-rows: repeat(2, clamp(40px, 28%, 52px));
+  align-content: center;
+  gap: 7px;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
 }
 
 .profileCard__copyStat {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  min-height: 34px;
-  padding: 7px 10px;
-  border-radius: 12px;
+  justify-content: flex-end;
+  min-height: 0;
+  padding: 4px 7px 4px 23px;
+  border-radius: 8px;
   border: 1px solid rgba(115, 192, 255, 0.12);
-  background: rgba(10, 22, 38, 0.92);
+  overflow: hidden;
   color: #eef7ff;
-  font-size: 0.82rem;
   line-height: 1;
 }
 
 .profileCard__copyStat--two {
-  border-color: rgba(255, 167, 79, 0.26);
-  background: rgba(68, 37, 24, 0.68);
+  border-color: rgba(255, 158, 90, 0.38);
+  background:
+    linear-gradient(90deg, rgba(111, 58, 31, 0.9), rgba(55, 25, 15, 0.94)),
+    rgba(55, 25, 15, 0.9);
 }
 
 .profileCard__copyStat--one {
-  border-color: rgba(91, 176, 255, 0.2);
-  background: rgba(16, 42, 77, 0.72);
+  border-color: rgba(96, 177, 255, 0.34);
+  background:
+    linear-gradient(90deg, rgba(22, 86, 154, 0.86), rgba(8, 34, 64, 0.94)),
+    rgba(8, 34, 64, 0.9);
 }
 
-.profileCard__copyStatKey {
-  color: rgba(214, 235, 255, 0.72);
-  font-size: 0.68rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+.profileCard__copyIcon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  z-index: 0;
+  display: block;
+  width: 40px;
+  height: 24px;
+  object-fit: contain;
+  transform: translateY(-50%) scale(1.38);
+  transform-origin: center;
+  pointer-events: none;
+  opacity: 0.92;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.42));
+}
+
+.profileCard__copyStat--one .profileCard__copyIcon {
+  transform: translateY(-50%) scale(1.24);
+}
+
+.profileCard__copyValue {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  justify-self: end;
+  color: #fff;
+  font-size: 0.98rem;
+  font-weight: 950;
+  line-height: 1;
+  letter-spacing: 0;
+  white-space: nowrap;
+  text-align: right;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .cards-empty {
@@ -7129,27 +7180,44 @@ function resetPage() {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .profileCard--breakdown {
-    gap: 8px;
-  }
-
   .profileCard__stats {
-    gap: 7px;
-    padding: 8px 8px 10px;
+    height: 50%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+    padding: 7px;
   }
 
-  .profileCard__statsValue {
-    font-size: 0.92rem;
+  .profileCard__rateDial {
+    gap: 4px;
+    padding-top: 4px;
   }
 
-  .profileCard__mixBar {
-    height: 8px;
+  .profileCard__rateDialLabel {
+    font-size: 0.76rem;
+  }
+
+  .profileCard__rateDialValue {
+    width: min(96px, calc(100% - 4px));
+    font-size: 0.9rem;
+  }
+
+  .profileCard__copyBreakdown {
+    grid-template-rows: repeat(2, clamp(36px, 28%, 46px));
+    gap: 6px;
   }
 
   .profileCard__copyStat {
-    min-height: 30px;
-    padding: 6px 8px;
-    font-size: 0.76rem;
+    padding: 3px 6px 3px 21px;
+  }
+
+  .profileCard__copyIcon {
+    left: 9px;
+    width: 36px;
+    height: 22px;
+  }
+
+  .profileCard__copyValue {
+    font-size: 0.86rem;
   }
 
   .deck-actions {
@@ -7166,25 +7234,34 @@ function resetPage() {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .profileCard__statsTop {
-    align-items: center;
+  .profileCard__stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5px;
+    padding: 6px;
   }
 
-  .profileCard__statsLabel,
-  .profileCard__copyStatKey {
-    font-size: 0.64rem;
-  }
-
-  .profileCard__statsValue {
-    font-size: 0.88rem;
+  .profileCard__rateDialValue {
+    width: min(84px, calc(100% - 4px));
+    font-size: 0.84rem;
   }
 
   .profileCard__copyBreakdown {
-    gap: 5px;
+    grid-template-rows: repeat(2, clamp(34px, 28%, 42px));
+    gap: 4px;
   }
 
   .profileCard__copyStat {
-    padding: 6px 7px;
+    padding: 3px 5px 3px 20px;
+  }
+
+  .profileCard__copyIcon {
+    left: 8px;
+    width: 34px;
+    height: 20px;
+  }
+
+  .profileCard__copyValue {
+    font-size: 0.8rem;
   }
 }
 

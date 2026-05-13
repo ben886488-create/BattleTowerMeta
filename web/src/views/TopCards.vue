@@ -212,41 +212,37 @@
                   <strong>{{ card.name }}</strong>
                   <span class="mono">{{ card.codeLabel }}</span>
                 </div>
-              </div>
 
-              <div class="topCardTile__body">
-                <div class="topCardTile__head">
-                  <h3 class="topCardTile__name">{{ card.name }}</h3>
-                  <p class="topCardTile__meta mono">{{ card.codeLabel }}</p>
-                </div>
+                <div
+                  class="topCardTile__stats"
+                  :style="{
+                    '--one-rate': `${card.oneCopyPct}%`,
+                    '--two-rate': `${card.twoCopyPct}%`,
+                  }"
+                >
+                  <div class="topCardTile__rateDial">
+                    <span class="topCardTile__rateDialLabel">{{ ui.rateLabel }}</span>
+                    <strong class="topCardTile__rateDialValue mono">
+                      {{ formatPercentValue(card.inclusionPct) }}
+                    </strong>
+                  </div>
 
-                <div class="topCardTile__total">
-                  <span class="topCardTile__totalLabel mono">{{ ui.totalInclusion }}</span>
-                  <strong class="topCardTile__totalValue mono">
-                    {{ formatPercentValue(card.inclusionPct) }}
-                  </strong>
-                </div>
-
-                <div class="topCardTile__mixBar" aria-hidden="true">
-                  <span
-                    class="topCardTile__mixBarSegment topCardTile__mixBarSegment--two"
-                    :style="{ width: `${card.twoCopyPct}%` }"
-                  />
-                  <span
-                    class="topCardTile__mixBarSegment topCardTile__mixBarSegment--one"
-                    :style="{ width: `${card.oneCopyPct}%` }"
-                  />
-                </div>
-
-                <div class="topCardTile__split">
-                  <span class="topCardTile__chip topCardTile__chip--two">
-                    <span class="mono">2x</span>
-                    <strong class="mono">{{ formatPercentValue(card.twoCopyPct) }}</strong>
-                  </span>
-                  <span class="topCardTile__chip topCardTile__chip--one">
-                    <span class="mono">1x</span>
-                    <strong class="mono">{{ formatPercentValue(card.oneCopyPct) }}</strong>
-                  </span>
+                  <div class="topCardTile__copyBreakdown">
+                    <span
+                      class="topCardTile__copyStat topCardTile__copyStat--two"
+                      :aria-label="`2 copies ${formatPercentValue(card.twoCopyPct)}`"
+                    >
+                      <img class="topCardTile__copyIcon" :src="twoCopyDiskIcon" alt="" draggable="false" />
+                      <strong class="topCardTile__copyValue mono">{{ formatPercentValue(card.twoCopyPct) }}</strong>
+                    </span>
+                    <span
+                      class="topCardTile__copyStat topCardTile__copyStat--one"
+                      :aria-label="`1 copy ${formatPercentValue(card.oneCopyPct)}`"
+                    >
+                      <img class="topCardTile__copyIcon" :src="oneCopyDiskIcon" alt="" draggable="false" />
+                      <strong class="topCardTile__copyValue mono">{{ formatPercentValue(card.oneCopyPct) }}</strong>
+                    </span>
+                  </div>
                 </div>
               </div>
             </article>
@@ -325,6 +321,8 @@ import { useRoute } from "vue-router";
 import { loadTournamentList, loadTournamentStandings } from "../lib/publicData";
 import cardsCatalogUrl from "../assets/limitless_dump/limitless_cards.json?url";
 import setsCatalogUrl from "../assets/limitless_dump/limitless_sets.json?url";
+import oneCopyDiskIcon from "../assets/deck-disks/3.png";
+import twoCopyDiskIcon from "../assets/deck-disks/4.png";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 const CARDS_PER_PAGE = 30;
@@ -527,6 +525,7 @@ const messages = {
     inclusionNote: "2x and 1x show the share of all filtered decklists, not just decks that include the card.",
     loadingInclusion: "Loading standings {loaded} / {total}",
     loadingCatalog: "Loading card catalog...",
+    rateLabel: "Rate",
     totalInclusion: "Total inclusion",
     releaseDate: "Release",
     cardCount: "Cards",
@@ -584,6 +583,7 @@ const messages = {
     inclusionNote: "2x 與 1x 顯示的是在所有篩選後副牌中的占比，不是只在有投入這張卡的副牌中計算。",
     loadingInclusion: "載入 standings 中：{loaded} / {total}",
     loadingCatalog: "載入卡片圖鑑中...",
+    rateLabel: "投入率",
     totalInclusion: "總投入",
     releaseDate: "發售日",
     cardCount: "卡片數",
@@ -1908,6 +1908,147 @@ onMounted(async () => {
   color: #f5fbff;
 }
 
+.topCardTile__stats {
+  --one-rate: 0%;
+  --two-rate: 0%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  height: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: 7px;
+  padding: 8px 9px;
+  border-radius: 0 0 14px 14px;
+  border-top: 1px solid rgba(126, 200, 255, 0.22);
+  background:
+    linear-gradient(180deg, rgba(4, 14, 26, 0.1) 0%, rgba(4, 14, 26, 0.88) 24%, rgba(3, 10, 19, 0.98) 100%),
+    rgba(7, 18, 32, 0.94);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 -12px 24px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(4px);
+}
+
+.topCardTile__rateDial {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-content: start;
+  justify-items: center;
+  gap: 5px;
+  padding-top: 5px;
+}
+
+.topCardTile__rateDialLabel {
+  color: rgba(236, 247, 255, 0.92);
+  font-size: 0.86rem;
+  font-weight: 950;
+  line-height: 1;
+  letter-spacing: 0;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
+}
+
+.topCardTile__rateDialValue {
+  width: min(122px, calc(100% - 4px));
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.06rem;
+  font-weight: 950;
+  line-height: 1;
+  letter-spacing: 0;
+  background:
+    radial-gradient(circle, rgba(5, 16, 29, 0.98) 0 52%, transparent 53%),
+    conic-gradient(
+      from 0deg,
+      rgba(64, 148, 255, 0.98) 0 var(--one-rate),
+      rgba(255, 122, 82, 0.98) var(--one-rate) calc(var(--one-rate) + var(--two-rate)),
+      rgba(255, 255, 255, 0.18) calc(var(--two-rate) + var(--one-rate)) 100%
+    );
+  box-shadow:
+    0 7px 15px rgba(0, 0, 0, 0.28),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.48);
+}
+
+.topCardTile__copyBreakdown {
+  display: grid;
+  grid-template-rows: repeat(2, clamp(40px, 28%, 52px));
+  align-content: center;
+  gap: 7px;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+
+.topCardTile__copyStat {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 0;
+  padding: 4px 7px 4px 23px;
+  border-radius: 8px;
+  border: 1px solid rgba(115, 192, 255, 0.12);
+  overflow: hidden;
+  color: #eef7ff;
+  line-height: 1;
+}
+
+.topCardTile__copyStat--two {
+  border-color: rgba(255, 158, 90, 0.38);
+  background:
+    linear-gradient(90deg, rgba(111, 58, 31, 0.9), rgba(55, 25, 15, 0.94)),
+    rgba(55, 25, 15, 0.9);
+}
+
+.topCardTile__copyStat--one {
+  border-color: rgba(96, 177, 255, 0.34);
+  background:
+    linear-gradient(90deg, rgba(22, 86, 154, 0.86), rgba(8, 34, 64, 0.94)),
+    rgba(8, 34, 64, 0.9);
+}
+
+.topCardTile__copyIcon {
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  z-index: 0;
+  display: block;
+  width: 40px;
+  height: 24px;
+  object-fit: contain;
+  transform: translateY(-50%) scale(1.7);
+  transform-origin: center;
+  pointer-events: none;
+  opacity: 0.92;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.42));
+}
+
+.topCardTile__copyStat--one .topCardTile__copyIcon {
+  transform: translateY(-50%) scale(1.45);
+}
+
+.topCardTile__copyValue {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  color: #fff;
+  font-size: 0.98rem;
+  font-weight: 950;
+  line-height: 1;
+  letter-spacing: 0;
+  white-space: nowrap;
+  text-align: right;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 .topCardTile__body {
   display: flex;
   flex-direction: column;
@@ -2147,6 +2288,44 @@ onMounted(async () => {
     height: 8px;
   }
 
+  .topCardTile__stats {
+    gap: 6px;
+    padding: 7px;
+  }
+
+  .topCardTile__rateDial {
+    gap: 4px;
+    padding-top: 4px;
+  }
+
+  .topCardTile__rateDialLabel {
+    font-size: 0.76rem;
+  }
+
+  .topCardTile__rateDialValue {
+    width: min(96px, calc(100% - 4px));
+    font-size: 0.9rem;
+  }
+
+  .topCardTile__copyBreakdown {
+    grid-template-rows: repeat(2, clamp(36px, 28%, 46px));
+    gap: 6px;
+  }
+
+  .topCardTile__copyStat {
+    padding: 3px 6px 3px 21px;
+  }
+
+  .topCardTile__copyIcon {
+    left: 12px;
+    width: 36px;
+    height: 22px;
+  }
+
+  .topCardTile__copyValue {
+    font-size: 0.86rem;
+  }
+
   .topCardTile__chip,
   .topCardTile__catalogChip {
     min-height: 30px;
@@ -2167,6 +2346,35 @@ onMounted(async () => {
   .topCardTile__split,
   .topCardTile__catalogMeta {
     gap: 6px;
+  }
+
+  .topCardTile__stats {
+    gap: 5px;
+    padding: 6px;
+  }
+
+  .topCardTile__rateDialValue {
+    width: min(84px, calc(100% - 4px));
+    font-size: 0.84rem;
+  }
+
+  .topCardTile__copyBreakdown {
+    grid-template-rows: repeat(2, clamp(34px, 28%, 42px));
+    gap: 4px;
+  }
+
+  .topCardTile__copyStat {
+    padding: 3px 5px 3px 20px;
+  }
+
+  .topCardTile__copyIcon {
+    left: 11px;
+    width: 34px;
+    height: 20px;
+  }
+
+  .topCardTile__copyValue {
+    font-size: 0.8rem;
   }
 
   .topCardTile__chip,
