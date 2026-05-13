@@ -15,7 +15,10 @@ declare global {
   }
 }
 
-const measurementId = String(import.meta.env.VITE_GA_MEASUREMENT_ID ?? "").trim();
+const defaultMeasurementId = "G-ZT4GKMH93F";
+const measurementId = String(
+  import.meta.env.VITE_GA_MEASUREMENT_ID || defaultMeasurementId,
+).trim();
 
 let initialized = false;
 let trackedInitialPage = false;
