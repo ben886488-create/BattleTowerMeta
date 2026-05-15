@@ -385,9 +385,12 @@
         <div
           ref="deckPanelRef"
           class="decklist-shell"
-          :class="{ 'decklist-shell--rates': rightDeckMode === 'cards' }"
+          :class="{
+            'decklist-shell--rates': rightDeckMode === 'cards',
+            'decklist-shell--sample': rightDeckMode === 'sample',
+          }"
         >
-          <div class="decklist-head">
+          <div class="decklist-head" :data-export-ignore="rightDeckMode === 'sample' ? 'true' : undefined">
             <div class="decklist-head__copy">
               <h3 class="panel-title">
                 {{ rightDeckMode === "cards" ? (isZhUi ? "卡片投入率" : "Card inclusion") : (isZhUi ? "最佳範例牌組" : "Best sample deck") }}
@@ -411,6 +414,7 @@
           <div
             v-if="rightDeckMode === 'sample' && rightAnalytics.sampleDeck"
             class="sample-deck-meta"
+            data-export-ignore="true"
           >
             <span class="sample-deck-meta__item mono">
               {{ rightAnalytics.sampleDeck.player }}
@@ -676,7 +680,7 @@
         :ref="(el) => setSampleDeckExportPanelRef(el, panel.key)"
         class="export-panel export-sample-panel"
       >
-        <div class="export-panel__head">
+        <div v-if="false" class="export-panel__head">
           <div>
             <span class="panel-kicker panel-kicker--visible mono">
               {{ isZhUi ? `TOP ${panel.index + 1} 牌組` : `TOP ${panel.index + 1} DECKLIST` }}
@@ -873,7 +877,8 @@ const DAY_MS = 24 * 60 * 60 * 1000;
 const PRESET_CURRENT_7 = "__current_7__";
 const PRESET_CURRENT_14 = "__current_14__";
 const MIN_SLOT_RATE_PCT = 10;
-const EXPORT_TOP_DECK_LIMIT = 15;
+const CREATOR_EXPORT_TIERS = ["SSS", "SS", "S", "A", "B", "C"] as const;
+const CREATOR_EXPORT_TIER_SET = new Set<string>(CREATOR_EXPORT_TIERS);
 const CREATOR_EXPORT_PIXEL_RATIO = 1.5;
 
 type LocaleCode = "zh" | "en";
@@ -1238,6 +1243,7 @@ async function downloadDeckPanelPng() {
       cacheBust: true,
       pixelRatio: 2,
       backgroundColor: "rgba(0,0,0,0)",
+      filter: (node) => !(node instanceof HTMLElement && node.dataset.exportIgnore === "true"),
     });
 
     const link = document.createElement("a");
@@ -1658,7 +1664,9 @@ const creatorPreviousTopDeckScope = computed(() => {
 });
 
 const creatorTopDeckRows = computed(() =>
-  (activeCreatorTopDeckScope.value?.rows ?? []).slice(0, EXPORT_TOP_DECK_LIMIT),
+  (activeCreatorTopDeckScope.value?.rows ?? []).filter((row) =>
+    CREATOR_EXPORT_TIER_SET.has(cleanDeckText(row.tier).toUpperCase()),
+  ),
 );
 
 const creatorDefaultDeckKey = computed(() => cleanDeckText(creatorTopDeckRows.value[0]?.key));
@@ -5080,7 +5088,21 @@ interface ExportZipFile {
   blob: Blob;
 }
 
-const exportTopDeckPanels = computed(() =>
+interface CreatorDeckExport {
+  key: string;
+  index: number;
+  row: PrecomputedTopDeckRow;
+  analytics: DeckProfileAnalytics;
+  groups: RightDeckPanelGroup[];
+  cards: RightDeckPanelCard[];
+  sampleCards: RightDeckPanelCard[];
+  sample: SampleDeckEntry | null;
+  displayName: string;
+  displayNameEn: string;
+  spriteUrls: string[];
+}
+
+const creatorDeckExports = computed<CreatorDeckExport[]>(() =>
   creatorTopDeckRows.value
     .map((row, index) => {
       const scope = findDeckProfileScopeFromPayload(creatorTopDeckProfiles.value.get(row.key) ?? null);
@@ -5089,14 +5111,17 @@ const exportTopDeckPanels = computed(() =>
       const analytics = hydratePrecomputedAnalytics(scope);
       const groups = buildCardPanelGroupsFromAnalytics(analytics);
       const cards = groups.flatMap((group) => group.cards);
-      if (cards.length === 0) return null;
+      const sampleCards = sampleDeckToPanelCards(analytics.sampleDeck);
 
       return {
         key: row.key || `top-${index + 1}`,
         index,
         row,
+        analytics,
         groups,
         cards,
+        sampleCards,
+        sample: analytics.sampleDeck,
         displayName:
           (routeLang.value === "zh"
             ? getLocalizedDeckName(row.rawName, row.iconKeys ?? [], "zh")
@@ -5117,6 +5142,10 @@ const exportTopDeckPanels = computed(() =>
       };
     })
     .filter((panel): panel is NonNullable<typeof panel> => panel !== null),
+);
+
+const exportTopDeckPanels = computed(() =>
+  creatorDeckExports.value.filter((panel) => panel.cards.length > 0),
 );
 
 function sampleDeckToPanelCards(sample: SampleDeckEntry | null): RightDeckPanelCard[] {
@@ -5148,41 +5177,12 @@ function sampleDeckToPanelCards(sample: SampleDeckEntry | null): RightDeckPanelC
 }
 
 const exportSampleDeckPanels = computed(() =>
-  creatorTopDeckRows.value
-    .map((row, index) => {
-      const scope = findDeckProfileScopeFromPayload(creatorTopDeckProfiles.value.get(row.key) ?? null);
-      if (!scope) return null;
-
-      const analytics = hydratePrecomputedAnalytics(scope);
-      const cards = sampleDeckToPanelCards(analytics.sampleDeck);
-      if (cards.length === 0) return null;
-
-      return {
-        key: row.key || `top-${index + 1}`,
-        index,
-        row,
-        cards,
-        sample: analytics.sampleDeck,
-        displayName:
-          (routeLang.value === "zh"
-            ? getLocalizedDeckName(row.rawName, row.iconKeys ?? [], "zh")
-            : "") ||
-          analytics.resolvedDeckDisplayName ||
-          row.rawName ||
-          defaultDeckLabelFromKey(row.key) ||
-          row.key,
-        displayNameEn:
-          analytics.resolvedDeckDisplayNameEn ||
-          getLocalizedDeckName(row.rawName, row.iconKeys ?? [], "en") ||
-          row.rawName ||
-          row.key,
-        spriteUrls:
-          analytics.targetSpriteUrls.length > 0
-            ? analytics.targetSpriteUrls
-            : resolveDeckSpriteUrlsFromIconKeys(row.iconKeys ?? parseTwoFromDeckId(row.key)),
-      };
-    })
-    .filter((panel): panel is NonNullable<typeof panel> => panel !== null),
+  creatorDeckExports.value
+    .filter((panel) => panel.sampleCards.length > 0)
+    .map((panel) => ({
+      ...panel,
+      cards: panel.sampleCards,
+    })),
 );
 
 function creatorDeckNameZh(row: PrecomputedTopDeckRow) {
@@ -5266,6 +5266,7 @@ function getTopDeckMatchup(sourceKey: string, targetKey: string) {
   };
 }
 
+/*
 const creatorReportHtml = computed(() => {
   const rows = creatorTopDeckRows.value;
   if (rows.length === 0) return "";
@@ -5388,6 +5389,354 @@ const creatorReportHtml = computed(() => {
 </html>`;
 });
 
+*/
+
+function csvCell(value: unknown) {
+  const text = cleanDeckText(value);
+  if (/[",\r\n]/.test(text)) {
+    return `"${text.replace(/"/g, '""')}"`;
+  }
+  return text;
+}
+
+function csvTable(headers: string[], rows: unknown[][]) {
+  return [
+    headers.map(csvCell).join(","),
+    ...rows.map((row) => row.map(csvCell).join(",")),
+  ].join("\r\n");
+}
+
+function createJsonZipFile(name: string, value: unknown): ExportZipFile {
+  return createTextZipFile(name, `${JSON.stringify(value, null, 2)}\n`, "application/json;charset=utf-8");
+}
+
+function creatorMatchupRowsForPanels(panels: CreatorDeckExport[]) {
+  const rows: Array<Record<string, unknown>> = [];
+
+  for (const source of panels) {
+    for (const target of panels) {
+      if (source.row.key === target.row.key) continue;
+      const matchup = getTopDeckMatchup(source.row.key, target.row.key);
+      rows.push({
+        sourceRank: creatorCurrentRank(source.row, source.index),
+        sourceKey: source.row.key,
+        sourceName: source.displayName,
+        targetRank: creatorCurrentRank(target.row, target.index),
+        targetKey: target.row.key,
+        targetName: target.displayName,
+        wins: matchup.wins,
+        losses: matchup.losses,
+        draws: matchup.ties,
+        total: matchup.total,
+        winRate: matchup.winRate,
+      });
+    }
+  }
+
+  return rows;
+}
+
+const creatorReportHtmlV2 = computed(() => {
+  const panels = creatorDeckExports.value;
+  if (panels.length === 0) return "";
+
+  const generatedAt = activeCreatorTopDeckScope.value
+    ? new Date(precomputedTopDecks.value?.generatedAtMs ?? Date.now()).toLocaleString("zh-HK")
+    : new Date().toLocaleString("zh-HK");
+
+  const summaryRows = panels
+    .map((panel) => {
+      const row = panel.row;
+      const analytics = panel.analytics;
+
+      return `
+        <tr>
+          <td class="rank">#${creatorCurrentRank(row, panel.index)}</td>
+          <td>${htmlEscape(creatorPreviousRank(row))}</td>
+          <td><span class="tier-pill">${htmlEscape(cleanDeckText(row.tier) || "-")}</span></td>
+          <td>${htmlEscape(panel.displayName)}</td>
+          <td>${htmlEscape(panel.displayNameEn)}</td>
+          <td>${formatPercentValue((row.topCutShare ?? 0) * 100)}</td>
+          <td>${formatPct(row.winRate)}</td>
+          <td>${htmlEscape(formatRecord(analytics.wins, analytics.losses, analytics.draws))}</td>
+          <td>${Number(row.selectedSamples ?? 0).toLocaleString()}</td>
+        </tr>`;
+    })
+    .join("");
+
+  const matchupHead = panels
+    .map((panel) => `<th><span>#${creatorCurrentRank(panel.row, panel.index)}</span><small>${htmlEscape(panel.displayNameEn || panel.displayName)}</small></th>`)
+    .join("");
+
+  const matchupRows = panels
+    .map((source) => {
+      const cells = panels
+        .map((target) => {
+          if (source.row.key === target.row.key) return `<td class="self">-</td>`;
+          const matchup = getTopDeckMatchup(source.row.key, target.row.key);
+          if (!matchup.total || matchup.winRate == null) {
+            return `<td><span class="muted">0-0-0</span><span class="muted">0 games</span></td>`;
+          }
+          return `<td><strong>${matchup.wins}-${matchup.losses}-${matchup.ties}</strong><span>${matchup.total} games / ${formatPct(matchup.winRate)}</span></td>`;
+        })
+        .join("");
+
+      return `
+        <tr>
+          <th class="row-head">
+            <span>#${creatorCurrentRank(source.row, source.index)}</span>
+            <strong>${htmlEscape(source.displayName)}</strong>
+            <small>${htmlEscape(source.displayNameEn)}</small>
+          </th>
+          ${cells}
+        </tr>`;
+    })
+    .join("");
+
+  const decklistSections = panels
+    .map((panel) => {
+      const cardRows = (panel.sample?.cards ?? [])
+        .map((card, index) => `
+          <tr>
+            <td>${index + 1}</td>
+            <td>${htmlEscape(card.name)}</td>
+            <td>${htmlEscape(card.code || `${card.set} ${card.number}`)}</td>
+            <td>${Number(card.count ?? 0)}</td>
+            <td>${htmlEscape(card.category)}</td>
+          </tr>`)
+        .join("");
+
+      return `
+        <section class="decklist-block">
+          <h3>#${creatorCurrentRank(panel.row, panel.index)} ${htmlEscape(panel.displayName)}</h3>
+          <p>${htmlEscape(panel.sample?.player ?? "")} ${htmlEscape(panel.sample?.placeLabel ?? "")} ${htmlEscape(panel.sample?.tournamentName ?? "")}</p>
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Card</th>
+                <th>Code</th>
+                <th>Count</th>
+                <th>Category</th>
+              </tr>
+            </thead>
+            <tbody>${cardRows || `<tr><td colspan="5" class="muted">No decklist data</td></tr>`}</tbody>
+          </table>
+        </section>`;
+    })
+    .join("");
+
+  return `<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Battle Tower Meta Creator Pack - S to C tiers</title>
+  <style>
+    :root { color-scheme: dark; font-family: Arial, "Microsoft JhengHei", sans-serif; background: #07131f; color: #eef6ff; }
+    body { margin: 0; padding: 32px; background: radial-gradient(circle at top left, #0b3340, #07131f 48%, #080d1a); }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    h2 { margin: 32px 0 12px; font-size: 20px; }
+    h3 { margin: 22px 0 8px; font-size: 16px; color: #fff; }
+    p { margin: 0 0 18px; color: #9fb4c7; }
+    table { width: 100%; border-collapse: collapse; background: rgba(9, 21, 36, 0.82); border: 1px solid rgba(125, 211, 252, 0.24); }
+    th, td { border: 1px solid rgba(148, 163, 184, 0.18); padding: 10px; vertical-align: middle; }
+    th { color: #bfe8ff; background: rgba(37, 99, 235, 0.12); text-align: left; }
+    td { color: #f8fbff; }
+    .rank { width: 52px; color: #7dd3fc; font-weight: 800; }
+    .tier-pill { display: inline-flex; align-items: center; justify-content: center; min-width: 40px; min-height: 26px; padding: 0 10px; border-radius: 999px; border: 1px solid rgba(251, 191, 36, 0.38); background: rgba(120, 79, 28, 0.48); color: #fff5d6; font-weight: 900; }
+    .matrix-wrap { overflow-x: auto; }
+    .matrix { min-width: 1280px; font-size: 12px; }
+    .matrix th span, .matrix td span { display: block; color: #9fb4c7; margin-top: 3px; }
+    .matrix td strong { display: block; white-space: nowrap; }
+    .matrix th small, .row-head small { display: block; color: #8aa1b5; font-weight: 500; line-height: 1.25; }
+    .row-head { min-width: 210px; }
+    .row-head span { color: #7dd3fc; }
+    .row-head strong { display: block; margin: 3px 0; color: #fff; }
+    .decklist-block { margin-top: 20px; }
+    .self, .muted { color: #6b7f92; }
+    strong { color: #fff; }
+  </style>
+</head>
+<body>
+  <h1>Battle Tower Meta S-C Creator Report</h1>
+  <p>Generated: ${htmlEscape(generatedAt)} / Scope: ${htmlEscape(leftPanelFilters.time)} / Top Cut ${htmlEscape(leftPanelFilters.topCut)} / Tiers: ${CREATOR_EXPORT_TIERS.join(", ")}</p>
+
+  <h2>Deck table data</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Previous</th>
+        <th>Tier</th>
+        <th>Name</th>
+        <th>English Name</th>
+        <th>Top Cut %</th>
+        <th>Win %</th>
+        <th>Record</th>
+        <th>Samples</th>
+      </tr>
+    </thead>
+    <tbody>${summaryRows}</tbody>
+  </table>
+
+  <h2>Head-to-head matchup win rates</h2>
+  <div class="matrix-wrap">
+    <table class="matrix">
+      <thead>
+        <tr>
+          <th>Deck</th>
+          ${matchupHead}
+        </tr>
+      </thead>
+      <tbody>${matchupRows}</tbody>
+    </table>
+  </div>
+
+  <h2>Decklists</h2>
+  ${decklistSections}
+</body>
+</html>`;
+});
+
+function buildCreatorDataZipFiles(): ExportZipFile[] {
+  const panels = creatorDeckExports.value;
+  if (panels.length === 0) return [];
+
+  const generatedAt = precomputedTopDecks.value?.generatedAt ?? new Date().toISOString();
+  const matchups = creatorMatchupRowsForPanels(panels);
+  const deckRows = panels.map((panel) => {
+    const row = panel.row;
+    const analytics = panel.analytics;
+    return {
+      rank: creatorCurrentRank(row, panel.index),
+      previousRank: creatorPreviousRank(row),
+      tier: cleanDeckText(row.tier),
+      key: row.key,
+      name: panel.displayName,
+      nameEn: panel.displayNameEn,
+      score: row.score,
+      topCutShare: row.topCutShare,
+      winRate: row.winRate,
+      record: {
+        wins: analytics.wins,
+        losses: analytics.losses,
+        draws: analytics.draws,
+        matches: analytics.matchCount,
+      },
+      samples: {
+        all: row.allSamples,
+        selected: row.selectedSamples,
+        baselineTop32: row.baselineTop32Samples,
+      },
+      top4Counts: analytics.top4Counts,
+      sampleDeck: panel.sample
+        ? {
+            player: panel.sample.player,
+            place: panel.sample.place,
+            placeLabel: panel.sample.placeLabel,
+            tournamentName: panel.sample.tournamentName,
+            dateLabel: panel.sample.dateLabel,
+            listUrl: panel.sample.listUrl,
+            cards: panel.sample.cards,
+          }
+        : null,
+      cardTable: analytics.cardsFlat,
+      bestFinishes: analytics.bestFinishes,
+    };
+  });
+
+  const deckCsv = csvTable(
+    ["rank", "previous_rank", "tier", "key", "name", "name_en", "score", "top_cut_share", "win_rate", "wins", "losses", "draws", "selected_samples"],
+    deckRows.map((deck) => [
+      deck.rank,
+      deck.previousRank,
+      deck.tier,
+      deck.key,
+      deck.name,
+      deck.nameEn,
+      deck.score,
+      deck.topCutShare,
+      deck.winRate ?? "",
+      deck.record.wins,
+      deck.record.losses,
+      deck.record.draws,
+      deck.samples.selected,
+    ]),
+  );
+
+  const decklistCsv = csvTable(
+    ["deck_rank", "deck_key", "deck_name", "card_index", "card_name", "card_code", "set", "number", "count", "category"],
+    panels.flatMap((panel) =>
+      (panel.sample?.cards ?? []).map((card, index) => [
+        creatorCurrentRank(panel.row, panel.index),
+        panel.row.key,
+        panel.displayName,
+        index + 1,
+        card.name,
+        card.code,
+        card.set,
+        card.number,
+        card.count,
+        card.category,
+      ]),
+    ),
+  );
+
+  const matchupsCsv = csvTable(
+    ["source_rank", "source_key", "source_name", "target_rank", "target_key", "target_name", "wins", "losses", "draws", "total", "win_rate"],
+    matchups.map((row) => [
+      row.sourceRank,
+      row.sourceKey,
+      row.sourceName,
+      row.targetRank,
+      row.targetKey,
+      row.targetName,
+      row.wins,
+      row.losses,
+      row.draws,
+      row.total,
+      row.winRate ?? "",
+    ]),
+  );
+
+  const bestFinishesCsv = csvTable(
+    ["deck_rank", "deck_key", "deck_name", "player", "place", "place_label", "tournament", "date", "players", "decklist_url"],
+    panels.flatMap((panel) =>
+      panel.analytics.bestFinishes.map((finish) => [
+        creatorCurrentRank(panel.row, panel.index),
+        panel.row.key,
+        panel.displayName,
+        finish.player,
+        finish.place,
+        finish.placeLabel,
+        finish.tournamentName,
+        finish.dateLabel,
+        finish.players ?? "",
+        finish.listUrl,
+      ]),
+    ),
+  );
+
+  return [
+    createJsonZipFile("data/decks.json", {
+      generatedAt,
+      filters: {
+        time: leftPanelFilters.time,
+        set: activeTopDeckSetValue(),
+        topCut: leftPanelFilters.topCut,
+        tiers: CREATOR_EXPORT_TIERS,
+      },
+      decks: deckRows,
+      matchups,
+    }),
+    createTextZipFile("data/decks.csv", `${deckCsv}\r\n`, "text/csv;charset=utf-8"),
+    createTextZipFile("data/decklists.csv", `${decklistCsv}\r\n`, "text/csv;charset=utf-8"),
+    createTextZipFile("data/matchups.csv", `${matchupsCsv}\r\n`, "text/csv;charset=utf-8"),
+    createTextZipFile("data/best-finishes.csv", `${bestFinishesCsv}\r\n`, "text/csv;charset=utf-8"),
+  ];
+}
+
 const creatorTopDeckProfilesReady = computed(() => {
   const rows = creatorTopDeckRows.value;
   return rows.length > 0 && rows.every((row) => creatorTopDeckProfiles.value.has(row.key));
@@ -5399,7 +5748,7 @@ const creatorPackAvailable = computed(() => {
   return (
     exportTopDeckPanels.value.length > 0 ||
     exportSampleDeckPanels.value.length > 0 ||
-    creatorReportHtml.value.length > 0
+    creatorReportHtmlV2.value.length > 0
   );
 });
 
@@ -5648,7 +5997,7 @@ async function downloadCreatorPack() {
     await nextTick();
     await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
 
-    const baseName = "battle-tower-meta-top-15";
+    const baseName = "battle-tower-meta-s-to-c";
     const downloads: Array<{ element: HTMLElement | null; fileName: string }> = [
       ...exportTopDeckPanels.value.map((panel) => ({
         element: topDeckExportPanelRefs.get(panel.key) ?? null,
@@ -5661,9 +6010,11 @@ async function downloadCreatorPack() {
     ];
     const files: ExportZipFile[] = [];
 
-    if (creatorReportHtml.value) {
-      files.push(createTextZipFile("index.html", creatorReportHtml.value));
+    if (creatorReportHtmlV2.value) {
+      files.push(createTextZipFile("index.html", creatorReportHtmlV2.value));
     }
+
+    files.push(...buildCreatorDataZipFiles());
 
     for (const item of downloads) {
       if (!item.element) continue;
@@ -5728,6 +6079,7 @@ async function downloadTransparentDeckPanel() {
       cacheBust: true,
       pixelRatio: 2,
       backgroundColor: "rgba(0,0,0,0)",
+      filter: (node) => !(node instanceof HTMLElement && node.dataset.exportIgnore === "true"),
     });
 
     const link = document.createElement("a");
@@ -8161,8 +8513,21 @@ function resetPage() {
   gap: 28px;
 }
 
+.decklist-shell--sample .cardsGrid--profile {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.export-sample-panel {
+  width: 1180px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
 .export-sample-grid {
-  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
   gap: 16px;
 }
 
