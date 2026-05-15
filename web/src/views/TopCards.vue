@@ -233,6 +233,7 @@
                       :aria-label="`2 copies ${formatPercentValue(card.twoCopyPct)}`"
                     >
                       <img class="topCardTile__copyIcon" :src="twoCopyDiskIcon" alt="" draggable="false" />
+                      <span class="topCardTile__copyDivider" aria-hidden="true"></span>
                       <strong class="topCardTile__copyValue mono">{{ formatPercentValue(card.twoCopyPct) }}</strong>
                     </span>
                     <span
@@ -240,6 +241,7 @@
                       :aria-label="`1 copy ${formatPercentValue(card.oneCopyPct)}`"
                     >
                       <img class="topCardTile__copyIcon" :src="oneCopyDiskIcon" alt="" draggable="false" />
+                      <span class="topCardTile__copyDivider" aria-hidden="true"></span>
                       <strong class="topCardTile__copyValue mono">{{ formatPercentValue(card.oneCopyPct) }}</strong>
                     </span>
                   </div>
@@ -1916,12 +1918,12 @@ onMounted(async () => {
   right: 0;
   bottom: 0;
   z-index: 2;
-  height: 50%;
+  height: 52%;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
   align-items: center;
-  gap: 7px;
-  padding: 8px 9px;
+  gap: 8px;
+  padding: 9px;
   border-radius: 0 0 14px 14px;
   border-top: 1px solid rgba(126, 200, 255, 0.22);
   background:
@@ -1979,9 +1981,9 @@ onMounted(async () => {
 
 .topCardTile__copyBreakdown {
   display: grid;
-  grid-template-rows: repeat(2, clamp(40px, 28%, 52px));
+  grid-template-rows: repeat(2, clamp(42px, 30%, 56px));
   align-content: center;
-  gap: 7px;
+  gap: 8px;
   height: 100%;
   min-width: 0;
   min-height: 0;
@@ -1989,50 +1991,71 @@ onMounted(async () => {
 
 .topCardTile__copyStat {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(22px, 0.76fr) 2px minmax(38px, 1.24fr);
   align-items: center;
-  justify-content: flex-end;
+  column-gap: 6px;
   min-height: 0;
-  padding: 4px 7px 4px 23px;
-  border-radius: 8px;
-  border: 1px solid rgba(115, 192, 255, 0.12);
+  padding: 4px 8px;
+  border-radius: 14px;
+  border: 2px solid rgba(39, 227, 255, 0.72);
   overflow: hidden;
   color: #eef7ff;
   line-height: 1;
+  background:
+    radial-gradient(circle at 18% 50%, rgba(35, 171, 255, 0.28), transparent 58%),
+    linear-gradient(180deg, rgba(6, 25, 55, 0.98), rgba(0, 9, 28, 0.98));
+  box-shadow:
+    0 0 13px rgba(21, 201, 255, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    inset 0 0 18px rgba(21, 201, 255, 0.1);
 }
 
 .topCardTile__copyStat--two {
-  border-color: rgba(255, 158, 90, 0.38);
+  border-color: rgba(43, 230, 255, 0.9);
   background:
-    linear-gradient(90deg, rgba(111, 58, 31, 0.9), rgba(55, 25, 15, 0.94)),
-    rgba(55, 25, 15, 0.9);
+    radial-gradient(circle at 17% 50%, rgba(45, 204, 255, 0.35), transparent 60%),
+    linear-gradient(180deg, rgba(7, 32, 70, 0.98), rgba(0, 10, 30, 0.98));
 }
 
 .topCardTile__copyStat--one {
-  border-color: rgba(96, 177, 255, 0.34);
+  border-color: rgba(95, 189, 255, 0.58);
   background:
-    linear-gradient(90deg, rgba(22, 86, 154, 0.86), rgba(8, 34, 64, 0.94)),
-    rgba(8, 34, 64, 0.9);
+    radial-gradient(circle at 17% 50%, rgba(84, 169, 255, 0.24), transparent 60%),
+    linear-gradient(180deg, rgba(5, 25, 55, 0.96), rgba(0, 9, 27, 0.98));
 }
 
 .topCardTile__copyIcon {
-  position: absolute;
-  left: 13px;
-  top: 50%;
-  z-index: 0;
+  position: relative;
+  z-index: 1;
   display: block;
-  width: 40px;
-  height: 24px;
+  width: 100%;
+  max-width: 50px;
+  height: 30px;
   object-fit: contain;
-  transform: translateY(-50%) scale(1.7);
+  justify-self: center;
+  transform: translateX(-1px) scale(2.7);
   transform-origin: center;
   pointer-events: none;
-  opacity: 0.92;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.42));
+  opacity: 0.95;
+  filter:
+    drop-shadow(0 0 7px rgba(34, 213, 255, 0.72))
+    drop-shadow(0 2px 4px rgba(0, 0, 0, 0.48));
 }
 
 .topCardTile__copyStat--one .topCardTile__copyIcon {
-  transform: translateY(-50%) scale(1.45);
+  transform: translateX(-1px) scale(2.42);
+}
+
+.topCardTile__copyDivider {
+  position: relative;
+  z-index: 1;
+  width: 2px;
+  height: 68%;
+  justify-self: center;
+  border-radius: 999px;
+  background: linear-gradient(180deg, transparent, rgba(36, 230, 255, 0.96), transparent);
+  box-shadow: 0 0 8px rgba(32, 219, 255, 0.84);
 }
 
 .topCardTile__copyValue {
@@ -2040,12 +2063,13 @@ onMounted(async () => {
   z-index: 1;
   min-width: 0;
   color: #fff;
-  font-size: 0.98rem;
+  font-size: 1.02rem;
   font-weight: 950;
   line-height: 1;
   letter-spacing: 0;
   white-space: nowrap;
   text-align: right;
+  justify-self: end;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -2313,13 +2337,20 @@ onMounted(async () => {
   }
 
   .topCardTile__copyStat {
-    padding: 3px 6px 3px 21px;
+    grid-template-columns: minmax(18px, 0.7fr) 2px minmax(34px, 1.3fr);
+    column-gap: 5px;
+    padding: 3px 6px;
+    border-radius: 12px;
   }
 
   .topCardTile__copyIcon {
-    left: 12px;
-    width: 36px;
-    height: 22px;
+    max-width: 40px;
+    height: 24px;
+    transform: translateX(-1px) scale(2.52);
+  }
+
+  .topCardTile__copyStat--one .topCardTile__copyIcon {
+    transform: translateX(-1px) scale(2.24);
   }
 
   .topCardTile__copyValue {
@@ -2364,13 +2395,25 @@ onMounted(async () => {
   }
 
   .topCardTile__copyStat {
-    padding: 3px 5px 3px 20px;
+    grid-template-columns: minmax(16px, 0.64fr) 2px minmax(32px, 1.36fr);
+    column-gap: 4px;
+    padding: 3px 5px;
+    border-width: 1px;
+    border-radius: 10px;
   }
 
   .topCardTile__copyIcon {
-    left: 11px;
-    width: 34px;
-    height: 20px;
+    max-width: 34px;
+    height: 22px;
+    transform: translateX(-1px) scale(2.34);
+  }
+
+  .topCardTile__copyStat--one .topCardTile__copyIcon {
+    transform: translateX(-1px) scale(2.04);
+  }
+
+  .topCardTile__copyDivider {
+    height: 62%;
   }
 
   .topCardTile__copyValue {

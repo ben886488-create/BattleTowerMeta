@@ -503,6 +503,7 @@
                             :aria-label="`2 copies ${formatPercentValue(card.twoCopyPct)}`"
                           >
                             <img class="profileCard__copyIcon" :src="twoCopyDiskIcon" alt="" draggable="false" />
+                            <span class="profileCard__copyDivider" aria-hidden="true"></span>
                             <strong class="profileCard__copyValue mono">{{ formatPercentValue(card.twoCopyPct) }}</strong>
                           </span>
                           <span
@@ -510,6 +511,7 @@
                             :aria-label="`1 copy ${formatPercentValue(card.oneCopyPct)}`"
                           >
                             <img class="profileCard__copyIcon" :src="oneCopyDiskIcon" alt="" draggable="false" />
+                            <span class="profileCard__copyDivider" aria-hidden="true"></span>
                             <strong class="profileCard__copyValue mono">{{ formatPercentValue(card.oneCopyPct) }}</strong>
                           </span>
                         </div>
@@ -556,9 +558,15 @@
                   <span
                     class="profileCard__rate mono"
                     :class="{ 'profileCard__rate--count': rightDeckMode === 'sample' }"
-                    :data-rate-label="card.badgeText"
                   >
-                    {{ rightDeckMode === "sample" ? "" : formatPercentValue(card.slotRatePct) }}
+                    <template v-if="rightDeckMode === 'sample'">
+                      <img class="profileCard__rateIcon" :src="twoCopyDiskIcon" alt="" draggable="false" />
+                      <span class="profileCard__rateDivider" aria-hidden="true"></span>
+                      <span class="profileCard__rateText">{{ card.badgeText }}</span>
+                    </template>
+                    <template v-else>
+                      {{ formatPercentValue(card.slotRatePct) }}
+                    </template>
                   </span>
 
                   
@@ -631,23 +639,28 @@
                   </div>
                 </div>
 
-                <div class="profileCard__stats">
-                  <div class="profileCard__statsTop">
-                    <span class="profileCard__statsLabel mono">{{ isZhUi ? "總投入" : "Total" }}</span>
-                    <strong class="profileCard__statsValue mono">{{ card.badgeText }}</strong>
+                <div
+                  class="profileCard__stats"
+                  :style="{
+                    '--one-rate': `${card.oneCopyPct}%`,
+                    '--two-rate': `${card.twoCopyPct}%`,
+                  }"
+                >
+                  <div class="profileCard__rateDial">
+                    <span class="profileCard__rateDialLabel">{{ isZhUi ? "投入率" : "Rate" }}</span>
+                    <strong class="profileCard__rateDialValue mono">{{ card.badgeText }}</strong>
                   </div>
-                  <div class="profileCard__mixBar" aria-hidden="true">
-                    <span class="profileCard__mixBarSegment profileCard__mixBarSegment--two" :style="{ width: `${card.twoCopyPct}%` }" />
-                    <span class="profileCard__mixBarSegment profileCard__mixBarSegment--one" :style="{ width: `${card.oneCopyPct}%` }" />
-                  </div>
+
                   <div class="profileCard__copyBreakdown">
                     <span class="profileCard__copyStat profileCard__copyStat--two">
-                      <span class="profileCard__copyStatKey mono">2x</span>
-                      <strong class="mono">{{ formatPercentValue(card.twoCopyPct) }}</strong>
+                      <img class="profileCard__copyIcon" :src="twoCopyDiskIcon" alt="" draggable="false" />
+                      <span class="profileCard__copyDivider" aria-hidden="true"></span>
+                      <strong class="profileCard__copyValue mono">{{ formatPercentValue(card.twoCopyPct) }}</strong>
                     </span>
                     <span class="profileCard__copyStat profileCard__copyStat--one">
-                      <span class="profileCard__copyStatKey mono">1x</span>
-                      <strong class="mono">{{ formatPercentValue(card.oneCopyPct) }}</strong>
+                      <img class="profileCard__copyIcon" :src="oneCopyDiskIcon" alt="" draggable="false" />
+                      <span class="profileCard__copyDivider" aria-hidden="true"></span>
+                      <strong class="profileCard__copyValue mono">{{ formatPercentValue(card.oneCopyPct) }}</strong>
                     </span>
                   </div>
                 </div>
@@ -704,7 +717,11 @@
               <div v-else class="profileCard__fallback">
                 <div class="profileCard__fallbackName">{{ card.name }}</div>
               </div>
-              <span class="profileCard__rate profileCard__rate--count mono" :data-rate-label="card.badgeText" />
+              <span class="profileCard__rate profileCard__rate--count mono">
+                <img class="profileCard__rateIcon" :src="twoCopyDiskIcon" alt="" draggable="false" />
+                <span class="profileCard__rateDivider" aria-hidden="true"></span>
+                <span class="profileCard__rateText">{{ card.badgeText }}</span>
+              </span>
             </div>
           </article>
         </div>
@@ -5848,9 +5865,7 @@ function resetPage() {
 }
 
 .mono {
-  font-family:
-    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-    "Courier New", monospace;
+  font-family: var(--font-num);
 }
 
 .hero-grid {
@@ -6975,12 +6990,12 @@ function resetPage() {
   right: 0;
   bottom: 0;
   z-index: 2;
-  height: 50%;
+  height: 53%;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
   align-items: center;
   gap: 7px;
-  padding: 8px 9px;
+  padding: 8px;
   border-radius: 0 0 12px 12px;
   border-top: 1px solid rgba(126, 200, 255, 0.22);
   background:
@@ -7041,7 +7056,7 @@ function resetPage() {
 
 .profileCard__copyBreakdown {
   display: grid;
-  grid-template-rows: repeat(2, clamp(40px, 28%, 52px));
+  grid-template-rows: repeat(2, clamp(40px, 30%, 54px));
   align-content: center;
   gap: 7px;
   height: 100%;
@@ -7051,50 +7066,71 @@ function resetPage() {
 
 .profileCard__copyStat {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(18px, 0.72fr) 2px minmax(36px, 1.28fr);
   align-items: center;
-  justify-content: flex-end;
+  column-gap: 5px;
   min-height: 0;
-  padding: 4px 7px 4px 23px;
-  border-radius: 8px;
-  border: 1px solid rgba(115, 192, 255, 0.12);
+  padding: 4px 7px;
+  border-radius: 13px;
+  border: 2px solid rgba(39, 227, 255, 0.7);
   overflow: hidden;
   color: #eef7ff;
   line-height: 1;
+  background:
+    radial-gradient(circle at 18% 50%, rgba(35, 171, 255, 0.28), transparent 58%),
+    linear-gradient(180deg, rgba(6, 25, 55, 0.98), rgba(0, 9, 28, 0.98));
+  box-shadow:
+    0 0 12px rgba(21, 201, 255, 0.26),
+    inset 0 1px 0 rgba(255, 255, 255, 0.16),
+    inset 0 0 18px rgba(21, 201, 255, 0.1);
 }
 
 .profileCard__copyStat--two {
-  border-color: rgba(255, 158, 90, 0.38);
+  border-color: rgba(43, 230, 255, 0.88);
   background:
-    linear-gradient(90deg, rgba(111, 58, 31, 0.9), rgba(55, 25, 15, 0.94)),
-    rgba(55, 25, 15, 0.9);
+    radial-gradient(circle at 17% 50%, rgba(45, 204, 255, 0.34), transparent 60%),
+    linear-gradient(180deg, rgba(7, 32, 70, 0.98), rgba(0, 10, 30, 0.98));
 }
 
 .profileCard__copyStat--one {
-  border-color: rgba(96, 177, 255, 0.34);
+  border-color: rgba(95, 189, 255, 0.58);
   background:
-    linear-gradient(90deg, rgba(22, 86, 154, 0.86), rgba(8, 34, 64, 0.94)),
-    rgba(8, 34, 64, 0.9);
+    radial-gradient(circle at 17% 50%, rgba(84, 169, 255, 0.24), transparent 60%),
+    linear-gradient(180deg, rgba(5, 25, 55, 0.96), rgba(0, 9, 27, 0.98));
 }
 
 .profileCard__copyIcon {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  z-index: 0;
+  position: relative;
+  z-index: 1;
   display: block;
-  width: 40px;
-  height: 24px;
+  width: 100%;
+  max-width: 44px;
+  height: 28px;
   object-fit: contain;
-  transform: translateY(-50%) scale(1.38);
+  justify-self: center;
+  transform: translateX(-1px) scale(2.55);
   transform-origin: center;
   pointer-events: none;
-  opacity: 0.92;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.42));
+  opacity: 0.95;
+  filter:
+    drop-shadow(0 0 7px rgba(34, 213, 255, 0.72))
+    drop-shadow(0 2px 4px rgba(0, 0, 0, 0.48));
 }
 
 .profileCard__copyStat--one .profileCard__copyIcon {
-  transform: translateY(-50%) scale(1.24);
+  transform: translateX(-1px) scale(2.24);
+}
+
+.profileCard__copyDivider {
+  position: relative;
+  z-index: 1;
+  width: 2px;
+  height: 66%;
+  justify-self: center;
+  border-radius: 999px;
+  background: linear-gradient(180deg, transparent, rgba(36, 230, 255, 0.96), transparent);
+  box-shadow: 0 0 8px rgba(32, 219, 255, 0.82);
 }
 
 .profileCard__copyValue {
@@ -7103,7 +7139,7 @@ function resetPage() {
   min-width: 0;
   justify-self: end;
   color: #fff;
-  font-size: 0.98rem;
+  font-size: 0.94rem;
   font-weight: 950;
   line-height: 1;
   letter-spacing: 0;
@@ -7207,17 +7243,24 @@ function resetPage() {
   }
 
   .profileCard__copyStat {
-    padding: 3px 6px 3px 21px;
+    grid-template-columns: minmax(16px, 0.68fr) 2px minmax(32px, 1.32fr);
+    column-gap: 4px;
+    padding: 3px 6px;
+    border-radius: 11px;
   }
 
   .profileCard__copyIcon {
-    left: 9px;
-    width: 36px;
-    height: 22px;
+    max-width: 36px;
+    height: 24px;
+    transform: translateX(-1px) scale(2.36);
+  }
+
+  .profileCard__copyStat--one .profileCard__copyIcon {
+    transform: translateX(-1px) scale(2.08);
   }
 
   .profileCard__copyValue {
-    font-size: 0.86rem;
+    font-size: 0.82rem;
   }
 
   .deck-actions {
@@ -7251,17 +7294,29 @@ function resetPage() {
   }
 
   .profileCard__copyStat {
-    padding: 3px 5px 3px 20px;
+    grid-template-columns: minmax(15px, 0.62fr) 2px minmax(31px, 1.38fr);
+    column-gap: 4px;
+    padding: 3px 5px;
+    border-width: 1px;
+    border-radius: 10px;
   }
 
   .profileCard__copyIcon {
-    left: 8px;
-    width: 34px;
-    height: 20px;
+    max-width: 32px;
+    height: 22px;
+    transform: translateX(-1px) scale(2.22);
+  }
+
+  .profileCard__copyStat--one .profileCard__copyIcon {
+    transform: translateX(-1px) scale(1.96);
+  }
+
+  .profileCard__copyDivider {
+    height: 60%;
   }
 
   .profileCard__copyValue {
-    font-size: 0.8rem;
+    font-size: 0.76rem;
   }
 }
 
@@ -7847,13 +7902,71 @@ function resetPage() {
   white-space: nowrap;
 }
 
-.profileCard__rate--count {
-  font-size: 0;
+.profileCard__rate.profileCard__rate--count {
+  container-type: inline-size;
+  bottom: 4%;
+  width: min(78%, 172px);
+  height: 33%;
+  min-width: 0;
+  min-height: 44px;
+  max-height: 76px;
+  padding: 5px 12px;
+  display: grid;
+  grid-template-columns: minmax(34px, 0.95fr) 2px minmax(42px, 0.95fr);
+  align-items: center;
+  column-gap: 10px;
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 22% 48%, rgba(39, 185, 255, 0.34), transparent 60%),
+    linear-gradient(180deg, rgba(6, 25, 57, 0.99), rgba(0, 8, 28, 0.99));
+  border: 3px solid rgba(45, 233, 255, 0.94);
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0;
+  box-shadow:
+    0 0 22px rgba(21, 201, 255, 0.46),
+    0 14px 22px rgba(0, 0, 0, 0.36),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 0 22px rgba(21, 201, 255, 0.12);
+  overflow: hidden;
 }
 
-.profileCard__rate--count::after {
-  content: attr(data-rate-label);
-  font-size: 0.96rem;
+.profileCard__rateIcon {
+  width: 100%;
+  max-width: 66px;
+  height: 82%;
+  object-fit: contain;
+  justify-self: center;
+  transform: translateX(-2px) scale(2.34);
+  transform-origin: center;
+  pointer-events: none;
+  filter:
+    drop-shadow(0 0 9px rgba(34, 213, 255, 0.9))
+    drop-shadow(0 3px 5px rgba(0, 0, 0, 0.5));
+}
+
+.profileCard__rateDivider {
+  width: 2px;
+  height: 74%;
+  justify-self: center;
+  border-radius: 999px;
+  background: linear-gradient(180deg, transparent, rgba(37, 231, 255, 1), transparent);
+  box-shadow: 0 0 10px rgba(34, 213, 255, 0.96);
+}
+
+.profileCard__rateText {
+  justify-self: end;
+  font-family: var(--font-num);
+  font-size: 2.8rem;
+  font-size: clamp(1.55rem, 42cqw, 3.15rem);
+  font-weight: 950;
+  line-height: 1;
+  letter-spacing: 0;
+  white-space: nowrap;
+  text-transform: lowercase;
+  text-shadow:
+    0 0 8px rgba(125, 224, 255, 0.28),
+    0 3px 6px rgba(0, 0, 0, 0.48);
 }
 
 .cards-empty__copy {

@@ -2100,11 +2100,9 @@ async function recomputeTierRows() {
 
 async function recomputeHeatmapForTopCut() {
   const token = ++recomputeToken.heat;
-  const keys = matrixAxisRows.value.filter((row): row is TierRow => row !== null).map((row) => row.deck);
-  const keySet = new Set(keys);
   const precomputedScope = activePrecomputedTierScope.value;
 
-  if (!keys.length) {
+  if (!matrixAxisRows.value.some((row) => row !== null)) {
     matchupMap.value = new Map();
     return;
   }
@@ -2112,7 +2110,6 @@ async function recomputeHeatmapForTopCut() {
   if (precomputedScope) {
     const map = new Map<string, MatchupRecord>();
     for (const item of precomputedScope.matchups ?? []) {
-      if (!keySet.has(item.deckA) || !keySet.has(item.deckB)) continue;
       map.set(`${item.deckA}__${item.deckB}`, {
         deckA: item.deckA,
         deckB: item.deckB,
@@ -2154,7 +2151,7 @@ async function recomputeHeatmapForTopCut() {
       const deck1 = side1.deck.key;
       const deck2 = side2.deck.key;
 
-      if (keySet.has(deck1) && keySet.has(deck2) && qualifiesByTopCut(side1.place, filters.topCut)) {
+      if (qualifiesByTopCut(side1.place, filters.topCut)) {
         const key = `${deck1}__${deck2}`;
         const rec = pairMap.get(key) ?? { wins: 0, losses: 0, ties: 0 };
         if (result.p1 === 1) rec.wins += 1;
@@ -2163,7 +2160,7 @@ async function recomputeHeatmapForTopCut() {
         pairMap.set(key, rec);
       }
 
-      if (keySet.has(deck2) && keySet.has(deck1) && qualifiesByTopCut(side2.place, filters.topCut)) {
+      if (qualifiesByTopCut(side2.place, filters.topCut)) {
         const key = `${deck2}__${deck1}`;
         const rec = pairMap.get(key) ?? { wins: 0, losses: 0, ties: 0 };
         if (result.p2 === 1) rec.wins += 1;
@@ -2272,15 +2269,6 @@ watch(
     if (matrixExtraDeck.value && !matrixOptionRows.value.some((row) => row.deck === matrixExtraDeck.value)) {
       matrixExtraDeck.value = "";
     }
-  },
-);
-
-watch(
-  () => matrixExtraDeck.value,
-  async () => {
-    heatLoading.value = true;
-    await recomputeHeatmapForTopCut();
-    heatLoading.value = false;
   },
 );
 

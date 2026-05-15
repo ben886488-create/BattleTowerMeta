@@ -2214,15 +2214,7 @@ onMounted(() => {
 
 .mono {
   font-variant-numeric: tabular-nums;
-  font-family:
-    ui-monospace,
-    SFMono-Regular,
-    Menlo,
-    Monaco,
-    Consolas,
-    "Liberation Mono",
-    "Courier New",
-    monospace;
+  font-family: var(--font-num);
 }
 
 @media (max-width: 1080px) {

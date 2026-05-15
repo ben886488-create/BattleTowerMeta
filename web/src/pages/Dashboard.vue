@@ -137,5 +137,5 @@ onMounted(async () => {
 th, td{ padding: 10px 12px; border-bottom: 1px solid var(--border); text-align:left; }
 thead th{ position: sticky; top: 0; background: rgba(7,21,33,.96); }
 tbody tr:hover{ background: rgba(0,175,239,.06); }
-.mono{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+.mono{ font-family: var(--font-num); font-variant-numeric: tabular-nums; }
 </style>

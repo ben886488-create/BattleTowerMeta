@@ -1345,7 +1345,8 @@ td {
 }
 
 .mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-num);
+  font-variant-numeric: tabular-nums;
 }
 
 .num {
