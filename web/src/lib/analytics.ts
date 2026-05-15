@@ -35,12 +35,19 @@ function ensureGtag(measurement: string) {
   }
 
   if (!window.gtag) {
-    window.gtag = function gtag(command, target, params) {
-      window.dataLayer?.push([command, target, params]);
-    };
+    window.gtag = function gtag() {
+      window.dataLayer?.push(arguments);
+    } as GtagFunction;
   }
 
-  if (document.querySelector(`script[data-ga4-id="${measurement}"]`)) {
+  const hasScript = Array.from(document.scripts).some(
+    (script) =>
+      script.dataset.ga4Id === measurement ||
+      (script.src.includes("googletagmanager.com/gtag/js") &&
+        script.src.includes(`id=${measurement}`)),
+  );
+
+  if (hasScript) {
     return;
   }
 
@@ -86,12 +93,12 @@ export function initGoogleAnalytics(router: Router) {
       trackPageView(router.currentRoute.value.fullPath);
       trackedInitialPage = true;
     }
-  });
 
-  router.afterEach((to) => {
-    window.setTimeout(() => {
-      trackPageView(to.fullPath);
-    }, 0);
+    router.afterEach((to) => {
+      window.setTimeout(() => {
+        trackPageView(to.fullPath);
+      }, 0);
+    });
   });
 }
 
