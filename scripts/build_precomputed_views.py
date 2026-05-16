@@ -17,6 +17,7 @@ DAY_MS = 24 * 60 * 60 * 1000
 TOP_CUTS = ["all", "64", "32", "16", "8", "4", "2", "1"]
 PROFILE_DECK_LIMIT = int(os.environ.get("PROFILE_DECK_LIMIT", "40"))
 MIN_SLOT_RATE_PCT = 10
+EXPORT_MATCHUP_TIERS = {"SSS", "SS", "S", "A", "B", "C"}
 
 CARD_CATALOG_BY_CODE = {}
 CARD_CATALOG_BY_NAME = {}
@@ -719,7 +720,11 @@ def build_top_decks_scope(tournaments, top_cut):
         row["baseRank"] = index + 1
         row["tier"] = resolve_deck_tier(row["score"], row["score"] - next_score, index == 0)
 
-    top_matrix_keys = {row["key"] for row in rows[:15]}
+    top_matrix_keys = {
+        row["key"]
+        for row in rows
+        if str(row.get("tier", "")).upper() in EXPORT_MATCHUP_TIERS
+    }
     matchups = []
     for (deck_a, deck_b), rec in pair_map.items():
         if deck_a not in top_matrix_keys or deck_b not in top_matrix_keys:
