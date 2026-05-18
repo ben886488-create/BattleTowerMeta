@@ -584,7 +584,7 @@
 
     <div v-if="exportStageActive" class="export-stage" aria-hidden="true">
       <section
-        v-for="panel in exportTopDeckPanels"
+        v-for="panel in exportRenderedTopDeckPanels"
         :key="`export-card-panel-${panel.key}`"
         :ref="(el) => setTopDeckExportPanelRef(el, panel.key)"
         class="export-panel export-card-panel"
@@ -1081,11 +1081,13 @@ interface RightDeckPanelGroup {
 
 type FinishSortKey = "player" | "tournamentName" | "dateMs" | "place";
 type RightDeckMode = "cards" | "sample";
+type CreatorPackAssetMode = "all" | "decklists";
 
 interface Props {
   deck?: AnyRecord | null;
   deckKey?: string;
   autoDownloadCreatorPack?: boolean;
+  creatorPackAssetMode?: CreatorPackAssetMode;
   tournaments?: AnyRecord[];
   filteredTournaments?: AnyRecord[];
   loadedFilteredTournamentCount?: number;
@@ -1099,6 +1101,7 @@ const props = withDefaults(defineProps<Props>(), {
   deck: null,
   deckKey: "",
   autoDownloadCreatorPack: false,
+  creatorPackAssetMode: "all",
   tournaments: () => [],
   filteredTournaments: () => [],
   loadedFilteredTournamentCount: 0,
@@ -5148,6 +5151,10 @@ const exportTopDeckPanels = computed(() =>
   creatorDeckExports.value.filter((panel) => panel.cards.length > 0),
 );
 
+const exportRenderedTopDeckPanels = computed(() =>
+  props.creatorPackAssetMode === "decklists" ? [] : exportTopDeckPanels.value,
+);
+
 function sampleDeckToPanelCards(sample: SampleDeckEntry | null): RightDeckPanelCard[] {
   if (!sample) return [];
 
@@ -5745,9 +5752,12 @@ const creatorTopDeckProfilesReady = computed(() => {
 const creatorPackAvailable = computed(() => {
   if (!creatorTopDeckProfilesReady.value) return false;
 
+  const hasDecklistPanels = exportSampleDeckPanels.value.length > 0;
+  const hasCardRatePanels = exportRenderedTopDeckPanels.value.length > 0;
+
   return (
-    exportTopDeckPanels.value.length > 0 ||
-    exportSampleDeckPanels.value.length > 0 ||
+    hasCardRatePanels ||
+    hasDecklistPanels ||
     creatorReportHtmlV2.value.length > 0
   );
 });
@@ -5806,8 +5816,13 @@ function triggerBlobDownload(blob: Blob, fileName: string) {
   const url = URL.createObjectURL(blob);
   link.href = url;
   link.download = fileName;
+  link.style.display = "none";
+  document.body.appendChild(link);
   link.click();
-  window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+  window.setTimeout(() => {
+    URL.revokeObjectURL(url);
+    link.remove();
+  }, 1000);
 }
 
 function zipSafePngPath(value: string) {
@@ -5997,12 +6012,18 @@ async function downloadCreatorPack() {
     await nextTick();
     await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
 
-    const baseName = "battle-tower-meta-s-to-c";
+    const includeCardRatePanels = props.creatorPackAssetMode !== "decklists";
+    const baseName =
+      props.creatorPackAssetMode === "decklists"
+        ? "battle-tower-meta-s-to-c-decklists"
+        : "battle-tower-meta-s-to-c";
     const downloads: Array<{ element: HTMLElement | null; fileName: string }> = [
-      ...exportTopDeckPanels.value.map((panel) => ({
-        element: topDeckExportPanelRefs.get(panel.key) ?? null,
-        fileName: `card-rates/top-${String(panel.index + 1).padStart(2, "0")}-${panel.displayNameEn || panel.displayName}-card-rates`,
-      })),
+      ...(includeCardRatePanels
+        ? exportRenderedTopDeckPanels.value.map((panel) => ({
+            element: topDeckExportPanelRefs.get(panel.key) ?? null,
+            fileName: `card-rates/top-${String(panel.index + 1).padStart(2, "0")}-${panel.displayNameEn || panel.displayName}-card-rates`,
+          }))
+        : []),
       ...exportSampleDeckPanels.value.map((panel) => ({
         element: sampleDeckExportPanelRefs.get(panel.key) ?? null,
         fileName: `decklists/top-${String(panel.index + 1).padStart(2, "0")}-${panel.displayNameEn || panel.displayName}-decklist`,
