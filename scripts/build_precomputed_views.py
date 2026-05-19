@@ -1463,6 +1463,7 @@ def build_top_decks_payload(tournaments):
     current = infer_version(GENERATED_AT_MS)
     current_code = current["code"] if current else ""
     scope_filters = [
+        ("all", current_code),
         ("past7", current_code),
         ("past7", ""),
         ("prev7", current_code),
