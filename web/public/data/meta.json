@@ -1,30 +1,42 @@
 {
-  "generated_at": "2026-05-19T23:01:58.818224Z",
+  "generated_at": "2026-05-20T03:25:17.464504Z",
   "days_back": 30,
   "min_players": 64,
   "usage_threshold": 0.01,
   "top_cut_n": 32,
-  "tournaments_count": 1448,
-  "total_entries_all": 300467,
-  "top32_total_slots": 44869,
+  "tournaments_count": 1447,
+  "total_entries_all": 300401,
+  "top32_total_slots": 44852,
   "weights": {
-    "data1": 0.4,
-    "data2": 0.5,
-    "data3": 0.1
+    "data1": 0.34,
+    "data2": 0.425,
+    "data3": 0.085,
+    "data4_ema": 0.15
+  },
+  "ema": {
+    "half_life_days": 7.0,
+    "signal": "daily 0.4*log1p(top32 appearances)+0.5*log1p(weighted points)+0.1*log1p(top32 share pct)"
   },
   "tier_thresholds": {
-    "SSS": "score=1.0 and no second deck score>=0.9",
-    "SS": "score=1.0",
-    "S": 0.9,
-    "A": 0.8,
-    "B": 0.7,
-    "C": 0.5,
-    "D": 0.3,
-    "E": 0.1,
-    "F": "<0.1 or top32_share_pct<0.5"
+    "SSS": "leader score >0.9 and lead over #2 >0.10",
+    "SS": "leader score >0.9 and lead over #2 >0.05",
+    "S": ">0.90",
+    "A": ">0.80 and <=0.90",
+    "B": ">0.70 and <=0.80",
+    "C": ">0.50 and <=0.70",
+    "D": ">0.30 and <=0.50",
+    "E": ">0.10 and <=0.30",
+    "F": "<=0.10 or top32_share_pct<0.5"
   },
   "min_top32_share_pct_for_tiering": 0.5,
   "missing_tournament_ids": [],
-  "invalid_tournament_ids": [],
-  "invalid_tournament_details": []
+  "invalid_tournament_ids": [
+    "6a021c2313f957d6d4b45d8b"
+  ],
+  "invalid_tournament_details": [
+    {
+      "id": "6a021c2313f957d6d4b45d8b",
+      "reason": "manualExclude=special rules tournament listed as standard format"
+    }
+  ]
 }
