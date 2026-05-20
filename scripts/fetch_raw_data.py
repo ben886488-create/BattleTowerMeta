@@ -16,6 +16,9 @@ BATCH_SIZE = 10
 BATCH_SLEEP_SEC = 5.0
 MAX_RETRIES = int(os.environ.get("MAX_RETRIES", 8))
 REQUEST_TIMEOUT = 120.0
+MANUAL_EXCLUDED_TOURNAMENTS = {
+    "6a021c2313f957d6d4b45d8b": "special rules tournament listed as standard format",
+}
 
 # 全局变量
 _last_request_ts = 0.0
@@ -84,6 +87,16 @@ def iso_to_date(iso_str):
         return None
     return datetime.datetime.fromisoformat(iso_str.replace("Z", "+00:00")).date()
 
+def manual_exclusion_reason(summary=None, details=None):
+    tid = str(
+        ((summary or {}).get("id"))
+        or ((details or {}).get("id"))
+        or ""
+    ).strip()
+    if not tid:
+        return None
+    return MANUAL_EXCLUDED_TOURNAMENTS.get(tid)
+
 def fetch_recent_tournaments():
     """抓取赛事列表（支持不限天数/指定天数两种模式）"""
     out = []
@@ -109,6 +122,11 @@ def fetch_recent_tournaments():
             t_id = t.get("id", "未知ID")
             t_players = t.get("players", 0)
             t_date = iso_to_date(t["date"])
+
+            manual_reason = manual_exclusion_reason(t)
+            if manual_reason:
+                print(f"  ❌ 赛事{t_id} | 手動排除：{manual_reason}")
+                continue
             
             if t_players < MIN_PLAYERS:
                 print(f"  ❌ 赛事{t_id} | 参与人数{t_players} < {MIN_PLAYERS}，跳过")
@@ -150,6 +168,10 @@ def has_banned_cards(details):
     return isinstance(banned_cards, list) and len(banned_cards) > 0
 
 def validate_tournament(summary, details):
+    manual_reason = manual_exclusion_reason(summary, details)
+    if manual_reason:
+        return False, f"manualExclude={manual_reason}"
+
     game = str(
         (details or {}).get("game")
         or (summary or {}).get("game", "")

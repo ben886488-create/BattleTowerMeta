@@ -7,6 +7,9 @@ USAGE_THRESHOLD = float(os.environ.get("USAGE_THRESHOLD", "0.01"))
 TOP_CUT_N = int(os.environ.get("TOP_CUT_N", "32"))
 W1, W2, W3, W4 = 0.34, 0.425, 0.085, 0.15  # Top32、名次分、占比、EMA趋势
 EMA_HALF_LIFE_DAYS = float(os.environ.get("TIER_EMA_HALF_LIFE_DAYS", "7"))
+MANUAL_EXCLUDED_TOURNAMENTS = {
+    "6a021c2313f957d6d4b45d8b": "special rules tournament listed as standard format",
+}
 
 # ===================== 公共工具函数 =====================
 def write_json(path, obj):
@@ -34,6 +37,16 @@ def normalize_details_format(raw):
         return "SPECIAL"
     return s
 
+def manual_exclusion_reason(summary=None, details=None):
+    tid = str(
+        ((summary or {}).get("id"))
+        or ((details or {}).get("id"))
+        or ""
+    ).strip()
+    if not tid:
+        return None
+    return MANUAL_EXCLUDED_TOURNAMENTS.get(tid)
+
 def get_phase1(details):
     phases = (details or {}).get("phases")
     if not isinstance(phases, list) or not phases:
@@ -47,6 +60,10 @@ def has_banned_cards(details):
 def validate_tournament(summary, details):
     summary = summary or {}
     details = details or {}
+
+    manual_reason = manual_exclusion_reason(summary, details)
+    if manual_reason:
+        return False, f"manualExclude={manual_reason}"
 
     game = str(details.get("game") or summary.get("game") or "").upper()
     if game != "POCKET":
@@ -306,6 +323,13 @@ def main():
     for idx, t in enumerate(original_tournaments):
         tid = t["id"]
         print(f"正在统计第 {idx+1}/{len(original_tournaments)} 场赛事，ID: {tid}")
+
+        manual_reason = manual_exclusion_reason(t)
+        if manual_reason:
+            print(f"跳過手動排除賽事：{tid} | {manual_reason}")
+            invalid_tournament_ids.append(tid)
+            invalid_tournament_details.append({"id": tid, "reason": f"manualExclude={manual_reason}"})
+            continue
         
         # 读取本地raw文件夹中的数据
         try:
