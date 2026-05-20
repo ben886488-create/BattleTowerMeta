@@ -343,7 +343,12 @@ import {
 } from "vue";
 import { useRoute } from "vue-router";
 import { getLocalizedDeckName, getLocalizedDeckNameFromIconKeys } from "../assets/pokemonNames";
-import { resolveDeckTier } from "../lib/deckTier";
+import {
+  buildTierEmaScores,
+  calculateTierScore,
+  resolveDeckTier,
+  type TierEmaInput,
+} from "../lib/deckTier";
 import {
   buildStandingLookup,
   lookupStandingForPairingSide,
@@ -422,6 +427,7 @@ interface MutableDeckAggregate {
   allSamples: number;
   baselineTop32Samples: number;
   weightedPoints: number;
+  emaScore?: number;
   selectedSamples: number;
   selectedMatchPoints: number;
   selectedGames: number;
@@ -438,6 +444,7 @@ interface DeckRow {
   allSamples: number;
   baselineTop32Samples: number;
   weightedPoints: number;
+  emaScore?: number;
   baselineTop32SharePct: number;
 
   selectedSamples: number;
@@ -535,7 +542,7 @@ const messages = {
     noTournaments: "No tournaments match your filters.",
     noDecks: "No decks found for the current filters.",
     allDataScope: "All data",
-    noteBody: "Tier rules: <=0.10 F, <=0.30 E, <=0.50 D, <=0.70 C, <=0.80 B, <=0.90 A, >0.90 S. Only the #1 S-tier deck can be promoted: a >0.05 lead over #2 becomes SS, and >0.10 becomes SSS.",
+    noteBody: "Tier score now blends Top 32 count, weighted placing points, Top 32 share, and a 7-day half-life EMA trend. Thresholds remain <=0.10 F, <=0.30 E, <=0.50 D, <=0.70 C, <=0.80 B, <=0.90 A, >0.90 S; only #1 can promote to SS/SSS by score gap.",
     summaryLabel: "{decks} decks / {tournaments} tournaments",
     summaryLabelEstimated: "{loadedDecks} loaded / ~{estimatedDecks} decks / {tournaments} tournaments",
     loadTournamentsFailed: "Failed to load tournaments: {message}",
@@ -592,7 +599,7 @@ const messages = {
     noTournaments: "\u6c92\u6709\u7b26\u5408\u76ee\u524d\u7be9\u9078\u689d\u4ef6\u7684\u8cfd\u4e8b\u3002",
     noDecks: "\u76ee\u524d\u7be9\u9078\u689d\u4ef6\u4e0b\u6c92\u6709\u724c\u7d44\u8cc7\u6599\u3002",
     allDataScope: "\u5168\u90e8\u8cc7\u6599",
-    noteBody: "\u8a55\u7d1a\u898f\u5247\uff1a<=0.10 \u70ba F\u3001<=0.30 \u70ba E\u3001<=0.50 \u70ba D\u3001<=0.70 \u70ba C\u3001<=0.80 \u70ba B\u3001<=0.90 \u70ba A\u3001>0.90 \u70ba S\uff1b\u53ea\u6709\u699c\u9996\u7684 S \u7d1a\u724c\u7d44\u6703\u518d\u5347\u7d1a\uff0c\u8207\u7b2c 2 \u540d\u5206\u5dee >0.05 \u70ba SS\uff0c>0.10 \u70ba SSS\u3002",
+    noteBody: "評級分數現在由 Top32 次數、加權名次分、Top32 占比，加上 7 天半衰期 EMA 趨勢組成。門檻維持 <=0.10 F、<=0.30 E、<=0.50 D、<=0.70 C、<=0.80 B、<=0.90 A、>0.90 S；只有第 1 名會依分差升為 SS/SSS。",
     summaryLabel: "{decks} \u526f\u724c\u7d44 / {tournaments} \u5834\u8cfd\u4e8b",
     summaryLabelEstimated: "\u5df2\u8f09\u5165 {loadedDecks} / \u9810\u4f30 {estimatedDecks} \u526f\u724c\u7d44 / {tournaments} \u5834\u8cfd\u4e8b",
     loadTournamentsFailed: "\u8f09\u5165\u8cfd\u4e8b\u5931\u6557\uff1a{message}",
@@ -660,6 +667,11 @@ const currentDeckPage = ref(1);
 function parseMs(value: unknown): number {
   const ms = Date.parse(String(value ?? ""));
   return Number.isFinite(ms) ? ms : NaN;
+}
+
+function startOfUtcDayMs(ms: number) {
+  const d = new Date(ms);
+  return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate(), 0, 0, 0, 0);
 }
 
 function inferVersionByStartMs(ms: number): VersionWindow | null {
@@ -1395,6 +1407,7 @@ const aggregated = computed(() => {
   }
 
   const map = new Map<string, MutableDeckAggregate>();
+  const emaRecords: TierEmaInput[] = [];
 
   let totalAllSamples = 0;
   let totalBaselineTop32Samples = 0;
@@ -1450,7 +1463,14 @@ const aggregated = computed(() => {
       if (place != null && place <= 32) {
         hit.baselineTop32Samples += 1;
         totalBaselineTop32Samples += 1;
-        hit.weightedPoints += pointsForPlace(place);
+        const weightedPoints = pointsForPlace(place);
+        hit.weightedPoints += weightedPoints;
+        emaRecords.push({
+          dayMs: startOfUtcDayMs(tournament.startMs),
+          deckKey: deck.key,
+          top32Count: 1,
+          weightedPoints,
+        });
       }
 
       hit.selectedSamples += 1;
@@ -1505,6 +1525,7 @@ const aggregated = computed(() => {
         ? (item.baselineTop32Samples / totalBaselineTop32Samples) * 100
         : 0;
   }
+  const data4 = buildTierEmaScores(map.keys(), emaRecords);
 
   const log1 = mapNumberRecord(data1, (value) => Math.log1p(value));
   const log2 = mapNumberRecord(data2, (value) => Math.log1p(value));
@@ -1513,6 +1534,7 @@ const aggregated = computed(() => {
   const std1 = minmaxScale(log1);
   const std2 = minmaxScale(log2);
   const std3 = minmaxScale(log3);
+  const std4 = minmaxScale(data4);
 
   const rows: DeckRow[] = Array.from(map.values())
     .map((item) => {
@@ -1532,10 +1554,12 @@ const aggregated = computed(() => {
       
       const baselineTop32SharePct = data3[item.key] ?? 0;
 
-      const score =
-        0.4 * (std1[item.key] ?? 0) +
-        0.5 * (std2[item.key] ?? 0) +
-        0.1 * (std3[item.key] ?? 0);
+      const score = calculateTierScore({
+        top32: std1[item.key] ?? 0,
+        weightedPoints: std2[item.key] ?? 0,
+        top32Share: std3[item.key] ?? 0,
+        emaTrend: std4[item.key] ?? 0,
+      });
 
       const englishName = buildPreferredDeckName(item.iconKeys, item.rawName, item.key, "en");
       const chineseName = buildPreferredDeckName(item.iconKeys, item.rawName, item.key, "zh");
@@ -1553,6 +1577,7 @@ const aggregated = computed(() => {
         allSamples: item.allSamples,
         baselineTop32Samples: item.baselineTop32Samples,
         weightedPoints: item.weightedPoints,
+        emaScore: data4[item.key] ?? 0,
 
         selectedSamples: item.selectedSamples,
         topCutShare,

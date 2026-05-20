@@ -5,7 +5,8 @@ from urllib.parse import quote
 MIN_PLAYERS = int(os.environ.get("MIN_PLAYERS", "32"))
 USAGE_THRESHOLD = float(os.environ.get("USAGE_THRESHOLD", "0.01"))
 TOP_CUT_N = int(os.environ.get("TOP_CUT_N", "32"))
-W1, W2, W3 = 0.4, 0.5, 0.1  # 加权系数
+W1, W2, W3, W4 = 0.34, 0.425, 0.085, 0.15  # Top32、名次分、占比、EMA趋势
+EMA_HALF_LIFE_DAYS = float(os.environ.get("TIER_EMA_HALF_LIFE_DAYS", "7"))
 
 # ===================== 公共工具函数 =====================
 def write_json(path, obj):
@@ -174,31 +175,101 @@ def minmax_scale(data):
         return {k: 0.0 for k in data.keys()}
     return {k: (v - min_val) / (max_val - min_val) for k, v in data.items()}
 
-def is_perfect_score(score, eps=1e-9):
-    return abs(score - 1.0) < eps
+def parse_tournament_day(summary, details):
+    raw = (details or {}).get("date") or (summary or {}).get("date")
+    if raw in (None, ""):
+        return None
 
-def tier_label(score, top32_share_pct, has_another_deck_score_ge_09):
+    try:
+        if isinstance(raw, (int, float)):
+            value = datetime.datetime.fromtimestamp(float(raw) / 1000, tz=datetime.UTC)
+        else:
+            text = str(raw).strip()
+            if not text:
+                return None
+            if text.endswith("Z"):
+                text = f"{text[:-1]}+00:00"
+            value = datetime.datetime.fromisoformat(text)
+            if value.tzinfo is None:
+                value = value.replace(tzinfo=datetime.UTC)
+            else:
+                value = value.astimezone(datetime.UTC)
+    except (TypeError, ValueError, OSError):
+        return None
+
+    return value.date().isoformat()
+
+def build_daily_ema_signal(top32_count, weighted_points, top32_share_pct):
+    return (
+        0.4 * math.log1p(max(0.0, float(top32_count or 0)))
+        + 0.5 * math.log1p(max(0.0, float(weighted_points or 0)))
+        + 0.1 * math.log1p(max(0.0, float(top32_share_pct or 0)))
+    )
+
+def build_ema_scores(daily_top32_counts, daily_weighted_points, daily_top32_slots, deck_keys):
+    keys = [key for key in deck_keys if key]
+    ema = {key: 0.0 for key in keys}
+    days = sorted(set(daily_top32_counts.keys()) | set(daily_weighted_points.keys()))
+    if not keys or not days:
+        return ema
+
+    half_life_days = EMA_HALF_LIFE_DAYS if math.isfinite(EMA_HALF_LIFE_DAYS) and EMA_HALF_LIFE_DAYS > 0 else 7.0
+    previous_date = None
+
+    for day in days:
+        try:
+            current_date = datetime.date.fromisoformat(day)
+        except ValueError:
+            continue
+
+        if previous_date is None:
+            alpha = 1.0
+        else:
+            delta_days = max(1, (current_date - previous_date).days)
+            alpha = 1 - math.pow(0.5, delta_days / half_life_days)
+
+        count_map = daily_top32_counts.get(day, {})
+        points_map = daily_weighted_points.get(day, {})
+        total_slots = daily_top32_slots.get(day, 0.0)
+
+        for deck in keys:
+            top32_count = count_map.get(deck, 0.0)
+            weighted_points = points_map.get(deck, 0.0)
+            share_pct = (top32_count / total_slots) * 100.0 if total_slots > 0 else 0.0
+            signal = build_daily_ema_signal(top32_count, weighted_points, share_pct)
+            ema[deck] = signal if previous_date is None else alpha * signal + (1 - alpha) * ema[deck]
+
+        previous_date = current_date
+
+    return ema
+
+def tier_label(score, top32_share_pct, next_score_gap, is_leader=False):
     """根据综合得分 + Top32占比返回Tier等级"""
     if top32_share_pct < 0.5:
         return "F"
 
-    if is_perfect_score(score):
-        return "SS" if has_another_deck_score_ge_09 else "SSS"
+    safe_score = score if math.isfinite(score) else 0.0
+    safe_gap = next_score_gap if math.isfinite(next_score_gap) else 0.0
 
-    if score >= 0.9:
-        return "S"
-    elif score >= 0.8:
-        return "A"
-    elif score >= 0.7:
-        return "B"
-    elif score >= 0.5:
-        return "C"
-    elif score >= 0.3:
-        return "D"
-    elif score >= 0.1:
-        return "E"
-    else:
+    if safe_score <= 0.1:
         return "F"
+    if safe_score <= 0.3:
+        return "E"
+    if safe_score <= 0.5:
+        return "D"
+    if safe_score <= 0.7:
+        return "C"
+    if safe_score <= 0.8:
+        return "B"
+    if safe_score <= 0.9:
+        return "A"
+    if not is_leader:
+        return "S"
+    if safe_gap > 0.1:
+        return "SSS"
+    if safe_gap > 0.05:
+        return "SS"
+    return "S"
 
 # ===================== 核心逻辑：读取本地原始数据并统计 =====================
 def main():
@@ -218,6 +289,9 @@ def main():
     total_entries_all = 0
     deck_top32_counts = {}  # Top32牌组出场数
     deck_weighted_points = {}  # Top32牌组加权得分
+    deck_daily_top32_counts = {}
+    deck_daily_weighted_points = {}
+    daily_top32_slots = {}
     top32_total_slots = 0
     
     # 玩家相关统计（含新增的出场次数）
@@ -274,6 +348,8 @@ def main():
             deck_total_counts[deck] = deck_total_counts.get(deck, 0) + 1
             total_entries_all += 1
         
+        tournament_day = parse_tournament_day(t, details)
+
         # 统计：Top32数据
         for s in standings:
             placing = s.get("placing")
@@ -290,6 +366,13 @@ def main():
             # 加权得分
             pts = points_by_placing(int(placing))
             deck_weighted_points[deck] = deck_weighted_points.get(deck, 0) + pts
+
+            if tournament_day:
+                day_counts = deck_daily_top32_counts.setdefault(tournament_day, {})
+                day_points = deck_daily_weighted_points.setdefault(tournament_day, {})
+                day_counts[deck] = day_counts.get(deck, 0.0) + 1.0
+                day_points[deck] = day_points.get(deck, 0.0) + pts
+                daily_top32_slots[tournament_day] = daily_top32_slots.get(tournament_day, 0.0) + 1.0
             
             # 玩家得分/国家
             player = s["player"]
@@ -364,6 +447,12 @@ def main():
     data1 = {d: float(deck_top32_counts.get(d, 0)) for d in eligible_decks}  # Top32出场数
     data2 = {d: float(deck_weighted_points.get(d, 0)) for d in eligible_decks}  # 加权得分
     data3 = {d: (data1[d] / top32_total_slots) * 100.0 if top32_total_slots > 0 else 0.0 for d in eligible_decks}  # Top32占比
+    data4 = build_ema_scores(
+        deck_daily_top32_counts,
+        deck_daily_weighted_points,
+        daily_top32_slots,
+        eligible_decks,
+    )
     
     # 对数转换（平滑数据）
     log1 = {d: math.log1p(v) for d, v in data1.items()}
@@ -374,11 +463,17 @@ def main():
     std1 = minmax_scale(log1)
     std2 = minmax_scale(log2)
     std3 = minmax_scale(log3)
+    std4 = minmax_scale(data4)
     
     # 6. 计算综合得分与Tier等级
     tier_rows = []
     for d in eligible_decks:
-        score = W1 * std1.get(d, 0.0) + W2 * std2.get(d, 0.0) + W3 * std3.get(d, 0.0)
+        score = (
+            W1 * std1.get(d, 0.0)
+            + W2 * std2.get(d, 0.0)
+            + W3 * std3.get(d, 0.0)
+            + W4 * std4.get(d, 0.0)
+        )
         usage = deck_total_counts.get(d, 0) / total_entries_all if total_entries_all else 0.0
         tier_rows.append({
             "deck": d,
@@ -390,21 +485,31 @@ def main():
             "log_data1": log1.get(d, 0.0),
             "log_data2": log2.get(d, 0.0),
             "log_data3": log3.get(d, 0.0),
+            "data4_ema_score": data4.get(d, 0.0),
             "std_data1": std1.get(d, 0.0),
             "std_data2": std2.get(d, 0.0),
             "std_data3": std3.get(d, 0.0),
+            "std_data4": std4.get(d, 0.0),
             "score": score,
             "tier": "",
         })
-    for row in tier_rows:
-        has_another_deck_score_ge_09 = any(
-            other["deck"] != row["deck"] and other["score"] >= 0.9
-            for other in tier_rows
+
+    tier_rows.sort(
+        key=lambda row: (
+            -row["score"],
+            -row["data2_weighted_points"],
+            -row["data1_top32_appearances"],
+            -row["total_samples"],
         )
+    )
+
+    for index, row in enumerate(tier_rows):
+        next_score = tier_rows[index + 1]["score"] if index + 1 < len(tier_rows) else row["score"]
         row["tier"] = tier_label(
             row["score"],
             row["data3_top32_share_pct"],
-            has_another_deck_score_ge_09,
+            row["score"] - next_score,
+            index == 0,
         )
         
     # 7. 生成玩家排名（含出场次数）
@@ -435,17 +540,21 @@ def main():
         "tournaments_count": len(filtered_tournaments),  # 改为过滤后的赛事数量
         "total_entries_all": total_entries_all,
         "top32_total_slots": top32_total_slots,
-        "weights": {"data1": W1, "data2": W2, "data3": W3},
+        "weights": {"data1": W1, "data2": W2, "data3": W3, "data4_ema": W4},
+        "ema": {
+            "half_life_days": EMA_HALF_LIFE_DAYS,
+            "signal": "daily 0.4*log1p(top32 appearances)+0.5*log1p(weighted points)+0.1*log1p(top32 share pct)",
+        },
         "tier_thresholds": {
-            "SSS": "score=1.0 and no second deck score>=0.9",
-            "SS": "score=1.0",
-            "S": 0.9,
-            "A": 0.8,
-            "B": 0.7,
-            "C": 0.5,
-            "D": 0.3,
-            "E": 0.1,
-            "F": "<0.1 or top32_share_pct<0.5"
+            "SSS": "leader score >0.9 and lead over #2 >0.10",
+            "SS": "leader score >0.9 and lead over #2 >0.05",
+            "S": ">0.90",
+            "A": ">0.80 and <=0.90",
+            "B": ">0.70 and <=0.80",
+            "C": ">0.50 and <=0.70",
+            "D": ">0.30 and <=0.50",
+            "E": ">0.10 and <=0.30",
+            "F": "<=0.10 or top32_share_pct<0.5"
         },
         "min_top32_share_pct_for_tiering": 0.5,
         "missing_tournament_ids": missing_tournament_ids,

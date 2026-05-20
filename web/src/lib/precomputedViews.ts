@@ -9,6 +9,7 @@ export interface PrecomputedTopDeckRow {
   baselineTop32Samples: number;
   weightedPoints: number;
   baselineTop32SharePct: number;
+  emaScore?: number;
   selectedSamples: number;
   topCutShare: number;
   winRate: number | null;

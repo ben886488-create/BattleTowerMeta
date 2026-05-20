@@ -511,7 +511,12 @@ import { computed, nextTick, onMounted, reactive, ref, watch } from "vue";
 import { RouterLink, useRoute } from "vue-router";
 import substituteIcon from "../assets/deck-icons/substitute.png";
 import { getLocalizedDeckName } from "../assets/pokemonNames";
-import { resolveDeckTier } from "../lib/deckTier";
+import {
+  buildTierEmaScores,
+  calculateTierScore,
+  resolveDeckTier,
+  type TierEmaInput,
+} from "../lib/deckTier";
 import {
   buildStandingLookup,
   lookupStandingForPairingSide,
@@ -539,6 +544,7 @@ type TierRow = {
   data1_top32_appearances: number;
   data2_weighted_points: number;
   data3_top32_share_pct: number;
+  data4_ema_score?: number;
 };
 
 type Meta = {
@@ -893,13 +899,16 @@ function tierRowFromPrecomputed(row: PrecomputedTopDeckScope["rows"][number]): T
     data1_top32_appearances: row.baselineTop32Samples,
     data2_weighted_points: row.weightedPoints,
     data3_top32_share_pct: row.baselineTop32SharePct,
+    data4_ema_score: row.emaScore,
   };
 }
 
 const matrixTierRows = computed<TierRow[]>(() => {
+  if (tierRows.value.length) return tierRows.value;
+  if (rawMatrixTierRows.value.length) return rawMatrixTierRows.value;
+
   const scope = activePrecomputedMatrixScope.value;
-  if (!scope) return rawMatrixTierRows.value.length ? rawMatrixTierRows.value : tierRows.value;
-  return scope.rows.slice(0, 2000).map(tierRowFromPrecomputed);
+  return scope ? scope.rows.slice(0, 2000).map(tierRowFromPrecomputed) : [];
 });
 
 const topDeckRows = computed(() => {
@@ -2002,6 +2011,7 @@ async function recomputeTierRows() {
   const token = ++recomputeToken.tier;
   const scopedTournaments = await filteredTournamentsForCurrentFilters();
   const ids = scopedTournaments.map((tournament) => tournament.id);
+  const tournamentById = new Map(scopedTournaments.map((tournament) => [tournament.id, tournament]));
   const precomputedScope = activePrecomputedTierScope.value;
 
   if (meta.value) {
@@ -2041,11 +2051,13 @@ async function recomputeTierRows() {
   );
 
   const deckMap = new Map<string, DeckAggregate>();
+  const emaRecords: TierEmaInput[] = [];
   let totalBaselineTop32Samples = 0;
   let totalAllSamples = 0;
 
   for (const tid of ids) {
     const standings = standingsCache[tid];
+    const tournament = tournamentById.get(tid);
     if (!Array.isArray(standings)) continue;
 
     for (const row of standings) {
@@ -2076,7 +2088,17 @@ async function recomputeTierRows() {
       if (place != null && place <= 32) {
         hit.baselineTop32Samples += 1;
         totalBaselineTop32Samples += 1;
-        hit.weightedPoints += pointsForPlace(place);
+        const weightedPoints = pointsForPlace(place);
+        hit.weightedPoints += weightedPoints;
+
+        if (tournament?.startMs) {
+          emaRecords.push({
+            dayMs: startOfUtcDayMs(tournament.startMs),
+            deckKey: deck.key,
+            top32Count: 1,
+            weightedPoints,
+          });
+        }
       }
     }
   }
@@ -2093,6 +2115,7 @@ async function recomputeTierRows() {
     data3[item.key] =
       totalBaselineTop32Samples > 0 ? (item.baselineTop32Samples / totalBaselineTop32Samples) * 100 : 0;
   }
+  const data4 = buildTierEmaScores(deckMap.keys(), emaRecords);
 
   const log1 = mapNumberRecord(data1, (value) => Math.log1p(value));
   const log2 = mapNumberRecord(data2, (value) => Math.log1p(value));
@@ -2101,10 +2124,16 @@ async function recomputeTierRows() {
   const std1 = minmaxScale(log1);
   const std2 = minmaxScale(log2);
   const std3 = minmaxScale(log3);
+  const std4 = minmaxScale(data4);
 
   const baseRows = Array.from(deckMap.values()).map((item) => {
     const top32SharePct = data3[item.key] ?? 0;
-    const score = 0.4 * (std1[item.key] ?? 0) + 0.5 * (std2[item.key] ?? 0) + 0.1 * (std3[item.key] ?? 0);
+    const score = calculateTierScore({
+      top32: std1[item.key] ?? 0,
+      weightedPoints: std2[item.key] ?? 0,
+      top32Share: std3[item.key] ?? 0,
+      emaTrend: std4[item.key] ?? 0,
+    });
 
     return {
       deck: item.key,
@@ -2118,6 +2147,7 @@ async function recomputeTierRows() {
       data1_top32_appearances: item.baselineTop32Samples,
       data2_weighted_points: item.weightedPoints,
       data3_top32_share_pct: top32SharePct,
+      data4_ema_score: data4[item.key] ?? 0,
     } satisfies TierRow;
   });
 
@@ -2140,13 +2170,14 @@ async function recomputeTierRows() {
   tierRows.value = finalized.slice(0, 2000);
 }
 
-function computeMatrixTierRowsFromCachedStandings(ids: string[]) {
+function computeMatrixTierRowsFromCachedStandings(scopedTournaments: NormalizedTournament[]) {
   const deckMap = new Map<string, DeckAggregate>();
+  const emaRecords: TierEmaInput[] = [];
   let totalBaselineTop32Samples = 0;
   let totalAllSamples = 0;
 
-  for (const tid of ids) {
-    const standings = standingsCache[tid];
+  for (const tournament of scopedTournaments) {
+    const standings = standingsCache[tournament.id];
     if (!Array.isArray(standings)) continue;
 
     for (const row of standings) {
@@ -2176,7 +2207,15 @@ function computeMatrixTierRowsFromCachedStandings(ids: string[]) {
       if (place != null && place <= 32) {
         hit.baselineTop32Samples += 1;
         totalBaselineTop32Samples += 1;
-        hit.weightedPoints += pointsForPlace(place);
+        const weightedPoints = pointsForPlace(place);
+        hit.weightedPoints += weightedPoints;
+
+        emaRecords.push({
+          dayMs: startOfUtcDayMs(tournament.startMs),
+          deckKey: deck.key,
+          top32Count: 1,
+          weightedPoints,
+        });
       }
     }
   }
@@ -2191,6 +2230,7 @@ function computeMatrixTierRowsFromCachedStandings(ids: string[]) {
     data3[item.key] =
       totalBaselineTop32Samples > 0 ? (item.baselineTop32Samples / totalBaselineTop32Samples) * 100 : 0;
   }
+  const data4 = buildTierEmaScores(deckMap.keys(), emaRecords);
 
   const log1 = mapNumberRecord(data1, (value) => Math.log1p(value));
   const log2 = mapNumberRecord(data2, (value) => Math.log1p(value));
@@ -2199,10 +2239,16 @@ function computeMatrixTierRowsFromCachedStandings(ids: string[]) {
   const std1 = minmaxScale(log1);
   const std2 = minmaxScale(log2);
   const std3 = minmaxScale(log3);
+  const std4 = minmaxScale(data4);
 
   const baseRows = Array.from(deckMap.values()).map((item) => {
     const top32SharePct = data3[item.key] ?? 0;
-    const score = 0.4 * (std1[item.key] ?? 0) + 0.5 * (std2[item.key] ?? 0) + 0.1 * (std3[item.key] ?? 0);
+    const score = calculateTierScore({
+      top32: std1[item.key] ?? 0,
+      weightedPoints: std2[item.key] ?? 0,
+      top32Share: std3[item.key] ?? 0,
+      emaTrend: std4[item.key] ?? 0,
+    });
 
     return {
       deck: item.key,
@@ -2216,6 +2262,7 @@ function computeMatrixTierRowsFromCachedStandings(ids: string[]) {
       data1_top32_appearances: item.baselineTop32Samples,
       data2_weighted_points: item.weightedPoints,
       data3_top32_share_pct: top32SharePct,
+      data4_ema_score: data4[item.key] ?? 0,
     } satisfies TierRow;
   });
 
@@ -2262,17 +2309,19 @@ async function recomputeHeatmapForTopCut() {
       });
     }
 
+    const missingAxisDeck = matrixAxisRows.value.some((row) => row?.deck && !coveredDecks.has(row.deck));
     const selectedDeck = matrixSelectedDeckRow.value?.deck ?? "";
-    if (!selectedDeck || coveredDecks.has(selectedDeck)) {
+    if (!missingAxisDeck && (!selectedDeck || coveredDecks.has(selectedDeck))) {
       rawMatrixTierRows.value = [];
       matchupMap.value = map;
       return;
     }
   }
 
-  const ids = (await filteredTournamentsForMatrixScope()).map((tournament) => tournament.id);
+  const matrixTournaments = await filteredTournamentsForMatrixScope();
+  const ids = matrixTournaments.map((tournament) => tournament.id);
   await ensureTournamentDataForIds(ids);
-  rawMatrixTierRows.value = computeMatrixTierRowsFromCachedStandings(ids).slice(0, 2000);
+  rawMatrixTierRows.value = computeMatrixTierRowsFromCachedStandings(matrixTournaments).slice(0, 2000);
 
   const pairMap = new Map<string, { wins: number; losses: number; ties: number }>();
 

@@ -848,7 +848,12 @@
 import { computed, defineAsyncComponent, reactive, ref, shallowRef, onMounted, onBeforeUnmount, watch, nextTick } from "vue";
 import { useRoute } from "vue-router";
 import { getLocalizedDeckName } from "../assets/pokemonNames";
-import { resolveDeckTier } from "../lib/deckTier";
+import {
+  buildTierEmaScores,
+  calculateTierScore,
+  resolveDeckTier,
+  type TierEmaInput,
+} from "../lib/deckTier";
 import { inTimeRange as matchesTimeFilter } from "../lib/playerEntries";
 import oneCopyDiskIcon from "../assets/deck-disks/3.png";
 import twoCopyDiskIcon from "../assets/deck-disks/4.png";
@@ -940,6 +945,7 @@ interface TierRow {
   iconKeys?: string[];
   baselineTop32Samples?: number;
   weightedPoints?: number;
+  emaScore?: number;
   top32SharePct?: number;
 }
 
@@ -3241,6 +3247,7 @@ function buildTierRowsFromScope(
       weightedPoints: number;
     }
   >();
+  const emaRecords: TierEmaInput[] = [];
 
   let totalAllSamples = 0;
   let totalBaselineTop32Samples = 0;
@@ -3291,7 +3298,14 @@ function buildTierRowsFromScope(
       if (place != null && place <= 32) {
         hit.baselineTop32Samples += 1;
         totalBaselineTop32Samples += 1;
-        hit.weightedPoints += pointsForPlace(place);
+        const weightedPoints = pointsForPlace(place);
+        hit.weightedPoints += weightedPoints;
+        emaRecords.push({
+          dayMs: startOfUtcDayMs(tournament.startMs),
+          deckKey,
+          top32Count: 1,
+          weightedPoints,
+        });
       }
     }
   }
@@ -3312,6 +3326,7 @@ function buildTierRowsFromScope(
         ? (item.baselineTop32Samples / totalBaselineTop32Samples) * 100
         : 0;
   }
+  const data4 = buildTierEmaScores(deckMap.keys(), emaRecords);
 
   const log1 = mapNumberRecord(data1, (value) => Math.log1p(value));
   const log2 = mapNumberRecord(data2, (value) => Math.log1p(value));
@@ -3320,14 +3335,17 @@ function buildTierRowsFromScope(
   const std1 = minmaxScale(log1);
   const std2 = minmaxScale(log2);
   const std3 = minmaxScale(log3);
+  const std4 = minmaxScale(data4);
 
   return Array.from(deckMap.values())
     .map((item) => {
       const top32SharePct = data3[item.key] ?? 0;
-      const score =
-        0.4 * (std1[item.key] ?? 0) +
-        0.5 * (std2[item.key] ?? 0) +
-        0.1 * (std3[item.key] ?? 0);
+      const score = calculateTierScore({
+        top32: std1[item.key] ?? 0,
+        weightedPoints: std2[item.key] ?? 0,
+        top32Share: std3[item.key] ?? 0,
+        emaTrend: std4[item.key] ?? 0,
+      });
 
       return {
         deck: item.key,
@@ -3337,6 +3355,7 @@ function buildTierRowsFromScope(
         total_samples: item.allSamples,
         baselineTop32Samples: item.baselineTop32Samples,
         weightedPoints: item.weightedPoints,
+        emaScore: data4[item.key] ?? 0,
         top32SharePct,
       } satisfies TierRow;
     })

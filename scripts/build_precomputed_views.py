@@ -18,6 +18,14 @@ TOP_CUTS = ["all", "64", "32", "16", "8", "4", "2", "1"]
 PROFILE_DECK_LIMIT = int(os.environ.get("PROFILE_DECK_LIMIT", "40"))
 MIN_SLOT_RATE_PCT = 10
 EXPORT_MATCHUP_TIERS = {"SSS", "SS", "S", "A", "B", "C"}
+MATRIX_DISPLAY_DECK_LIMIT = 10
+TIER_SCORE_WEIGHTS = {
+    "top32": 0.34,
+    "weightedPoints": 0.425,
+    "top32Share": 0.085,
+    "emaTrend": 0.15,
+}
+EMA_HALF_LIFE_DAYS = float(os.environ.get("TIER_EMA_HALF_LIFE_DAYS", "7"))
 
 CARD_CATALOG_BY_CODE = {}
 CARD_CATALOG_BY_NAME = {}
@@ -461,6 +469,63 @@ def minmax_scale(data):
     return {key: (value - min_value) / (max_value - min_value) for key, value in data.items()}
 
 
+def calculate_tier_score(top32_score, weighted_score, share_score, ema_score):
+    return (
+        TIER_SCORE_WEIGHTS["top32"] * top32_score
+        + TIER_SCORE_WEIGHTS["weightedPoints"] * weighted_score
+        + TIER_SCORE_WEIGHTS["top32Share"] * share_score
+        + TIER_SCORE_WEIGHTS["emaTrend"] * ema_score
+    )
+
+
+def build_daily_ema_signal(top32_count, weighted_points, top32_share_pct):
+    return (
+        0.4 * math.log1p(max(0.0, float(top32_count or 0)))
+        + 0.5 * math.log1p(max(0.0, float(weighted_points or 0)))
+        + 0.1 * math.log1p(max(0.0, float(top32_share_pct or 0)))
+    )
+
+
+def build_ema_scores(daily_top32_counts, daily_weighted_points, daily_top32_slots, deck_keys):
+    keys = [key for key in deck_keys if key]
+    ema = {key: 0.0 for key in keys}
+    days = sorted(set(daily_top32_counts.keys()) | set(daily_weighted_points.keys()))
+    if not keys or not days:
+        return ema
+
+    half_life_days = EMA_HALF_LIFE_DAYS if math.isfinite(EMA_HALF_LIFE_DAYS) and EMA_HALF_LIFE_DAYS > 0 else 7.0
+    previous_day = None
+
+    for day in days:
+        if previous_day is None:
+            alpha = 1.0
+        else:
+            delta_days = max(1, (day - previous_day) / DAY_MS)
+            alpha = 1 - math.pow(0.5, delta_days / half_life_days)
+
+        count_map = daily_top32_counts.get(day, {})
+        points_map = daily_weighted_points.get(day, {})
+        total_slots = daily_top32_slots.get(day, 0.0)
+
+        for deck in keys:
+            top32_count = count_map.get(deck, 0.0)
+            weighted_points = points_map.get(deck, 0.0)
+            share_pct = (top32_count / total_slots) * 100 if total_slots > 0 else 0.0
+            signal = build_daily_ema_signal(top32_count, weighted_points, share_pct)
+            ema[deck] = signal if previous_day is None else alpha * signal + (1 - alpha) * ema[deck]
+
+        previous_day = day
+
+    return ema
+
+
+def tournament_day_ms(tournament):
+    start_ms = tournament.get("startMs")
+    if not start_ms:
+        return None
+    return start_of_utc_day_ms(start_ms)
+
+
 def resolve_deck_tier(score, next_score_gap, is_leader=False):
     safe_score = score if math.isfinite(score) else 0
     safe_gap = next_score_gap if math.isfinite(next_score_gap) else 0
@@ -558,9 +623,12 @@ def filter_tournaments(tournaments, time_value, set_value="", min_players=None):
     return output
 
 
-def build_top_decks_scope(tournaments, top_cut):
+def build_top_decks_scope(tournaments, top_cut, extra_matchup_keys=None):
     deck_map = {}
     pair_map = {}
+    daily_top32_counts = {}
+    daily_weighted_points = {}
+    daily_top32_slots = {}
     total_all_samples = 0
     total_baseline_top32_samples = 0
     total_selected_samples = 0
@@ -583,6 +651,7 @@ def build_top_decks_scope(tournaments, top_cut):
     for tournament in tournaments:
         standings = tournament["standings"]
         pairings = tournament["pairings"]
+        day_ms = tournament_day_ms(tournament)
 
         for row in standings:
             place = get_place(row)
@@ -624,7 +693,14 @@ def build_top_decks_scope(tournaments, top_cut):
             if place is not None and place <= 32:
                 hit["baselineTop32Samples"] += 1
                 total_baseline_top32_samples += 1
-                hit["weightedPoints"] += points_for_place(place)
+                points = points_for_place(place)
+                hit["weightedPoints"] += points
+                if day_ms is not None:
+                    day_counts = daily_top32_counts.setdefault(day_ms, {})
+                    day_points = daily_weighted_points.setdefault(day_ms, {})
+                    day_counts[deck["key"]] = day_counts.get(deck["key"], 0.0) + 1.0
+                    day_points[deck["key"]] = day_points.get(deck["key"], 0.0) + points
+                    daily_top32_slots[day_ms] = daily_top32_slots.get(day_ms, 0.0) + 1.0
 
             hit["selectedSamples"] += 1
             total_selected_samples += 1
@@ -661,10 +737,17 @@ def build_top_decks_scope(tournaments, top_cut):
         else 0
         for key, item in deck_map.items()
     }
+    data4 = build_ema_scores(
+        daily_top32_counts,
+        daily_weighted_points,
+        daily_top32_slots,
+        deck_map.keys(),
+    )
 
     std1 = minmax_scale(map_number_record(data1, math.log1p))
     std2 = minmax_scale(map_number_record(data2, math.log1p))
     std3 = minmax_scale(map_number_record(data3, math.log1p))
+    std4 = minmax_scale(data4)
 
     rows = []
     for item in deck_map.values():
@@ -681,10 +764,11 @@ def build_top_decks_scope(tournaments, top_cut):
             if item["selectedGames"] > 0
             else None
         )
-        score = (
-            0.4 * std1.get(item["key"], 0)
-            + 0.5 * std2.get(item["key"], 0)
-            + 0.1 * std3.get(item["key"], 0)
+        score = calculate_tier_score(
+            std1.get(item["key"], 0),
+            std2.get(item["key"], 0),
+            std3.get(item["key"], 0),
+            std4.get(item["key"], 0),
         )
         rows.append(
             {
@@ -699,6 +783,7 @@ def build_top_decks_scope(tournaments, top_cut):
                 "topCutShare": top_cut_share,
                 "winRate": win_rate,
                 "baselineTop32SharePct": data3.get(item["key"], 0),
+                "emaScore": data4.get(item["key"], 0),
                 "score": score,
                 "tier": "F",
                 "baseRank": 999999,
@@ -725,6 +810,8 @@ def build_top_decks_scope(tournaments, top_cut):
         for row in rows
         if str(row.get("tier", "")).upper() in EXPORT_MATCHUP_TIERS
     }
+    if extra_matchup_keys:
+        top_matrix_keys.update(key for key in extra_matchup_keys if key)
     matchups = []
     for (deck_a, deck_b), rec in pair_map.items():
         if deck_a not in top_matrix_keys or deck_b not in top_matrix_keys:
@@ -1477,6 +1564,23 @@ def build_top_decks_payload(tournaments):
             key = scope_key(time_value, set_value, top_cut)
             scopes[key] = build_top_decks_scope(filtered, top_cut)
 
+    if current_code:
+        current_all = filter_tournaments(tournaments, "all", current_code)
+        for top_cut in TOP_CUTS:
+            past7_key = scope_key("past7", current_code, top_cut)
+            current_all_key = scope_key("all", current_code, top_cut)
+            past7_scope = scopes.get(past7_key) or {}
+            extra_keys = [
+                row.get("key")
+                for row in (past7_scope.get("rows") or [])[:MATRIX_DISPLAY_DECK_LIMIT]
+                if row.get("key")
+            ]
+            scopes[current_all_key] = build_top_decks_scope(
+                current_all,
+                top_cut,
+                extra_matchup_keys=extra_keys,
+            )
+
     return {
         "schemaVersion": 1,
         "generatedAt": GENERATED_AT.isoformat(),
@@ -1543,6 +1647,7 @@ def build_tier_row_from_top_deck_row(deck_key, row):
         "baselineTop32Samples": row.get("baselineTop32Samples"),
         "weightedPoints": row.get("weightedPoints"),
         "top32SharePct": row.get("baselineTop32SharePct"),
+        "emaScore": row.get("emaScore"),
         "winRate": row.get("winRate"),
     }
 
