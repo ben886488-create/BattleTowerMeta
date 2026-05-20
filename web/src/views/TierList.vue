@@ -735,6 +735,7 @@ const DAY_MS = 24 * 60 * 60 * 1000;
 const TOP_DECK_LIMIT = 10;
 const PRESET_CURRENT_7 = "__current_7__";
 const PRESET_CURRENT_14 = "__current_14__";
+const MATRIX_EXTRA_DECK_STORAGE_KEY = "btm:tier-list:matrix-extra-deck";
 type TimeFilterValue = "all" | "past7" | "prev7" | "past4w" | string;
 type SetFilterValue = "" | string;
 type SwissLabel = "BO1" | "BO3" | "Other";
@@ -1122,6 +1123,28 @@ function usageBarFill(row: TierRow) {
 const matrixExtraDeck = ref("");
 const matrixPickerRef = ref<HTMLDetailsElement | null>(null);
 
+function restoreMatrixExtraDeckPreference() {
+  if (import.meta.env.SSR) return;
+  try {
+    matrixExtraDeck.value = window.localStorage.getItem(MATRIX_EXTRA_DECK_STORAGE_KEY) || "";
+  } catch {
+    matrixExtraDeck.value = "";
+  }
+}
+
+function persistMatrixExtraDeckPreference(deckKey: string) {
+  if (import.meta.env.SSR) return;
+  try {
+    if (deckKey) {
+      window.localStorage.setItem(MATRIX_EXTRA_DECK_STORAGE_KEY, deckKey);
+    } else {
+      window.localStorage.removeItem(MATRIX_EXTRA_DECK_STORAGE_KEY);
+    }
+  } catch {
+    // Storage can be blocked in private modes; the picker still works for the current session.
+  }
+}
+
 const matrixOptionRows = computed(() => {
   return [...matrixTierRows.value]
     .sort((a, b) => {
@@ -1142,14 +1165,27 @@ function closeMatrixPicker() {
   }
 }
 
-function clearMatrixDeck() {
-  matrixExtraDeck.value = "";
-  closeMatrixPicker();
+async function refreshHeatmapForMatrixDeckChange() {
+  heatLoading.value = true;
+  await recomputeHeatmapForTopCut();
+  heatLoading.value = false;
 }
 
-function selectMatrixDeck(deckKey: string) {
+async function setMatrixDeck(deckKey: string) {
+  const changed = matrixExtraDeck.value !== deckKey;
   matrixExtraDeck.value = deckKey;
   closeMatrixPicker();
+  if (changed) {
+    await refreshHeatmapForMatrixDeckChange();
+  }
+}
+
+async function clearMatrixDeck() {
+  await setMatrixDeck("");
+}
+
+async function selectMatrixDeck(deckKey: string) {
+  await setMatrixDeck(deckKey);
 }
 
 const mobileHeatRows = computed(() => {
@@ -1215,6 +1251,18 @@ const matrixAxisRows = computed<Array<TierRow | null>>(() => {
 });
 
 const matchupMap = ref<Map<string, MatchupRecord>>(new Map());
+
+function hasVisibleSelectedMatchups(map: Map<string, MatchupRecord>, selectedDeck: string) {
+  if (!selectedDeck) return true;
+  const axisDecks = matrixAxisRows.value
+    .map((row) => row?.deck ?? "")
+    .filter((deck): deck is string => !!deck);
+
+  return axisDecks.every((deck) => {
+    if (deck === selectedDeck) return true;
+    return map.has(`${selectedDeck}__${deck}`) && map.has(`${deck}__${selectedDeck}`);
+  });
+}
 const heatLoading = ref(true);
 
 type HeatCell = {
@@ -2311,7 +2359,8 @@ async function recomputeHeatmapForTopCut() {
 
     const missingAxisDeck = matrixAxisRows.value.some((row) => row?.deck && !coveredDecks.has(row.deck));
     const selectedDeck = matrixSelectedDeckRow.value?.deck ?? "";
-    if (!missingAxisDeck && (!selectedDeck || coveredDecks.has(selectedDeck))) {
+    const hasSelectedMatchups = hasVisibleSelectedMatchups(map, selectedDeck);
+    if (!missingAxisDeck && (!selectedDeck || (coveredDecks.has(selectedDeck) && hasSelectedMatchups))) {
       rawMatrixTierRows.value = [];
       matchupMap.value = map;
       return;
@@ -2459,6 +2508,10 @@ watch(
   },
 );
 
+watch(matrixExtraDeck, (deckKey) => {
+  persistMatrixExtraDeckPreference(deckKey);
+});
+
 watch(
   () => matrixOptionRows.value.map((row) => row.deck).join("|"),
   () => {
@@ -2473,6 +2526,11 @@ onMounted(async () => {
   await loadTournaments();
   heatLoading.value = true;
   await recomputeTierRows();
+  restoreMatrixExtraDeckPreference();
+  if (matrixExtraDeck.value && !matrixOptionRows.value.some((row) => row.deck === matrixExtraDeck.value)) {
+    matrixExtraDeck.value = "";
+    persistMatrixExtraDeckPreference("");
+  }
   await recomputeHeatmapForTopCut();
   heatLoading.value = false;
 });
