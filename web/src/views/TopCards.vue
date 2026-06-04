@@ -469,6 +469,7 @@ const VERSION_MARKERS: VersionMarker[] = [
   { code: "B2a", name: "Paldean Wonders", startMs: utcMs(2026, 2, 26) },
   { code: "B2b", name: "Mega Shine", startMs: utcMs(2026, 3, 25) },
   { code: "B3", name: "Pulsing Aura", startMs: utcMs(2026, 4, 28) },
+  { code: "B3a", name: "Paradox Drive", startMs: utcMs(2026, 5, 28) },
 ];
 
 const VERSION_WINDOWS: VersionWindow[] = VERSION_MARKERS.map((item, index, arr) => ({

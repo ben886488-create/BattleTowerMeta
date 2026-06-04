@@ -48,6 +48,7 @@ VERSION_MARKERS = [
     ("B2a", "Paldean Wonders", (2026, 2, 26)),
     ("B2b", "Mega Shine", (2026, 3, 25)),
     ("B3", "Pulsing Aura", (2026, 4, 28)),
+    ("B3a", "Paradox Drive", (2026, 5, 28)),
 ]
 
 
