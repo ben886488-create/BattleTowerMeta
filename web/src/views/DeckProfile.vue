@@ -8555,7 +8555,19 @@ function resetPage() {
 }
 
 .decklist-shell--sample .cardsGrid--profile {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+}
+
+@media (max-width: 900px) {
+  .decklist-shell--sample .cardsGrid--profile {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .decklist-shell--sample .cardsGrid--profile {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
 }
 
 .export-sample-panel {
