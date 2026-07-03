@@ -496,7 +496,7 @@ function deckAlt(rank: number, slot: number) {
 type GameVersionCode =
   | "A1" | "A1a" | "A2" | "A2a" | "A2b"
   | "A3" | "A3a" | "A3b" | "A4" | "A4a" | "A4b"
-  | "B1" | "B1a" | "B2" | "B2a" | "B2b" | "B3" | "B3a";
+  | "B1" | "B1a" | "B2" | "B2a" | "B2b" | "B3" | "B3a" | "B3b";
 
 type GameVersion = {
   code: GameVersionCode;
@@ -525,6 +525,7 @@ const GAME_VERSIONS: GameVersion[] = [
   { code: "B2b", nameZh: "超級異彩", nameEn: "Mega Shine", releaseUtcIso: "2026-03-26T01:00:00Z", releaseMs: Date.parse("2026-03-26T01:00:00Z") },
   { code: "B3", nameZh: "Pulsing Aura", nameEn: "Pulsing Aura", releaseUtcIso: "2026-04-28T01:00:00Z", releaseMs: Date.parse("2026-04-28T01:00:00Z") },
   { code: "B3a", nameZh: "Paradox Drive", nameEn: "Paradox Drive", releaseUtcIso: "2026-05-28T01:00:00Z", releaseMs: Date.parse("2026-05-28T01:00:00Z") },
+  { code: "B3b", nameZh: "Everyday Wonders", nameEn: "Everyday Wonders", releaseUtcIso: "2026-06-30T01:00:00Z", releaseMs: Date.parse("2026-06-30T01:00:00Z") },
 ];
 
 GAME_VERSIONS.sort((a, b) => a.releaseMs - b.releaseMs);
