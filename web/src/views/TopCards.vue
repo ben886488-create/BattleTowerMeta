@@ -4,7 +4,7 @@
       <header class="topCardsHero">
         <div class="topCardsHero__copy">
           <p class="topCardsHero__eyebrow mono">{{ ui.heroEyebrow }}</p>
-          <h1 class="topCardsHero__title">{{ ui.pageTitle }}</h1>
+          <h1 class="topCardsHero__title page-hero-title" :class="{ 'page-hero-title--cn': locale === 'zh' }">{{ ui.pageTitle }}</h1>
           <p class="topCardsHero__subtitle">
             {{ viewMode === "inclusion" ? ui.pageSubtitleInclusion : ui.pageSubtitleCatalog }}
           </p>
@@ -197,22 +197,17 @@
               v-for="card in pagedInclusionCards"
               :key="card.key"
               class="topCardTile topCardTile--inclusion"
-              :title="`${card.name} | ${ui.totalInclusion}: ${formatPercentValue(card.inclusionPct)} | 2x ${formatPercentValue(card.twoCopyPct)} | 1x ${formatPercentValue(card.oneCopyPct)}`"
             >
-              <div class="topCardTile__imageWrap">
-                <img
-                  v-if="card.imageUrl"
-                  class="topCardTile__image"
-                  :src="card.imageUrl"
-                  :alt="card.name"
-                  loading="lazy"
-                  draggable="false"
-                />
-                <div v-else class="topCardTile__fallback">
-                  <strong>{{ card.name }}</strong>
-                  <span class="mono">{{ card.codeLabel }}</span>
-                </div>
-
+              <CardImageWithCount
+                class="topCardTile__imageWrap"
+                :card="card"
+                :image-src="card.imageUrl"
+                :alt="card.name"
+                :fallback-name="card.name"
+                :fallback-code="card.codeLabel"
+                :locale="locale"
+                variant="grid"
+              >
                 <div
                   class="topCardTile__stats"
                   :style="{
@@ -246,7 +241,7 @@
                     </span>
                   </div>
                 </div>
-              </div>
+              </CardImageWithCount>
             </article>
           </div>
 
@@ -256,25 +251,17 @@
               :key="card.key"
               class="topCardTile topCardTile--catalog"
             >
-              <a
+              <CardImageWithCount
                 class="topCardTile__imageWrap topCardTile__imageWrap--link"
-                :href="card.detailUrl || undefined"
-                :target="card.detailUrl ? '_blank' : undefined"
-                :rel="card.detailUrl ? 'noreferrer noopener' : undefined"
-              >
-                <img
-                  v-if="card.imageUrl"
-                  class="topCardTile__image"
-                  :src="card.imageUrl"
-                  :alt="card.name"
-                  loading="lazy"
-                  draggable="false"
-                />
-                <div v-else class="topCardTile__fallback">
-                  <strong>{{ card.name }}</strong>
-                  <span class="mono">{{ card.codeLabel }}</span>
-                </div>
-              </a>
+                :card="card"
+                :image-src="card.imageUrl"
+                :alt="card.name"
+                :fallback-name="card.name"
+                :fallback-code="card.codeLabel"
+                :href="card.detailUrl"
+                :locale="locale"
+                variant="grid"
+              />
 
               <div class="topCardTile__body">
                 <div class="topCardTile__head">
@@ -320,6 +307,7 @@
 <script setup lang="ts">
 import { computed, onMounted, reactive, ref, shallowRef, watch } from "vue";
 import { useRoute } from "vue-router";
+import CardImageWithCount from "../components/ui/CardImageWithCount.vue";
 import { loadTournamentList, loadTournamentStandings } from "../lib/publicData";
 import cardsCatalogUrl from "../assets/limitless_dump/limitless_cards.json?url";
 import setsCatalogUrl from "../assets/limitless_dump/limitless_sets.json?url";
@@ -375,6 +363,7 @@ interface RawCatalogCard {
   detail_url?: string;
   image_url?: string;
   page_line?: string;
+  illustrator?: string | null;
   rarity?: string;
   page_badges?: string[];
   extra_text?: string;
@@ -410,6 +399,8 @@ interface CatalogCard {
   detailUrl: string;
   category: CardCategory;
   subtype: string;
+  illustrator: string;
+  pageLine: string;
   searchText: string;
 }
 
@@ -432,6 +423,9 @@ interface InclusionCard {
   numberLabel: string;
   name: string;
   imageUrl: string;
+  setName: string;
+  illustrator: string;
+  pageLine: string;
   category: CardCategory;
   totalCopies: number;
   deckCount: number;
@@ -886,6 +880,8 @@ function buildCatalogCard(raw: RawCatalogCard): CatalogCard | null {
     detailUrl: normalizeMaybeAbsoluteUrl(raw.detail_url),
     category,
     subtype,
+    illustrator: cleanText(raw.illustrator),
+    pageLine: cleanText(raw.page_line),
     searchText: normalizeSearchableText([name, setCode, cleanText(raw.set_name), subtype].join(" ")).toLowerCase(),
   };
 }
@@ -1457,6 +1453,9 @@ const inclusionAnalytics = computed<InclusionAnalytics>(() => {
           name: cleanText(card.name) || catalogCard?.name || key,
           imageUrl:
             normalizeMaybeAbsoluteUrl(card.image) || catalogCard?.imageUrl || "",
+          setName: catalogCard?.setName || normalizeSetCode(card.set) || "",
+          illustrator: catalogCard?.illustrator || "",
+          pageLine: catalogCard?.pageLine || "",
           category: card.category || catalogCard?.category || "Other",
           totalCopies: 0,
           deckCount: 0,
@@ -1478,6 +1477,9 @@ const inclusionAnalytics = computed<InclusionAnalytics>(() => {
         if (!aggregate.code && catalogCard?.code) aggregate.code = catalogCard.code;
         if (!aggregate.codeLabel && catalogCard?.codeLabel) aggregate.codeLabel = catalogCard.codeLabel;
         if (!aggregate.setCode && catalogCard?.setCode) aggregate.setCode = catalogCard.setCode;
+        if (!aggregate.setName && catalogCard?.setName) aggregate.setName = catalogCard.setName;
+        if (!aggregate.illustrator && catalogCard?.illustrator) aggregate.illustrator = catalogCard.illustrator;
+        if (!aggregate.pageLine && catalogCard?.pageLine) aggregate.pageLine = catalogCard.pageLine;
         if (!aggregate.numberLabel && catalogCard?.numberLabel) aggregate.numberLabel = catalogCard.numberLabel;
 
         cardMap.set(key, aggregate);
@@ -1642,21 +1644,22 @@ onMounted(async () => {
 }
 
 .topCardsShell {
-  width: min(1440px, calc(100vw - 48px));
-  margin: 0 auto;
+  width: 100%;
+  max-width: none;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: clamp(18px, 2vw, 32px);
 }
 
 .topCardsHero,
 .topCardsPanel {
   position: relative;
-  border-radius: 24px;
-  border: 1px solid rgba(89, 164, 230, 0.22);
+  border-radius: 0;
+  border: 1px solid var(--border);
   background:
-    linear-gradient(135deg, rgba(16, 60, 91, 0.54), rgba(17, 25, 49, 0.32)),
-    rgba(9, 22, 39, 0.94);
+    linear-gradient(135deg, rgba(77, 163, 255, 0.08), transparent 52%),
+    var(--bg-panel);
   box-shadow:
     0 22px 60px rgba(0, 0, 0, 0.26),
     inset 0 1px 0 rgba(255, 255, 255, 0.04),
@@ -1704,7 +1707,7 @@ onMounted(async () => {
   align-self: flex-start;
   min-width: 300px;
   padding: 6px;
-  border-radius: 18px;
+  border-radius: 0;
   border: 1px solid rgba(115, 192, 255, 0.16);
   background: rgba(8, 18, 31, 0.76);
 }
@@ -1721,7 +1724,7 @@ onMounted(async () => {
 .topCardsModeToggle__button {
   min-height: 48px;
   padding: 0 18px;
-  border-radius: 14px;
+  border-radius: 0;
   color: rgba(225, 240, 255, 0.7);
   background: transparent;
   font-weight: 800;
@@ -1773,9 +1776,9 @@ onMounted(async () => {
   min-width: 0;
   min-height: 48px;
   padding: 0 14px;
-  border-radius: 14px;
-  border: 1px solid rgba(115, 192, 255, 0.18);
-  background: rgba(8, 18, 31, 0.72);
+  border-radius: 0;
+  border: 1px solid var(--border);
+  background: rgba(2, 4, 10, 0.96);
   color: #f6fbff;
   font: inherit;
   outline: none;
@@ -1791,7 +1794,7 @@ onMounted(async () => {
 .topCardsCategoryBar__button {
   min-height: 38px;
   padding: 0 14px;
-  border-radius: 999px;
+  border-radius: 0;
   border: 1px solid rgba(115, 192, 255, 0.16);
   background: rgba(10, 22, 38, 0.86);
   color: rgba(228, 241, 255, 0.74);
@@ -1820,7 +1823,7 @@ onMounted(async () => {
   gap: 6px;
   min-width: 0;
   padding: 14px 16px;
-  border-radius: 16px;
+  border-radius: 0;
   border: 1px solid rgba(115, 192, 255, 0.14);
   background: rgba(8, 18, 31, 0.48);
 }
@@ -1849,7 +1852,7 @@ onMounted(async () => {
   display: grid;
   place-items: center;
   min-height: 280px;
-  border-radius: 18px;
+  border-radius: 0;
   border: 1px dashed rgba(115, 192, 255, 0.14);
   background: rgba(8, 18, 31, 0.42);
   color: rgba(225, 240, 255, 0.72);
@@ -1858,12 +1861,14 @@ onMounted(async () => {
 
 .topCardsGrid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 260px));
+  justify-content: start;
+  gap: clamp(12px, 1.2vw, 22px);
 }
 
 .topCardTile {
   min-width: 0;
+  max-width: 260px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1874,7 +1879,9 @@ onMounted(async () => {
   display: block;
   aspect-ratio: 5 / 7;
   overflow: hidden;
-  border-radius: 16px;
+  width: 100%;
+  max-width: 260px;
+  border-radius: 0;
   border: 1px solid rgba(115, 192, 255, 0.18);
   background: rgba(255, 255, 255, 0.03);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02);
@@ -1971,8 +1978,8 @@ onMounted(async () => {
     radial-gradient(circle, rgba(5, 16, 29, 0.98) 0 52%, transparent 53%),
     conic-gradient(
       from 0deg,
-      rgba(64, 148, 255, 0.98) 0 var(--one-rate),
-      rgba(255, 122, 82, 0.98) var(--one-rate) calc(var(--one-rate) + var(--two-rate)),
+      rgba(77, 163, 255, 0.98) 0 var(--one-rate),
+      rgba(255, 209, 102, 0.96) var(--one-rate) calc(var(--one-rate) + var(--two-rate)),
       rgba(255, 255, 255, 0.18) calc(var(--two-rate) + var(--one-rate)) 100%
     );
   box-shadow:
@@ -1999,7 +2006,7 @@ onMounted(async () => {
   column-gap: 6px;
   min-height: 0;
   padding: 4px 8px;
-  border-radius: 14px;
+  border-radius: 0;
   border: 2px solid rgba(39, 227, 255, 0.72);
   overflow: hidden;
   color: #eef7ff;
@@ -2055,7 +2062,7 @@ onMounted(async () => {
   width: 2px;
   height: 68%;
   justify-self: center;
-  border-radius: 999px;
+  border-radius: 0;
   background: linear-gradient(180deg, transparent, rgba(36, 230, 255, 0.96), transparent);
   box-shadow: 0 0 8px rgba(32, 219, 255, 0.84);
 }
@@ -2080,7 +2087,7 @@ onMounted(async () => {
   flex-direction: column;
   gap: 10px;
   padding: 12px 12px 14px;
-  border-radius: 16px;
+  border-radius: 0;
   border: 1px solid rgba(115, 192, 255, 0.14);
   background:
     linear-gradient(180deg, rgba(18, 46, 79, 0.92), rgba(10, 22, 39, 0.94)),
@@ -2132,7 +2139,7 @@ onMounted(async () => {
   display: flex;
   overflow: hidden;
   height: 10px;
-  border-radius: 999px;
+  border-radius: 0;
   border: 1px solid rgba(115, 192, 255, 0.14);
   background: rgba(255, 255, 255, 0.06);
 }
@@ -2142,11 +2149,11 @@ onMounted(async () => {
 }
 
 .topCardTile__mixBarSegment--two {
-  background: linear-gradient(90deg, rgba(255, 180, 82, 0.92), rgba(255, 129, 92, 0.98));
+  background: linear-gradient(90deg, rgba(255, 209, 102, 0.9), rgba(184, 137, 0, 0.96));
 }
 
 .topCardTile__mixBarSegment--one {
-  background: linear-gradient(90deg, rgba(92, 176, 255, 0.88), rgba(55, 129, 255, 0.96));
+  background: linear-gradient(90deg, rgba(124, 203, 255, 0.9), rgba(77, 163, 255, 0.98));
 }
 
 .topCardTile__split,
@@ -2204,7 +2211,7 @@ onMounted(async () => {
 .topCardsPager__button {
   min-height: 40px;
   padding: 0 14px;
-  border-radius: 999px;
+  border-radius: 0;
   border: 1px solid rgba(126, 200, 255, 0.2);
   background: rgba(18, 83, 143, 0.18);
   color: #eef7ff;
@@ -2280,7 +2287,7 @@ onMounted(async () => {
   .topCardsHero,
   .topCardsPanel {
     padding: 18px 16px;
-    border-radius: 18px;
+    border-radius: 0;
   }
 
   .topCardsGrid {

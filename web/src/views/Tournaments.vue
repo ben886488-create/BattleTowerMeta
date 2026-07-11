@@ -2,12 +2,76 @@
   <div class="page">
     <div class="header">
       <div>
-        <div class="title">{{ ui.title }}</div>
-        <div class="sub">
-          {{ ui.subtitle(filtered.length) }}
-        </div>
+        <div class="title page-hero-title" :class="{ 'page-hero-title--cn': isZh }">{{ ui.title }}</div>
       </div>
     </div>
+
+    <section class="tournament-timeline" aria-label="Tournament timeline">
+      <div class="tournament-timeline__main">
+        <div class="tournament-timeline__head">
+          <span class="mono">{{ isZh ? "近 14 日賽事量" : "Tournament Timeline" }}</span>
+          <strong class="mono">// TOURNAMENT TIMELINE · 14D</strong>
+        </div>
+
+        <div class="tournament-timeline__chart">
+          <div class="tournament-timeline__axis mono" aria-hidden="true">
+            <span>{{ timelineMaxCount }}</span>
+            <span>{{ Math.ceil(timelineMaxCount / 2) }}</span>
+            <span>0</span>
+          </div>
+
+          <div class="tournament-timeline__plot">
+            <div class="tournament-timeline__grid" aria-hidden="true"></div>
+            <div class="tournament-timeline__bars">
+              <button
+                v-for="(bar, index) in tournamentTimelineRows"
+                :key="bar.iso"
+                type="button"
+                class="tournament-timeline__bar"
+                :class="{ 'tournament-timeline__bar--peak': bar.isPeak }"
+                :style="{
+                  '--bar-height': `${bar.height}%`,
+                  '--bar-delay': `${index * 38}ms`,
+                }"
+                :aria-label="timelineTooltip(bar)"
+                :data-tooltip="timelineTooltip(bar)"
+              >
+                <span class="tournament-timeline__fill"></span>
+                <span class="tournament-timeline__value mono">{{ bar.count }}</span>
+              </button>
+            </div>
+
+            <div class="tournament-timeline__x mono" aria-hidden="true">
+              <span
+                v-for="(bar, index) in tournamentTimelineRows"
+                :key="`${bar.iso}-label`"
+                :class="{ 'tournament-timeline__x-label--muted': !bar.showLabel }"
+              >
+                {{ bar.shortLabel }}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tournament-timeline__stats" aria-label="14-day tournament summary">
+        <article class="timeline-stat-card">
+          <div class="timeline-stat-card__label">{{ isZh ? "賽事場數" : "Tournaments" }}</div>
+          <div class="timeline-stat-card__meta mono">TOURNAMENTS / 14D</div>
+          <strong class="timeline-stat-card__value mono">
+            {{ timelineTournamentTotal.toLocaleString() }}
+          </strong>
+        </article>
+
+        <article class="timeline-stat-card timeline-stat-card--players">
+          <div class="timeline-stat-card__label">{{ isZh ? "玩家數" : "Players" }}</div>
+          <div class="timeline-stat-card__meta mono">PLAYERS / 14D</div>
+          <strong class="timeline-stat-card__value mono">
+            {{ timelinePlayersTotal.toLocaleString() }}
+          </strong>
+        </article>
+      </div>
+    </section>
 
     <!-- Filters -->
     <div class="filters">
@@ -740,6 +804,121 @@ function deckPairTitle(d: TopDeck, rank: number) {
 }
 
 const tournaments = ref<TournamentRow[]>([]);
+const TOURNAMENT_TIMELINE_DAYS = 14;
+const DAY_MS = 24 * 60 * 60 * 1000;
+
+type TournamentTimelineRow = {
+  iso: string;
+  dayMs: number;
+  count: number;
+  height: number;
+  shortLabel: string;
+  fullLabel: string;
+  showLabel: boolean;
+  isPeak: boolean;
+};
+
+function startOfUtcDayMs(ms: number) {
+  const d = new Date(ms);
+  return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
+}
+
+function formatTimelineShortDate(ms: number) {
+  const d = new Date(ms);
+  if (isZh.value) return `${d.getUTCMonth() + 1}/${d.getUTCDate()}`;
+  return d.toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    timeZone: "UTC",
+  });
+}
+
+function formatTimelineFullDate(ms: number) {
+  const d = new Date(ms);
+  if (isZh.value) return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, "0")}-${String(d.getUTCDate()).padStart(2, "0")}`;
+  return d.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    timeZone: "UTC",
+  });
+}
+
+const tournamentTimelineMaxDayMs = computed(() => {
+  const latest = tournaments.value.reduce((max, tournament) => {
+    return Math.max(max, tournament.dateMs ? startOfUtcDayMs(tournament.dateMs) : 0);
+  }, 0);
+  return latest || startOfUtcDayMs(Date.now());
+});
+
+const tournamentTimelineCounts = computed(() => {
+  const counts = new Map<string, number>();
+  const endMs = tournamentTimelineMaxDayMs.value;
+  const startMs = endMs - (TOURNAMENT_TIMELINE_DAYS - 1) * DAY_MS;
+
+  for (const tournament of tournaments.value) {
+    if (!tournament.dateMs) continue;
+    const dayMs = startOfUtcDayMs(tournament.dateMs);
+    if (dayMs < startMs || dayMs > endMs) continue;
+    const iso = formatUtcYmd(dayMs);
+    counts.set(iso, (counts.get(iso) ?? 0) + 1);
+  }
+
+  return counts;
+});
+
+const timelineWindowTournaments = computed(() => {
+  const endMs = tournamentTimelineMaxDayMs.value;
+  const startMs = endMs - (TOURNAMENT_TIMELINE_DAYS - 1) * DAY_MS;
+
+  return tournaments.value.filter((tournament) => {
+    if (!tournament.dateMs) return false;
+    const dayMs = startOfUtcDayMs(tournament.dateMs);
+    return dayMs >= startMs && dayMs <= endMs;
+  });
+});
+
+const timelineTournamentTotal = computed(() => timelineWindowTournaments.value.length);
+
+const timelinePlayersTotal = computed(() => {
+  return timelineWindowTournaments.value.reduce((sum, tournament) => {
+    const players = Number(tournament.players ?? 0);
+    return Number.isFinite(players) && players > 0 ? sum + players : sum;
+  }, 0);
+});
+
+const timelineMaxCount = computed(() => {
+  return Math.max(1, ...Array.from(tournamentTimelineCounts.value.values()));
+});
+
+const tournamentTimelineRows = computed<TournamentTimelineRow[]>(() => {
+  const rows: TournamentTimelineRow[] = [];
+  const endMs = tournamentTimelineMaxDayMs.value;
+  const maxCount = timelineMaxCount.value;
+  const peak = Math.max(0, ...Array.from(tournamentTimelineCounts.value.values()));
+
+  for (let index = 0; index < TOURNAMENT_TIMELINE_DAYS; index += 1) {
+    const dayMs = endMs - (TOURNAMENT_TIMELINE_DAYS - 1 - index) * DAY_MS;
+    const iso = formatUtcYmd(dayMs);
+    const count = tournamentTimelineCounts.value.get(iso) ?? 0;
+    rows.push({
+      iso,
+      dayMs,
+      count,
+      height: count > 0 ? Math.max(8, (count / maxCount) * 100) : 2,
+      shortLabel: formatTimelineShortDate(dayMs),
+      fullLabel: formatTimelineFullDate(dayMs),
+      showLabel: index % 2 === 0 || index === TOURNAMENT_TIMELINE_DAYS - 1 || count === peak,
+      isPeak: count > 0 && count === peak,
+    });
+  }
+
+  return rows;
+});
+
+function timelineTooltip(row: TournamentTimelineRow) {
+  return isZh.value ? `${row.fullLabel} · ${row.count} 場比賽` : `${row.fullLabel} · ${row.count} tournaments`;
+}
 
 type TournamentIndexRow = {
   game?: string;
@@ -1035,8 +1214,8 @@ watch([total, pageSize], () => {
 <style scoped>
 .page {
   width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
   padding: 0 10px;
   box-sizing: border-box;
 }
@@ -1061,6 +1240,357 @@ watch([total, pageSize], () => {
   color: rgba(226, 232, 240, 0.75);
 }
 
+.tournament-timeline {
+  position: relative;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: stretch;
+  gap: 10px;
+  margin: 18px 0 14px;
+  padding: 14px 16px 12px;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-left-color: rgba(77, 163, 255, 0.76);
+  background:
+    linear-gradient(135deg, rgba(77, 163, 255, 0.055), transparent 42%),
+    linear-gradient(315deg, rgba(255, 209, 102, 0.028), transparent 48%),
+    rgba(5, 10, 20, 0.94);
+  box-shadow: inset 0 1px 0 rgba(248, 250, 252, 0.04);
+  overflow: visible;
+}
+
+.tournament-timeline__main {
+  min-width: 0;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 10px;
+}
+
+.tournament-timeline::before,
+.tournament-timeline::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  pointer-events: none;
+}
+
+.tournament-timeline::before {
+  top: -1px;
+  left: -1px;
+  border-top: 1px solid var(--accent);
+  border-left: 1px solid var(--accent);
+}
+
+.tournament-timeline::after {
+  right: -1px;
+  bottom: -1px;
+  border-right: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
+  opacity: 0.7;
+}
+
+.tournament-timeline__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.tournament-timeline__head span {
+  color: #f8fafc;
+  font-size: 14px;
+  font-weight: 850;
+}
+
+.tournament-timeline__head strong {
+  color: #4da3ff;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.tournament-timeline__chart {
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 5px;
+}
+
+.tournament-timeline__axis {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-items: start;
+  color: #64748b;
+  font-size: 9px;
+  font-weight: 800;
+  text-align: right;
+  padding-right: 0;
+}
+
+.tournament-timeline__axis span:nth-child(2) {
+  align-self: center;
+}
+
+.tournament-timeline__axis span:last-child {
+  align-self: end;
+}
+
+.tournament-timeline__plot {
+  position: relative;
+  min-width: 0;
+  min-height: clamp(180px, 12.5vw, 240px);
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) 18px;
+  gap: 4px;
+  border-left: 1px solid rgba(148, 163, 184, 0.2);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+  background:
+    linear-gradient(rgba(148, 163, 184, 0.075) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(77, 163, 255, 0.035) 1px, transparent 1px);
+  background-size: 100% 33.33%, calc(100% / 14) 100%;
+}
+
+.tournament-timeline__grid {
+  position: absolute;
+  inset: 0 0 22px 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, transparent calc(33.33% - 1px), rgba(148, 163, 184, 0.11) 33.33%, transparent calc(33.33% + 1px)),
+    linear-gradient(180deg, transparent calc(66.66% - 1px), rgba(148, 163, 184, 0.1) 66.66%, transparent calc(66.66% + 1px));
+}
+
+.tournament-timeline__bars {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(14, minmax(0, 1fr));
+  align-items: end;
+  gap: clamp(4px, 0.5vw, 9px);
+  padding: 1px 6px 0;
+}
+
+.tournament-timeline__bar {
+  position: relative;
+  min-width: 0;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  border: 0;
+  background: transparent;
+  color: #f8fafc;
+  cursor: default;
+  outline: none;
+  padding: 0;
+}
+
+.tournament-timeline__fill {
+  width: 100%;
+  min-height: 2px;
+  height: calc(var(--bar-height) * 0.98);
+  display: block;
+  border: 1px solid rgba(124, 203, 255, 0.18);
+  background:
+    linear-gradient(180deg, rgba(124, 203, 255, 0.98), rgba(77, 163, 255, 0.92) 52%, rgba(37, 99, 235, 0.82)),
+    #4da3ff;
+  box-shadow: 0 0 18px rgba(77, 163, 255, 0.16);
+  transform-origin: bottom center;
+  animation: tournament-bar-grow 780ms var(--ease-out-expo) both;
+  animation-delay: var(--bar-delay);
+  transition:
+    filter 0.16s ease,
+    box-shadow 0.16s ease,
+    border-color 0.16s ease;
+}
+
+.tournament-timeline__bar--peak .tournament-timeline__fill {
+  border-color: rgba(255, 209, 102, 0.58);
+  background:
+    linear-gradient(180deg, #ffd166, #7ccbff 48%, #4da3ff),
+    #ffd166;
+  box-shadow: 0 0 22px rgba(255, 209, 102, 0.16), 0 0 20px rgba(77, 163, 255, 0.13);
+}
+
+.tournament-timeline__bar:hover .tournament-timeline__fill,
+.tournament-timeline__bar:focus-visible .tournament-timeline__fill {
+  border-color: rgba(124, 203, 255, 0.72);
+  filter: brightness(1.16);
+  box-shadow: 0 0 26px rgba(77, 163, 255, 0.22), inset 0 1px 0 rgba(248, 250, 252, 0.14);
+}
+
+.tournament-timeline__bar:focus-visible {
+  outline: none;
+}
+
+.tournament-timeline__bar::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  bottom: calc(var(--bar-height) + 12px);
+  z-index: 5;
+  width: max-content;
+  max-width: 220px;
+  padding: 8px 10px;
+  border: 1px solid rgba(77, 163, 255, 0.44);
+  background: rgba(5, 10, 20, 0.98);
+  color: #f8fafc;
+  font-family: var(--font-num);
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  line-height: 1.35;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 4px);
+  transition:
+    opacity 0.14s ease,
+    transform 0.14s ease;
+  white-space: nowrap;
+}
+
+.tournament-timeline__bar:hover::after,
+.tournament-timeline__bar:focus-visible::after {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.tournament-timeline__value {
+  position: absolute;
+  bottom: calc(var(--bar-height) + 4px);
+  color: rgba(248, 250, 252, 0.78);
+  font-size: 9px;
+  font-weight: 900;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.14s ease;
+}
+
+.tournament-timeline__bar:hover .tournament-timeline__value,
+.tournament-timeline__bar:focus-visible .tournament-timeline__value {
+  opacity: 1;
+}
+
+.tournament-timeline__x {
+  display: grid;
+  grid-template-columns: repeat(14, minmax(0, 1fr));
+  gap: clamp(4px, 0.5vw, 9px);
+  align-items: start;
+  padding: 0 6px;
+  color: #64748b;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.tournament-timeline__x span {
+  min-width: 0;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tournament-timeline__x-label--muted {
+  opacity: 0.28;
+}
+
+.tournament-timeline__stats {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.timeline-stat-card {
+  position: relative;
+  min-width: 0;
+  display: grid;
+  min-height: clamp(72px, 5.8vw, 88px);
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  gap: 4px 14px;
+  padding: 12px 14px;
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  border-left-color: rgba(77, 163, 255, 0.64);
+  background:
+    linear-gradient(135deg, rgba(77, 163, 255, 0.08), transparent 58%),
+    rgba(8, 15, 28, 0.88);
+  box-shadow:
+    inset 0 1px 0 rgba(248, 250, 252, 0.045),
+    0 0 24px rgba(77, 163, 255, 0.045);
+}
+
+.timeline-stat-card::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  bottom: -1px;
+  width: 10px;
+  height: 10px;
+  border-right: 1px solid rgba(77, 163, 255, 0.72);
+  border-bottom: 1px solid rgba(77, 163, 255, 0.72);
+  pointer-events: none;
+}
+
+.timeline-stat-card--players {
+  border-left-color: rgba(255, 209, 102, 0.58);
+  background:
+    linear-gradient(135deg, rgba(255, 209, 102, 0.075), transparent 58%),
+    rgba(8, 15, 28, 0.88);
+}
+
+.timeline-stat-card--players::after {
+  border-right-color: rgba(255, 209, 102, 0.64);
+  border-bottom-color: rgba(255, 209, 102, 0.64);
+}
+
+.timeline-stat-card__label {
+  min-width: 0;
+  grid-column: 1;
+  color: #f8fafc;
+  font-size: 13px;
+  font-weight: 850;
+  line-height: 1.2;
+}
+
+.timeline-stat-card__meta {
+  grid-column: 1;
+  color: #4da3ff;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.timeline-stat-card--players .timeline-stat-card__meta {
+  color: #ffd166;
+}
+
+.timeline-stat-card__value {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  justify-self: end;
+  margin-top: 0;
+  color: #f8fafc;
+  font-size: clamp(28px, 2.4vw, 42px);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes tournament-bar-grow {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
 .deckIcon--second {
   margin-left: -3px;
 }
@@ -1073,6 +1603,15 @@ watch([total, pageSize], () => {
 }
 
 @media (max-width: 980px) {
+  .tournament-timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .tournament-timeline__stats {
+    grid-template-rows: none;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .filters {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1082,20 +1621,11 @@ watch([total, pageSize], () => {
   .filters {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
 
-  .pager {
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-  }
-
-  .pager__left {
-    flex-wrap: nowrap;
-  }
-
-  .pager__right {
-    flex-wrap: nowrap;
+@media (max-width: 360px) {
+  .tournament-timeline__stats {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1133,13 +1663,17 @@ watch([total, pageSize], () => {
 
 .tableWrap {
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
   box-sizing: border-box;
   margin: 0 auto;
 }
 
 .responsive-table {
-  overflow-x: auto;
-  overflow-y: hidden;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
   background: rgba(15, 23, 42, 0.35);
@@ -1150,8 +1684,10 @@ watch([total, pageSize], () => {
 
 .tbl {
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  table-layout: fixed;
   border-collapse: collapse;
-  min-width: 940px;
 }
 
 .mobile-cards {
@@ -1241,6 +1777,66 @@ watch([total, pageSize], () => {
     box-sizing: border-box;
   }
 
+  .tournament-timeline {
+    min-height: 0;
+    gap: 12px;
+    padding: 12px 10px 10px;
+  }
+
+  .tournament-timeline__head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .tournament-timeline__chart {
+    grid-template-columns: 16px minmax(0, 1fr);
+    gap: 4px;
+  }
+
+  .tournament-timeline__plot {
+    min-height: clamp(140px, 38vw, 180px);
+  }
+
+  .tournament-timeline__bars,
+  .tournament-timeline__x {
+    gap: 4px;
+    padding-inline: 6px;
+  }
+
+  .tournament-timeline__x {
+    font-size: 9px;
+  }
+
+  .tournament-timeline__x-label--muted {
+    color: transparent;
+    opacity: 1;
+  }
+
+  .tournament-timeline__stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .timeline-stat-card {
+    min-height: 68px;
+    gap: 3px 8px;
+    padding: 9px 10px;
+  }
+
+  .timeline-stat-card__label {
+    font-size: 12px;
+  }
+
+  .timeline-stat-card__meta {
+    font-size: 8px;
+    letter-spacing: 0.1em;
+  }
+
+  .timeline-stat-card__value {
+    font-size: clamp(23px, 7vw, 31px);
+  }
+
   .responsive-table {
     display: none;
   }
@@ -1298,6 +1894,21 @@ watch([total, pageSize], () => {
     width: 100%;
   }
 
+  .pager__sizes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .pagerBtn,
+  :deep(.pagerBtn) {
+    width: 100%;
+    min-height: 48px !important;
+    justify-content: center;
+    text-align: center;
+  }
+
   .pager__right {
     width: 100%;
     justify-content: space-between;
@@ -1323,8 +1934,23 @@ watch([total, pageSize], () => {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .tournament-timeline__fill {
+    animation: none;
+    transform: none;
+  }
+
+  .tournament-timeline__bar,
+  .tournament-timeline__fill,
+  .tournament-timeline__bar::after {
+    transition: none;
+  }
+}
+
 th,
 td {
+  min-width: 0;
+  overflow: hidden;
   padding: 10px 12px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   text-align: left;
@@ -1356,15 +1982,15 @@ td {
 }
 
 .date {
-  width: 118px;
+  width: clamp(88px, 7vw, 118px);
 }
 
 .top4 {
-  width: 260px;
+  width: clamp(220px, 27vw, 330px);
 }
 
 .link {
-  width: 64px;
+  width: 58px;
   text-align: center;
 }
 
@@ -1379,27 +2005,39 @@ a:hover {
 }
 
 .nameCell {
+  min-width: 0;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
 .nameMain {
+  min-width: 0;
+  max-width: 100%;
   font-weight: 900;
 }
 
 .nameMeta {
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
 }
 
 .pill {
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
   font-size: 11px;
   padding: 2px 8px;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.10);
   background: rgba(2, 6, 23, 0.25);
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .pill--btn {
@@ -1422,23 +2060,36 @@ a:hover {
 }
 
 .pill--btn:focus-visible {
-  outline: 2px solid rgba(147, 197, 253, 0.55);
-  outline-offset: 2px;
+  outline: none;
+  box-shadow: inset 0 0 0 1px rgba(77, 163, 255, 0.55), 0 0 14px rgba(77, 163, 255, 0.12);
 }
 
 .topDecksGrid {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(4, max-content);
-  column-gap: 14px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: clamp(4px, 0.7vw, 10px);
   row-gap: 8px;
   align-items: start;
+  justify-items: center;
 }
 
 .deckPair {
+  min-width: 0;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 6px;
+}
+
+.deckIconsWrap {
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .deckIconsRow {
@@ -1449,8 +2100,8 @@ a:hover {
 }
 
 .deckIcon {
-  width: 34px;
-  height: 34px;
+  width: clamp(24px, 2vw, 32px);
+  height: clamp(24px, 2vw, 32px);
   object-fit: contain;
   background: transparent;
   border: 0;
@@ -1463,8 +2114,8 @@ a:hover {
 }
 
 .deckIconFallback {
-  width: 34px;
-  height: 34px;
+  width: clamp(24px, 2vw, 32px);
+  height: clamp(24px, 2vw, 32px);
   display: block;
   border: 0;
   border-radius: 0;
@@ -1472,9 +2123,9 @@ a:hover {
 }
 
 .deckDisk {
-  width: 64px;
-  height: 44px;
-  margin-top: -43px;
+  width: clamp(48px, 4.4vw, 58px);
+  height: clamp(34px, 3vw, 40px);
+  margin-top: clamp(-39px, -3vw, -33px);
   opacity: 0.95;
   display: block;
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.6));
@@ -1504,7 +2155,9 @@ a:hover {
 }
 
 .linkDot {
-  padding: 10px 20px;
+  width: 42px;
+  height: 42px;
+  padding: 0;
   border-radius: 12px;
   display: inline-flex;
   align-items: center;
@@ -1566,6 +2219,9 @@ a:hover {
 }
 
 .pagerBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 6px 10px;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -1582,13 +2238,20 @@ a:hover {
 }
 
 .pagerBtn.is-active {
-  border-color: rgba(147, 197, 253, 0.55);
-  background: rgba(30, 41, 59, 0.35);
-  color: rgba(255, 255, 255, 0.95);
+  border-color: rgba(124, 203, 255, 0.72);
+  background: linear-gradient(180deg, rgba(77, 163, 255, 0.95), rgba(37, 99, 235, 0.86));
+  color: #f8fafc;
+  box-shadow: 0 0 18px rgba(77, 163, 255, 0.2);
 }
 
 .nameLink {
+  display: block;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
   color: rgba(255, 255, 255, 0.92);
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .nameLink:hover {

@@ -1,5 +1,6 @@
 import shutil
-import json, os, datetime, time, random, sys
+import json, os, datetime, time, random, sys, re
+from html import unescape
 from urllib.request import urlopen, Request
 from urllib.error import HTTPError, URLError
 
@@ -25,6 +26,7 @@ _last_request_ts = 0.0
 failed_tournaments = []
 # 赛事列表文件路径（抽离为常量，便于维护）
 TOURNAMENTS_JSON_PATH = "web/public/data/tournaments.json"
+UPCOMING_TOURNAMENTS_JSON_PATH = "web/public/data/upcoming_tournaments.json"
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(errors="replace")
@@ -81,6 +83,98 @@ def write_json(path, obj):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(obj, f, ensure_ascii=False, indent=2)
+
+def fetch_text(url: str, api_type: str = "html", tid: str = "unknown"):
+    global _last_request_ts
+    for attempt in range(MAX_RETRIES + 1):
+        now = time.time()
+        wait = REQUEST_GAP_SEC - (now - _last_request_ts)
+        if wait > 0:
+            time.sleep(max(0.1, wait + random.uniform(-0.3, 0.3)))
+
+        req = Request(url, headers={"User-Agent": "ptcgp-tier-site/1.0"})
+        try:
+            print(f"[请求] 尝试{attempt+1}/{MAX_RETRIES+1} | 赛事{tid} | 接口{api_type} | URL: {url}")
+            with urlopen(req, timeout=REQUEST_TIMEOUT) as r:
+                _last_request_ts = time.time()
+                return r.read().decode("utf-8", errors="replace")
+        except HTTPError as e:
+            if e.code == 429:
+                retry_after = e.headers.get("Retry-After")
+                sleep_s = float(retry_after) if retry_after else min(60.0, 2.0 ** attempt)
+                print(f"[429限流] 赛事{tid} | 接口{api_type} | 等待{sleep_s:.1f}秒后重试")
+                time.sleep(sleep_s)
+                continue
+            raise
+        except (TimeoutError, URLError):
+            sleep_s = min(30.0, 2.0 ** attempt)
+            time.sleep(sleep_s)
+            continue
+
+    raise RuntimeError(f"[请求失败] 赛事{tid} | 接口{api_type} | 累计{MAX_RETRIES+1}次尝试超时")
+
+def strip_html(value):
+    return unescape(re.sub(r"<[^>]+>", " ", value or "")).strip()
+
+def normalize_registration_status(row_html):
+    class_match = re.search(r'<a class="register\s+([^"]+)"', row_html, re.I)
+    text_match = re.search(r'<a class="register[^"]*"[^>]*>(.*?)</a>', row_html, re.I | re.S)
+    raw = f"{class_match.group(1) if class_match else ''} {strip_html(text_match.group(1)) if text_match else ''}".lower()
+
+    if "check" in raw:
+        return "check-in"
+    if "open" in raw or "register" in raw:
+        return "open"
+    return "unknown"
+
+def fetch_upcoming_tournaments():
+    """抓取 Limitless upcoming 頁面，生成給前端 ticker 使用的輕量 JSON。"""
+    url = f"https://play.limitlesstcg.com/tournaments/upcoming?game={GAME_ID}"
+    try:
+        html = fetch_text(url, api_type="upcoming_tournaments", tid="upcoming")
+    except Exception as e:
+        print(f"⚠️ upcoming 賽事抓取失敗：{e}")
+        return []
+
+    rows = []
+    row_re = re.compile(
+        r'<tr\s+data-date="(?P<date>[^"]+)"\s+data-name="(?P<name>[^"]+)"'
+        r'\s+data-organizer="(?P<organizer>[^"]*)"\s+data-format="(?P<format>[^"]*)"'
+        r'\s+data-players="(?P<players>[^"]*)"\s+data-registration="(?P<registration>[^"]*)"'
+        r'(?P<attrs>[^>]*)>(?P<body>.*?)</tr>',
+        re.I | re.S,
+    )
+
+    def int_or_none(raw):
+        try:
+            return int(str(raw).strip())
+        except Exception:
+            return None
+
+    for match in row_re.finditer(html):
+        body = match.group("body")
+        href_match = re.search(r'href="/tournament/([^"/]+)/details"', body)
+        if not href_match:
+            continue
+
+        tid = href_match.group(1)
+        rows.append({
+            "game": "POCKET",
+            "id": tid,
+            "name": unescape(match.group("name")).strip(),
+            "date": match.group("date"),
+            "format": match.group("format") or None,
+            "players": int_or_none(match.group("players")),
+            "registrations": int_or_none(match.group("registration")),
+            "registrationStatus": normalize_registration_status(body),
+            "organizer": unescape(match.group("organizer")).strip() or None,
+            "url": f"https://play.limitlesstcg.com/tournament/{tid}/details",
+        })
+
+    rows.sort(key=lambda item: item.get("date") or "")
+    write_json(UPCOMING_TOURNAMENTS_JSON_PATH, rows)
+    print(f"✅ upcoming 賽事列表已保存 | 數量：{len(rows)}")
+    return rows
 
 def iso_to_date(iso_str):
     if not iso_str:
@@ -216,6 +310,7 @@ def load_existing_tournaments():
 def main():
     global failed_tournaments
     failed_tournaments = []
+    fetch_upcoming_tournaments()
 
     existing_tournaments = load_existing_tournaments()
     existing_tids = {t["id"] for t in existing_tournaments if "id" in t}

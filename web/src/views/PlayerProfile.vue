@@ -20,7 +20,7 @@
         <div class="heroHead">
           <div>
             <p class="kicker mono">PLAYER SPOTLIGHT</p>
-            <h1 class="playerName">
+            <h1 class="playerName page-hero-title page-hero-title--compact" :class="{ 'page-hero-title--cn': isZh }">
               {{ playerName }}
               <span
                 v-if="primaryCountry"
@@ -768,8 +768,8 @@ onMounted(async () => {
 <style scoped>
 .player-profile {
   width: 100%;
-  max-width: 1320px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
 }
 
 .state {
@@ -1276,21 +1276,28 @@ onMounted(async () => {
 }
 
 .tableWrap {
-  overflow: auto;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
   border-radius: 16px;
 }
 
 .tbl {
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  table-layout: fixed;
   border-collapse: collapse;
-  min-width: 780px;
 }
 
 th,
 td {
+  min-width: 0;
+  overflow: hidden;
   padding: 12px 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   text-align: left;
+  text-overflow: ellipsis;
 }
 
 th {
@@ -1304,16 +1311,43 @@ td {
   font-size: 13px;
 }
 
+.tbl th:nth-child(1),
+.tbl td:nth-child(1) {
+  width: 28%;
+}
+
+.tbl th:nth-child(2),
+.tbl td:nth-child(2) {
+  width: 34%;
+}
+
+.tbl th:nth-child(3),
+.tbl td:nth-child(3),
+.tbl th:nth-child(4),
+.tbl td:nth-child(4),
+.tbl th:nth-child(5),
+.tbl td:nth-child(5) {
+  width: 12%;
+}
+
 .deckCell {
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
 .deckCell--link {
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
   color: #fff;
   text-decoration: none;
   font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .deckCell--link:hover {
@@ -1321,9 +1355,15 @@ td {
 }
 
 .listLink {
+  display: block;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
   color: #7dd3fc;
   text-decoration: none;
   font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .flag-icon {
@@ -1395,7 +1435,7 @@ td {
   }
 
   .tbl {
-    min-width: 720px;
+    font-size: 12px;
   }
 }
 </style>

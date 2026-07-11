@@ -9,7 +9,7 @@ function makeLangRoutes(lang: (typeof langs)[number]): RouteRecordRaw {
     path: `/${lang}`,
     component: Layout,
     children: [
-      { path: '', name: `${lang}-home`, component: () => import('./views/Home.vue') },
+      { path: '', name: `${lang}-home`, redirect: { name: `${lang}-tier-list` } },
 
       {
         path: 'tier-list',
@@ -77,7 +77,7 @@ function makeLangRoutes(lang: (typeof langs)[number]): RouteRecordRaw {
 }
 
 export const routes: RouteRecordRaw[] = [
-  { path: '/', redirect: '/zh' },
+  { path: '/', redirect: '/zh/tier-list' },
   { path: '/tournaments', redirect: '/zh/tournaments' },
   { path: '/tournaments/:id', redirect: (to) => `/zh/tournaments/${to.params.id}` },
 

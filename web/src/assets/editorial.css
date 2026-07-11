@@ -1,0 +1,1880 @@
+/*
+ * Battle Tower Meta — intelligence-ledger retrofit.
+ * This layer intentionally targets route-level presentation without changing
+ * data contracts or export-only DeckProfile DOM.
+ */
+
+html {
+  scrollbar-color: var(--border-strong) var(--bg-deep);
+}
+
+body {
+  overflow-x: hidden;
+  overflow-x: clip;
+  overflow-y: visible;
+}
+
+body .tierlist-page,
+body .top-decks-wrap,
+body main.container > .page,
+body .player-profile {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+}
+
+body .tierlist-page,
+body .top-decks-wrap,
+body main.container > .page,
+body .player-profile,
+body .battle-hub {
+  position: relative;
+}
+
+body .tierlist-header,
+body .top-decks-wrap > .page-header,
+body main.container > .page > .header {
+  position: relative;
+  padding-top: 34px;
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+body .tierlist-header::before,
+body .top-decks-wrap > .page-header::before,
+body main.container > .page > .header::before {
+  content: "BTM // INTELLIGENCE LEDGER";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--accent);
+  font-family: var(--font-label);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+body .tierlist-page .page-title,
+body .top-decks-wrap .page-title,
+body main.container > .page > .header .title,
+body main.container > .page > .header .pageTitle,
+body .player-profile .playerName,
+body .page .pageTitle,
+body .page .sectionTitle {
+  color: var(--text);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+
+body .tierlist-page .page-title,
+body .top-decks-wrap .page-title,
+body main.container > .page > .header .title,
+body main.container > .page > .header .pageTitle {
+  font-size: clamp(56px, 6vw, 120px);
+  line-height: 0.9;
+}
+
+body .tierlist-page .page-subtitle,
+body .top-decks-wrap .page-subtitle,
+body main.container > .page > .header .sub,
+body main.container > .page > .meta {
+  color: var(--text-soft);
+  font-family: var(--font-num);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+
+body .page-hero-kicker {
+  margin: 0 0 clamp(22px, 2.2vw, 34px);
+  color: var(--accent);
+  font-family: var(--font-label);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.24em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+body .page-hero-title {
+  color: var(--text);
+  font-family: var(--font-display-en);
+  font-size: clamp(56px, 6vw, 120px);
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 0.88;
+}
+
+body .page-hero-title--cn {
+  font-family: var(--font-display-cn);
+  font-style: oblique 8deg;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+}
+
+body .page-hero-title--compact {
+  font-size: clamp(34px, 4.2vw, 72px);
+  line-height: 0.94;
+}
+
+body .page-hero-title-accent {
+  color: var(--accent);
+}
+
+body .page-hero-description {
+  color: var(--text-soft);
+  font-family: var(--font-body);
+  font-size: clamp(15px, 1.15vw, 18px);
+  font-weight: 500;
+  line-height: 1.72;
+}
+
+body .tierlist-page .filters,
+body .top-decks-wrap .filters,
+body main.container > .page > .filters {
+  gap: 0;
+  margin-bottom: 22px;
+  border-top: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+}
+
+body .tierlist-page .filters .f,
+body .top-decks-wrap .filters .f,
+body main.container > .page > .filters .f,
+body .player-profile .filterField {
+  min-width: 0;
+  padding: 12px 14px;
+  border: 0;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  border-radius: 0;
+  background:
+    linear-gradient(135deg, rgba(77, 163, 255, 0.035), transparent 68%),
+    rgba(5, 10, 20, 0.92);
+}
+
+body .tierlist-page .f label,
+body .top-decks-wrap .f label,
+body main.container > .page .f label,
+body .player-profile .filterField label,
+body .topCardsField > span {
+  margin-bottom: 8px;
+  color: var(--text-soft);
+  font-family: var(--font-num);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+body .tierlist-page .f input,
+body .tierlist-page .f select,
+body .top-decks-wrap .filter-input,
+body .top-decks-wrap .filter-select,
+body main.container > .page .f input,
+body main.container > .page .f select,
+body .player-profile .filterField select,
+body .topCardsField input,
+body .topCardsField select {
+  min-height: var(--control-height);
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  border-radius: 0;
+  background: rgba(2, 5, 12, 0.82);
+  color: var(--text);
+  font-size: 13px;
+}
+
+body .tierlist-page .f input:focus,
+body .tierlist-page .f select:focus,
+body .top-decks-wrap .filter-input:focus,
+body .top-decks-wrap .filter-select:focus,
+body main.container > .page .f input:focus,
+body main.container > .page .f select:focus,
+body .topCardsField input:focus,
+body .topCardsField select:focus {
+  border-color: var(--accent-blue);
+  box-shadow: var(--focus-ring);
+}
+
+body .tierlist-page :is(.usage-card, .score-card, .tier-table-card, .heatmap-card),
+body .top-decks-wrap :is(.scope-card, .table-card),
+body main.container > .page :is(.pager, .tableWrap, .responsive-table, .hero, .entry, .stateCard),
+body .player-profile :is(.hero, .summaryPanel, .deckPanel, .tableCard),
+body .topCardsHero,
+body .topCardsPanel,
+body .battle-hub .tracker > .card,
+body .battle-hub .tracker > .summary-grid > .card,
+body .battle-hub .tracker > .ops-grid > .card {
+  border: 1px solid var(--border);
+  border-radius: 0;
+  background:
+    linear-gradient(135deg, rgba(77, 163, 255, 0.032), transparent 44%),
+    linear-gradient(315deg, rgba(255, 209, 102, 0.028), transparent 44%),
+    rgba(5, 10, 20, 0.94);
+  box-shadow: none;
+}
+
+body .tierlist-page :is(.usage-card, .score-card, .tier-table-card, .heatmap-card),
+body .top-decks-wrap .table-card,
+body main.container > .page :is(.tableWrap, .responsive-table, .hero),
+body .topCardsHero,
+body .topCardsPanel,
+body .player-profile .hero {
+  position: relative;
+}
+
+body .tierlist-page :is(.usage-card, .score-card, .tier-table-card, .heatmap-card)::before,
+body .top-decks-wrap .table-card::before,
+body main.container > .page :is(.tableWrap, .responsive-table, .hero)::before,
+body .topCardsHero::before,
+body .topCardsPanel::before,
+body .player-profile .hero::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: -1px;
+  left: -1px;
+  width: 12px;
+  height: 12px;
+  border-top: 1px solid var(--accent);
+  border-left: 1px solid var(--accent);
+  pointer-events: none;
+}
+
+body .tierlist-page :is(.usage-card, .score-card, .tier-table-card, .heatmap-card)::after,
+body .top-decks-wrap .table-card::after,
+body main.container > .page :is(.tableWrap, .responsive-table, .hero)::after,
+body .topCardsHero::after,
+body .topCardsPanel::after,
+body .player-profile .hero::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  right: -1px;
+  bottom: -1px;
+  width: 12px;
+  height: 12px;
+  border-right: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
+  pointer-events: none;
+}
+
+body .tierlist-page .section-title,
+body .top-decks-wrap .scope-line strong,
+body .page .sectionTitle,
+body .battle-hub .section-head h2 {
+  color: var(--text);
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+body .tierlist-page .usage-row,
+body .tierlist-page .tier-lane,
+body .top-decks-wrap .decks-table tbody tr,
+body main.container > .page .tbl tbody tr {
+  transition: background 160ms ease, border-color 160ms ease;
+}
+
+body .tierlist-page .usage-row {
+  border-radius: 0;
+  border-color: var(--border);
+  background: rgba(5, 10, 20, 0.9);
+}
+
+body .tierlist-page .usage-row:hover,
+body .top-decks-wrap .decks-table tbody tr:hover,
+body main.container > .page .tbl tbody tr:hover {
+  background: rgba(77, 163, 255, 0.065);
+}
+
+body .tierlist-page .tier-lane,
+body .tierlist-page .deck-pill,
+body .tierlist-page .matrix-cell {
+  border-radius: 2px;
+}
+
+body .tierlist-page .heatmap-card {
+  margin-top: 28px;
+}
+
+body .top-decks-wrap .scope-card {
+  padding: 16px 18px;
+  border-left: 2px solid var(--accent);
+}
+
+body .top-decks-wrap .decks-table thead th,
+body main.container > .page .tbl thead th,
+body main.container > .page .tbl th {
+  background: rgba(5, 8, 17, 0.96);
+  color: var(--muted);
+  font-family: var(--font-num);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+body .top-decks-wrap .decks-table tbody td,
+body main.container > .page .tbl tbody td,
+body main.container > .page .tbl td {
+  color: var(--text-soft);
+  border-bottom-color: var(--border);
+}
+
+body main.container > .page .pager {
+  border-color: var(--border);
+  border-radius: 0;
+}
+
+body main.container > .page :is(.pagerBtn, .arrowBtn, .standingsBtn, .backLink),
+body .top-decks-wrap button,
+body .tierlist-page button {
+  border-radius: 0;
+}
+
+body main.container > .page .pagerBtn.is-active,
+body main.container > .page .arrowBtn:hover,
+body .topCardsModeToggle__button--active,
+body .topCardsCategoryBar__button--active {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #080a10;
+  box-shadow: none;
+}
+
+body .topCardsPage {
+  padding-top: 0;
+}
+
+body .topCardsShell {
+  width: 100%;
+  gap: clamp(18px, 2vw, 32px);
+}
+
+body .topCardsHero,
+body .topCardsPanel {
+  border-radius: 0;
+}
+
+body .topCardsHero {
+  min-height: 310px;
+  align-items: flex-end;
+  padding: 38px 42px;
+  border-color: var(--border);
+}
+
+body .topCardsHero__eyebrow {
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.24em;
+}
+
+body .topCardsHero__title {
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: clamp(4.2rem, 8vw, 8rem);
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  line-height: 0.78;
+}
+
+body .topCardsHero__subtitle {
+  max-width: 640px;
+  color: var(--text-soft);
+}
+
+body .topCardsModeToggle {
+  min-width: 280px;
+  padding: 0;
+  border-radius: 0;
+  border-color: var(--border);
+  background: rgba(3, 6, 13, 0.82);
+}
+
+body .topCardsModeToggle__button,
+body .topCardsCategoryBar__button,
+body .topCardsPager__button {
+  border-radius: 0;
+  font-family: var(--font-num);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+}
+
+body .topCardsPanel {
+  padding: 24px;
+}
+
+body .topCardsSummary__block,
+body .topCardTile {
+  border-radius: 0;
+  border-color: var(--border);
+  background: rgba(4, 7, 15, 0.72);
+  box-shadow: none;
+}
+
+body .topCardsSummary__label {
+  color: var(--accent);
+}
+
+body .topCardTile__imageWrap,
+body .topCardTile__stats,
+body .topCardTile__copyStat {
+  border-radius: 0;
+}
+
+body .player-profile .filterBar {
+  margin-bottom: 24px;
+}
+
+body .player-profile .hero {
+  padding: 28px;
+}
+
+body .player-profile .playerName {
+  font-size: clamp(3rem, 6vw, 6.6rem);
+  line-height: 0.86;
+}
+
+body .player-profile .kicker,
+body .battle-hub .kicker {
+  color: var(--accent);
+  font-family: var(--font-num);
+  font-size: 10px;
+  letter-spacing: 0.24em;
+}
+
+body .player-profile :is(.rankChip, .backLink, .statCard, .recordCard, .finishCard),
+body .battle-hub :is(.card, .subcard, .stat, .deck-card, .opponent-bar, .record-row, .deck-picker__selected, .mini-stat, .tab, .fields input, .deck-search__field, .deck-search__menu, .deck-search__option, .empty, .action, .ghost, .notice) {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+body .battle-hub {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+}
+
+body .battle-hub .tracker {
+  gap: 20px;
+}
+
+body .battle-hub .card,
+body .battle-hub .subcard,
+body .battle-hub .stat,
+body .battle-hub .deck-card,
+body .battle-hub .opponent-bar,
+body .battle-hub .record-row,
+body .battle-hub .deck-picker__selected {
+  border-color: var(--border);
+  background: rgba(7, 10, 20, 0.78);
+}
+
+body .battle-hub .mode-switch {
+  border-radius: 0;
+  border-color: var(--border);
+  background: rgba(3, 6, 13, 0.82);
+}
+
+body .battle-hub .mode-switch__button {
+  border-radius: 0;
+  font-family: var(--font-num);
+  letter-spacing: 0.08em;
+}
+
+body .battle-hub .mode-switch__button--active,
+body .battle-hub .action {
+  background: var(--accent);
+  color: #080a10;
+}
+
+body .account-menu__trigger,
+body .account-menu__panel,
+body .account-menu__tabs,
+body .account-menu__action,
+body .account-menu__form input {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+body .account-menu__trigger {
+  min-height: 32px;
+  border-color: var(--border);
+  background: rgba(7, 10, 20, 0.82);
+  color: var(--text-soft);
+  font-family: var(--font-num);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 1080px) {
+  body .topCardsShell {
+    width: 100%;
+  }
+
+  body .topCardsHero {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  body .tierlist-header,
+  body .top-decks-wrap > .page-header,
+  body main.container > .page > .header {
+    padding-top: 28px;
+  }
+
+  body .tierlist-page .page-title,
+  body .top-decks-wrap .page-title,
+  body main.container > .page > .header .title,
+  body main.container > .page > .header .pageTitle {
+    font-size: clamp(2.6rem, 14vw, 4rem);
+  }
+
+  body .topCardsHero {
+    padding: 28px 22px;
+  }
+
+  body .topCardsHero__title {
+    font-size: clamp(3.8rem, 21vw, 6rem);
+  }
+
+  body .topCardsPanel {
+    padding: 16px;
+  }
+}
+
+/*
+ * Hard-edge contract
+ * ------------------
+ * The editorial terminal language does not use decorative rounded corners
+ * or pill controls. This final layer deliberately wins over route-scoped CSS
+ * so legacy SFC styles cannot reintroduce the old SaaS visual language.
+ */
+
+#app *,
+#app *::before,
+#app *::after {
+  border-radius: 0 !important;
+}
+
+/* True data visualisations and tiny status LEDs are the only round forms. */
+#app .topCardTile__rateDialValue,
+#app .profileCard__rateDialValue,
+#app .footer__status i,
+#app .homeTerminal__status i,
+#app .account-menu__status,
+#app .status-pulse__dot,
+#app .signal-rail span::before {
+  border-radius: 50% !important;
+}
+
+/* Controls */
+#app button:not(.menu-toggle):not(.sidebar__close),
+#app input,
+#app select,
+#app textarea {
+  border-color: var(--border) !important;
+  box-shadow: none !important;
+}
+
+#app button:not(.menu-toggle):not(.sidebar__close) {
+  min-height: var(--control-height);
+  font-family: var(--font-num);
+}
+
+#app input,
+#app select,
+#app textarea {
+  min-height: var(--control-height);
+  background: rgba(2, 5, 12, 0.82) !important;
+  color: var(--text) !important;
+}
+
+/* Reusable surfaces */
+#app :is(
+  .card,
+  .subcard,
+  .f,
+  .scope-card,
+  .table-card,
+  .tableWrap,
+  .responsive-table,
+  .usage-card,
+  .score-card,
+  .tier-table-card,
+  .heatmap-card,
+  .filter-panel,
+  .mobile-card,
+  .mobile-deck-card,
+  .mobile-stat,
+  .stateCard,
+  .summaryItem,
+  .entry,
+  .deckIconsPanel,
+  .deckIconFallback,
+  .cardImageWrap,
+  .topCardsHero,
+  .topCardsPanel,
+  .topCardsSummary__block,
+  .topCardTile,
+  .hero,
+  .summaryPanel,
+  .deckPanel,
+  .statCard,
+  .recordCard,
+  .finishCard,
+  .hero-panel,
+  .placement-card,
+  .metric-card,
+  .record-bubble,
+  .matchup-card,
+  .profileCard,
+  .account-menu__panel
+) {
+  border-color: var(--border) !important;
+  box-shadow: none !important;
+}
+
+/* Legacy chips, pills and badges become hard-edged labels. */
+#app :is(
+  .tier-pill,
+  .tier-badge,
+  .tierBadge,
+  .placingBadge,
+  .countBadge,
+  .rankChip,
+  .finishBadge,
+  .pill,
+  .result,
+  .deck-meta-pill,
+  .record-bubble,
+  .deckFallback,
+  .sprite-fallback,
+  .tab,
+  .pagerBtn,
+  .arrowBtn,
+  .standingsBtn,
+  .backLink,
+  .topCardsCategoryBar__button,
+  .topCardsPager__button,
+  .mode-switch,
+  .mode-switch__button,
+  .account-menu__trigger,
+  .account-menu__tabs,
+  .account-menu__action
+) {
+  box-shadow: none !important;
+}
+
+#app :is(.account-menu__trigger, .account-menu__panel, .account-menu__tabs) {
+  background: rgba(5, 8, 17, 0.96) !important;
+  border-color: var(--border) !important;
+}
+
+#app :is(.arrowBtn, .standingsBtn, .backLink) {
+  border-color: var(--border-accent) !important;
+  background: rgba(77, 163, 255, 0.1) !important;
+  color: var(--accent) !important;
+}
+
+#app :is(
+  .pagerBtn.is-active,
+  .topCardsModeToggle__button--active,
+  .topCardsCategoryBar__button--active,
+  .mode-switch__button--active,
+  .account-menu__action:not(.account-menu__action--ghost)
+) {
+  border-color: var(--accent) !important;
+  background: var(--accent) !important;
+  color: #080a10 !important;
+}
+
+#app button.filter-action.filter-action--primary:not(.menu-toggle):not(.sidebar__close) {
+  border-color: var(--border-accent) !important;
+  background: var(--accent) !important;
+  color: #080a10 !important;
+}
+
+#app button.filter-action.filter-action--primary:not(.menu-toggle):not(.sidebar__close):hover {
+  border-color: var(--accent) !important;
+  background: rgba(77, 163, 255, 0.18) !important;
+  color: var(--text) !important;
+}
+
+/* Tier list and matchup matrix */
+#app :is(
+  .usage-row,
+  .usage-bar,
+  .usage-bar__fill,
+  .tier-lane,
+  .tier-label,
+  .tier-deck,
+  .tier-deck-card,
+  .deck-pill,
+  .heatmap-head-cell,
+  .heatmap-row-head,
+  .heatmap-cell,
+  .heatmap-cell__inner,
+  .heatmap-picker-cell,
+  .matrix-picker__trigger,
+  .matrix-picker__menu,
+  .matrix-picker__option
+) {
+  box-shadow: none !important;
+}
+
+#app .heatmap-cell__inner:hover {
+  transform: none;
+}
+
+/* Deck and card analytics: retain chart colours, remove neon component chrome. */
+#app :is(
+  .topCardTile__copyStat,
+  .profileCard__copyStat,
+  .topCardTile__copyBreakdown,
+  .profileCard__copyBreakdown
+) {
+  border-color: var(--border) !important;
+  box-shadow: none !important;
+}
+
+#app .deck-profile {
+  --bg-main: var(--bg);
+  --bg-panel: rgba(5, 10, 20, 0.94);
+  --bg-panel-2: rgba(6, 12, 24, 0.9);
+  --border: rgba(148, 163, 184, 0.3);
+  --border-soft: rgba(148, 163, 184, 0.22);
+  --text-main: var(--text);
+  --text-soft: #a8b3c7;
+  --text-dim: var(--muted);
+  --accent: #4da3ff;
+  --accent-soft: rgba(77, 163, 255, 0.18);
+  --shadow: none;
+}
+
+#app .deck-profile :is(.hero-panel, .table-card, .profileFilterGroup) {
+  background:
+    linear-gradient(135deg, rgba(77, 163, 255, 0.032), transparent 44%),
+    linear-gradient(315deg, rgba(255, 209, 102, 0.026), transparent 44%),
+    rgba(5, 10, 20, 0.94) !important;
+  border-color: var(--border) !important;
+  box-shadow: none !important;
+}
+
+#app .deck-profile :is(.deck-display-line, .deck-display-subline) {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* Tables and list rows use one separator and one hover language. */
+#app table thead th {
+  background: rgba(5, 10, 20, 0.98) !important;
+  color: var(--text-soft) !important;
+}
+
+#app table tbody td {
+  border-bottom-color: var(--border) !important;
+}
+
+#app table tbody tr:hover {
+  background: rgba(77, 163, 255, 0.065) !important;
+}
+
+/* Contrast pass: keep the dashboard black, then let data and active states cut through. */
+#app {
+  color: var(--text);
+}
+
+#app :is(.topbar, .signal-strip) {
+  border-color: var(--border-strong) !important;
+}
+
+#app :is(
+  .card,
+  .subcard,
+  .f,
+  .scope-card,
+  .table-card,
+  .tableWrap,
+  .responsive-table,
+  .usage-card,
+  .score-card,
+  .tier-table-card,
+  .heatmap-card,
+  .filter-panel,
+  .mobile-card,
+  .mobile-deck-card,
+  .mobile-stat,
+  .stateCard,
+  .summaryItem,
+  .entry,
+  .deckIconsPanel,
+  .topCardsHero,
+  .topCardsPanel,
+  .topCardsSummary__block,
+  .topCardTile,
+  .hero,
+  .summaryPanel,
+  .deckPanel,
+  .statCard,
+  .recordCard,
+  .finishCard,
+  .hero-panel,
+  .placement-card,
+  .metric-card,
+  .matchup-card,
+  .profileCard,
+  .account-menu__panel
+) {
+  background:
+    linear-gradient(135deg, rgba(77, 163, 255, 0.026), transparent 46%),
+    linear-gradient(315deg, rgba(255, 209, 102, 0.026), transparent 48%),
+    rgba(5, 10, 20, 0.94) !important;
+  border-color: var(--border) !important;
+}
+
+#app :is(
+  input,
+  select,
+  textarea,
+  .usage-row,
+  .usage-summary__row,
+  .usage-pie-legend__row,
+  .tier-lane,
+  .tier-lane__spritepair,
+  .deck-pill,
+  .mobile-deck-card,
+  .summaryItem,
+  .topCardsSummary__block,
+  .metric-card,
+  .recordCard,
+  .finishCard
+) {
+  border-color: var(--border) !important;
+}
+
+#app :is(
+  h1,
+  h2,
+  h3,
+  .logo,
+  .page-title,
+  .pageTitle,
+  .title,
+  .section-title,
+  .sectionTitle,
+  .tier-section__title,
+  .deck-name-link,
+  .deck-name,
+  .mobile-deck-card__name,
+  .usage-row__name,
+  .playerName,
+  .countryName,
+  .summaryValue,
+  .stat-value,
+  .topCardsSummary__value,
+  .topCardsHero__title,
+  .metric-card__value,
+  .recordCard strong,
+  .finishCard strong,
+  .usage-pie__center strong,
+  .usage-summary__value
+) {
+  color: var(--text) !important;
+  font-weight: 800;
+}
+
+#app :is(
+  .page-subtitle,
+  .usage-subtitle,
+  .scope-line,
+  .sub,
+  .deck-display-subline,
+  .usage-row__meta,
+  .mobile-deck-card__copy,
+  .summaryLabel,
+  .topCardsSummary__label,
+  .cardTitle,
+  .tier-empty
+) {
+  color: var(--text-soft) !important;
+}
+
+#app :is(
+  .meta,
+  .subtle,
+  .muted,
+  .pager__summary,
+  .page-status,
+  .usage-row__samples,
+  .usage-summary__label,
+  .tier-section__descriptor,
+  .signal-strip__edition
+) {
+  color: var(--muted) !important;
+}
+
+#app :is(.summaryValue, .stat-value, .topCardsSummary__value, .usage-summary__value) {
+  color: #f8fafc !important;
+  font-weight: 900 !important;
+}
+
+#app :is(
+  .decks-table tbody td:nth-child(n + 5),
+  .tbl tbody td.mono,
+  .mobile-deck-card__stats strong,
+  .mobile-deck-card__score,
+  .record-bubble strong,
+  .topCardTile__metric,
+  .profileCard__metric
+) {
+  color: #f8fafc !important;
+  font-weight: 850 !important;
+}
+
+#app .decks-table tbody td:first-child {
+  color: var(--text-soft) !important;
+  font-weight: 800 !important;
+}
+
+#app .decks-table .deck-name-link {
+  color: #f8fafc !important;
+  font-size: 15px;
+  font-weight: 900 !important;
+}
+
+#app :is(.navlink.is-active, .signal-strip__item span) {
+  color: var(--accent) !important;
+}
+
+#app :is(.usage-row, .mobile-deck-card) {
+  background: rgba(5, 10, 20, 0.9) !important;
+}
+
+#app :is(.usage-row, .mobile-deck-card):hover {
+  border-color: rgba(77, 163, 255, 0.52) !important;
+  background:
+    linear-gradient(90deg, rgba(77, 163, 255, 0.082), rgba(255, 209, 102, 0.038)),
+    rgba(5, 10, 20, 0.96) !important;
+}
+
+/* Typography system mapping: editorial display, terminal labels, market data numerals. */
+#app :is(
+  .tierlist-page .page-title,
+  .top-decks-wrap .page-title,
+  main.container > .page > .header .title,
+  main.container > .page > .header .pageTitle,
+  .page .pageTitle,
+  .topCardsHero__title,
+  .player-profile .playerName
+) {
+  color: #f8fafc !important;
+  font-family: var(--font-display-cn) !important;
+  font-size: var(--type-display-size) !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.025em !important;
+  line-height: 0.88 !important;
+  margin: 0 0 clamp(18px, 1.4vw, 30px) !important;
+  text-transform: none;
+}
+
+html[data-lang="en"] #app :is(
+  .tierlist-page .page-title,
+  .top-decks-wrap .page-title,
+  main.container > .page > .header .title,
+  main.container > .page > .header .pageTitle,
+  .page .pageTitle,
+  .topCardsHero__title,
+  .player-profile .playerName
+) {
+  font-family: var(--font-display-en) !important;
+  font-style: italic !important;
+  letter-spacing: -0.04em !important;
+}
+
+#app :is(
+  .tierlist-page .section-title,
+  .tier-table-title,
+  .usage-title-row .section-title,
+  .page .sectionTitle,
+  .battle-hub .section-head h2,
+  .topCardsPanel h2
+) {
+  color: #f8fafc !important;
+  font-family: var(--font-display-cn) !important;
+  font-size: var(--type-display-section-size) !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 0.95 !important;
+  text-transform: none;
+}
+
+html[data-lang="en"] #app :is(
+  .tierlist-page .section-title,
+  .tier-table-title,
+  .usage-title-row .section-title,
+  .page .sectionTitle,
+  .battle-hub .section-head h2,
+  .topCardsPanel h2
+) {
+  font-family: var(--font-display-en) !important;
+  font-style: italic !important;
+  letter-spacing: -0.03em !important;
+}
+
+#app :is(
+  .navlink,
+  .signal-strip__item,
+  .signal-strip__edition,
+  .status-pulse,
+  .signal-rail span,
+  .footer,
+  .page-subtitle,
+  .sub,
+  .scope-line,
+  .meta,
+  .subtle,
+  .tier-table-meta,
+  .filter-drawer-trigger__eyebrow,
+  .usage-summary__label,
+  .filter-summary__label,
+  .f label,
+  .filterField label,
+  .topCardsField > span,
+  table thead th,
+  .sort-btn,
+  .tier-section__descriptor,
+  .pager-info,
+  .pager__summary
+) {
+  color: #94a3b8 !important;
+  font-family: var(--font-label) !important;
+  font-size: clamp(10px, 0.7vw, 12px);
+  font-weight: 700 !important;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+#app :is(
+  .tierlist-page .page-subtitle,
+  .top-decks-wrap .page-subtitle,
+  main.container > .page > .header .sub,
+  main.container > .page > .header .subtitle
+) {
+  margin: 0 !important;
+  position: relative;
+  z-index: 1;
+}
+
+html[data-lang="zh"] #app :is(
+  .navlink,
+  .page-subtitle,
+  .scope-line,
+  .meta,
+  .f label,
+  .filterField label,
+  .topCardsField > span,
+  .filter-summary__label,
+  .usage-summary__label,
+  table thead th,
+  .sort-btn,
+  .tier-section__descriptor,
+  .pager-info,
+  .pager__summary
+) {
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+#app :is(
+  .signal-strip__item span,
+  .status-pulse,
+  .status-pulse__label,
+  .filter-drawer-trigger__eyebrow,
+  .sort-indicator,
+  .tier-table-meta
+) {
+  color: var(--accent) !important;
+}
+
+#app :is(
+  .mono,
+  .type-mono,
+  .usage-pie__center strong,
+  .usage-summary__value,
+  .usage-pie-legend__value,
+  .decks-table tbody td:nth-child(n + 5),
+  .tbl tbody td.mono,
+  .mobile-deck-card__stats strong,
+  .mobile-deck-card__score,
+  .summaryValue,
+  .stat-value,
+  .topCardsSummary__value,
+  .record-bubble strong,
+  .topCardTile__metric,
+  .profileCard__metric
+) {
+  font-family: var(--font-num) !important;
+  font-variant-numeric: tabular-nums;
+}
+
+#app :is(
+  .usage-pie__center strong,
+  .usage-summary__value,
+  .decks-table tbody td:nth-child(n + 5),
+  .tbl tbody td.mono,
+  .mobile-deck-card__stats strong,
+  .mobile-deck-card__score,
+  .summaryValue,
+  .stat-value,
+  .topCardsSummary__value,
+  .record-bubble strong,
+  .topCardTile__metric,
+  .profileCard__metric
+) {
+  color: #fff !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.03em;
+}
+
+#app :is(.usage-summary__value, .summaryValue, .stat-value, .topCardsSummary__value) {
+  font-size: var(--type-metric-size);
+  line-height: 0.95;
+}
+
+#app :is(
+  .deck-name-link,
+  .deck-name,
+  .mobile-deck-card__name,
+  .usage-row__name,
+  .usage-pie-legend__name,
+  .playerName,
+  .countryName
+) {
+  color: #f8fafc !important;
+  font-family: var(--font-body) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0;
+}
+
+#app :is(
+  p,
+  .usage-subtitle,
+  .filter-panel p,
+  .mobile-deck-card__copy,
+  .usage-row__meta,
+  .summaryLabel
+) {
+  color: var(--text-soft);
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+#app :is(.muted, .type-muted, .usage-row__samples, .usage-summary__label, .subtle) {
+  color: var(--muted) !important;
+}
+
+#app .tierlist-page .tier-section__descriptor {
+  color: var(--tier-accent-muted) !important;
+  font-size: clamp(11px, 0.64vw, 12px) !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.18em !important;
+  line-height: 1.25 !important;
+  text-transform: uppercase !important;
+}
+
+@media (max-width: 760px) {
+  #app :is(
+    .tierlist-page .page-title,
+    .top-decks-wrap .page-title,
+    main.container > .page > .header .title,
+    main.container > .page > .header .pageTitle,
+    .page .pageTitle,
+    .topCardsHero__title,
+    .player-profile .playerName
+  ) {
+    font-size: clamp(54px, 16vw, 78px) !important;
+    letter-spacing: -0.02em !important;
+    margin-bottom: clamp(14px, 4vw, 22px) !important;
+    line-height: 0.9 !important;
+  }
+
+  #app :is(
+    .tierlist-page .section-title,
+    .tier-table-title,
+    .usage-title-row .section-title,
+    .page .sectionTitle,
+    .battle-hub .section-head h2,
+    .topCardsPanel h2
+  ) {
+    font-size: clamp(28px, 9vw, 42px) !important;
+    line-height: 1 !important;
+  }
+
+  #app .tierlist-page .tier-section__descriptor {
+    font-size: 10.5px !important;
+    letter-spacing: 0.14em !important;
+  }
+}
+
+/* Motion layer: subtle terminal intelligence, never decorative spectacle. */
+@keyframes btm-ambient-drift {
+  0% {
+    transform: translate3d(-1.2%, -0.8%, 0) scale(1);
+    opacity: 0.62;
+  }
+  100% {
+    transform: translate3d(1.4%, 1%, 0) scale(1.035);
+    opacity: 0.78;
+  }
+}
+
+@keyframes btm-noise-flicker {
+  0%, 100% { opacity: 0.13; }
+  28% { opacity: 0.16; }
+  48% { opacity: 0.12; }
+  74% { opacity: 0.18; }
+}
+
+@keyframes btm-scanline {
+  0% { transform: translateY(-120%); }
+  100% { transform: translateY(120%); }
+}
+
+@keyframes btm-status-blink {
+  0%, 100% {
+    opacity: 0.62;
+    box-shadow: 0 0 8px rgba(0, 255, 136, 0.38);
+  }
+  48%, 58% {
+    opacity: 1;
+    box-shadow: 0 0 13px rgba(0, 255, 136, 0.72);
+  }
+}
+
+@keyframes btm-status-flicker {
+  0%, 8%, 100% { opacity: 0.92; }
+  8.4% { opacity: 0.72; }
+  8.8% { opacity: 0.96; }
+  62% { opacity: 0.88; }
+  62.4% { opacity: 0.7; }
+  63% { opacity: 0.94; }
+}
+
+@keyframes btm-rail-reveal {
+  from {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes btm-rail-dot-pulse {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(77, 163, 255, 0.45);
+  }
+  50% {
+    box-shadow:
+      0 0 14px rgba(77, 163, 255, 0.72),
+      0 0 26px rgba(77, 163, 255, 0.18);
+  }
+}
+
+@keyframes btm-enter-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes btm-card-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes btm-progress-grow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@keyframes btm-corner-scan {
+  0%, 100% {
+    opacity: 0.42;
+    transform: translate(0, 0);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translate(-2px, 2px);
+  }
+}
+
+@keyframes btm-title-clip-reveal {
+  from {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes btm-border-charge {
+  0% {
+    box-shadow:
+      inset 0 0 0 1px rgba(77, 163, 255, 0),
+      0 0 0 rgba(77, 163, 255, 0);
+  }
+  48% {
+    box-shadow:
+      inset 0 0 0 1px rgba(77, 163, 255, 0.46),
+      0 0 28px rgba(77, 163, 255, 0.13);
+  }
+  100% {
+    box-shadow:
+      inset 0 0 0 1px rgba(77, 163, 255, 0.12),
+      0 0 18px rgba(77, 163, 255, 0.06);
+  }
+}
+
+@keyframes btm-donut-slice-reveal {
+  from {
+    opacity: 1;
+    filter: drop-shadow(0 0 0 rgba(77, 163, 255, 0));
+  }
+  to {
+    opacity: 1;
+    filter: drop-shadow(0 0 7px rgba(77, 163, 255, 0.08));
+  }
+}
+
+@keyframes btm-cell-reveal {
+  from {
+    opacity: 1;
+    filter: brightness(0.96);
+    transform: scale(0.985);
+  }
+  to {
+    opacity: 1;
+    filter: brightness(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes btm-podium-signal {
+  0%, 100% {
+    box-shadow: inset 2px 0 0 rgba(77, 163, 255, 0.28);
+  }
+  46% {
+    box-shadow:
+      inset 2px 0 0 rgba(77, 163, 255, 0.72),
+      0 0 24px rgba(77, 163, 255, 0.12);
+  }
+}
+
+.motion-section {
+  --motion-local-delay: calc(var(--motion-section-index, 0) * 18ms);
+  position: relative;
+  transition:
+    border-color var(--dur-base) ease,
+    background var(--dur-base) ease,
+    box-shadow var(--dur-base) ease;
+  transition-delay: var(--motion-local-delay);
+  opacity: 1 !important;
+  transform: none !important;
+  will-change: auto;
+}
+
+.motion-section:not(.is-motion-visible) {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.motion-section.is-motion-visible {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.motion-section.is-motion-visible:is(.usage-card, .score-card, .tier-table-card, .heatmap-card, .topCardsPanel, .table-card, .scope-card) {
+  animation: btm-border-charge var(--dur-cinematic) var(--ease-out-expo) both;
+}
+
+.motion-section :is(
+  .section-title,
+  .page-title,
+  .pageTitle,
+  .topCardsHero__title,
+  .playerName,
+  .deck-display-name,
+  .profileFilterGroup__title,
+  .panel-title,
+  h1,
+  h2
+) {
+  transform-origin: left center;
+}
+
+.motion-section:not(.is-motion-visible) :is(
+  .section-title,
+  .page-title,
+  .pageTitle,
+  .topCardsHero__title,
+  .playerName,
+  .deck-display-name,
+  .profileFilterGroup__title,
+  .panel-title
+) {
+  opacity: 1;
+  clip-path: inset(0 0 0 0);
+  transform: none;
+}
+
+.motion-section.is-motion-visible :is(
+  .section-title,
+  .page-title,
+  .pageTitle,
+  .topCardsHero__title,
+  .playerName,
+  .deck-display-name,
+  .profileFilterGroup__title,
+  .panel-title
+) {
+  animation: btm-title-clip-reveal var(--dur-slow) var(--ease-out-expo) both;
+}
+
+.motion-section:not(.is-motion-visible) :is(
+  .homeHero__eyebrow,
+  .homeHero__lead,
+  .usage-subtitle,
+  .subtle,
+  .filter-panel__eyebrow,
+  .profileFilterGroup__sub,
+  .panel-kicker,
+  .deck-context-line,
+  .decklist-head__sub,
+  .tier-table-meta,
+  .page-subtitle
+) {
+  opacity: 1;
+  transform: none;
+}
+
+.motion-section.is-motion-visible :is(
+  .homeHero__eyebrow,
+  .homeHero__lead,
+  .usage-subtitle,
+  .subtle,
+  .filter-panel__eyebrow,
+  .profileFilterGroup__sub,
+  .panel-kicker,
+  .deck-context-line,
+  .decklist-head__sub,
+  .tier-table-meta,
+  .page-subtitle
+) {
+  transition:
+    opacity var(--dur-base) ease,
+    transform var(--dur-base) var(--ease-out-expo);
+  transition-delay: 70ms;
+}
+
+.motion-section .motion-child {
+  transition:
+    opacity var(--dur-slow) var(--ease-out-expo),
+    transform var(--dur-slow) var(--ease-out-expo),
+    filter var(--dur-base) ease;
+  transition-delay: min(calc(130ms + (var(--motion-child-index, 0) * var(--stagger-base))), 860ms);
+}
+
+.motion-section:not(.is-motion-visible) .motion-child {
+  opacity: 1;
+  transform: none;
+}
+
+.motion-section.is-motion-visible .motion-child {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.motion-section--ev-01.is-motion-visible .tier-section__header {
+  animation: btm-title-clip-reveal 720ms var(--ease-out-expo) both;
+}
+
+.motion-section--ev-01.is-motion-visible .tier-lane:nth-child(1) .tier-section__header { animation-delay: 40ms; }
+.motion-section--ev-01.is-motion-visible .tier-lane:nth-child(2) .tier-section__header { animation-delay: 120ms; }
+.motion-section--ev-01.is-motion-visible .tier-lane:nth-child(3) .tier-section__header { animation-delay: 200ms; }
+.motion-section--ev-01.is-motion-visible .tier-lane:nth-child(4) .tier-section__header { animation-delay: 280ms; }
+
+.motion-section--ev-02:not(.is-motion-visible) :is(.usage-donut__segment, .usage-pie-legend__row, .usage-summary__row) {
+  opacity: 1;
+}
+
+.motion-section--ev-02.is-motion-visible .usage-donut__segment {
+  animation: btm-donut-slice-reveal var(--dur-cinematic) var(--ease-out-expo) both;
+}
+
+.motion-section--ev-02.is-motion-visible .usage-donut__segment:nth-child(1) { animation-delay: 90ms; }
+.motion-section--ev-02.is-motion-visible .usage-donut__segment:nth-child(2) { animation-delay: 145ms; }
+.motion-section--ev-02.is-motion-visible .usage-donut__segment:nth-child(3) { animation-delay: 200ms; }
+.motion-section--ev-02.is-motion-visible .usage-donut__segment:nth-child(4) { animation-delay: 255ms; }
+.motion-section--ev-02.is-motion-visible .usage-donut__segment:nth-child(5) { animation-delay: 310ms; }
+.motion-section--ev-02.is-motion-visible .usage-donut__segment:nth-child(6) { animation-delay: 365ms; }
+.motion-section--ev-02.is-motion-visible .usage-donut__segment:nth-child(7) { animation-delay: 420ms; }
+.motion-section--ev-02.is-motion-visible .usage-donut__segment:nth-child(8) { animation-delay: 475ms; }
+.motion-section--ev-02.is-motion-visible .usage-donut__segment:nth-child(9) { animation-delay: 530ms; }
+.motion-section--ev-02.is-motion-visible .usage-donut__segment:nth-child(10) { animation-delay: 585ms; }
+.motion-section--ev-02.is-motion-visible .usage-donut__segment:nth-child(11) { animation-delay: 640ms; }
+
+.motion-section--ev-03.is-motion-visible .score-row--podium {
+  animation: btm-podium-signal 2.2s ease-in-out 900ms 2;
+}
+
+.motion-section--ev-04:not(.is-motion-visible) .heatmap-cell__inner {
+  opacity: 1;
+}
+
+.motion-section--ev-04.is-motion-visible .heatmap-cell__inner {
+  animation: btm-cell-reveal 520ms var(--ease-out-expo) both;
+  animation-delay: calc(80ms + (var(--motion-child-index, 0) * 11ms));
+}
+
+.page-enter {
+  animation: btm-enter-up var(--dur-slow) var(--ease-out-expo) both;
+}
+
+.section-reveal {
+  transition:
+    opacity var(--dur-slow) var(--ease-out-expo),
+    transform var(--dur-slow) var(--ease-out-expo),
+    border-color var(--dur-base) ease,
+    box-shadow var(--dur-base) ease;
+}
+
+.card-reveal {
+  animation: btm-card-enter var(--dur-slow) var(--ease-out-expo) both;
+}
+
+.data-row-hover {
+  transition:
+    background var(--dur-fast) ease,
+    border-color var(--dur-fast) ease,
+    box-shadow var(--dur-fast) ease;
+}
+
+.data-row-hover:hover {
+  border-color: rgba(77, 163, 255, 0.48);
+  background:
+    linear-gradient(90deg, rgba(77, 163, 255, 0.08), rgba(255, 209, 102, 0.034)),
+    rgba(8, 15, 28, 0.96);
+}
+
+.focus-glow:focus-visible,
+.button-press:focus-visible {
+  outline: none;
+  border-color: var(--border-accent);
+  box-shadow: var(--focus-ring), 0 0 18px rgba(77, 163, 255, 0.16);
+}
+
+.button-press {
+  transition:
+    transform var(--dur-fast) var(--ease-out-expo),
+    border-color var(--dur-fast) ease,
+    background var(--dur-fast) ease;
+}
+
+.button-press:active {
+  transform: translateY(1px);
+}
+
+.btm-page-enter-active,
+.btm-page-leave-active {
+  transition:
+    opacity var(--dur-base) var(--ease-out-expo),
+    transform var(--dur-base) var(--ease-out-expo);
+}
+
+.btm-page-enter-from,
+.btm-page-leave-to {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.btm-filter-enter-active {
+  transition:
+    opacity var(--dur-base) var(--ease-out-expo),
+    transform var(--dur-base) var(--ease-out-expo);
+}
+
+.btm-filter-leave-active {
+  transition:
+    opacity var(--dur-fast) ease,
+    transform var(--dur-fast) ease;
+}
+
+.btm-filter-enter-from,
+.btm-filter-leave-to {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+body .tierlist-page .page-title,
+body .top-decks-wrap .page-title,
+body main.container > .page > .header .title,
+body main.container > .page > .header .pageTitle,
+body .homePage .pageTitle,
+body .topCardsHero__title,
+body .player-profile .playerName {
+  animation: btm-enter-up 620ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+body .tierlist-page :is(.filter-drawer-trigger, .filter-sidebar, .filters),
+body .top-decks-wrap .filters,
+body main.container > .page > .filters,
+body .topCardsToolbar,
+body .deck-profile .profileFilters,
+body .player-profile .filterBar {
+  animation: btm-enter-up 520ms cubic-bezier(0.16, 1, 0.3, 1) 80ms both;
+}
+
+body .tierlist-page .tier-table-card:not(.motion-section) {
+  animation: btm-card-enter 640ms cubic-bezier(0.16, 1, 0.3, 1) 160ms both;
+}
+
+body .tierlist-page :is(.usage-card, .score-card, .heatmap-card),
+body .top-decks-wrap :is(.scope-card, .table-card),
+body main.container > .page :is(.tableWrap, .responsive-table, .hero, .stateCard),
+body .topCardsHero,
+body .topCardsPanel,
+body .homePage :is(.homeHero, .homeDirectory),
+body .deck-profile :is(.profileFilterGroup, .hero-panel, .table-card),
+body .player-profile :is(.hero, .summaryPanel, .deckPanel, .tableCard) {
+  animation: btm-card-enter 600ms cubic-bezier(0.16, 1, 0.3, 1) 120ms both;
+}
+
+body .tierlist-page :is(.usage-card, .score-card, .heatmap-card).motion-section,
+body .top-decks-wrap :is(.scope-card, .table-card).motion-section,
+body main.container > .page :is(.tableWrap, .responsive-table, .hero, .stateCard).motion-section,
+body .topCardsHero.motion-section,
+body .topCardsPanel.motion-section,
+body .homePage :is(.homeHero, .homeDirectory).motion-section,
+body .deck-profile :is(.profileFilterGroup, .hero-panel, .table-card).motion-section,
+body .player-profile :is(.hero, .summaryPanel, .deckPanel, .tableCard).motion-section {
+  animation: none;
+}
+
+body :is(
+  .usage-card,
+  .score-card,
+  .tier-table-card,
+  .heatmap-card,
+  .scope-card,
+  .table-card,
+  .topCardsPanel,
+  .tableWrap,
+  .responsive-table,
+  .hero,
+  .stateCard,
+  .homeHero,
+  .homeDirectory,
+  .profileFilterGroup,
+  .hero-panel,
+  .summaryPanel,
+  .deckPanel,
+  .tableCard
+).motion-section.is-motion-visible {
+  animation: btm-border-charge var(--dur-cinematic) var(--ease-out-expo) both;
+}
+
+#app :is(
+  .decks-table tbody tr,
+  .tbl tbody tr,
+  .usage-row,
+  .tier-lane,
+  .mobile-deck-card,
+  .topCardTile,
+  .profileCard,
+  .placement-card,
+  .metric-card,
+  .matchup-tile,
+  .creatorPackButton,
+  .entry,
+  .mobile-card
+):not(.motion-child) {
+  --btm-stagger-index: 0;
+  animation: btm-card-enter 520ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: calc(140ms + (var(--btm-stagger-index) * 46ms));
+}
+
+#app :is(.decks-table tbody tr, .tbl tbody tr, .usage-row, .tier-lane, .mobile-deck-card, .topCardTile, .entry, .mobile-card):nth-child(1) { --btm-stagger-index: 0; }
+#app :is(.decks-table tbody tr, .tbl tbody tr, .usage-row, .tier-lane, .mobile-deck-card, .topCardTile, .entry, .mobile-card):nth-child(2) { --btm-stagger-index: 1; }
+#app :is(.decks-table tbody tr, .tbl tbody tr, .usage-row, .tier-lane, .mobile-deck-card, .topCardTile, .entry, .mobile-card):nth-child(3) { --btm-stagger-index: 2; }
+#app :is(.decks-table tbody tr, .tbl tbody tr, .usage-row, .tier-lane, .mobile-deck-card, .topCardTile, .entry, .mobile-card):nth-child(4) { --btm-stagger-index: 3; }
+#app :is(.decks-table tbody tr, .tbl tbody tr, .usage-row, .tier-lane, .mobile-deck-card, .topCardTile, .entry, .mobile-card):nth-child(5) { --btm-stagger-index: 4; }
+#app :is(.decks-table tbody tr, .tbl tbody tr, .usage-row, .tier-lane, .mobile-deck-card, .topCardTile, .entry, .mobile-card):nth-child(6) { --btm-stagger-index: 5; }
+#app :is(.decks-table tbody tr, .tbl tbody tr, .usage-row, .tier-lane, .mobile-deck-card, .topCardTile, .entry, .mobile-card):nth-child(7) { --btm-stagger-index: 6; }
+#app :is(.decks-table tbody tr, .tbl tbody tr, .usage-row, .tier-lane, .mobile-deck-card, .topCardTile, .entry, .mobile-card):nth-child(8) { --btm-stagger-index: 7; }
+#app :is(.decks-table tbody tr, .tbl tbody tr, .usage-row, .tier-lane, .mobile-deck-card, .topCardTile, .entry, .mobile-card):nth-child(9) { --btm-stagger-index: 8; }
+#app :is(.decks-table tbody tr, .tbl tbody tr, .usage-row, .tier-lane, .mobile-deck-card, .topCardTile, .entry, .mobile-card):nth-child(10) { --btm-stagger-index: 9; }
+#app :is(.decks-table tbody tr, .tbl tbody tr, .usage-row, .tier-lane, .mobile-deck-card, .topCardTile, .entry, .mobile-card):nth-child(11) { --btm-stagger-index: 10; }
+#app :is(.decks-table tbody tr, .tbl tbody tr, .usage-row, .tier-lane, .mobile-deck-card, .topCardTile, .entry, .mobile-card):nth-child(12) { --btm-stagger-index: 11; }
+
+#app :is(.decks-table tbody tr, .tbl tbody tr, .usage-row, .mobile-deck-card) {
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+#app :is(.decks-table tbody tr, .tbl tbody tr):hover {
+  background:
+    linear-gradient(90deg, rgba(77, 163, 255, 0.076), rgba(255, 209, 102, 0.04)),
+    rgba(77, 163, 255, 0.055) !important;
+  box-shadow:
+    inset 2px 0 0 rgba(77, 163, 255, 0.64),
+    inset 0 0 0 1px rgba(148, 163, 184, 0.18) !important;
+}
+
+#app :is(.usage-row, .mobile-deck-card):hover {
+  border-color: rgba(77, 163, 255, 0.52) !important;
+  background:
+    linear-gradient(90deg, rgba(77, 163, 255, 0.082), rgba(255, 209, 102, 0.038)),
+    rgba(5, 10, 20, 0.96) !important;
+  box-shadow: inset 0 0 0 1px rgba(77, 163, 255, 0.18) !important;
+}
+
+#app :is(.deck-sprite, .usage-row__sprite, .tier-lane__sprite, .heatmap-sprite) {
+  transition:
+    transform 180ms cubic-bezier(0.16, 1, 0.3, 1),
+    filter 180ms ease;
+}
+
+#app :is(.decks-table tbody tr:hover, .mobile-deck-card:hover) .deck-sprite,
+#app .usage-row:hover .usage-row__sprite,
+#app .tier-lane__decklink:hover .tier-lane__sprite {
+  transform: translateY(-1px) scale(1.03);
+}
+
+#app :is(.decks-table tbody tr:hover, .mobile-deck-card:hover) .deck-sprite,
+#app .usage-row:hover .usage-row__sprite {
+  filter: drop-shadow(0 5px 10px rgba(77, 163, 255, 0.24));
+}
+
+#app .usage-row__barFill {
+  transform-origin: left center;
+  animation: btm-progress-grow 820ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+#app .tier-lane {
+  position: relative;
+  transition:
+    border-color 180ms ease,
+    background 180ms ease;
+}
+
+#app .tier-lane::after {
+  content: "";
+  position: absolute;
+  right: 7px;
+  bottom: 7px;
+  width: 10px;
+  height: 10px;
+  border-right: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
+  opacity: 0.38;
+  pointer-events: none;
+}
+
+#app .tier-lane:hover {
+  border-color: rgba(77, 163, 255, 0.5) !important;
+  background:
+    linear-gradient(135deg, rgba(77, 163, 255, 0.06), transparent 52%),
+    linear-gradient(315deg, rgba(255, 209, 102, 0.042), transparent 56%),
+    rgba(5, 10, 20, 0.96) !important;
+}
+
+#app .tier-lane:hover::after {
+  animation: btm-corner-scan 1.8s ease-in-out infinite;
+}
+
+#app :is(a, button, input, select, textarea, [tabindex]):focus-visible,
+#app :is(.filter-input, .filter-select):focus {
+  outline: none !important;
+  border-color: var(--accent-blue) !important;
+  box-shadow: var(--focus-ring) !important;
+}
+
+@media (max-width: 900px) {
+  #app :is(
+    .decks-table tbody tr,
+    .tbl tbody tr,
+    .usage-row,
+    .tier-lane,
+    .mobile-deck-card,
+    .topCardTile,
+    .profileCard,
+    .placement-card,
+    .metric-card,
+    .matchup-tile,
+    .entry,
+    .mobile-card
+  ) {
+    animation-duration: 360ms;
+    animation-delay: calc(80ms + (var(--btm-stagger-index) * 24ms));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+  }
+
+  .btm-page-enter-from,
+  .btm-page-leave-to,
+  .btm-filter-enter-from,
+  .btm-filter-leave-to {
+    transform: none;
+  }
+
+  #app :is(.decks-table tbody tr, .tbl tbody tr, .usage-row, .tier-lane, .mobile-deck-card, .topCardTile, .profileCard, .placement-card, .metric-card, .matchup-tile, .entry, .mobile-card) {
+    animation: none !important;
+  }
+
+  #app .tier-lane:hover::after,
+  #app .usage-row__barFill,
+  #app .progress-bar-animated__fill {
+    animation: none !important;
+  }
+}

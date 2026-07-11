@@ -2,7 +2,7 @@
   <div class="page">
     <div class="header">
       <div>
-        <h1 class="pageTitle">{{ ui.title }}</h1>
+        <h1 class="pageTitle page-hero-title" :class="{ 'page-hero-title--cn': isZh }">{{ ui.title }}</h1>
         <p class="sub">{{ ui.subtitle(rows.length) }}</p>
       </div>
     </div>
@@ -555,8 +555,8 @@ onMounted(async () => {
 <style scoped>
 .page {
   width: 100%;
-  max-width: 1120px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
 }
 
 .header {
@@ -627,7 +627,9 @@ onMounted(async () => {
 }
 
 .tableWrap {
-  overflow: auto;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
   background: rgba(15, 23, 42, 0.35);
@@ -639,15 +641,20 @@ onMounted(async () => {
 
 .tbl {
   width: 100%;
-  min-width: 860px;
+  max-width: 100%;
+  min-width: 0;
+  table-layout: fixed;
   border-collapse: collapse;
 }
 
 th,
 td {
+  min-width: 0;
+  overflow: hidden;
   padding: 11px 12px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   text-align: left;
+  text-overflow: ellipsis;
 }
 
 th {
@@ -660,6 +667,31 @@ th {
 td {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.92);
+}
+
+.tbl th:nth-child(1),
+.tbl td:nth-child(1) {
+  width: 48px;
+}
+
+.tbl th:nth-child(2),
+.tbl td:nth-child(2) {
+  width: 19%;
+}
+
+.tbl th:nth-child(3),
+.tbl td:nth-child(3) {
+  width: 15%;
+}
+
+.tbl th:nth-child(4),
+.tbl td:nth-child(4) {
+  width: 124px;
+}
+
+.tbl th:nth-child(n + 5),
+.tbl td:nth-child(n + 5) {
+  width: 8%;
 }
 
 .num {
@@ -676,9 +708,19 @@ td {
 }
 
 .regionCell {
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.regionCell span:last-child {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .flag-icon {
@@ -695,6 +737,9 @@ td {
 }
 
 .deckIcons {
+  max-width: 118px;
+  min-width: 0;
+  overflow: hidden;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -702,14 +747,14 @@ td {
 }
 
 .deckIcons img {
-  width: 28px;
-  height: 28px;
+  width: clamp(22px, 2vw, 28px);
+  height: clamp(22px, 2vw, 28px);
   object-fit: contain;
   flex: 0 0 auto;
 }
 
 .deckIcons--small {
-  min-width: 44px;
+  min-width: 0;
 }
 
 .deckFallback {
@@ -727,9 +772,15 @@ td {
 }
 
 .playerLink {
+  display: block;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
   color: #ffffff;
   text-decoration: none;
   font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .playerLink:hover {
@@ -847,7 +898,7 @@ td {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 820px) {
   .page {
     max-width: 100%;
   }

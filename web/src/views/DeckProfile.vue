@@ -161,7 +161,10 @@
 
         <div class="deck-title-block deck-title-block--classic">
           <div class="deck-title-text deck-title-text--classic">
-            <p class="deck-display-name deck-display-name--classic">
+            <p
+              class="deck-display-name deck-display-name--classic page-hero-title page-hero-title--compact"
+              :class="{ 'page-hero-title--cn': isZhUi }"
+            >
               {{ displayDeckName }}
             </p>
 
@@ -250,7 +253,7 @@
                   <path
                     d="M 10 58 A 50 50 0 0 1 110 58"
                     fill="none"
-                    stroke="#ff7f50"
+                    stroke="#4da3ff"
                     stroke-width="14"
                     stroke-linecap="butt"
                     :stroke-dasharray="gaugeDasharray(leftAnalytics.metaShare)"
@@ -279,7 +282,7 @@
                   <path
                     d="M 10 58 A 50 50 0 0 1 110 58"
                     fill="none"
-                    stroke="#ff7f50"
+                    stroke="#4da3ff"
                     stroke-width="14"
                     stroke-linecap="butt"
                     :stroke-dasharray="gaugeDasharray(leftAnalytics.winRate)"
@@ -469,26 +472,19 @@
                     v-for="card in group.cards"
                     :key="card.key"
                     class="profileCard profileCard--breakdown"
-                    :title="card.title"
                   >
-                    <div class="profileCard__imageWrap profileCard__imageWrap--breakdown">
-                      <img
-                        v-if="card.image && !failedCardImages[card.key]"
-                        class="profileCard__image"
-                        :src="card.image"
-                        :alt="card.name"
-                        crossorigin="anonymous"
-                        draggable="false"
-                        @error="onCardImageError(card.key)"
-                      />
-
-                      <div v-else class="profileCard__fallback">
-                        <div class="profileCard__fallbackName">{{ card.name }}</div>
-                        <div class="profileCard__fallbackCode mono">
-                          {{ card.set || "?" }} {{ card.number || card.code || "?" }}
-                        </div>
-                      </div>
-
+                    <CardImageWithCount
+                      class="profileCard__imageWrap profileCard__imageWrap--breakdown"
+                      :card="card"
+                      :image-src="card.image && !failedCardImages[card.key] ? card.image : ''"
+                      :alt="card.name"
+                      :fallback-name="card.name"
+                      :fallback-code="`${card.set || '?'} ${card.number || card.code || '?'}`"
+                      :locale="routeLang === 'en' ? 'en' : 'zh'"
+                      crossorigin="anonymous"
+                      variant="deck"
+                      @image-error="onCardImageError(card.key)"
+                    >
                       <div
                         class="profileCard__stats"
                         :style="{
@@ -520,7 +516,7 @@
                           </span>
                         </div>
                       </div>
-                    </div>
+                    </CardImageWithCount>
                   </article>
                 </div>
               </section>
@@ -534,47 +530,25 @@
             :class="{ 'decklist-viewport--scrollable': rightDeckPanelCards.length > 20 }"
             :style="decklistViewportStyle"
           >
-            <div ref="deckCardsGridRef" class="cardsGrid cardsGrid--profile">
+            <div ref="deckCardsGridRef" class="cardsGrid cardsGrid--profile card-grid-mobile-compact">
               <article
                 v-for="card in rightDeckPanelCards"
                 :key="card.key"
                 class="profileCard"
-                :title="`${card.name} • 投入率 ${formatPercentValue(card.slotRatePct)} • 出現 ${formatPercentValue(card.inclusionPct)}`"
               >
-                <div class="profileCard__imageWrap">
-                  <img
-                    v-if="card.image && !failedCardImages[card.key]"
-                    class="profileCard__image"
-                    :src="card.image"
-                    :alt="card.name"
-                    crossorigin="anonymous"
-                    draggable="false"
-                    @error="onCardImageError(card.key)"
-                  />
-
-                  <div v-else class="profileCard__fallback">
-                    <div class="profileCard__fallbackName">{{ card.name }}</div>
-                    <div class="profileCard__fallbackCode mono">
-                      {{ card.set || "?" }} {{ card.number || card.code || "?" }}
-                    </div>
-                  </div>
-
-                  <span
-                    class="profileCard__rate mono"
-                    :class="{ 'profileCard__rate--count': rightDeckMode === 'sample' }"
-                  >
-                    <template v-if="rightDeckMode === 'sample'">
-                      <img class="profileCard__rateIcon" :src="twoCopyDiskIcon" alt="" draggable="false" />
-                      <span class="profileCard__rateDivider" aria-hidden="true"></span>
-                      <span class="profileCard__rateText">{{ card.badgeText }}</span>
-                    </template>
-                    <template v-else>
-                      {{ formatPercentValue(card.slotRatePct) }}
-                    </template>
-                  </span>
-
-                  
-                </div>
+                <CardImageWithCount
+                  class="profileCard__imageWrap"
+                  :card="card"
+                  :image-src="card.image && !failedCardImages[card.key] ? card.image : ''"
+                  :alt="card.name"
+                  :count="card.count"
+                  :fallback-name="card.name"
+                  :fallback-code="`${card.set || '?'} ${card.number || card.code || '?'}`"
+                  :locale="routeLang === 'en' ? 'en' : 'zh'"
+                  crossorigin="anonymous"
+                  variant="deck"
+                  @image-error="onCardImageError(card.key)"
+                />
               </article>
             </div>
           </div>
@@ -848,6 +822,7 @@
 import { computed, defineAsyncComponent, reactive, ref, shallowRef, onMounted, onBeforeUnmount, watch, nextTick } from "vue";
 import { useRoute } from "vue-router";
 import { getLocalizedDeckName } from "../assets/pokemonNames";
+import CardImageWithCount from "../components/ui/CardImageWithCount.vue";
 import {
   buildTierEmaScores,
   calculateTierScore,
@@ -953,20 +928,25 @@ interface NormalizedDeckCard {
   key: string;
   code: string;
   set: string;
+  setName?: string;
   number: string;
   name: string;
   count: number;
   image: string;
+  illustrator?: string;
+  pageLine?: string;
   category: string;
 }
 
 interface RawCatalogCard {
   id?: string;
   name?: string;
+  set_name?: string;
   set_code?: string;
   number?: string | number;
   page_line?: string;
   extra_text?: string;
+  illustrator?: string | null;
   supertype?: string | null;
   subtypes?: unknown[];
   display_type?: string | null;
@@ -975,6 +955,11 @@ interface RawCatalogCard {
 interface CatalogCardInfo {
   code: string;
   name: string;
+  setCode: string;
+  setName: string;
+  number: string;
+  illustrator: string;
+  pageLine: string;
   category: string;
 }
 
@@ -982,9 +967,12 @@ interface CardAggregate {
   key: string;
   code: string;
   set: string;
+  setName?: string;
   number: string;
   name: string;
   image: string;
+  illustrator?: string;
+  pageLine?: string;
   category: string;
   totalCopies: number;
   deckCount: number;
@@ -1066,9 +1054,13 @@ interface RightDeckPanelCard {
   key: string;
   code: string;
   set: string;
+  setName?: string;
   number: string;
   name: string;
   image: string;
+  count?: number;
+  illustrator?: string;
+  pageLine?: string;
   category: string;
   slotRatePct: number;
   inclusionPct: number;
@@ -3425,10 +3417,13 @@ const tierRows = computed<TierRow[]>(() =>
 const rightCardTournaments = computed(() => leftPanelTournaments.value);
 
 function hydratePrecomputedCard(card: AnyRecord): CardAggregate {
+  const displayMeta = resolveCardDisplayMeta(card);
+
   return {
     key: cleanDeckText(card.key) || cleanDeckText(card.code) || slugify(card.name),
     code: cleanDeckText(card.code),
     set: cleanDeckText(card.set),
+    setName: displayMeta.setName,
     number: cleanDeckText(card.number),
     name: cleanDeckText(card.name),
     image:
@@ -3440,6 +3435,8 @@ function hydratePrecomputedCard(card: AnyRecord): CardAggregate {
         name: card.name,
         fallbackImage: card.image,
       }),
+    illustrator: displayMeta.illustrator,
+    pageLine: displayMeta.pageLine,
     category: inferDeckCardCategory({
       category: card.category,
       set: card.set,
@@ -3489,18 +3486,25 @@ function hydratePrecomputedAnalytics(scope: PrecomputedDeckProfileScope): DeckPr
   const sampleDeck = raw.sampleDeck && typeof raw.sampleDeck === "object"
     ? {
         ...(raw.sampleDeck as SampleDeckEntry),
-        cards: unwrapCollection<AnyRecord>((raw.sampleDeck as AnyRecord).cards).map((card) => ({
-          ...card,
-          image:
-            cleanDeckText(card.image) ||
-            resolveCardImageUrl({
-              set: card.set,
-              number: card.number,
-              code: card.code,
-              name: card.name,
-              fallbackImage: card.image,
-            }),
-        })),
+        cards: unwrapCollection<AnyRecord>((raw.sampleDeck as AnyRecord).cards).map((card) => {
+          const displayMeta = resolveCardDisplayMeta(card);
+
+          return {
+            ...card,
+            setName: displayMeta.setName,
+            illustrator: displayMeta.illustrator,
+            pageLine: displayMeta.pageLine,
+            image:
+              cleanDeckText(card.image) ||
+              resolveCardImageUrl({
+                set: card.set,
+                number: card.number,
+                code: card.code,
+                name: card.name,
+                fallbackImage: card.image,
+              }),
+          };
+        }),
       }
     : null;
 
@@ -3909,6 +3913,11 @@ function buildCatalogCardInfo(raw: RawCatalogCard): CatalogCardInfo | null {
   return {
     code: codeKey || code,
     name,
+    setCode,
+    setName: cleanDeckText(raw.set_name) || setCode,
+    number,
+    illustrator: cleanDeckText(raw.illustrator),
+    pageLine: cleanDeckText(raw.page_line),
     category: inferCatalogDeckCategory(raw),
   };
 }
@@ -3977,6 +3986,35 @@ function lookupCatalogCard(input: {
   return byName.find((item) => item.category === "Supporter") ?? byName[0] ?? null;
 }
 
+function resolveCardDisplayMeta(input: {
+  code?: unknown;
+  set?: unknown;
+  setName?: unknown;
+  set_name?: unknown;
+  number?: unknown;
+  name?: unknown;
+  illustrator?: unknown;
+  pageLine?: unknown;
+  page_line?: unknown;
+}) {
+  const catalogCard = lookupCatalogCard(input);
+
+  return {
+    setName:
+      cleanDeckText(input.setName ?? input.set_name) ||
+      catalogCard?.setName ||
+      "",
+    illustrator:
+      cleanDeckText(input.illustrator) ||
+      catalogCard?.illustrator ||
+      "",
+    pageLine:
+      cleanDeckText(input.pageLine ?? input.page_line) ||
+      catalogCard?.pageLine ||
+      "",
+  };
+}
+
 function inferDeckCardCategory(input: {
   category?: unknown;
   section?: unknown;
@@ -4035,6 +4073,12 @@ function parseDecklistText(source: string, categoryHint = "Other"): NormalizedDe
       const code = extractCardCodeFromText(rawText);
       const codeParts = splitCardCodeParts(code);
       const name = stripCardCodeFromName(rawText) || cleanDeckText(rawText);
+      const displayMeta = resolveCardDisplayMeta({
+        code,
+        set: codeParts.set,
+        number: codeParts.number,
+        name,
+      });
 
       if (!name || !Number.isFinite(count) || count <= 0) return null;
 
@@ -4046,6 +4090,7 @@ function parseDecklistText(source: string, categoryHint = "Other"): NormalizedDe
             : slugify(name)),
         code,
         set: codeParts.set,
+        setName: displayMeta.setName,
         number: codeParts.number,
         name,
         count,
@@ -4056,6 +4101,8 @@ function parseDecklistText(source: string, categoryHint = "Other"): NormalizedDe
           name,
           fallbackImage: "",
         }),
+        illustrator: displayMeta.illustrator,
+        pageLine: displayMeta.pageLine,
         category: inferDeckCardCategory({
           category: categoryHint,
           set: codeParts.set,
@@ -4138,6 +4185,13 @@ function normalizeDeckCardsSource(source: unknown, categoryHint = "Other"): Norm
         merged.images?.large ??
         "",
     });
+    const displayMeta = resolveCardDisplayMeta({
+      ...merged,
+      code,
+      set,
+      number,
+      name,
+    });
 
     if (!name || !Number.isFinite(count) || count <= 0) return [];
 
@@ -4150,10 +4204,13 @@ function normalizeDeckCardsSource(source: unknown, categoryHint = "Other"): Norm
             : slugify(`${name}-${merged.id ?? merged.cardId ?? name}`)),
         code,
         set,
+        setName: displayMeta.setName,
         number,
         name,
         count,
         image,
+        illustrator: displayMeta.illustrator,
+        pageLine: displayMeta.pageLine,
         category: inferDeckCardCategory({
           category: merged.category ?? categoryHint,
           section: merged.section,
@@ -4528,9 +4585,12 @@ function buildDeckProfileAnalytics(
           if (deckCard) {
             deckCard.count += count;
             if (!deckCard.set && card.set) deckCard.set = card.set;
+            if (!deckCard.setName && card.setName) deckCard.setName = card.setName;
             if (!deckCard.number && card.number) deckCard.number = card.number;
             if (!deckCard.code && card.code) deckCard.code = card.code;
             if (!deckCard.name && card.name) deckCard.name = card.name;
+            if (!deckCard.illustrator && card.illustrator) deckCard.illustrator = card.illustrator;
+            if (!deckCard.pageLine && card.pageLine) deckCard.pageLine = card.pageLine;
             if (!deckCard.category && card.category) deckCard.category = card.category;
             if (!deckCard.image) {
               deckCard.image = resolveCardImageUrl({
@@ -4560,13 +4620,17 @@ function buildDeckProfileAnalytics(
 
         for (const card of deckCardMap.values()) {
           const key = card.key || card.code || slugify(card.name);
+          const displayMeta = resolveCardDisplayMeta(card);
           const existing: CardAggregate = cardMap.get(key) ?? {
             key,
             code: card.code,
             set: card.set,
+            setName: card.setName || displayMeta.setName,
             number: card.number,
             name: card.name,
             image: card.image,
+            illustrator: card.illustrator || displayMeta.illustrator,
+            pageLine: card.pageLine || displayMeta.pageLine,
             category: card.category,
             totalCopies: 0,
             deckCount: 0,
@@ -4582,6 +4646,7 @@ function buildDeckProfileAnalytics(
           existing.totalCopies += card.count;
 
           if (!existing.set && card.set) existing.set = card.set;
+          if (!existing.setName) existing.setName = card.setName || displayMeta.setName;
           if (!existing.number && card.number) existing.number = card.number;
           if (!existing.image) {
             existing.image = resolveCardImageUrl({
@@ -4594,6 +4659,8 @@ function buildDeckProfileAnalytics(
           }
           if (!existing.code && card.code) existing.code = card.code;
           if (!existing.name && card.name) existing.name = card.name;
+          if (!existing.illustrator) existing.illustrator = card.illustrator || displayMeta.illustrator;
+          if (!existing.pageLine) existing.pageLine = card.pageLine || displayMeta.pageLine;
           existing.deckCount += 1;
 
           if (card.count >= 2) existing.twoCopyDeckCount += 1;
@@ -4641,6 +4708,7 @@ function buildDeckProfileAnalytics(
 
   const cardsFlat: CardAggregate[] = [...cardMap.values()]
     .map((item) => {
+      const displayMeta = resolveCardDisplayMeta(item);
       const slotRatePct = totalSeenDeckRows > 0 ? (item.totalCopies / totalSeenDeckRows) * 100 : 0;
       const inclusionPct = totalSeenDeckRows > 0 ? (item.deckCount / totalSeenDeckRows) * 100 : 0;
       const avgCopies = item.deckCount > 0 ? item.totalCopies / item.deckCount : 0;
@@ -4651,6 +4719,9 @@ function buildDeckProfileAnalytics(
 
       return {
         ...item,
+        setName: item.setName || displayMeta.setName,
+        illustrator: item.illustrator || displayMeta.illustrator,
+        pageLine: item.pageLine || displayMeta.pageLine,
         image:
           item.image ||
           resolveCardImageUrl({
@@ -4837,6 +4908,7 @@ function buildCardPanelGroupsFromAnalytics(analytics: DeckProfileAnalytics): Rig
       key: card.key,
       code: card.code,
       set: card.set,
+      setName: card.setName,
       number: card.number,
       name: card.name,
       image:
@@ -4848,6 +4920,8 @@ function buildCardPanelGroupsFromAnalytics(analytics: DeckProfileAnalytics): Rig
           name: card.name,
           fallbackImage: card.image,
         }),
+      illustrator: card.illustrator,
+      pageLine: card.pageLine,
       category: card.category,
       slotRatePct: card.inclusionPct,
       inclusionPct: card.inclusionPct,
@@ -4877,6 +4951,7 @@ const rightDeckPanelGroups = computed<RightDeckPanelGroup[]>(() => {
           key: `${card.key}-${index}`,
           code: card.code,
           set: card.set,
+          setName: card.setName,
           number: card.number,
           name: card.name,
           image:
@@ -4888,6 +4963,9 @@ const rightDeckPanelGroups = computed<RightDeckPanelGroup[]>(() => {
               name: card.name,
               fallbackImage: card.image,
             }),
+          count: card.count,
+          illustrator: card.illustrator,
+          pageLine: card.pageLine,
           category: "",
           slotRatePct: card.count,
           inclusionPct: 0,
@@ -5183,6 +5261,7 @@ function sampleDeckToPanelCards(sample: SampleDeckEntry | null): RightDeckPanelC
     key: `${card.key}-${index}`,
     code: card.code,
     set: card.set,
+    setName: card.setName,
     number: card.number,
     name: card.name,
     image:
@@ -5194,6 +5273,9 @@ function sampleDeckToPanelCards(sample: SampleDeckEntry | null): RightDeckPanelC
         name: card.name,
         fallbackImage: card.image,
       }),
+    count: card.count,
+    illustrator: card.illustrator,
+    pageLine: card.pageLine,
     category: card.category,
     slotRatePct: card.count,
     inclusionPct: 0,
@@ -6217,20 +6299,22 @@ function resetPage() {
 
 <style scoped>
 .deck-profile {
-  --bg-main: #07131f;
-  --bg-panel: rgba(10, 24, 42, 0.94);
-  --bg-panel-2: rgba(14, 25, 43, 0.78);
-  --border: rgba(115, 192, 255, 0.18);
-  --border-soft: rgba(115, 192, 255, 0.12);
-  --text-main: #f5fbff;
-  --text-soft: #9bbad6;
-  --text-dim: #6f8cab;
-  --accent: #ff7f50;
-  --accent-soft: rgba(255, 127, 80, 0.18);
+  --bg-main: #02040a;
+  --bg-panel: rgba(5, 10, 20, 0.94);
+  --bg-panel-2: rgba(8, 15, 28, 0.96);
+  --border: rgba(148, 163, 184, 0.28);
+  --border-soft: rgba(148, 163, 184, 0.2);
+  --text-main: #f8fafc;
+  --text-soft: #a8b3c7;
+  --text-dim: #64748b;
+  --accent: var(--accent-primary);
+  --accent-soft: rgba(77, 163, 255, 0.18);
   --shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
 
   position: relative;
-  width: 100%;
+  width: min(92vw, var(--page-fluid-max));
+  max-width: 100%;
+  margin: 0 auto;
   min-height: 0;
   display: grid;
   gap: 14px;
@@ -6265,8 +6349,8 @@ function resetPage() {
 .hero-grid {
   --tech-frame-cyan: rgba(64, 230, 255, 0.55);
   --tech-frame-cyan-dim: rgba(64, 230, 255, 0.22);
-  --tech-frame-amber: rgba(255, 140, 90, 0.55);
-  --tech-frame-amber-dim: rgba(255, 140, 90, 0.2);
+  --tech-frame-amber: rgba(255, 209, 102, 0.5);
+  --tech-frame-amber-dim: rgba(255, 209, 102, 0.18);
 
   position: relative;
   z-index: 1;
@@ -6631,12 +6715,14 @@ function resetPage() {
   margin-top: 8px;
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 10px;
   text-align: center;
   color: #d7e8ff;
   font-size: 0.92rem;
-  overflow-x: auto;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
   padding: 0 4px;
 }
 
@@ -6810,7 +6896,7 @@ function resetPage() {
   bottom: 8px;
   border-radius: 999px;
   padding: 4px 8px;
-  background: rgba(255, 127, 80, 0.96);
+  background: rgba(255, 209, 102, 0.96);
   color: #fff;
   font-size: 0.78rem;
   font-weight: 800;
@@ -6832,11 +6918,16 @@ function resetPage() {
 }
 
 .table-scroll {
-  overflow-x: auto;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .results-table {
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  table-layout: fixed;
   border-collapse: collapse;
 }
 
@@ -6849,13 +6940,18 @@ function resetPage() {
   font-weight: 900;
   border-top: 1px solid var(--border-soft);
   border-bottom: 1px solid var(--border-soft);
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .results-table tbody td {
+  min-width: 0;
+  overflow: hidden;
   padding: 14px 18px;
   border-top: 1px solid rgba(115, 192, 255, 0.08);
   color: #edf7ff;
+  text-overflow: ellipsis;
   vertical-align: middle;
 }
 
@@ -6863,9 +6959,37 @@ function resetPage() {
   background: rgba(255, 255, 255, 0.025);
 }
 
+.results-table th:nth-child(1),
+.results-table td:nth-child(1) {
+  width: 20%;
+}
+
+.results-table th:nth-child(2),
+.results-table td:nth-child(2) {
+  width: 40%;
+}
+
+.results-table th:nth-child(3),
+.results-table td:nth-child(3),
+.results-table th:nth-child(4),
+.results-table td:nth-child(4),
+.results-table th:nth-child(5),
+.results-table td:nth-child(5) {
+  width: 13.333%;
+}
+
 .player-col {
+  overflow: hidden;
   font-weight: 800;
   color: #ffffff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tournament-col {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .tournament-col {
@@ -6897,14 +7021,14 @@ function resetPage() {
   padding: 6px 10px;
   border-radius: 999px;
   background: var(--accent-soft);
-  color: #fff5f0;
+  color: #f8fbff;
   text-decoration: none;
   font-weight: 800;
-  border: 1px solid rgba(255, 127, 80, 0.4);
+  border: 1px solid rgba(77, 163, 255, 0.42);
 }
 
 .list-btn:hover {
-  background: rgba(255, 127, 80, 0.3);
+  background: rgba(77, 163, 255, 0.28);
 }
 
 .muted {
@@ -7438,8 +7562,8 @@ function resetPage() {
     radial-gradient(circle, rgba(5, 16, 29, 0.98) 0 52%, transparent 53%),
     conic-gradient(
       from 0deg,
-      rgba(64, 148, 255, 0.98) 0 var(--one-rate),
-      rgba(255, 122, 82, 0.98) var(--one-rate) calc(var(--one-rate) + var(--two-rate)),
+      rgba(77, 163, 255, 0.98) 0 var(--one-rate),
+      rgba(255, 209, 102, 0.96) var(--one-rate) calc(var(--one-rate) + var(--two-rate)),
       rgba(255, 255, 255, 0.18) calc(var(--two-rate) + var(--one-rate)) 100%
     );
   box-shadow:
@@ -8703,6 +8827,222 @@ function resetPage() {
     min-width: 100px;
     padding: 6px 12px;
     font-size: 0.85rem;
+  }
+}
+
+.deck-profile :is(a, button, input, select, textarea, [tabindex]):focus {
+  outline: none !important;
+}
+
+.deck-profile :is(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: none !important;
+  border-color: var(--border-accent) !important;
+  box-shadow: var(--focus-ring) !important;
+}
+
+.deck-profile .hero-panel,
+.deck-profile .table-card,
+.deck-profile .deck-meta-pill,
+.deck-profile .record-bubble,
+.deck-profile .placement-card,
+.deck-profile .metric-card,
+.deck-profile .profileCard__imageWrap,
+.deck-profile .profileCard__body,
+.deck-profile .card-image--flat,
+.deck-profile .card-image-fallback--flat,
+.deck-profile .pagination-btn,
+.deck-profile .pagination-info {
+  border-radius: 0;
+}
+
+.deck-profile .cardsGrid--profile,
+.deck-profile .decklist-shell--sample .cardsGrid--profile {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 220px)) !important;
+  justify-content: start;
+  align-items: start;
+}
+
+.deck-profile .profileCard {
+  max-width: 220px;
+}
+
+.deck-profile .profileCard__imageWrap {
+  width: 100%;
+  max-width: 360px;
+}
+
+.deck-profile .card-grid--flat {
+  grid-template-columns: repeat(auto-fit, minmax(118px, 160px)) !important;
+  justify-content: start;
+}
+
+.deck-profile .card-image--flat,
+.deck-profile .card-image-fallback--flat {
+  width: 100%;
+  max-width: 160px;
+}
+
+.deck-profile .tier-badge {
+  --deck-tier-rgb: var(--tier-b-rgb);
+  --deck-tier-color: var(--tier-b);
+  border-radius: 0;
+  border-color: rgba(var(--deck-tier-rgb), 0.52);
+  background:
+    linear-gradient(180deg, rgba(var(--deck-tier-rgb), 0.22), rgba(var(--deck-tier-rgb), 0.08)),
+    rgba(8, 15, 28, 0.96);
+  box-shadow:
+    0 12px 24px rgba(0, 0, 0, 0.28),
+    0 0 18px rgba(var(--deck-tier-rgb), 0.12),
+    inset 0 1px 0 rgba(248, 250, 252, 0.06);
+}
+
+.deck-profile .tier-badge--sss,
+.deck-profile .tier-badge--ss,
+.deck-profile .tier-badge--s {
+  --deck-tier-rgb: var(--tier-s-rgb);
+  --deck-tier-color: var(--tier-s);
+}
+
+.deck-profile .tier-badge--a {
+  --deck-tier-rgb: var(--tier-a-rgb);
+  --deck-tier-color: var(--tier-a);
+}
+
+.deck-profile .tier-badge--b {
+  --deck-tier-rgb: var(--tier-b-rgb);
+  --deck-tier-color: var(--tier-b);
+}
+
+.deck-profile .tier-badge--c {
+  --deck-tier-rgb: var(--tier-c-rgb);
+  --deck-tier-color: var(--tier-c);
+}
+
+.deck-profile .tier-badge__value,
+.deck-profile .tier-badge--sss .tier-badge__value,
+.deck-profile .tier-badge--ss .tier-badge__value,
+.deck-profile .tier-badge--s .tier-badge__value,
+.deck-profile .tier-badge--a .tier-badge__value,
+.deck-profile .tier-badge--b .tier-badge__value,
+.deck-profile .tier-badge--c .tier-badge__value {
+  color: var(--deck-tier-color);
+  text-shadow: 0 0 16px rgba(var(--deck-tier-rgb), 0.28);
+}
+
+@media (max-width: 720px) {
+  .deck-profile {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .deck-profile .cardsGrid--profile,
+  .deck-profile .decklist-shell--sample .cardsGrid--profile {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)) !important;
+  }
+
+  .deck-profile .profileCard {
+    max-width: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .deck-profile {
+    padding-inline: 0;
+    overflow-x: clip;
+  }
+
+  .profileFilters,
+  .hero-grid,
+  .hero-sidebar {
+    grid-template-columns: 1fr !important;
+    gap: 14px;
+    min-width: 0;
+  }
+
+  .profileFilterGroup,
+  .hero-panel,
+  .table-card {
+    min-width: 0;
+    padding: 12px;
+  }
+
+  .profileFilterGroup__head,
+  .profileFilterGroup__head__actions,
+  .decklist-head {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .profileFilterGrid,
+  .profileFilterGrid--left,
+  .profileFilterGrid--right {
+    grid-template-columns: 1fr !important;
+  }
+
+  .profileFilterField,
+  .profileFilterField select,
+  .view-toggle__option {
+    min-width: 0;
+  }
+
+  .deck-display-name--classic {
+    max-width: 100%;
+    font-size: clamp(40px, 12vw, 64px);
+    line-height: 0.95;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .deck-english-name--classic,
+  .deck-context-line {
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  .deck-title-text--classic {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .deck-title-media {
+    flex-wrap: wrap;
+  }
+
+  .hero-panel--decklist,
+  .decklist-viewport,
+  .decklist-viewport--scrollable {
+    overflow: visible;
+    max-height: none !important;
+  }
+
+  .decklist-shell {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .deck-profile .card-grid-mobile-compact,
+  .deck-profile .decklist-shell--sample .card-grid-mobile-compact {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    justify-content: stretch;
+    gap: 4px !important;
+  }
+
+  .deck-profile .card-grid-mobile-compact .profileCard {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+  }
+
+  .deck-profile .card-grid-mobile-compact .profileCard__imageWrap {
+    width: 100%;
+    max-width: none;
+    border-radius: 6px;
+  }
+
+  .deck-profile .card-grid-mobile-compact :deep(.card-display) {
+    width: 100%;
+    max-width: none;
   }
 }
 

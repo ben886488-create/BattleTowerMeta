@@ -19,7 +19,7 @@
       <section class="hero">
         <div class="heroTop">
           <div>
-            <h1 class="pageTitle">{{ tournamentTitle }}</h1>
+            <h1 class="pageTitle page-hero-title page-hero-title--compact" :class="{ 'page-hero-title--cn': isZh }">{{ tournamentTitle }}</h1>
             <div class="subline mono">{{ tournamentId }}</div>
           </div>
 
@@ -138,32 +138,23 @@
             </div>
 
             <div v-if="allCards(row).length" class="cardsBlock">
-              <div class="cardsGrid">
+              <div class="cardsGrid card-grid-mobile-compact">
                 <div
                   v-for="(card, idx) in allCards(row)"
                   :key="cardKey(card, idx, 'all')"
                   class="cardTile"
                 >
-                  <div class="cardImageWrap">
-                    <img
-                      v-if="hasUsableImage(card)"
-                      class="cardImage"
-                      :src="currentCardImage(card)"
-                      :alt="cardAlt(card)"
-                      loading="lazy"
-                      decoding="async"
-                      @error="markCardBroken(card)"
-                    />
-
-                    <div v-else class="cardFallback">
-                      <div class="cardFallback__name">{{ card.name }}</div>
-                      <div class="cardFallback__code mono">
-                        {{ card.set }} {{ card.number }}
-                      </div>
-                    </div>
-
-                    <span class="countBadge">x{{ card.count ?? 1 }}</span>
-                  </div>
+                  <CardImageWithCount
+                    :card="tournamentCardDisplayMeta(card)"
+                    :image-src="hasUsableImage(card) ? currentCardImage(card) : ''"
+                    :alt="cardAlt(card)"
+                    :count="card.count ?? 1"
+                    :fallback-name="card.name || '—'"
+                    :fallback-code="`${card.set || '—'} ${card.number || ''}`"
+                    :locale="lang"
+                    variant="deck"
+                    @image-error="markCardBroken(card)"
+                  />
                 </div>
               </div>
             </div>
@@ -177,6 +168,7 @@
 <script setup lang="ts">
 import { computed, reactive, ref, watch } from "vue";
 import { useRoute } from "vue-router";
+import CardImageWithCount from "../components/ui/CardImageWithCount.vue";
 
 type TournamentIndexRow = {
   game?: string;
@@ -423,6 +415,18 @@ function hasUsableImage(card: DeckCardRow) {
 
 function currentCardImage(card: DeckCardRow) {
   return resolveCardImage(card);
+}
+
+function tournamentCardDisplayMeta(card: DeckCardRow) {
+  const setCode = normalizeSetCode(card.set);
+  const number = normalizeCardNumber(card.number);
+  return {
+    ...card,
+    setCode,
+    setName: displaySet.value,
+    cardCode: setCode && number ? `${setCode}-${number.replace(/^0+(?=\d)/, "")}` : "",
+    image: currentCardImage(card),
+  };
 }
 
 function normalizeDeckIconKey(value?: string) {
@@ -922,8 +926,8 @@ function cardAlt(card: DeckCardRow) {
 <style scoped>
 .page {
   width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
   padding: 0 10px;
   box-sizing: border-box;
 }
@@ -1200,12 +1204,19 @@ function cardAlt(card: DeckCardRow) {
 
 .cardsGrid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 260px));
+  justify-content: start;
+  gap: clamp(12px, 1.2vw, 22px);
 }
 
 .cardTile {
   min-width: 0;
+  max-width: 260px;
+}
+
+.cardTile :deep(.card-display) {
+  width: 100%;
+  max-width: 260px;
 }
 
 .cardImageWrap {
@@ -1397,6 +1408,24 @@ function cardAlt(card: DeckCardRow) {
     height: 32px;
     padding: 0 10px;
     font-size: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cardsBlock {
+    padding: 8px;
+  }
+
+  .cardsGrid.card-grid-mobile-compact {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    justify-content: stretch;
+    gap: 4px;
+  }
+
+  .cardTile,
+  .cardTile :deep(.card-display) {
+    width: 100%;
+    max-width: none;
   }
 }
 </style>

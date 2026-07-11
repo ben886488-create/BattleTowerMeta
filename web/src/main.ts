@@ -6,6 +6,7 @@ import { initGoogleAnalytics } from './lib/analytics'
 import './assets/theme.css'
 import './assets/fonts.css'
 import './responsive.css'
+import './assets/editorial.css'
 
 export const createApp = ViteSSG(
   App,

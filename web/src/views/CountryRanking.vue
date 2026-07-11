@@ -2,7 +2,7 @@
   <div class="page">
     <div class="header">
       <div>
-        <h1 class="pageTitle">{{ ui.title }}</h1>
+        <h1 class="pageTitle page-hero-title" :class="{ 'page-hero-title--cn': isZh }">{{ ui.title }}</h1>
         <p class="sub">{{ ui.subtitle(rows.length) }}</p>
       </div>
     </div>
@@ -578,8 +578,8 @@ onMounted(async () => {
 <style scoped>
 .page {
   width: 100%;
-  max-width: 1120px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
 }
 
 .header {
@@ -643,7 +643,9 @@ onMounted(async () => {
 }
 
 .tableWrap {
-  overflow: auto;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 14px;
   background: rgba(15, 23, 42, 0.35);
@@ -655,15 +657,20 @@ onMounted(async () => {
 
 .tbl {
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  table-layout: fixed;
   border-collapse: collapse;
-  min-width: 860px;
 }
 
 th,
 td {
+  min-width: 0;
+  overflow: hidden;
   padding: 11px 12px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   text-align: left;
+  text-overflow: ellipsis;
 }
 
 th {
@@ -676,6 +683,28 @@ td {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.92);
   vertical-align: middle;
+}
+
+.tbl th:nth-child(1),
+.tbl td:nth-child(1) {
+  width: 48px;
+}
+
+.tbl th:nth-child(2),
+.tbl td:nth-child(2) {
+  width: 24%;
+}
+
+.tbl th:nth-child(3),
+.tbl td:nth-child(3),
+.tbl th:nth-child(4),
+.tbl td:nth-child(4) {
+  width: 14%;
+}
+
+.tbl th:nth-child(5),
+.tbl td:nth-child(5) {
+  width: auto;
 }
 
 .num {
@@ -692,9 +721,19 @@ td {
 }
 
 .countryCell {
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.countryCell span:last-child {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .countryCell--large {
@@ -719,19 +758,25 @@ td {
   align-items: center;
   gap: 10px;
   min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .leaders {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 8px;
   align-items: center;
   flex: 1 1 auto;
   min-width: 0;
+  overflow: hidden;
 }
 
 .leaderLink,
 .moreBtn {
+  max-width: clamp(92px, 15vw, 150px);
+  min-width: 0;
+  overflow: hidden;
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -751,7 +796,11 @@ td {
 }
 
 .leaderName {
+  min-width: 0;
+  overflow: hidden;
   font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .leaderPoints {
@@ -957,7 +1006,7 @@ td {
   gap: 12px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 820px) {
   .filters {
     grid-template-columns: 1fr;
   }

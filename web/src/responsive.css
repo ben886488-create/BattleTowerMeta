@@ -1,10 +1,58 @@
 /* 全站基礎 */
 *, *::before, *::after { box-sizing: border-box; }
-html, body { width: 100%; }
-body { margin: 0; overflow-x: hidden; }
+html, body, #app { width: 100%; max-width: 100%; }
+body {
+  margin: 0;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
 
 /* 圖片/影片不要撐爆容器 */
 img, video, canvas, svg { max-width: 100%; height: auto; }
+
+@media (max-width: 640px) {
+  .card-grid-mobile-compact {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4px;
+    justify-content: stretch;
+    align-items: start;
+    min-width: 0;
+  }
+
+  .card-grid-mobile-compact > * {
+    min-width: 0;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* Generic overflow guard for dashboard shells and nested layout children. */
+#app,
+main,
+section,
+article,
+aside,
+div,
+table,
+thead,
+tbody,
+tr,
+th,
+td {
+  min-width: 0;
+}
+
+#app :is(.page, .tierlist-page, .top-decks-wrap, .topCardsPage, .player-profile, .battle-hub) {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+#app :is(.tableWrap, .responsive-table, .filter-sidebar, .filter-panel, .usage-card, .score-card, .heatmap-card, .tier-table-card, .topCardsPanel, .topCardsHero) {
+  max-width: 100%;
+  min-width: 0;
+}
 
 /* iOS 滑動更順 */
 * { -webkit-tap-highlight-color: transparent; }

@@ -1,70 +1,95 @@
 <template>
   <section class="tierlist-page">
-    <header class="tierlist-header">
-      <div>
-        <h1 class="page-title">{{ ui.pageTitle }}</h1>
-        <p class="page-subtitle mono">
-          {{
-            loadingTournaments
-              ? ui.loadingTournaments
-              : meta?.generated_at
-                ? `${ui.generatedAt} ${meta.generated_at}`
-                : "—"
-          }}
-        </p>
-        <p v-if="tournamentsError" class="page-error mono">
-          {{ tournamentsError }}
-        </p>
-      </div>
+    <nav
+      class="tier-ev-rail"
+      :style="{ '--ev-progress': evRailProgress }"
+      :aria-label="ui.evRailLabel"
+    >
+      <button
+        v-for="item in evRailItems"
+        :key="item.id"
+        type="button"
+        class="tier-ev-rail__item"
+        :class="{
+          'tier-ev-rail__item--active': activeEvSectionId === item.id,
+          'tier-ev-rail__item--pressed': pressedEvSectionId === item.id,
+        }"
+        :aria-current="activeEvSectionId === item.id ? 'location' : undefined"
+        @click="scrollToEvSection(item.id)"
+      >
+        <span class="tier-ev-rail__dot" aria-hidden="true"></span>
+        <span class="tier-ev-rail__label mono">{{ item.label }}</span>
+      </button>
+    </nav>
 
-      <div class="filters">
-        <div class="f">
-          <label>{{ ui.players }}</label>
-          <input
-            v-model.number="filters.minPlayers"
-            type="number"
-            inputmode="numeric"
-            min="0"
-            :placeholder="ui.playersPlaceholder"
-          />
-        </div>
+    <div class="tierlist-layout">
+      <main class="tierlist-main">
+        <header class="tierlist-header">
+          <div class="tierlist-header__copy">
+            <div class="page-hero-kicker mono">{{ ui.heroEyebrow }}</div>
+            <h1
+              class="page-title page-hero-title tierlist-hero-title"
+              :class="{ 'page-hero-title--cn': locale === 'zh' }"
+            >
+              <span>{{ ui.heroTitle }}</span>
+              <em class="page-hero-title-accent">{{ ui.heroTitleAccent }}</em>
+            </h1>
+            <p class="page-hero-description tierlist-hero-description">
+              {{ ui.heroLead }}
+            </p>
+            <p class="page-subtitle mono">
+              {{
+                loadingTournaments
+                  ? ui.loadingTournaments
+                  : meta?.generated_at
+                    ? `${ui.generatedAt} ${meta.generated_at}`
+                    : "—"
+              }}
+            </p>
+            <p v-if="tournamentsError" class="page-error mono">
+              {{ tournamentsError }}
+            </p>
+          </div>
 
-        <div class="f">
-          <label>{{ ui.time }}</label>
-          <select v-model="filters.time">
-            <option v-for="option in timeOptionGroups.base" :key="option.value" :value="option.value">
-              {{ option.label }}
-            </option>
-            <optgroup v-if="timeOptionGroups.months.length" :label="ui.month">
-              <option v-for="option in timeOptionGroups.months" :key="option.value" :value="option.value">
-                {{ option.label }}
-              </option>
-            </optgroup>
-          </select>
-        </div>
+          <button
+            type="button"
+            class="filter-drawer-trigger"
+            :aria-label="ui.openFilters"
+            @click="filterDrawerOpen = true"
+          >
+            <span class="filter-drawer-trigger__eyebrow mono">{{ ui.filters }}</span>
+            <strong>{{ selectedSetLabel }}</strong>
+            <small class="mono">{{ selectedTimeLabel }} / {{ selectedTopCutLabel }}</small>
+          </button>
+        </header>
 
-        <div class="f">
-          <label>{{ ui.set }}</label>
-          <select v-model="filters.set">
-            <option v-for="o in setOptions" :key="o.value" :value="o.value">
-              {{ o.label }}
-            </option>
-          </select>
-        </div>
+        <section class="creator-materials-panel creator-materials-panel--mobile" :aria-label="ui.creatorMaterials">
+          <span class="creator-materials-panel__eyebrow mono">// {{ ui.creatorMaterials }}</span>
+          <h2>{{ ui.creatorMaterials }}</h2>
+          <div class="creator-materials-panel__actions">
+            <button
+              class="creator-materials-button creator-materials-button--primary mono"
+              type="button"
+              :disabled="creatorPackActive"
+              @click="startCreatorPack('decklists')"
+            >
+              {{ creatorPackLabel('decklists') }}
+            </button>
+            <button
+              class="creator-materials-button mono"
+              type="button"
+              :disabled="creatorPackActive"
+              @click="startCreatorPack('all')"
+            >
+              {{ creatorPackLabel('all') }}
+            </button>
+          </div>
+        </section>
 
-        <div class="f">
-          <label>{{ ui.topCut }}</label>
-          <select v-model="filters.topCut">
-            <option v-for="o in topCutOptions" :key="o.value" :value="o.value">
-              {{ o.label }}
-            </option>
-          </select>
-        </div>
-      </div>
-    </header>
-
-    <div class="tierlist-top-grid">
-      <div class="usage-card">
+        <Transition name="btm-filter" mode="out-in">
+        <div :key="contentTransitionKey" class="tierlist-content-motion">
+        <div class="tierlist-top-grid">
+      <div id="usage-breakdown" class="usage-card tier-ev-section">
         <div class="usage-title-row">
           <div>
             <h2 class="section-title">{{ ui.usageBreakdown }}</h2>
@@ -73,90 +98,131 @@
           <span class="mono subtle">{{ usageTopDeckRows.length }} + {{ ui.other }}</span>
         </div>
 
-        <div v-if="usageBreakdownRows.length > 0" class="usage-list">
-          <div
-            v-for="(row, index) in usageBreakdownRows"
-            :key="row.deck"
-            class="usage-row"
-            :class="{ 'usage-row--other': row.isOther }"
-          >
-            <div class="usage-row__rank mono">{{ row.isOther ? "OT" : `${index + 1}.` }}</div>
-
-            <RouterLink
-              v-if="!row.isOther"
-              :to="deckProfileTo(row.deck)"
-              class="usage-row__identity"
-              :title="usageDeckDisplayName(row)"
-            >
-              <div
-                class="usage-row__spritepair"
-                :class="{ 'usage-row__spritepair--single': (row.spriteUrls?.length ?? 0) < 2 }"
-              >
-                <img
-                  v-for="(src, idx) in row.spriteUrls ?? []"
-                  :key="`${row.deck}-usage-${idx}`"
-                  :src="src"
-                  class="usage-row__sprite"
-                  :alt="usageDeckDisplayName(row)"
-                  loading="lazy"
-                  decoding="async"
-                  draggable="false"
-                />
-
-                <span v-if="!row.spriteUrls?.length" class="usage-row__fallback mono">
-                  {{ deckShortLabel(row.deck) }}
-                </span>
-              </div>
-
-              <div class="usage-row__copy">
-                <div class="usage-row__name">{{ usageDeckDisplayName(row) }}</div>
-                <div class="usage-row__meta mono">
-                  <span
-                    v-if="!row.isOther"
-                    class="usage-row__tier"
-                    :style="{ backgroundImage: tierBadgeGradient(row.tier) }"
-                  >
-                    {{ row.tier }}
-                  </span>
-                  <span class="usage-row__samples">
-                    {{ row.total_samples.toLocaleString() }} {{ ui.samples }}
-                  </span>
-                </div>
-              </div>
-            </RouterLink>
-
-            <div v-else class="usage-row__identity usage-row__identity--static" :title="usageDeckDisplayName(row)">
-              <div class="usage-row__spritepair usage-row__spritepair--single">
-                <img
-                  v-for="(src, idx) in row.spriteUrls ?? []"
-                  :key="`${row.deck}-usage-static-${idx}`"
-                  :src="src"
-                  class="usage-row__sprite"
-                  :alt="usageDeckDisplayName(row)"
-                  loading="lazy"
-                  decoding="async"
-                  draggable="false"
-                />
-              </div>
-
-              <div class="usage-row__copy">
-                <div class="usage-row__name">{{ usageDeckDisplayName(row) }}</div>
-                <div class="usage-row__meta mono">
-                  <span class="usage-row__samples">
-                    {{ row.total_samples.toLocaleString() }} {{ ui.samples }}
-                  </span>
+        <div v-if="usagePieSegments.length > 0" class="usage-pie-layout">
+          <div class="usage-pie-visual">
+            <div class="usage-pie" @mouseleave="hoveredUsageSegmentKey = null">
+              <svg class="usage-donut" viewBox="0 0 100 100" aria-hidden="true">
+                <circle class="usage-donut__track" cx="50" cy="50" r="38" pathLength="100" />
+                <g
+                  v-for="segment in usagePieSvgSegments"
+                  :key="`slice-${segment.key}`"
+                  class="usage-donut__segment"
+                  :class="{ 'usage-donut__segment--active': hoveredUsageSegmentKey === segment.key }"
+                >
+                  <circle
+                    class="usage-donut__slice-outline"
+                    cx="50"
+                    cy="50"
+                    r="38"
+                    pathLength="100"
+                    :style="{
+                      strokeDasharray: `${segment.share} ${100 - segment.share}`,
+                      strokeDashoffset: `${-segment.offset}`,
+                    }"
+                  />
+                  <circle
+                    class="usage-donut__slice"
+                    cx="50"
+                    cy="50"
+                    r="38"
+                    pathLength="100"
+                    :style="{
+                      stroke: segment.color,
+                      strokeDasharray: `${segment.share} ${100 - segment.share}`,
+                      strokeDashoffset: `${-segment.offset}`,
+                    }"
+                    @mouseenter="hoveredUsageSegmentKey = segment.key"
+                    @focus="hoveredUsageSegmentKey = segment.key"
+                  />
+                </g>
+              </svg>
+              <div class="usage-pie__center" :title="usagePieActiveSegment?.label ?? ui.noUsageData">
+                <strong class="mono">{{ formatUsagePct(usagePieActiveSegment?.usage ?? 0) }}</strong>
+                <span>{{ usagePieActiveSegment?.label ?? ui.noUsageData }}</span>
+                <div
+                  v-if="usagePieActiveSegmentSprites.length > 0"
+                  class="usage-pie__center-icons"
+                  aria-hidden="true"
+                >
+                  <img
+                    v-for="(src, idx) in usagePieActiveSegmentSprites"
+                    :key="`center-${usagePieActiveSegment?.key}-${src}-${idx}`"
+                    class="usage-pie__center-icon"
+                    :src="src"
+                    :alt="usagePieActiveSegment?.label ?? ''"
+                    draggable="false"
+                  />
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="usage-row__pct mono">{{ formatUsagePct(row.usage) }}</div>
+          <div class="usage-overview-panel">
+            <div class="usage-summary">
+              <div v-for="item in usageSummaryRows" :key="item.label" class="usage-summary__row">
+                <span class="usage-summary__label">{{ item.label }}</span>
+                <strong class="usage-summary__value mono">{{ item.value }}</strong>
+              </div>
+            </div>
 
-            <div class="usage-row__bar">
-              <div class="usage-row__barTrack">
-                <div
-                  class="usage-row__barFill"
-                  :style="{ width: usageBarWidth(row.usage), background: usageBarFill(row) }"
-                ></div>
+            <div class="usage-pie-legend">
+              <div
+                v-for="segment in usagePieSegments"
+                :key="segment.key"
+                class="usage-pie-legend__row"
+                :class="{
+                  'usage-pie-legend__row--active': hoveredUsageSegmentKey === segment.key,
+                  'usage-pie-legend__row--other': segment.isOther,
+                }"
+                @mouseenter="hoveredUsageSegmentKey = segment.key"
+                @mouseleave="hoveredUsageSegmentKey = null"
+                @focusin="hoveredUsageSegmentKey = segment.key"
+                @focusout="hoveredUsageSegmentKey = null"
+                :title="segment.label"
+              >
+                <span class="usage-pie-legend__swatch" :style="{ background: segment.color }"></span>
+                <RouterLink
+                  v-if="!segment.isOther"
+                  class="usage-pie-legend__icons"
+                  :to="deckProfileTo(segment.key)"
+                  :title="segment.label"
+                  :aria-label="segment.label"
+                >
+                  <img
+                    v-for="(src, idx) in segment.spriteUrls.slice(0, 2)"
+                    :key="`legend-icon-${segment.key}-${src}-${idx}`"
+                    class="usage-pie-legend__sprite"
+                    :src="src"
+                    :alt="segment.label"
+                    draggable="false"
+                  />
+                  <span v-if="segment.spriteUrls.length === 0" class="usage-pie-legend__fallback mono">
+                    {{ deckShortLabel(segment.key) || "?" }}
+                  </span>
+                </RouterLink>
+                <span v-else class="usage-pie-legend__icons usage-pie-legend__icons--static" aria-hidden="true">
+                  <img
+                    v-for="(src, idx) in segment.spriteUrls.slice(0, 2)"
+                    :key="`legend-icon-${segment.key}-${src}-${idx}`"
+                    class="usage-pie-legend__sprite"
+                    :src="src"
+                    :alt="segment.label"
+                    draggable="false"
+                  />
+                  <span v-if="segment.spriteUrls.length === 0" class="usage-pie-legend__fallback mono">?</span>
+                </span>
+                <RouterLink
+                  v-if="!segment.isOther"
+                  class="usage-pie-legend__name"
+                  :to="deckProfileTo(segment.key)"
+                  :title="segment.label"
+                >
+                  {{ segment.label }}
+                </RouterLink>
+                <span v-else class="usage-pie-legend__name usage-pie-legend__name--static">
+                  {{ segment.label }}
+                </span>
+                <span class="usage-pie-legend__value mono">{{ formatUsagePct(segment.usage) }}</span>
               </div>
             </div>
           </div>
@@ -167,7 +233,7 @@
         </div>
       </div>
 
-      <div ref="tierPanelCaptureRef" class="tier-table-card">
+      <div id="tier-list" ref="tierPanelCaptureRef" class="tier-table-card tier-ev-section">
         <div class="tier-table-head">
           <h2 class="section-title tier-table-title">{{ ui.tierList }}</h2>
           <div class="tier-table-actions">
@@ -188,17 +254,17 @@
           <div
             v-for="group in visibleTierGroups"
             :key="group.tier"
-            class="tier-lane"
-            :class="`tier-lane--${normalizeTierKey(group.tier)}`"
+            class="tier-lane tier-section"
+            :class="`tier-section--${normalizeTierKey(group.tier)}`"
           >
-            <div
-              class="tier-lane__badge"
-              :class="`tier-lane__badge--${normalizeTierKey(group.tier)}`"
-              :style="{ backgroundImage: tierBadgeGradient(group.tier) }"
-            >
-              <span :class="tierBadgeTextClass(group.tier)">
-                {{ group.tier }}
-              </span>
+            <div class="tier-section__header">
+              <div class="tier-section__title mono">
+                <span>{{ group.tier }}</span>
+                <em>TIER</em>
+                <small class="tier-section__descriptor mono">
+                  {{ tierSectionDescriptor(group.tier) }}
+                </small>
+              </div>
             </div>
 
             <div class="tier-lane__deckbar">
@@ -207,7 +273,7 @@
                 :key="d.deck"
                 :to="deckProfileTo(d.deck)"
                 class="tier-lane__decklink"
-                :title="d.deck"
+                :title="usageDeckDisplayName(d)"
               >
                 <div
                   class="tier-lane__spritepair"
@@ -228,7 +294,101 @@
                     {{ deckShortLabel(d.deck) }}
                   </span>
                 </div>
+                <span class="tier-lane__deckname">
+                  {{ usageDeckDisplayName(d) }}
+                </span>
               </RouterLink>
+            </div>
+          </div>
+        </div>
+
+        <div v-else class="tier-empty mono">
+          {{ loadingTournaments ? ui.loadingEllipsis : ui.noTierData }}
+        </div>
+      </div>
+
+      <div id="deck-score" class="score-card tier-ev-section">
+        <div class="usage-title-row">
+          <div>
+            <h2 class="section-title">{{ ui.deckScore }}</h2>
+            <p class="usage-subtitle">{{ ui.scoreSubtitle }}</p>
+          </div>
+          <span class="mono subtle">{{ scoreBreakdownRows.length }} {{ ui.decks }}</span>
+        </div>
+
+        <div v-if="scoreBreakdownRows.length > 0" class="usage-list score-list">
+          <div
+            v-for="(row, index) in scoreBreakdownRows"
+            :key="row.deck"
+            class="usage-row score-row"
+            :class="{
+              'score-row--podium': index < 3,
+              'score-row--leader': index === 0,
+            }"
+          >
+            <div class="score-row__identityCluster">
+              <div class="usage-row__rank score-row__rank mono">{{ `${index + 1}.` }}</div>
+
+              <RouterLink
+                :to="deckProfileTo(row.deck)"
+                class="usage-row__identity score-row__identity"
+                :title="usageDeckDisplayName(row)"
+              >
+                <div
+                  class="usage-row__spritepair"
+                  :class="{ 'usage-row__spritepair--single': (row.spriteUrls?.length ?? 0) < 2 }"
+                >
+                  <img
+                    v-for="(src, idx) in row.spriteUrls ?? []"
+                    :key="`${row.deck}-score-${idx}`"
+                    :src="src"
+                    class="usage-row__sprite"
+                    :alt="usageDeckDisplayName(row)"
+                    loading="lazy"
+                    decoding="async"
+                    draggable="false"
+                  />
+
+                  <span v-if="!row.spriteUrls?.length" class="usage-row__fallback mono">
+                    {{ deckShortLabel(row.deck) }}
+                  </span>
+                </div>
+
+                <div class="usage-row__copy">
+                  <div class="usage-row__name">{{ usageDeckDisplayName(row) }}</div>
+                  <div class="usage-row__meta mono">
+                    <span
+                      class="usage-row__tier"
+                      :style="{ backgroundImage: tierBadgeGradient(row.tier) }"
+                    >
+                      {{ row.tier }}
+                    </span>
+                    <span class="usage-row__samples">
+                      {{ row.total_samples.toLocaleString() }} {{ ui.samples }}
+                    </span>
+                  </div>
+                </div>
+              </RouterLink>
+            </div>
+
+            <div class="score-row__chart">
+              <div class="score-row__barLane">
+                <ProgressBarAnimated
+                  class="score-row__barGraphic"
+                  :width="scoreBarWidth(row.score)"
+                  :background="scoreBarFill(row)"
+                  height="clamp(28px, 2.2vw, 46px)"
+                  :delay="160 + index * 55"
+                />
+                <MotionNumber
+                  class="usage-row__pct score-row__score mono"
+                  :title="scoreTooltip(row.score)"
+                  :value="relativeScore(row.score)"
+                  :digits="1"
+                  :delay="220 + index * 56"
+                  :duration="980"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -239,7 +399,11 @@
       </div>
     </div>
 
-    <div class="heatmap-card">
+    <div
+      id="matchup-matrix"
+      ref="heatmapCardRef"
+      class="heatmap-card tier-ev-section"
+    >
       <div class="heatmap-title-row">
         <div>
           <h2 class="section-title">{{ ui.winRateMatrix }}</h2>
@@ -247,7 +411,7 @@
         </div>
         <span class="mono subtle">
           <template v-if="heatLoading">{{ ui.loadingMatchups }}</template>
-          <template v-else>{{ topDeckRows.length }} + 1 {{ ui.slot }}</template>
+          <template v-else>{{ ui.top10Matchups }}</template>
         </span>
       </div>
 
@@ -256,131 +420,216 @@
           {{ ui.customSlot }}
         </div>
 
-        <details ref="matrixPickerRef" class="matrix-picker">
-          <summary class="matrix-picker__trigger">
-            <div class="matrix-picker__trigger-copy">
-              <div v-if="matrixSelectedDeckRow" class="heatmap-sprite-stack">
-                <img
-                  v-for="(src, idx) in matrixSelectedDeckRow.spriteUrls ?? []"
-                  :key="`${matrixSelectedDeckRow.deck}-picker-trigger-${idx}`"
-                  class="heatmap-sprite heatmap-sprite--picker"
-                  :src="src"
-                  :alt="usageDeckDisplayName(matrixSelectedDeckRow)"
-                  loading="lazy"
-                  decoding="async"
-                  draggable="false"
-                />
-              </div>
-              <div v-else class="matrix-picker__placeholder mono">
-                {{ ui.selectCustomSlot }}
-              </div>
-
-              <div v-if="!matrixSelectedDeckRow" class="matrix-picker__trigger-text">
-                {{ ui.allDecksInFilter }}
-              </div>
+        <div class="matrix-combobox">
+          <div class="matrix-combobox__selected">
+            <div v-if="matrixSelectedDeckRow" class="matrix-combobox__selected-icons heatmap-sprite-stack">
+              <img
+                v-for="(src, idx) in matrixSelectedDeckRow.spriteUrls ?? []"
+                :key="`${matrixSelectedDeckRow.deck}-picker-selected-${idx}`"
+                class="heatmap-sprite heatmap-sprite--picker"
+                :src="src"
+                :alt="usageDeckDisplayName(matrixSelectedDeckRow)"
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+              />
             </div>
-          </summary>
+            <div v-else class="matrix-picker__placeholder-icon mono" aria-hidden="true">
+              +
+            </div>
 
-          <div class="matrix-picker__menu">
+            <div class="matrix-combobox__selected-copy">
+              <strong v-if="matrixSelectedDeckRow">
+                {{ usageDeckDisplayName(matrixSelectedDeckRow) }}
+              </strong>
+              <span v-else>{{ ui.selectCustomSlot }}</span>
+              <small v-if="matrixSelectedDeckRow" class="mono">
+                <span
+                  class="matrix-combobox__tier"
+                  :style="{ backgroundImage: tierBadgeGradient(matrixSelectedDeckRow.tier) }"
+                >
+                  {{ matrixSelectedDeckRow.tier }}
+                </span>
+                {{ matrixSelectedDeckRow.total_samples.toLocaleString() }} {{ ui.samples }}
+              </small>
+            </div>
+
             <button
+              v-if="matrixSelectedDeckRow"
               type="button"
-              class="matrix-picker__option matrix-picker__option--clear"
-              :class="{ 'matrix-picker__option--active': !matrixExtraDeck }"
+              class="matrix-combobox__clear mono"
+              :aria-label="ui.clearCustomSlot"
               @click="clearMatrixDeck"
             >
-              <span class="matrix-picker__option-copy">
-                {{ ui.clearCustomSlot }}
-              </span>
-            </button>
-
-            <button
-              v-for="option in matrixOptionRows"
-              :key="option.deck"
-              type="button"
-              class="matrix-picker__option"
-              :class="{ 'matrix-picker__option--active': matrixExtraDeck === option.deck }"
-              @click="selectMatrixDeck(option.deck)"
-            >
-              <div class="heatmap-sprite-stack">
-                <img
-                  v-for="(src, idx) in option.spriteUrls ?? []"
-                  :key="`${option.deck}-picker-option-${idx}`"
-                  class="heatmap-sprite heatmap-sprite--picker"
-                  :src="src"
-                  :alt="usageDeckDisplayName(option)"
-                  loading="lazy"
-                  decoding="async"
-                  draggable="false"
-                />
-              </div>
-              <span class="matrix-picker__option-copy">
-                {{ usageDeckDisplayName(option) }}
-              </span>
+              ×
             </button>
           </div>
-        </details>
+
+          <div class="matrix-combobox__search">
+            <input
+              v-model="matrixSearchQuery"
+              class="matrix-combobox__input"
+              type="search"
+              role="combobox"
+              :aria-label="ui.matrixSearchLabel"
+              :aria-expanded="matrixSearchOpen"
+              :aria-controls="matrixSearchOpen ? 'matrix-deck-search-results' : undefined"
+              :aria-activedescendant="matrixSearchActiveDescendant"
+              :placeholder="ui.matrixSearchPlaceholder"
+              autocomplete="off"
+              spellcheck="false"
+              @focus="openMatrixSearch"
+              @input="openMatrixSearch"
+              @keydown.down.prevent="moveMatrixSearchActive(1)"
+              @keydown.up.prevent="moveMatrixSearchActive(-1)"
+              @keydown.enter.prevent="selectActiveMatrixSearchResult"
+              @keydown.esc.prevent="closeMatrixSearch"
+              @blur="scheduleMatrixSearchClose"
+            />
+
+            <div
+              v-if="matrixSearchOpen"
+              id="matrix-deck-search-results"
+              class="matrix-combobox__menu"
+              role="listbox"
+              :aria-label="ui.matrixSearchResults"
+              @mousedown.prevent
+            >
+              <button
+                v-for="(option, index) in matrixSearchResults"
+                :id="matrixSearchOptionId(index)"
+                :key="option.deck"
+                type="button"
+                class="matrix-combobox__option"
+                :class="{ 'matrix-combobox__option--active': index === matrixSearchActiveIndex }"
+                role="option"
+                :aria-selected="matrixExtraDeck === option.deck"
+                @mouseenter="matrixSearchActiveIndex = index"
+                @click="selectMatrixDeck(option.deck)"
+              >
+                <span class="heatmap-sprite-stack">
+                  <img
+                    v-for="(src, idx) in option.spriteUrls ?? []"
+                    :key="`${option.deck}-picker-option-${idx}`"
+                    class="heatmap-sprite heatmap-sprite--picker"
+                    :src="src"
+                    :alt="usageDeckDisplayName(option)"
+                    loading="lazy"
+                    decoding="async"
+                    draggable="false"
+                  />
+                </span>
+
+                <span class="matrix-combobox__option-copy">
+                  <strong>{{ usageDeckDisplayName(option) }}</strong>
+                  <small class="mono">
+                    <span
+                      class="matrix-combobox__tier"
+                      :style="{ backgroundImage: tierBadgeGradient(option.tier) }"
+                    >
+                      {{ option.tier }}
+                    </span>
+                    {{ formatUsagePct(option.usage) }} · {{ option.total_samples.toLocaleString() }} {{ ui.samples }}
+                  </small>
+                </span>
+              </button>
+
+              <div v-if="matrixSearchResults.length === 0" class="matrix-combobox__empty mono">
+                {{ ui.matrixSearchEmpty }}
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <div class="heatmap-shell" v-if="topDeckRows.length > 0">
+      <div
+        v-if="topDeckRows.length > 0"
+        ref="heatmapWorkspaceRef"
+        class="heatmap-workspace"
+        @mouseleave="clearHoveredHeatCell"
+      >
+      <div class="heatmap-shell" @scroll="scheduleMatchupTooltipPosition">
         <table class="heatmap-table" :aria-label="ui.winRateMatrix">
           <thead>
             <tr>
-              <th class="heatmap-corner"></th>
+              <th class="heatmap-corner">
+                <span class="heatmap-corner__label mono">{{ ui.matrixRowsLabel }}</span>
+                <span class="heatmap-corner__label heatmap-corner__label--muted mono">{{ ui.matrixColumnsLabel }}</span>
+              </th>
 
               <th
                 v-for="(c, index) in matrixAxisRows"
                 :key="c?.deck ?? `matrix-column-${index}`"
                 class="heatmap-col-label"
+                :class="{ 'heatmap-col-label--active': isHeatmapColumnActive(index) }"
               >
-                <div v-if="index === topDeckRows.length" class="heatmap-picker-cell" :class="{ 'heatmap-picker-cell--empty': !matrixSelectedDeckRow }">
-                  <div v-if="matrixSelectedDeckRow" class="heatmap-sprite-stack">
-                    <img
-                      v-for="(src, idx) in matrixSelectedDeckRow.spriteUrls ?? []"
-                      :key="`${matrixSelectedDeckRow.deck}-picker-col-${idx}`"
-                      class="heatmap-sprite"
-                      :src="src"
-                      :alt="usageDeckDisplayName(matrixSelectedDeckRow)"
-                      loading="lazy"
-                      decoding="async"
-                      draggable="false"
-                    />
-                  </div>
-                  <span v-if="!matrixSelectedDeckRow" class="heatmap-picker-label mono">
-                    {{ ui.customSlot }}
-                  </span>
-                </div>
-
-                <RouterLink v-else-if="c" :to="deckProfileTo(c.deck)" class="heatmap-label-link" :title="c.deck">
-                  <div class="heatmap-axis-chip">
+                <RouterLink
+                  v-if="c"
+                  :to="deckProfileTo(c.deck)"
+                  class="heatmap-label-link"
+                  :title="usageDeckDisplayName(c)"
+                  :aria-label="usageDeckDisplayName(c)"
+                >
+                  <div
+                    class="heatmap-axis-chip"
+                    :class="{
+                      'heatmap-axis-chip--picker': isMatrixSelectedDeck(c),
+                      'heatmap-axis-chip--active': isHeatmapColumnActive(index),
+                    }"
+                    :data-deck-name="usageDeckDisplayName(c)"
+                  >
                     <div class="heatmap-sprite-stack">
                       <img
                         v-for="(src, idx) in c.spriteUrls ?? []"
                         :key="`${c.deck}-hdr-${idx}`"
                         class="heatmap-sprite"
                         :src="src"
-                        :alt="c.deck"
+                        :alt="usageDeckDisplayName(c)"
                         loading="lazy"
                         decoding="async"
                         draggable="false"
                       />
                     </div>
+                    <span class="heatmap-axis-name">{{ matrixDeckShortName(c) }}</span>
                   </div>
                 </RouterLink>
+
+                <div v-else class="heatmap-picker-cell heatmap-picker-cell--empty">
+                  <span class="heatmap-picker-label mono">
+                    {{ ui.customSlot }}
+                  </span>
+                </div>
               </th>
             </tr>
           </thead>
 
           <tbody>
-            <tr v-for="(r, i) in matrixAxisRows" :key="r?.deck ?? `matrix-row-${i}`">
-              <th class="heatmap-row-label">
-                <div
-                  v-if="i === topDeckRows.length"
-                  class="heatmap-axis-chip heatmap-axis-chip--row heatmap-axis-chip--picker"
+            <tr
+              v-for="(r, i) in matrixAxisRows"
+              :key="r?.deck ?? `matrix-row-${i}`"
+              :class="{ 'heatmap-row--active': isHeatmapRowActive(i) }"
+            >
+              <th class="heatmap-row-label" :class="{ 'heatmap-row-label--active': isHeatmapRowActive(i) }">
+                <RouterLink
+                  v-if="r"
+                  :to="deckProfileTo(r.deck)"
+                  class="heatmap-label-link"
+                  :title="usageDeckDisplayName(r)"
+                  :aria-label="usageDeckDisplayName(r)"
                 >
-                  <div v-if="r" class="heatmap-row-sprite-stack">
+                  <div
+                    class="heatmap-axis-chip heatmap-axis-chip--row"
+                    :class="{
+                      'heatmap-axis-chip--picker': isMatrixSelectedDeck(r),
+                      'heatmap-axis-chip--active': isHeatmapRowActive(i),
+                    }"
+                    :data-deck-name="usageDeckDisplayName(r)"
+                  >
+                    <div class="heatmap-row-sprite-stack">
                     <img
                       v-for="(src, idx) in r.spriteUrls ?? []"
-                      :key="`${r.deck}-picker-row-${idx}`"
+                      :key="`${r.deck}-row-${idx}`"
                       class="heatmap-sprite"
                       :src="src"
                       :alt="usageDeckDisplayName(r)"
@@ -388,45 +637,59 @@
                       decoding="async"
                       draggable="false"
                     />
+                    </div>
+                    <span class="heatmap-axis-name heatmap-axis-name--row">{{ matrixDeckShortName(r) }}</span>
                   </div>
-                  <span v-if="!r" class="heatmap-picker-row-label mono">
+                </RouterLink>
+
+                <div v-else class="heatmap-axis-chip heatmap-axis-chip--row heatmap-axis-chip--picker">
+                  <span class="heatmap-picker-row-label mono">
                     {{ ui.customDeck }}
                   </span>
                 </div>
-
-                <RouterLink v-else-if="r" :to="deckProfileTo(r.deck)" class="heatmap-label-link" :title="r.deck">
-                  <div class="heatmap-axis-chip heatmap-axis-chip--row">
-                    <div class="heatmap-row-sprite-stack">
-                      <img
-                        v-for="(src, idx) in r.spriteUrls ?? []"
-                        :key="`${r.deck}-row-${idx}`"
-                        class="heatmap-sprite"
-                        :src="src"
-                        :alt="r.deck"
-                        loading="lazy"
-                        decoding="async"
-                        draggable="false"
-                      />
-                    </div>
-                  </div>
-                </RouterLink>
               </th>
 
               <td
                 v-for="(c, j) in matrixAxisRows"
                 :key="`${r?.deck ?? 'matrix-row'}__${c?.deck ?? 'matrix-col'}__${j}`"
                 class="heatmap-cell"
+                :class="{
+                  'heatmap-cell--hovered': isHeatmapCellActive(i, j),
+                  'heatmap-cell--row-highlight': isHeatmapRowActive(i),
+                  'heatmap-cell--column-highlight': isHeatmapColumnActive(j),
+                }"
               >
                 <div
                   v-if="heatCells[i]?.[j]?.winrate != null"
                   class="heatmap-cell__inner"
+                  :class="[
+                    heatCells[i][j].confidenceClass,
+                    {
+                      'heatmap-cell__inner--active': isHeatmapCellActive(i, j),
+                      'heatmap-cell__inner--related': isHeatmapCellRelated(i, j),
+                      'heatmap-cell__inner--row-highlight': isHeatmapRowActive(i),
+                      'heatmap-cell__inner--column-highlight': isHeatmapColumnActive(j),
+                    },
+                  ]"
                   :style="heatCells[i][j].style"
-                  :title="heatCells[i][j].tooltip"
+                  :aria-label="heatCells[i][j].tooltip"
+                  tabindex="0"
+                  @mouseenter="setHoveredHeatCell(r, c, heatCells[i][j], i, j, $event)"
+                  @mouseleave="clearHoveredHeatCell"
+                  @focus="setHoveredHeatCell(r, c, heatCells[i][j], i, j, $event)"
+                  @blur="clearHoveredHeatCell"
                 >
                   <span class="heatmap-cell__copy">
                     <span class="heatmap-cell__rate mono">{{ heatCells[i][j].text }}</span>
                     <span class="heatmap-cell__record mono">{{ heatCells[i][j].recordText }}</span>
                   </span>
+                </div>
+
+                <div
+                  v-else-if="heatCells[i]?.[j]?.isMirror"
+                  class="heatmap-cell__inner heatmap-cell__inner--mirror"
+                >
+                  <span class="mono">—</span>
                 </div>
 
                 <div v-else class="heatmap-cell__inner heatmap-cell__inner--empty">—</div>
@@ -435,47 +698,146 @@
           </tbody>
         </table>
       </div>
+      </div>
+
+      <Teleport to="body">
+        <div
+          v-if="matchupDetail"
+          ref="matchupTooltipRef"
+          class="matchup-tooltip"
+          :style="matchupTooltipStyle"
+          role="tooltip"
+          aria-live="polite"
+        >
+          <div class="heatmap-detail-panel__header">
+            <span class="heatmap-detail-panel__eyebrow mono">{{ ui.matchupDetailTitle }}</span>
+            <strong class="mono">{{ matchupDetail.cell.text }}</strong>
+          </div>
+
+          <div class="heatmap-detail-panel__versus">
+            <div class="heatmap-detail-deck" :title="usageDeckDisplayName(matchupDetail.row)">
+              <span class="heatmap-detail-deck__label mono">{{ ui.tooltipYourDeck }}</span>
+              <span class="heatmap-detail-deck__icons" aria-hidden="true">
+                <img
+                  v-for="(src, idx) in matchupDetail.row.spriteUrls ?? []"
+                  :key="`${matchupDetail.row.deck}-tooltip-row-${idx}`"
+                  class="heatmap-detail-deck__sprite"
+                  :src="src"
+                  :alt="usageDeckDisplayName(matchupDetail.row)"
+                  loading="lazy"
+                  decoding="async"
+                  draggable="false"
+                />
+              </span>
+              <strong>{{ usageDeckDisplayName(matchupDetail.row) }}</strong>
+            </div>
+
+            <span class="heatmap-detail-panel__vs mono">{{ ui.versus }}</span>
+
+            <div class="heatmap-detail-deck" :title="usageDeckDisplayName(matchupDetail.col)">
+              <span class="heatmap-detail-deck__label mono">{{ ui.tooltipOpponentDeck }}</span>
+              <span class="heatmap-detail-deck__icons" aria-hidden="true">
+                <img
+                  v-for="(src, idx) in matchupDetail.col.spriteUrls ?? []"
+                  :key="`${matchupDetail.col.deck}-tooltip-col-${idx}`"
+                  class="heatmap-detail-deck__sprite"
+                  :src="src"
+                  :alt="usageDeckDisplayName(matchupDetail.col)"
+                  loading="lazy"
+                  decoding="async"
+                  draggable="false"
+                />
+              </span>
+              <strong>{{ usageDeckDisplayName(matchupDetail.col) }}</strong>
+            </div>
+          </div>
+
+          <div class="heatmap-detail-metrics">
+            <div class="heatmap-detail-metric heatmap-detail-metric--primary">
+              <span class="mono">{{ ui.tooltipWinRate }}</span>
+              <strong class="mono">{{ matchupDetail.cell.text }}</strong>
+            </div>
+            <div class="heatmap-detail-metric">
+              <span class="mono">{{ ui.tooltipRecord }}</span>
+              <strong class="mono">{{ matchupDetail.cell.recordText }}</strong>
+            </div>
+            <div class="heatmap-detail-metric">
+              <span class="mono">{{ ui.detailTotalGames }}</span>
+              <strong class="mono">{{ matchupDetail.cell.total }}</strong>
+            </div>
+            <div class="heatmap-detail-metric">
+              <span class="mono">{{ ui.detailConfidence }}</span>
+              <strong class="mono">{{ matchupDetail.cell.confidence }}</strong>
+            </div>
+          </div>
+
+          <div class="heatmap-detail-legend">
+            <span class="heatmap-detail-legend__title mono">{{ ui.detailColorLegend }}</span>
+            <span><i class="heatmap-detail-legend__swatch heatmap-detail-legend__swatch--bad"></i>{{ ui.detailDisadvantaged }}</span>
+            <span><i class="heatmap-detail-legend__swatch heatmap-detail-legend__swatch--even"></i>{{ ui.detailEven }}</span>
+            <span><i class="heatmap-detail-legend__swatch heatmap-detail-legend__swatch--good"></i>{{ ui.detailFavored }}</span>
+          </div>
+
+          <p class="heatmap-detail-panel__note mono">{{ ui.detailConfidenceNote }}</p>
+        </div>
+      </Teleport>
 
       <div v-if="topDeckRows.length > 0" class="heatmap-mobile">
-        <section
-          v-for="entry in mobileHeatRows"
-          :key="entry.row?.deck ?? `mobile-matrix-${entry.index}`"
-          class="heatmap-mobile__section"
-        >
+        <label class="heatmap-mobile-picker">
+          <span class="heatmap-mobile-picker__label mono">{{ ui.mobileMatrixDeck }}</span>
+          <select v-model="mobileMatrixDeckKey" class="heatmap-mobile-picker__select">
+            <option v-for="deck in mobileHeatDeckOptions" :key="deck.deck" :value="deck.deck">
+              {{ usageDeckDisplayName(deck) }}
+            </option>
+          </select>
+        </label>
+
+        <section v-if="mobileSelectedHeatEntry?.row" class="heatmap-mobile__section">
           <div class="heatmap-mobile__header">
-            <div class="heatmap-mobile__deck">
+            <RouterLink
+              :to="deckProfileTo(mobileSelectedHeatEntry.row.deck)"
+              class="heatmap-mobile__deck"
+              :title="usageDeckDisplayName(mobileSelectedHeatEntry.row)"
+            >
               <div class="heatmap-row-sprite-stack">
                 <img
-                  v-for="(src, idx) in entry.row?.spriteUrls ?? []"
-                  :key="`${entry.row?.deck ?? 'custom'}-mobile-row-${idx}`"
+                  v-for="(src, idx) in mobileSelectedHeatEntry.row.spriteUrls ?? []"
+                  :key="`${mobileSelectedHeatEntry.row.deck}-mobile-row-${idx}`"
                   class="heatmap-sprite heatmap-sprite--mobile"
                   :src="src"
-                  :alt="entry.row ? usageDeckDisplayName(entry.row) : ui.customDeck"
+                  :alt="usageDeckDisplayName(mobileSelectedHeatEntry.row)"
                   loading="lazy"
                   decoding="async"
                   draggable="false"
                 />
               </div>
-              <div v-if="entry.index !== topDeckRows.length || !entry.row" class="heatmap-mobile__deck-name">
-                {{ entry.row ? usageDeckDisplayName(entry.row) : ui.customDeck }}
+              <div class="heatmap-mobile__deck-name">
+                {{ usageDeckDisplayName(mobileSelectedHeatEntry.row) }}
               </div>
-            </div>
+            </RouterLink>
           </div>
 
-          <div v-if="entry.row" class="heatmap-mobile__grid">
+          <div class="heatmap-mobile__grid">
             <div
-              v-for="matchup in entry.matchups"
-              :key="`${entry.row.deck}-${matchup.col.deck}-${matchup.index}`"
+              v-for="matchup in mobileSelectedHeatEntry.matchups"
+              :key="`${mobileSelectedHeatEntry.row.deck}-${matchup.col.deck}-${matchup.index}`"
               class="heatmap-mobile__cell"
             >
               <div
                 v-if="matchup.cell.winrate != null"
                 class="heatmap-mobile__cellInner"
+                :class="matchup.cell.confidenceClass"
                 :style="matchup.cell.style"
-                :title="matchup.cell.tooltip"
+                :data-tooltip="matchup.cell.tooltip"
+                :aria-label="matchup.cell.tooltip"
+                tabindex="0"
               >
                 <div class="heatmap-mobile__versus mono">{{ ui.versus }}</div>
-                <div class="heatmap-mobile__opponent">
+                <RouterLink
+                  :to="deckProfileTo(matchup.col.deck)"
+                  class="heatmap-mobile__opponent"
+                  :title="usageDeckDisplayName(matchup.col)"
+                >
                   <img
                     v-for="(src, idx) in matchup.col.spriteUrls ?? []"
                     :key="`${matchup.col.deck}-mobile-col-${idx}`"
@@ -486,31 +848,221 @@
                     decoding="async"
                     draggable="false"
                   />
-                </div>
+                  <span class="heatmap-mobile__opponent-name">{{ matrixDeckShortName(matchup.col) }}</span>
+                </RouterLink>
                 <div class="heatmap-mobile__rate mono">{{ matchup.cell.text }}</div>
                 <div class="heatmap-mobile__record mono">{{ matchup.cell.recordText }}</div>
               </div>
             </div>
           </div>
-
-          <div v-else class="heatmap-mobile__empty mono">
-            {{ ui.chooseCustomDeck }}
-          </div>
         </section>
+
+        <div v-else class="heatmap-mobile__empty mono">
+          {{ ui.chooseCustomDeck }}
+        </div>
       </div>
 
       <div v-else class="tier-empty mono">
         {{ heatLoading ? ui.loadingEllipsis : ui.noMatchupData }}
       </div>
     </div>
+        </div>
+        </Transition>
+      </main>
+
+      <aside class="filter-sidebar" :aria-label="ui.filters">
+        <div class="filter-sidebar__sticky">
+        <div class="filter-panel filter-panel--sticky">
+          <div class="filter-panel__header">
+            <span class="filter-panel__eyebrow mono">{{ ui.filterSignal }}</span>
+            <h2>{{ ui.filters }}</h2>
+          </div>
+
+          <p class="filter-scope-line mono" aria-label="Current filter scope">
+            {{ compactFilterScope }}
+          </p>
+
+          <div class="filters">
+            <div class="f">
+              <label>{{ ui.players }}</label>
+              <input
+                v-model.number="filters.minPlayers"
+                type="number"
+                inputmode="numeric"
+                min="0"
+                :placeholder="ui.playersPlaceholder"
+              />
+            </div>
+
+            <div class="f">
+              <label>{{ ui.time }}</label>
+              <select v-model="filters.time">
+                <option v-for="option in timeOptionGroups.base" :key="option.value" :value="option.value">
+                  {{ option.label }}
+                </option>
+                <optgroup v-if="timeOptionGroups.months.length" :label="ui.month">
+                  <option v-for="option in timeOptionGroups.months" :key="option.value" :value="option.value">
+                    {{ option.label }}
+                  </option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="f">
+              <label>{{ ui.set }}</label>
+              <select v-model="filters.set">
+                <option v-for="o in setOptions" :key="o.value" :value="o.value">
+                  {{ o.label }}
+                </option>
+              </select>
+            </div>
+
+            <div class="f">
+              <label>{{ ui.topCut }}</label>
+              <select v-model="filters.topCut">
+                <option v-for="o in topCutOptions" :key="o.value" :value="o.value">
+                  {{ o.label }}
+                </option>
+              </select>
+            </div>
+          </div>
+
+          <div class="filter-actions">
+            <button type="button" class="filter-action filter-action--secondary mono" @click="resetFilters">
+              {{ ui.reset }}
+            </button>
+            <button type="button" class="filter-action filter-action--primary mono" @click="applyFilters">
+              {{ ui.apply }}
+            </button>
+          </div>
+        </div>
+
+        <section class="creator-materials-panel" :aria-label="ui.creatorMaterials">
+          <span class="creator-materials-panel__eyebrow mono">// {{ ui.creatorMaterials }}</span>
+          <h2>{{ ui.creatorMaterials }}</h2>
+          <div class="creator-materials-panel__actions">
+            <button
+              class="creator-materials-button creator-materials-button--primary mono"
+              type="button"
+              :disabled="creatorPackActive"
+              @click="startCreatorPack('decklists')"
+            >
+              {{ creatorPackLabel('decklists') }}
+            </button>
+            <button
+              class="creator-materials-button mono"
+              type="button"
+              :disabled="creatorPackActive"
+              @click="startCreatorPack('all')"
+            >
+              {{ creatorPackLabel('all') }}
+            </button>
+          </div>
+        </section>
+        </div>
+      </aside>
+    </div>
+
+    <div v-if="filterDrawerOpen" class="filter-drawer-shell">
+      <button
+        type="button"
+        class="filter-drawer-backdrop"
+        :aria-label="ui.closeFilters"
+        @click="closeFilterDrawer"
+      ></button>
+
+      <div class="filter-panel filter-panel--drawer" role="dialog" aria-modal="true" :aria-label="ui.filters">
+        <div class="filter-panel__header filter-panel__header--drawer">
+          <div>
+            <span class="filter-panel__eyebrow mono">{{ ui.filterSignal }}</span>
+            <h2>{{ ui.filters }}</h2>
+          </div>
+          <button type="button" class="filter-close mono" :aria-label="ui.closeFilters" @click="closeFilterDrawer">
+            ×
+          </button>
+        </div>
+
+        <p class="filter-scope-line mono" aria-label="Current filter scope">
+          {{ compactFilterScope }}
+        </p>
+
+        <div class="filters">
+          <div class="f">
+            <label>{{ ui.players }}</label>
+            <input
+              v-model.number="filters.minPlayers"
+              type="number"
+              inputmode="numeric"
+              min="0"
+              :placeholder="ui.playersPlaceholder"
+            />
+          </div>
+
+          <div class="f">
+            <label>{{ ui.time }}</label>
+            <select v-model="filters.time">
+              <option v-for="option in timeOptionGroups.base" :key="`drawer-${option.value}`" :value="option.value">
+                {{ option.label }}
+              </option>
+              <optgroup v-if="timeOptionGroups.months.length" :label="ui.month">
+                <option
+                  v-for="option in timeOptionGroups.months"
+                  :key="`drawer-${option.value}`"
+                  :value="option.value"
+                >
+                  {{ option.label }}
+                </option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="f">
+            <label>{{ ui.set }}</label>
+            <select v-model="filters.set">
+              <option v-for="o in setOptions" :key="`drawer-${o.value}`" :value="o.value">
+                {{ o.label }}
+              </option>
+            </select>
+          </div>
+
+          <div class="f">
+            <label>{{ ui.topCut }}</label>
+            <select v-model="filters.topCut">
+              <option v-for="o in topCutOptions" :key="`drawer-${o.value}`" :value="o.value">
+                {{ o.label }}
+              </option>
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-actions">
+          <button type="button" class="filter-action filter-action--secondary mono" @click="resetFilters">
+            {{ ui.reset }}
+          </button>
+          <button type="button" class="filter-action filter-action--primary mono" @click="applyFilters">
+            {{ ui.apply }}
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <DeckProfile
+      v-if="creatorPackActive"
+      class="tierlistCreatorMount"
+      auto-download-creator-pack
+      :creator-pack-asset-mode="creatorPackMode"
+      @creator-pack-finished="creatorPackActive = false"
+    />
   </section>
 </template>
 
 <script setup lang="ts">
-import { computed, nextTick, onMounted, reactive, ref, watch } from "vue";
+import { computed, defineAsyncComponent, nextTick, onBeforeUnmount, onMounted, reactive, ref, watch } from "vue";
 import { RouterLink, useRoute } from "vue-router";
 import substituteIcon from "../assets/deck-icons/substitute.png";
-import { getLocalizedDeckName } from "../assets/pokemonNames";
+import { getLocalizedDeckName, getLocalizedPokemonName } from "../assets/pokemonNames";
+import MotionNumber from "../components/ui/MotionNumber.vue";
+import ProgressBarAnimated from "../components/ui/ProgressBarAnimated.vue";
 import {
   buildTierEmaScores,
   calculateTierScore,
@@ -530,6 +1082,7 @@ import {
 } from "../lib/precomputedViews";
 
 const BASE_URL = (import.meta as any).env?.BASE_URL ?? "/";
+const DeckProfile = defineAsyncComponent(() => import("./DeckProfile.vue"));
 
 type TierRow = {
   deck: string;
@@ -650,6 +1203,8 @@ function inferVersionByStartMs(ms: number): VersionWindow | null {
 const route = useRoute();
 const tierPanelCaptureRef = ref<HTMLElement | null>(null);
 const downloadingTierPanel = ref(false);
+const creatorPackActive = ref(false);
+const creatorPackMode = ref<"all" | "decklists">("decklists");
 
 const locale = computed<"zh" | "en">(() => {
   return String(route.path).split("/")[1] === "en" ? "en" : "zh";
@@ -659,6 +1214,11 @@ const ui = computed(() => {
   if (locale.value === "en") {
     return {
       pageTitle: "Tier List",
+      heroEyebrow: "BTM/01 — COMPETITION INTELLIGENCE",
+      heroTitle: "The Pocket meta.",
+      heroTitleAccent: "Decoded.",
+      heroLead:
+        "Tournament results, deck performance, matchups and card usage — rebuilt into one live competitive ledger.",
       loadingTournaments: "Loading tournaments…",
       generatedAt: "Generated:",
       players: "Players",
@@ -667,8 +1227,36 @@ const ui = computed(() => {
       month: "Month",
       set: "Set",
       topCut: "Top Cut",
+      filters: "Filters",
+      creatorMaterials: "Creator assets",
+      decklistsZip: "Download decklists ZIP",
+      fullCreatorZip: "Download full creator ZIP",
+      buildingDecklistsZip: "Building decklists ZIP...",
+      buildingCreatorZip: "Building creator ZIP...",
+      evRailLabel: "Tier List sections",
+      filterSignal: "QUERY CONTROL",
+      filterSubtitle: "Scope controls stay active while the report scrolls.",
+      openFilters: "Open filters",
+      closeFilters: "Close filters",
+      activeScope: "Scope",
+      activeTime: "Time",
+      activeTopCut: "Cut",
+      sampleSize: "Sample",
+      lastUpdated: "Updated",
+      reset: "Reset",
+      apply: "Apply",
       usageBreakdown: "Usage Breakdown",
-      usageSubtitle: "Top 10 by usage, plus an aggregated other bucket",
+      usageSubtitle: "Top 10 shown individually; remaining decks grouped as other",
+      topDeckMetric: "Top deck",
+      top10ShareMetric: "Top 10 share",
+      othersMetric: "Others",
+      metaSpreadMetric: "Meta spread",
+      metaSpreadHigh: "High",
+      metaSpreadMedium: "Medium",
+      metaSpreadLow: "Low",
+      deckScore: "Deck Score",
+      scoreSubtitle: "Scores normalized to top deck = 100",
+      decks: "decks",
       other: "other",
       samples: "samples",
       loading: "Loading...",
@@ -677,22 +1265,51 @@ const ui = computed(() => {
       tierList: "Tier List",
       noTierData: "No tier data",
       winRateMatrix: "Win Rate Matrix",
-      winRateSubtitle: "Top 10 by score with one image-based custom slot",
+      winRateSubtitle:
+        "Top 10 by score with one image-based custom slot. Rows are your deck; columns are opponent decks. Low-sample matchups are dimmed.",
       loadingMatchups: "Loading matchups…",
+      top10Matchups: "Top 10 matchups",
       slot: "slot",
       customSlot: "Custom slot",
-      selectCustomSlot: "Select a deck for the custom slot",
+      selectCustomSlot: "Search or select a deck",
+      matrixSearchLabel: "Search custom matchup deck",
+      matrixSearchPlaceholder: "Search deck name, Pokemon, tier",
+      matrixSearchResults: "Deck search results",
+      matrixSearchEmpty: "No matching decks",
       allDecksInFilter: "All decks in current filter",
       clearCustomSlot: "Clear custom slot",
       customDeck: "Custom deck",
       versus: "vs.",
       chooseCustomDeck: "Choose a custom deck above to fill this slot.",
       noMatchupData: "No matchup data",
+      matrixCornerLabel: "Your \\ Opponent",
+      matrixRowsLabel: "Rows: Your deck",
+      matrixColumnsLabel: "Columns: Opponent",
+      mobileMatrixDeck: "Your deck",
+      tooltipYourDeck: "Your deck",
+      tooltipOpponentDeck: "Opponent deck",
+      tooltipWinRate: "Win rate",
+      tooltipRecord: "Record",
+      tooltipTotalGames: "Total games",
+      tooltipConfidence: "Confidence level",
+      matchupDetailTitle: "Matchup detail",
+      matchupDetailEmpty: "Point at a matchup cell to inspect details.",
+      detailColorLegend: "Color legend",
+      detailDisadvantaged: "Red = disadvantaged",
+      detailEven: "Dark = even",
+      detailFavored: "Green = favored",
+      detailConfidenceNote: "Low-sample matchups reduce color intensity.",
+      detailTotalGames: "Total games",
+      detailConfidence: "Confidence",
     };
   }
 
   return {
-    pageTitle: "排名列表",
+    pageTitle: "牌組環境",
+    heroEyebrow: "BTM/01 — 競技情報終端",
+    heroTitle: "牌組環境，",
+    heroTitleAccent: "已解碼。",
+    heroLead: "把賽事、牌組表現、對局與卡片投入率，整理成一套每日更新的 PTCG Pocket 競技情報。",
     loadingTournaments: "載入賽事中…",
     generatedAt: "生成時間:",
     players: "玩家數",
@@ -701,8 +1318,36 @@ const ui = computed(() => {
     month: "月份",
     set: "版本",
     topCut: "淘汰賽段位",
+    filters: "篩選器",
+    creatorMaterials: "創作者素材",
+    decklistsZip: "下載牌組 ZIP",
+    fullCreatorZip: "下載完整素材 ZIP",
+    buildingDecklistsZip: "製作牌組 ZIP 中...",
+    buildingCreatorZip: "製作素材 ZIP 中...",
+    evRailLabel: "牌組環境頁面區塊",
+    filterSignal: "QUERY CONTROL",
+    filterSubtitle: "篩選條件會在報告滾動時停留於可視區域。",
+    openFilters: "開啟篩選器",
+    closeFilters: "關閉篩選器",
+    activeScope: "條件",
+    activeTime: "時間",
+    activeTopCut: "段位",
+    sampleSize: "樣本",
+    lastUpdated: "更新",
+    reset: "重設",
+    apply: "套用",
     usageBreakdown: "使用率分布",
-    usageSubtitle: "依使用率顯示前 10，並合併其餘牌組為 other",
+    usageSubtitle: "前 10 名獨立顯示，其餘牌組合併為 other",
+    topDeckMetric: "最高牌組",
+    top10ShareMetric: "前 10 佔比",
+    othersMetric: "其他",
+    metaSpreadMetric: "Meta 分散度",
+    metaSpreadHigh: "高",
+    metaSpreadMedium: "中",
+    metaSpreadLow: "低",
+    deckScore: "牌組分數",
+    scoreSubtitle: "分數以第 1 名為 100 標準化",
+    decks: "牌組",
     other: "其他",
     samples: "樣本",
     loading: "載入中...",
@@ -711,17 +1356,41 @@ const ui = computed(() => {
     tierList: "牌組分級",
     noTierData: "沒有可顯示的牌組",
     winRateMatrix: "勝率矩陣",
-    winRateSubtitle: "依分數前 10 名，外加 1 個自選牌組欄位",
+    winRateSubtitle: "依分數前 10 名，外加 1 個自選牌組欄位。橫列為己方牌組，直欄為對手牌組；低樣本對局會降低顏色強度。",
     loadingMatchups: "載入對戰中…",
+    top10Matchups: "Top 10 對局",
     slot: "欄位",
     customSlot: "自選牌組",
-    selectCustomSlot: "選擇一副牌組放進自選牌組格",
+    selectCustomSlot: "搜尋或選擇一副牌組",
+    matrixSearchLabel: "搜尋自選對局牌組",
+    matrixSearchPlaceholder: "搜尋牌組名稱、寶可夢、tier",
+    matrixSearchResults: "牌組搜尋結果",
+    matrixSearchEmpty: "沒有符合的牌組",
     allDecksInFilter: "目前篩選內所有牌組",
     clearCustomSlot: "清空自選牌組格",
     customDeck: "自選牌組",
     versus: "對",
     chooseCustomDeck: "先在上方選擇一副牌組，這裡才會顯示對戰資料。",
     noMatchupData: "沒有對戰資料",
+    matrixCornerLabel: "己方 \\ 對手",
+    matrixRowsLabel: "行: 己方牌組",
+    matrixColumnsLabel: "列: 對手牌組",
+    mobileMatrixDeck: "己方牌組",
+    tooltipYourDeck: "己方牌組",
+    tooltipOpponentDeck: "對手牌組",
+    tooltipWinRate: "Win rate",
+    tooltipRecord: "Record",
+    tooltipTotalGames: "Total games",
+    tooltipConfidence: "Confidence level",
+    matchupDetailTitle: "對局細節",
+    matchupDetailEmpty: "指向對局格子查看詳細資料。",
+    detailColorLegend: "色彩圖例",
+    detailDisadvantaged: "紅 = 劣勢",
+    detailEven: "深色 = 均勢",
+    detailFavored: "綠 = 優勢",
+    detailConfidenceNote: "低樣本對局會降低顏色強度。",
+    detailTotalGames: "總對局",
+    detailConfidence: "可信度",
   };
 });
 
@@ -732,12 +1401,43 @@ const tierRows = ref<TierRow[]>([]);
 const rawMatrixTierRows = ref<TierRow[]>([]);
 const precomputedTopDecks = ref<PrecomputedTopDecksPayload | null>(null);
 const precomputedTopDecksLoading = ref(false);
+const hoveredUsageSegmentKey = ref<string | null>(null);
+const filterDrawerOpen = ref(false);
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 const TOP_DECK_LIMIT = 10;
+const EV_RAIL_ITEMS = [
+  { id: "tier-list", label: "EV/01" },
+  { id: "usage-breakdown", label: "EV/02" },
+  { id: "deck-score", label: "EV/03" },
+  { id: "matchup-matrix", label: "EV/04" },
+] as const;
 const PRESET_CURRENT_7 = "__current_7__";
 const PRESET_CURRENT_14 = "__current_14__";
 const MATRIX_EXTRA_DECK_STORAGE_KEY = "btm:tier-list:matrix-extra-deck";
+const SCORE_BAR_GRADIENT = "linear-gradient(90deg, #4da3ff 0%, #7ccbff 54%, #ffd166 100%)";
+const USAGE_PIE_COLORS = [
+  "#4DA3FF",
+  "#FFD166",
+  "#00D084",
+  "#FF3B4F",
+  "#B86BFF",
+  "#FF2D75",
+  "#00E5FF",
+  "#7CFF00",
+  "#7CCBFF",
+  "#2563EB",
+] as const;
+const evRailItems = EV_RAIL_ITEMS;
+const activeEvSectionId = ref<string>(EV_RAIL_ITEMS[0].id);
+const pressedEvSectionId = ref<string | null>(null);
+let evRailRaf = 0;
+let evRailPressTimer: ReturnType<typeof window.setTimeout> | undefined;
+
+const evRailProgress = computed(() => {
+  const index = Math.max(0, EV_RAIL_ITEMS.findIndex((item) => item.id === activeEvSectionId.value));
+  return EV_RAIL_ITEMS.length <= 1 ? 0 : index / (EV_RAIL_ITEMS.length - 1);
+});
 type TimeFilterValue = "all" | "past7" | "prev7" | "past4w" | string;
 type SetFilterValue = "" | string;
 type SwissLabel = "BO1" | "BO3" | "Other";
@@ -765,6 +1465,90 @@ const filters = reactive<{
   set: "",
   topCut: "all",
 });
+
+const contentTransitionKey = computed(() => {
+  return [filters.minPlayers ?? "", filters.time, filters.set, filters.topCut].join("|");
+});
+
+function resetFilters() {
+  filters.minPlayers = undefined;
+  filters.time = "past7";
+  filters.set = currentVersionWindow.value?.code ?? "";
+  filters.topCut = "all";
+}
+
+function closeFilterDrawer() {
+  filterDrawerOpen.value = false;
+}
+
+function applyFilters() {
+  closeFilterDrawer();
+}
+
+function startCreatorPack(mode: "all" | "decklists") {
+  if (creatorPackActive.value) return;
+  creatorPackMode.value = mode;
+  creatorPackActive.value = true;
+}
+
+function creatorPackLabel(mode: "all" | "decklists") {
+  const isActiveMode = creatorPackActive.value && creatorPackMode.value === mode;
+  if (mode === "decklists") {
+    return isActiveMode ? ui.value.buildingDecklistsZip : ui.value.decklistsZip;
+  }
+  return isActiveMode ? ui.value.buildingCreatorZip : ui.value.fullCreatorZip;
+}
+
+function updateActiveEvSection() {
+  if (typeof window === "undefined" || typeof document === "undefined") return;
+
+  const viewportTarget = window.innerHeight * 0.42;
+  let nextActive = EV_RAIL_ITEMS[0].id;
+  let bestDistance = Number.POSITIVE_INFINITY;
+
+  for (const item of EV_RAIL_ITEMS) {
+    const element = document.getElementById(item.id);
+    if (!element) continue;
+
+    const rect = element.getBoundingClientRect();
+    const sectionAnchor = rect.top + Math.min(rect.height, window.innerHeight) * 0.24;
+    const overlapsTarget = rect.top <= viewportTarget && rect.bottom >= viewportTarget;
+    const distance = overlapsTarget ? 0 : Math.abs(sectionAnchor - viewportTarget);
+
+    if (distance < bestDistance) {
+      bestDistance = distance;
+      nextActive = item.id;
+    }
+  }
+
+  activeEvSectionId.value = nextActive;
+}
+
+function scheduleEvRailUpdate() {
+  if (typeof window === "undefined") return;
+  if (evRailRaf) return;
+  evRailRaf = window.requestAnimationFrame(() => {
+    evRailRaf = 0;
+    updateActiveEvSection();
+  });
+}
+
+function scrollToEvSection(id: string) {
+  if (typeof window === "undefined" || typeof document === "undefined") return;
+
+  window.clearTimeout(evRailPressTimer);
+  pressedEvSectionId.value = id;
+  evRailPressTimer = window.setTimeout(() => {
+    pressedEvSectionId.value = null;
+  }, 260);
+
+  document.getElementById(id)?.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+
+  window.setTimeout(updateActiveEvSection, 520);
+}
 
 const legacySetOptions = computed(() => {
   const isZh = locale.value === "zh";
@@ -943,25 +1727,23 @@ function normalizeTierKey(tier: string) {
 function tierColor(tier: string) {
   switch (normalizeTierKey(tier)) {
     case "sss":
-      return "rgba(186, 97, 58, 0.92)";
     case "ss":
-      return "rgba(175, 107, 60, 0.92)";
     case "s":
-      return "rgba(162, 118, 63, 0.92)";
+      return "rgba(255, 59, 79, 0.96)";
     case "a":
-      return "rgba(150, 122, 67, 0.92)";
+      return "rgba(255, 209, 102, 0.94)";
     case "b":
-      return "rgba(134, 128, 73, 0.92)";
+      return "rgba(77, 163, 255, 0.92)";
     case "c":
-      return "rgba(96, 137, 86, 0.92)";
+      return "rgba(0, 208, 132, 0.86)";
     case "d":
-      return "rgba(82, 113, 145, 0.92)";
+      return "rgba(77, 163, 255, 0.78)";
     case "e":
-      return "rgba(112, 94, 149, 0.92)";
+      return "rgba(184, 107, 255, 0.76)";
     case "f":
-      return "rgba(93, 102, 116, 0.86)";
+      return "rgba(100, 116, 139, 0.9)";
     default:
-      return "rgba(160, 168, 180, 0.36)";
+      return "rgba(168, 179, 199, 0.42)";
   }
 }
 
@@ -970,13 +1752,13 @@ function tierBadgeGradient(tier: string) {
     case "sss":
     case "ss":
     case "s":
-      return "linear-gradient(180deg, rgba(231, 76, 60, 0.96) 0%, rgba(103, 49, 22, 0.98) 100%)";
+      return "linear-gradient(180deg, rgba(255, 59, 79, 0.96) 0%, rgba(92, 21, 34, 0.98) 100%)";
     case "a":
-      return "linear-gradient(180deg, rgba(255, 127, 80, 0.95) 0%, rgba(89, 61, 23, 0.98) 100%)";
+      return "linear-gradient(180deg, rgba(255, 209, 102, 0.95) 0%, rgba(88, 63, 12, 0.98) 100%)";
     case "b":
-      return "linear-gradient(180deg, rgba(241, 196, 15, 0.95) 0%, rgba(84, 73, 24, 0.98) 100%)";
+      return "linear-gradient(180deg, rgba(77, 163, 255, 0.95) 0%, rgba(24, 55, 102, 0.98) 100%)";
     case "c":
-      return "linear-gradient(180deg, rgba(126, 217, 87, 0.94) 0%, rgba(55, 92, 46, 0.98) 100%)";
+      return "linear-gradient(180deg, rgba(0, 208, 132, 0.94) 0%, rgba(18, 82, 58, 0.98) 100%)";
     case "d":
       return "linear-gradient(180deg, rgba(82, 113, 255, 0.94) 0%, rgba(46, 61, 86, 0.98) 100%)";
     case "e":
@@ -988,12 +1770,27 @@ function tierBadgeGradient(tier: string) {
   }
 }
 
-function tierBadgeTextClass(tier: string) {
-  const key = normalizeTierKey(tier);
-  if (key === "sss") return "tier-lane__badge-text tier-lane__badge-text--sss";
-  if (key === "ss") return "tier-lane__badge-text tier-lane__badge-text--ss";
-  if (key === "s") return "tier-lane__badge-text tier-lane__badge-text--s";
-  return "tier-lane__badge-text";
+function tierSectionDescriptor(tier: string) {
+  switch (normalizeTierKey(tier)) {
+    case "sss":
+      return "FORMAT BREAKER / SINGULAR";
+    case "ss":
+      return "DOMINANT / META DEFINING";
+    case "s":
+      return "DOMINANT / META DEFINING";
+    case "a":
+      return "STRONG / CONSISTENT";
+    case "b":
+      return "VIABLE / SPECIFIC MATCHUPS";
+    case "c":
+      return "PLAYABLE / NICHE";
+    case "d":
+      return "FRINGE / COUNTER META";
+    case "e":
+      return "LIMITED / SPECIALIST";
+    default:
+      return "OBSERVED / LOW SIGNAL";
+  }
 }
 
 function deckShortLabel(deckKey: string) {
@@ -1090,6 +1887,103 @@ const usageMax = computed(() => {
   return usageTopDeckRows.value.reduce((max, row) => Math.max(max, row.usage), 0);
 });
 
+type UsagePieSegment = {
+  key: string;
+  label: string;
+  usage: number;
+  color: string;
+  isOther: boolean;
+  iconKeys: string[];
+  spriteUrls: string[];
+};
+
+const usagePieSegments = computed<UsagePieSegment[]>(() => {
+  return usageBreakdownRows.value
+    .filter((row) => row.usage > 0)
+    .map((row, index) => ({
+      key: row.deck,
+      label: usageDeckDisplayName(row),
+      usage: row.usage,
+      color: usagePieColor(row, index),
+      isOther: Boolean(row.isOther),
+      iconKeys: row.iconKeys ?? [],
+      spriteUrls: row.spriteUrls ?? [],
+    }));
+});
+
+const usagePieLead = computed(() => usagePieSegments.value[0] ?? null);
+
+const usagePieActiveSegment = computed(() => {
+  if (hoveredUsageSegmentKey.value) {
+    const hovered = usagePieSegments.value.find((segment) => segment.key === hoveredUsageSegmentKey.value);
+    if (hovered) return hovered;
+  }
+  return usagePieLead.value;
+});
+
+const usagePieActiveSegmentSprites = computed(() => {
+  return (usagePieActiveSegment.value?.spriteUrls ?? []).slice(0, 2);
+});
+
+const usagePieTotal = computed(() => {
+  return usagePieSegments.value.reduce((sum, segment) => sum + segment.usage, 0);
+});
+
+const usagePieSvgSegments = computed(() => {
+  const total = usagePieSegments.value.reduce((sum, segment) => sum + segment.usage, 0);
+  if (total <= 0) return [];
+
+  let offset = 0;
+  return usagePieSegments.value.map((segment) => {
+    const share = Math.max(0, (segment.usage / total) * 100);
+    const out = {
+      ...segment,
+      share,
+      offset,
+    };
+    offset += share;
+    return out;
+  });
+});
+
+const usageTop10Share = computed(() => {
+  return usageTopDeckRows.value.reduce((sum, row) => sum + row.usage, 0);
+});
+
+const usageOtherShare = computed(() => {
+  if (otherUsageRow.value) return otherUsageRow.value.usage;
+  return Math.max(0, usagePieTotal.value - usageTop10Share.value);
+});
+
+const metaSpreadKey = computed<"high" | "medium" | "low">(() => {
+  const topDeckUsage = usagePieLead.value?.usage ?? 0;
+  const top10Share = usageTop10Share.value;
+  if (topDeckUsage <= 0.1 && top10Share <= 0.5) return "high";
+  if (topDeckUsage <= 0.16 && top10Share <= 0.7) return "medium";
+  return "low";
+});
+
+const metaSpreadText = computed(() => {
+  if (metaSpreadKey.value === "high") return ui.value.metaSpreadHigh;
+  if (metaSpreadKey.value === "medium") return ui.value.metaSpreadMedium;
+  return ui.value.metaSpreadLow;
+});
+
+const usageSummaryRows = computed(() => {
+  return [
+    { label: ui.value.topDeckMetric, value: formatUsagePct(usagePieLead.value?.usage ?? 0) },
+    { label: ui.value.top10ShareMetric, value: formatUsagePct(usageTop10Share.value) },
+    { label: ui.value.othersMetric, value: formatUsagePct(usageOtherShare.value) },
+    { label: ui.value.metaSpreadMetric, value: metaSpreadText.value },
+  ];
+});
+
+const scoreBreakdownRows = computed(() => [...topDeckRows.value]);
+
+const scoreMax = computed(() => {
+  return scoreBreakdownRows.value.reduce((max, row) => Math.max(max, row.score), 0);
+});
+
 function usageDeckDisplayName(row: TierRow) {
   if (row.isOther) {
     return locale.value === "en" ? "Other Decks" : "其他牌組";
@@ -1103,8 +1997,31 @@ function usageDeckDisplayName(row: TierRow) {
   return String(row.raw_name ?? "").trim() || humanizeDeckId(row.deck);
 }
 
+function matrixDeckShortName(row: TierRow) {
+  return usageDeckDisplayName(row);
+}
+
 function formatUsagePct(usage: number) {
   return `${(usage * 100).toFixed(1)}%`;
+}
+
+function rawScoreText(value: number) {
+  return Number.isFinite(value) ? value.toFixed(4) : "0.0000";
+}
+
+function relativeScore(value: number) {
+  const topRawScore = scoreMax.value;
+  if (!Number.isFinite(value) || !topRawScore || value <= 0) return 0;
+  return Math.max(0, Math.min(100, (value / topRawScore) * 100));
+}
+
+function scoreTooltip(value: number) {
+  return `Raw score: ${rawScoreText(value)}`;
+}
+
+function usagePieColor(row: TierRow, index: number) {
+  if (row.isOther) return "rgba(100, 116, 139, 0.9)";
+  return USAGE_PIE_COLORS[index % USAGE_PIE_COLORS.length];
 }
 
 function usageBarWidth(usage: number) {
@@ -1115,15 +2032,37 @@ function usageBarWidth(usage: number) {
 
 function usageBarFill(row: TierRow) {
   if (row.isOther) {
-    return "linear-gradient(90deg, rgba(142, 180, 226, 0.95), rgba(117, 138, 166, 0.92))";
+    return "linear-gradient(90deg, rgba(100, 116, 139, 0.95), rgba(168, 179, 199, 0.72))";
   }
   const tier = row.tier;
   const accent = tierColor(tier).replace(/0\.\d+\)/, "0.98)");
-  return `linear-gradient(90deg, rgba(102, 176, 255, 0.98), ${accent})`;
+  return `linear-gradient(90deg, rgba(77, 163, 255, 0.98), ${accent})`;
+}
+
+function scoreBarWidth(score: number) {
+  return `${relativeScore(score).toFixed(2)}%`;
+}
+
+function scoreBarFill(row: TierRow) {
+  void row;
+  return SCORE_BAR_GRADIENT;
 }
 
 const matrixExtraDeck = ref("");
-const matrixPickerRef = ref<HTMLDetailsElement | null>(null);
+const matrixSearchQuery = ref("");
+const matrixSearchOpen = ref(false);
+const matrixSearchActiveIndex = ref(0);
+const heatmapCardRef = ref<HTMLElement | null>(null);
+const heatmapWorkspaceRef = ref<HTMLElement | null>(null);
+const matchupTooltipRef = ref<HTMLElement | null>(null);
+const matchupTooltipStyle = ref<Record<string, string>>({});
+const hoveredHeatCellElement = ref<HTMLElement | null>(null);
+const matrixCellSizePx = ref(0);
+const matrixAxisSizePx = ref(0);
+let matrixSizingRaf = 0;
+let matrixResizeObserver: ResizeObserver | null = null;
+let matchupTooltipRaf = 0;
+let matrixSearchCloseTimer = 0;
 
 function restoreMatrixExtraDeckPreference() {
   if (import.meta.env.SSR) return;
@@ -1161,9 +2100,111 @@ const matrixOptionRows = computed(() => {
     });
 });
 
-function closeMatrixPicker() {
-  if (matrixPickerRef.value) {
-    matrixPickerRef.value.open = false;
+function normalizeMatrixSearchText(value: string) {
+  return String(value ?? "")
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[_/|+]+/g, " ")
+    .replace(/[^\p{Letter}\p{Number}]+/gu, " ")
+    .trim();
+}
+
+function matrixDeckSearchHaystack(row: TierRow) {
+  const iconKeys = row.iconKeys ?? [];
+  const localizedNames = [
+    getLocalizedDeckName(row.raw_name, iconKeys, "zh"),
+    getLocalizedDeckName(row.raw_name, iconKeys, "en"),
+    ...iconKeys.flatMap((key) => [
+      getLocalizedPokemonName(key, "zh"),
+      getLocalizedPokemonName(key, "en"),
+    ]),
+  ];
+
+  return normalizeMatrixSearchText(
+    [
+      usageDeckDisplayName(row),
+      row.raw_name,
+      row.deck,
+      row.tier,
+      ...iconKeys,
+      ...localizedNames,
+    ]
+      .filter(Boolean)
+      .join(" "),
+  );
+}
+
+const matrixSearchResults = computed(() => {
+  const query = normalizeMatrixSearchText(matrixSearchQuery.value);
+  const terms = query.split(/\s+/).filter(Boolean);
+  const rows = matrixOptionRows.value;
+  if (!terms.length) return rows.slice(0, 8);
+
+  return rows
+    .filter((row) => {
+      const haystack = matrixDeckSearchHaystack(row);
+      return terms.every((term) => haystack.includes(term));
+    })
+    .slice(0, 10);
+});
+
+function matrixSearchOptionId(index: number) {
+  return `matrix-deck-search-option-${index}`;
+}
+
+const matrixSearchActiveDescendant = computed(() => {
+  if (!matrixSearchOpen.value || matrixSearchResults.value.length === 0) return undefined;
+  return matrixSearchOptionId(matrixSearchActiveIndex.value);
+});
+
+function clearMatrixSearchCloseTimer() {
+  if (!matrixSearchCloseTimer) return;
+  if (typeof window === "undefined") {
+    matrixSearchCloseTimer = 0;
+    return;
+  }
+  window.clearTimeout(matrixSearchCloseTimer);
+  matrixSearchCloseTimer = 0;
+}
+
+function openMatrixSearch() {
+  clearMatrixSearchCloseTimer();
+  matrixSearchOpen.value = true;
+  if (matrixSearchActiveIndex.value >= matrixSearchResults.value.length) {
+    matrixSearchActiveIndex.value = 0;
+  }
+}
+
+function closeMatrixSearch() {
+  clearMatrixSearchCloseTimer();
+  matrixSearchOpen.value = false;
+  matrixSearchActiveIndex.value = 0;
+}
+
+function scheduleMatrixSearchClose() {
+  if (typeof window === "undefined") {
+    closeMatrixSearch();
+    return;
+  }
+  clearMatrixSearchCloseTimer();
+  matrixSearchCloseTimer = window.setTimeout(() => {
+    closeMatrixSearch();
+  }, 140);
+}
+
+function moveMatrixSearchActive(direction: number) {
+  openMatrixSearch();
+  const count = matrixSearchResults.value.length;
+  if (count === 0) return;
+  matrixSearchActiveIndex.value = (matrixSearchActiveIndex.value + direction + count) % count;
+}
+
+function selectActiveMatrixSearchResult() {
+  openMatrixSearch();
+  const option = matrixSearchResults.value[matrixSearchActiveIndex.value];
+  if (option) {
+    void selectMatrixDeck(option.deck);
   }
 }
 
@@ -1171,12 +2212,15 @@ async function refreshHeatmapForMatrixDeckChange() {
   heatLoading.value = true;
   await recomputeHeatmapForTopCut();
   heatLoading.value = false;
+  await nextTick();
+  scheduleMatrixSizingUpdate();
 }
 
 async function setMatrixDeck(deckKey: string) {
   const changed = matrixExtraDeck.value !== deckKey;
   matrixExtraDeck.value = deckKey;
-  closeMatrixPicker();
+  matrixSearchQuery.value = "";
+  closeMatrixSearch();
   if (changed) {
     await refreshHeatmapForMatrixDeckChange();
   }
@@ -1189,33 +2233,6 @@ async function clearMatrixDeck() {
 async function selectMatrixDeck(deckKey: string) {
   await setMatrixDeck(deckKey);
 }
-
-const mobileHeatRows = computed(() => {
-  return matrixAxisRows.value.map((row, index) => ({
-    row,
-    index,
-    matchups: matrixAxisRows.value
-      .map((col, matchupIndex) => ({
-        col,
-        index: matchupIndex,
-        cell: heatCells.value[index]?.[matchupIndex] ?? {
-          winrate: null,
-          total: null,
-          wins: null,
-          losses: null,
-          ties: null,
-          text: "",
-          recordText: "",
-          style: {},
-          tooltip: "",
-        },
-      }))
-      .filter(
-        (item): item is { col: TierRow; index: number; cell: HeatCell } =>
-          row !== null && item.col !== null && item.col.deck !== row.deck,
-      ),
-  }));
-});
 
 const pieLegendSegments = computed<Array<{ tier: string; count: number }>>(() => []);
 
@@ -1249,8 +2266,86 @@ const matrixSelectedDeckRow = computed(() => {
 });
 
 const matrixAxisRows = computed<Array<TierRow | null>>(() => {
-  return [...topDeckRows.value, matrixSelectedDeckRow.value];
+  const rows: Array<TierRow | null> = [...topDeckRows.value].slice(0, TOP_DECK_LIMIT);
+  const selected = matrixSelectedDeckRow.value;
+  if (!selected || rows.some((row) => row?.deck === selected.deck)) {
+    return rows;
+  }
+
+  return [selected, ...rows.filter((row) => row?.deck !== selected.deck)].slice(0, TOP_DECK_LIMIT);
 });
+
+function clampNumber(value: number, min: number, max: number) {
+  return Math.min(max, Math.max(min, value));
+}
+
+function clearMatrixSizingVars() {
+  heatmapCardRef.value?.style.removeProperty("--matrix-cell-size");
+  heatmapCardRef.value?.style.removeProperty("--matrix-axis-size");
+}
+
+function applyMatrixSizingVars(cellSize: number, axisSize: number) {
+  heatmapCardRef.value?.style.setProperty("--matrix-cell-size", `${cellSize}px`);
+  heatmapCardRef.value?.style.setProperty("--matrix-axis-size", `${axisSize}px`);
+}
+
+function updateMatrixSizing() {
+  if (typeof window === "undefined") return;
+
+  const workspace = heatmapWorkspaceRef.value;
+  const axisDeckCount = matrixAxisRows.value.filter((row): row is TierRow => row !== null).length;
+  if (!workspace || axisDeckCount <= 0 || window.innerWidth <= 760) {
+    matrixCellSizePx.value = 0;
+    matrixAxisSizePx.value = 0;
+    clearMatrixSizingVars();
+    return;
+  }
+
+  const workspaceWidth = workspace.clientWidth;
+  const availableMatrixWidth = Math.max(0, workspaceWidth);
+  const columnCount = axisDeckCount + 1;
+  const matrixGap = 4;
+  const spacingWidth = matrixGap * (columnCount + 1);
+  const rawCellSize = (availableMatrixWidth - spacingWidth) / columnCount;
+  const minCellSize = window.innerWidth >= 1180 ? 58 : 52;
+  const maxCellSize = 148;
+  const cellSize = Math.floor(clampNumber(rawCellSize, minCellSize, maxCellSize));
+
+  matrixCellSizePx.value = cellSize;
+  matrixAxisSizePx.value = cellSize;
+  applyMatrixSizingVars(cellSize, cellSize);
+}
+
+function scheduleMatrixSizingUpdate() {
+  if (typeof window === "undefined") return;
+  if (matrixSizingRaf) window.cancelAnimationFrame(matrixSizingRaf);
+  matrixSizingRaf = window.requestAnimationFrame(() => {
+    matrixSizingRaf = 0;
+    updateMatrixSizing();
+  });
+}
+
+function onMatrixViewportChange() {
+  scheduleMatrixSizingUpdate();
+}
+
+function bindMatrixResizeObserver() {
+  if (typeof window === "undefined") return;
+  matrixResizeObserver?.disconnect();
+  matrixResizeObserver = null;
+
+  const workspace = heatmapWorkspaceRef.value;
+  if (workspace && "ResizeObserver" in window) {
+    matrixResizeObserver = new ResizeObserver(() => scheduleMatrixSizingUpdate());
+    matrixResizeObserver.observe(workspace);
+  }
+
+  scheduleMatrixSizingUpdate();
+}
+
+function isMatrixSelectedDeck(row: TierRow | null) {
+  return Boolean(row && matrixSelectedDeckRow.value?.deck === row.deck);
+}
 
 const matchupMap = ref<Map<string, MatchupRecord>>(new Map());
 
@@ -1277,164 +2372,102 @@ type HeatCell = {
   recordText: string;
   style: Record<string, string>;
   tooltip: string;
+  confidence: "Low" | "Medium" | "High";
+  confidenceClass: string;
+  isMirror: boolean;
 };
 
-type HeatTone = {
-  bg: string;
-  border: string;
-  text: string;
-  glow: string;
-};
+function getConfidence(games: number | null | undefined): "Low" | "Medium" | "High" {
+  const total = Math.max(0, Number(games ?? 0));
+  if (total < 3) return "Low";
+  if (total < 10) return "Medium";
+  return "High";
+}
 
-const ADVANTAGE_TONES: HeatTone[] = [
-  {
-    bg: "rgba(34, 106, 73, 0.34)",
-    border: "rgba(92, 230, 160, 0.32)",
-    text: "#effff4",
-    glow: "rgba(60, 200, 120, 0.10)",
-  },
-  {
-    bg: "rgba(28, 125, 77, 0.42)",
-    border: "rgba(97, 236, 164, 0.40)",
-    text: "#f2fff6",
-    glow: "rgba(64, 204, 124, 0.12)",
-  },
-  {
-    bg: "rgba(22, 145, 82, 0.50)",
-    border: "rgba(106, 243, 171, 0.48)",
-    text: "#f5fff7",
-    glow: "rgba(72, 214, 132, 0.14)",
-  },
-  {
-    bg: "rgba(18, 162, 88, 0.58)",
-    border: "rgba(114, 250, 178, 0.56)",
-    text: "#f8fff9",
-    glow: "rgba(78, 224, 138, 0.16)",
-  },
-  {
-    bg: "rgba(16, 178, 94, 0.68)",
-    border: "rgba(126, 255, 188, 0.64)",
-    text: "#ffffff",
-    glow: "rgba(86, 235, 145, 0.20)",
-  },
-  {
-    bg: "rgba(14, 193, 100, 0.76)",
-    border: "rgba(139, 255, 199, 0.72)",
-    text: "#ffffff",
-    glow: "rgba(100, 245, 154, 0.24)",
-  },
-  {
-    bg: "rgba(12, 208, 105, 0.84)",
-    border: "rgba(156, 255, 212, 0.80)",
-    text: "#ffffff",
-    glow: "rgba(114, 255, 162, 0.28)",
-  },
-  {
-    bg: "rgba(10, 222, 110, 0.94)",
-    border: "rgba(178, 255, 230, 0.90)",
-    text: "#ffffff",
-    glow: "rgba(128, 255, 176, 0.32)",
-  },
-];
+function heatConfidenceStrength(games: number | null | undefined) {
+  const total = Math.max(0, Number(games ?? 0));
+  if (total < 3) return 0.34;
+  if (total <= 5) return 0.58;
+  if (total < 10) return 0.78;
+  return 1;
+}
 
-const DISADVANTAGE_TONES: HeatTone[] = [
-  {
-    bg: "rgba(128, 47, 58, 0.28)",
-    border: "rgba(237, 112, 127, 0.32)",
-    text: "#fff3f5",
-    glow: "rgba(200, 70, 90, 0.08)",
-  },
-  {
-    bg: "rgba(116, 34, 44, 0.40)",
-    border: "rgba(226, 102, 118, 0.40)",
-    text: "#fff4f6",
-    glow: "rgba(190, 60, 78, 0.10)",
-  },
-  {
-    bg: "rgba(100, 25, 34, 0.56)",
-    border: "rgba(212, 90, 108, 0.46)",
-    text: "#fff5f7",
-    glow: "rgba(180, 54, 70, 0.12)",
-  },
-  {
-    bg: "rgba(84, 19, 27, 0.70)",
-    border: "rgba(200, 80, 98, 0.50)",
-    text: "#fff7f8",
-    glow: "rgba(168, 48, 62, 0.14)",
-  },
-  {
-    bg: "rgba(64, 15, 21, 0.82)",
-    border: "rgba(184, 68, 86, 0.52)",
-    text: "#fff8f9",
-    glow: "rgba(154, 44, 56, 0.16)",
-  },
-  {
-    bg: "rgba(42, 10, 14, 0.92)",
-    border: "rgba(164, 54, 70, 0.54)",
-    text: "#ffffff",
-    glow: "rgba(138, 36, 48, 0.18)",
-  },
-  {
-    bg: "rgba(18, 4, 6, 0.98)",
-    border: "rgba(136, 40, 54, 0.52)",
-    text: "#ffffff",
-    glow: "rgba(112, 28, 38, 0.20)",
-  },
-  {
-    bg: "rgba(0, 0, 0, 1)",
-    border: "rgba(255, 255, 255, 0.14)",
-    text: "#ffffff",
-    glow: "rgba(0, 0, 0, 0.28)",
-  },
-];
+function heatConfidenceClass(games: number | null | undefined) {
+  const confidence = getConfidence(games);
+  if (confidence === "Low") return "heatmap-cell__inner--confidence-low";
+  if (confidence === "Medium") return "heatmap-cell__inner--confidence-medium";
+  return "heatmap-cell__inner--confidence-high";
+}
 
-function heatCellStyle(winrate: number | null): Record<string, string> {
+function getHeatmapColor(winrate: number | null, games: number | null | undefined): Record<string, string> {
+  const confidence = heatConfidenceStrength(games);
   const neutral = {
-    backgroundColor: "rgba(12, 27, 48, 0.92)",
-    borderColor: "rgba(86, 116, 156, 0.22)",
+    background:
+      `linear-gradient(135deg, rgba(77, 163, 255, ${0.04 * confidence}), transparent 62%), rgba(12, 27, 48, 0.78)`,
+    borderColor: `rgba(148, 163, 184, ${0.18 + 0.12 * confidence})`,
     color: "#eaf4ff",
-    boxShadow: "inset 0 1px 0 rgba(255,255,255,0.03)",
+    boxShadow: "inset 0 1px 0 rgba(248, 250, 252, 0.035)",
   };
 
   if (winrate == null) return neutral;
 
-  const pct = Number((winrate * 100).toFixed(1));
+  const pct = Math.max(0, Math.min(100, winrate * 100));
+  if (pct >= 45 && pct <= 55) return neutral;
 
-  if (pct === 50) {
-    return neutral;
-  }
-
-  if (pct > 50) {
-    const idx = Math.min(
-      ADVANTAGE_TONES.length - 1,
-      Math.max(0, Math.floor((pct - 50.0001) / 5)),
-    );
-    const tone = ADVANTAGE_TONES[idx] ?? ADVANTAGE_TONES[ADVANTAGE_TONES.length - 1];
-    if (!tone) return neutral;
+  if (pct > 55) {
+    const distance = Math.min(1, (pct - 55) / 45);
+    const strength = (0.22 + distance * 0.58) * confidence;
     return {
-      backgroundColor: tone.bg,
-      borderColor: tone.border,
-      color: tone.text,
-      boxShadow: `inset 0 0 0 1px rgba(255,255,255,0.02), 0 0 18px ${tone.glow}`,
+      background:
+        `linear-gradient(135deg, rgba(77, 163, 255, ${0.06 + strength * 0.08}), transparent 58%), rgba(0, 148, 130, ${0.16 + strength * 0.46})`,
+      borderColor: `rgba(0, 255, 200, ${0.16 + strength * 0.38})`,
+      color: "#f8fafc",
+      boxShadow: `inset 0 1px 0 rgba(248, 250, 252, ${0.025 + strength * 0.035}), 0 0 18px rgba(0, 229, 255, ${strength * 0.1})`,
     };
   }
 
-  const idx =
-    pct <= 10
-      ? DISADVANTAGE_TONES.length - 1
-      : Math.min(DISADVANTAGE_TONES.length - 2, Math.floor((49.9999 - pct) / 5));
-
-  const tone =
-    DISADVANTAGE_TONES[Math.max(0, Math.min(idx, DISADVANTAGE_TONES.length - 1))] ??
-    DISADVANTAGE_TONES[DISADVANTAGE_TONES.length - 1];
-  if (!tone) return neutral;
-
+  const distance = Math.min(1, (45 - pct) / 45);
+  const strength = (0.22 + distance * 0.58) * confidence;
   return {
-    backgroundColor: tone.bg,
-    borderColor: tone.border,
-    color: tone.text,
-    boxShadow: `inset 0 0 0 1px rgba(255,255,255,0.02), 0 0 18px ${tone.glow}`,
+    background:
+      `linear-gradient(135deg, rgba(255, 59, 79, ${0.04 + strength * 0.08}), transparent 60%), rgba(111, 18, 34, ${0.14 + strength * 0.42})`,
+    borderColor: `rgba(255, 96, 118, ${0.14 + strength * 0.34})`,
+    color: "#fff7f8",
+    boxShadow: `inset 0 1px 0 rgba(248, 250, 252, ${0.02 + strength * 0.025}), 0 0 16px rgba(255, 59, 79, ${strength * 0.08})`,
   };
+}
+
+function formatRecord(wins: number | null | undefined, losses: number | null | undefined, ties = 0) {
+  const w = Math.max(0, Number(wins ?? 0));
+  const l = Math.max(0, Number(losses ?? 0));
+  const t = Math.max(0, Number(ties ?? 0));
+  return t > 0 ? `${w}–${l}–${t}` : `${w}–${l}`;
+}
+
+function formatWinRate(winrate: number) {
+  const pct = winrate * 100;
+  const rounded = Math.round(pct);
+  return Math.abs(pct - rounded) < 0.05 ? `${rounded}%` : `${pct.toFixed(1)}%`;
+}
+
+function matchupTooltip(
+  rowDeck: TierRow,
+  colDeck: TierRow,
+  winrate: number,
+  wins: number,
+  losses: number,
+  ties: number,
+  total: number,
+) {
+  const confidence = getConfidence(total);
+  return [
+    `${ui.value.tooltipYourDeck}: ${usageDeckDisplayName(rowDeck)}`,
+    `${ui.value.tooltipOpponentDeck}: ${usageDeckDisplayName(colDeck)}`,
+    `${ui.value.tooltipWinRate}: ${formatWinRate(winrate)}`,
+    `${ui.value.tooltipRecord}: ${formatRecord(wins, losses, ties)}`,
+    `${ui.value.tooltipTotalGames}: ${total}`,
+    `${ui.value.tooltipConfidence}: ${confidence}`,
+  ].join("\n");
 }
 
 const heatCells = computed<HeatCell[][]>(() => {
@@ -1450,10 +2483,13 @@ const heatCells = computed<HeatCell[][]>(() => {
           wins: null,
           losses: null,
           ties: null,
-          text: "",
+          text: "—",
           recordText: "",
           style: {},
           tooltip: "",
+          confidence: "Low",
+          confidenceClass: "heatmap-cell__inner--confidence-low",
+          isMirror: false,
         };
       }
 
@@ -1467,27 +2503,37 @@ const heatCells = computed<HeatCell[][]>(() => {
           wins: null,
           losses: null,
           ties: null,
-          text: "—",
-          recordText: "—",
+          text: "mirror",
+          recordText: "",
           style: {},
           tooltip: "",
+          confidence: "Low",
+          confidenceClass: "heatmap-cell__inner--mirror",
+          isMirror: true,
         };
       }
 
       const direct = map.get(`${rowKey}__${colKey}`);
       if (direct) {
         const wr = direct.winrateA;
+        const total = Number(direct.total ?? 0);
+        const wins = Number(direct.winsA ?? 0);
+        const losses = Number(direct.lossesA ?? 0);
+        const ties = Number(direct.ties ?? 0);
 
         return {
           winrate: wr,
-          total: direct.total,
-          wins: direct.winsA,
-          losses: direct.lossesA,
-          ties: direct.ties,
-          text: `${(wr * 100).toFixed(1)}%`,
-          recordText: `${direct.winsA}-${direct.lossesA}-${direct.ties}`,
-          style: heatCellStyle(wr),
-          tooltip: `${rowDeck.deck} vs ${colDeck.deck}\n${direct.winsA}-${direct.lossesA}-${direct.ties} | ${(wr * 100).toFixed(2)}%`,
+          total,
+          wins,
+          losses,
+          ties,
+          text: formatWinRate(wr),
+          recordText: formatRecord(wins, losses, ties),
+          style: getHeatmapColor(wr, total),
+          tooltip: matchupTooltip(rowDeck, colDeck, wr, wins, losses, ties, total),
+          confidence: getConfidence(total),
+          confidenceClass: heatConfidenceClass(total),
+          isMirror: false,
         };
       }
 
@@ -1501,10 +2547,170 @@ const heatCells = computed<HeatCell[][]>(() => {
         recordText: "",
         style: {},
         tooltip: "",
+        confidence: "Low",
+        confidenceClass: "heatmap-cell__inner--confidence-low",
+        isMirror: false,
       };
     });
   });
 });
+
+type HoveredHeatCell = {
+  row: TierRow;
+  col: TierRow;
+  cell: HeatCell;
+  rowIndex: number;
+  colIndex: number;
+};
+
+const hoveredHeatCell = ref<HoveredHeatCell | null>(null);
+const matchupDetail = computed(() => hoveredHeatCell.value);
+
+function setHoveredHeatCell(
+  row: TierRow | null,
+  col: TierRow | null,
+  cell: HeatCell,
+  rowIndex: number,
+  colIndex: number,
+  event?: MouseEvent | FocusEvent,
+) {
+  if (!row || !col || cell.winrate == null) return;
+  hoveredHeatCell.value = { row, col, cell, rowIndex, colIndex };
+
+  const target =
+    typeof HTMLElement !== "undefined" && event?.currentTarget instanceof HTMLElement
+      ? event.currentTarget
+      : null;
+  hoveredHeatCellElement.value = target;
+  positionMatchupTooltip(target);
+  void nextTick(() => positionMatchupTooltip(target));
+}
+
+function clearHoveredHeatCell() {
+  hoveredHeatCell.value = null;
+  hoveredHeatCellElement.value = null;
+  matchupTooltipStyle.value = {};
+}
+
+function positionMatchupTooltip(target = hoveredHeatCellElement.value) {
+  if (typeof window === "undefined" || !target) return;
+
+  const rect = target.getBoundingClientRect();
+  const tooltip = matchupTooltipRef.value;
+  const tooltipWidth = tooltip?.offsetWidth || 360;
+  const tooltipHeight = tooltip?.offsetHeight || 300;
+  const gutter = 10;
+  let left = rect.right + gutter;
+
+  if (left + tooltipWidth + gutter > window.innerWidth) {
+    left = rect.left - tooltipWidth - gutter;
+  }
+
+  left = clampNumber(left, gutter, Math.max(gutter, window.innerWidth - tooltipWidth - gutter));
+
+  let top = rect.top;
+  if (top + tooltipHeight + gutter > window.innerHeight) {
+    top = window.innerHeight - tooltipHeight - gutter;
+  }
+  top = clampNumber(top, gutter, Math.max(gutter, window.innerHeight - tooltipHeight - gutter));
+
+  matchupTooltipStyle.value = {
+    left: `${Math.round(left)}px`,
+    top: `${Math.round(top)}px`,
+  };
+}
+
+function scheduleMatchupTooltipPosition() {
+  if (typeof window === "undefined" || !hoveredHeatCell.value) return;
+  if (matchupTooltipRaf) window.cancelAnimationFrame(matchupTooltipRaf);
+  matchupTooltipRaf = window.requestAnimationFrame(() => {
+    matchupTooltipRaf = 0;
+    positionMatchupTooltip();
+  });
+}
+
+function onMatchupViewportChange() {
+  scheduleMatchupTooltipPosition();
+}
+
+function isHeatmapRowActive(index: number) {
+  return hoveredHeatCell.value?.rowIndex === index;
+}
+
+function isHeatmapColumnActive(index: number) {
+  return hoveredHeatCell.value?.colIndex === index;
+}
+
+function isHeatmapCellActive(rowIndex: number, colIndex: number) {
+  const active = hoveredHeatCell.value;
+  return active?.rowIndex === rowIndex && active?.colIndex === colIndex;
+}
+
+function isHeatmapCellRelated(rowIndex: number, colIndex: number) {
+  const active = hoveredHeatCell.value;
+  if (!active) return false;
+  return active.rowIndex === rowIndex || active.colIndex === colIndex;
+}
+
+const mobileMatrixDeckKey = ref("");
+
+const emptyHeatCell: HeatCell = {
+  winrate: null,
+  total: null,
+  wins: null,
+  losses: null,
+  ties: null,
+  text: "—",
+  recordText: "",
+  style: {},
+  tooltip: "",
+  confidence: "Low",
+  confidenceClass: "heatmap-cell__inner--confidence-low",
+  isMirror: false,
+};
+
+const mobileHeatDeckOptions = computed(() => {
+  return matrixAxisRows.value.filter((row): row is TierRow => row !== null);
+});
+
+const mobileSelectedHeatEntry = computed(() => {
+  const options = mobileHeatDeckOptions.value;
+  const selected = options.find((row) => row.deck === mobileMatrixDeckKey.value) ?? options[0] ?? null;
+  if (!selected) return null;
+
+  const rowIndex = matrixAxisRows.value.findIndex((row) => row?.deck === selected.deck);
+  const matchups = matrixAxisRows.value
+    .map((col, matchupIndex) => ({
+      col,
+      index: matchupIndex,
+      cell: rowIndex >= 0 ? (heatCells.value[rowIndex]?.[matchupIndex] ?? emptyHeatCell) : emptyHeatCell,
+    }))
+    .filter(
+      (item): item is { col: TierRow; index: number; cell: HeatCell } =>
+        item.col !== null && item.col.deck !== selected.deck,
+    );
+
+  return {
+    row: selected,
+    index: rowIndex,
+    matchups,
+  };
+});
+
+watch(
+  mobileHeatDeckOptions,
+  (rows) => {
+    if (!rows.length) {
+      mobileMatrixDeckKey.value = "";
+      return;
+    }
+
+    if (!rows.some((row) => row.deck === mobileMatrixDeckKey.value)) {
+      mobileMatrixDeckKey.value = rows[0]?.deck ?? "";
+    }
+  },
+  { immediate: true },
+);
 
 const tournaments = ref<NormalizedTournament[]>([]);
 const loadingTournaments = ref(false);
@@ -1609,6 +2815,37 @@ const timeOptionGroups = computed(() => {
     base: baseOptions,
     months: monthOptions.value,
   };
+});
+
+function optionLabel<T extends string>(options: Array<{ value: T; label: string }>, value: T) {
+  return options.find((option) => option.value === value)?.label ?? String(value || "—");
+}
+
+const selectedTimeLabel = computed(() => {
+  return optionLabel([...timeOptionGroups.value.base, ...timeOptionGroups.value.months], filters.time);
+});
+
+const selectedSetLabel = computed(() => {
+  return optionLabel(setOptions.value, filters.set);
+});
+
+const selectedTopCutLabel = computed(() => {
+  return optionLabel(topCutOptions.value, filters.topCut);
+});
+
+function compactSetScopeLabel(value: SetFilterValue) {
+  const selected = String(value ?? "").trim();
+  if (!selected) return currentVersionWindow.value?.code ?? selectedSetLabel.value;
+  if (selected === PRESET_CURRENT_7 || selected === PRESET_CURRENT_14) {
+    return currentVersionWindow.value?.code ?? selectedSetLabel.value;
+  }
+  return VERSION_WINDOWS.find((version) => version.code === selected)?.code ?? selectedSetLabel.value;
+}
+
+const compactFilterScope = computed(() => {
+  return [selectedTimeLabel.value, compactSetScopeLabel(filters.set), selectedTopCutLabel.value]
+    .filter(Boolean)
+    .join(" · ");
 });
 
 function inTimeRange(tournament: NormalizedTournament) {
@@ -2037,16 +3274,18 @@ function resolveDeckSpriteUrlsFromIconKeys(iconKeys: string[]) {
 
 const recomputeToken = { tier: 0, heat: 0 };
 
-async function filteredTournamentsForCurrentFilters() {
-  return tournaments.value.filter((tournament) => {
-    if (filters.minPlayers != null && Number.isFinite(filters.minPlayers)) {
-      if ((tournament.players ?? 0) < filters.minPlayers) return false;
-    }
+function tournamentMatchesCurrentFilters(tournament: NormalizedTournament) {
+  if (filters.minPlayers != null && Number.isFinite(filters.minPlayers)) {
+    if ((tournament.players ?? 0) < filters.minPlayers) return false;
+  }
 
-    if (!inTimeRange(tournament)) return false;
-    if (filters.set && tournament.versionCode !== filters.set) return false;
-    return true;
-  });
+  if (!inTimeRange(tournament)) return false;
+  if (filters.set && tournament.versionCode !== filters.set) return false;
+  return true;
+}
+
+async function filteredTournamentsForCurrentFilters() {
+  return tournaments.value.filter(tournamentMatchesCurrentFilters);
 }
 
 async function filteredTournamentsForMatrixScope() {
@@ -2523,9 +3762,87 @@ watch(
   },
 );
 
+watch(
+  () => matrixSearchResults.value.length,
+  (count) => {
+    if (count === 0) {
+      matrixSearchActiveIndex.value = 0;
+      return;
+    }
+    if (matrixSearchActiveIndex.value >= count) {
+      matrixSearchActiveIndex.value = count - 1;
+    }
+  },
+);
+
+watch(contentTransitionKey, () => {
+  clearHoveredHeatCell();
+  void nextTick(() => {
+    scheduleEvRailUpdate();
+    scheduleMatrixSizingUpdate();
+  });
+});
+
+watch(
+  () => matrixAxisRows.value.map((row) => row?.deck ?? "").join("|"),
+  () => {
+    void nextTick(scheduleMatrixSizingUpdate);
+  },
+);
+
+watch(heatmapWorkspaceRef, () => {
+  void nextTick(bindMatrixResizeObserver);
+});
+
+function onEvRailViewportChange() {
+  scheduleEvRailUpdate();
+}
+
+onMounted(() => {
+  if (typeof window === "undefined") return;
+
+  void nextTick(() => {
+    updateActiveEvSection();
+    window.addEventListener("scroll", onEvRailViewportChange, { passive: true });
+    window.addEventListener("resize", onEvRailViewportChange);
+    window.addEventListener("resize", onMatrixViewportChange);
+    window.addEventListener("scroll", onMatchupViewportChange, { passive: true });
+    window.addEventListener("resize", onMatchupViewportChange);
+    bindMatrixResizeObserver();
+  });
+});
+
+onBeforeUnmount(() => {
+  if (typeof window === "undefined") return;
+
+  window.removeEventListener("scroll", onEvRailViewportChange);
+  window.removeEventListener("resize", onEvRailViewportChange);
+  window.removeEventListener("resize", onMatrixViewportChange);
+  window.removeEventListener("scroll", onMatchupViewportChange);
+  window.removeEventListener("resize", onMatchupViewportChange);
+  window.clearTimeout(evRailPressTimer);
+  if (evRailRaf) {
+    window.cancelAnimationFrame(evRailRaf);
+    evRailRaf = 0;
+  }
+  if (matrixSizingRaf) {
+    window.cancelAnimationFrame(matrixSizingRaf);
+    matrixSizingRaf = 0;
+  }
+  matrixResizeObserver?.disconnect();
+  matrixResizeObserver = null;
+  if (matchupTooltipRaf) {
+    window.cancelAnimationFrame(matchupTooltipRaf);
+    matchupTooltipRaf = 0;
+  }
+  clearMatrixSearchCloseTimer();
+});
+
 onMounted(async () => {
   await loadPrecomputedTopDecksForTierList();
   await loadTournaments();
+  await nextTick();
+  bindMatrixResizeObserver();
   heatLoading.value = true;
   await recomputeTierRows();
   restoreMatrixExtraDeckPreference();
@@ -2535,34 +3852,215 @@ onMounted(async () => {
   }
   await recomputeHeatmapForTopCut();
   heatLoading.value = false;
+  await nextTick();
+  scheduleMatrixSizingUpdate();
 });
 </script>
 
 <style scoped>
 .tierlist-page {
   color: rgba(255, 255, 255, 0.92);
-  max-width: 1120px;
-  margin: 0 auto;
   width: 100%;
+  max-width: none;
+  margin: 0;
+  overflow-x: clip;
+  overflow-y: visible;
+}
+
+.tier-ev-section {
+  scroll-margin-top: 122px;
+}
+
+.tier-ev-rail {
+  position: fixed;
+  top: 112px;
+  bottom: 76px;
+  left: clamp(14px, 1.45vw, 28px);
+  z-index: 22;
+  width: 62px;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  padding: 18px 0;
+  pointer-events: auto;
+}
+
+.tier-ev-rail::before,
+.tier-ev-rail::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  bottom: 24px;
+  left: 6px;
+  width: 1px;
+  pointer-events: none;
+}
+
+.tier-ev-rail::before {
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(148, 163, 184, 0.22) 12%,
+    rgba(148, 163, 184, 0.22) 88%,
+    transparent
+  );
+}
+
+.tier-ev-rail::after {
+  background: linear-gradient(180deg, rgba(77, 163, 255, 0.18), #4da3ff);
+  box-shadow: 0 0 16px rgba(77, 163, 255, 0.38);
+  transform-origin: top center;
+  transform: scaleY(var(--ev-progress, 0));
+  transition: transform 360ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tier-ev-rail__item {
+  position: relative;
+  min-width: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 0 0 0 0;
+  border: 0;
+  background: transparent;
+  color: #64748b;
+  cursor: pointer;
+  text-align: left;
+  transform-origin: 0 0;
+  transition:
+    color 180ms ease,
+    transform 220ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tier-ev-rail__item:hover {
+  color: #a8b3c7;
+  transform: translateX(3px);
+}
+
+.tier-ev-rail__item--pressed {
+  transform: translateX(4px) scale(1.015);
+}
+
+.tier-ev-rail__dot {
+  position: relative;
+  z-index: 1;
+  flex: 0 0 auto;
+  width: 7px;
+  height: 7px;
+  margin-top: 3px;
+  border: 1px solid rgba(100, 116, 139, 0.92);
+  border-radius: 999px;
+  background: #02040a;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.tier-ev-rail__label {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.tier-ev-rail__item:hover .tier-ev-rail__dot {
+  border-color: rgba(77, 163, 255, 0.8);
+  box-shadow: 0 0 12px rgba(77, 163, 255, 0.34);
+}
+
+.tier-ev-rail__item--active {
+  color: #4da3ff;
+}
+
+.tier-ev-rail__item--active .tier-ev-rail__dot {
+  border-color: #4da3ff;
+  background: #4da3ff;
+  box-shadow:
+    0 0 0 1px rgba(77, 163, 255, 0.26),
+    0 0 16px rgba(77, 163, 255, 0.52);
+  animation: tier-ev-dot-pulse 3.4s ease-in-out infinite;
+}
+
+@keyframes tier-ev-dot-pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 1px rgba(77, 163, 255, 0.24),
+      0 0 12px rgba(77, 163, 255, 0.36);
+  }
+
+  50% {
+    box-shadow:
+      0 0 0 3px rgba(77, 163, 255, 0.09),
+      0 0 20px rgba(77, 163, 255, 0.5);
+  }
+}
+
+.tierlist-layout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(280px, 18vw, 320px);
+  align-items: start;
+  gap: clamp(24px, 2.5vw, 44px);
+  overflow: visible;
+}
+
+.tierlist-main {
+  min-width: 0;
+  overflow: visible;
+}
+
+.tierlist-content-motion {
+  min-width: 0;
 }
 
 .tierlist-header {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 12px;
-  margin: 12px 0;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: clamp(16px, 2vw, 28px);
+  margin: 0 0 clamp(18px, 2.4vw, 34px);
+  padding-top: clamp(72px, 8vh, 120px);
+  scroll-margin-top: 132px;
+}
+
+.tierlist-header::before {
+  content: none;
+}
+
+.tierlist-header__copy {
+  min-width: 0;
 }
 
 .page-title {
   margin: 0;
-  font-size: 18px;
-  line-height: 1.2;
-  font-weight: 800;
-  color: rgba(255, 255, 255, 0.92);
+  display: flex;
+  flex-direction: column;
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: clamp(72px, 7vw, 148px);
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  line-height: 0.78;
+}
+
+.tierlist-hero-title em {
+  font: inherit;
+  color: var(--accent);
+  margin-left: 0.48em;
+  text-shadow: 0 0 28px rgba(77, 163, 255, 0.22);
+}
+
+.tierlist-hero-description {
+  max-width: 760px;
+  margin: clamp(30px, 3.2vw, 52px) 0 0;
 }
 
 .page-subtitle {
-  margin: 4px 0 0;
+  margin: 12px 0 0;
   color: rgba(226, 232, 240, 0.72);
   font-size: 12px;
   font-weight: 500;
@@ -2592,36 +4090,453 @@ onMounted(async () => {
   font-size: 12px;
 }
 
+.filter-drawer-trigger {
+  display: none;
+  min-width: min(260px, 100%);
+  text-align: left;
+  border: 1px solid var(--border);
+  border-left-color: var(--border-accent);
+  border-radius: 0;
+  background:
+    linear-gradient(135deg, rgba(77, 163, 255, 0.08), transparent 58%),
+    rgba(5, 10, 20, 0.94);
+  color: var(--text);
+  padding: 12px 14px;
+  cursor: pointer;
+}
+
+.filter-drawer-trigger__eyebrow {
+  display: block;
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.filter-drawer-trigger strong {
+  display: block;
+  margin-top: 5px;
+  min-width: 0;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.filter-drawer-trigger small {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.filter-sidebar {
+  position: sticky;
+  top: 112px;
+  align-self: start;
+  width: 100%;
+  min-width: 0;
+  overflow: visible;
+  z-index: 10;
+}
+
+.filter-sidebar__sticky {
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+}
+
+.filter-panel {
+  position: relative;
+  display: grid;
+  gap: 12px;
+  max-height: none;
+  overflow: visible;
+  border: 1px solid var(--border);
+  border-left: 1px solid var(--border-accent);
+  border-radius: 0;
+  background:
+    linear-gradient(135deg, rgba(77, 163, 255, 0.08), transparent 46%),
+    linear-gradient(315deg, rgba(255, 209, 102, 0.045), transparent 58%),
+    rgba(5, 10, 20, 0.96);
+  box-shadow:
+    0 0 26px rgba(77, 163, 255, 0.12),
+    inset 0 1px 0 rgba(248, 250, 252, 0.05);
+  padding: 14px;
+}
+
+.filter-panel::before,
+.filter-panel::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  pointer-events: none;
+}
+
+.filter-panel::before {
+  top: -1px;
+  left: -1px;
+  border-top: 1px solid var(--accent);
+  border-left: 1px solid var(--accent);
+}
+
+.filter-panel::after {
+  right: -1px;
+  bottom: -1px;
+  border-right: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
+}
+
+.filter-panel--sticky {
+  min-height: 0;
+  max-height: none;
+  overflow: visible;
+}
+
+.creator-materials-panel {
+  position: relative;
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-left-color: rgba(77, 163, 255, 0.74);
+  background:
+    linear-gradient(135deg, rgba(77, 163, 255, 0.08), transparent 54%),
+    rgba(5, 10, 20, 0.94);
+  box-shadow: inset 0 1px 0 rgba(248, 250, 252, 0.04);
+}
+
+.creator-materials-panel::before,
+.creator-materials-panel::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+}
+
+.creator-materials-panel::before {
+  top: -1px;
+  left: -1px;
+  border-top: 1px solid var(--accent);
+  border-left: 1px solid var(--accent);
+}
+
+.creator-materials-panel::after {
+  right: -1px;
+  bottom: -1px;
+  border-right: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
+  opacity: 0.72;
+}
+
+.creator-materials-panel--mobile {
+  display: none;
+  margin-bottom: clamp(16px, 2vw, 24px);
+}
+
+.creator-materials-panel__eyebrow {
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.creator-materials-panel h2 {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(17px, 1.15vw, 21px);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.creator-materials-panel__actions {
+  display: grid;
+  gap: 8px;
+}
+
+.creator-materials-button {
+  min-height: 44px;
+  padding: 0 13px;
+  border: 1px solid var(--border);
+  border-radius: 0;
+  background: rgba(3, 8, 18, 0.82);
+  color: var(--text);
+  font-size: 10.5px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    border-color var(--dur-fast, 160ms) ease,
+    background-color var(--dur-fast, 160ms) ease,
+    box-shadow var(--dur-fast, 160ms) ease,
+    color var(--dur-fast, 160ms) ease;
+}
+
+.creator-materials-button--primary {
+  border-color: var(--border-accent);
+  background: var(--accent);
+  color: #02040a;
+}
+
+.creator-materials-button:hover:not(:disabled),
+.creator-materials-button:focus-visible {
+  border-color: rgba(77, 163, 255, 0.78);
+  background: rgba(77, 163, 255, 0.16);
+  box-shadow: 0 0 18px rgba(77, 163, 255, 0.18);
+  color: #fff;
+  outline: none;
+}
+
+.creator-materials-button--primary:hover:not(:disabled),
+.creator-materials-button--primary:focus-visible {
+  background: var(--accent-primary-soft);
+  color: #02040a;
+}
+
+.creator-materials-button:disabled {
+  cursor: wait;
+  opacity: 0.68;
+}
+
+.tierlistCreatorMount {
+  position: fixed;
+  top: 0;
+  left: -10000px;
+  width: 1440px;
+  min-height: 100vh;
+  pointer-events: none;
+}
+
+.filter-panel__header {
+  min-width: 0;
+  display: grid;
+  gap: 5px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.28);
+}
+
+.filter-panel__header--drawer {
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+}
+
+.filter-panel__eyebrow {
+  color: var(--accent-blue);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.filter-panel h2 {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(18px, 1.3vw, 22px);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.filter-panel p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.filter-summary {
+  display: grid;
+  gap: 0;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  background: rgba(5, 10, 20, 0.9);
+}
+
+.filter-summary__row {
+  display: grid;
+  grid-template-columns: 78px minmax(0, 1fr);
+  gap: 10px;
+  align-items: baseline;
+  min-height: 34px;
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.filter-summary__row:last-child {
+  border-bottom: 0;
+}
+
+.filter-summary__label {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.filter-summary__value {
+  min-width: 0;
+  color: var(--text-soft);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.25;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.filter-scope-line {
+  min-width: 0;
+  margin: -4px 0 0;
+  padding: 9px 10px;
+  border: 1px solid rgba(77, 163, 255, 0.24);
+  background: rgba(3, 7, 16, 0.72);
+  color: var(--text-soft);
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  line-height: 1.25;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .filters {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 10px;
+  grid-template-columns: 1fr;
+  gap: 8px;
 }
 
 .f {
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  background: rgba(15, 23, 42, 0.35);
-  padding: 10px;
+  min-width: 0;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-radius: 0;
+  background: rgba(5, 10, 20, 0.92);
+  padding: 10px 12px;
 }
 
 .f label {
   display: block;
-  font-size: 12px;
-  font-weight: 800;
-  color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 6px;
+  margin-bottom: 7px;
+  color: var(--text-soft);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
 .f input,
 .f select {
   width: 100%;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(2, 6, 23, 0.45);
-  color: rgba(255, 255, 255, 0.92);
-  padding: 8px 10px;
+  min-width: 0;
+  min-height: 40px;
+  border-radius: 0;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  background: rgba(2, 4, 10, 0.96);
+  color: var(--text);
+  padding: 9px 10px;
   outline: none;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.f input:focus,
+.f select:focus {
+  border-color: rgba(77, 163, 255, 0.68);
+  box-shadow: 0 0 0 1px rgba(77, 163, 255, 0.28);
+}
+
+.filter-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.filter-action {
+  min-height: 42px;
+  border-radius: 0;
+  border: 1px solid var(--border);
+  padding: 0 12px;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.filter-action--secondary {
+  background: rgba(2, 5, 12, 0.82);
+  color: var(--text);
+}
+
+.filter-action--primary {
+  border-color: var(--border-accent);
+  background: var(--accent);
+  color: #080a10;
+}
+
+.filter-action:hover {
+  border-color: var(--accent);
+  background: rgba(77, 163, 255, 0.18);
+  color: var(--text);
+}
+
+.filter-drawer-shell {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: none;
+}
+
+.filter-drawer-backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: rgba(2, 5, 12, 0.78);
+  cursor: pointer;
+}
+
+.filter-panel--drawer {
+  position: absolute;
+  top: 84px;
+  right: 18px;
+  z-index: 1;
+  width: min(420px, calc(100vw - 36px));
+  max-height: calc(100dvh - 104px);
+  overflow-y: auto;
+  padding: 18px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.2);
+}
+
+.filter-close {
+  width: 36px;
+  height: 36px;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 0;
+  background: rgba(2, 5, 12, 0.82);
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+@media (min-width: 1181px) {
+  .filter-drawer-shell,
+  .filter-drawer-backdrop {
+    display: none !important;
+  }
 }
 
 .hint {
@@ -2632,9 +4547,10 @@ onMounted(async () => {
 }
 
 .tierlist-top-grid {
+  min-width: 0;
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(420px, 0.95fr);
-  gap: 16px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(16px, 2vw, 32px);
   align-items: start;
 }
 
@@ -2642,24 +4558,57 @@ onMounted(async () => {
   .tierlist-top-grid {
     grid-template-columns: 1fr;
   }
+}
 
-  .filters {
+@media (max-width: 1180px) {
+  .tier-ev-rail {
+    left: 10px;
+    width: 48px;
+  }
+
+  .tier-ev-rail__label {
+    font-size: 8px;
+    letter-spacing: 0.1em;
+  }
+
+  .tierlist-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-sidebar {
+    display: none;
+  }
+
+  .creator-materials-panel--mobile {
+    display: grid;
+  }
+
+  .creator-materials-panel__actions {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .filter-drawer-trigger {
+    display: grid;
+  }
+
+  .filter-drawer-shell {
+    display: block;
   }
 }
 
 .usage-card,
+.score-card,
 .tier-table-card,
 .heatmap-card {
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(15, 23, 42, 0.35);
   border-radius: 12px;
-  padding: 12px;
+  padding: clamp(14px, 1.4vw, 24px);
 }
 
 .section-title {
   margin: 0;
-  font-size: 14px;
+  font-size: clamp(16px, 1.15vw, 22px);
   font-weight: 800;
   color: rgba(255, 255, 255, 0.92);
   letter-spacing: 0.01em;
@@ -2675,11 +4624,25 @@ onMounted(async () => {
 }
 
 .usage-card {
+  order: 2;
   height: 100%;
   min-height: 0;
   display: grid;
   grid-template-rows: auto auto;
-  gap: 12px;
+  gap: clamp(12px, 1.2vw, 20px);
+}
+
+.score-card {
+  order: 3;
+  min-height: 0;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: clamp(12px, 1.2vw, 20px);
+}
+
+.usage-card,
+.score-card {
+  border-radius: 0;
 }
 
 .usage-subtitle {
@@ -2688,21 +4651,494 @@ onMounted(async () => {
   font-size: 12px;
 }
 
+.usage-pie-layout {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.95fr) minmax(460px, 0.9fr);
+  align-items: center;
+  justify-content: stretch;
+  gap: clamp(32px, 5vw, 80px);
+  min-height: clamp(440px, 46vw, 760px);
+  max-width: none;
+}
+
+.usage-pie-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.usage-pie {
+  width: min(clamp(320px, 42vw, 720px), 100%);
+  height: auto;
+  aspect-ratio: 1;
+  position: relative;
+  border-radius: 50% !important;
+  overflow: visible;
+  isolation: isolate;
+  border: 1px solid rgba(148, 163, 184, 0.46);
+  background:
+    radial-gradient(circle at center, rgba(1, 2, 8, 0.98) 0 42%, transparent 43%),
+    rgba(3, 7, 16, 0.94);
+  box-shadow:
+    0 0 34px rgba(77, 163, 255, 0.16),
+    0 28px 80px rgba(0, 0, 0, 0.42),
+    inset 0 0 0 2px rgba(3, 7, 18, 0.96),
+    inset 0 0 0 3px rgba(148, 163, 184, 0.18);
+  outline: none !important;
+}
+
+.usage-pie::before {
+  content: "";
+  position: absolute;
+  inset: 27%;
+  z-index: 1;
+  border-radius: 50% !important;
+  background:
+    linear-gradient(180deg, rgba(5, 10, 20, 0.99), rgba(1, 2, 8, 0.99)),
+    rgba(1, 2, 8, 0.98);
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  box-shadow: inset 0 0 0 1px rgba(3, 7, 18, 0.9);
+}
+
+#app .usage-pie {
+  border-radius: 50% !important;
+}
+
+#app .usage-pie::before {
+  border-radius: 50% !important;
+}
+
+.usage-donut {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  transform: rotate(-90deg);
+  outline: none !important;
+}
+
+.usage-donut__track,
+.usage-donut__slice-outline,
+.usage-donut__slice {
+  fill: none;
+  stroke-linecap: butt;
+  outline: none !important;
+}
+
+.usage-donut__track {
+  stroke: rgba(3, 7, 18, 0.98);
+  stroke-width: 22;
+}
+
+.usage-donut__segment {
+  cursor: default;
+  outline: none !important;
+}
+
+.usage-donut__slice-outline {
+  pointer-events: none;
+  stroke: #030712;
+  stroke-width: 23;
+  transition:
+    stroke 0.18s ease,
+    stroke-width 0.18s ease,
+    opacity 0.18s ease;
+}
+
+.usage-donut__slice {
+  cursor: default;
+  opacity: 0.96;
+  pointer-events: stroke;
+  stroke-width: 17.5;
+  transition:
+    opacity 0.18s ease,
+    stroke-width 0.18s ease;
+}
+
+.usage-donut__segment--active .usage-donut__slice-outline,
+.usage-donut__segment:hover .usage-donut__slice-outline {
+  stroke: #030712;
+  stroke-width: 23.5;
+  opacity: 1;
+  filter: drop-shadow(0 0 7px rgba(77, 163, 255, 0.18));
+}
+
+.usage-donut__segment--active .usage-donut__slice,
+.usage-donut__segment:hover .usage-donut__slice {
+  opacity: 1;
+  stroke-width: 19;
+}
+
+.usage-pie__center {
+  position: absolute;
+  inset: 28%;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 7px;
+  text-align: center;
+  min-width: 0;
+  pointer-events: none;
+}
+
+.usage-pie__center strong {
+  color: #f8fafc;
+  font-size: clamp(42px, 5vw, 72px);
+  font-weight: 950;
+  line-height: 1;
+  text-shadow: 0 0 18px rgba(77, 163, 255, 0.18);
+}
+
+.usage-pie__center span {
+  max-width: min(260px, 86%);
+  color: var(--text-soft);
+  font-size: clamp(12px, 1vw, 16px);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: none;
+  white-space: nowrap;
+}
+
+.usage-pie__center-icons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: clamp(34px, 3vw, 50px);
+}
+
+.usage-pie__center-icon {
+  width: clamp(34px, 3vw, 48px);
+  height: clamp(34px, 3vw, 48px);
+  object-fit: contain;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.48));
+}
+
+.usage-pie__center-icon + .usage-pie__center-icon {
+  margin-left: -5px;
+}
+
+.usage-overview-panel {
+  min-width: 0;
+  display: grid;
+  align-content: center;
+  gap: clamp(20px, 2vw, 32px);
+}
+
+.usage-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.usage-summary__row {
+  min-width: 0;
+  display: grid;
+  align-content: center;
+  gap: 8px;
+  min-height: clamp(82px, 6vw, 112px);
+  padding: clamp(14px, 1.3vw, 20px);
+  border: 1px solid rgba(148, 163, 184, 0.32);
+  background:
+    linear-gradient(135deg, rgba(77, 163, 255, 0.08), transparent 52%),
+    rgba(5, 10, 20, 0.94);
+}
+
+.usage-summary__label {
+  color: var(--text-soft);
+  font-size: clamp(11px, 0.8vw, 13px);
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.usage-summary__value {
+  color: #f8fafc;
+  font-size: clamp(32px, 2.8vw, 50px);
+  font-weight: 950;
+  line-height: 1;
+}
+
+.usage-pie-legend {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 18px;
+  min-width: 0;
+}
+
+.usage-pie-legend__row {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 18px minmax(44px, auto) minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  min-height: 46px;
+  padding: 9px 10px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.24);
+  background: transparent;
+  transition:
+    background-color 0.16s ease,
+    border-color 0.16s ease;
+  outline: none !important;
+}
+
+.usage-pie-legend__row--active {
+  border-color: rgba(77, 163, 255, 0.42);
+  background: rgba(77, 163, 255, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(77, 163, 255, 0.08);
+}
+
+.usage-pie-legend__row--other {
+  border-color: rgba(148, 163, 184, 0.3);
+  background: rgba(100, 116, 139, 0.16);
+}
+
+.usage-pie-legend__swatch {
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgba(3, 7, 18, 0.96);
+  box-shadow: 0 0 0 1px rgba(77, 163, 255, 0.16);
+}
+
+.usage-pie-legend__icons {
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none !important;
+}
+
+.usage-pie-legend__icons--static {
+  cursor: default;
+}
+
+.usage-pie-legend__sprite {
+  width: clamp(24px, 1.65vw, 30px);
+  height: clamp(24px, 1.65vw, 30px);
+  object-fit: contain;
+  filter: drop-shadow(0 3px 7px rgba(0, 0, 0, 0.42));
+  transition:
+    transform 0.16s ease,
+    filter 0.16s ease;
+}
+
+.usage-pie-legend__sprite + .usage-pie-legend__sprite {
+  margin-left: -7px;
+}
+
+.usage-pie-legend__icons:hover .usage-pie-legend__sprite,
+.usage-pie-legend__icons:focus-visible .usage-pie-legend__sprite {
+  transform: translateY(-1px);
+  filter: drop-shadow(0 5px 10px rgba(77, 163, 255, 0.24));
+}
+
+.usage-pie-legend__fallback {
+  min-width: 28px;
+  min-height: 24px;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  background: rgba(8, 15, 28, 0.96);
+  color: #f8fafc;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.usage-pie-legend__name {
+  min-width: 0;
+  color: #f8fafc;
+  font-size: clamp(15px, 1.05vw, 18px);
+  font-weight: 900;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.16s ease, text-shadow 0.16s ease;
+  outline: none !important;
+}
+
+.usage-pie-legend__name:hover,
+.usage-pie-legend__name:focus-visible {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-shadow: 0 0 14px rgba(77, 163, 255, 0.22);
+}
+
+.usage-pie-legend__name--static {
+  cursor: default;
+}
+
+.usage-pie-legend__name--static:hover {
+  color: #f8fafc;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.usage-pie-legend__value {
+  color: #f8fafc;
+  font-size: clamp(14px, 0.95vw, 17px);
+  font-weight: 950;
+}
+
 .usage-list {
   display: grid;
-  gap: 10px;
+  gap: clamp(8px, 0.6vw, 10px);
   align-content: start;
+}
+
+.score-list {
+  gap: clamp(8px, 0.7vw, 12px);
 }
 
 .usage-row {
   display: grid;
-  grid-template-columns: auto minmax(0, 1.35fr) auto minmax(260px, 1fr);
-  gap: 12px;
+  grid-template-columns: 30px minmax(0, 1fr) minmax(220px, 0.62fr);
+  gap: clamp(8px, 0.75vw, 10px);
   align-items: center;
-  padding: 10px 12px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(15, 23, 42, 0.45);
+  min-height: 56px;
+  padding: 8px 10px;
+  border-radius: 0;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  background: rgba(5, 10, 20, 0.9);
+}
+
+.score-row {
+  position: relative;
+  grid-template-columns: minmax(280px, min(32%, 400px)) minmax(0, 1fr);
+  gap: clamp(14px, 1.6vw, 28px);
+  min-height: clamp(58px, 4.6vw, 76px);
+  padding: clamp(10px, 0.9vw, 14px) clamp(12px, 1.15vw, 18px);
+  overflow: hidden;
+  border-color: rgba(148, 163, 184, 0.16);
+  background:
+    linear-gradient(90deg, rgba(77, 163, 255, 0.04), transparent 44%),
+    rgba(5, 10, 20, 0.88);
+  transition:
+    border-color 180ms ease,
+    background 180ms ease;
+}
+
+.score-row::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 2px;
+  background: rgba(77, 163, 255, 0.18);
+  opacity: 0;
+  transition: opacity 180ms ease, background 180ms ease;
+}
+
+.score-row:hover {
+  border-color: rgba(77, 163, 255, 0.42);
+  background:
+    linear-gradient(90deg, rgba(77, 163, 255, 0.08), transparent 50%),
+    linear-gradient(270deg, rgba(255, 209, 102, 0.04), transparent 42%),
+    rgba(8, 15, 28, 0.96);
+}
+
+.score-row:hover::before,
+.score-row--podium::before {
+  opacity: 1;
+}
+
+.score-row--leader {
+  border-color: rgba(77, 163, 255, 0.34);
+}
+
+:global(#app .tierlist-page .usage-row.score-row) {
+  border-color: rgba(148, 163, 184, 0.16) !important;
+  background:
+    linear-gradient(90deg, rgba(77, 163, 255, 0.04), transparent 44%),
+    rgba(5, 10, 20, 0.88) !important;
+}
+
+:global(#app .tierlist-page .usage-row.score-row:hover) {
+  border-color: rgba(77, 163, 255, 0.42) !important;
+  background:
+    linear-gradient(90deg, rgba(77, 163, 255, 0.08), transparent 50%),
+    linear-gradient(270deg, rgba(255, 209, 102, 0.04), transparent 42%),
+    rgba(8, 15, 28, 0.96) !important;
+}
+
+:global(#app .tierlist-page .usage-row.score-row--leader) {
+  border-color: rgba(77, 163, 255, 0.34) !important;
+}
+
+.score-row--leader::before {
+  background: linear-gradient(180deg, #7ccbff, #4da3ff);
+}
+
+.score-row__identityCluster {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+}
+
+.score-row__identity {
+  min-width: 0;
+}
+
+.score-row__chart {
+  min-width: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.score-row__barLane {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  display: block;
+}
+
+.score-row__barGraphic {
+  min-width: 0;
+  border-color: rgba(148, 163, 184, 0.22);
+  background:
+    linear-gradient(180deg, rgba(15, 23, 42, 0.62), rgba(3, 7, 16, 0.98)),
+    rgba(3, 7, 16, 0.96);
+  box-shadow:
+    inset 0 1px 0 rgba(248, 250, 252, 0.06),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.32);
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.score-row:hover .score-row__barGraphic {
+  border-color: rgba(77, 163, 255, 0.48);
+  box-shadow:
+    inset 0 1px 0 rgba(248, 250, 252, 0.08),
+    0 0 18px rgba(77, 163, 255, 0.16);
+}
+
+.score-row:focus-within {
+  border-color: rgba(77, 163, 255, 0.5);
+  background:
+    linear-gradient(90deg, rgba(77, 163, 255, 0.08), transparent 50%),
+    rgba(8, 15, 28, 0.96);
+}
+
+.score-row:focus-within .score-row__barGraphic {
+  border-color: rgba(77, 163, 255, 0.54);
+  box-shadow:
+    inset 0 1px 0 rgba(248, 250, 252, 0.08),
+    0 0 18px rgba(77, 163, 255, 0.16);
 }
 
 .usage-row--other {
@@ -2721,17 +5157,17 @@ onMounted(async () => {
 }
 
 .usage-row__rank {
-  min-width: 28px;
-  color: #9fb3cf;
+  min-width: 0;
+  color: #a8b3c7;
   font-weight: 800;
-  font-size: 0.95rem;
+  font-size: 0.84rem;
 }
 
 .usage-row__identity {
   min-width: 0;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   color: inherit;
   text-decoration: none;
 }
@@ -2745,43 +5181,43 @@ onMounted(async () => {
 }
 
 .usage-row__identity:hover .usage-row__name {
-  color: #8cc4ff;
+  color: #4da3ff;
 }
 
 .usage-row__spritepair {
   flex: 0 0 auto;
-  min-width: 58px;
+  min-width: 52px;
   display: inline-flex;
   align-items: center;
   justify-content: flex-start;
 }
 
 .usage-row__spritepair--single {
-  min-width: 38px;
+  min-width: 34px;
 }
 
 .usage-row__sprite {
-  width: 34px;
-  height: 34px;
+  width: clamp(30px, 2vw, 34px);
+  height: clamp(30px, 2vw, 34px);
   object-fit: contain;
   display: block;
   filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.28));
 }
 
 .usage-row__sprite + .usage-row__sprite {
-  margin-left: -7px;
+  margin-left: -8px;
 }
 
 .usage-row__fallback {
   width: 34px;
   height: 34px;
-  border-radius: 10px;
+  border-radius: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background: rgba(18, 36, 58, 0.96);
-  border: 1px solid rgba(111, 156, 212, 0.18);
-  color: #eef4fb;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  color: #f8fafc;
   font-size: 0.8rem;
   font-weight: 800;
 }
@@ -2789,13 +5225,13 @@ onMounted(async () => {
 .usage-row__copy {
   min-width: 0;
   display: grid;
-  gap: 4px;
+  gap: 3px;
 }
 
 .usage-row__name {
   min-width: 0;
-  color: #eef4fb;
-  font-size: 1rem;
+  color: #f8fafc;
+  font-size: 0.92rem;
   font-weight: 800;
   white-space: nowrap;
   overflow: hidden;
@@ -2805,69 +5241,234 @@ onMounted(async () => {
 .usage-row__meta {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 7px;
   flex-wrap: wrap;
-  color: #9fb3cf;
-  font-size: 0.78rem;
+  color: #a8b3c7;
+  font-size: 0.72rem;
 }
 
 .usage-row__tier {
-  padding: 3px 8px;
-  border-radius: 999px;
+  padding: 2px 6px;
+  border-radius: 0;
   color: #f8fbff;
   font-weight: 900;
   letter-spacing: 0.04em;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(248, 250, 252, 0.16);
+  box-shadow: inset 0 1px 0 rgba(248, 250, 252, 0.08);
 }
 
 .usage-row__samples {
-  color: #8fa4c0;
+  color: #64748b;
 }
 
 .usage-row__pct {
-  min-width: 58px;
+  min-width: 62px;
   text-align: right;
-  color: #eef4fb;
-  font-size: 0.96rem;
+  color: #f8fafc;
+  font-size: 0.84rem;
   font-weight: 900;
 }
 
-.usage-row__bar {
+.score-row__rank {
+  transition: color 0.16s ease, text-shadow 0.16s ease;
+}
+
+.score-row--podium .score-row__rank {
+  color: #4da3ff;
+  text-shadow: 0 0 12px rgba(77, 163, 255, 0.22);
+}
+
+.score-row--leader .score-row__rank {
+  color: #f8fafc;
+  text-shadow: 0 0 16px rgba(77, 163, 255, 0.34);
+}
+
+.score-row .usage-row__sprite {
+  width: clamp(32px, 2.2vw, 38px);
+  height: clamp(32px, 2.2vw, 38px);
+}
+
+.score-row .usage-row__name {
+  font-size: clamp(0.94rem, 0.82vw, 1.06rem);
+}
+
+.score-row__score {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  z-index: 2;
+  min-width: 58px;
+  min-height: calc(100% - 10px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 8px 0 12px;
+  color: #f8fafc;
+  font-size: clamp(0.95rem, 0.92vw, 1.13rem);
+  font-variant-numeric: tabular-nums;
+  font-weight: 950;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  text-align: right;
+  background: linear-gradient(90deg, rgba(2, 4, 10, 0), rgba(2, 4, 10, 0.72) 24%, rgba(2, 4, 10, 0.78));
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.score-row--leader .score-row__score {
+  color: #f8fafc;
+  text-shadow: 0 0 16px rgba(77, 163, 255, 0.28);
+}
+
+:global(#app .tierlist-page :is(a, button, input, select, textarea, [tabindex]):focus),
+:global(#app .tierlist-page :is(a, button, input, select, textarea, [tabindex]):focus-visible) {
+  outline: none !important;
+}
+
+:global(#app .tierlist-page :is(a, button, input, select, textarea, [tabindex]):focus-visible) {
+  border-color: rgba(77, 163, 255, 0.72) !important;
+  box-shadow:
+    0 0 0 1px rgba(77, 163, 255, 0.2),
+    0 0 18px rgba(77, 163, 255, 0.16) !important;
+}
+
+:global(#app .tierlist-page .usage-row__identity:focus-visible),
+:global(#app .tierlist-page .tier-lane__decklink:focus-visible),
+:global(#app .tierlist-page .heatmap-label-link:focus-visible),
+:global(#app .tierlist-page .usage-pie-legend__name:focus-visible),
+:global(#app .tierlist-page .usage-pie-legend__icons:focus-visible) {
+  color: var(--accent-hover) !important;
+  text-decoration: none;
+}
+
+:global(#app .tierlist-page .usage-row__identity:focus-visible .usage-row__name) {
+  color: var(--accent-hover) !important;
+}
+
+.usage-row__metric {
   min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.usage-row__bar {
+  flex: 0 1 72%;
+  max-width: 75%;
+  min-width: 128px;
 }
 
 .usage-row__barTrack {
   width: 100%;
-  height: 18px;
-  border-radius: 999px;
+  height: 12px;
+  border-radius: 0;
   overflow: hidden;
-  background: rgba(111, 156, 212, 0.14);
-  border: 1px solid rgba(111, 156, 212, 0.18);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  background: rgba(3, 7, 16, 0.96);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  box-shadow: inset 0 1px 0 rgba(248, 250, 252, 0.05);
 }
 
 .usage-row__barFill {
+  position: relative;
   height: 100%;
-  min-width: 12px;
-  border-radius: inherit;
-  background: linear-gradient(90deg, rgba(96, 166, 255, 0.98), rgba(63, 117, 218, 0.96));
-  box-shadow: 0 0 18px rgba(61, 124, 230, 0.22);
+  min-width: 10px;
+  border-radius: 0;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgba(77, 163, 255, 0.98), rgba(255, 209, 102, 0.92));
+  box-shadow: 0 0 16px rgba(77, 163, 255, 0.22);
+}
+
+.usage-row__barFill::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.28), transparent);
+  opacity: 0;
+  transform: translateX(-120%);
+  transition: transform 0.35s ease, opacity 0.2s ease;
+}
+
+.usage-row:hover .usage-row__barFill::after {
+  opacity: 0.32;
+  transform: translateX(120%);
 }
 
 @media (max-width: 1080px) {
   .usage-card {
     min-height: auto;
   }
+
+  .usage-pie-layout {
+    grid-template-columns: minmax(280px, 0.86fr) minmax(340px, 1fr);
+    gap: 32px;
+    min-height: auto;
+  }
+
+  .usage-pie {
+    width: min(clamp(300px, 38vw, 460px), 100%);
+    height: auto;
+  }
+
+  .usage-summary__value {
+    font-size: clamp(24px, 2.4vw, 34px);
+  }
 }
 
 @media (max-width: 760px) {
+  .usage-pie-layout {
+    grid-template-columns: 1fr;
+    justify-content: stretch;
+    max-width: none;
+    gap: 16px;
+  }
+
+  .usage-pie {
+    width: min(420px, 82vw);
+    height: auto;
+  }
+
+  .usage-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .usage-pie-legend {
+    grid-template-columns: 1fr;
+  }
+
   .usage-row {
-    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-columns: 28px minmax(0, 1fr);
+    min-height: auto;
+  }
+
+  .score-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    min-height: auto;
+    padding: 12px;
+  }
+
+  .score-row__identityCluster {
+    grid-template-columns: 28px minmax(0, 1fr);
+  }
+
+  .score-row__chart {
+    grid-column: 1 / -1;
+  }
+
+  .score-row__barLane {
+    grid-template-columns: minmax(0, 1fr) minmax(58px, auto);
+    gap: 8px;
+  }
+
+  .usage-row__metric {
+    grid-column: 2 / -1;
+    justify-content: flex-start;
   }
 
   .usage-row__bar {
-    grid-column: 2 / -1;
+    flex-basis: 70%;
+    max-width: 75%;
   }
 }
 
@@ -2875,6 +5476,19 @@ onMounted(async () => {
   .usage-row {
     gap: 10px;
     padding: 10px;
+  }
+
+  .score-row {
+    gap: 10px;
+  }
+
+  .score-row__barLane {
+    grid-template-columns: minmax(0, 1fr) minmax(54px, auto);
+  }
+
+  .score-row__score {
+    min-width: 54px;
+    font-size: 0.92rem;
   }
 
   .usage-row__name {
@@ -2888,6 +5502,7 @@ onMounted(async () => {
 }
 
 .tier-table-card {
+  order: 1;
   position: relative;
   justify-self: stretch;
   align-self: start;
@@ -2897,11 +5512,11 @@ onMounted(async () => {
   aspect-ratio: auto;
   min-height: auto;
   display: grid;
-  grid-template-rows: auto 1fr;
-  gap: 12px;
+  grid-template-rows: auto auto;
+  gap: clamp(12px, 1.2vw, 20px);
   overflow: visible;
-  padding: 12px;
-  border-radius: 12px;
+  padding: clamp(14px, 1.4vw, 24px);
+  border-radius: 0;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(15, 23, 42, 0.35);
   box-shadow: none;
@@ -2958,7 +5573,7 @@ onMounted(async () => {
   appearance: none;
   min-width: 96px;
   border: 1px solid rgba(125, 211, 252, 0.22);
-  border-radius: 999px;
+  border-radius: 0;
   background: rgba(8, 20, 35, 0.76);
   color: rgba(255, 255, 255, 0.92);
   font-size: 12px;
@@ -2984,146 +5599,212 @@ onMounted(async () => {
 
 .tier-lanes {
   display: grid;
-  gap: 8px;
+  gap: clamp(14px, 1vw, 18px);
   align-content: start;
   margin-top: 2px;
 }
 
 .tier-lane {
   display: grid;
-  grid-template-columns: 92px minmax(0, 1fr);
-  gap: 12px;
-  align-items: stretch;
-}
-
-@media (max-width: 560px) {
-  .tier-lane {
-    grid-template-columns: 74px minmax(0, 1fr);
-    gap: 8px;
-  }
-}
-
-.tier-lane__badge {
-  min-height: 82px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(15, 23, 42, 0.55);
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: 0;
+  background:
+    linear-gradient(135deg, rgba(77, 163, 255, 0.034), transparent 52%),
+    linear-gradient(315deg, rgba(255, 209, 102, 0.026), transparent 56%),
+    rgba(5, 10, 20, 0.94);
+  overflow: hidden;
   box-shadow: none;
 }
 
-.tier-lane__badge::before,
-.tier-lane__badge::after {
-  content: none;
+.tier-section {
+  --tier-accent: #4da3ff;
+  --tier-accent-soft: rgba(77, 163, 255, 0.14);
+  --tier-accent-muted: rgba(171, 210, 255, 0.9);
+  --tier-accent-glow: rgba(77, 163, 255, 0.18);
 }
 
-.tier-lane__badge::before {
-  content: none;
+.tier-section--sss,
+.tier-section--ss,
+.tier-section--s {
+  --tier-accent: #ff3b4f;
+  --tier-accent-soft: rgba(255, 59, 79, 0.16);
+  --tier-accent-muted: rgba(255, 178, 188, 0.92);
+  --tier-accent-glow: rgba(255, 59, 79, 0.2);
 }
 
-.tier-lane__badge::after {
-  content: none;
+.tier-section--a {
+  --tier-accent: #ffd166;
+  --tier-accent-soft: rgba(255, 209, 102, 0.14);
+  --tier-accent-muted: rgba(255, 226, 156, 0.9);
+  --tier-accent-glow: rgba(255, 209, 102, 0.17);
 }
 
-.tier-lane__badge-text {
-  font-size: 1.9rem;
+.tier-section--b {
+  --tier-accent: #4da3ff;
+  --tier-accent-soft: rgba(77, 163, 255, 0.15);
+  --tier-accent-muted: rgba(171, 210, 255, 0.92);
+  --tier-accent-glow: rgba(77, 163, 255, 0.18);
+}
+
+.tier-section--c {
+  --tier-accent: #00d084;
+  --tier-accent-soft: rgba(0, 208, 132, 0.12);
+  --tier-accent-muted: rgba(142, 238, 196, 0.9);
+  --tier-accent-glow: rgba(0, 208, 132, 0.14);
+}
+
+.tier-section__header {
+  box-sizing: border-box;
+  min-height: clamp(48px, 3.3vw, 60px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+  padding: 9px 18px 9px 20px;
+  border-bottom: 1px solid var(--border);
+  border-left: 4px solid var(--tier-accent);
+  background:
+    linear-gradient(90deg, var(--tier-accent-soft), transparent 48%),
+    linear-gradient(180deg, rgba(6, 12, 24, 0.99), rgba(3, 7, 16, 0.98));
+  box-shadow: inset 0 1px 0 rgba(248, 250, 252, 0.045);
+}
+
+.tier-section__title {
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  color: var(--text);
+  font-size: clamp(24px, 2vw, 42px);
   font-weight: 800;
+  letter-spacing: 0.1em;
   line-height: 1;
-  letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.92);
-  text-shadow: none;
 }
 
-.tier-lane__badge--sss,
-.tier-lane__badge--ss,
-.tier-lane__badge--s {
-  border-color: rgba(255, 255, 255, 0.08);
+.tier-section__title span {
+  color: var(--tier-accent);
+  text-shadow: 0 0 18px var(--tier-accent-glow);
 }
 
-.tier-lane__badge--sss::before {
-  content: none;
+.tier-section__title em {
+  color: var(--tier-accent);
+  font-style: normal;
+  text-shadow: 0 0 18px var(--tier-accent-glow);
 }
 
-.tier-lane__badge-text--sss {
-  font-size: 1.9rem;
-  letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.92);
+.tier-section__descriptor {
+  color: var(--tier-accent-muted);
+  font-size: clamp(11px, 0.64vw, 12px);
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  line-height: 1.25;
+  margin-left: clamp(10px, 0.8vw, 16px);
+  opacity: 1;
+  text-align: left;
+  text-transform: uppercase;
+  text-shadow: 0 0 14px var(--tier-accent-glow);
 }
 
-.tier-lane__badge--ss::after {
-  content: none;
+:global(#app .tierlist-page .tier-section__title span),
+:global(#app .tierlist-page .tier-section__title em) {
+  color: var(--tier-accent) !important;
+  text-shadow: 0 0 18px var(--tier-accent-glow);
 }
 
-.tier-lane__badge-text--ss {
-  font-size: 1.9rem;
-  letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.92);
-}
-
-.tier-lane__badge-text--s {
-  font-size: 1.9rem;
-  color: rgba(255, 255, 255, 0.92);
-  letter-spacing: 0.02em;
+:global(#app .tierlist-page .tier-section__descriptor) {
+  color: var(--tier-accent-muted) !important;
+  text-shadow: 0 0 14px var(--tier-accent-glow);
 }
 
 .tier-lane__deckbar {
-  min-height: 82px;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-auto-flow: row;
+  display: flex;
+  flex-wrap: wrap;
   align-content: start;
-  gap: 10px;
-  padding: 10px 12px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(15, 23, 42, 0.45);
+  align-items: flex-start;
+  gap: 12px;
+  padding: clamp(14px, 0.8vw, 18px);
+  background: rgba(2, 4, 10, 0.76);
   box-shadow: none;
 }
 
-.tier-lane--sss .tier-lane__deckbar,
-.tier-lane--ss .tier-lane__deckbar,
-.tier-lane--s .tier-lane__deckbar {
-  border-color: rgba(255, 255, 255, 0.08);
-  background: rgba(15, 23, 42, 0.45);
-}
-
 .tier-lane__decklink {
-  display: block;
-  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto minmax(18px, auto);
+  gap: 8px;
+  flex: 0 1 clamp(170px, 10vw, 210px);
+  width: auto;
+  min-height: clamp(108px, 6.2vw, 124px);
   min-width: 0;
+  padding: 10px 12px 11px;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: 0;
+  color: #f8fafc;
+  background:
+    linear-gradient(180deg, rgba(8, 16, 30, 0.96), rgba(3, 7, 16, 0.99)),
+    rgba(5, 10, 20, 0.94);
+  box-shadow: inset 0 1px 0 rgba(248, 250, 252, 0.06);
   text-decoration: none;
+  transition:
+    transform 0.16s ease,
+    border-color 0.16s ease,
+    background 0.16s ease,
+    box-shadow 0.16s ease;
+  overflow: hidden;
 }
 
-.tier-lane__deckbar > .tier-lane__decklink:only-child,
-.tier-lane__deckbar > .tier-lane__decklink:last-child:nth-child(odd) {
-  grid-column: 1 / -1;
+.tier-lane__decklink::after {
+  content: "";
+  position: absolute;
+  right: 7px;
+  bottom: 7px;
+  width: 10px;
+  height: 10px;
+  border-right: 1px solid var(--tier-accent);
+  border-bottom: 1px solid var(--tier-accent);
+  opacity: 0.42;
+  pointer-events: none;
+  transition: opacity 0.16s ease;
+}
+
+.tier-lane__deckbar > .tier-lane__decklink:only-child {
+  max-width: 210px;
 }
 
 .tier-lane__spritepair {
   width: 100%;
   min-width: 0;
-  min-height: 54px;
+  height: clamp(54px, 3.2vw, 62px);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 9px 14px;
-  border-radius: 12px;
-  border: 1px solid rgba(115, 134, 162, 0.14);
-  background: linear-gradient(180deg, rgba(10, 18, 30, 0.75), rgba(7, 13, 22, 0.94));
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
-  transition:
-    transform 0.16s ease,
-    border-color 0.16s ease,
-    background 0.16s ease;
+  gap: clamp(6px, 0.7vw, 10px);
+  padding: 3px 4px 0;
+  border-radius: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  transition: transform 0.16s ease;
+}
+
+.tier-lane__decklink:hover {
+  transform: translateY(-1px);
+  border-color: color-mix(in srgb, var(--tier-accent) 58%, rgba(148, 163, 184, 0.32));
+  background:
+    linear-gradient(180deg, rgba(12, 24, 44, 0.98), rgba(3, 7, 16, 0.99)),
+    rgba(5, 10, 20, 0.98);
+  box-shadow:
+    0 0 18px var(--tier-accent-glow),
+    inset 0 1px 0 rgba(248, 250, 252, 0.08);
+}
+
+.tier-lane__decklink:hover::after {
+  opacity: 0.78;
 }
 
 .tier-lane__decklink:hover .tier-lane__spritepair {
   transform: translateY(-1px);
-  border-color: rgba(125, 211, 252, 0.3);
-  background: rgba(15, 23, 42, 0.65);
 }
 
 .tier-lane__spritepair--single {
@@ -3131,12 +5812,35 @@ onMounted(async () => {
 }
 
 .tier-lane__sprite {
-  width: 48px;
-  height: 44px;
+  width: clamp(38px, 2.3vw, 44px);
+  height: clamp(38px, 2.3vw, 44px);
   object-fit: contain;
   image-rendering: auto;
   filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.45));
   border-radius: 0;
+  transition: transform 0.16s ease, filter 0.16s ease;
+}
+
+.tier-lane__decklink:hover .tier-lane__sprite {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 5px 10px rgba(77, 163, 255, 0.26));
+}
+
+.tier-lane__deckname {
+  display: block;
+  min-width: 0;
+  max-width: 100%;
+  align-self: end;
+  overflow: hidden;
+  color: #f8fafc;
+  font-family: var(--font-body);
+  font-size: clamp(13px, 0.78vw, 15px);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.24;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .tier-lane__fallback {
@@ -3146,11 +5850,11 @@ onMounted(async () => {
   min-width: 48px;
   min-height: 30px;
   padding: 0 8px;
-  border-radius: 10px;
-  color: #dbe7f5;
+  border-radius: 0;
+  color: #f8fafc;
   font-weight: 800;
   font-size: 0.72rem;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(148, 163, 184, 0.12);
 }
 
 .tier-empty {
@@ -3171,11 +5875,36 @@ onMounted(async () => {
 }
 
 .heatmap-card {
-  margin-top: 12px;
+  --matrix-gap: 4px;
+  --matrix-cell-size: clamp(
+    58px,
+    calc((100% - (var(--matrix-gap) * 12)) / 11),
+    148px
+  );
+  --matrix-axis-size: var(--matrix-cell-size);
+  min-width: 0;
+  overflow: hidden;
+  margin-top: clamp(24px, 3vw, 64px);
+}
+
+.heatmap-workspace {
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  display: block;
+  overflow: hidden;
 }
 
 .heatmap-shell {
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  max-height: none;
+  display: grid;
+  justify-items: center;
+  overflow: visible;
+  overscroll-behavior: auto;
 }
 
 .heatmap-mobile {
@@ -3183,73 +5912,202 @@ onMounted(async () => {
 }
 
 .heatmap-table {
-  width: 100%;
+  width: max-content;
+  max-width: none;
+  min-width: 0;
+  margin-inline: auto;
   table-layout: fixed;
   border-collapse: separate;
-  border-spacing: 0;
+  border-spacing: var(--matrix-gap);
 }
 
 .heatmap-corner {
-  width: 148px;
-  background: rgba(15, 23, 42, 0.72);
-  border-right: 1px solid rgba(255, 255, 255, 0.08);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  width: var(--matrix-axis-size);
+  min-width: var(--matrix-axis-size);
+  height: var(--matrix-axis-size);
+  padding: clamp(5px, calc(var(--matrix-cell-size) * 0.08), 8px);
+  background: rgba(5, 10, 20, 0.94);
+  border: 1px solid rgba(148, 163, 184, 0.34);
+  box-shadow: 8px 0 16px rgba(0, 0, 0, 0.24), 0 8px 18px rgba(0, 0, 0, 0.22);
+  vertical-align: middle;
+}
+
+.heatmap-corner__label {
+  display: block;
+  color: var(--accent);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.heatmap-corner__label--muted {
+  margin-top: 3px;
+  color: var(--text-soft);
+  opacity: 0.8;
 }
 
 .heatmap-col-label {
-  width: calc((100% - 148px) / 11);
-  padding: 8px 6px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  width: var(--matrix-cell-size);
+  min-width: var(--matrix-cell-size);
+  height: var(--matrix-cell-size);
+  padding: 0;
   text-align: center;
-  background: rgba(15, 23, 42, 0.72);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(2, 4, 10, 0.98);
   vertical-align: bottom;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+}
+
+.heatmap-col-label--active {
+  z-index: 45;
 }
 
 .heatmap-row-label {
-  width: 148px;
-  padding: 8px;
-  text-align: center;
-  background: rgba(15, 23, 42, 0.72);
-  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  left: 0;
+  z-index: 30;
+  width: var(--matrix-axis-size);
+  min-width: var(--matrix-axis-size);
+  height: var(--matrix-axis-size);
+  padding: 0;
+  text-align: left;
+  background: rgba(2, 4, 10, 0.98);
   vertical-align: middle;
+  box-shadow: 8px 0 16px rgba(0, 0, 0, 0.24);
+}
+
+.heatmap-row-label--active {
+  z-index: 35;
 }
 
 .heatmap-label-link {
   display: block;
   width: 100%;
   height: 100%;
+  color: inherit;
+  cursor: pointer;
   text-decoration: none;
 }
 
 .heatmap-axis-chip {
-  min-height: 68px;
+  position: relative;
+  width: var(--matrix-cell-size);
+  height: var(--matrix-cell-size);
+  min-height: var(--matrix-cell-size);
+  aspect-ratio: 1 / 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px 8px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(15, 23, 42, 0.5);
+  gap: clamp(3px, calc(var(--matrix-cell-size) * 0.04), 5px);
+  padding: clamp(5px, calc(var(--matrix-cell-size) * 0.075), 8px);
+  border-radius: 0;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  background:
+    linear-gradient(180deg, rgba(8, 15, 28, 0.98), rgba(3, 7, 16, 0.99)),
+    rgba(5, 10, 20, 0.96);
   transition:
-    background-color 0.15s ease,
+    border-color 0.15s ease,
     transform 0.15s ease,
     box-shadow 0.15s ease;
 }
 
 .heatmap-axis-chip--row {
+  width: var(--matrix-axis-size);
+  height: var(--matrix-axis-size);
+  min-height: var(--matrix-axis-size);
+  aspect-ratio: 1 / 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
   justify-content: center;
+  gap: 0;
+  padding: clamp(5px, calc(var(--matrix-cell-size) * 0.075), 8px);
 }
 
 .heatmap-axis-chip--picker {
-  justify-content: center;
-  flex-direction: column;
-  gap: 8px;
+  border-color: rgba(77, 163, 255, 0.44);
+}
+
+.heatmap-axis-chip--active {
+  border-color: rgba(77, 163, 255, 0.78);
+  background:
+    linear-gradient(180deg, rgba(14, 32, 56, 0.99), rgba(3, 7, 16, 0.99)),
+    rgba(5, 10, 20, 0.98);
+  box-shadow: 0 0 18px rgba(77, 163, 255, 0.16), inset 0 1px 0 rgba(248, 250, 252, 0.06);
 }
 
 .heatmap-label-link:hover .heatmap-axis-chip {
-  background: rgba(30, 41, 59, 0.7);
+  border-color: rgba(77, 163, 255, 0.68);
+  background:
+    linear-gradient(180deg, rgba(12, 24, 44, 0.98), rgba(3, 7, 16, 0.99)),
+    rgba(5, 10, 20, 0.98);
   transform: translateY(-1px);
-  box-shadow: none;
+  box-shadow: 0 0 16px rgba(77, 163, 255, 0.14);
+}
+
+.heatmap-axis-chip::after {
+  content: attr(data-deck-name);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 7px);
+  z-index: 30;
+  display: none;
+  width: max-content;
+  max-width: 220px;
+  padding: 8px 10px;
+  border: 1px solid rgba(77, 163, 255, 0.42);
+  background: rgba(5, 10, 20, 0.98);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.42), 0 0 16px rgba(77, 163, 255, 0.14);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.25;
+  opacity: 0;
+  text-align: center;
+  transform: translate(-50%, 3px);
+  transition: opacity 0.14s ease, transform 0.14s ease;
+  white-space: normal;
+  pointer-events: none;
+}
+
+.heatmap-label-link:hover .heatmap-axis-chip::after,
+.heatmap-label-link:focus-visible .heatmap-axis-chip::after {
+  display: block;
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.heatmap-axis-name {
+  display: none;
+  width: 100%;
+  min-width: 0;
+  max-width: 92px;
+  color: #f8fafc;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.12;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.heatmap-axis-name--row {
+  max-width: none;
+  color: #f8fafc;
+  font-size: 12px;
+  line-height: 1.18;
+  text-align: left;
 }
 
 .heatmap-sprite-stack,
@@ -3257,16 +6115,16 @@ onMounted(async () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: clamp(2px, calc(var(--matrix-cell-size) * 0.035), 5px);
 }
 
 .heatmap-row-sprite-stack {
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .heatmap-sprite {
-  width: 30px;
-  height: 30px;
+  width: clamp(26px, calc(var(--matrix-cell-size) * 0.38), 44px);
+  height: clamp(26px, calc(var(--matrix-cell-size) * 0.38), 44px);
   object-fit: contain;
   filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.5));
   border-radius: 0;
@@ -3283,42 +6141,137 @@ onMounted(async () => {
 }
 
 .heatmap-cell {
-  padding: 6px;
-  background: rgba(15, 23, 42, 0.45);
-  border-right: 1px solid rgba(255, 255, 255, 0.06);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  position: relative;
+  z-index: 1;
+  width: var(--matrix-cell-size);
+  min-width: var(--matrix-cell-size);
+  height: var(--matrix-cell-size);
+  padding: 0;
+  background: rgba(3, 7, 16, 0.78);
+}
+
+.heatmap-cell::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0;
+  background:
+    linear-gradient(135deg, rgba(124, 203, 255, 0.1), transparent 62%),
+    rgba(77, 163, 255, 0.1);
+  transition: opacity 120ms ease;
+}
+
+.heatmap-cell--row-highlight::after,
+.heatmap-cell--column-highlight::after {
+  opacity: 1;
+}
+
+.heatmap-cell--hovered {
+  z-index: 20;
+}
+
+.heatmap-cell--hovered::after {
+  opacity: 0.24;
 }
 
 .heatmap-cell__inner {
-  width: 100%;
+  position: relative;
+  z-index: 1;
+  width: var(--matrix-cell-size);
+  height: var(--matrix-cell-size);
   min-width: 0;
-  min-height: 72px;
+  min-height: 0;
+  aspect-ratio: 1 / 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 16px;
+  border-radius: 0;
   border: 1px solid transparent;
   transition:
     transform 0.12s ease,
     box-shadow 0.12s ease,
-    background-color 0.12s ease;
+    border-color 0.12s ease,
+    background 0.12s ease;
 }
 
-.heatmap-cell__inner:hover {
-  transform: translateY(-1px);
+.heatmap-cell__inner:hover,
+.heatmap-cell__inner:focus-visible,
+.heatmap-cell__inner--active {
+  z-index: 20;
+  border-color: rgba(77, 163, 255, 0.78) !important;
+  outline: none;
+  filter: brightness(1.18);
+  box-shadow:
+    0 0 0 1px rgba(77, 163, 255, 0.18),
+    0 0 20px rgba(77, 163, 255, 0.16),
+    inset 0 1px 0 rgba(248, 250, 252, 0.055) !important;
+}
+
+.heatmap-cell__inner--related:not(.heatmap-cell__inner--active),
+.heatmap-cell__inner--row-highlight:not(.heatmap-cell__inner--active),
+.heatmap-cell__inner--column-highlight:not(.heatmap-cell__inner--active) {
+  border-color: rgba(77, 163, 255, 0.34) !important;
+  filter: brightness(1.08);
+  box-shadow:
+    0 0 0 1px rgba(77, 163, 255, 0.08),
+    inset 0 1px 0 rgba(248, 250, 252, 0.045) !important;
+}
+
+.heatmap-mobile__cellInner[data-tooltip]:hover::after,
+.heatmap-mobile__cellInner[data-tooltip]:focus-visible::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  z-index: 20;
+  width: max-content;
+  max-width: 260px;
+  padding: 10px 12px;
+  border: 1px solid rgba(77, 163, 255, 0.46);
+  background:
+    linear-gradient(180deg, rgba(8, 15, 28, 0.99), rgba(2, 4, 10, 0.99)),
+    rgba(5, 10, 20, 0.98);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.46), 0 0 18px rgba(77, 163, 255, 0.16);
+  color: #f8fafc;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 1.55;
+  text-align: left;
+  text-transform: none;
+  transform: translateX(-50%);
+  white-space: pre-line;
+  pointer-events: none;
+}
+
+.heatmap-cell__inner--confidence-low {
+  border-style: dashed;
+}
+
+.heatmap-cell__inner--confidence-low .heatmap-cell__record,
+.heatmap-mobile__cellInner.heatmap-cell__inner--confidence-low .heatmap-mobile__record {
+  color: rgba(168, 179, 199, 0.82);
+}
+
+.heatmap-cell__inner--confidence-high {
+  border-width: 1px;
 }
 
 .heatmap-cell__inner--empty {
-  color: rgba(226, 232, 240, 0.55);
-  background: rgba(15, 23, 42, 0.55);
-  border-color: rgba(255, 255, 255, 0.08);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
+  color: rgba(168, 179, 199, 0.7);
+  background: rgba(5, 10, 20, 0.76);
+  border-color: rgba(148, 163, 184, 0.24);
+  box-shadow: inset 0 1px 0 rgba(248, 250, 252, 0.03);
 }
 
-.heatmap-cell__text {
-  font-size: 0.92rem;
-  font-weight: 800;
-  letter-spacing: 0.01em;
+.heatmap-cell__inner--mirror {
+  color: rgba(100, 116, 139, 0.82);
+  background: rgba(5, 10, 20, 0.62);
+  border-color: rgba(148, 163, 184, 0.14);
+  text-transform: uppercase;
 }
 
 .heatmap-cell__copy {
@@ -3326,18 +6279,23 @@ onMounted(async () => {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
+  gap: 3px;
   line-height: 1;
 }
 
 .heatmap-cell__rate {
-  font-size: 1.02rem;
-  font-weight: 900;
+  color: currentColor;
+  font-size: clamp(13px, calc(var(--matrix-cell-size) * 0.17), 20px);
+  font-variant-numeric: tabular-nums;
+  font-weight: 950;
 }
 
 .heatmap-cell__record {
   max-width: 100%;
-  font-size: 0.8rem;
+  color: rgba(248, 250, 252, 0.78);
+  font-size: clamp(9px, calc(var(--matrix-cell-size) * 0.095), 11px);
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
   letter-spacing: 0;
   white-space: nowrap;
   overflow: hidden;
@@ -3345,20 +6303,20 @@ onMounted(async () => {
 }
 
 .heatmap-picker-cell {
-  min-height: 68px;
+  min-height: 58px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 10px 8px;
-  border-radius: 16px;
-  border: 1px solid rgba(92, 130, 176, 0.22);
-  background: rgba(255, 255, 255, 0.04);
+  padding: 8px 6px;
+  border-radius: 0;
+  border: 1px dashed rgba(77, 163, 255, 0.34);
+  background: rgba(5, 10, 20, 0.86);
 }
 
 .heatmap-picker-cell--empty {
-  background: rgba(255, 255, 255, 0.025);
+  background: rgba(5, 10, 20, 0.72);
 }
 
 .heatmap-picker-label {
@@ -3383,127 +6341,503 @@ onMounted(async () => {
   text-overflow: ellipsis;
 }
 
-.matrix-picker-panel {
-  margin-bottom: 16px;
+.matchup-tooltip {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  width: min(360px, calc(100vw - 20px));
+  max-width: calc(100vw - 20px);
+  pointer-events: none;
   display: grid;
+  align-content: start;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid rgba(77, 163, 255, 0.55);
+  background:
+    linear-gradient(135deg, rgba(77, 163, 255, 0.11), transparent 46%),
+    linear-gradient(315deg, rgba(255, 209, 102, 0.035), transparent 58%),
+    rgba(5, 12, 24, 0.97);
+  box-shadow:
+    inset 0 1px 0 rgba(248, 250, 252, 0.05),
+    0 16px 46px rgba(0, 0, 0, 0.52),
+    0 0 26px rgba(77, 163, 255, 0.16);
+  backdrop-filter: blur(8px);
+}
+
+.heatmap-detail-panel__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.heatmap-detail-panel__eyebrow {
+  color: #4da3ff;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.heatmap-detail-panel__header strong {
+  color: #f8fafc;
+  font-size: clamp(22px, 1.8vw, 34px);
+  font-weight: 950;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+}
+
+.heatmap-detail-panel__empty {
+  margin: 0;
+  color: #a8b3c7;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.heatmap-detail-panel__versus {
+  display: grid;
+  gap: 10px;
+}
+
+.heatmap-detail-panel__vs {
+  width: max-content;
+  padding: 3px 8px;
+  border: 1px solid rgba(77, 163, 255, 0.28);
+  color: #7ccbff;
+  background: rgba(77, 163, 255, 0.08);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.heatmap-detail-deck {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 8px 12px;
+  padding: 10px 12px;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  color: inherit;
+  background: rgba(3, 7, 16, 0.7);
+  text-decoration: none;
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.heatmap-detail-deck:hover {
+  border-color: rgba(77, 163, 255, 0.58);
+  background: rgba(77, 163, 255, 0.08);
+  box-shadow: 0 0 16px rgba(77, 163, 255, 0.12);
+}
+
+.heatmap-detail-deck__label {
+  grid-column: 1 / -1;
+  color: #64748b;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.heatmap-detail-deck__icons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.heatmap-detail-deck__sprite {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.48));
+}
+
+.heatmap-detail-deck strong {
+  min-width: 0;
+  overflow: hidden;
+  color: #f8fafc;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.heatmap-detail-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
 }
 
-.matrix-picker-panel__label {
-  color: #8fb0d8;
-  font-size: 0.75rem;
-  font-weight: 800;
+.heatmap-detail-metric {
+  min-width: 0;
+  display: grid;
+  gap: 5px;
+  padding: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(3, 7, 16, 0.62);
+}
+
+.heatmap-detail-metric span {
+  color: #64748b;
+  font-size: 9px;
+  font-weight: 900;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
-.matrix-picker {
-  position: relative;
+.heatmap-detail-metric strong {
+  color: #f8fafc;
+  font-size: 15px;
+  font-weight: 950;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
 }
 
-.matrix-picker__trigger {
-  list-style: none;
-  cursor: pointer;
-  border-radius: 16px;
-  border: 1px solid rgba(97, 145, 196, 0.24);
-  background: rgba(10, 23, 40, 0.92);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+.heatmap-detail-metric--primary {
+  border-color: rgba(77, 163, 255, 0.46);
+  background: rgba(77, 163, 255, 0.08);
 }
 
-.matrix-picker__trigger::-webkit-details-marker {
-  display: none;
+.heatmap-detail-metric--primary strong {
+  color: #7ccbff;
+  font-size: clamp(24px, 2vw, 36px);
+  letter-spacing: -0.03em;
 }
 
-.matrix-picker__trigger-copy {
-  min-height: 62px;
+.heatmap-detail-legend {
+  display: grid;
+  gap: 8px;
+  padding-top: 4px;
+}
+
+.heatmap-detail-legend__title {
+  color: #a8b3c7;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.heatmap-detail-legend span:not(.heatmap-detail-legend__title) {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 12px 14px;
+  gap: 8px;
+  color: #a8b3c7;
+  font-size: 12px;
+  font-weight: 700;
 }
 
-.matrix-picker__placeholder {
-  color: #8fa4c0;
-  font-size: 0.82rem;
-  white-space: nowrap;
+.heatmap-detail-legend__swatch {
+  width: 18px;
+  height: 9px;
+  border: 1px solid rgba(248, 250, 252, 0.1);
+  background: rgba(12, 27, 48, 0.8);
 }
 
-.matrix-picker__trigger-text {
-  min-width: 0;
-  color: #eef4fb;
-  font-size: 0.95rem;
+.heatmap-detail-legend__swatch--bad {
+  background: rgba(155, 26, 46, 0.78);
+}
+
+.heatmap-detail-legend__swatch--even {
+  background: rgba(12, 27, 48, 0.86);
+}
+
+.heatmap-detail-legend__swatch--good {
+  background: rgba(0, 148, 130, 0.78);
+}
+
+.heatmap-detail-panel__note {
+  margin: 0;
+  color: #64748b;
+  font-size: 10px;
   font-weight: 800;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  letter-spacing: 0.08em;
+  line-height: 1.45;
 }
 
-.matrix-picker__menu {
+@media (max-width: 980px) {
+  .heatmap-card {
+    --matrix-cell-size: clamp(62px, 7vw, 76px);
+    --matrix-axis-size: clamp(66px, 7vw, 82px);
+  }
+}
+
+.matrix-picker-panel {
+  position: relative;
+  z-index: 70;
+  min-height: 64px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+  margin: 12px 0 clamp(16px, 1.5vw, 24px);
+  padding: 9px 12px;
+  border: 1px solid rgba(77, 163, 255, 0.34);
+  border-left-color: rgba(77, 163, 255, 0.72);
+  background:
+    linear-gradient(90deg, rgba(77, 163, 255, 0.1), transparent 42%),
+    rgba(5, 10, 20, 0.94);
+  box-shadow: inset 0 1px 0 rgba(248, 250, 252, 0.045);
+}
+
+.matrix-picker-panel__label {
+  color: #7ccbff;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.matrix-combobox {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(260px, 0.52fr) minmax(320px, 1fr);
+  align-items: stretch;
+  gap: 10px;
+}
+
+.matrix-combobox__selected {
+  min-width: 0;
+  min-height: 46px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 8px 6px 10px;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  background: rgba(3, 7, 16, 0.72);
+}
+
+.matrix-combobox__selected-icons {
+  min-width: 58px;
+}
+
+.matrix-combobox__selected-copy {
+  min-width: 0;
+  display: grid;
+  gap: 3px;
+}
+
+.matrix-combobox__selected-copy strong,
+.matrix-combobox__selected-copy span {
+  min-width: 0;
+  overflow: hidden;
+  color: #f8fafc;
+  font-size: 14px;
+  font-weight: 850;
+  line-height: 1.15;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.matrix-combobox__selected-copy small {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  overflow: hidden;
+  color: #a8b3c7;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+.matrix-combobox__tier {
+  min-width: 20px;
+  height: 18px;
+  display: inline-grid;
+  place-items: center;
+  padding: 0 6px;
+  border: 1px solid rgba(248, 250, 252, 0.12);
+  color: #02040a;
+  font-size: 10px;
+  font-weight: 950;
+  line-height: 1;
+}
+
+.matrix-combobox__clear {
+  width: 30px;
+  height: 30px;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid rgba(148, 163, 184, 0.26);
+  background: rgba(2, 5, 12, 0.82);
+  color: #a8b3c7;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease,
+    color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.matrix-combobox__clear:hover,
+.matrix-combobox__clear:focus-visible {
+  border-color: rgba(77, 163, 255, 0.72);
+  background: rgba(77, 163, 255, 0.12);
+  color: #f8fafc;
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(77, 163, 255, 0.16), 0 0 18px rgba(77, 163, 255, 0.12);
+}
+
+.matrix-combobox__search {
+  position: relative;
+  min-width: 0;
+}
+
+.matrix-combobox__input {
+  width: 100%;
+  min-height: 46px;
+  padding: 0 14px;
+  border: 1px solid rgba(148, 163, 184, 0.32);
+  border-radius: 0;
+  background:
+    linear-gradient(90deg, rgba(77, 163, 255, 0.06), transparent 52%),
+    rgba(2, 5, 12, 0.88);
+  color: #f8fafc;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 750;
+  outline: none;
+  transition:
+    border-color 0.16s ease,
+    box-shadow 0.16s ease,
+    background 0.16s ease;
+}
+
+.matrix-combobox__input::-webkit-search-cancel-button {
+  appearance: none;
+}
+
+.matrix-combobox__input::placeholder {
+  color: rgba(168, 179, 199, 0.66);
+}
+
+.matrix-combobox__input:focus {
+  border-color: rgba(77, 163, 255, 0.86);
+  background:
+    linear-gradient(90deg, rgba(77, 163, 255, 0.1), transparent 52%),
+    rgba(2, 5, 12, 0.94);
+  box-shadow: 0 0 0 1px rgba(77, 163, 255, 0.22), 0 0 22px rgba(77, 163, 255, 0.14);
+}
+
+.matrix-combobox__menu {
   position: absolute;
+  top: calc(100% + 8px);
   left: 0;
   right: 0;
-  top: calc(100% + 8px);
-  z-index: 12;
+  z-index: 95;
+  max-height: min(46vh, 438px);
+  overflow-y: auto;
+  overflow-x: hidden;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 10px;
-  padding: 12px;
-  border-radius: 18px;
-  border: 1px solid rgba(97, 145, 196, 0.26);
+  gap: 4px;
+  padding: 8px;
+  border: 1px solid rgba(77, 163, 255, 0.34);
   background:
-    linear-gradient(180deg, rgba(14, 28, 48, 0.98), rgba(8, 18, 31, 0.99)),
-    rgba(8, 18, 31, 0.99);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.34);
-  max-height: min(48vh, 380px);
-  overflow: auto;
-  scrollbar-width: none;
+    linear-gradient(135deg, rgba(77, 163, 255, 0.08), transparent 48%),
+    rgba(5, 10, 20, 0.98);
+  box-shadow:
+    0 22px 54px rgba(0, 0, 0, 0.44),
+    0 0 28px rgba(77, 163, 255, 0.08);
 }
 
-.matrix-picker__menu::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+.matrix-combobox__option {
+  min-width: 0;
+  min-height: 54px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 11px;
+  padding: 7px 9px;
+  border: 1px solid transparent;
+  background: rgba(3, 7, 16, 0.68);
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+  transition:
+    border-color 0.14s ease,
+    background 0.14s ease,
+    box-shadow 0.14s ease;
 }
 
-.matrix-picker__option {
-  border: 1px solid rgba(97, 145, 196, 0.18);
-  background: rgba(255, 255, 255, 0.04);
-  border-radius: 14px;
-  color: #eef4fb;
-  min-height: 56px;
-  padding: 10px 12px;
+.matrix-combobox__option:hover,
+.matrix-combobox__option--active {
+  border-color: rgba(77, 163, 255, 0.58);
+  background:
+    linear-gradient(90deg, rgba(77, 163, 255, 0.11), rgba(255, 209, 102, 0.035)),
+    rgba(8, 15, 28, 0.96);
+  box-shadow: inset 2px 0 0 rgba(77, 163, 255, 0.72);
+}
+
+.matrix-combobox__option-copy {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.matrix-combobox__option-copy strong {
+  min-width: 0;
+  overflow: hidden;
+  color: #f8fafc;
+  font-size: 13px;
+  font-weight: 850;
+  line-height: 1.15;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.matrix-combobox__option-copy small {
+  min-width: 0;
   display: flex;
   align-items: center;
-  gap: 10px;
-  text-align: left;
-  cursor: pointer;
-  transition:
-    transform 0.14s ease,
-    background-color 0.14s ease,
-    border-color 0.14s ease;
-}
-
-.matrix-picker__option:hover {
-  transform: translateY(-1px);
-  border-color: rgba(126, 190, 255, 0.34);
-  background: rgba(126, 190, 255, 0.08);
-}
-
-.matrix-picker__option--active {
-  border-color: rgba(126, 190, 255, 0.52);
-  background: rgba(126, 190, 255, 0.14);
-}
-
-.matrix-picker__option--clear {
-  justify-content: center;
-}
-
-.matrix-picker__option-copy {
-  min-width: 0;
-  font-size: 0.88rem;
-  font-weight: 700;
-  white-space: nowrap;
+  gap: 7px;
   overflow: hidden;
-  text-overflow: ellipsis;
+  color: #a8b3c7;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.matrix-combobox__empty {
+  min-height: 42px;
+  display: grid;
+  place-items: center;
+  border: 1px dashed rgba(148, 163, 184, 0.22);
+  color: #64748b;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.matrix-picker__placeholder-icon {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed rgba(77, 163, 255, 0.42);
+  color: #7ccbff;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1;
+  background: rgba(77, 163, 255, 0.06);
 }
 
 @media (max-width: 640px) {
@@ -3511,61 +6845,168 @@ onMounted(async () => {
     max-width: 100%;
   }
 
+  .tierlist-header {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+    padding-top: clamp(46px, 8vh, 72px);
+  }
+
+  .filter-drawer-trigger {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .page-title {
+    font-size: clamp(54px, 16vw, 76px);
+    line-height: 0.84;
+  }
+
+  .tierlist-hero-title em {
+    margin-left: 0.12em;
+  }
+
+  .creator-materials-panel__actions {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-panel--drawer {
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-height: calc(100dvh - 78px);
+    padding: 18px;
+    border-right: 0;
+    border-bottom: 0;
+  }
+
+  .filter-summary__row {
+    grid-template-columns: 72px minmax(0, 1fr);
+  }
+
+  .matrix-picker-panel {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+
+  .matrix-combobox {
+    grid-template-columns: 1fr;
+  }
+
+  .matrix-combobox__menu {
+    position: absolute;
+    max-height: min(50vh, 360px);
+  }
+
   .filters {
     grid-template-columns: 1fr;
   }
 
-  .tier-lane__badge {
-    min-height: 64px;
+  .tier-section__header {
+    min-height: 48px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px 12px 10px 14px;
+  }
+
+  .tier-section__title {
+    font-size: 24px;
+    gap: 3px 8px;
+  }
+
+  .tier-section__descriptor {
+    font-size: 10.5px;
+    letter-spacing: 0.14em;
+    margin-left: 0;
+    max-width: none;
+    text-align: left;
   }
 
   .tier-lane__deckbar {
-    min-height: 64px;
-    padding: 8px 9px;
-    gap: 7px;
-  }
-
-  .tier-lane__badge-text {
-    font-size: 1.76rem;
-  }
-
-  .tier-lane__badge-text--ss {
-    font-size: 1.62rem;
-  }
-
-  .tier-lane__badge-text--sss {
-    font-size: 1.24rem;
-  }
-
-  .tier-lane__badge-text--s {
-    font-size: 1.68rem;
-  }
-
-  .tier-lane__spritepair {
-    min-height: 44px;
-    padding: 8px 10px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 10px;
     gap: 8px;
   }
 
-  .tier-lane__sprite {
-    width: 24px;
-    height: 24px;
+  .tier-lane__decklink {
+    min-height: 108px;
+    padding: 9px 9px 10px;
   }
 
-  .matrix-picker__trigger-copy {
-    min-height: 56px;
-    padding: 10px 12px;
+  .tier-lane__spritepair {
+    height: 52px;
+    min-height: 52px;
+    padding: 2px 2px 0;
+    gap: 6px;
+  }
+
+  .tier-lane__sprite {
+    width: 38px;
+    height: 38px;
+  }
+
+  .tier-lane__deckname {
+    font-size: 13px;
+    line-height: 1.22;
+  }
+
+}
+
+@media (max-width: 340px) {
+  .tier-lane__deckbar {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 760px) {
-  .heatmap-shell {
+  .tier-ev-rail,
+  .heatmap-workspace {
     display: none;
   }
 
   .heatmap-mobile {
     display: grid;
     gap: 16px;
+  }
+
+  .heatmap-mobile-picker {
+    display: grid;
+    gap: 8px;
+    padding: 12px;
+    border: 1px solid rgba(148, 163, 184, 0.28);
+    background: rgba(5, 10, 20, 0.94);
+  }
+
+  .heatmap-mobile-picker__label {
+    color: var(--accent);
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .heatmap-mobile-picker__select {
+    width: 100%;
+    min-width: 0;
+    min-height: 44px;
+    padding: 0 12px;
+    border: 1px solid rgba(148, 163, 184, 0.32);
+    border-radius: 0;
+    background: rgba(3, 7, 16, 0.96);
+    color: #f8fafc;
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  .heatmap-mobile-picker__select:focus {
+    border-color: rgba(77, 163, 255, 0.82);
+    box-shadow: 0 0 0 1px rgba(77, 163, 255, 0.18), 0 0 18px rgba(77, 163, 255, 0.14);
+    outline: none;
   }
 
   .heatmap-mobile__section {
@@ -3583,9 +7024,11 @@ onMounted(async () => {
     align-items: center;
     gap: 10px;
     padding: 12px;
-    border-radius: 16px;
-    border: 1px solid rgba(92, 130, 176, 0.22);
-    background: rgba(15, 23, 42, 0.55);
+    border-radius: 0;
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    background: rgba(5, 10, 20, 0.94);
+    color: inherit;
+    text-decoration: none;
   }
 
   .heatmap-mobile__deck-name {
@@ -3600,18 +7043,19 @@ onMounted(async () => {
 
   .heatmap-mobile__grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
     gap: 10px;
   }
 
   .heatmap-mobile__cellInner {
-    min-height: 118px;
+    position: relative;
+    min-height: 84px;
     display: grid;
-    justify-items: center;
-    align-content: start;
-    gap: 6px;
-    padding: 10px 8px;
-    border-radius: 14px;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 0;
     border: 1px solid transparent;
   }
 
@@ -3622,20 +7066,38 @@ onMounted(async () => {
   }
 
   .heatmap-mobile__opponent {
+    min-width: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 8px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .heatmap-mobile__opponent-name {
+    min-width: 0;
+    color: #f8fafc;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .heatmap-mobile__rate {
+    justify-self: end;
     font-size: 1rem;
     font-weight: 900;
     line-height: 1;
   }
 
   .heatmap-mobile__record {
-    font-size: 0.84rem;
+    grid-column: 3;
+    justify-self: end;
+    color: rgba(248, 250, 252, 0.78);
+    font-size: 0.8rem;
     line-height: 1;
     white-space: nowrap;
   }
@@ -3643,17 +7105,24 @@ onMounted(async () => {
   .heatmap-mobile__empty {
     padding: 14px;
     text-align: center;
-    border-radius: 14px;
+    border-radius: 0;
     border: 1px dashed rgba(111, 156, 212, 0.22);
     color: #a7bdd9;
     background: rgba(13, 28, 50, 0.52);
   }
 
-  .matrix-picker__menu {
-    position: static;
-    margin-top: 10px;
-    max-height: none;
-    overflow: visible;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tier-ev-rail::after,
+  .tier-ev-rail__item,
+  .tier-ev-rail__dot,
+  .tier-ev-rail__item--active .tier-ev-rail__dot,
+  .heatmap-cell__inner,
+  .heatmap-axis-chip,
+  .heatmap-detail-deck {
+    animation: none;
+    transition: none;
   }
 }
 </style>

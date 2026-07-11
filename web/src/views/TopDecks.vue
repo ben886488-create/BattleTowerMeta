@@ -3,7 +3,7 @@
     <div class="top-decks-wrap">
       <header class="page-header">
         <div>
-          <h1 class="page-title">{{ t("pageTitle") }}</h1>
+          <h1 class="page-title page-hero-title" :class="{ 'page-hero-title--cn': locale === 'zh' }">{{ t("pageTitle") }}</h1>
           <p class="page-subtitle">
             {{ deckSummaryLabel }}
           </p>
@@ -72,33 +72,35 @@
         </div>
       </div>
 
-      <div class="scope-card">
-        <p class="scope-line">
-          <strong>{{ t("scope") }}:</strong>
-          {{ scopeTimeLabel }} / {{ scopeSetLabel }} / {{ topCutLabel }}
-        </p>
+      <Transition name="btm-filter" mode="out-in">
+      <div :key="contentTransitionKey" class="top-decks-dashboard">
+        <div class="scope-card">
+          <p class="scope-line">
+            <strong>{{ t("scope") }}:</strong>
+            {{ scopeTimeLabel }} / {{ scopeSetLabel }} / {{ topCutLabel }}
+          </p>
 
-        <p class="scope-line">
-          <strong>{{ t("stats") }}:</strong>
-          {{ scopeTournamentCount.toLocaleString() }} {{ t("tournamentsUnit") }}
-          / {{ aggregated.totalAllSamples.toLocaleString() }} {{ t("totalSamples") }}
-          / {{ aggregated.totalSelectedSamples.toLocaleString() }} {{ t("selectedSamplePool") }}
-        </p>
+          <p class="scope-line">
+            <strong>{{ t("stats") }}:</strong>
+            {{ scopeTournamentCount.toLocaleString() }} {{ t("tournamentsUnit") }}
+            / {{ aggregated.totalAllSamples.toLocaleString() }} {{ t("totalSamples") }}
+            / {{ aggregated.totalSelectedSamples.toLocaleString() }} {{ t("selectedSamplePool") }}
+          </p>
 
-        <p class="scope-line" v-if="scopeTournamentCount > 0">
-          <strong>{{ t("loaded") }}:</strong>
-          {{ loadedFilteredTournamentCount }} / {{ scopeTournamentCount }}
-          {{ t("tournamentsUnit") }}
-          <span v-if="isLoadingPageData">({{ t("loadingMore") }})</span>
-        </p>
+          <p class="scope-line" v-if="scopeTournamentCount > 0">
+            <strong>{{ t("loaded") }}:</strong>
+            {{ loadedFilteredTournamentCount }} / {{ scopeTournamentCount }}
+            {{ t("tournamentsUnit") }}
+            <span v-if="isLoadingPageData">({{ t("loadingMore") }})</span>
+          </p>
 
-        <p class="scope-line">
-          <strong>{{ t("note") }}:</strong>
-          {{ noteText }}
-        </p>
-      </div>
+          <p class="scope-line">
+            <strong>{{ t("note") }}:</strong>
+            {{ noteText }}
+          </p>
+        </div>
 
-      <div class="table-card">
+        <div class="table-card">
         <div class="table-scroll desktop-table">
           <table class="decks-table">
             <thead>
@@ -327,7 +329,9 @@
             </button>
           </div>
         </div>
+        </div>
       </div>
+      </Transition>
     </div>
   </section>
 </template>
@@ -551,7 +555,7 @@ const messages = {
     unknown: "Unknown",
   },
   zh: {
-    pageTitle: "\u71b1\u9580\u724c\u7d44",
+    pageTitle: "\u6700\u5f37\u724c\u7d44",
     players: "\u73a9\u5bb6\u6578",
     playersPlaceholder: "\u4f8b\u5982 32",
     time: "\u6642\u9593",
@@ -660,6 +664,10 @@ const filters = reactive({
   time: "past7" as TimeFilterValue,
   set: inferVersionByStartMs(Date.now())?.code ?? "" as SetFilterValue,
   topCut: "all" as TopCutValue,
+});
+
+const contentTransitionKey = computed(() => {
+  return [filters.minPlayers ?? "", filters.time, filters.set, filters.topCut].join("|");
 });
 
 const sortKey = ref<SortKey>("baseRank");
@@ -1814,23 +1822,23 @@ onMounted(() => {
 }
 
 .top-decks-wrap {
-  max-width: 1120px;
-  margin: 0 auto;
   width: 100%;
+  max-width: none;
+  margin: 0;
 }
 
 .page-header {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 12px;
-  margin: 12px 0;
+  gap: clamp(16px, 2vw, 28px);
+  margin: 0 0 clamp(18px, 2.4vw, 34px);
 }
 
 .page-title {
   margin: 0;
-  font-size: 18px;
-  line-height: 1.2;
+  font-size: clamp(56px, 6vw, 120px);
+  line-height: 0.9;
   font-weight: 800;
   color: rgba(255, 255, 255, 0.92);
 }
@@ -1850,20 +1858,27 @@ onMounted(() => {
 .filters {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 10px;
-  margin-bottom: 12px;
+  gap: 0;
+  margin-bottom: clamp(24px, 3vw, 64px);
+}
+
+.top-decks-dashboard {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(24px, 3vw, 64px);
+  align-items: start;
 }
 
 .f,
 .scope-card,
 .table-card {
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  background: rgba(15, 23, 42, 0.35);
+  border: 1px solid var(--border);
+  border-radius: 0;
+  background: var(--bg-panel);
 }
 
 .f {
-  padding: 10px;
+  padding: clamp(10px, 1vw, 16px);
 }
 
 .f label {
@@ -1884,23 +1899,23 @@ onMounted(() => {
 .filter-input,
 .filter-select {
   width: 100%;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(2, 6, 23, 0.45);
-  color: rgba(255, 255, 255, 0.92);
+  border-radius: 0;
+  border: 1px solid var(--border);
+  background: rgba(2, 4, 10, 0.96);
+  color: var(--text);
   padding: 8px 10px;
   outline: none;
 }
 
 .filter-input:focus,
 .filter-select:focus {
-  border-color: rgba(115, 180, 255, 0.7);
-  box-shadow: 0 0 0 3px rgba(80, 150, 255, 0.14);
+  border-color: var(--border-accent);
+  box-shadow: var(--focus-ring);
 }
 
 .scope-card {
-  padding: 12px 14px;
-  margin-bottom: 12px;
+  padding: clamp(14px, 1.4vw, 24px);
+  margin-bottom: 0;
 }
 
 .scope-line {
@@ -1920,12 +1935,15 @@ onMounted(() => {
 }
 
 .table-card {
+  min-width: 0;
   overflow: hidden;
 }
 
 .table-scroll {
   width: 100%;
-  overflow-x: auto;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .mobile-deck-list {
@@ -1934,7 +1952,9 @@ onMounted(() => {
 
 .decks-table {
   width: 100%;
-  min-width: 1020px;
+  max-width: 100%;
+  min-width: 0;
+  table-layout: fixed;
   border-collapse: collapse;
 }
 
@@ -1949,10 +1969,14 @@ onMounted(() => {
   text-align: left;
   padding: 11px 12px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .decks-table tbody td {
+  min-width: 0;
+  overflow: hidden;
   padding: 11px 12px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   vertical-align: middle;
@@ -1965,15 +1989,16 @@ onMounted(() => {
 }
 
 .rank-col {
-  width: 80px;
+  width: 64px;
 }
 
 .deck-col {
-  width: 160px;
+  width: 112px;
 }
 
 .name-col {
-  min-width: 320px;
+  width: auto;
+  min-width: 0;
 }
 
 .tier-col,
@@ -1981,7 +2006,7 @@ onMounted(() => {
 .samples-col,
 .share-col,
 .winrate-col {
-  width: 140px;
+  width: clamp(76px, 8vw, 118px);
 }
 
 .divider-left {
@@ -2009,8 +2034,8 @@ onMounted(() => {
 
 .deck-platform {
   position: relative;
-  width: 96px;
-  min-width: 96px;
+  width: 88px;
+  min-width: 0;
   height: 64px;
   display: flex;
   align-items: flex-start;
@@ -2027,8 +2052,8 @@ onMounted(() => {
 }
 
 .deck-sprite {
-  width: 48px;
-  height: 48px;
+  width: clamp(34px, 3vw, 44px);
+  height: clamp(34px, 3vw, 44px);
   object-fit: contain;
   background: transparent;
   border: 0;
@@ -2066,11 +2091,15 @@ onMounted(() => {
 
 
 .deck-name {
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
   font-size: 1rem;
   font-weight: 800;
   color: #eef5fb;
   line-height: 1.35;
-  word-break: break-word;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .mobile-deck-card__identity {
@@ -2106,10 +2135,12 @@ onMounted(() => {
   min-width: 44px;
   height: 30px;
   padding: 0 10px;
-  border-radius: 999px;
+  border-radius: 0;
   font-weight: 800;
   letter-spacing: 0.02em;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  background: rgba(8, 15, 28, 0.96);
+  color: var(--text);
   text-shadow: none;
   box-shadow: none;
 }
@@ -2117,38 +2148,27 @@ onMounted(() => {
 .tier-sss,
 .tier-ss,
 .tier-s {
-  background: rgba(180, 112, 66, 0.26);
-  border-color: rgba(226, 164, 98, 0.26);
-}
-
-.tier-sss {
-  color: rgba(255, 236, 196, 0.96);
-}
-
-.tier-ss {
-  color: rgba(255, 232, 190, 0.95);
-}
-
-.tier-s {
-  color: rgba(246, 236, 218, 0.95);
+  background: rgba(var(--tier-s-rgb), 0.16);
+  border-color: rgba(var(--tier-s-rgb), 0.5);
+  color: #ffdfe4;
 }
 
 .tier-a {
-  background: rgba(160, 118, 72, 0.22);
-  color: rgba(255, 236, 210, 0.95);
-  border-color: rgba(203, 154, 92, 0.24);
+  background: rgba(var(--tier-a-rgb), 0.14);
+  color: #fff0bf;
+  border-color: rgba(var(--tier-a-rgb), 0.48);
 }
 
 .tier-b {
-  background: rgba(148, 132, 67, 0.2);
-  color: rgba(255, 243, 204, 0.94);
-  border-color: rgba(188, 169, 86, 0.22);
+  background: rgba(var(--tier-b-rgb), 0.15);
+  color: #d8ecff;
+  border-color: rgba(var(--tier-b-rgb), 0.5);
 }
 
 .tier-c {
-  background: rgba(99, 146, 87, 0.2);
-  color: rgba(230, 255, 225, 0.94);
-  border-color: rgba(132, 181, 118, 0.22);
+  background: rgba(var(--tier-c-rgb), 0.13);
+  color: #d7ffef;
+  border-color: rgba(var(--tier-c-rgb), 0.44);
 }
 
 .tier-d {
@@ -2214,7 +2234,7 @@ onMounted(() => {
   border: 1px solid rgba(125, 211, 252, 0.22);
   background: rgba(8, 20, 35, 0.76);
   color: rgba(255, 255, 255, 0.92);
-  border-radius: 999px;
+  border-radius: 0;
   padding: 8px 14px;
   font-size: 12px;
   font-weight: 600;
@@ -2254,8 +2274,12 @@ onMounted(() => {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .top-decks-dashboard {
+    grid-template-columns: 1fr;
+  }
+
   .page-title {
-    font-size: 16px;
+    font-size: clamp(48px, 10vw, 80px);
   }
 
   .deck-platform {
@@ -2274,13 +2298,29 @@ onMounted(() => {
   }
 }
 
+@media (min-width: 1800px) {
+  .top-decks-dashboard {
+    grid-template-columns: minmax(1020px, 1.35fr) minmax(360px, 0.85fr);
+  }
+
+  .table-card {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .scope-card {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
 @media (max-width: 640px) {
   .filters {
     grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1080px) {
   .desktop-table {
     display: none;
   }

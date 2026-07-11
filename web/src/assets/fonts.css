@@ -1,5 +1,5 @@
-/* 1) 英文字體 Anton：用 Google Fonts（簡單穩） */
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* Editorial display face for the intelligence-ledger visual system. */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Noto+Serif+TC:wght@500;600;700&display=swap');
 
 /* 2) 中文 Source Han Sans Bold：建議你自架 woff2（檔案大，別用 otf 直上） */
 /* 你需要自己準備字體檔：web/public/fonts/SourceHanSansTC-Bold.woff2 */
@@ -29,11 +29,84 @@
 
 :root{
   --font-en: "Anton", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-  --font-zh: "Source Han Sans", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  --font-body: "Inter", "Geist", "IBM Plex Sans", "Source Han Sans", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  --font-zh: var(--font-body);
+  --font-sans: var(--font-body);
+  --font-mono: "JetBrains Mono", "IBM Plex Mono", "Geist Mono", "Roboto Mono", "D-DIN", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --font-num: "D-DIN Condensed", "D-DIN", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-label: var(--font-mono);
+  --font-display-en: "Cormorant Garamond", "Instrument Serif", "Playfair Display", "Libre Baskerville", Georgia, serif;
+  --font-display-cn: "Noto Serif TC", "Source Han Serif TC", "Songti TC", "PMingLiU", serif;
+  --font-display: var(--font-display-en);
+
+  --type-display-size: clamp(72px, 7vw, 160px);
+  --type-display-section-size: clamp(30px, 3vw, 58px);
+  --type-display-line-height: 0.9;
+  --type-display-tracking: -0.035em;
+  --type-label-size: 10px;
+  --type-label-tracking: 0.2em;
+  --type-metric-size: clamp(28px, 3vw, 56px);
 }
 
 .mono{
   font-family: var(--font-num);
   font-variant-numeric: tabular-nums;
+}
+
+.type-display,
+.type-display-cn {
+  color: var(--text);
+  font-family: var(--font-display-en);
+  font-size: var(--type-display-size);
+  font-weight: 600;
+  letter-spacing: var(--type-display-tracking);
+  line-height: var(--type-display-line-height);
+}
+
+.type-display {
+  font-style: italic;
+}
+
+.type-display-cn {
+  font-family: var(--font-display-cn);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.type-label {
+  color: #94a3b8;
+  font-family: var(--font-label);
+  font-size: var(--type-label-size);
+  font-weight: 700;
+  letter-spacing: var(--type-label-tracking);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.type-mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.type-metric {
+  color: #fff;
+  font-family: var(--font-num);
+  font-size: var(--type-metric-size);
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+}
+
+.type-body {
+  color: var(--text-soft);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.65;
+}
+
+.type-muted {
+  color: var(--muted);
 }
