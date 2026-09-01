@@ -1,0 +1,7569 @@
+{
+  "meta": {
+    "generatedAt": "2026-09-01T01:05:51.564237Z",
+    "script": "build_tournament_pages.py",
+    "version": 1,
+    "errors": []
+  },
+  "tournament": {
+    "id": "6a8de28f0580a332c841fd99",
+    "name": "The TCGP Arena #5! Prizing: Full Art TRA Cards!",
+    "date": "2026-08-27T17:00:00.000Z",
+    "dateMs": 1787850000000,
+    "players": 108,
+    "game": "POCKET",
+    "format": null,
+    "status": null,
+    "swiss": null,
+    "topCut": null,
+    "set": null,
+    "setNameZh": null,
+    "setNameEn": null,
+    "formatUi": null,
+    "decklists": false,
+    "pagePath": "/data/tournament-pages/6a8de28f0580a332c841fd99.json",
+    "rawPaths": {
+      "details": "/data/raw/6a8de28f0580a332c841fd99/details.json",
+      "standings": "/data/raw/6a8de28f0580a332c841fd99/standings.json",
+      "pairings": "/data/raw/6a8de28f0580a332c841fd99/pairings.json"
+    },
+    "url": "https://play.limitlesstcg.com/tournament/6a8de28f0580a332c841fd99",
+    "standingsUrl": "https://play.limitlesstcg.com/tournament/6a8de28f0580a332c841fd99/standings"
+  },
+  "summary": {
+    "entrants": 108,
+    "playersWithCountry": 102,
+    "playersWithDeck": 9,
+    "playersWithDecklist": 9,
+    "playersDropped": 61,
+    "uniqueCountries": 30,
+    "uniqueArchetypes": 10,
+    "pairingsRounds": 8,
+    "pairingsMatches": 307,
+    "top8Decklists": 0,
+    "top32Decklists": 2
+  },
+  "featured": {
+    "winner": {
+      "placing": 1,
+      "name": "Eku",
+      "player": "eku",
+      "country": "JP",
+      "record": {
+        "wins": 11,
+        "losses": 1,
+        "ties": 0
+      },
+      "recordText": "11-1-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    "top8": [
+      {
+        "placing": 1,
+        "name": "Eku",
+        "player": "eku",
+        "country": "JP",
+        "record": {
+          "wins": 11,
+          "losses": 1,
+          "ties": 0
+        },
+        "recordText": "11-1-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 2,
+        "name": "DNT | Alessandro",
+        "player": "fontodasosa",
+        "country": "IT",
+        "record": {
+          "wins": 11,
+          "losses": 1,
+          "ties": 0
+        },
+        "recordText": "11-1-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 3,
+        "name": "FrogEX | Atomiix",
+        "player": "atomiix",
+        "country": "FR",
+        "record": {
+          "wins": 8,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "8-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 4,
+        "name": "Esteban0708",
+        "player": "esteban0708",
+        "country": "EC",
+        "record": {
+          "wins": 8,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "8-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 5,
+        "name": "ShotaGreatLuck",
+        "player": "shotagreatluck",
+        "country": "JP",
+        "record": {
+          "wins": 8,
+          "losses": 2,
+          "ties": 0
+        },
+        "recordText": "8-2-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 6,
+        "name": "𝗠𝗮𝗴𝗺𝗮 StorM",
+        "player": "normo360",
+        "country": "US",
+        "record": {
+          "wins": 7,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "7-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 7,
+        "name": "FACELE55",
+        "player": "facele55",
+        "country": "BR",
+        "record": {
+          "wins": 7,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "7-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 8,
+        "name": "Super_Peace",
+        "player": "super_peace",
+        "country": "DE",
+        "record": {
+          "wins": 7,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "7-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      }
+    ],
+    "top16": [
+      {
+        "placing": 1,
+        "name": "Eku",
+        "player": "eku",
+        "country": "JP",
+        "record": {
+          "wins": 11,
+          "losses": 1,
+          "ties": 0
+        },
+        "recordText": "11-1-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 2,
+        "name": "DNT | Alessandro",
+        "player": "fontodasosa",
+        "country": "IT",
+        "record": {
+          "wins": 11,
+          "losses": 1,
+          "ties": 0
+        },
+        "recordText": "11-1-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 3,
+        "name": "FrogEX | Atomiix",
+        "player": "atomiix",
+        "country": "FR",
+        "record": {
+          "wins": 8,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "8-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 4,
+        "name": "Esteban0708",
+        "player": "esteban0708",
+        "country": "EC",
+        "record": {
+          "wins": 8,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "8-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 5,
+        "name": "ShotaGreatLuck",
+        "player": "shotagreatluck",
+        "country": "JP",
+        "record": {
+          "wins": 8,
+          "losses": 2,
+          "ties": 0
+        },
+        "recordText": "8-2-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 6,
+        "name": "𝗠𝗮𝗴𝗺𝗮 StorM",
+        "player": "normo360",
+        "country": "US",
+        "record": {
+          "wins": 7,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "7-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 7,
+        "name": "FACELE55",
+        "player": "facele55",
+        "country": "BR",
+        "record": {
+          "wins": 7,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "7-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 8,
+        "name": "Super_Peace",
+        "player": "super_peace",
+        "country": "DE",
+        "record": {
+          "wins": 7,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "7-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 9,
+        "name": "DariusPopek",
+        "player": "dariuspopek",
+        "country": "PL",
+        "record": {
+          "wins": 7,
+          "losses": 2,
+          "ties": 0
+        },
+        "recordText": "7-2-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 10,
+        "name": "JLNG",
+        "player": "jlng",
+        "country": "US",
+        "record": {
+          "wins": 7,
+          "losses": 2,
+          "ties": 0
+        },
+        "recordText": "7-2-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 11,
+        "name": "BOB38",
+        "player": "bob38",
+        "country": "FR",
+        "record": {
+          "wins": 6,
+          "losses": 2,
+          "ties": 1
+        },
+        "recordText": "6-2-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 12,
+        "name": "𝙄𝙈𝙋 | Lbn",
+        "player": "lbn924",
+        "country": "FR",
+        "record": {
+          "wins": 6,
+          "losses": 2,
+          "ties": 1
+        },
+        "recordText": "6-2-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 13,
+        "name": "Chartrheu",
+        "player": "chartrheu",
+        "country": "BE",
+        "record": {
+          "wins": 6,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "6-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 14,
+        "name": "Frost22",
+        "player": "frost22",
+        "country": "IN",
+        "record": {
+          "wins": 6,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "6-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 15,
+        "name": "My",
+        "player": "my",
+        "country": "JP",
+        "record": {
+          "wins": 6,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "6-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 16,
+        "name": "FrogEX | Léo",
+        "player": "m8leo",
+        "country": "BE",
+        "record": {
+          "wins": 6,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "6-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      }
+    ],
+    "top32": [
+      {
+        "placing": 1,
+        "name": "Eku",
+        "player": "eku",
+        "country": "JP",
+        "record": {
+          "wins": 11,
+          "losses": 1,
+          "ties": 0
+        },
+        "recordText": "11-1-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 2,
+        "name": "DNT | Alessandro",
+        "player": "fontodasosa",
+        "country": "IT",
+        "record": {
+          "wins": 11,
+          "losses": 1,
+          "ties": 0
+        },
+        "recordText": "11-1-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 3,
+        "name": "FrogEX | Atomiix",
+        "player": "atomiix",
+        "country": "FR",
+        "record": {
+          "wins": 8,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "8-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 4,
+        "name": "Esteban0708",
+        "player": "esteban0708",
+        "country": "EC",
+        "record": {
+          "wins": 8,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "8-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 5,
+        "name": "ShotaGreatLuck",
+        "player": "shotagreatluck",
+        "country": "JP",
+        "record": {
+          "wins": 8,
+          "losses": 2,
+          "ties": 0
+        },
+        "recordText": "8-2-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 6,
+        "name": "𝗠𝗮𝗴𝗺𝗮 StorM",
+        "player": "normo360",
+        "country": "US",
+        "record": {
+          "wins": 7,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "7-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 7,
+        "name": "FACELE55",
+        "player": "facele55",
+        "country": "BR",
+        "record": {
+          "wins": 7,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "7-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 8,
+        "name": "Super_Peace",
+        "player": "super_peace",
+        "country": "DE",
+        "record": {
+          "wins": 7,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "7-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 9,
+        "name": "DariusPopek",
+        "player": "dariuspopek",
+        "country": "PL",
+        "record": {
+          "wins": 7,
+          "losses": 2,
+          "ties": 0
+        },
+        "recordText": "7-2-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 10,
+        "name": "JLNG",
+        "player": "jlng",
+        "country": "US",
+        "record": {
+          "wins": 7,
+          "losses": 2,
+          "ties": 0
+        },
+        "recordText": "7-2-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 11,
+        "name": "BOB38",
+        "player": "bob38",
+        "country": "FR",
+        "record": {
+          "wins": 6,
+          "losses": 2,
+          "ties": 1
+        },
+        "recordText": "6-2-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 12,
+        "name": "𝙄𝙈𝙋 | Lbn",
+        "player": "lbn924",
+        "country": "FR",
+        "record": {
+          "wins": 6,
+          "losses": 2,
+          "ties": 1
+        },
+        "recordText": "6-2-1",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 13,
+        "name": "Chartrheu",
+        "player": "chartrheu",
+        "country": "BE",
+        "record": {
+          "wins": 6,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "6-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 14,
+        "name": "Frost22",
+        "player": "frost22",
+        "country": "IN",
+        "record": {
+          "wins": 6,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "6-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 15,
+        "name": "My",
+        "player": "my",
+        "country": "JP",
+        "record": {
+          "wins": 6,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "6-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 16,
+        "name": "FrogEX | Léo",
+        "player": "m8leo",
+        "country": "BE",
+        "record": {
+          "wins": 6,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "6-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 17,
+        "name": "Manatee",
+        "player": "manatee",
+        "country": "JP",
+        "record": {
+          "wins": 5,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "5-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 18,
+        "name": "PierFigo",
+        "player": "pierfigo",
+        "country": "ID",
+        "record": {
+          "wins": 5,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "5-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 19,
+        "name": "Xastur",
+        "player": "xastur",
+        "country": "US",
+        "record": {
+          "wins": 5,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "5-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 20,
+        "name": "𝗕𝗢𝗔𝗧 | Koe",
+        "player": "koehearts",
+        "country": "PR",
+        "record": {
+          "wins": 5,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "5-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 21,
+        "name": "𝑺𝑴𝑻 | Necroblaze",
+        "player": "necroblaze",
+        "country": "GB",
+        "record": {
+          "wins": 4,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "4-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 22,
+        "name": "𝗠𝗢𝗡𝗢 . Miyagi",
+        "player": "caruzo",
+        "country": "DE",
+        "record": {
+          "wins": 4,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "4-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 23,
+        "name": "PGX | victorssito",
+        "player": "victorssito",
+        "country": "ES",
+        "record": {
+          "wins": 4,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "4-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 24,
+        "name": "Nj_210zz",
+        "player": "nj_210zz",
+        "country": "FR",
+        "record": {
+          "wins": 4,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "4-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 25,
+        "name": "MrCin0091",
+        "player": "mrcin0091",
+        "country": "PL",
+        "record": {
+          "wins": 4,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "4-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 26,
+        "name": "stake",
+        "player": "stake",
+        "country": null,
+        "record": {
+          "wins": 4,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "4-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 27,
+        "name": "TGA | Chronos",
+        "player": "castro37",
+        "country": "BR",
+        "record": {
+          "wins": 4,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "4-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 28,
+        "name": "Danico",
+        "player": "danico",
+        "country": "JP",
+        "record": {
+          "wins": 4,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "4-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 29,
+        "name": "Javiee333",
+        "player": "javiee333",
+        "country": "US",
+        "record": {
+          "wins": 4,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "4-3-0",
+        "drop": null,
+        "deck": {
+          "id": "vespiquen-ex-b4-shuckle-ex-a4",
+          "name": "Vespiquen ex Shuckle ex",
+          "icons": [
+            "vespiquen",
+            "shuckle"
+          ]
+        },
+        "decklistAvailable": true,
+        "decklist": {
+          "pokemon": [
+            {
+              "section": "pokemon",
+              "count": 2,
+              "set": "B4",
+              "number": "10",
+              "numberPadded": "010",
+              "cardId": "B4-010",
+              "name": "Combee"
+            },
+            {
+              "section": "pokemon",
+              "count": 2,
+              "set": "B4",
+              "number": "11",
+              "numberPadded": "011",
+              "cardId": "B4-011",
+              "name": "Vespiquen ex"
+            },
+            {
+              "section": "pokemon",
+              "count": 1,
+              "set": "A3a",
+              "number": "8",
+              "numberPadded": "008",
+              "cardId": "A3a-008",
+              "name": "Kartana"
+            },
+            {
+              "section": "pokemon",
+              "count": 1,
+              "set": "A3a",
+              "number": "7",
+              "numberPadded": "007",
+              "cardId": "A3a-007",
+              "name": "Pheromosa"
+            },
+            {
+              "section": "pokemon",
+              "count": 1,
+              "set": "A4",
+              "number": "21",
+              "numberPadded": "021",
+              "cardId": "A4-021",
+              "name": "Shuckle ex"
+            },
+            {
+              "section": "pokemon",
+              "count": 1,
+              "set": "B2",
+              "number": "17",
+              "numberPadded": "017",
+              "cardId": "B2-017",
+              "name": "Teal Mask Ogerpon ex"
+            }
+          ],
+          "trainer": [
+            {
+              "section": "trainer",
+              "count": 2,
+              "set": "P-A",
+              "number": "7",
+              "numberPadded": "007",
+              "cardId": "P-A-007",
+              "name": "Professor's Research"
+            },
+            {
+              "section": "trainer",
+              "count": 2,
+              "set": "B1",
+              "number": "225",
+              "numberPadded": "225",
+              "cardId": "B1-225",
+              "name": "Copycat"
+            },
+            {
+              "section": "trainer",
+              "count": 1,
+              "set": "A1",
+              "number": "219",
+              "numberPadded": "219",
+              "cardId": "A1-219",
+              "name": "Erika"
+            },
+            {
+              "section": "trainer",
+              "count": 1,
+              "set": "A2",
+              "number": "150",
+              "numberPadded": "150",
+              "cardId": "A2-150",
+              "name": "Cyrus"
+            },
+            {
+              "section": "trainer",
+              "count": 1,
+              "set": "P-A",
+              "number": "2",
+              "numberPadded": "002",
+              "cardId": "P-A-002",
+              "name": "X Speed"
+            },
+            {
+              "section": "trainer",
+              "count": 1,
+              "set": "B3",
+              "number": "147",
+              "numberPadded": "147",
+              "cardId": "B3-147",
+              "name": "Field Blower"
+            },
+            {
+              "section": "trainer",
+              "count": 2,
+              "set": "A3",
+              "number": "147",
+              "numberPadded": "147",
+              "cardId": "A3-147",
+              "name": "Leaf Cape"
+            },
+            {
+              "section": "trainer",
+              "count": 2,
+              "set": "B3",
+              "number": "153",
+              "numberPadded": "153",
+              "cardId": "B3-153",
+              "name": "Fragrant Forest"
+            }
+          ],
+          "energy": [],
+          "cards": [
+            {
+              "section": "pokemon",
+              "count": 2,
+              "set": "B4",
+              "number": "10",
+              "numberPadded": "010",
+              "cardId": "B4-010",
+              "name": "Combee"
+            },
+            {
+              "section": "pokemon",
+              "count": 2,
+              "set": "B4",
+              "number": "11",
+              "numberPadded": "011",
+              "cardId": "B4-011",
+              "name": "Vespiquen ex"
+            },
+            {
+              "section": "pokemon",
+              "count": 1,
+              "set": "A3a",
+              "number": "8",
+              "numberPadded": "008",
+              "cardId": "A3a-008",
+              "name": "Kartana"
+            },
+            {
+              "section": "pokemon",
+              "count": 1,
+              "set": "A3a",
+              "number": "7",
+              "numberPadded": "007",
+              "cardId": "A3a-007",
+              "name": "Pheromosa"
+            },
+            {
+              "section": "pokemon",
+              "count": 1,
+              "set": "A4",
+              "number": "21",
+              "numberPadded": "021",
+              "cardId": "A4-021",
+              "name": "Shuckle ex"
+            },
+            {
+              "section": "pokemon",
+              "count": 1,
+              "set": "B2",
+              "number": "17",
+              "numberPadded": "017",
+              "cardId": "B2-017",
+              "name": "Teal Mask Ogerpon ex"
+            },
+            {
+              "section": "trainer",
+              "count": 2,
+              "set": "P-A",
+              "number": "7",
+              "numberPadded": "007",
+              "cardId": "P-A-007",
+              "name": "Professor's Research"
+            },
+            {
+              "section": "trainer",
+              "count": 2,
+              "set": "B1",
+              "number": "225",
+              "numberPadded": "225",
+              "cardId": "B1-225",
+              "name": "Copycat"
+            },
+            {
+              "section": "trainer",
+              "count": 1,
+              "set": "A1",
+              "number": "219",
+              "numberPadded": "219",
+              "cardId": "A1-219",
+              "name": "Erika"
+            },
+            {
+              "section": "trainer",
+              "count": 1,
+              "set": "A2",
+              "number": "150",
+              "numberPadded": "150",
+              "cardId": "A2-150",
+              "name": "Cyrus"
+            },
+            {
+              "section": "trainer",
+              "count": 1,
+              "set": "P-A",
+              "number": "2",
+              "numberPadded": "002",
+              "cardId": "P-A-002",
+              "name": "X Speed"
+            },
+            {
+              "section": "trainer",
+              "count": 1,
+              "set": "B3",
+              "number": "147",
+              "numberPadded": "147",
+              "cardId": "B3-147",
+              "name": "Field Blower"
+            },
+            {
+              "section": "trainer",
+              "count": 2,
+              "set": "A3",
+              "number": "147",
+              "numberPadded": "147",
+              "cardId": "A3-147",
+              "name": "Leaf Cape"
+            },
+            {
+              "section": "trainer",
+              "count": 2,
+              "set": "B3",
+              "number": "153",
+              "numberPadded": "153",
+              "cardId": "B3-153",
+              "name": "Fragrant Forest"
+            }
+          ],
+          "pokemonCount": 8,
+          "trainerCount": 12,
+          "totalCards": 20,
+          "uniqueCards": 14
+        }
+      },
+      {
+        "placing": 30,
+        "name": "nyrq",
+        "player": "nyrq",
+        "country": "PR",
+        "record": {
+          "wins": 4,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "4-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      },
+      {
+        "placing": 31,
+        "name": "IROMM",
+        "player": "iromm",
+        "country": null,
+        "record": {
+          "wins": 4,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "4-3-0",
+        "drop": null,
+        "deck": {
+          "id": "hoopa-ex-b4-mega-sableye-ex-b3b",
+          "name": "Hoopa ex Mega Sableye ex",
+          "icons": [
+            "hoopa",
+            "sableye-mega"
+          ]
+        },
+        "decklistAvailable": true,
+        "decklist": {
+          "pokemon": [
+            {
+              "section": "pokemon",
+              "count": 2,
+              "set": "B4",
+              "number": "103",
+              "numberPadded": "103",
+              "cardId": "B4-103",
+              "name": "Hoopa ex"
+            },
+            {
+              "section": "pokemon",
+              "count": 1,
+              "set": "B3b",
+              "number": "41",
+              "numberPadded": "041",
+              "cardId": "B3b-041",
+              "name": "Mega Sableye ex"
+            },
+            {
+              "section": "pokemon",
+              "count": 1,
+              "set": "A2",
+              "number": "110",
+              "numberPadded": "110",
+              "cardId": "A2-110",
+              "name": "Darkrai ex"
+            }
+          ],
+          "trainer": [
+            {
+              "section": "trainer",
+              "count": 2,
+              "set": "P-A",
+              "number": "7",
+              "numberPadded": "007",
+              "cardId": "P-A-007",
+              "name": "Professor's Research"
+            },
+            {
+              "section": "trainer",
+              "count": 2,
+              "set": "A2",
+              "number": "150",
+              "numberPadded": "150",
+              "cardId": "A2-150",
+              "name": "Cyrus"
+            },
+            {
+              "section": "trainer",
+              "count": 2,
+              "set": "B1",
+              "number": "225",
+              "numberPadded": "225",
+              "cardId": "B1-225",
+              "name": "Copycat"
+            },
+            {
+              "section": "trainer",
+              "count": 1,
+              "set": "B4",
+              "number": "152",
+              "numberPadded": "152",
+              "cardId": "B4-152",
+              "name": "Skyla"
+            },
+            {
+              "section": "trainer",
+              "count": 2,
+              "set": "P-A",
+              "number": "5",
+              "numberPadded": "005",
+              "cardId": "P-A-005",
+              "name": "Poké Ball"
+            },
+            {
+              "section": "trainer",
+              "count": 2,
+              "set": "B2",
+              "number": "145",
+              "numberPadded": "145",
+              "cardId": "B2-145",
+              "name": "Lucky Ice Pop"
+            },
+            {
+              "section": "trainer",
+              "count": 1,
+              "set": "P-A",
+              "number": "2",
+              "numberPadded": "002",
+              "cardId": "P-A-002",
+              "name": "X Speed"
+            },
+            {
+              "section": "trainer",
+              "count": 1,
+              "set": "A3a",
+              "number": "64",
+              "numberPadded": "064",
+              "cardId": "A3a-064",
+              "name": "Repel"
+            },
+            {
+              "section": "trainer",
+              "count": 1,
+              "set": "B3",
+              "number": "147",
+              "numberPadded": "147",
+              "cardId": "B3-147",
+              "name": "Field Blower"
+            },
+            {
+              "section": "trainer",
+              "count": 2,
+              "set": "B4",
+              "number": "148",
+              "numberPadded": "148",
+              "cardId": "B4-148",
+              "name": "Deceptive Needle"
+            }
+          ],
+          "energy": [],
+          "cards": [
+            {
+              "section": "pokemon",
+              "count": 2,
+              "set": "B4",
+              "number": "103",
+              "numberPadded": "103",
+              "cardId": "B4-103",
+              "name": "Hoopa ex"
+            },
+            {
+              "section": "pokemon",
+              "count": 1,
+              "set": "B3b",
+              "number": "41",
+              "numberPadded": "041",
+              "cardId": "B3b-041",
+              "name": "Mega Sableye ex"
+            },
+            {
+              "section": "pokemon",
+              "count": 1,
+              "set": "A2",
+              "number": "110",
+              "numberPadded": "110",
+              "cardId": "A2-110",
+              "name": "Darkrai ex"
+            },
+            {
+              "section": "trainer",
+              "count": 2,
+              "set": "P-A",
+              "number": "7",
+              "numberPadded": "007",
+              "cardId": "P-A-007",
+              "name": "Professor's Research"
+            },
+            {
+              "section": "trainer",
+              "count": 2,
+              "set": "A2",
+              "number": "150",
+              "numberPadded": "150",
+              "cardId": "A2-150",
+              "name": "Cyrus"
+            },
+            {
+              "section": "trainer",
+              "count": 2,
+              "set": "B1",
+              "number": "225",
+              "numberPadded": "225",
+              "cardId": "B1-225",
+              "name": "Copycat"
+            },
+            {
+              "section": "trainer",
+              "count": 1,
+              "set": "B4",
+              "number": "152",
+              "numberPadded": "152",
+              "cardId": "B4-152",
+              "name": "Skyla"
+            },
+            {
+              "section": "trainer",
+              "count": 2,
+              "set": "P-A",
+              "number": "5",
+              "numberPadded": "005",
+              "cardId": "P-A-005",
+              "name": "Poké Ball"
+            },
+            {
+              "section": "trainer",
+              "count": 2,
+              "set": "B2",
+              "number": "145",
+              "numberPadded": "145",
+              "cardId": "B2-145",
+              "name": "Lucky Ice Pop"
+            },
+            {
+              "section": "trainer",
+              "count": 1,
+              "set": "P-A",
+              "number": "2",
+              "numberPadded": "002",
+              "cardId": "P-A-002",
+              "name": "X Speed"
+            },
+            {
+              "section": "trainer",
+              "count": 1,
+              "set": "A3a",
+              "number": "64",
+              "numberPadded": "064",
+              "cardId": "A3a-064",
+              "name": "Repel"
+            },
+            {
+              "section": "trainer",
+              "count": 1,
+              "set": "B3",
+              "number": "147",
+              "numberPadded": "147",
+              "cardId": "B3-147",
+              "name": "Field Blower"
+            },
+            {
+              "section": "trainer",
+              "count": 2,
+              "set": "B4",
+              "number": "148",
+              "numberPadded": "148",
+              "cardId": "B4-148",
+              "name": "Deceptive Needle"
+            }
+          ],
+          "pokemonCount": 4,
+          "trainerCount": 16,
+          "totalCards": 20,
+          "uniqueCards": 13
+        }
+      },
+      {
+        "placing": 32,
+        "name": "Sacherboy",
+        "player": "sacherboy",
+        "country": "PY",
+        "record": {
+          "wins": 4,
+          "losses": 3,
+          "ties": 0
+        },
+        "recordText": "4-3-0",
+        "drop": null,
+        "deck": {
+          "id": null,
+          "name": null,
+          "icons": []
+        },
+        "decklistAvailable": false,
+        "decklist": null
+      }
+    ]
+  },
+  "archetypes": [
+    {
+      "id": null,
+      "name": "Unknown",
+      "icons": [],
+      "count": 99,
+      "bestPlacing": 1,
+      "top8": 8,
+      "top16": 16,
+      "top32": 30,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "Eku",
+          "player": "eku",
+          "country": "JP",
+          "placing": 1
+        },
+        {
+          "name": "DNT | Alessandro",
+          "player": "fontodasosa",
+          "country": "IT",
+          "placing": 2
+        },
+        {
+          "name": "FrogEX | Atomiix",
+          "player": "atomiix",
+          "country": "FR",
+          "placing": 3
+        },
+        {
+          "name": "Esteban0708",
+          "player": "esteban0708",
+          "country": "EC",
+          "placing": 4
+        },
+        {
+          "name": "ShotaGreatLuck",
+          "player": "shotagreatluck",
+          "country": "JP",
+          "placing": 5
+        }
+      ],
+      "share": 0.916667,
+      "sharePct": 91.67,
+      "rank": 1
+    },
+    {
+      "id": "vespiquen-ex-b4-shuckle-ex-a4",
+      "name": "Vespiquen ex Shuckle ex",
+      "icons": [
+        "vespiquen",
+        "shuckle"
+      ],
+      "count": 1,
+      "bestPlacing": 29,
+      "top8": 0,
+      "top16": 0,
+      "top32": 1,
+      "decklists": 1,
+      "featuredPlayers": [
+        {
+          "name": "Javiee333",
+          "player": "javiee333",
+          "country": "US",
+          "placing": 29
+        }
+      ],
+      "share": 0.009259,
+      "sharePct": 0.93,
+      "rank": 2
+    },
+    {
+      "id": "hoopa-ex-b4-mega-sableye-ex-b3b",
+      "name": "Hoopa ex Mega Sableye ex",
+      "icons": [
+        "hoopa",
+        "sableye-mega"
+      ],
+      "count": 1,
+      "bestPlacing": 31,
+      "top8": 0,
+      "top16": 0,
+      "top32": 1,
+      "decklists": 1,
+      "featuredPlayers": [
+        {
+          "name": "IROMM",
+          "player": "iromm",
+          "country": null,
+          "placing": 31
+        }
+      ],
+      "share": 0.009259,
+      "sharePct": 0.93,
+      "rank": 3
+    },
+    {
+      "id": "mega-charizard-y-ex-b1a-entei-ex-a4a",
+      "name": "Mega Charizard Y ex Entei ex",
+      "icons": [
+        "charizard-mega-y",
+        "entei"
+      ],
+      "count": 1,
+      "bestPlacing": 38,
+      "top8": 0,
+      "top16": 0,
+      "top32": 0,
+      "decklists": 1,
+      "featuredPlayers": [
+        {
+          "name": "Mo1245",
+          "player": "mo1245",
+          "country": "JP",
+          "placing": 38
+        }
+      ],
+      "share": 0.009259,
+      "sharePct": 0.93,
+      "rank": 4
+    },
+    {
+      "id": "mega-audino-ex-b3-indeedee-ex-b1",
+      "name": "Mega Audino ex Indeedee ex",
+      "icons": [
+        "audino-mega",
+        "indeedee"
+      ],
+      "count": 1,
+      "bestPlacing": 47,
+      "top8": 0,
+      "top16": 0,
+      "top32": 0,
+      "decklists": 1,
+      "featuredPlayers": [
+        {
+          "name": "Acad",
+          "player": "acad",
+          "country": "FR",
+          "placing": 47
+        }
+      ],
+      "share": 0.009259,
+      "sharePct": 0.93,
+      "rank": 5
+    },
+    {
+      "id": "flygon-ex-b3",
+      "name": "Flygon ex",
+      "icons": [
+        "flygon"
+      ],
+      "count": 1,
+      "bestPlacing": null,
+      "top8": 0,
+      "top16": 0,
+      "top32": 0,
+      "decklists": 1,
+      "featuredPlayers": [
+        {
+          "name": "Javiercazorla",
+          "player": "javiercazorla",
+          "country": "AR",
+          "placing": null
+        }
+      ],
+      "share": 0.009259,
+      "sharePct": 0.93,
+      "rank": 6
+    },
+    {
+      "id": "hoopa-ex-b4-mega-absol-ex-b1",
+      "name": "Hoopa ex Mega Absol ex",
+      "icons": [
+        "hoopa",
+        "absol-mega"
+      ],
+      "count": 1,
+      "bestPlacing": null,
+      "top8": 0,
+      "top16": 0,
+      "top32": 0,
+      "decklists": 1,
+      "featuredPlayers": [
+        {
+          "name": "dyegopb",
+          "player": "dyegopb",
+          "country": "BR",
+          "placing": null
+        }
+      ],
+      "share": 0.009259,
+      "sharePct": 0.93,
+      "rank": 7
+    },
+    {
+      "id": "hydreigon-mega-absol-ex-b1",
+      "name": "Hydreigon Mega Absol ex",
+      "icons": [
+        "hydreigon",
+        "absol-mega"
+      ],
+      "count": 1,
+      "bestPlacing": null,
+      "top8": 0,
+      "top16": 0,
+      "top32": 0,
+      "decklists": 1,
+      "featuredPlayers": [
+        {
+          "name": "TDL | MoonlightshurikenVT",
+          "player": "joshuasutherland21",
+          "country": "US",
+          "placing": null
+        }
+      ],
+      "share": 0.009259,
+      "sharePct": 0.93,
+      "rank": 8
+    },
+    {
+      "id": "incineroar-ex-a3-mega-charizard-y-ex-b1a",
+      "name": "Incineroar ex Mega Charizard Y ex",
+      "icons": [
+        "incineroar",
+        "charizard-mega-y"
+      ],
+      "count": 1,
+      "bestPlacing": null,
+      "top8": 0,
+      "top16": 0,
+      "top32": 0,
+      "decklists": 1,
+      "featuredPlayers": [
+        {
+          "name": "Fury64140",
+          "player": "fury64140",
+          "country": "FR",
+          "placing": null
+        }
+      ],
+      "share": 0.009259,
+      "sharePct": 0.93,
+      "rank": 9
+    },
+    {
+      "id": "mega-lucario-ex-b3-lucario-a2",
+      "name": "Mega Lucario ex Lucario",
+      "icons": [
+        "lucario-mega",
+        "lucario"
+      ],
+      "count": 1,
+      "bestPlacing": null,
+      "top8": 0,
+      "top16": 0,
+      "top32": 0,
+      "decklists": 1,
+      "featuredPlayers": [
+        {
+          "name": "PGX| El Atomico",
+          "player": "elatomico",
+          "country": "CO",
+          "placing": null
+        }
+      ],
+      "share": 0.009259,
+      "sharePct": 0.93,
+      "rank": 10
+    }
+  ],
+  "top32Archetypes": [
+    {
+      "id": null,
+      "name": "Unknown",
+      "icons": [],
+      "count": 30,
+      "bestPlacing": 1,
+      "top8": 8,
+      "top16": 16,
+      "top32": 30,
+      "decklists": 0,
+      "featuredPlayers": [
+        {
+          "name": "Eku",
+          "player": "eku",
+          "country": "JP",
+          "placing": 1
+        },
+        {
+          "name": "DNT | Alessandro",
+          "player": "fontodasosa",
+          "country": "IT",
+          "placing": 2
+        },
+        {
+          "name": "FrogEX | Atomiix",
+          "player": "atomiix",
+          "country": "FR",
+          "placing": 3
+        },
+        {
+          "name": "Esteban0708",
+          "player": "esteban0708",
+          "country": "EC",
+          "placing": 4
+        },
+        {
+          "name": "ShotaGreatLuck",
+          "player": "shotagreatluck",
+          "country": "JP",
+          "placing": 5
+        }
+      ],
+      "share": 0.9375,
+      "sharePct": 93.75,
+      "rank": 1
+    },
+    {
+      "id": "vespiquen-ex-b4-shuckle-ex-a4",
+      "name": "Vespiquen ex Shuckle ex",
+      "icons": [
+        "vespiquen",
+        "shuckle"
+      ],
+      "count": 1,
+      "bestPlacing": 29,
+      "top8": 0,
+      "top16": 0,
+      "top32": 1,
+      "decklists": 1,
+      "featuredPlayers": [
+        {
+          "name": "Javiee333",
+          "player": "javiee333",
+          "country": "US",
+          "placing": 29
+        }
+      ],
+      "share": 0.03125,
+      "sharePct": 3.12,
+      "rank": 2
+    },
+    {
+      "id": "hoopa-ex-b4-mega-sableye-ex-b3b",
+      "name": "Hoopa ex Mega Sableye ex",
+      "icons": [
+        "hoopa",
+        "sableye-mega"
+      ],
+      "count": 1,
+      "bestPlacing": 31,
+      "top8": 0,
+      "top16": 0,
+      "top32": 1,
+      "decklists": 1,
+      "featuredPlayers": [
+        {
+          "name": "IROMM",
+          "player": "iromm",
+          "country": null,
+          "placing": 31
+        }
+      ],
+      "share": 0.03125,
+      "sharePct": 3.12,
+      "rank": 3
+    }
+  ],
+  "countries": [
+    {
+      "country": "US",
+      "label": "US",
+      "count": 17,
+      "share": 0.157407,
+      "sharePct": 15.74
+    },
+    {
+      "country": "FR",
+      "label": "FR",
+      "count": 15,
+      "share": 0.138889,
+      "sharePct": 13.89
+    },
+    {
+      "country": "JP",
+      "label": "JP",
+      "count": 10,
+      "share": 0.092593,
+      "sharePct": 9.26
+    },
+    {
+      "country": "BR",
+      "label": "BR",
+      "count": 8,
+      "share": 0.074074,
+      "sharePct": 7.41
+    },
+    {
+      "country": "IT",
+      "label": "IT",
+      "count": 6,
+      "share": 0.055556,
+      "sharePct": 5.56
+    },
+    {
+      "country": null,
+      "label": "Unknown",
+      "count": 6,
+      "share": 0.055556,
+      "sharePct": 5.56
+    },
+    {
+      "country": "ES",
+      "label": "ES",
+      "count": 4,
+      "share": 0.037037,
+      "sharePct": 3.7
+    },
+    {
+      "country": "GR",
+      "label": "GR",
+      "count": 4,
+      "share": 0.037037,
+      "sharePct": 3.7
+    },
+    {
+      "country": "IN",
+      "label": "IN",
+      "count": 4,
+      "share": 0.037037,
+      "sharePct": 3.7
+    },
+    {
+      "country": "PR",
+      "label": "PR",
+      "count": 4,
+      "share": 0.037037,
+      "sharePct": 3.7
+    },
+    {
+      "country": "DE",
+      "label": "DE",
+      "count": 3,
+      "share": 0.027778,
+      "sharePct": 2.78
+    },
+    {
+      "country": "GB",
+      "label": "GB",
+      "count": 3,
+      "share": 0.027778,
+      "sharePct": 2.78
+    },
+    {
+      "country": "ID",
+      "label": "ID",
+      "count": 3,
+      "share": 0.027778,
+      "sharePct": 2.78
+    },
+    {
+      "country": "AR",
+      "label": "AR",
+      "count": 2,
+      "share": 0.018519,
+      "sharePct": 1.85
+    },
+    {
+      "country": "BE",
+      "label": "BE",
+      "count": 2,
+      "share": 0.018519,
+      "sharePct": 1.85
+    },
+    {
+      "country": "MX",
+      "label": "MX",
+      "count": 2,
+      "share": 0.018519,
+      "sharePct": 1.85
+    },
+    {
+      "country": "PL",
+      "label": "PL",
+      "count": 2,
+      "share": 0.018519,
+      "sharePct": 1.85
+    },
+    {
+      "country": "CH",
+      "label": "CH",
+      "count": 1,
+      "share": 0.009259,
+      "sharePct": 0.93
+    },
+    {
+      "country": "CL",
+      "label": "CL",
+      "count": 1,
+      "share": 0.009259,
+      "sharePct": 0.93
+    },
+    {
+      "country": "CO",
+      "label": "CO",
+      "count": 1,
+      "share": 0.009259,
+      "sharePct": 0.93
+    },
+    {
+      "country": "DO",
+      "label": "DO",
+      "count": 1,
+      "share": 0.009259,
+      "sharePct": 0.93
+    },
+    {
+      "country": "EC",
+      "label": "EC",
+      "count": 1,
+      "share": 0.009259,
+      "sharePct": 0.93
+    },
+    {
+      "country": "GT",
+      "label": "GT",
+      "count": 1,
+      "share": 0.009259,
+      "sharePct": 0.93
+    },
+    {
+      "country": "HK",
+      "label": "HK",
+      "count": 1,
+      "share": 0.009259,
+      "sharePct": 0.93
+    },
+    {
+      "country": "PH",
+      "label": "PH",
+      "count": 1,
+      "share": 0.009259,
+      "sharePct": 0.93
+    },
+    {
+      "country": "PY",
+      "label": "PY",
+      "count": 1,
+      "share": 0.009259,
+      "sharePct": 0.93
+    },
+    {
+      "country": "SK",
+      "label": "SK",
+      "count": 1,
+      "share": 0.009259,
+      "sharePct": 0.93
+    },
+    {
+      "country": "TT",
+      "label": "TT",
+      "count": 1,
+      "share": 0.009259,
+      "sharePct": 0.93
+    },
+    {
+      "country": "VE",
+      "label": "VE",
+      "count": 1,
+      "share": 0.009259,
+      "sharePct": 0.93
+    },
+    {
+      "country": "VN",
+      "label": "VN",
+      "count": 1,
+      "share": 0.009259,
+      "sharePct": 0.93
+    }
+  ],
+  "cardUsage": [
+    {
+      "cardId": "P-A-007",
+      "set": "P-A",
+      "number": "7",
+      "numberPadded": "007",
+      "name": "Professor's Research",
+      "section": "trainer",
+      "copies": 17,
+      "decks": 9,
+      "share": 1.0,
+      "sharePct": 100.0
+    },
+    {
+      "cardId": "B1-225",
+      "set": "B1",
+      "number": "225",
+      "numberPadded": "225",
+      "name": "Copycat",
+      "section": "trainer",
+      "copies": 16,
+      "decks": 8,
+      "share": 0.888889,
+      "sharePct": 88.89
+    },
+    {
+      "cardId": "P-A-005",
+      "set": "P-A",
+      "number": "5",
+      "numberPadded": "005",
+      "name": "Poké Ball",
+      "section": "trainer",
+      "copies": 15,
+      "decks": 8,
+      "share": 0.888889,
+      "sharePct": 88.89
+    },
+    {
+      "cardId": "A2-150",
+      "set": "A2",
+      "number": "150",
+      "numberPadded": "150",
+      "name": "Cyrus",
+      "section": "trainer",
+      "copies": 10,
+      "decks": 7,
+      "share": 0.777778,
+      "sharePct": 77.78
+    },
+    {
+      "cardId": "B2-145",
+      "set": "B2",
+      "number": "145",
+      "numberPadded": "145",
+      "name": "Lucky Ice Pop",
+      "section": "trainer",
+      "copies": 11,
+      "decks": 6,
+      "share": 0.666667,
+      "sharePct": 66.67
+    },
+    {
+      "cardId": "B3-147",
+      "set": "B3",
+      "number": "147",
+      "numberPadded": "147",
+      "name": "Field Blower",
+      "section": "trainer",
+      "copies": 5,
+      "decks": 5,
+      "share": 0.555556,
+      "sharePct": 55.56
+    },
+    {
+      "cardId": "P-A-002",
+      "set": "P-A",
+      "number": "2",
+      "numberPadded": "002",
+      "name": "X Speed",
+      "section": "trainer",
+      "copies": 4,
+      "decks": 4,
+      "share": 0.444444,
+      "sharePct": 44.44
+    },
+    {
+      "cardId": "B4-148",
+      "set": "B4",
+      "number": "148",
+      "numberPadded": "148",
+      "name": "Deceptive Needle",
+      "section": "trainer",
+      "copies": 6,
+      "decks": 3,
+      "share": 0.333333,
+      "sharePct": 33.33
+    },
+    {
+      "cardId": "A3-144",
+      "set": "A3",
+      "number": "144",
+      "numberPadded": "144",
+      "name": "Rare Candy",
+      "section": "trainer",
+      "copies": 6,
+      "decks": 3,
+      "share": 0.333333,
+      "sharePct": 33.33
+    },
+    {
+      "cardId": "B1-217",
+      "set": "B1",
+      "number": "217",
+      "numberPadded": "217",
+      "name": "Flame Patch",
+      "section": "trainer",
+      "copies": 4,
+      "decks": 2,
+      "share": 0.222222,
+      "sharePct": 22.22
+    },
+    {
+      "cardId": "B4-103",
+      "set": "B4",
+      "number": "103",
+      "numberPadded": "103",
+      "name": "Hoopa ex",
+      "section": "pokemon",
+      "copies": 4,
+      "decks": 2,
+      "share": 0.222222,
+      "sharePct": 22.22
+    },
+    {
+      "cardId": "B2b-008",
+      "set": "B2b",
+      "number": "8",
+      "numberPadded": "008",
+      "name": "Charmeleon",
+      "section": "pokemon",
+      "copies": 3,
+      "decks": 2,
+      "share": 0.222222,
+      "sharePct": 22.22
+    },
+    {
+      "cardId": "B2-147",
+      "set": "B2",
+      "number": "147",
+      "numberPadded": "147",
+      "name": "Protective Poncho",
+      "section": "trainer",
+      "copies": 3,
+      "decks": 2,
+      "share": 0.222222,
+      "sharePct": 22.22
+    },
+    {
+      "cardId": "A2-110",
+      "set": "A2",
+      "number": "110",
+      "numberPadded": "110",
+      "name": "Darkrai ex",
+      "section": "pokemon",
+      "copies": 2,
+      "decks": 2,
+      "share": 0.222222,
+      "sharePct": 22.22
+    },
+    {
+      "cardId": "A2-147",
+      "set": "A2",
+      "number": "147",
+      "numberPadded": "147",
+      "name": "Giant Cape",
+      "section": "trainer",
+      "copies": 2,
+      "decks": 2,
+      "share": 0.222222,
+      "sharePct": 22.22
+    },
+    {
+      "cardId": "B1-151",
+      "set": "B1",
+      "number": "151",
+      "numberPadded": "151",
+      "name": "Mega Absol ex",
+      "section": "pokemon",
+      "copies": 2,
+      "decks": 2,
+      "share": 0.222222,
+      "sharePct": 22.22
+    },
+    {
+      "cardId": "B1a-014",
+      "set": "B1a",
+      "number": "14",
+      "numberPadded": "014",
+      "name": "Mega Charizard Y ex",
+      "section": "pokemon",
+      "copies": 2,
+      "decks": 2,
+      "share": 0.222222,
+      "sharePct": 22.22
+    },
+    {
+      "cardId": "B4-155",
+      "set": "B4",
+      "number": "155",
+      "numberPadded": "155",
+      "name": "Rainbow Cave",
+      "section": "trainer",
+      "copies": 2,
+      "decks": 2,
+      "share": 0.222222,
+      "sharePct": 22.22
+    },
+    {
+      "cardId": "A3a-064",
+      "set": "A3a",
+      "number": "64",
+      "numberPadded": "064",
+      "name": "Repel",
+      "section": "trainer",
+      "copies": 2,
+      "decks": 2,
+      "share": 0.222222,
+      "sharePct": 22.22
+    },
+    {
+      "cardId": "B2-154",
+      "set": "B2",
+      "number": "154",
+      "numberPadded": "154",
+      "name": "Starting Plains",
+      "section": "trainer",
+      "copies": 2,
+      "decks": 2,
+      "share": 0.222222,
+      "sharePct": 22.22
+    },
+    {
+      "cardId": "B4-153",
+      "set": "B4",
+      "number": "153",
+      "numberPadded": "153",
+      "name": "Wally",
+      "section": "trainer",
+      "copies": 2,
+      "decks": 2,
+      "share": 0.222222,
+      "sharePct": 22.22
+    },
+    {
+      "cardId": "B2b-007",
+      "set": "B2b",
+      "number": "7",
+      "numberPadded": "007",
+      "name": "Charmander",
+      "section": "pokemon",
+      "copies": 2,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B4-010",
+      "set": "B4",
+      "number": "10",
+      "numberPadded": "010",
+      "name": "Combee",
+      "section": "pokemon",
+      "copies": 2,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B1-155",
+      "set": "B1",
+      "number": "155",
+      "numberPadded": "155",
+      "name": "Deino",
+      "section": "pokemon",
+      "copies": 2,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "A4a-010",
+      "set": "A4a",
+      "number": "10",
+      "numberPadded": "010",
+      "name": "Entei ex",
+      "section": "pokemon",
+      "copies": 2,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B3-126",
+      "set": "B3",
+      "number": "126",
+      "numberPadded": "126",
+      "name": "Flygon ex",
+      "section": "pokemon",
+      "copies": 2,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B3-153",
+      "set": "B3",
+      "number": "153",
+      "numberPadded": "153",
+      "name": "Fragrant Forest",
+      "section": "trainer",
+      "copies": 2,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B1-157",
+      "set": "B1",
+      "number": "157",
+      "numberPadded": "157",
+      "name": "Hydreigon",
+      "section": "pokemon",
+      "copies": 2,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "A3-149",
+      "set": "A3",
+      "number": "149",
+      "numberPadded": "149",
+      "name": "Ilima",
+      "section": "trainer",
+      "copies": 2,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "A3-033",
+      "set": "A3",
+      "number": "33",
+      "numberPadded": "033",
+      "name": "Incineroar ex",
+      "section": "pokemon",
+      "copies": 2,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B1-121",
+      "set": "B1",
+      "number": "121",
+      "numberPadded": "121",
+      "name": "Indeedee ex",
+      "section": "pokemon",
+      "copies": 2,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "A3-147",
+      "set": "A3",
+      "number": "147",
+      "numberPadded": "147",
+      "name": "Leaf Cape",
+      "section": "trainer",
+      "copies": 2,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "A3-030",
+      "set": "A3",
+      "number": "30",
+      "numberPadded": "030",
+      "name": "Litten",
+      "section": "pokemon",
+      "copies": 2,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B3-141",
+      "set": "B3",
+      "number": "141",
+      "numberPadded": "141",
+      "name": "Mega Audino ex",
+      "section": "pokemon",
+      "copies": 2,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B3-081",
+      "set": "B3",
+      "number": "81",
+      "numberPadded": "081",
+      "name": "Mega Lucario ex",
+      "section": "pokemon",
+      "copies": 2,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "A3-066",
+      "set": "A3",
+      "number": "66",
+      "numberPadded": "066",
+      "name": "Oricorio",
+      "section": "pokemon",
+      "copies": 2,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B3-079",
+      "set": "B3",
+      "number": "79",
+      "numberPadded": "079",
+      "name": "Riolu",
+      "section": "pokemon",
+      "copies": 2,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B3-076",
+      "set": "B3",
+      "number": "76",
+      "numberPadded": "076",
+      "name": "Trapinch",
+      "section": "pokemon",
+      "copies": 2,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B4-011",
+      "set": "B4",
+      "number": "11",
+      "numberPadded": "011",
+      "name": "Vespiquen ex",
+      "section": "pokemon",
+      "copies": 2,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B3-154",
+      "set": "B3",
+      "number": "154",
+      "numberPadded": "154",
+      "name": "Arena of Antiquity",
+      "section": "trainer",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "A4a-063",
+      "set": "A4a",
+      "number": "63",
+      "numberPadded": "063",
+      "name": "Azurill",
+      "section": "pokemon",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B3-115",
+      "set": "B3",
+      "number": "115",
+      "numberPadded": "115",
+      "name": "Bombirdier",
+      "section": "pokemon",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B3-078",
+      "set": "B3",
+      "number": "78",
+      "numberPadded": "078",
+      "name": "Bonsly",
+      "section": "pokemon",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B3-155",
+      "set": "B3",
+      "number": "155",
+      "numberPadded": "155",
+      "name": "Bounded Field",
+      "section": "trainer",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "A1-033",
+      "set": "A1",
+      "number": "33",
+      "numberPadded": "033",
+      "name": "Charmander",
+      "section": "pokemon",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B4-149",
+      "set": "B4",
+      "number": "149",
+      "numberPadded": "149",
+      "name": "Clear Veil",
+      "section": "trainer",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "A1-219",
+      "set": "A1",
+      "number": "219",
+      "numberPadded": "219",
+      "name": "Erika",
+      "section": "trainer",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "A1-154",
+      "set": "A1",
+      "number": "154",
+      "numberPadded": "154",
+      "name": "Hitmonlee",
+      "section": "pokemon",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B3a-071",
+      "set": "B3a",
+      "number": "71",
+      "numberPadded": "071",
+      "name": "Juliana",
+      "section": "trainer",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "A3a-008",
+      "set": "A3a",
+      "number": "8",
+      "numberPadded": "008",
+      "name": "Kartana",
+      "section": "pokemon",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B3-149",
+      "set": "B3",
+      "number": "149",
+      "numberPadded": "149",
+      "name": "Korrina",
+      "section": "trainer",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "A3-155",
+      "set": "A3",
+      "number": "155",
+      "numberPadded": "155",
+      "name": "Lillie",
+      "section": "trainer",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "A2-092",
+      "set": "A2",
+      "number": "92",
+      "numberPadded": "092",
+      "name": "Lucario",
+      "section": "pokemon",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B1-223",
+      "set": "B1",
+      "number": "223",
+      "numberPadded": "223",
+      "name": "May",
+      "section": "trainer",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B3b-041",
+      "set": "B3b",
+      "number": "41",
+      "numberPadded": "041",
+      "name": "Mega Sableye ex",
+      "section": "pokemon",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "A3a-007",
+      "set": "A3a",
+      "number": "7",
+      "numberPadded": "007",
+      "name": "Pheromosa",
+      "section": "pokemon",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "A2b-070",
+      "set": "A2b",
+      "number": "70",
+      "numberPadded": "070",
+      "name": "Pokémon Center Lady",
+      "section": "trainer",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "A1-225",
+      "set": "A1",
+      "number": "225",
+      "numberPadded": "225",
+      "name": "Sabrina",
+      "section": "trainer",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "A4-021",
+      "set": "A4",
+      "number": "21",
+      "numberPadded": "021",
+      "name": "Shuckle ex",
+      "section": "pokemon",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B4-152",
+      "set": "B4",
+      "number": "152",
+      "numberPadded": "152",
+      "name": "Skyla",
+      "section": "trainer",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B3b-064",
+      "set": "B3b",
+      "number": "64",
+      "numberPadded": "064",
+      "name": "Small Balloon",
+      "section": "trainer",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B2-017",
+      "set": "B2",
+      "number": "17",
+      "numberPadded": "017",
+      "name": "Teal Mask Ogerpon ex",
+      "section": "pokemon",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    },
+    {
+      "cardId": "B3-125",
+      "set": "B3",
+      "number": "125",
+      "numberPadded": "125",
+      "name": "Vibrava",
+      "section": "pokemon",
+      "copies": 1,
+      "decks": 1,
+      "share": 0.111111,
+      "sharePct": 11.11
+    }
+  ],
+  "energyUsage": [],
+  "pairingsSummary": {
+    "available": true,
+    "kind": "list",
+    "rounds": 8,
+    "matches": 307,
+    "roundBreakdown": [
+      {
+        "round": "1",
+        "matches": 58
+      },
+      {
+        "round": "2",
+        "matches": 49
+      },
+      {
+        "round": "3",
+        "matches": 45
+      },
+      {
+        "round": "4",
+        "matches": 39
+      },
+      {
+        "round": "5",
+        "matches": 32
+      },
+      {
+        "round": "6",
+        "matches": 28
+      },
+      {
+        "round": "7",
+        "matches": 25
+      },
+      {
+        "round": "8",
+        "matches": 31
+      }
+    ]
+  },
+  "standings": [
+    {
+      "placing": 1,
+      "name": "Eku",
+      "player": "eku",
+      "country": "JP",
+      "record": {
+        "wins": 11,
+        "losses": 1,
+        "ties": 0
+      },
+      "recordText": "11-1-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 2,
+      "name": "DNT | Alessandro",
+      "player": "fontodasosa",
+      "country": "IT",
+      "record": {
+        "wins": 11,
+        "losses": 1,
+        "ties": 0
+      },
+      "recordText": "11-1-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 3,
+      "name": "FrogEX | Atomiix",
+      "player": "atomiix",
+      "country": "FR",
+      "record": {
+        "wins": 8,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "8-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 4,
+      "name": "Esteban0708",
+      "player": "esteban0708",
+      "country": "EC",
+      "record": {
+        "wins": 8,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "8-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 5,
+      "name": "ShotaGreatLuck",
+      "player": "shotagreatluck",
+      "country": "JP",
+      "record": {
+        "wins": 8,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "8-2-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 6,
+      "name": "𝗠𝗮𝗴𝗺𝗮 StorM",
+      "player": "normo360",
+      "country": "US",
+      "record": {
+        "wins": 7,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "7-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 7,
+      "name": "FACELE55",
+      "player": "facele55",
+      "country": "BR",
+      "record": {
+        "wins": 7,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "7-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 8,
+      "name": "Super_Peace",
+      "player": "super_peace",
+      "country": "DE",
+      "record": {
+        "wins": 7,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "7-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 9,
+      "name": "DariusPopek",
+      "player": "dariuspopek",
+      "country": "PL",
+      "record": {
+        "wins": 7,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "7-2-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 10,
+      "name": "JLNG",
+      "player": "jlng",
+      "country": "US",
+      "record": {
+        "wins": 7,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "7-2-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 11,
+      "name": "BOB38",
+      "player": "bob38",
+      "country": "FR",
+      "record": {
+        "wins": 6,
+        "losses": 2,
+        "ties": 1
+      },
+      "recordText": "6-2-1",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 12,
+      "name": "𝙄𝙈𝙋 | Lbn",
+      "player": "lbn924",
+      "country": "FR",
+      "record": {
+        "wins": 6,
+        "losses": 2,
+        "ties": 1
+      },
+      "recordText": "6-2-1",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 13,
+      "name": "Chartrheu",
+      "player": "chartrheu",
+      "country": "BE",
+      "record": {
+        "wins": 6,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "6-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 14,
+      "name": "Frost22",
+      "player": "frost22",
+      "country": "IN",
+      "record": {
+        "wins": 6,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "6-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 15,
+      "name": "My",
+      "player": "my",
+      "country": "JP",
+      "record": {
+        "wins": 6,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "6-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 16,
+      "name": "FrogEX | Léo",
+      "player": "m8leo",
+      "country": "BE",
+      "record": {
+        "wins": 6,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "6-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 17,
+      "name": "Manatee",
+      "player": "manatee",
+      "country": "JP",
+      "record": {
+        "wins": 5,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "5-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 18,
+      "name": "PierFigo",
+      "player": "pierfigo",
+      "country": "ID",
+      "record": {
+        "wins": 5,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "5-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 19,
+      "name": "Xastur",
+      "player": "xastur",
+      "country": "US",
+      "record": {
+        "wins": 5,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "5-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 20,
+      "name": "𝗕𝗢𝗔𝗧 | Koe",
+      "player": "koehearts",
+      "country": "PR",
+      "record": {
+        "wins": 5,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "5-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 21,
+      "name": "𝑺𝑴𝑻 | Necroblaze",
+      "player": "necroblaze",
+      "country": "GB",
+      "record": {
+        "wins": 4,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "4-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 22,
+      "name": "𝗠𝗢𝗡𝗢 . Miyagi",
+      "player": "caruzo",
+      "country": "DE",
+      "record": {
+        "wins": 4,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "4-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 23,
+      "name": "PGX | victorssito",
+      "player": "victorssito",
+      "country": "ES",
+      "record": {
+        "wins": 4,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "4-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 24,
+      "name": "Nj_210zz",
+      "player": "nj_210zz",
+      "country": "FR",
+      "record": {
+        "wins": 4,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "4-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 25,
+      "name": "MrCin0091",
+      "player": "mrcin0091",
+      "country": "PL",
+      "record": {
+        "wins": 4,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "4-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 26,
+      "name": "stake",
+      "player": "stake",
+      "country": null,
+      "record": {
+        "wins": 4,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "4-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 27,
+      "name": "TGA | Chronos",
+      "player": "castro37",
+      "country": "BR",
+      "record": {
+        "wins": 4,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "4-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 28,
+      "name": "Danico",
+      "player": "danico",
+      "country": "JP",
+      "record": {
+        "wins": 4,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "4-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 29,
+      "name": "Javiee333",
+      "player": "javiee333",
+      "country": "US",
+      "record": {
+        "wins": 4,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "4-3-0",
+      "drop": null,
+      "deck": {
+        "id": "vespiquen-ex-b4-shuckle-ex-a4",
+        "name": "Vespiquen ex Shuckle ex",
+        "icons": [
+          "vespiquen",
+          "shuckle"
+        ]
+      },
+      "decklistAvailable": true,
+      "decklist": {
+        "pokemon": [
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B4",
+            "number": "10",
+            "numberPadded": "010",
+            "cardId": "B4-010",
+            "name": "Combee"
+          },
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B4",
+            "number": "11",
+            "numberPadded": "011",
+            "cardId": "B4-011",
+            "name": "Vespiquen ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "A3a",
+            "number": "8",
+            "numberPadded": "008",
+            "cardId": "A3a-008",
+            "name": "Kartana"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "A3a",
+            "number": "7",
+            "numberPadded": "007",
+            "cardId": "A3a-007",
+            "name": "Pheromosa"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "A4",
+            "number": "21",
+            "numberPadded": "021",
+            "cardId": "A4-021",
+            "name": "Shuckle ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "B2",
+            "number": "17",
+            "numberPadded": "017",
+            "cardId": "B2-017",
+            "name": "Teal Mask Ogerpon ex"
+          }
+        ],
+        "trainer": [
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "7",
+            "numberPadded": "007",
+            "cardId": "P-A-007",
+            "name": "Professor's Research"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B1",
+            "number": "225",
+            "numberPadded": "225",
+            "cardId": "B1-225",
+            "name": "Copycat"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A1",
+            "number": "219",
+            "numberPadded": "219",
+            "cardId": "A1-219",
+            "name": "Erika"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A2",
+            "number": "150",
+            "numberPadded": "150",
+            "cardId": "A2-150",
+            "name": "Cyrus"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "P-A",
+            "number": "2",
+            "numberPadded": "002",
+            "cardId": "P-A-002",
+            "name": "X Speed"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B3",
+            "number": "147",
+            "numberPadded": "147",
+            "cardId": "B3-147",
+            "name": "Field Blower"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "A3",
+            "number": "147",
+            "numberPadded": "147",
+            "cardId": "A3-147",
+            "name": "Leaf Cape"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B3",
+            "number": "153",
+            "numberPadded": "153",
+            "cardId": "B3-153",
+            "name": "Fragrant Forest"
+          }
+        ],
+        "energy": [],
+        "cards": [
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B4",
+            "number": "10",
+            "numberPadded": "010",
+            "cardId": "B4-010",
+            "name": "Combee"
+          },
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B4",
+            "number": "11",
+            "numberPadded": "011",
+            "cardId": "B4-011",
+            "name": "Vespiquen ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "A3a",
+            "number": "8",
+            "numberPadded": "008",
+            "cardId": "A3a-008",
+            "name": "Kartana"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "A3a",
+            "number": "7",
+            "numberPadded": "007",
+            "cardId": "A3a-007",
+            "name": "Pheromosa"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "A4",
+            "number": "21",
+            "numberPadded": "021",
+            "cardId": "A4-021",
+            "name": "Shuckle ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "B2",
+            "number": "17",
+            "numberPadded": "017",
+            "cardId": "B2-017",
+            "name": "Teal Mask Ogerpon ex"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "7",
+            "numberPadded": "007",
+            "cardId": "P-A-007",
+            "name": "Professor's Research"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B1",
+            "number": "225",
+            "numberPadded": "225",
+            "cardId": "B1-225",
+            "name": "Copycat"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A1",
+            "number": "219",
+            "numberPadded": "219",
+            "cardId": "A1-219",
+            "name": "Erika"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A2",
+            "number": "150",
+            "numberPadded": "150",
+            "cardId": "A2-150",
+            "name": "Cyrus"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "P-A",
+            "number": "2",
+            "numberPadded": "002",
+            "cardId": "P-A-002",
+            "name": "X Speed"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B3",
+            "number": "147",
+            "numberPadded": "147",
+            "cardId": "B3-147",
+            "name": "Field Blower"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "A3",
+            "number": "147",
+            "numberPadded": "147",
+            "cardId": "A3-147",
+            "name": "Leaf Cape"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B3",
+            "number": "153",
+            "numberPadded": "153",
+            "cardId": "B3-153",
+            "name": "Fragrant Forest"
+          }
+        ],
+        "pokemonCount": 8,
+        "trainerCount": 12,
+        "totalCards": 20,
+        "uniqueCards": 14
+      }
+    },
+    {
+      "placing": 30,
+      "name": "nyrq",
+      "player": "nyrq",
+      "country": "PR",
+      "record": {
+        "wins": 4,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "4-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 31,
+      "name": "IROMM",
+      "player": "iromm",
+      "country": null,
+      "record": {
+        "wins": 4,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "4-3-0",
+      "drop": null,
+      "deck": {
+        "id": "hoopa-ex-b4-mega-sableye-ex-b3b",
+        "name": "Hoopa ex Mega Sableye ex",
+        "icons": [
+          "hoopa",
+          "sableye-mega"
+        ]
+      },
+      "decklistAvailable": true,
+      "decklist": {
+        "pokemon": [
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B4",
+            "number": "103",
+            "numberPadded": "103",
+            "cardId": "B4-103",
+            "name": "Hoopa ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "B3b",
+            "number": "41",
+            "numberPadded": "041",
+            "cardId": "B3b-041",
+            "name": "Mega Sableye ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "A2",
+            "number": "110",
+            "numberPadded": "110",
+            "cardId": "A2-110",
+            "name": "Darkrai ex"
+          }
+        ],
+        "trainer": [
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "7",
+            "numberPadded": "007",
+            "cardId": "P-A-007",
+            "name": "Professor's Research"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "A2",
+            "number": "150",
+            "numberPadded": "150",
+            "cardId": "A2-150",
+            "name": "Cyrus"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B1",
+            "number": "225",
+            "numberPadded": "225",
+            "cardId": "B1-225",
+            "name": "Copycat"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B4",
+            "number": "152",
+            "numberPadded": "152",
+            "cardId": "B4-152",
+            "name": "Skyla"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "5",
+            "numberPadded": "005",
+            "cardId": "P-A-005",
+            "name": "Poké Ball"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B2",
+            "number": "145",
+            "numberPadded": "145",
+            "cardId": "B2-145",
+            "name": "Lucky Ice Pop"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "P-A",
+            "number": "2",
+            "numberPadded": "002",
+            "cardId": "P-A-002",
+            "name": "X Speed"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A3a",
+            "number": "64",
+            "numberPadded": "064",
+            "cardId": "A3a-064",
+            "name": "Repel"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B3",
+            "number": "147",
+            "numberPadded": "147",
+            "cardId": "B3-147",
+            "name": "Field Blower"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B4",
+            "number": "148",
+            "numberPadded": "148",
+            "cardId": "B4-148",
+            "name": "Deceptive Needle"
+          }
+        ],
+        "energy": [],
+        "cards": [
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B4",
+            "number": "103",
+            "numberPadded": "103",
+            "cardId": "B4-103",
+            "name": "Hoopa ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "B3b",
+            "number": "41",
+            "numberPadded": "041",
+            "cardId": "B3b-041",
+            "name": "Mega Sableye ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "A2",
+            "number": "110",
+            "numberPadded": "110",
+            "cardId": "A2-110",
+            "name": "Darkrai ex"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "7",
+            "numberPadded": "007",
+            "cardId": "P-A-007",
+            "name": "Professor's Research"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "A2",
+            "number": "150",
+            "numberPadded": "150",
+            "cardId": "A2-150",
+            "name": "Cyrus"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B1",
+            "number": "225",
+            "numberPadded": "225",
+            "cardId": "B1-225",
+            "name": "Copycat"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B4",
+            "number": "152",
+            "numberPadded": "152",
+            "cardId": "B4-152",
+            "name": "Skyla"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "5",
+            "numberPadded": "005",
+            "cardId": "P-A-005",
+            "name": "Poké Ball"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B2",
+            "number": "145",
+            "numberPadded": "145",
+            "cardId": "B2-145",
+            "name": "Lucky Ice Pop"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "P-A",
+            "number": "2",
+            "numberPadded": "002",
+            "cardId": "P-A-002",
+            "name": "X Speed"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A3a",
+            "number": "64",
+            "numberPadded": "064",
+            "cardId": "A3a-064",
+            "name": "Repel"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B3",
+            "number": "147",
+            "numberPadded": "147",
+            "cardId": "B3-147",
+            "name": "Field Blower"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B4",
+            "number": "148",
+            "numberPadded": "148",
+            "cardId": "B4-148",
+            "name": "Deceptive Needle"
+          }
+        ],
+        "pokemonCount": 4,
+        "trainerCount": 16,
+        "totalCards": 20,
+        "uniqueCards": 13
+      }
+    },
+    {
+      "placing": 32,
+      "name": "Sacherboy",
+      "player": "sacherboy",
+      "country": "PY",
+      "record": {
+        "wins": 4,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "4-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 33,
+      "name": "Pikatravai",
+      "player": "pikatravai",
+      "country": "VN",
+      "record": {
+        "wins": 4,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "4-3-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 34,
+      "name": "alexesar",
+      "player": "alexesar",
+      "country": "MX",
+      "record": {
+        "wins": 3,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "3-4-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 35,
+      "name": "𝗥𝗙| Cngaming",
+      "player": "cn123gaming",
+      "country": "TT",
+      "record": {
+        "wins": 3,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "3-4-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 36,
+      "name": "waittilltmrw",
+      "player": "waittilltmrw",
+      "country": "US",
+      "record": {
+        "wins": 3,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "3-4-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 37,
+      "name": "sZero | frappesdrinker",
+      "player": "frappesdrinker",
+      "country": "GR",
+      "record": {
+        "wins": 3,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "3-4-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 38,
+      "name": "Mo1245",
+      "player": "mo1245",
+      "country": "JP",
+      "record": {
+        "wins": 3,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "3-4-0",
+      "drop": null,
+      "deck": {
+        "id": "mega-charizard-y-ex-b1a-entei-ex-a4a",
+        "name": "Mega Charizard Y ex Entei ex",
+        "icons": [
+          "charizard-mega-y",
+          "entei"
+        ]
+      },
+      "decklistAvailable": true,
+      "decklist": {
+        "pokemon": [
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B2b",
+            "number": "7",
+            "numberPadded": "007",
+            "cardId": "B2b-007",
+            "name": "Charmander"
+          },
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B2b",
+            "number": "8",
+            "numberPadded": "008",
+            "cardId": "B2b-008",
+            "name": "Charmeleon"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "B1a",
+            "number": "14",
+            "numberPadded": "014",
+            "cardId": "B1a-014",
+            "name": "Mega Charizard Y ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "A4a",
+            "number": "10",
+            "numberPadded": "010",
+            "cardId": "A4a-010",
+            "name": "Entei ex"
+          }
+        ],
+        "trainer": [
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "7",
+            "numberPadded": "007",
+            "cardId": "P-A-007",
+            "name": "Professor's Research"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B1",
+            "number": "225",
+            "numberPadded": "225",
+            "cardId": "B1-225",
+            "name": "Copycat"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B4",
+            "number": "153",
+            "numberPadded": "153",
+            "cardId": "B4-153",
+            "name": "Wally"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "5",
+            "numberPadded": "005",
+            "cardId": "P-A-005",
+            "name": "Poké Ball"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B1",
+            "number": "217",
+            "numberPadded": "217",
+            "cardId": "B1-217",
+            "name": "Flame Patch"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B2",
+            "number": "145",
+            "numberPadded": "145",
+            "cardId": "B2-145",
+            "name": "Lucky Ice Pop"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A2",
+            "number": "147",
+            "numberPadded": "147",
+            "cardId": "A2-147",
+            "name": "Giant Cape"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B2",
+            "number": "147",
+            "numberPadded": "147",
+            "cardId": "B2-147",
+            "name": "Protective Poncho"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B4",
+            "number": "155",
+            "numberPadded": "155",
+            "cardId": "B4-155",
+            "name": "Rainbow Cave"
+          }
+        ],
+        "energy": [],
+        "cards": [
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B2b",
+            "number": "7",
+            "numberPadded": "007",
+            "cardId": "B2b-007",
+            "name": "Charmander"
+          },
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B2b",
+            "number": "8",
+            "numberPadded": "008",
+            "cardId": "B2b-008",
+            "name": "Charmeleon"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "B1a",
+            "number": "14",
+            "numberPadded": "014",
+            "cardId": "B1a-014",
+            "name": "Mega Charizard Y ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "A4a",
+            "number": "10",
+            "numberPadded": "010",
+            "cardId": "A4a-010",
+            "name": "Entei ex"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "7",
+            "numberPadded": "007",
+            "cardId": "P-A-007",
+            "name": "Professor's Research"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B1",
+            "number": "225",
+            "numberPadded": "225",
+            "cardId": "B1-225",
+            "name": "Copycat"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B4",
+            "number": "153",
+            "numberPadded": "153",
+            "cardId": "B4-153",
+            "name": "Wally"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "5",
+            "numberPadded": "005",
+            "cardId": "P-A-005",
+            "name": "Poké Ball"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B1",
+            "number": "217",
+            "numberPadded": "217",
+            "cardId": "B1-217",
+            "name": "Flame Patch"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B2",
+            "number": "145",
+            "numberPadded": "145",
+            "cardId": "B2-145",
+            "name": "Lucky Ice Pop"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A2",
+            "number": "147",
+            "numberPadded": "147",
+            "cardId": "A2-147",
+            "name": "Giant Cape"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B2",
+            "number": "147",
+            "numberPadded": "147",
+            "cardId": "B2-147",
+            "name": "Protective Poncho"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B4",
+            "number": "155",
+            "numberPadded": "155",
+            "cardId": "B4-155",
+            "name": "Rainbow Cave"
+          }
+        ],
+        "pokemonCount": 7,
+        "trainerCount": 13,
+        "totalCards": 20,
+        "uniqueCards": 13
+      }
+    },
+    {
+      "placing": 39,
+      "name": "Canexy",
+      "player": "canexy",
+      "country": "ES",
+      "record": {
+        "wins": 3,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "3-4-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 40,
+      "name": "FC08",
+      "player": "fc08",
+      "country": "HK",
+      "record": {
+        "wins": 3,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "3-4-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 41,
+      "name": "Marker__99",
+      "player": "marker__99",
+      "country": "ES",
+      "record": {
+        "wins": 2,
+        "losses": 4,
+        "ties": 1
+      },
+      "recordText": "2-4-1",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 42,
+      "name": "𝗠𝗲𝗴𝗮 Karasu 𝗘𝗫",
+      "player": "karasutcgp",
+      "country": "ID",
+      "record": {
+        "wins": 2,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "2-5-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 43,
+      "name": "lickthatazz",
+      "player": "lickthatazz",
+      "country": "ID",
+      "record": {
+        "wins": 2,
+        "losses": 5,
+        "ties": 0
+      },
+      "recordText": "2-5-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 44,
+      "name": "PoisonedOlive",
+      "player": "poisonedolive",
+      "country": "US",
+      "record": {
+        "wins": 1,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "1-6-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 45,
+      "name": "Flipinton",
+      "player": "flipinton",
+      "country": "US",
+      "record": {
+        "wins": 1,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "1-6-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 46,
+      "name": "dayveee",
+      "player": "dayveee",
+      "country": "PH",
+      "record": {
+        "wins": 1,
+        "losses": 6,
+        "ties": 0
+      },
+      "recordText": "1-6-0",
+      "drop": null,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": 47,
+      "name": "Acad",
+      "player": "acad",
+      "country": "FR",
+      "record": {
+        "wins": 0,
+        "losses": 7,
+        "ties": 0
+      },
+      "recordText": "0-7-0",
+      "drop": null,
+      "deck": {
+        "id": "mega-audino-ex-b3-indeedee-ex-b1",
+        "name": "Mega Audino ex Indeedee ex",
+        "icons": [
+          "audino-mega",
+          "indeedee"
+        ]
+      },
+      "decklistAvailable": true,
+      "decklist": {
+        "pokemon": [
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B1",
+            "number": "121",
+            "numberPadded": "121",
+            "cardId": "B1-121",
+            "name": "Indeedee ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "A3",
+            "number": "66",
+            "numberPadded": "066",
+            "cardId": "A3-066",
+            "name": "Oricorio"
+          },
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B3",
+            "number": "141",
+            "numberPadded": "141",
+            "cardId": "B3-141",
+            "name": "Mega Audino ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "A4a",
+            "number": "63",
+            "numberPadded": "063",
+            "cardId": "A4a-063",
+            "name": "Azurill"
+          }
+        ],
+        "trainer": [
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "A3",
+            "number": "149",
+            "numberPadded": "149",
+            "cardId": "A3-149",
+            "name": "Ilima"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A2b",
+            "number": "70",
+            "numberPadded": "070",
+            "cardId": "A2b-070",
+            "name": "Pokémon Center Lady"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "P-A",
+            "number": "7",
+            "numberPadded": "007",
+            "cardId": "P-A-007",
+            "name": "Professor's Research"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "5",
+            "numberPadded": "005",
+            "cardId": "P-A-005",
+            "name": "Poké Ball"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "P-A",
+            "number": "2",
+            "numberPadded": "002",
+            "cardId": "P-A-002",
+            "name": "X Speed"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B3",
+            "number": "147",
+            "numberPadded": "147",
+            "cardId": "B3-147",
+            "name": "Field Blower"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B2",
+            "number": "147",
+            "numberPadded": "147",
+            "cardId": "B2-147",
+            "name": "Protective Poncho"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A2",
+            "number": "147",
+            "numberPadded": "147",
+            "cardId": "A2-147",
+            "name": "Giant Cape"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B2",
+            "number": "154",
+            "numberPadded": "154",
+            "cardId": "B2-154",
+            "name": "Starting Plains"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B3",
+            "number": "155",
+            "numberPadded": "155",
+            "cardId": "B3-155",
+            "name": "Bounded Field"
+          }
+        ],
+        "energy": [],
+        "cards": [
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B1",
+            "number": "121",
+            "numberPadded": "121",
+            "cardId": "B1-121",
+            "name": "Indeedee ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "A3",
+            "number": "66",
+            "numberPadded": "066",
+            "cardId": "A3-066",
+            "name": "Oricorio"
+          },
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B3",
+            "number": "141",
+            "numberPadded": "141",
+            "cardId": "B3-141",
+            "name": "Mega Audino ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "A4a",
+            "number": "63",
+            "numberPadded": "063",
+            "cardId": "A4a-063",
+            "name": "Azurill"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "A3",
+            "number": "149",
+            "numberPadded": "149",
+            "cardId": "A3-149",
+            "name": "Ilima"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A2b",
+            "number": "70",
+            "numberPadded": "070",
+            "cardId": "A2b-070",
+            "name": "Pokémon Center Lady"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "P-A",
+            "number": "7",
+            "numberPadded": "007",
+            "cardId": "P-A-007",
+            "name": "Professor's Research"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "5",
+            "numberPadded": "005",
+            "cardId": "P-A-005",
+            "name": "Poké Ball"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "P-A",
+            "number": "2",
+            "numberPadded": "002",
+            "cardId": "P-A-002",
+            "name": "X Speed"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B3",
+            "number": "147",
+            "numberPadded": "147",
+            "cardId": "B3-147",
+            "name": "Field Blower"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B2",
+            "number": "147",
+            "numberPadded": "147",
+            "cardId": "B2-147",
+            "name": "Protective Poncho"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A2",
+            "number": "147",
+            "numberPadded": "147",
+            "cardId": "A2-147",
+            "name": "Giant Cape"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B2",
+            "number": "154",
+            "numberPadded": "154",
+            "cardId": "B2-154",
+            "name": "Starting Plains"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B3",
+            "number": "155",
+            "numberPadded": "155",
+            "cardId": "B3-155",
+            "name": "Bounded Field"
+          }
+        ],
+        "pokemonCount": 7,
+        "trainerCount": 13,
+        "totalCards": 20,
+        "uniqueCards": 14
+      }
+    },
+    {
+      "placing": null,
+      "name": "Semant1c24",
+      "player": "semant1c24",
+      "country": "DO",
+      "record": {
+        "wins": 4,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "4-3-0",
+      "drop": 7,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "moserk",
+      "player": "moserk",
+      "country": "IN",
+      "record": {
+        "wins": 4,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "4-3-0",
+      "drop": 7,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "Ger272",
+      "player": "ger272",
+      "country": "IT",
+      "record": {
+        "wins": 3,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "3-2-0",
+      "drop": 5,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "Brxlyy",
+      "player": "brxlyy",
+      "country": "FR",
+      "record": {
+        "wins": 3,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "3-3-0",
+      "drop": 6,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "FrogEX | Cosmo",
+      "player": "cosmooo",
+      "country": "FR",
+      "record": {
+        "wins": 3,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "3-3-0",
+      "drop": 6,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "FrogEX | Wawan S",
+      "player": "wawan",
+      "country": "FR",
+      "record": {
+        "wins": 3,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "3-3-0",
+      "drop": 6,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "IRONSAP",
+      "player": "ironsap",
+      "country": "IN",
+      "record": {
+        "wins": 3,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "3-3-0",
+      "drop": 6,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "𝗠𝗮𝗴𝗺𝗮 Akuma_z6",
+      "player": "akuma_z6",
+      "country": null,
+      "record": {
+        "wins": 3,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "3-3-0",
+      "drop": 6,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "𝗠𝗢𝗡𝗢 . Pauk",
+      "player": "pauk55",
+      "country": "DE",
+      "record": {
+        "wins": 3,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "3-4-0",
+      "drop": 7,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "Cowboy's Nation",
+      "player": "167568",
+      "country": "US",
+      "record": {
+        "wins": 2,
+        "losses": 1,
+        "ties": 0
+      },
+      "recordText": "2-1-0",
+      "drop": 3,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "Alex_Tart",
+      "player": "alex_tart",
+      "country": "IT",
+      "record": {
+        "wins": 2,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "2-2-0",
+      "drop": 4,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "AnHz",
+      "player": "anhz",
+      "country": "JP",
+      "record": {
+        "wins": 2,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "2-2-0",
+      "drop": 4,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "TB Popay",
+      "player": "popay",
+      "country": "CH",
+      "record": {
+        "wins": 2,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "2-2-0",
+      "drop": 4,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "Tesla20",
+      "player": "tesla20",
+      "country": "VE",
+      "record": {
+        "wins": 2,
+        "losses": 2,
+        "ties": 1
+      },
+      "recordText": "2-2-1",
+      "drop": 5,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "whiteRabbit",
+      "player": "whiterabbit",
+      "country": null,
+      "record": {
+        "wins": 2,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "2-2-0",
+      "drop": 4,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "Javiercazorla",
+      "player": "javiercazorla",
+      "country": "AR",
+      "record": {
+        "wins": 2,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "2-3-0",
+      "drop": 5,
+      "deck": {
+        "id": "flygon-ex-b3",
+        "name": "Flygon ex",
+        "icons": [
+          "flygon"
+        ]
+      },
+      "decklistAvailable": true,
+      "decklist": {
+        "pokemon": [
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B3",
+            "number": "76",
+            "numberPadded": "076",
+            "cardId": "B3-076",
+            "name": "Trapinch"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "B3",
+            "number": "125",
+            "numberPadded": "125",
+            "cardId": "B3-125",
+            "name": "Vibrava"
+          },
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B3",
+            "number": "126",
+            "numberPadded": "126",
+            "cardId": "B3-126",
+            "name": "Flygon ex"
+          }
+        ],
+        "trainer": [
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "7",
+            "numberPadded": "007",
+            "cardId": "P-A-007",
+            "name": "Professor's Research"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "A2",
+            "number": "150",
+            "numberPadded": "150",
+            "cardId": "A2-150",
+            "name": "Cyrus"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B1",
+            "number": "225",
+            "numberPadded": "225",
+            "cardId": "B1-225",
+            "name": "Copycat"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A3",
+            "number": "155",
+            "numberPadded": "155",
+            "cardId": "A3-155",
+            "name": "Lillie"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B3a",
+            "number": "71",
+            "numberPadded": "071",
+            "cardId": "B3a-071",
+            "name": "Juliana"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "A3",
+            "number": "144",
+            "numberPadded": "144",
+            "cardId": "A3-144",
+            "name": "Rare Candy"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B2",
+            "number": "145",
+            "numberPadded": "145",
+            "cardId": "B2-145",
+            "name": "Lucky Ice Pop"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "P-A",
+            "number": "5",
+            "numberPadded": "005",
+            "cardId": "P-A-005",
+            "name": "Poké Ball"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B4",
+            "number": "149",
+            "numberPadded": "149",
+            "cardId": "B4-149",
+            "name": "Clear Veil"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B4",
+            "number": "155",
+            "numberPadded": "155",
+            "cardId": "B4-155",
+            "name": "Rainbow Cave"
+          }
+        ],
+        "energy": [],
+        "cards": [
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B3",
+            "number": "76",
+            "numberPadded": "076",
+            "cardId": "B3-076",
+            "name": "Trapinch"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "B3",
+            "number": "125",
+            "numberPadded": "125",
+            "cardId": "B3-125",
+            "name": "Vibrava"
+          },
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B3",
+            "number": "126",
+            "numberPadded": "126",
+            "cardId": "B3-126",
+            "name": "Flygon ex"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "7",
+            "numberPadded": "007",
+            "cardId": "P-A-007",
+            "name": "Professor's Research"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "A2",
+            "number": "150",
+            "numberPadded": "150",
+            "cardId": "A2-150",
+            "name": "Cyrus"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B1",
+            "number": "225",
+            "numberPadded": "225",
+            "cardId": "B1-225",
+            "name": "Copycat"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A3",
+            "number": "155",
+            "numberPadded": "155",
+            "cardId": "A3-155",
+            "name": "Lillie"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B3a",
+            "number": "71",
+            "numberPadded": "071",
+            "cardId": "B3a-071",
+            "name": "Juliana"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "A3",
+            "number": "144",
+            "numberPadded": "144",
+            "cardId": "A3-144",
+            "name": "Rare Candy"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B2",
+            "number": "145",
+            "numberPadded": "145",
+            "cardId": "B2-145",
+            "name": "Lucky Ice Pop"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "P-A",
+            "number": "5",
+            "numberPadded": "005",
+            "cardId": "P-A-005",
+            "name": "Poké Ball"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B4",
+            "number": "149",
+            "numberPadded": "149",
+            "cardId": "B4-149",
+            "name": "Clear Veil"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B4",
+            "number": "155",
+            "numberPadded": "155",
+            "cardId": "B4-155",
+            "name": "Rainbow Cave"
+          }
+        ],
+        "pokemonCount": 5,
+        "trainerCount": 15,
+        "totalCards": 20,
+        "uniqueCards": 13
+      }
+    },
+    {
+      "placing": null,
+      "name": "McDonuts",
+      "player": "mcdonuts",
+      "country": "US",
+      "record": {
+        "wins": 2,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "2-3-0",
+      "drop": 5,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "kto206",
+      "player": "kto206",
+      "country": "US",
+      "record": {
+        "wins": 2,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "2-3-0",
+      "drop": 5,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "luis01",
+      "player": "luis01",
+      "country": "BR",
+      "record": {
+        "wins": 2,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "2-3-0",
+      "drop": 5,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "nakopol91",
+      "player": "nakopol91",
+      "country": "GR",
+      "record": {
+        "wins": 2,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "2-3-0",
+      "drop": 5,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "DNT | Raybu",
+      "player": "rayblu",
+      "country": "IT",
+      "record": {
+        "wins": 2,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "2-4-0",
+      "drop": 6,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "hakomatotaco",
+      "player": "hakomatotaco",
+      "country": "PR",
+      "record": {
+        "wins": 1,
+        "losses": 1,
+        "ties": 0
+      },
+      "recordText": "1-1-0",
+      "drop": 2,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "MG .",
+      "player": "whitewolf_tv",
+      "country": "CL",
+      "record": {
+        "wins": 1,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "1-2-0",
+      "drop": 3,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "Shubham",
+      "player": "shubham",
+      "country": "IN",
+      "record": {
+        "wins": 1,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "1-2-0",
+      "drop": 3,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "Sparadrap",
+      "player": "sparadrap",
+      "country": "FR",
+      "record": {
+        "wins": 1,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "1-2-0",
+      "drop": 3,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "𝗕𝗔𝗗𝗗𝗜𝗘| keeks",
+      "player": "kaykaycuppy",
+      "country": "US",
+      "record": {
+        "wins": 1,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "1-2-0",
+      "drop": 3,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "𝗕𝗔𝗗𝗗𝗜𝗘| ²ꜱɪᴄᴋ",
+      "player": "2sick",
+      "country": "GB",
+      "record": {
+        "wins": 1,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "1-2-0",
+      "drop": 3,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "InfernalJelly",
+      "player": "infernaljelly",
+      "country": "ES",
+      "record": {
+        "wins": 1,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "1-3-0",
+      "drop": 4,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "JINNN",
+      "player": "joelm",
+      "country": "GR",
+      "record": {
+        "wins": 1,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "1-3-0",
+      "drop": 4,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "LeviathanKO",
+      "player": "leviathanko",
+      "country": "SK",
+      "record": {
+        "wins": 1,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "1-3-0",
+      "drop": 4,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "Prfseur_chiene",
+      "player": "prfseur_chiene",
+      "country": "FR",
+      "record": {
+        "wins": 1,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "1-3-0",
+      "drop": 4,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "TABABAGANI TABABAGANI",
+      "player": "tababahani",
+      "country": "JP",
+      "record": {
+        "wins": 1,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "1-3-0",
+      "drop": 4,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "TDL | MoonlightshurikenVT",
+      "player": "joshuasutherland21",
+      "country": "US",
+      "record": {
+        "wins": 1,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "1-3-0",
+      "drop": 4,
+      "deck": {
+        "id": "hydreigon-mega-absol-ex-b1",
+        "name": "Hydreigon Mega Absol ex",
+        "icons": [
+          "hydreigon",
+          "absol-mega"
+        ]
+      },
+      "decklistAvailable": true,
+      "decklist": {
+        "pokemon": [
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B1",
+            "number": "155",
+            "numberPadded": "155",
+            "cardId": "B1-155",
+            "name": "Deino"
+          },
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B1",
+            "number": "157",
+            "numberPadded": "157",
+            "cardId": "B1-157",
+            "name": "Hydreigon"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "B1",
+            "number": "151",
+            "numberPadded": "151",
+            "cardId": "B1-151",
+            "name": "Mega Absol ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "B3",
+            "number": "115",
+            "numberPadded": "115",
+            "cardId": "B3-115",
+            "name": "Bombirdier"
+          }
+        ],
+        "trainer": [
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "7",
+            "numberPadded": "007",
+            "cardId": "P-A-007",
+            "name": "Professor's Research"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B1",
+            "number": "225",
+            "numberPadded": "225",
+            "cardId": "B1-225",
+            "name": "Copycat"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A1",
+            "number": "225",
+            "numberPadded": "225",
+            "cardId": "A1-225",
+            "name": "Sabrina"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A2",
+            "number": "150",
+            "numberPadded": "150",
+            "cardId": "A2-150",
+            "name": "Cyrus"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "5",
+            "numberPadded": "005",
+            "cardId": "P-A-005",
+            "name": "Poké Ball"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "A3",
+            "number": "144",
+            "numberPadded": "144",
+            "cardId": "A3-144",
+            "name": "Rare Candy"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B2",
+            "number": "145",
+            "numberPadded": "145",
+            "cardId": "B2-145",
+            "name": "Lucky Ice Pop"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B4",
+            "number": "148",
+            "numberPadded": "148",
+            "cardId": "B4-148",
+            "name": "Deceptive Needle"
+          }
+        ],
+        "energy": [],
+        "cards": [
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B1",
+            "number": "155",
+            "numberPadded": "155",
+            "cardId": "B1-155",
+            "name": "Deino"
+          },
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B1",
+            "number": "157",
+            "numberPadded": "157",
+            "cardId": "B1-157",
+            "name": "Hydreigon"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "B1",
+            "number": "151",
+            "numberPadded": "151",
+            "cardId": "B1-151",
+            "name": "Mega Absol ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "B3",
+            "number": "115",
+            "numberPadded": "115",
+            "cardId": "B3-115",
+            "name": "Bombirdier"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "7",
+            "numberPadded": "007",
+            "cardId": "P-A-007",
+            "name": "Professor's Research"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B1",
+            "number": "225",
+            "numberPadded": "225",
+            "cardId": "B1-225",
+            "name": "Copycat"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A1",
+            "number": "225",
+            "numberPadded": "225",
+            "cardId": "A1-225",
+            "name": "Sabrina"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A2",
+            "number": "150",
+            "numberPadded": "150",
+            "cardId": "A2-150",
+            "name": "Cyrus"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "5",
+            "numberPadded": "005",
+            "cardId": "P-A-005",
+            "name": "Poké Ball"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "A3",
+            "number": "144",
+            "numberPadded": "144",
+            "cardId": "A3-144",
+            "name": "Rare Candy"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B2",
+            "number": "145",
+            "numberPadded": "145",
+            "cardId": "B2-145",
+            "name": "Lucky Ice Pop"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B4",
+            "number": "148",
+            "numberPadded": "148",
+            "cardId": "B4-148",
+            "name": "Deceptive Needle"
+          }
+        ],
+        "pokemonCount": 6,
+        "trainerCount": 14,
+        "totalCards": 20,
+        "uniqueCards": 12
+      }
+    },
+    {
+      "placing": null,
+      "name": "cura222222",
+      "player": "cura222222",
+      "country": "JP",
+      "record": {
+        "wins": 1,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "1-3-0",
+      "drop": 4,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "dyegopb",
+      "player": "dyegopb",
+      "country": "BR",
+      "record": {
+        "wins": 1,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "1-3-0",
+      "drop": 4,
+      "deck": {
+        "id": "hoopa-ex-b4-mega-absol-ex-b1",
+        "name": "Hoopa ex Mega Absol ex",
+        "icons": [
+          "hoopa",
+          "absol-mega"
+        ]
+      },
+      "decklistAvailable": true,
+      "decklist": {
+        "pokemon": [
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B4",
+            "number": "103",
+            "numberPadded": "103",
+            "cardId": "B4-103",
+            "name": "Hoopa ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "A2",
+            "number": "110",
+            "numberPadded": "110",
+            "cardId": "A2-110",
+            "name": "Darkrai ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "B1",
+            "number": "151",
+            "numberPadded": "151",
+            "cardId": "B1-151",
+            "name": "Mega Absol ex"
+          }
+        ],
+        "trainer": [
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "7",
+            "numberPadded": "007",
+            "cardId": "P-A-007",
+            "name": "Professor's Research"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B1",
+            "number": "225",
+            "numberPadded": "225",
+            "cardId": "B1-225",
+            "name": "Copycat"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "A2",
+            "number": "150",
+            "numberPadded": "150",
+            "cardId": "A2-150",
+            "name": "Cyrus"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "5",
+            "numberPadded": "005",
+            "cardId": "P-A-005",
+            "name": "Poké Ball"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B2",
+            "number": "145",
+            "numberPadded": "145",
+            "cardId": "B2-145",
+            "name": "Lucky Ice Pop"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A3a",
+            "number": "64",
+            "numberPadded": "064",
+            "cardId": "A3a-064",
+            "name": "Repel"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B3",
+            "number": "147",
+            "numberPadded": "147",
+            "cardId": "B3-147",
+            "name": "Field Blower"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B4",
+            "number": "148",
+            "numberPadded": "148",
+            "cardId": "B4-148",
+            "name": "Deceptive Needle"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B3b",
+            "number": "64",
+            "numberPadded": "064",
+            "cardId": "B3b-064",
+            "name": "Small Balloon"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B2",
+            "number": "154",
+            "numberPadded": "154",
+            "cardId": "B2-154",
+            "name": "Starting Plains"
+          }
+        ],
+        "energy": [],
+        "cards": [
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B4",
+            "number": "103",
+            "numberPadded": "103",
+            "cardId": "B4-103",
+            "name": "Hoopa ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "A2",
+            "number": "110",
+            "numberPadded": "110",
+            "cardId": "A2-110",
+            "name": "Darkrai ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "B1",
+            "number": "151",
+            "numberPadded": "151",
+            "cardId": "B1-151",
+            "name": "Mega Absol ex"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "7",
+            "numberPadded": "007",
+            "cardId": "P-A-007",
+            "name": "Professor's Research"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B1",
+            "number": "225",
+            "numberPadded": "225",
+            "cardId": "B1-225",
+            "name": "Copycat"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "A2",
+            "number": "150",
+            "numberPadded": "150",
+            "cardId": "A2-150",
+            "name": "Cyrus"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "5",
+            "numberPadded": "005",
+            "cardId": "P-A-005",
+            "name": "Poké Ball"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B2",
+            "number": "145",
+            "numberPadded": "145",
+            "cardId": "B2-145",
+            "name": "Lucky Ice Pop"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A3a",
+            "number": "64",
+            "numberPadded": "064",
+            "cardId": "A3a-064",
+            "name": "Repel"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B3",
+            "number": "147",
+            "numberPadded": "147",
+            "cardId": "B3-147",
+            "name": "Field Blower"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B4",
+            "number": "148",
+            "numberPadded": "148",
+            "cardId": "B4-148",
+            "name": "Deceptive Needle"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B3b",
+            "number": "64",
+            "numberPadded": "064",
+            "cardId": "B3b-064",
+            "name": "Small Balloon"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B2",
+            "number": "154",
+            "numberPadded": "154",
+            "cardId": "B2-154",
+            "name": "Starting Plains"
+          }
+        ],
+        "pokemonCount": 4,
+        "trainerCount": 16,
+        "totalCards": 20,
+        "uniqueCards": 13
+      }
+    },
+    {
+      "placing": null,
+      "name": "𝗕𝗮𝗹𝗱 Supreme",
+      "player": "supreme13",
+      "country": "US",
+      "record": {
+        "wins": 1,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "1-3-0",
+      "drop": 4,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "𝗙𝗚𝗥 || Tortellino69",
+      "player": "tortellino69",
+      "country": "IT",
+      "record": {
+        "wins": 1,
+        "losses": 4,
+        "ties": 0
+      },
+      "recordText": "1-4-0",
+      "drop": 5,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "Awbscene",
+      "player": "awbscene",
+      "country": "GT",
+      "record": {
+        "wins": 0,
+        "losses": 1,
+        "ties": 0
+      },
+      "recordText": "0-1-0",
+      "drop": 1,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "Faficha",
+      "player": "faficha",
+      "country": "AR",
+      "record": {
+        "wins": 0,
+        "losses": 1,
+        "ties": 0
+      },
+      "recordText": "0-1-0",
+      "drop": 1,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "IMO | DrBrandao I",
+      "player": "drbrandao",
+      "country": "BR",
+      "record": {
+        "wins": 0,
+        "losses": 1,
+        "ties": 0
+      },
+      "recordText": "0-1-0",
+      "drop": 1,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "Mart95 𝙉𝙇𝘾",
+      "player": "mart95nlc",
+      "country": "BR",
+      "record": {
+        "wins": 0,
+        "losses": 1,
+        "ties": 0
+      },
+      "recordText": "0-1-0",
+      "drop": 1,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "diegolq",
+      "player": "diegolq",
+      "country": null,
+      "record": {
+        "wins": 0,
+        "losses": 1,
+        "ties": 0
+      },
+      "recordText": "0-1-0",
+      "drop": 1,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "hakitcgp",
+      "player": "hakitcgp",
+      "country": "PR",
+      "record": {
+        "wins": 0,
+        "losses": 1,
+        "ties": 0
+      },
+      "recordText": "0-1-0",
+      "drop": 1,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "orangebomb512",
+      "player": "orangebomb512",
+      "country": "US",
+      "record": {
+        "wins": 0,
+        "losses": 1,
+        "ties": 0
+      },
+      "recordText": "0-1-0",
+      "drop": 1,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "𝗙𝗚𝗥 || GRV1",
+      "player": "grv1",
+      "country": "IT",
+      "record": {
+        "wins": 0,
+        "losses": 1,
+        "ties": 0
+      },
+      "recordText": "0-1-0",
+      "drop": 1,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "𝘀𝗭𝗲𝗿𝗼 | Yizzy",
+      "player": "yizzy_tcg1",
+      "country": "GB",
+      "record": {
+        "wins": 0,
+        "losses": 1,
+        "ties": 0
+      },
+      "recordText": "0-1-0",
+      "drop": 1,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "𝙂𝙎 | ICyriaco",
+      "player": "icyriaco",
+      "country": "BR",
+      "record": {
+        "wins": 0,
+        "losses": 1,
+        "ties": 0
+      },
+      "recordText": "0-1-0",
+      "drop": 1,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "Ahcolvin22",
+      "player": "ahcolvin22",
+      "country": "US",
+      "record": {
+        "wins": 0,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "0-2-0",
+      "drop": 2,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "PGX| El Atomico",
+      "player": "elatomico",
+      "country": "CO",
+      "record": {
+        "wins": 0,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "0-2-0",
+      "drop": 2,
+      "deck": {
+        "id": "mega-lucario-ex-b3-lucario-a2",
+        "name": "Mega Lucario ex Lucario",
+        "icons": [
+          "lucario-mega",
+          "lucario"
+        ]
+      },
+      "decklistAvailable": true,
+      "decklist": {
+        "pokemon": [
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B3",
+            "number": "79",
+            "numberPadded": "079",
+            "cardId": "B3-079",
+            "name": "Riolu"
+          },
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B3",
+            "number": "81",
+            "numberPadded": "081",
+            "cardId": "B3-081",
+            "name": "Mega Lucario ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "A2",
+            "number": "92",
+            "numberPadded": "092",
+            "cardId": "A2-092",
+            "name": "Lucario"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "B3",
+            "number": "78",
+            "numberPadded": "078",
+            "cardId": "B3-078",
+            "name": "Bonsly"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "A1",
+            "number": "154",
+            "numberPadded": "154",
+            "cardId": "A1-154",
+            "name": "Hitmonlee"
+          }
+        ],
+        "trainer": [
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "7",
+            "numberPadded": "007",
+            "cardId": "P-A-007",
+            "name": "Professor's Research"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B1",
+            "number": "225",
+            "numberPadded": "225",
+            "cardId": "B1-225",
+            "name": "Copycat"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B3",
+            "number": "149",
+            "numberPadded": "149",
+            "cardId": "B3-149",
+            "name": "Korrina"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A2",
+            "number": "150",
+            "numberPadded": "150",
+            "cardId": "A2-150",
+            "name": "Cyrus"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B2",
+            "number": "145",
+            "numberPadded": "145",
+            "cardId": "B2-145",
+            "name": "Lucky Ice Pop"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "5",
+            "numberPadded": "005",
+            "cardId": "P-A-005",
+            "name": "Poké Ball"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "P-A",
+            "number": "2",
+            "numberPadded": "002",
+            "cardId": "P-A-002",
+            "name": "X Speed"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B3",
+            "number": "147",
+            "numberPadded": "147",
+            "cardId": "B3-147",
+            "name": "Field Blower"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B3",
+            "number": "154",
+            "numberPadded": "154",
+            "cardId": "B3-154",
+            "name": "Arena of Antiquity"
+          }
+        ],
+        "energy": [],
+        "cards": [
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B3",
+            "number": "79",
+            "numberPadded": "079",
+            "cardId": "B3-079",
+            "name": "Riolu"
+          },
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "B3",
+            "number": "81",
+            "numberPadded": "081",
+            "cardId": "B3-081",
+            "name": "Mega Lucario ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "A2",
+            "number": "92",
+            "numberPadded": "092",
+            "cardId": "A2-092",
+            "name": "Lucario"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "B3",
+            "number": "78",
+            "numberPadded": "078",
+            "cardId": "B3-078",
+            "name": "Bonsly"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "A1",
+            "number": "154",
+            "numberPadded": "154",
+            "cardId": "A1-154",
+            "name": "Hitmonlee"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "7",
+            "numberPadded": "007",
+            "cardId": "P-A-007",
+            "name": "Professor's Research"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B1",
+            "number": "225",
+            "numberPadded": "225",
+            "cardId": "B1-225",
+            "name": "Copycat"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B3",
+            "number": "149",
+            "numberPadded": "149",
+            "cardId": "B3-149",
+            "name": "Korrina"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A2",
+            "number": "150",
+            "numberPadded": "150",
+            "cardId": "A2-150",
+            "name": "Cyrus"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B2",
+            "number": "145",
+            "numberPadded": "145",
+            "cardId": "B2-145",
+            "name": "Lucky Ice Pop"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "5",
+            "numberPadded": "005",
+            "cardId": "P-A-005",
+            "name": "Poké Ball"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "P-A",
+            "number": "2",
+            "numberPadded": "002",
+            "cardId": "P-A-002",
+            "name": "X Speed"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B3",
+            "number": "147",
+            "numberPadded": "147",
+            "cardId": "B3-147",
+            "name": "Field Blower"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B3",
+            "number": "154",
+            "numberPadded": "154",
+            "cardId": "B3-154",
+            "name": "Arena of Antiquity"
+          }
+        ],
+        "pokemonCount": 7,
+        "trainerCount": 13,
+        "totalCards": 20,
+        "uniqueCards": 14
+      }
+    },
+    {
+      "placing": null,
+      "name": "PattyD",
+      "player": "pattyd",
+      "country": "US",
+      "record": {
+        "wins": 0,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "0-2-0",
+      "drop": 2,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "SeanIV",
+      "player": "seaniv",
+      "country": "US",
+      "record": {
+        "wins": 0,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "0-2-0",
+      "drop": 2,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "TB | Aghnar",
+      "player": "aghnar14",
+      "country": "FR",
+      "record": {
+        "wins": 0,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "0-2-0",
+      "drop": 2,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "UNL | Kong",
+      "player": "avuuado",
+      "country": "BR",
+      "record": {
+        "wins": 0,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "0-2-0",
+      "drop": 2,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "nurcoco",
+      "player": "nurcoco",
+      "country": null,
+      "record": {
+        "wins": 0,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "0-2-0",
+      "drop": 2,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "𝗠𝗮𝗴𝗺𝗮 R",
+      "player": "r1nnegantcg",
+      "country": "GR",
+      "record": {
+        "wins": 0,
+        "losses": 2,
+        "ties": 0
+      },
+      "recordText": "0-2-0",
+      "drop": 2,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "Fury64140",
+      "player": "fury64140",
+      "country": "FR",
+      "record": {
+        "wins": 0,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "0-3-0",
+      "drop": 3,
+      "deck": {
+        "id": "incineroar-ex-a3-mega-charizard-y-ex-b1a",
+        "name": "Incineroar ex Mega Charizard Y ex",
+        "icons": [
+          "incineroar",
+          "charizard-mega-y"
+        ]
+      },
+      "decklistAvailable": true,
+      "decklist": {
+        "pokemon": [
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "A3",
+            "number": "30",
+            "numberPadded": "030",
+            "cardId": "A3-030",
+            "name": "Litten"
+          },
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "A3",
+            "number": "33",
+            "numberPadded": "033",
+            "cardId": "A3-033",
+            "name": "Incineroar ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "A1",
+            "number": "33",
+            "numberPadded": "033",
+            "cardId": "A1-033",
+            "name": "Charmander"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "B2b",
+            "number": "8",
+            "numberPadded": "008",
+            "cardId": "B2b-008",
+            "name": "Charmeleon"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "B1a",
+            "number": "14",
+            "numberPadded": "014",
+            "cardId": "B1a-014",
+            "name": "Mega Charizard Y ex"
+          }
+        ],
+        "trainer": [
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "7",
+            "numberPadded": "007",
+            "cardId": "P-A-007",
+            "name": "Professor's Research"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B1",
+            "number": "225",
+            "numberPadded": "225",
+            "cardId": "B1-225",
+            "name": "Copycat"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B1",
+            "number": "223",
+            "numberPadded": "223",
+            "cardId": "B1-223",
+            "name": "May"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B4",
+            "number": "153",
+            "numberPadded": "153",
+            "cardId": "B4-153",
+            "name": "Wally"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A2",
+            "number": "150",
+            "numberPadded": "150",
+            "cardId": "A2-150",
+            "name": "Cyrus"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B1",
+            "number": "217",
+            "numberPadded": "217",
+            "cardId": "B1-217",
+            "name": "Flame Patch"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "A3",
+            "number": "144",
+            "numberPadded": "144",
+            "cardId": "A3-144",
+            "name": "Rare Candy"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "5",
+            "numberPadded": "005",
+            "cardId": "P-A-005",
+            "name": "Poké Ball"
+          }
+        ],
+        "energy": [],
+        "cards": [
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "A3",
+            "number": "30",
+            "numberPadded": "030",
+            "cardId": "A3-030",
+            "name": "Litten"
+          },
+          {
+            "section": "pokemon",
+            "count": 2,
+            "set": "A3",
+            "number": "33",
+            "numberPadded": "033",
+            "cardId": "A3-033",
+            "name": "Incineroar ex"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "A1",
+            "number": "33",
+            "numberPadded": "033",
+            "cardId": "A1-033",
+            "name": "Charmander"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "B2b",
+            "number": "8",
+            "numberPadded": "008",
+            "cardId": "B2b-008",
+            "name": "Charmeleon"
+          },
+          {
+            "section": "pokemon",
+            "count": 1,
+            "set": "B1a",
+            "number": "14",
+            "numberPadded": "014",
+            "cardId": "B1a-014",
+            "name": "Mega Charizard Y ex"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "7",
+            "numberPadded": "007",
+            "cardId": "P-A-007",
+            "name": "Professor's Research"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B1",
+            "number": "225",
+            "numberPadded": "225",
+            "cardId": "B1-225",
+            "name": "Copycat"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B1",
+            "number": "223",
+            "numberPadded": "223",
+            "cardId": "B1-223",
+            "name": "May"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "B4",
+            "number": "153",
+            "numberPadded": "153",
+            "cardId": "B4-153",
+            "name": "Wally"
+          },
+          {
+            "section": "trainer",
+            "count": 1,
+            "set": "A2",
+            "number": "150",
+            "numberPadded": "150",
+            "cardId": "A2-150",
+            "name": "Cyrus"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "B1",
+            "number": "217",
+            "numberPadded": "217",
+            "cardId": "B1-217",
+            "name": "Flame Patch"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "A3",
+            "number": "144",
+            "numberPadded": "144",
+            "cardId": "A3-144",
+            "name": "Rare Candy"
+          },
+          {
+            "section": "trainer",
+            "count": 2,
+            "set": "P-A",
+            "number": "5",
+            "numberPadded": "005",
+            "cardId": "P-A-005",
+            "name": "Poké Ball"
+          }
+        ],
+        "pokemonCount": 7,
+        "trainerCount": 13,
+        "totalCards": 20,
+        "uniqueCards": 13
+      }
+    },
+    {
+      "placing": null,
+      "name": "IamCOMPLEX",
+      "player": "iamcomplex",
+      "country": "JP",
+      "record": {
+        "wins": 0,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "0-3-0",
+      "drop": 3,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "TB | Naoki",
+      "player": "naoki",
+      "country": "FR",
+      "record": {
+        "wins": 0,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "0-3-0",
+      "drop": 3,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "Vegegras",
+      "player": "vegegras",
+      "country": "FR",
+      "record": {
+        "wins": 0,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "0-3-0",
+      "drop": 3,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "eLMarcoO",
+      "player": "elmarcoo",
+      "country": "MX",
+      "record": {
+        "wins": 0,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "0-3-0",
+      "drop": 3,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    },
+    {
+      "placing": null,
+      "name": "zerkey",
+      "player": "zerkey",
+      "country": "FR",
+      "record": {
+        "wins": 0,
+        "losses": 3,
+        "ties": 0
+      },
+      "recordText": "0-3-0",
+      "drop": 3,
+      "deck": {
+        "id": null,
+        "name": null,
+        "icons": []
+      },
+      "decklistAvailable": false,
+      "decklist": null
+    }
+  ],
+  "source": {
+    "index": {
+      "game": "POCKET",
+      "name": "The TCGP Arena #5! Prizing: Full Art TRA Cards!",
+      "date": "2026-08-27T17:00:00.000Z",
+      "format": null,
+      "id": "6a8de28f0580a332c841fd99",
+      "players": 108,
+      "organizerId": 2320
+    },
+    "details": {
+      "id": "6a8de28f0580a332c841fd99",
+      "game": "POCKET",
+      "format": null,
+      "name": "The TCGP Arena #5! Prizing: Full Art TRA Cards!",
+      "date": "2026-08-27T17:00:00.000Z",
+      "players": 108,
+      "organizer": {
+        "id": 2320,
+        "name": "TCG Grand Trainers"
+      },
+      "decklists": false,
+      "isPublic": true,
+      "isOnline": true,
+      "phases": [
+        {
+          "phase": 1,
+          "type": "SWISS",
+          "rounds": 7,
+          "mode": "BO1"
+        },
+        {
+          "phase": 2,
+          "type": "SINGLE_BRACKET",
+          "rounds": 1,
+          "mode": "BO3"
+        }
+      ]
+    }
+  }
+}
