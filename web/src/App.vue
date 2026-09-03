@@ -320,6 +320,8 @@ const FOOTER_VERSION_MARKERS = [
   { code: "B3", startMs: Date.UTC(2026, 3, 28) },
   { code: "B3a", startMs: Date.UTC(2026, 4, 28) },
   { code: "B3b", startMs: Date.UTC(2026, 5, 30) },
+  { code: "B4", startMs: Date.UTC(2026, 6, 30) },
+  { code: "B4a", startMs: Date.UTC(2026, 7, 27) },
 ] as const;
 
 function dataUrl(fileName: string) {

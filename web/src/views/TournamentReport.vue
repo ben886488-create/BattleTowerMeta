@@ -169,6 +169,7 @@
 import { computed, reactive, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import CardImageWithCount from "../components/ui/CardImageWithCount.vue";
+import cardImageManifest from "../assets/limitless_dump/limitless_image_manifest.json";
 
 type TournamentIndexRow = {
   game?: string;
@@ -259,30 +260,13 @@ async function fetchJson<T>(url: string): Promise<T> {
   return (await res.json()) as T;
 }
 
-// 卡圖
-const rawCardImageModules = import.meta.glob(
-  "../assets/limitless_dump/images/**/*.{png,jpg,jpeg,webp,avif}",
-  { eager: true, import: "default" }
-) as Record<string, string>;
-
-const cardImageMap = new Map<string, string>();
-
-for (const [path, url] of Object.entries(rawCardImageModules)) {
-  const normalized = path.replace(/\\/g, "/");
-  const parts = normalized.split("/");
-
-  const folder = (parts[parts.length - 2] || "").toUpperCase();
-  const file = (parts[parts.length - 1] || "").replace(/\.[^.]+$/, "");
-  const base = file.toUpperCase();
-
-  if (!base) continue;
-
-  cardImageMap.set(base, url);
-
-  if (folder) {
-    cardImageMap.set(`${folder}/${base}`, url);
-  }
-}
+// 卡圖由 public 靜態目錄提供，避免把近 4,000 張圖片編進 SSR manifest。
+const cardImageMap = new Map<string, string>(
+  Object.entries(cardImageManifest).map(([key, relativePath]) => [
+    key.toUpperCase(),
+    `${BASE_URL}${String(relativePath).replace(/^\/+/, "")}`,
+  ]),
+);
 
 // 牌組代表 icon
 const rawDeckIconModules = import.meta.glob(
@@ -396,13 +380,7 @@ function resolveCardImage(card: DeckCardRow) {
 
   if (!set || !base) return "";
 
-  const direct = cardImageMap.get(`${set}/${base}`);
-  if (direct) return direct;
-
-  const fallback = cardImageMap.get(base);
-  if (fallback) return fallback;
-
-  return "";
+  return cardImageMap.get(`${set}/${base}`) ?? "";
 }
 
 function markCardBroken(card: DeckCardRow) {

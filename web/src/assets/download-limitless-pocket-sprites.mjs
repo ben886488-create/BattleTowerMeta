@@ -1,10 +1,10 @@
 // download-limitless-pocket-sprites.mjs
 import fs from "node:fs/promises";
 import path from "node:path";
-import { chromium } from "playwright";
 
 const START_URL = "https://play.limitlesstcg.com/decks?game=POCKET";
-const OUT_DIR = path.resolve("limitless-pocket-sprites");
+const OUT_DIR = path.resolve("web/src/assets/deck-icons");
+const TOP_DECKS_PATH = path.resolve("web/public/data/precomputed/top_decks.json");
 const CONCURRENCY = 8;
 
 const HEADERS = {
@@ -15,58 +15,33 @@ const HEADERS = {
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-async function expandAllDecks(page) {
-  while (true) {
-    const button = page.getByText("Show all decks", { exact: true }).first();
-    const visible = await button.isVisible().catch(() => false);
-    if (!visible) break;
-
-    const before = await page
-      .locator('a[href*="r2.limitlesstcg.net/pokemon/gen9/"]')
-      .count();
-
-    await button.click();
-    await page.waitForLoadState("networkidle").catch(() => {});
-    await page.waitForTimeout(1500);
-
-    const after = await page
-      .locator('a[href*="r2.limitlesstcg.net/pokemon/gen9/"]')
-      .count();
-
-    if (after <= before) break;
-  }
-}
-
 async function collectSpriteUrls() {
-  const browser = await chromium.launch({ headless: true });
-  const page = await browser.newPage({ userAgent: HEADERS["user-agent"] });
+  const response = await fetch(START_URL, { headers: HEADERS });
+  if (!response.ok) {
+    throw new Error(`${response.status} ${response.statusText}`);
+  }
 
-  await page.goto(START_URL, { waitUntil: "domcontentloaded" });
-  await page.waitForLoadState("networkidle");
-  await expandAllDecks(page);
+  const html = await response.text();
+  const matches = html.match(
+    /https:\/\/r2\.limitlesstcg\.net\/pokemon\/gen9\/[^"'<>?]+\.png/gi,
+  ) ?? [];
+  const urls = new Set(matches);
 
-  const urls = await page.evaluate(() => {
-    const re = /\/pokemon\/gen9\/[^/?#]+\.png$/i;
-    const set = new Set();
-
-    for (const a of document.querySelectorAll(
-      'a[href*="r2.limitlesstcg.net/pokemon/gen9/"]'
-    )) {
-      if (re.test(a.href)) set.add(a.href);
+  try {
+    const topDecks = JSON.parse(await fs.readFile(TOP_DECKS_PATH, "utf8"));
+    for (const scope of Object.values(topDecks.scopes ?? {})) {
+      for (const row of scope.rows ?? []) {
+        for (const iconKey of row.iconKeys ?? []) {
+          if (!iconKey) continue;
+          urls.add(`https://r2.limitlesstcg.net/pokemon/gen9/${iconKey}.png`);
+        }
+      }
     }
+  } catch (error) {
+    console.warn(`Could not load ${TOP_DECKS_PATH}: ${error.message}`);
+  }
 
-    for (const img of document.querySelectorAll(
-      'img[src*="r2.limitlesstcg.net/pokemon/gen9/"]'
-    )) {
-      const src = img.currentSrc || img.src;
-      if (re.test(src)) set.add(src);
-    }
-
-    return [...set].sort();
-  });
-
-  await browser.close();
-  return urls;
+  return [...urls].sort();
 }
 
 async function downloadSprite(url) {
@@ -147,3 +122,26 @@ await mapLimit(urls, CONCURRENCY, async (url) => {
 });
 
 console.log("\nFinished.");
+
+const manifestPath = path.join(OUT_DIR, "manifest.json");
+let existingManifest = [];
+try {
+  existingManifest = JSON.parse(await fs.readFile(manifestPath, "utf8"));
+} catch {
+  // A missing or invalid manifest is rebuilt from the current source page.
+}
+
+const manifestBySlug = new Map(
+  existingManifest.map((item) => [item.slug, item]),
+);
+for (const url of urls) {
+  const file = decodeURIComponent(path.basename(new URL(url).pathname));
+  const slug = path.parse(file).name;
+  manifestBySlug.set(slug, { slug, file, src: url });
+}
+
+const manifest = [...manifestBySlug.values()].sort((a, b) =>
+  a.slug.localeCompare(b.slug),
+);
+await fs.writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
+console.log(`Updated ${manifestPath} (${manifest.length} entries).`);

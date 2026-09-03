@@ -26,19 +26,24 @@ type TierRow = {
 }
 
 async function loadDeckProfileRoutes() {
-  const [{ readFile }, pathModule] = await Promise.all([
+  const [{ readFile, readdir }, pathModule] = await Promise.all([
     import('node:fs/promises'),
     import('node:path'),
   ])
 
   const tierJsonPath = pathModule.resolve(process.cwd(), 'public/data/tier.json')
+  const profileDir = pathModule.resolve(process.cwd(), 'public/data/precomputed/deck_profiles')
   const tierRows = JSON.parse(await readFile(tierJsonPath, 'utf-8')) as TierRow[]
+  const profileFiles = await readdir(profileDir)
 
   const deckKeys = Array.from(
     new Set(
-      tierRows
-        .map((row) => row.deck?.trim())
-        .filter((value): value is string => Boolean(value)),
+      [
+        ...tierRows.map((row) => row.deck?.trim()),
+        ...profileFiles
+          .filter((fileName) => fileName.endsWith('.json') && fileName !== 'index.json')
+          .map((fileName) => fileName.replace(/\.json$/i, '')),
+      ].filter((value): value is string => Boolean(value)),
     ),
   )
 

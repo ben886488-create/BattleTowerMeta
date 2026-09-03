@@ -50,6 +50,8 @@ VERSION_MARKERS = [
     ("B3", "Pulsing Aura", (2026, 4, 28)),
     ("B3a", "Paradox Drive", (2026, 5, 28)),
     ("B3b", "Everyday Wonders", (2026, 6, 30)),
+    ("B4", "Ruler of the Skies", (2026, 7, 30)),
+    ("B4a", "Team Rocket's Ambition", (2026, 8, 27)),
 ]
 
 

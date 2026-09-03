@@ -833,6 +833,7 @@ import { inTimeRange as matchesTimeFilter } from "../lib/playerEntries";
 import oneCopyDiskIcon from "../assets/deck-disks/3.png";
 import twoCopyDiskIcon from "../assets/deck-disks/4.png";
 import cardsCatalogUrl from "../assets/limitless_dump/limitless_cards.json?url";
+import cardImageManifest from "../assets/limitless_dump/limitless_image_manifest.json";
 import {
   buildDeckProfileScopeKey,
   buildTopDecksScopeKey,
@@ -1576,6 +1577,8 @@ const VERSION_MARKERS: VersionMarker[] = [
   { code: "B3", name: "Pulsing Aura", startMs: utcMs(2026, 4, 28) },
   { code: "B3a", name: "Paradox Drive", startMs: utcMs(2026, 5, 28) },
   { code: "B3b", name: "Everyday Wonders", startMs: utcMs(2026, 6, 30) },
+  { code: "B4", name: "Ruler of the Skies", startMs: utcMs(2026, 7, 30) },
+  { code: "B4a", name: "Team Rocket's Ambition", startMs: utcMs(2026, 8, 27) },
 ];
 
 const VERSION_WINDOWS: VersionWindow[] = VERSION_MARKERS.map((item, index, arr) => ({
@@ -2705,67 +2708,19 @@ function buildTournamentReportCardBase(set: unknown, number: unknown) {
   };
 }
 
-const rawCardImageModules = import.meta.glob(
-  "../assets/limitless_dump/images/**/*.{png,jpg,jpeg,webp,avif}",
-  {
-    eager: true,
-    import: "default",
-  },
-) as Record<string, string>;
-
-const tournamentReportCardImageMap = new Map<string, string>();
-const localCardImageByCode = new Map<string, string>();
-const localCardImageByName = new Map<string, string>();
-
-for (const [filePath, url] of Object.entries(rawCardImageModules)) {
-  const normalizedPath = filePath.replace(/\\/g, "/");
-  const parts = normalizedPath.split("/");
-  const folderForBase = normalizeCardImageSet(parts[parts.length - 2] ?? "");
-  const setFolderForCode = normalizeSetCode(parts[parts.length - 2] ?? "");
-  const fileName = parts[parts.length - 1] ?? "";
-  const stem = fileName.replace(/\.[^.]+$/, "");
-  const upperStem = stem.toUpperCase();
-
-  if (upperStem) {
-    tournamentReportCardImageMap.set(upperStem, url);
-
-    if (folderForBase) {
-      tournamentReportCardImageMap.set(`${folderForBase}/${upperStem}`, url);
-    }
-  }
-
-  const directCode = normalizeCardCode(stem);
-  if (directCode && !localCardImageByCode.has(directCode)) {
-    localCardImageByCode.set(directCode, url);
-  }
-
-  if (setFolderForCode) {
-    const match = upperStem.match(new RegExp(`^${folderForBase}_(\\d+[A-Z]?)_EN_SM$`));
-    const numberPart = match?.[1];
-
-    if (numberPart) {
-      const codeFromFile = normalizeCardCode(`${setFolderForCode}-${numberPart.toLowerCase()}`);
-      if (codeFromFile && !localCardImageByCode.has(codeFromFile)) {
-        localCardImageByCode.set(codeFromFile, url);
-      }
-    }
-  }
-
-  const nameKey = slugify(stem);
-  if (nameKey && !localCardImageByName.has(nameKey)) {
-    localCardImageByName.set(nameKey, url);
-  }
-}
+const CARD_IMAGE_BASE_URL = import.meta.env.BASE_URL ?? "/";
+const tournamentReportCardImageMap = new Map<string, string>(
+  Object.entries(cardImageManifest).map(([key, relativePath]) => [
+    key.toUpperCase(),
+    `${CARD_IMAGE_BASE_URL}${String(relativePath).replace(/^\/+/, "")}`,
+  ]),
+);
 
 function resolveTournamentReportStyleCardImage(set: unknown, number: unknown) {
   const { setKey, base } = buildTournamentReportCardBase(set, number);
   if (!setKey || !base) return "";
 
-  return (
-    tournamentReportCardImageMap.get(`${setKey}/${base}`) ??
-    tournamentReportCardImageMap.get(base) ??
-    ""
-  );
+  return tournamentReportCardImageMap.get(`${setKey}/${base}`) ?? "";
 }
 
 function normalizeMaybeAbsoluteUrl(value: unknown) {
@@ -2830,12 +2785,7 @@ function resolveCardImageUrl(input: {
     const byCodeParts = resolveTournamentReportStyleCardImage(codeParts.set, codeParts.number);
     if (byCodeParts) return byCodeParts;
 
-    const byCode = localCardImageByCode.get(normalizedCode);
-    if (byCode) return byCode;
   }
-
-  const byName = localCardImageByName.get(slugify(input.name));
-  if (byName) return byName;
 
   return "";
 }

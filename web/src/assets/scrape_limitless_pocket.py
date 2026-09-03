@@ -598,27 +598,76 @@ def parse_card_page(raw_html, detail_url):
 
 def download_image(session, image_url, out_root, set_code, delay=0.15, timeout=30):
     if not image_url:
-        return None
+        return None, None
 
-    filename = Path(urlparse(image_url).path).name
     image_dir = out_root / "images" / (set_code or "unknown")
     image_dir.mkdir(parents=True, exist_ok=True)
-    image_path = image_dir / filename
 
-    if image_path.exists() and image_path.stat().st_size > 0:
-        return image_path
+    candidates = [(image_url, Path(urlparse(image_url).path).name)]
+    filename_match = re.search(r"_(\d+)_EN(?:_SM)?\.(?:webp|png|jpe?g)$", candidates[0][1], re.I)
+    if filename_match and set_code:
+        number = int(filename_match.group(1))
+        fallback_url = (
+            "https://pocket.pokemongohub.net/tcg-pocket/cards/"
+            f"{set_code.lower()}/{number}_en.png"
+        )
+        fallback_name = f"{set_code}_{number:03d}_EN_SM.png"
+        candidates.append((fallback_url, fallback_name))
+        if set_code.upper() == "P-B":
+            candidates.append(
+                (
+                    f"https://www.serebii.net/tcgpocket/promo-b/{number}.jpg",
+                    f"{set_code}_{number:03d}_EN_SM.jpg",
+                )
+            )
 
-    sleep_delay(delay)
-    with session.get(image_url, stream=True, timeout=timeout) as resp:
-        resp.raise_for_status()
-        tmp = image_path.with_suffix(image_path.suffix + ".tmp")
-        with open(tmp, "wb") as f:
-            for chunk in resp.iter_content(chunk_size=1024 * 64):
-                if chunk:
-                    f.write(chunk)
-        tmp.replace(image_path)
+    last_error = None
+    for candidate_url, filename in candidates:
+        image_path = image_dir / filename
+        if image_path.exists() and image_path.stat().st_size > 0:
+            return image_path, candidate_url
 
-    return image_path
+        try:
+            sleep_delay(delay)
+            with session.get(candidate_url, stream=True, timeout=timeout) as resp:
+                resp.raise_for_status()
+                tmp = image_path.with_suffix(image_path.suffix + ".tmp")
+                with open(tmp, "wb") as f:
+                    for chunk in resp.iter_content(chunk_size=1024 * 64):
+                        if chunk:
+                            f.write(chunk)
+                tmp.replace(image_path)
+            return image_path, candidate_url
+        except requests.RequestException as error:
+            last_error = error
+
+    if last_error:
+        raise last_error
+    return None, None
+
+
+def build_image_manifest(out_root):
+    images_root = out_root / "images"
+    manifest = {}
+
+    if images_root.exists():
+        for image_path in sorted(images_root.rglob("*")):
+            if not image_path.is_file() or image_path.suffix.lower() not in {
+                ".png",
+                ".jpg",
+                ".jpeg",
+                ".webp",
+                ".avif",
+            }:
+                continue
+
+            relative_path = image_path.relative_to(images_root)
+            set_folder = relative_path.parts[0] if relative_path.parts else ""
+            manifest_key = f"{set_folder.upper()}/{image_path.stem.upper()}"
+            manifest[manifest_key] = f"card-images/{relative_path.as_posix()}"
+
+    save_json(out_root / "limitless_image_manifest.json", manifest)
+    return manifest
 
 
 def main():
@@ -658,7 +707,8 @@ def main():
     cards = load_json(cards_path, []) if args.resume else []
     errors = load_json(errors_path, []) if args.resume else []
 
-    seen_urls = {c.get("detail_url") for c in cards if c.get("detail_url")}
+    card_by_url = {c.get("detail_url"): c for c in cards if c.get("detail_url")}
+    seen_urls = set(card_by_url)
     attempted_this_run = 0
 
     for s in sets:
@@ -672,6 +722,35 @@ def main():
             detail_url = f"{BASE_URL}/cards/{set_code}/{number}"
 
             if detail_url in seen_urls:
+                existing_card = card_by_url.get(detail_url)
+                if (
+                    not args.skip_images
+                    and existing_card
+                    and not existing_card.get("image_path")
+                ):
+                    try:
+                        image_path, resolved_image_url = download_image(
+                            session,
+                            existing_card.get("image_url"),
+                            out_root,
+                            set_code,
+                            delay=args.delay,
+                            timeout=args.timeout,
+                        )
+                        existing_card["image_path"] = (
+                            str(image_path).replace("\\", "/") if image_path else None
+                        )
+                        if resolved_image_url:
+                            existing_card["image_url"] = resolved_image_url
+                        errors = [
+                            item for item in errors if item.get("detail_url") != detail_url
+                        ]
+                        save_json(cards_path, cards)
+                        save_json(errors_path, errors)
+                        print(f"[image recovered] {detail_url}")
+                        continue
+                    except requests.RequestException as image_error:
+                        print(f"[image warning] {detail_url}: {image_error}")
                 print(f"[skip] {detail_url}")
                 continue
 
@@ -694,20 +773,31 @@ def main():
                 card = parse_card_page(raw_html, detail_url)
 
                 if not args.skip_images:
-                    image_path = download_image(
-                        session,
-                        card.get("image_url"),
-                        out_root,
-                        set_code,
-                        delay=args.delay,
-                        timeout=args.timeout,
-                    )
+                    try:
+                        image_path, resolved_image_url = download_image(
+                            session,
+                            card.get("image_url"),
+                            out_root,
+                            set_code,
+                            delay=args.delay,
+                            timeout=args.timeout,
+                        )
+                    except requests.RequestException as image_error:
+                        # A newly released image can lag behind the card page or
+                        # reject automated downloads. Keep the card metadata so
+                        # deck parsing and statistics do not silently lose it.
+                        image_path, resolved_image_url = None, None
+                        print(f"  IMAGE WARNING: {image_error}")
                     card["image_path"] = str(image_path).replace("\\", "/") if image_path else None
+                    if resolved_image_url:
+                        card["image_url"] = resolved_image_url
                 else:
                     card["image_path"] = None
 
                 cards.append(card)
+                card_by_url[detail_url] = card
                 seen_urls.add(detail_url)
+                errors = [item for item in errors if item.get("detail_url") != detail_url]
 
                 print(f"  OK: {card['name']} ({card['set_code']} #{card['number']})")
 
@@ -719,12 +809,15 @@ def main():
             save_json(cards_path, cards)
             save_json(errors_path, errors)
 
+    image_manifest = build_image_manifest(out_root)
+
     print("\nDone.")
     print(f"Saved cards:  {cards_path}")
     print(f"Saved sets:   {sets_path}")
     print(f"Saved errors: {errors_path}")
     if not args.skip_images:
         print(f"Saved images: {out_root / 'images'}")
+    print(f"Image index:  {len(image_manifest)} files")
 
 
 if __name__ == "__main__":

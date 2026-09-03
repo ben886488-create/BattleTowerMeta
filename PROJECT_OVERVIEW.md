@@ -1,7 +1,7 @@
 # BattleTowerMeta 專案總覽
 
-> 更新日期：2026-07-03
-> 目前遊戲版本：B3b - Everyday Wonders
+> 更新日期：2026-09-03
+> 目前遊戲版本：B4a - Team Rocket's Ambition（火箭隊的野心）
 > 用途：新協作者交接、功能開發，以及大型視覺改版前的共同基準
 
 ## 1. 專案定位
@@ -25,17 +25,18 @@ BattleTowerMeta 不是單純的勝率排行榜。它同時呈現：
 
 ## 2. 目前狀態快照
 
-以下數字是 2026-07-03 資料更新後的快照，之後會隨每日 pipeline 改變：
+以下數字是 2026-09-03 資料更新後的快照，之後會隨每日 pipeline 改變：
 
 | 項目 | 目前狀態 |
 | --- | ---: |
-| 收錄賽事 | 1,532 |
-| 全部參賽紀錄 | 313,619 |
-| Top 32 樣本位置 | 47,572 |
-| 牌組 sprite PNG | 363 |
-| 卡片圖 | 3,512 |
-| 目前卡包 | B3b - Everyday Wonders |
-| B3b 卡片數 | 106 |
+| 收錄賽事 | 1,655 |
+| 全部參賽紀錄 | 330,076 |
+| Top 32 樣本位置 | 51,475 |
+| 牌組 sprite PNG | 434 |
+| 卡片圖 | 3,871 |
+| 目前卡包 | B4a - Team Rocket's Ambition（火箭隊的野心） |
+| B4 卡片數 | 233 |
+| B4a 卡片數 | 110 |
 
 核心 production URL：
 
@@ -505,7 +506,7 @@ web/src/assets/limitless_dump/limitless_cards.json
 web/src/assets/limitless_dump/images/<set>/*.webp
 ```
 
-目前 catalog 已包含 B3b。
+目前 catalog 已包含 B4 與 B4a。
 
 ### 14.3 卡片數量 badge
 
@@ -790,7 +791,7 @@ TopCards：
 
 - card grid 比例一致
 - 卡片圖、投入率、1x / 2x icon 不重疊
-- B3b 與之後新版本卡圖可載入
+- B4／B4a 與之後新版本卡圖可載入
 
 ## 21. 不要直接修改的內容
 
