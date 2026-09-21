@@ -12,6 +12,8 @@ UNLIMITED_DAYS = os.environ.get("UNLIMITED_DAYS", "False").lower() == "true"
 # 兼容原有配置：仅当 UNLIMITED_DAYS=False 时生效
 DAYS_BACK = int(os.environ.get("DAYS_BACK", "7"))
 MIN_PLAYERS = int(os.environ.get("MIN_PLAYERS", "64"))
+# 定期更新預設會重抓近期已收錄賽事，避免賽事尚未結束時保存的快照永久停留。
+REFRESH_RECENT = os.environ.get("REFRESH_RECENT", "true").lower() == "true"
 REQUEST_GAP_SEC = float(os.environ.get("REQUEST_GAP_SEC", 2.0))
 BATCH_SIZE = 10
 BATCH_SLEEP_SEC = 5.0
@@ -83,6 +85,69 @@ def write_json(path, obj):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(obj, f, ensure_ascii=False, indent=2)
+
+def normalize_hoopa_ex_icons(standings):
+    """Fix legacy Limitless rows that label Hoopa ex with the confined-form icon."""
+    if not isinstance(standings, list):
+        return 0
+
+    changed_rows = 0
+    for row in standings:
+        if not isinstance(row, dict):
+            continue
+
+        deck = row.get("deck")
+        if not isinstance(deck, dict):
+            continue
+
+        deck_id = str(deck.get("id") or "").strip().lower()
+        deck_name = str(deck.get("name") or "").strip().lower()
+        pokemon = ((row.get("decklist") or {}).get("pokemon") or [])
+        has_hoopa_ex_card = any(
+            isinstance(card, dict)
+            and str(card.get("name") or "").strip().lower() == "hoopa ex"
+            for card in pokemon
+        )
+        is_hoopa_ex = (
+            "hoopa-ex" in deck_id
+            or "hoopa ex" in deck_name
+            or has_hoopa_ex_card
+        )
+        icons = deck.get("icons")
+        if not is_hoopa_ex or not isinstance(icons, list):
+            continue
+
+        normalized = [
+            "hoopa-unbound" if str(icon).strip().lower() == "hoopa" else icon
+            for icon in icons
+        ]
+        if normalized != icons:
+            deck["icons"] = normalized
+            changed_rows += 1
+
+    return changed_rows
+
+def migrate_existing_hoopa_ex_icons(tournament_ids):
+    """Normalize archived standings so every site surface uses the correct icon."""
+    changed_files = 0
+    changed_rows = 0
+
+    for tid in sorted(tournament_ids):
+        path = f"web/public/data/raw/{tid}/standings.json"
+        if not os.path.exists(path):
+            continue
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                standings = json.load(f)
+            row_count = normalize_hoopa_ex_icons(standings)
+            if row_count:
+                write_json(path, standings)
+                changed_files += 1
+                changed_rows += row_count
+        except Exception as e:
+            print(f"⚠️ 賽事{tid}舊 standings 圖示正規化失敗：{e}")
+
+    return changed_files, changed_rows
 
 def fetch_text(url: str, api_type: str = "html", tid: str = "unknown"):
     global _last_request_ts
@@ -306,7 +371,7 @@ def load_existing_tournaments():
         print(f"❌ 读取旧赛事列表失败：{str(e)} | 忽略旧数据，按新数据处理")
         return []
 
-# ===================== 核心逻辑（增量更新） =====================
+# ===================== 核心逻辑（新增 + 近期刷新） =====================
 def main():
     global failed_tournaments
     failed_tournaments = []
@@ -315,31 +380,41 @@ def main():
     existing_tournaments = load_existing_tournaments()
     existing_tids = {t["id"] for t in existing_tournaments if "id" in t}
 
-    new_tournaments = fetch_recent_tournaments()
-    added_tournaments = [t for t in new_tournaments if t["id"] not in existing_tids]
+    migrated_files, migrated_rows = migrate_existing_hoopa_ex_icons(existing_tids)
+    print(
+        f"✅ Hoopa ex 圖示正規化完成 | "
+        f"更新檔案：{migrated_files} | 更新列：{migrated_rows}"
+    )
+
+    recent_tournaments = fetch_recent_tournaments()
+    added_tournaments = [t for t in recent_tournaments if t["id"] not in existing_tids]
     added_tids = {t["id"] for t in added_tournaments}
+    refresh_tournaments = recent_tournaments if REFRESH_RECENT else added_tournaments
+    refresh_tids = {t["id"] for t in refresh_tournaments}
 
-    print(f"\n📊 增量統計：")
+    print(f"\n📊 更新統計：")
     print(f"  - 舊賽事ID數量：{len(existing_tids)}")
-    print(f"  - 新抓取賽事ID數量：{len({t['id'] for t in new_tournaments})}")
+    print(f"  - 近期符合門檻賽事ID數量：{len({t['id'] for t in recent_tournaments})}")
     print(f"  - 新增賽事ID數量：{len(added_tids)}")
+    print(f"  - 重新抓取既有賽事ID數量：{len(refresh_tids & existing_tids)}")
 
-    total_added = len(added_tournaments)
-    if total_added == 0:
-        print("\n⚠️ 無新增賽事，結束流程")
+    total_candidates = len(refresh_tournaments)
+    if total_candidates == 0:
+        print("\n⚠️ 無符合條件的賽事需要更新，結束流程")
         return
 
-    valid_added_tournaments = []
+    valid_refreshed_tournaments = []
     excluded_tournaments = []
 
-    print(f"\n===== 開始檢查 {total_added} 場新增賽事 =====")
+    mode_label = "近期完整刷新" if REFRESH_RECENT else "僅新增賽事"
+    print(f"\n===== 開始{mode_label}：共 {total_candidates} 場候選賽事 =====")
 
-    for idx, t in enumerate(added_tournaments, start=1):
+    for idx, t in enumerate(refresh_tournaments, start=1):
         tid = t["id"]
-        print(f"\n===== 處理第 {idx}/{total_added} 場新增賽事 | ID: {tid} =====")
+        print(f"\n===== 處理第 {idx}/{total_candidates} 場賽事 | ID: {tid} =====")
 
-        if idx % BATCH_SIZE == 0 and idx != total_added:
-            print(f"📌 已處理{idx}場新增賽事，休息{BATCH_SLEEP_SEC}秒...")
+        if idx % BATCH_SIZE == 0 and idx != total_candidates:
+            print(f"📌 已處理{idx}場賽事，休息{BATCH_SLEEP_SEC}秒...")
             time.sleep(BATCH_SLEEP_SEC)
 
         try:
@@ -353,6 +428,9 @@ def main():
 
             time.sleep(0.5)
             standings = get_json(f"{BASE}/tournaments/{tid}/standings", api_type="standings", tid=tid)
+            normalized_rows = normalize_hoopa_ex_icons(standings)
+            if normalized_rows:
+                print(f"✅ 賽事{tid}已正規化 {normalized_rows} 筆 Hoopa ex 圖示")
 
             time.sleep(0.5)
             pairings = get_json(f"{BASE}/tournaments/{tid}/pairings", api_type="pairings", tid=tid)
@@ -361,14 +439,24 @@ def main():
             write_json(f"web/public/data/raw/{tid}/standings.json", standings)
             write_json(f"web/public/data/raw/{tid}/pairings.json", pairings)
 
-            valid_added_tournaments.append(t)
-            print(f"✅ 新增賽事{tid}資料保存完成")
+            valid_refreshed_tournaments.append(t)
+            action_label = "新增" if tid in added_tids else "刷新"
+            print(f"✅ 賽事{tid}資料{action_label}完成")
 
         except Exception as e:
-            print(f"❌ 新增賽事{tid}抓取失敗：{str(e)} | 跳過")
+            print(f"❌ 賽事{tid}抓取失敗：{str(e)} | 保留既有資料並跳過")
             continue
 
-    all_tournaments = existing_tournaments + valid_added_tournaments
+    # 既有賽事以最新摘要取代；新賽事則追加，抓取失敗的既有賽事保持原狀。
+    refreshed_by_id = {t["id"]: t for t in valid_refreshed_tournaments}
+    all_tournaments = [
+        refreshed_by_id.get(t.get("id"), t)
+        for t in existing_tournaments
+    ]
+    all_tournaments.extend(
+        t for t in valid_refreshed_tournaments
+        if t["id"] not in existing_tids
+    )
 
     unique_tournaments = []
     unique_tids = set()
@@ -384,10 +472,10 @@ def main():
         write_json("web/public/data/excluded_tournaments.json", excluded_tournaments)
         print(f"⚠️ 已排除 {len(excluded_tournaments)} 場不符合收錄標準的賽事")
 
-    print("\n===== 增量資料抓取流程結束 =====")
+    print("\n===== 資料抓取與刷新流程結束 =====")
     print(f"📊 統計：")
-    print(f"  - 新增候選賽事總數：{total_added}")
-    print(f"  - 通過收錄標準：{len(valid_added_tournaments)}")
+    print(f"  - 候選賽事總數：{total_candidates}")
+    print(f"  - 通過收錄標準並完成更新：{len(valid_refreshed_tournaments)}")
     print(f"  - 排除賽事數：{len(excluded_tournaments)}")
     print(f"  - 抓取失敗數：{len(failed_tournaments)}")
 
