@@ -52,6 +52,8 @@ VERSION_MARKERS = [
     ("B3b", "Everyday Wonders", (2026, 6, 30)),
     ("B4", "Ruler of the Skies", (2026, 7, 30)),
     ("B4a", "Team Rocket's Ambition", (2026, 8, 27)),
+    ("B4b", "Deluxe Pack: Mega", (2026, 9, 30)),
+    ("C1", "Dual Fusion", (2026, 10, 29)),
 ]
 
 
