@@ -1579,6 +1579,8 @@ const VERSION_MARKERS: VersionMarker[] = [
   { code: "B3b", name: "Everyday Wonders", startMs: utcMs(2026, 6, 30) },
   { code: "B4", name: "Ruler of the Skies", startMs: utcMs(2026, 7, 30) },
   { code: "B4a", name: "Team Rocket's Ambition", startMs: utcMs(2026, 8, 27) },
+  { code: "B4b", name: "Deluxe Pack: Mega", startMs: utcMs(2026, 9, 30) },
+  { code: "C1", name: "Dual Fusion", startMs: utcMs(2026, 10, 29) },
 ];
 
 const VERSION_WINDOWS: VersionWindow[] = VERSION_MARKERS.map((item, index, arr) => ({

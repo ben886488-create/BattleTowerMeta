@@ -42,6 +42,14 @@ GAME_VERSIONS = [
     {"code": "B1a", "nameZh": "紅蓮烈焰",         "nameEn": "Crimson Blaze",             "releaseUtcIso": "2025-12-17T06:00:00Z"},
     {"code": "B2",  "nameZh": "幻夢遊行",         "nameEn": "Fantastical Parade",        "releaseUtcIso": "2026-01-29T01:00:00Z"},
     {"code": "B2a", "nameZh": "帕底亞驚奇",       "nameEn": "Paldean Wonders",           "releaseUtcIso": "2026-02-26T01:00:00Z"},
+    {"code": "B2b", "nameZh": "超級異彩",         "nameEn": "Mega Shine",                "releaseUtcIso": "2026-03-26T01:00:00Z"},
+    {"code": "B3",  "nameZh": "Pulsing Aura",     "nameEn": "Pulsing Aura",              "releaseUtcIso": "2026-04-28T01:00:00Z"},
+    {"code": "B3a", "nameZh": "Paradox Drive",    "nameEn": "Paradox Drive",             "releaseUtcIso": "2026-05-28T01:00:00Z"},
+    {"code": "B3b", "nameZh": "Everyday Wonders", "nameEn": "Everyday Wonders",           "releaseUtcIso": "2026-06-30T01:00:00Z"},
+    {"code": "B4",  "nameZh": "天空主宰",         "nameEn": "Ruler of the Skies",        "releaseUtcIso": "2026-07-30T01:00:00Z"},
+    {"code": "B4a", "nameZh": "火箭隊的野心",     "nameEn": "Team Rocket's Ambition",    "releaseUtcIso": "2026-08-27T01:00:00Z"},
+    {"code": "B4b", "nameZh": "豪華擴充包：超級進化", "nameEn": "Deluxe Pack: Mega",       "releaseUtcIso": "2026-09-30T01:00:00Z"},
+    {"code": "C1",  "nameZh": "雙重融合",         "nameEn": "Dual Fusion",               "releaseUtcIso": "2026-10-29T01:00:00Z"},
 ]
 
 for v in GAME_VERSIONS:

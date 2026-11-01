@@ -560,7 +560,7 @@ function deckAlt(rank: number, slot: number) {
 type GameVersionCode =
   | "A1" | "A1a" | "A2" | "A2a" | "A2b"
   | "A3" | "A3a" | "A3b" | "A4" | "A4a" | "A4b"
-  | "B1" | "B1a" | "B2" | "B2a" | "B2b" | "B3" | "B3a" | "B3b" | "B4" | "B4a";
+  | "B1" | "B1a" | "B2" | "B2a" | "B2b" | "B3" | "B3a" | "B3b" | "B4" | "B4a" | "B4b" | "C1";
 
 type GameVersion = {
   code: GameVersionCode;
@@ -592,6 +592,8 @@ const GAME_VERSIONS: GameVersion[] = [
   { code: "B3b", nameZh: "Everyday Wonders", nameEn: "Everyday Wonders", releaseUtcIso: "2026-06-30T01:00:00Z", releaseMs: Date.parse("2026-06-30T01:00:00Z") },
   { code: "B4", nameZh: "天空主宰", nameEn: "Ruler of the Skies", releaseUtcIso: "2026-07-30T01:00:00Z", releaseMs: Date.parse("2026-07-30T01:00:00Z") },
   { code: "B4a", nameZh: "火箭隊的野心", nameEn: "Team Rocket's Ambition", releaseUtcIso: "2026-08-27T01:00:00Z", releaseMs: Date.parse("2026-08-27T01:00:00Z") },
+  { code: "B4b", nameZh: "豪華擴充包：超級進化", nameEn: "Deluxe Pack: Mega", releaseUtcIso: "2026-09-30T01:00:00Z", releaseMs: Date.parse("2026-09-30T01:00:00Z") },
+  { code: "C1", nameZh: "雙重融合", nameEn: "Dual Fusion", releaseUtcIso: "2026-10-29T01:00:00Z", releaseMs: Date.parse("2026-10-29T01:00:00Z") },
 ];
 
 GAME_VERSIONS.sort((a, b) => a.releaseMs - b.releaseMs);
