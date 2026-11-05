@@ -7,6 +7,7 @@ import json
 import re
 import time
 import os
+import sys
 import uuid
 from collections import OrderedDict
 from pathlib import Path
@@ -16,6 +17,9 @@ import requests
 from bs4 import BeautifulSoup
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 BASE_URL = "https://pocket.limitlesstcg.com"
 SETS_URL = f"{BASE_URL}/cards"
@@ -690,15 +694,16 @@ def main():
 
     print(f"Fetching sets from {SETS_URL}")
     sets_html = fetch_text(session, SETS_URL, delay=args.delay, timeout=args.timeout)
-    sets = parse_sets_page(sets_html)
+    all_sets = parse_sets_page(sets_html)
+    sets = all_sets
 
     if args.only_set:
-        sets = [s for s in sets if s["set_code"] == args.only_set]
+        sets = [s for s in all_sets if s["set_code"] == args.only_set]
         if not sets:
             raise SystemExit(f"Set {args.only_set!r} not found.")
 
     sets_path = out_root / "limitless_sets.json"
-    save_json(sets_path, sets)
+    save_json(sets_path, all_sets)
     print(f"Saved {sets_path}")
 
     cards_path = out_root / "limitless_cards.json"
@@ -723,6 +728,10 @@ def main():
 
             if detail_url in seen_urls:
                 existing_card = card_by_url.get(detail_url)
+                if existing_card and existing_card.get("image_path"):
+                    errors = [
+                        item for item in errors if item.get("detail_url") != detail_url
+                    ]
                 if (
                     not args.skip_images
                     and existing_card
@@ -809,6 +818,8 @@ def main():
             save_json(cards_path, cards)
             save_json(errors_path, errors)
 
+    save_json(cards_path, cards)
+    save_json(errors_path, errors)
     image_manifest = build_image_manifest(out_root)
 
     print("\nDone.")
