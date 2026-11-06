@@ -1081,6 +1081,7 @@ import {
   type PrecomputedTopDecksPayload,
 } from "../lib/precomputedViews";
 import { routeLang as getRouteLang } from "../lib/siteI18n";
+import { deckResultPairings, expandStandingDecks } from "../lib/pocketDecks";
 
 const BASE_URL = (import.meta as any).env?.BASE_URL ?? "/";
 const DeckProfile = defineAsyncComponent(() => import("./DeckProfile.vue"));
@@ -1469,6 +1470,7 @@ const filters = reactive<{
   set: "",
   topCut: "all",
 });
+let initialFiltersReady = false;
 
 const contentTransitionKey = computed(() => {
   return [filters.minPlayers ?? "", filters.time, filters.set, filters.topCut].join("|");
@@ -2855,7 +2857,7 @@ async function ensureTournamentDataForIds(ids: string[]) {
     standingsLoading[id] = true;
     try {
       const rows = await fetchJson<StandingRow[]>(standingsUrl(id));
-      standingsCache[id] = Array.isArray(rows) ? rows : [];
+      standingsCache[id] = Array.isArray(rows) ? expandStandingDecks(rows) : [];
     } catch {
       standingsCache[id] = [];
     } finally {
@@ -3270,7 +3272,7 @@ async function recomputeTierRows() {
       standingsLoading[id] = true;
       try {
         const rows = await fetchJson<StandingRow[]>(standingsUrl(id));
-        standingsCache[id] = Array.isArray(rows) ? rows : [];
+        standingsCache[id] = Array.isArray(rows) ? expandStandingDecks(rows) : [];
       } catch {
         standingsCache[id] = [];
       } finally {
@@ -3566,7 +3568,7 @@ async function recomputeHeatmapForTopCut() {
       return { key: deck.key };
     });
 
-    for (const match of pairings) {
+    for (const match of deckResultPairings(pairings, standings)) {
       const side1 = lookupStandingForPairingSide(standingLookup, match, 1);
       const side2 = lookupStandingForPairingSide(standingLookup, match, 2);
       if (!side1 || !side2) continue;
@@ -3672,6 +3674,7 @@ async function loadTournaments() {
 watch(
   () => [filters.minPlayers ?? "", filters.time, filters.set].join("|"),
   async () => {
+    if (!initialFiltersReady) return;
     heatLoading.value = true;
     await recomputeTierRows();
     await recomputeHeatmapForTopCut();
@@ -3682,6 +3685,7 @@ watch(
 watch(
   () => filters.topCut,
   async () => {
+    if (!initialFiltersReady) return;
     heatLoading.value = true;
     await recomputeTierRows();
     await recomputeHeatmapForTopCut();
@@ -3782,6 +3786,7 @@ onMounted(async () => {
   await loadPrecomputedTopDecksForTierList();
   await loadTournaments();
   await nextTick();
+  initialFiltersReady = true;
   bindMatrixResizeObserver();
   heatLoading.value = true;
   await recomputeTierRows();
