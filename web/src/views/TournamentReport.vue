@@ -67,6 +67,7 @@
             <h2 class="sectionTitle">{{ ui.top32Title }}</h2>
             <div class="sectionSub">
               {{ ui.top32Sub(top32.length, standings.length) }}
+              <span v-if="multideck"> · {{ isZh ? '每位選手兩份牌表' : 'Two decklists per player' }}</span>
             </div>
           </div>
         </div>
@@ -77,7 +78,7 @@
 
         <div v-else class="entries">
           <article
-            v-for="row in top32"
+            v-for="row in top32DeckEntries"
             :key="entryKey(row)"
             class="entry"
           >
@@ -86,6 +87,7 @@
                 <div class="placingBadge">#{{ row.placing }}</div>
 
                 <div>
+                  <div v-if="row._deckSlot" class="mono dual-deck-label">{{ isZh ? '牌組' : 'DECK' }} {{ row._deckSlot }} / 2 · {{ row.deck?.name || ui.unknownDeck }}</div>
                   <div class="playerLine">
                     <div class="playerName">{{ playerDisplay(row) }}</div>
 
@@ -170,6 +172,7 @@ import { computed, reactive, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import CardImageWithCount from "../components/ui/CardImageWithCount.vue";
 import cardImageManifest from "../assets/limitless_dump/limitless_image_manifest.json";
+import { routeLang as getRouteLang, withLang } from "../lib/siteI18n";
 
 type TournamentIndexRow = {
   game?: string;
@@ -191,6 +194,9 @@ type DeckCardRow = {
 };
 
 type StandingRow = {
+  _deckSlot?: string;
+  decks?: Record<string, { id?: string; name?: string; icons?: string[] }>;
+  decklists?: Record<string, { pokemon?: DeckCardRow[]; trainer?: DeckCardRow[]; trainers?: DeckCardRow[] }>;
   placing?: number | null;
   player?:
     | string
@@ -230,6 +236,7 @@ type TournamentDetailsPhase = {
 
 type TournamentDetails = {
   id: string;
+  multideck?: boolean;
   game?: string;
   format?: string | null;
   name?: string;
@@ -297,12 +304,12 @@ const details = ref<TournamentDetails | null>(null);
 
 const tournamentId = computed(() => String(route.params.id ?? ""));
 const lang = computed<"zh" | "en">(() => {
-  const seg = String(route.path).split("/")[1];
-  return seg === "en" ? "en" : "zh";
+  return getRouteLang(route);
 });
 const isZh = computed(() => lang.value === "zh");
 
-const listRoute = computed(() => `/${lang.value}/tournaments`);
+const multideck = computed(() => details.value?.multideck === true || standings.value.some(row => Object.keys(row.decks || {}).length > 1));
+const listRoute = computed(() => ({ path: '/pocket/tournaments', query: { ...(lang.value === 'en' ? { lang: 'en' } : {}), deckMode: multideck.value ? 'dual' : undefined } }));
 const externalStandingsUrl = computed(
   () => `https://play.limitlesstcg.com/tournament/${tournamentId.value}/standings`
 );
@@ -793,7 +800,7 @@ const displayPlayers = computed(() => {
 const displaySet = computed(() => tournament.value?.set || "—");
 
 const displayFormat = computed(() =>
-  normalizeFormat(details.value?.format ?? tournament.value?.format)
+  multideck.value ? (isZh.value ? '雙牌組' : 'Dual deck') : normalizeFormat(details.value?.format ?? tournament.value?.format)
 );
 
 function getPlacing(row: StandingRow) {
@@ -807,6 +814,12 @@ const top32 = computed(() => {
     .sort((a, b) => getPlacing(a) - getPlacing(b))
     .slice(0, 32);
 });
+
+const top32DeckEntries = computed<StandingRow[]>(() => top32.value.flatMap(row => {
+  const slots = [...new Set([...Object.keys(row.decks || {}), ...Object.keys(row.decklists || {})])].sort();
+  if (!slots.length) return [row];
+  return slots.map(slot => ({ ...row, _deckSlot: slot, deck: row.decks?.[slot], decklist: row.decklists?.[slot] }));
+}));
 
 async function loadTournamentPage() {
   if (!tournamentId.value) {
@@ -889,7 +902,7 @@ function entryKey(row: StandingRow) {
         ? player.name || row.name || "unknown"
         : row.name || "unknown";
 
-  return `${row.placing ?? "x"}-${row.deck?.id ?? ""}-${playerKey}`;
+  return `${row.placing ?? "x"}-${row._deckSlot || 'single'}-${row.deck?.id ?? ""}-${playerKey}`;
 }
 
 function cardKey(card: DeckCardRow, idx: number, group: string) {
@@ -902,6 +915,7 @@ function cardAlt(card: DeckCardRow) {
 </script>
 
 <style scoped>
+.dual-deck-label { color: var(--accent); font-size: 12px; margin-bottom: var(--space-2); overflow-wrap: anywhere; }
 .page {
   width: 100%;
   max-width: none;

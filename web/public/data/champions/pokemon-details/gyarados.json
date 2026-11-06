@@ -1,0 +1,2712 @@
+{
+  "pokemon": {
+    "slug": "gyarados",
+    "name": "Gyarados",
+    "baseName": "Gyarados",
+    "savedName": "Gyarados",
+    "form": "",
+    "types": [
+      "Water",
+      "Flying"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Gyarados.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png",
+    "stats": {
+      "hp": 170,
+      "attack": 145,
+      "defense": 99,
+      "spAttack": 80,
+      "spDefense": 120,
+      "speed": 101,
+      "total": 715
+    },
+    "rank": 71,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Waterfall",
+    "topItem": "Gyaradosite",
+    "topTeammate": "Raichu"
+  },
+  "moves": [
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "move",
+      "rank": 1,
+      "name": "Waterfall",
+      "percentage": 0.897,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "move",
+        "rank": 1,
+        "name": "Waterfall",
+        "percentage": "89.7%",
+        "percentage_value": 89.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "move",
+      "rank": 2,
+      "name": "Protect",
+      "percentage": 0.651,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "move",
+        "rank": 2,
+        "name": "Protect",
+        "percentage": "65.1%",
+        "percentage_value": 65.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "move",
+      "rank": 3,
+      "name": "Dragon Dance",
+      "percentage": 0.54,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "move",
+        "rank": 3,
+        "name": "Dragon Dance",
+        "percentage": "54.0%",
+        "percentage_value": 54,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "move",
+      "rank": 4,
+      "name": "Ice Fang",
+      "percentage": 0.354,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "move",
+        "rank": 4,
+        "name": "Ice Fang",
+        "percentage": "35.4%",
+        "percentage_value": 35.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "move",
+      "rank": 5,
+      "name": "Crunch",
+      "percentage": 0.353,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "move",
+        "rank": 5,
+        "name": "Crunch",
+        "percentage": "35.3%",
+        "percentage_value": 35.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "move",
+      "rank": 6,
+      "name": "Power Whip",
+      "percentage": 0.324,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "move",
+        "rank": 6,
+        "name": "Power Whip",
+        "percentage": "32.4%",
+        "percentage_value": 32.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "move",
+      "rank": 7,
+      "name": "Earthquake",
+      "percentage": 0.181,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "move",
+        "rank": 7,
+        "name": "Earthquake",
+        "percentage": "18.1%",
+        "percentage_value": 18.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "move",
+      "rank": 8,
+      "name": "Taunt",
+      "percentage": 0.116,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "move",
+        "rank": 8,
+        "name": "Taunt",
+        "percentage": "11.6%",
+        "percentage_value": 11.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "move",
+      "rank": 9,
+      "name": "Lash Out",
+      "percentage": 0.089,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "move",
+        "rank": 9,
+        "name": "Lash Out",
+        "percentage": "8.9%",
+        "percentage_value": 8.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "move",
+      "rank": 10,
+      "name": "Thunder Wave",
+      "percentage": 0.086,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "move",
+        "rank": 10,
+        "name": "Thunder Wave",
+        "percentage": "8.6%",
+        "percentage_value": 8.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Gyaradosite",
+      "percentage": 0.484,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Gyaradosite",
+        "percentage": "48.4%",
+        "percentage_value": 48.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Sitrus Berry",
+      "percentage": 0.174,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Sitrus Berry",
+        "percentage": "17.4%",
+        "percentage_value": 17.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Leftovers",
+      "percentage": 0.138,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Leftovers",
+        "percentage": "13.8%",
+        "percentage_value": 13.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Expert Belt",
+      "percentage": 0.038,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Expert Belt",
+        "percentage": "3.8%",
+        "percentage_value": 3.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Life Orb",
+      "percentage": 0.033,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Life Orb",
+        "percentage": "3.3%",
+        "percentage_value": 3.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Wacan Berry",
+      "percentage": 0.017,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Wacan Berry",
+        "percentage": "1.7%",
+        "percentage_value": 1.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Wide Lens",
+      "percentage": 0.017,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Wide Lens",
+        "percentage": "1.7%",
+        "percentage_value": 1.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Choice Scarf",
+      "percentage": 0.016,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Choice Scarf",
+        "percentage": "1.6%",
+        "percentage_value": 1.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Lum Berry",
+      "percentage": 0.014,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Lum Berry",
+        "percentage": "1.4%",
+        "percentage_value": 1.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Focus Sash",
+      "percentage": 0.013,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Focus Sash",
+        "percentage": "1.3%",
+        "percentage_value": 1.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "ability",
+      "rank": 1,
+      "name": "Intimidate",
+      "percentage": 0.961,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "ability",
+        "rank": 1,
+        "name": "Intimidate",
+        "percentage": "96.1%",
+        "percentage_value": 96.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "ability",
+      "rank": 2,
+      "name": "Moxie",
+      "percentage": 0.039,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "ability",
+        "rank": 2,
+        "name": "Moxie",
+        "percentage": "3.9%",
+        "percentage_value": 3.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Raichu",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Raichu",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Kingambit",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Kingambit",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Whimsicott",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Whimsicott",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Sneasler",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Sneasler",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Sylveon",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Sylveon",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Farigiraf",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Farigiraf",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Mamoswine",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Mamoswine",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Alolan Ninetales",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Alolan Ninetales",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Adamant",
+      "percentage": 0.642,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Adamant",
+        "percentage": "64.2%",
+        "percentage_value": 64.2,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Jolly",
+      "percentage": 0.236,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Jolly",
+        "percentage": "23.6%",
+        "percentage_value": 23.6,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Careful",
+      "percentage": 0.045,
+      "statUp": "Sp. Def",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Careful",
+        "percentage": "4.5%",
+        "percentage_value": 4.5,
+        "stat_up": "Sp. Def",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Impish",
+      "percentage": 0.03,
+      "statUp": "Defense",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Impish",
+        "percentage": "3.0%",
+        "percentage_value": 3,
+        "stat_up": "Defense",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Brave",
+      "percentage": 0.02,
+      "statUp": "Attack",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Brave",
+        "percentage": "2.0%",
+        "percentage_value": 2,
+        "stat_up": "Attack",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Naughty",
+      "percentage": 0.6,
+      "statUp": "Attack",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Naughty",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Modest",
+      "percentage": 0.4,
+      "statUp": "Sp. Atk",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Modest",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Relaxed",
+      "percentage": 0.3,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Relaxed",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Hasty",
+      "percentage": 0.2,
+      "statUp": "Speed",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Hasty",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Speed",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Calm",
+      "percentage": 0.2,
+      "statUp": "Sp. Def",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Calm",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Sp. Def",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.179,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "17.9%",
+        "percentage_value": 17.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.065,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "6.5%",
+        "percentage_value": 6.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 11,
+        "attack_points": 25,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 30
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.043,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "4.3%",
+        "percentage_value": 4.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 32,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.042,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "4.2%",
+        "percentage_value": 4.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.032,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "3.2%",
+        "percentage_value": 3.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 1,
+        "attack_points": 32,
+        "defense_points": 1,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.027,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "2.7%",
+        "percentage_value": 2.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 2
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.017,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "1.7%",
+        "percentage_value": 1.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 25,
+        "defense_points": 9,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Gyarados",
+      "position": 71,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.013,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gyarados",
+        "column_position": 71,
+        "position": 71,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "1.3%",
+        "percentage_value": 1.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a5055f965724db9ded41c56-alexiannonevgc",
+      "name": "AlexIannoneVGC · Weekly Qualifier for RookideeVGC Grand Tourney",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gyarados",
+          "name": "Gyarados",
+          "item": "Gyaradosite",
+          "ability": "Intimidate",
+          "moves": [
+            "Waterfall",
+            "Dragon Dance",
+            "Lash Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Protect",
+            "Trick Room",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "heat-rotom",
+          "name": "Heat Rotom",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Electroweb",
+            "Volt Switch",
+            "Thunderbolt",
+            "Overheat"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Dire Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Quick Attack",
+            "Hyper Beam",
+            "Hyper Voice",
+            "Detect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 1,
+      "sampleCount": 9,
+      "tournament": "Weekly Qualifier for RookideeVGC Grand Tourney",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "AlexIannoneVGC",
+      "record": "9-0-0"
+    },
+    {
+      "id": "6a420fbf83fd320299bd3c3c-luckylandia",
+      "name": "LuckyLandia · Sketch Academy Sunday Regulation M-B Tournament",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Occa Berry",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Brave Bird",
+            "Iron Head",
+            "Tailwind",
+            "Roost"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Hyper Beam",
+            "Quick Attack",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gyarados",
+          "name": "Gyarados",
+          "item": "Gyaradosite",
+          "ability": "Intimidate",
+          "moves": [
+            "Crunch",
+            "Waterfall",
+            "Dragon Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Flare Blitz",
+            "Darkest Lariat"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Life Dew",
+            "Trick Room"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "Sketch Academy Sunday Regulation M-B Tournament",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "LuckyLandia",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a420fbf83fd320299bd3c3c-itztsuki",
+      "name": "ItzTsuki · Sketch Academy Sunday Regulation M-B Tournament",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gyarados",
+          "name": "Gyarados",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Waterfall",
+            "Power Whip",
+            "Temper Flare",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Snow Cloak",
+          "moves": [
+            "Aurora Veil",
+            "Blizzard",
+            "Shadow Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Fairy Feather",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Protect",
+            "Encore",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Focus Sash",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Earth Power",
+            "Sludge Bomb",
+            "Power Gem",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Protect",
+            "Rock Slide",
+            "Dragon Claw",
+            "Stomping Tantrum"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.42857142857142855,
+      "sampleCount": 7,
+      "tournament": "Sketch Academy Sunday Regulation M-B Tournament",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "ItzTsuki",
+      "record": "3-4-0"
+    },
+    {
+      "id": "6a4516dcc87cd9ff0a31469e-lylylysha",
+      "name": "lylylysha · Pride Month 2 Celebration!!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Parting Shot",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "volcarona",
+          "name": "Volcarona",
+          "item": "Leftovers",
+          "ability": "Flame Body",
+          "moves": [
+            "Heat Wave",
+            "Giga Drain",
+            "Quiver Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Fake Out",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gyarados",
+          "name": "Gyarados",
+          "item": "Gyaradosite",
+          "ability": "Intimidate",
+          "moves": [
+            "Waterfall",
+            "Lash Out",
+            "Dragon Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Spirit Break",
+            "Reflect",
+            "Light Screen",
+            "Parting Shot"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 1,
+      "sampleCount": 6,
+      "tournament": "Pride Month 2 Celebration!!",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "lylylysha",
+      "record": "6-0-0"
+    },
+    {
+      "id": "6a4516dcc87cd9ff0a31469e-bowsetti",
+      "name": "bowsetti · Pride Month 2 Celebration!!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psychic",
+            "Protect",
+            "Calm Mind"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Static",
+          "moves": [
+            "Fake Out",
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Pressure",
+          "moves": [
+            "Dire Claw",
+            "Close Combat",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Shadow Ball",
+            "Life Dew"
+          ]
+        },
+        {
+          "slug": "gyarados",
+          "name": "Gyarados",
+          "item": "Leftovers",
+          "ability": "Intimidate",
+          "moves": [
+            "Waterfall",
+            "Protect",
+            "Power Whip",
+            "Ice Fang"
+          ]
+        },
+        {
+          "slug": "gliscor",
+          "name": "Gliscor",
+          "item": "Sitrus Berry",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Acrobatics",
+            "High Horsepower",
+            "Tailwind",
+            "Rock Slide"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Pride Month 2 Celebration!!",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "bowsetti",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a467bb683fd320299bd6627-smurfz",
+      "name": "Smurfz · Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite X",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Protect",
+            "Fake Out",
+            "Rising Voltage",
+            "Volt Switch"
+          ]
+        },
+        {
+          "slug": "jolteon",
+          "name": "Jolteon",
+          "item": "Life Orb",
+          "ability": "Volt Absorb",
+          "moves": [
+            "Protect",
+            "Rising Voltage",
+            "Weather Ball",
+            "Alluring Voice"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Focus Sash",
+          "ability": "Snow Warning",
+          "moves": [
+            "Protect",
+            "Freeze-Dry",
+            "Blizzard",
+            "Roar"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Coba Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Sunny Day"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Poison Jab",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "gyarados",
+          "name": "Gyarados",
+          "item": "Leftovers",
+          "ability": "Intimidate",
+          "moves": [
+            "Waterfall",
+            "Taunt",
+            "Thunder Wave",
+            "Dragon Dance"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 2,
+      "tournament": "Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "placing": null,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Smurfz",
+      "record": "0-2-0"
+    },
+    {
+      "id": "6a50864165724db9ded41db6-subzebas",
+      "name": "SubZebas · 4fun sabadín",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Fairy Feather",
+          "ability": "Prankster",
+          "moves": [
+            "Protect",
+            "Encore",
+            "Tailwind",
+            "Moonblast"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Focus Sash",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Spiky Shield",
+            "Power Gem",
+            "Sludge Bomb",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Protect",
+            "Swords Dance",
+            "Sucker Punch",
+            "Kowtow Cleave"
+          ]
+        },
+        {
+          "slug": "gyarados",
+          "name": "Gyarados",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Protect",
+            "Waterfall",
+            "Power Whip",
+            "Temper Flare"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "4fun sabadín",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "SubZebas",
+      "record": "3-2-0"
+    }
+  ],
+  "movePool": [
+    "Aqua Tail",
+    "Avalanche",
+    "Bite",
+    "Blizzard",
+    "Body Slam",
+    "Bounce",
+    "Brutal Swing",
+    "Bulldoze",
+    "Chilling Water",
+    "Crunch",
+    "Dark Pulse",
+    "Dive",
+    "Double-Edge",
+    "Dragon Cheer",
+    "Dragon Dance",
+    "Dragon Pulse",
+    "Dragon Rush",
+    "Dragon Tail",
+    "Earthquake",
+    "Endeavor",
+    "Endure",
+    "Facade",
+    "Fire Blast",
+    "Flail",
+    "Flamethrower",
+    "Giga Impact",
+    "Helping Hand",
+    "Hurricane",
+    "Hydro Pump",
+    "Hyper Beam",
+    "Ice Beam",
+    "Ice Fang",
+    "Icy Wind",
+    "Iron Head",
+    "Iron Tail",
+    "Lash Out",
+    "Muddy Water",
+    "Outrage",
+    "Payback",
+    "Power Whip",
+    "Protect",
+    "Rain Dance",
+    "Rest",
+    "Roar",
+    "Round",
+    "Sandstorm",
+    "Scald",
+    "Scale Shot",
+    "Scary Face",
+    "Sleep Talk",
+    "Snore",
+    "Spite",
+    "Stone Edge",
+    "Substitute",
+    "Sunny Day",
+    "Surf",
+    "Swagger",
+    "Taunt",
+    "Temper Flare",
+    "Thrash",
+    "Thunder",
+    "Thunder Wave",
+    "Thunderbolt",
+    "Uproar",
+    "Water Pulse",
+    "Waterfall",
+    "Whirlpool"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Gyarados",
+      "base_name": "Gyarados",
+      "saved_name": "Gyarados",
+      "types": "Water/Flying",
+      "abilities": "Intimidate|Moxie",
+      "image_path": "pokemon_champions_assets\\pokemon\\Gyarados.png",
+      "form": "",
+      "hp": 170,
+      "atk": 145,
+      "def": 99,
+      "spa": 80,
+      "spd": 120,
+      "spe": 101,
+      "total": 715
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "move",
+          "rank": 1,
+          "name": "Waterfall",
+          "percentage": "89.7%",
+          "percentage_value": 89.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Gyaradosite",
+          "percentage": "48.4%",
+          "percentage_value": 48.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Raichu",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Adamant",
+          "percentage": "64.2%",
+          "percentage_value": 64.2,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        "stat_points": {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "17.9%",
+          "percentage_value": 17.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        "ability": {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "ability",
+          "rank": 1,
+          "name": "Intimidate",
+          "percentage": "96.1%",
+          "percentage_value": 96.1,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Waterfall",
+          "Protect",
+          "Dragon Dance",
+          "Ice Fang",
+          "Crunch",
+          "Power Whip",
+          "Earthquake",
+          "Taunt",
+          "Lash Out",
+          "Thunder Wave"
+        ],
+        "held_item": [
+          "Gyaradosite",
+          "Sitrus Berry",
+          "Leftovers",
+          "Expert Belt",
+          "Life Orb",
+          "Wacan Berry",
+          "Wide Lens",
+          "Choice Scarf",
+          "Lum Berry",
+          "Focus Sash"
+        ],
+        "teammate": [
+          "Raichu",
+          "Garchomp",
+          "Kingambit",
+          "Sinistcha",
+          "Whimsicott",
+          "Sneasler",
+          "Sylveon",
+          "Farigiraf",
+          "Mamoswine",
+          "Alolan Ninetales"
+        ],
+        "stat_alignment": [
+          "Adamant",
+          "Jolly",
+          "Careful",
+          "Impish",
+          "Brave",
+          "Naughty",
+          "Modest",
+          "Relaxed",
+          "Hasty",
+          "Calm"
+        ],
+        "stat_points": [
+          "HP 2 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 32",
+          "HP 11 / Atk 25 / Def 0 / SpA 0 / SpD 0 / Spe 30",
+          "HP 32 / Atk 0 / Def 32 / SpA 0 / SpD 2 / Spe 0",
+          "HP 32 / Atk 32 / Def 2 / SpA 0 / SpD 0 / Spe 0",
+          "HP 1 / Atk 32 / Def 1 / SpA 0 / SpD 0 / Spe 32",
+          "HP 32 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 2",
+          "HP 32 / Atk 25 / Def 9 / SpA 0 / SpD 0 / Spe 0",
+          "HP 32 / Atk 32 / Def 0 / SpA 0 / SpD 2 / Spe 0"
+        ],
+        "ability": [
+          "Intimidate",
+          "Moxie"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "move",
+          "rank": 1,
+          "name": "Waterfall",
+          "percentage": "89.7%",
+          "percentage_value": 89.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "move",
+          "rank": 2,
+          "name": "Protect",
+          "percentage": "65.1%",
+          "percentage_value": 65.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "move",
+          "rank": 3,
+          "name": "Dragon Dance",
+          "percentage": "54.0%",
+          "percentage_value": 54,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "move",
+          "rank": 4,
+          "name": "Ice Fang",
+          "percentage": "35.4%",
+          "percentage_value": 35.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "move",
+          "rank": 5,
+          "name": "Crunch",
+          "percentage": "35.3%",
+          "percentage_value": 35.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "move",
+          "rank": 6,
+          "name": "Power Whip",
+          "percentage": "32.4%",
+          "percentage_value": 32.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "move",
+          "rank": 7,
+          "name": "Earthquake",
+          "percentage": "18.1%",
+          "percentage_value": 18.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "move",
+          "rank": 8,
+          "name": "Taunt",
+          "percentage": "11.6%",
+          "percentage_value": 11.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "move",
+          "rank": 9,
+          "name": "Lash Out",
+          "percentage": "8.9%",
+          "percentage_value": 8.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "move",
+          "rank": 10,
+          "name": "Thunder Wave",
+          "percentage": "8.6%",
+          "percentage_value": 8.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Gyaradosite",
+          "percentage": "48.4%",
+          "percentage_value": 48.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Sitrus Berry",
+          "percentage": "17.4%",
+          "percentage_value": 17.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Leftovers",
+          "percentage": "13.8%",
+          "percentage_value": 13.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Expert Belt",
+          "percentage": "3.8%",
+          "percentage_value": 3.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Life Orb",
+          "percentage": "3.3%",
+          "percentage_value": 3.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Wacan Berry",
+          "percentage": "1.7%",
+          "percentage_value": 1.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Wide Lens",
+          "percentage": "1.7%",
+          "percentage_value": 1.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Choice Scarf",
+          "percentage": "1.6%",
+          "percentage_value": 1.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Lum Berry",
+          "percentage": "1.4%",
+          "percentage_value": 1.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Focus Sash",
+          "percentage": "1.3%",
+          "percentage_value": 1.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Raichu",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Whimsicott",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Sneasler",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Sylveon",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Mamoswine",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Alolan Ninetales",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Adamant",
+          "percentage": "64.2%",
+          "percentage_value": 64.2,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Jolly",
+          "percentage": "23.6%",
+          "percentage_value": 23.6,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Careful",
+          "percentage": "4.5%",
+          "percentage_value": 4.5,
+          "stat_up": "Sp. Def",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Impish",
+          "percentage": "3.0%",
+          "percentage_value": 3,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Brave",
+          "percentage": "2.0%",
+          "percentage_value": 2,
+          "stat_up": "Attack",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Naughty",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Modest",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Relaxed",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Hasty",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Speed",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Calm",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Sp. Def",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "17.9%",
+          "percentage_value": 17.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "6.5%",
+          "percentage_value": 6.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 11,
+          "attack_points": 25,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 30
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "4.3%",
+          "percentage_value": 4.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 32,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "4.2%",
+          "percentage_value": 4.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "3.2%",
+          "percentage_value": 3.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 1,
+          "attack_points": 32,
+          "defense_points": 1,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "2.7%",
+          "percentage_value": 2.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 2
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "1.7%",
+          "percentage_value": 1.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 25,
+          "defense_points": 9,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "1.3%",
+          "percentage_value": 1.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "ability",
+          "rank": 1,
+          "name": "Intimidate",
+          "percentage": "96.1%",
+          "percentage_value": 96.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gyarados",
+          "column_position": 71,
+          "position": 71,
+          "category": "ability",
+          "rank": 2,
+          "name": "Moxie",
+          "percentage": "3.9%",
+          "percentage_value": 3.9,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Gyarados.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Gyarados.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Gyarados.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Gyarados.csv"
+      }
+    ]
+  }
+}

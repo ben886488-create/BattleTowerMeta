@@ -1,0 +1,2672 @@
+{
+  "pokemon": {
+    "slug": "mimikyu",
+    "name": "Mimikyu",
+    "baseName": "Mimikyu",
+    "savedName": "Mimikyu",
+    "form": "",
+    "types": [
+      "Ghost",
+      "Fairy"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Mimikyu.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/778.png",
+    "stats": {
+      "hp": 130,
+      "attack": 110,
+      "defense": 100,
+      "spAttack": 70,
+      "spDefense": 125,
+      "speed": 116,
+      "total": 651
+    },
+    "rank": 70,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Play Rough",
+    "topItem": "Life Orb",
+    "topTeammate": "Farigiraf"
+  },
+  "moves": [
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "move",
+      "rank": 1,
+      "name": "Play Rough",
+      "percentage": 0.868,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "move",
+        "rank": 1,
+        "name": "Play Rough",
+        "percentage": "86.8%",
+        "percentage_value": 86.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "move",
+      "rank": 2,
+      "name": "Shadow Sneak",
+      "percentage": 0.674,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "move",
+        "rank": 2,
+        "name": "Shadow Sneak",
+        "percentage": "67.4%",
+        "percentage_value": 67.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "move",
+      "rank": 3,
+      "name": "Trick Room",
+      "percentage": 0.54,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "move",
+        "rank": 3,
+        "name": "Trick Room",
+        "percentage": "54.0%",
+        "percentage_value": 54,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "move",
+      "rank": 4,
+      "name": "Shadow Claw",
+      "percentage": 0.343,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "move",
+        "rank": 4,
+        "name": "Shadow Claw",
+        "percentage": "34.3%",
+        "percentage_value": 34.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "move",
+      "rank": 5,
+      "name": "Swords Dance",
+      "percentage": 0.342,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "move",
+        "rank": 5,
+        "name": "Swords Dance",
+        "percentage": "34.2%",
+        "percentage_value": 34.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "move",
+      "rank": 6,
+      "name": "Protect",
+      "percentage": 0.205,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "move",
+        "rank": 6,
+        "name": "Protect",
+        "percentage": "20.5%",
+        "percentage_value": 20.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "move",
+      "rank": 7,
+      "name": "Drain Punch",
+      "percentage": 0.166,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "move",
+        "rank": 7,
+        "name": "Drain Punch",
+        "percentage": "16.6%",
+        "percentage_value": 16.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "move",
+      "rank": 8,
+      "name": "Will-O-Wisp",
+      "percentage": 0.141,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "move",
+        "rank": 8,
+        "name": "Will-O-Wisp",
+        "percentage": "14.1%",
+        "percentage_value": 14.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "move",
+      "rank": 9,
+      "name": "Wood Hammer",
+      "percentage": 0.109,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "move",
+        "rank": 9,
+        "name": "Wood Hammer",
+        "percentage": "10.9%",
+        "percentage_value": 10.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "move",
+      "rank": 10,
+      "name": "Phantom Force",
+      "percentage": 0.096,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "move",
+        "rank": 10,
+        "name": "Phantom Force",
+        "percentage": "9.6%",
+        "percentage_value": 9.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Life Orb",
+      "percentage": 0.363,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Life Orb",
+        "percentage": "36.3%",
+        "percentage_value": 36.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Mental Herb",
+      "percentage": 0.16,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Mental Herb",
+        "percentage": "16.0%",
+        "percentage_value": 16,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Sitrus Berry",
+      "percentage": 0.088,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Sitrus Berry",
+        "percentage": "8.8%",
+        "percentage_value": 8.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Spell Tag",
+      "percentage": 0.064,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Spell Tag",
+        "percentage": "6.4%",
+        "percentage_value": 6.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Leftovers",
+      "percentage": 0.048,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Leftovers",
+        "percentage": "4.8%",
+        "percentage_value": 4.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Lum Berry",
+      "percentage": 0.031,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Lum Berry",
+        "percentage": "3.1%",
+        "percentage_value": 3.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Fairy Feather",
+      "percentage": 0.029,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Fairy Feather",
+        "percentage": "2.9%",
+        "percentage_value": 2.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Iron Ball",
+      "percentage": 0.026,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Iron Ball",
+        "percentage": "2.6%",
+        "percentage_value": 2.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Bright Powder",
+      "percentage": 0.021,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Bright Powder",
+        "percentage": "2.1%",
+        "percentage_value": 2.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Quick Claw",
+      "percentage": 0.02,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Quick Claw",
+        "percentage": "2.0%",
+        "percentage_value": 2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "ability",
+      "rank": 1,
+      "name": "Disguise",
+      "percentage": 1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "ability",
+        "rank": 1,
+        "name": "Disguise",
+        "percentage": "100.0%",
+        "percentage_value": 100,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Farigiraf",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Farigiraf",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Torkoal",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Torkoal",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Kingambit",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Kingambit",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Tyranitar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Tyranitar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Charizard",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Charizard",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Sylveon",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Sylveon",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Adamant",
+      "percentage": 0.506,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Adamant",
+        "percentage": "50.6%",
+        "percentage_value": 50.6,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Brave",
+      "percentage": 0.225,
+      "statUp": "Attack",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Brave",
+        "percentage": "22.5%",
+        "percentage_value": 22.5,
+        "stat_up": "Attack",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Jolly",
+      "percentage": 0.108,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Jolly",
+        "percentage": "10.8%",
+        "percentage_value": 10.8,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Relaxed",
+      "percentage": 0.038,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Relaxed",
+        "percentage": "3.8%",
+        "percentage_value": 3.8,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Impish",
+      "percentage": 0.027,
+      "statUp": "Defense",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Impish",
+        "percentage": "2.7%",
+        "percentage_value": 2.7,
+        "stat_up": "Defense",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Sassy",
+      "percentage": 0.023,
+      "statUp": "Sp. Def",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Sassy",
+        "percentage": "2.3%",
+        "percentage_value": 2.3,
+        "stat_up": "Sp. Def",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Naughty",
+      "percentage": 0.021,
+      "statUp": "Attack",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Naughty",
+        "percentage": "2.1%",
+        "percentage_value": 2.1,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Careful",
+      "percentage": 0.019,
+      "statUp": "Sp. Def",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Careful",
+        "percentage": "1.9%",
+        "percentage_value": 1.9,
+        "stat_up": "Sp. Def",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Hasty",
+      "percentage": 0.8,
+      "statUp": "Speed",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Hasty",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "Speed",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Naive",
+      "percentage": 0.8,
+      "statUp": "Speed",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Naive",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.188,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "18.8%",
+        "percentage_value": 18.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.133,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "13.3%",
+        "percentage_value": 13.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.069,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "6.9%",
+        "percentage_value": 6.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.049,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "4.9%",
+        "percentage_value": 4.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.037,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "3.7%",
+        "percentage_value": 3.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 1,
+        "attack_points": 32,
+        "defense_points": 1,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.02,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "2.0%",
+        "percentage_value": 2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 2
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.02,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "2.0%",
+        "percentage_value": 2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 32,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Mimikyu",
+      "position": 70,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.02,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mimikyu",
+        "column_position": 70,
+        "position": 70,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "2.0%",
+        "percentage_value": 2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 32,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a55808a232a1a55ee10be16-stksigurboy",
+      "name": "STKSigurboy · 𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Solar Power",
+          "moves": [
+            "Protect",
+            "Heat Wave",
+            "Solar Beam",
+            "Air Slash"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Sitrus Berry",
+          "ability": "Levitate",
+          "moves": [
+            "Thunderbolt",
+            "Hydro Pump",
+            "Will-O-Wisp",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Close Combat",
+            "Dire Claw",
+            "Coaching",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Dragon Fang",
+          "ability": "Rough Skin",
+          "moves": [
+            "Stomping Tantrum",
+            "Rock Tomb",
+            "Dragon Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mimikyu",
+          "name": "Mimikyu",
+          "item": "Mental Herb",
+          "ability": "Disguise",
+          "moves": [
+            "Taunt",
+            "Play Rough",
+            "Shadow Claw",
+            "Trick Room"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "STKSigurboy",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a539b48c0a6bab82fbbca0a-marti666",
+      "name": "Marti666 · London Corviknight VGC Weekly tour 5!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "camerupt",
+          "name": "Camerupt",
+          "item": "Cameruptite",
+          "ability": "Solid Rock",
+          "moves": [
+            "Protect",
+            "Ancient Power",
+            "Earth Power",
+            "Heat Wave"
+          ]
+        },
+        {
+          "slug": "mimikyu",
+          "name": "Mimikyu",
+          "item": "Mental Herb",
+          "ability": "Disguise",
+          "moves": [
+            "Play Rough",
+            "Trick Room",
+            "Protect",
+            "Shadow Sneak"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Helping Hand",
+            "Trick Room",
+            "Thunderbolt",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "drampa",
+          "name": "Drampa",
+          "item": "Drampanite",
+          "ability": "Cloud Nine",
+          "moves": [
+            "Protect",
+            "Dragon Pulse",
+            "Earth Power",
+            "Hyper Voice"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Protect",
+            "Kowtow Cleave",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Protect",
+            "Trick Room",
+            "Rage Powder"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "London Corviknight VGC Weekly tour 5!",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Marti666",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a54c9d3232a1a55ee10b346-buzzverse",
+      "name": "TFO | Buzz · Intimidators Champions Challenge #27 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "aggron",
+          "name": "Aggron",
+          "item": "Aggronite",
+          "ability": "Sturdy",
+          "moves": [
+            "Heavy Slam",
+            "Body Press",
+            "Iron Defense",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Life Dew",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Ice Beam",
+            "Protect",
+            "Life Dew",
+            "Scald"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Sand Rush",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Iron Head",
+            "High Horsepower"
+          ]
+        },
+        {
+          "slug": "mimikyu",
+          "name": "Mimikyu",
+          "item": "Life Orb",
+          "ability": "Disguise",
+          "moves": [
+            "Play Rough",
+            "Protect",
+            "Trick Room",
+            "Shadow Claw"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Knock Off",
+            "Low Kick",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "Intimidators Champions Challenge #27 REG M-B",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "TFO | Buzz",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a467bb683fd320299bd6627-marti666",
+      "name": "Marti666 · Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "camerupt",
+          "name": "Camerupt",
+          "item": "Cameruptite",
+          "ability": "Solid Rock",
+          "moves": [
+            "Protect",
+            "Ancient Power",
+            "Earth Power",
+            "Heat Wave"
+          ]
+        },
+        {
+          "slug": "mimikyu",
+          "name": "Mimikyu",
+          "item": "Mental Herb",
+          "ability": "Disguise",
+          "moves": [
+            "Play Rough",
+            "Trick Room",
+            "Protect",
+            "Shadow Sneak"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Helping Hand",
+            "Trick Room",
+            "Thunderbolt",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "drampa",
+          "name": "Drampa",
+          "item": "Drampanite",
+          "ability": "Cloud Nine",
+          "moves": [
+            "Protect",
+            "Dragon Pulse",
+            "Earth Power",
+            "Hyper Voice"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Protect",
+            "Kowtow Cleave",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Protect",
+            "Trick Room",
+            "Rage Powder"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Marti666",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a529f1ee09846f1eb4c14e3-marti666",
+      "name": "Marti666 · Chaos League Sunday Slam #104",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "camerupt",
+          "name": "Camerupt",
+          "item": "Cameruptite",
+          "ability": "Solid Rock",
+          "moves": [
+            "Protect",
+            "Ancient Power",
+            "Earth Power",
+            "Heat Wave"
+          ]
+        },
+        {
+          "slug": "mimikyu",
+          "name": "Mimikyu",
+          "item": "Mental Herb",
+          "ability": "Disguise",
+          "moves": [
+            "Play Rough",
+            "Trick Room",
+            "Protect",
+            "Shadow Sneak"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Helping Hand",
+            "Trick Room",
+            "Thunderbolt",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "drampa",
+          "name": "Drampa",
+          "item": "Drampanite",
+          "ability": "Cloud Nine",
+          "moves": [
+            "Protect",
+            "Dragon Pulse",
+            "Earth Power",
+            "Hyper Voice"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Protect",
+            "Kowtow Cleave",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Protect",
+            "Trick Room",
+            "Rage Powder"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 4,
+      "tournament": "Chaos League Sunday Slam #104",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Marti666",
+      "record": "3-1-0"
+    },
+    {
+      "id": "6a4f486e063cb29d318e781e-bynnintendogaming",
+      "name": "BynNintendoGaming · Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Mental Herb",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Whirlwind",
+            "Psychic Fangs",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Damp Rock",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Water pulse",
+            "Helping Hand",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Sunny Day",
+            "Protect",
+            "Quick Attack"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Trick Room",
+            "Helping Hand",
+            "Beat Up",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "slug": "mimikyu",
+          "name": "Mimikyu",
+          "item": "Leftovers",
+          "ability": "Disguise",
+          "moves": [
+            "Play Rough",
+            "Shadow Sneak",
+            "Swords Dance",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "lucario",
+          "name": "Lucario",
+          "item": "Focus Sash",
+          "ability": "Justified",
+          "moves": [
+            "Detect",
+            "Extreme Speed",
+            "Drain Punch",
+            "Poison Jab"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "BynNintendoGaming",
+      "record": "3-1-1"
+    },
+    {
+      "id": "6a5970c3cc68177ec6c5710d-elpolloloco",
+      "name": "Elpolloloco · Afternoon Champions #1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "mimikyu",
+          "name": "Mimikyu",
+          "item": "Life Orb",
+          "ability": "Disguise",
+          "moves": [
+            "Play Rough",
+            "Swords Dance",
+            "Shadow Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Dire Claw",
+            "Fake Out",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Quick Claw",
+          "ability": "Rough Skin",
+          "moves": [
+            "Outrage",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Focus Sash",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Thunder Fang",
+            "Tailwind",
+            "Dual Wingbeat"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Roost",
+            "Protect",
+            "Close Combat",
+            "Hurricane"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 3,
+      "tournament": "Afternoon Champions #1",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Elpolloloco",
+      "record": "0-3-0"
+    }
+  ],
+  "movePool": [
+    "Baby-Doll Eyes",
+    "Beat Up",
+    "Bulk Up",
+    "Burning Jealousy",
+    "Charm",
+    "Confuse Ray",
+    "Copycat",
+    "Curse",
+    "Dark Pulse",
+    "Dazzling Gleam",
+    "Destiny Bond",
+    "Double Team",
+    "Drain Punch",
+    "Draining Kiss",
+    "Endure",
+    "Facade",
+    "Fling",
+    "Giga Drain",
+    "Giga Impact",
+    "Hex",
+    "Hone Claws",
+    "Hyper Beam",
+    "Leech Life",
+    "Light Screen",
+    "Magic Room",
+    "Misty Terrain",
+    "Night Shade",
+    "Night Slash",
+    "Pain Split",
+    "Payback",
+    "Phantom Force",
+    "Play Rough",
+    "Pounce",
+    "Protect",
+    "Psych Up",
+    "Psychic",
+    "Rain Dance",
+    "Rest",
+    "Round",
+    "Safeguard",
+    "Screech",
+    "Shadow Ball",
+    "Shadow Claw",
+    "Shadow Sneak",
+    "Sleep Talk",
+    "Snore",
+    "Spite",
+    "Splash",
+    "Substitute",
+    "Sunny Day",
+    "Swords Dance",
+    "Taunt",
+    "Thief",
+    "Thunder",
+    "Thunder Wave",
+    "Thunderbolt",
+    "Trailblaze",
+    "Trick",
+    "Trick Room",
+    "Will-O-Wisp",
+    "Wood Hammer",
+    "X-Scissor"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Mimikyu",
+      "base_name": "Mimikyu",
+      "saved_name": "Mimikyu",
+      "types": "Ghost/Fairy",
+      "abilities": "Disguise",
+      "image_path": "pokemon_champions_assets\\pokemon\\Mimikyu.png",
+      "form": "",
+      "hp": 130,
+      "atk": 110,
+      "def": 100,
+      "spa": 70,
+      "spd": 125,
+      "spe": 116,
+      "total": 651
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "move",
+          "rank": 1,
+          "name": "Play Rough",
+          "percentage": "86.8%",
+          "percentage_value": 86.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Life Orb",
+          "percentage": "36.3%",
+          "percentage_value": 36.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Adamant",
+          "percentage": "50.6%",
+          "percentage_value": 50.6,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        "stat_points": {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "18.8%",
+          "percentage_value": 18.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        "ability": {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "ability",
+          "rank": 1,
+          "name": "Disguise",
+          "percentage": "100.0%",
+          "percentage_value": 100,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Play Rough",
+          "Shadow Sneak",
+          "Trick Room",
+          "Shadow Claw",
+          "Swords Dance",
+          "Protect",
+          "Drain Punch",
+          "Will-O-Wisp",
+          "Wood Hammer",
+          "Phantom Force"
+        ],
+        "held_item": [
+          "Life Orb",
+          "Mental Herb",
+          "Sitrus Berry",
+          "Spell Tag",
+          "Leftovers",
+          "Lum Berry",
+          "Fairy Feather",
+          "Iron Ball",
+          "Bright Powder",
+          "Quick Claw"
+        ],
+        "teammate": [
+          "Farigiraf",
+          "Torkoal",
+          "Incineroar",
+          "Kingambit",
+          "Garchomp",
+          "Sinistcha",
+          "Tyranitar",
+          "Basculegion Male",
+          "Charizard",
+          "Sylveon"
+        ],
+        "stat_alignment": [
+          "Adamant",
+          "Brave",
+          "Jolly",
+          "Relaxed",
+          "Impish",
+          "Sassy",
+          "Naughty",
+          "Careful",
+          "Hasty",
+          "Naive"
+        ],
+        "stat_points": [
+          "HP 32 / Atk 32 / Def 2 / SpA 0 / SpD 0 / Spe 0",
+          "HP 2 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 32",
+          "HP 32 / Atk 32 / Def 0 / SpA 0 / SpD 2 / Spe 0",
+          "HP 0 / Atk 32 / Def 2 / SpA 0 / SpD 0 / Spe 32",
+          "HP 1 / Atk 32 / Def 1 / SpA 0 / SpD 0 / Spe 32",
+          "HP 32 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 2",
+          "HP 32 / Atk 0 / Def 32 / SpA 0 / SpD 2 / Spe 0",
+          "HP 0 / Atk 32 / Def 32 / SpA 0 / SpD 2 / Spe 0"
+        ],
+        "ability": [
+          "Disguise"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "move",
+          "rank": 1,
+          "name": "Play Rough",
+          "percentage": "86.8%",
+          "percentage_value": 86.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "move",
+          "rank": 2,
+          "name": "Shadow Sneak",
+          "percentage": "67.4%",
+          "percentage_value": 67.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "move",
+          "rank": 3,
+          "name": "Trick Room",
+          "percentage": "54.0%",
+          "percentage_value": 54,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "move",
+          "rank": 4,
+          "name": "Shadow Claw",
+          "percentage": "34.3%",
+          "percentage_value": 34.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "move",
+          "rank": 5,
+          "name": "Swords Dance",
+          "percentage": "34.2%",
+          "percentage_value": 34.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "move",
+          "rank": 6,
+          "name": "Protect",
+          "percentage": "20.5%",
+          "percentage_value": 20.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "move",
+          "rank": 7,
+          "name": "Drain Punch",
+          "percentage": "16.6%",
+          "percentage_value": 16.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "move",
+          "rank": 8,
+          "name": "Will-O-Wisp",
+          "percentage": "14.1%",
+          "percentage_value": 14.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "move",
+          "rank": 9,
+          "name": "Wood Hammer",
+          "percentage": "10.9%",
+          "percentage_value": 10.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "move",
+          "rank": 10,
+          "name": "Phantom Force",
+          "percentage": "9.6%",
+          "percentage_value": 9.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Life Orb",
+          "percentage": "36.3%",
+          "percentage_value": 36.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Mental Herb",
+          "percentage": "16.0%",
+          "percentage_value": 16,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Sitrus Berry",
+          "percentage": "8.8%",
+          "percentage_value": 8.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Spell Tag",
+          "percentage": "6.4%",
+          "percentage_value": 6.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Leftovers",
+          "percentage": "4.8%",
+          "percentage_value": 4.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Lum Berry",
+          "percentage": "3.1%",
+          "percentage_value": 3.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Fairy Feather",
+          "percentage": "2.9%",
+          "percentage_value": 2.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Iron Ball",
+          "percentage": "2.6%",
+          "percentage_value": 2.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Bright Powder",
+          "percentage": "2.1%",
+          "percentage_value": 2.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Quick Claw",
+          "percentage": "2.0%",
+          "percentage_value": 2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Torkoal",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Tyranitar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Charizard",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Sylveon",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Adamant",
+          "percentage": "50.6%",
+          "percentage_value": 50.6,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Brave",
+          "percentage": "22.5%",
+          "percentage_value": 22.5,
+          "stat_up": "Attack",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Jolly",
+          "percentage": "10.8%",
+          "percentage_value": 10.8,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Relaxed",
+          "percentage": "3.8%",
+          "percentage_value": 3.8,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Impish",
+          "percentage": "2.7%",
+          "percentage_value": 2.7,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Sassy",
+          "percentage": "2.3%",
+          "percentage_value": 2.3,
+          "stat_up": "Sp. Def",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Naughty",
+          "percentage": "2.1%",
+          "percentage_value": 2.1,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Careful",
+          "percentage": "1.9%",
+          "percentage_value": 1.9,
+          "stat_up": "Sp. Def",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Hasty",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "Speed",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Naive",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "18.8%",
+          "percentage_value": 18.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "13.3%",
+          "percentage_value": 13.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "6.9%",
+          "percentage_value": 6.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "4.9%",
+          "percentage_value": 4.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "3.7%",
+          "percentage_value": 3.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 1,
+          "attack_points": 32,
+          "defense_points": 1,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "2.0%",
+          "percentage_value": 2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 2
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "2.0%",
+          "percentage_value": 2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 32,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "2.0%",
+          "percentage_value": 2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 32,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Mimikyu",
+          "column_position": 70,
+          "position": 70,
+          "category": "ability",
+          "rank": 1,
+          "name": "Disguise",
+          "percentage": "100.0%",
+          "percentage_value": 100,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Mimikyu.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Mimikyu.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Mimikyu.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Mimikyu.csv"
+      }
+    ]
+  }
+}

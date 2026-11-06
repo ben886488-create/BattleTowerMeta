@@ -1,0 +1,4048 @@
+{
+  "pokemon": {
+    "slug": "scovillain",
+    "name": "Scovillain",
+    "baseName": "Scovillain",
+    "savedName": "Scovillain",
+    "form": "",
+    "types": [
+      "Grass",
+      "Fire"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Scovillain.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/952.png",
+    "stats": {
+      "hp": 140,
+      "attack": 128,
+      "defense": 85,
+      "spAttack": 128,
+      "spDefense": 85,
+      "speed": 95,
+      "total": 661
+    },
+    "rank": 54,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Rage Powder",
+    "topItem": "Scovillainite",
+    "topTeammate": "Basculegion Male"
+  },
+  "moves": [
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "move",
+      "rank": 1,
+      "name": "Rage Powder",
+      "percentage": 0.941,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "move",
+        "rank": 1,
+        "name": "Rage Powder",
+        "percentage": "94.1%",
+        "percentage_value": 94.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "move",
+      "rank": 2,
+      "name": "Protect",
+      "percentage": 0.916,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "move",
+        "rank": 2,
+        "name": "Protect",
+        "percentage": "91.6%",
+        "percentage_value": 91.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "move",
+      "rank": 3,
+      "name": "Overheat",
+      "percentage": 0.634,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "move",
+        "rank": 3,
+        "name": "Overheat",
+        "percentage": "63.4%",
+        "percentage_value": 63.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "move",
+      "rank": 4,
+      "name": "Giga Drain",
+      "percentage": 0.619,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "move",
+        "rank": 4,
+        "name": "Giga Drain",
+        "percentage": "61.9%",
+        "percentage_value": 61.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "move",
+      "rank": 5,
+      "name": "Leech Seed",
+      "percentage": 0.429,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "move",
+        "rank": 5,
+        "name": "Leech Seed",
+        "percentage": "42.9%",
+        "percentage_value": 42.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "move",
+      "rank": 6,
+      "name": "Flamethrower",
+      "percentage": 0.235,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "move",
+        "rank": 6,
+        "name": "Flamethrower",
+        "percentage": "23.5%",
+        "percentage_value": 23.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "move",
+      "rank": 7,
+      "name": "Burning Jealousy",
+      "percentage": 0.034,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "move",
+        "rank": 7,
+        "name": "Burning Jealousy",
+        "percentage": "3.4%",
+        "percentage_value": 3.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "move",
+      "rank": 8,
+      "name": "Leaf Storm",
+      "percentage": 0.03,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "move",
+        "rank": 8,
+        "name": "Leaf Storm",
+        "percentage": "3.0%",
+        "percentage_value": 3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "move",
+      "rank": 9,
+      "name": "Spicy Extract",
+      "percentage": 0.023,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "move",
+        "rank": 9,
+        "name": "Spicy Extract",
+        "percentage": "2.3%",
+        "percentage_value": 2.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "move",
+      "rank": 10,
+      "name": "Energy Ball",
+      "percentage": 0.02,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "move",
+        "rank": 10,
+        "name": "Energy Ball",
+        "percentage": "2.0%",
+        "percentage_value": 2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Scovillainite",
+      "percentage": 0.962,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Scovillainite",
+        "percentage": "96.2%",
+        "percentage_value": 96.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Leftovers",
+      "percentage": 0.8,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Leftovers",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Focus Sash",
+      "percentage": 0.5,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Focus Sash",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Life Orb",
+      "percentage": 0.5,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Life Orb",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Sitrus Berry",
+      "percentage": 0.3,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Sitrus Berry",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Choice Scarf",
+      "percentage": 0.3,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Choice Scarf",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "held_item",
+      "rank": 7,
+      "name": "White Herb",
+      "percentage": 0.2,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "held_item",
+        "rank": 7,
+        "name": "White Herb",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Big Root",
+      "percentage": 0.2,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Big Root",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Charcoal",
+      "percentage": 0.1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Charcoal",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Bright Powder",
+      "percentage": 0.1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Bright Powder",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "ability",
+      "rank": 1,
+      "name": "Moody",
+      "percentage": 0.784,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "ability",
+        "rank": 1,
+        "name": "Moody",
+        "percentage": "78.4%",
+        "percentage_value": 78.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "ability",
+      "rank": 2,
+      "name": "Chlorophyll",
+      "percentage": 0.139,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "ability",
+        "rank": 2,
+        "name": "Chlorophyll",
+        "percentage": "13.9%",
+        "percentage_value": 13.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "ability",
+      "rank": 3,
+      "name": "Insomnia",
+      "percentage": 0.077,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "ability",
+        "rank": 3,
+        "name": "Insomnia",
+        "percentage": "7.7%",
+        "percentage_value": 7.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Kingambit",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Kingambit",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Sneasler",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Sneasler",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Froslass",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Froslass",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Lycanroc Dusk Form",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Lycanroc Dusk Form",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Archaludon",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Archaludon",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Sylveon",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Sylveon",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Aerodactyl",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Aerodactyl",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Pelipper",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Pelipper",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Bold",
+      "percentage": 0.477,
+      "statUp": "Defense",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Bold",
+        "percentage": "47.7%",
+        "percentage_value": 47.7,
+        "stat_up": "Defense",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Calm",
+      "percentage": 0.29,
+      "statUp": "Sp. Def",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Calm",
+        "percentage": "29.0%",
+        "percentage_value": 29,
+        "stat_up": "Sp. Def",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Modest",
+      "percentage": 0.127,
+      "statUp": "Sp. Atk",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Modest",
+        "percentage": "12.7%",
+        "percentage_value": 12.7,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Relaxed",
+      "percentage": 0.026,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Relaxed",
+        "percentage": "2.6%",
+        "percentage_value": 2.6,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Sassy",
+      "percentage": 0.023,
+      "statUp": "Sp. Def",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Sassy",
+        "percentage": "2.3%",
+        "percentage_value": 2.3,
+        "stat_up": "Sp. Def",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Quiet",
+      "percentage": 0.02,
+      "statUp": "Sp. Atk",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Quiet",
+        "percentage": "2.0%",
+        "percentage_value": 2,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Timid",
+      "percentage": 0.02,
+      "statUp": "Speed",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Timid",
+        "percentage": "2.0%",
+        "percentage_value": 2,
+        "stat_up": "Speed",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Mild",
+      "percentage": 0.4,
+      "statUp": "Sp. Atk",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Mild",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Careful",
+      "percentage": 0.2,
+      "statUp": "Sp. Def",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Careful",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Sp. Def",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Impish",
+      "percentage": 0.2,
+      "statUp": "Defense",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Impish",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Defense",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.226,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "22.6%",
+        "percentage_value": 22.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 19,
+        "sp_atk_points": 0,
+        "sp_def_points": 15,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.076,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "7.6%",
+        "percentage_value": 7.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 15,
+        "sp_atk_points": 0,
+        "sp_def_points": 19,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.071,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "7.1%",
+        "percentage_value": 7.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 32,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.036,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "3.6%",
+        "percentage_value": 3.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 10,
+        "sp_atk_points": 2,
+        "sp_def_points": 10,
+        "speed_points": 12
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.031,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "3.1%",
+        "percentage_value": 3.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 25,
+        "sp_atk_points": 0,
+        "sp_def_points": 9,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.023,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "2.3%",
+        "percentage_value": 2.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 15,
+        "sp_atk_points": 0,
+        "sp_def_points": 15,
+        "speed_points": 4
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.02,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "2.0%",
+        "percentage_value": 2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 17,
+        "sp_atk_points": 0,
+        "sp_def_points": 17,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Scovillain",
+      "position": 54,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.018,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scovillain",
+        "column_position": 54,
+        "position": 54,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "1.8%",
+        "percentage_value": 1.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 9,
+        "sp_atk_points": 0,
+        "sp_def_points": 25,
+        "speed_points": 0
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a5055f965724db9ded41c56-zachk052510",
+      "name": "Zach K · Weekly Qualifier for RookideeVGC Grand Tourney",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Flamethrower",
+            "Giga Drain",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Rock Slide",
+            "Close Combat",
+            "Accelerock",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Sitrus Berry",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Gunk Shot",
+            "Close Combat",
+            "Fake Out",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 8,
+      "tournament": "Weekly Qualifier for RookideeVGC Grand Tourney",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Zach K",
+      "record": "6-2-0"
+    },
+    {
+      "id": "6a5055f965724db9ded41c56-vegas_key62140",
+      "name": "Vegas_key62140 · Weekly Qualifier for RookideeVGC Grand Tourney",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Rage Powder",
+            "Protect",
+            "Overheat",
+            "Giga Drain"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Quick Attack",
+            "Hyper Beam",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Rock Slide",
+            "Close Combat",
+            "Accelerock",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Kowtow Cleave",
+            "Protect",
+            "Swords Dance"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Sitrus Berry",
+          "ability": "Adaptability",
+          "moves": [
+            "Last Respects",
+            "Aqua Jet",
+            "Wave Crash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Aurora Veil",
+            "Blizzard",
+            "Shadow Ball",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Weekly Qualifier for RookideeVGC Grand Tourney",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Vegas_key62140",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a47c55e65724db9ded3b307-primevoltzy",
+      "name": "PrimeVoltzy · VGC Reg M-B Ingame  Tour",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Protect",
+            "Leech Seed",
+            "Rage Powder",
+            "Overheat"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Unburden",
+          "moves": [
+            "Protect",
+            "Fake Out",
+            "Close Combat",
+            "Dire Claw"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Protect",
+            "Dragon Pulse",
+            "Hurricane",
+            "Extreme Speed"
+          ]
+        },
+        {
+          "slug": "espathra",
+          "name": "Espathra",
+          "item": "Sitrus Berry",
+          "ability": "Speed Boost",
+          "moves": [
+            "Protect",
+            "Lumina Crash",
+            "Calm Mind",
+            "Baton Pass"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sharp Beak",
+          "ability": "Drizzle",
+          "moves": [
+            "Rain Dance",
+            "Weather Ball",
+            "Hurricane",
+            "Wide Guard"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "VGC Reg M-B Ingame  Tour",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "PrimeVoltzy",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a47c55e65724db9ded3b307-mariosr",
+      "name": "Mariosr · VGC Reg M-B Ingame  Tour",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Protect",
+            "Overheat",
+            "Giga Drain",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Protect",
+            "Blizzard",
+            "Aurora Veil",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Protect",
+            "Accelerock",
+            "Rock Slide",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Protect",
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Sitrus Berry",
+          "ability": "Adaptability",
+          "moves": [
+            "Protect",
+            "Last Respects",
+            "Wave Crash",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "poison jab",
+            "Close Combat",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "VGC Reg M-B Ingame  Tour",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Mariosr",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a4dbb9665724db9ded3ff83-primevoltzy",
+      "name": "PrimeVoltzy · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Protect",
+            "Leech Seed",
+            "Rage Powder",
+            "Overheat"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Unburden",
+          "moves": [
+            "Protect",
+            "Fake Out",
+            "Close Combat",
+            "Dire Claw"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Protect",
+            "Dragon Pulse",
+            "Hurricane",
+            "Extreme Speed"
+          ]
+        },
+        {
+          "slug": "espathra",
+          "name": "Espathra",
+          "item": "Sitrus Berry",
+          "ability": "Speed Boost",
+          "moves": [
+            "Protect",
+            "Lumina Crash",
+            "Calm Mind",
+            "Baton Pass"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sharp Beak",
+          "ability": "Drizzle",
+          "moves": [
+            "Rain Dance",
+            "Weather Ball",
+            "Hurricane",
+            "Wide Guard"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 1,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "PrimeVoltzy",
+      "record": "5-0-0"
+    },
+    {
+      "id": "6a4dbb9665724db9ded3ff83-minhi",
+      "name": "Minhi · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Aqua Jet",
+            "Wave Crash",
+            "Flip Turn",
+            "Last Respects"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Overheat",
+            "Giga Drain",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Life Orb",
+          "ability": "Thick Fat",
+          "moves": [
+            "High Horsepower",
+            "Protect",
+            "Ice Shard",
+            "Icicle Crash"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Snow Cloak",
+          "moves": [
+            "Aurora Veil",
+            "Blizzard",
+            "Protect",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Encore",
+            "Tailwind",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Kowtow Cleave",
+            "Low Kick",
+            "Iron Head"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Minhi",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a53c2d1e09846f1eb4c161b-zeeb",
+      "name": "Zeeb · The Drywall Series #11",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "mudsdale",
+          "name": "Mudsdale",
+          "item": "Sitrus Berry",
+          "ability": "Inner Focus",
+          "moves": [
+            "Earthquake",
+            "Heavy Slam",
+            "Protect",
+            "Curse"
+          ]
+        },
+        {
+          "slug": "oranguru",
+          "name": "Oranguru",
+          "item": "Colbur Berry",
+          "ability": "Telepathy",
+          "moves": [
+            "Psychic Noise",
+            "Instruct",
+            "Protect",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Gravity",
+            "Light Screen",
+            "Reflect",
+            "Rain Dance"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Giga Drain",
+            "Leech Seed",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Flash Cannon",
+            "Dragon Pulse",
+            "Electro Shot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gallade",
+          "name": "Gallade",
+          "item": "Galladite",
+          "ability": "Sharpness",
+          "moves": [
+            "Sacred Sword",
+            "Leaf Blade",
+            "Wide Guard",
+            "Trick Room"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "The Drywall Series #11",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Zeeb",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-lgaspar18",
+      "name": "Luan Gaspar - Grama/Psíquico · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Overheat",
+            "Giga Drain",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "espathra",
+          "name": "Espathra",
+          "item": "Sitrus Berry",
+          "ability": "Speed Boost",
+          "moves": [
+            "Lumina Crash",
+            "Calm Mind",
+            "Baton Pass",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Leftovers",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Giga Drain",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mow-rotom",
+          "name": "Mow Rotom",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Leaf Storm",
+            "Thunderbolt",
+            "Volt Switch",
+            "Electroweb"
+          ]
+        },
+        {
+          "slug": "armarouge",
+          "name": "Armarouge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Armor Cannon",
+            "Psychic",
+            "Heat Wave",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "starmie",
+          "name": "Starmie",
+          "item": "Starminite",
+          "ability": "Natural Cure",
+          "moves": [
+            "Psycho Cut",
+            "Liquidation",
+            "Aqua Jet",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Luan Gaspar - Grama/Psíquico",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a32e8b12d97f3b0c26189cc-mdn10",
+      "name": "MDN10 · Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Sand Rush",
+          "moves": [
+            "Protect",
+            "Iron Head",
+            "Earthquake",
+            "High Horsepower"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Draco Meteor",
+            "Dark Pulse",
+            "Snarl",
+            "Heat Wave"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Leftovers",
+          "ability": "Levitate",
+          "moves": [
+            "Hydro Pump",
+            "Will-O-Wisp",
+            "Protect",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "slug": "houndstone",
+          "name": "Houndstone",
+          "item": "Life Orb",
+          "ability": "Sand Rush",
+          "moves": [
+            "Last Respects",
+            "Shadow Sneak",
+            "Protect",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Flamethrower",
+            "Rage Powder",
+            "Spicy Extract",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "MDN10",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a4516dcc87cd9ff0a31469e-xbro1441",
+      "name": "xbro1441 · Pride Month 2 Celebration!!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "hisuian-goodra",
+          "name": "Hisuian Goodra",
+          "item": "Leftovers",
+          "ability": "Shell Armor",
+          "moves": [
+            "Body Press",
+            "Shelter",
+            "Heavy Slam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Rage Powder",
+            "Leech Seed",
+            "Overheat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "heliolisk",
+          "name": "Heliolisk",
+          "item": "Choice Scarf",
+          "ability": "Dry Skin",
+          "moves": [
+            "Volt Switch",
+            "Shed Tail",
+            "Eerie Impulse",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Weather Ball",
+            "Hurricane",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Accelerock",
+            "Rock Slide",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scizor",
+          "name": "Scizor",
+          "item": "Scizorite",
+          "ability": "Technician",
+          "moves": [
+            "Bullet Punch",
+            "Bug Bite",
+            "Swords Dance",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 2,
+      "tournament": "Pride Month 2 Celebration!!",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "xbro1441",
+      "record": "1-1-0"
+    },
+    {
+      "id": "6a4685c383fd320299bd6675-primevoltzy",
+      "name": "PrimeVoltzy · Pokémon Champions #1 - (Floette Eternal Flower)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Protect",
+            "Leech Seed",
+            "Rage Powder",
+            "Overheat"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Unburden",
+          "moves": [
+            "Protect",
+            "Fake Out",
+            "Close Combat",
+            "Dire Claw"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Protect",
+            "Dragon Pulse",
+            "Hurricane",
+            "Extreme Speed"
+          ]
+        },
+        {
+          "slug": "espathra",
+          "name": "Espathra",
+          "item": "Sitrus Berry",
+          "ability": "Speed Boost",
+          "moves": [
+            "Protect",
+            "Lumina Crash",
+            "Calm Mind",
+            "Baton Pass"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sharp Beak",
+          "ability": "Drizzle",
+          "moves": [
+            "Rain Dance",
+            "Weather Ball",
+            "Hurricane",
+            "Wide Guard"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "Pokémon Champions #1 - (Floette Eternal Flower)",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "PrimeVoltzy",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a5117e465724db9ded421f1-renades",
+      "name": "RenaDes · Øutcast's Warm Up Cup",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Flamethrower",
+            "Giga Drain",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Ice Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Beam",
+            "Hyper Voice",
+            "Quick Attack",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Accelerock",
+            "Rock Slide",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Life Orb",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Øutcast's Warm Up Cup",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "RenaDes",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a291b172d97f3b0c2612db9-z13",
+      "name": "Z13 · Mystery Community Tournament#1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Protect",
+            "Fake Out",
+            "Dire Claw",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Protect",
+            "Dual Wingbeat",
+            "Rock Slide",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Protect",
+            "Overheat",
+            "Leech Seed",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Focus Sash",
+          "ability": "Swift Swim",
+          "moves": [
+            "Protect",
+            "Liquidation",
+            "Last Respects",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Protect",
+            "Hurricane",
+            "Weather Ball",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Choice Scarf",
+          "ability": "Sturdy",
+          "moves": [
+            "Snarl",
+            "Electro Shot",
+            "Flash Cannon",
+            "Draco Meteor"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Mystery Community Tournament#1",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Z13",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a467bb683fd320299bd6627-eunoiacritter",
+      "name": "eunoiaCritter · Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Focus Sash",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Protect",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Insomnia",
+          "moves": [
+            "Overheat",
+            "Giga Drain",
+            "Protect",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Life Orb",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Iron Head",
+            "Protect",
+            "Swords Dance"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Gunk Shot",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "eunoiaCritter",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a529f1ee09846f1eb4c14e3-kobraspike",
+      "name": "Kobraspike · Chaos League Sunday Slam #104",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "espathra",
+          "name": "Espathra",
+          "item": "Sitrus Berry",
+          "ability": "Speed Boost",
+          "moves": [
+            "Lumina Crash",
+            "Calm Mind",
+            "Protect",
+            "Baton Pass"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Protect",
+            "Flash Cannon",
+            "Dragon Pulse"
+          ]
+        },
+        {
+          "slug": "politoed",
+          "name": "Politoed",
+          "item": "Mystic Water",
+          "ability": "Drizzle",
+          "moves": [
+            "Weather Ball",
+            "Muddy Water",
+            "Ice Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Protect",
+            "Giga Drain",
+            "Rage Powder",
+            "Overheat"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Glimmoranite",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Sludge Bomb",
+            "Earth Power",
+            "Power Gem",
+            "Spiky Shield"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Pressure",
+          "moves": [
+            "Poison Jab",
+            "Close Combat",
+            "Fake Out",
+            "Quick Guard"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Chaos League Sunday Slam #104",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Kobraspike",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a529f1ee09846f1eb4c14e3-peekachu",
+      "name": "Peekachu · Chaos League Sunday Slam #104",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Rock Slide",
+            "Close Combat",
+            "Accelerock",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Overheat",
+            "Giga Drain",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Snow Cloak",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Sitrus Berry",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Close Combat",
+            "Dire Claw",
+            "Fake Out",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Chaos League Sunday Slam #104",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Peekachu",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a57380e6355385f44dd5183-vossi",
+      "name": "Vossi · Champions Tour LEPE M-B #9",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Light Clay",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Moonblast",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Flamethrower",
+            "Giga Drain",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Accelerock",
+            "Rock Slide",
+            "Close Combat",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Close Combat",
+            "Dire Claw",
+            "Fake Out",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8571428571428571,
+      "sampleCount": 7,
+      "tournament": "Champions Tour LEPE M-B #9",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Vossi",
+      "record": "6-1-0"
+    },
+    {
+      "id": "6a57380e6355385f44dd5183-primevoltzy",
+      "name": "PrimeVoltzy · Champions Tour LEPE M-B #9",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Protect",
+            "Leech Seed",
+            "Rage Powder",
+            "Overheat"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Unburden",
+          "moves": [
+            "Protect",
+            "Fake Out",
+            "Close Combat",
+            "Dire Claw"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Hydro Pump",
+            "Electroweb",
+            "Volt Switch",
+            "Dark Pulse"
+          ]
+        },
+        {
+          "slug": "espathra",
+          "name": "Espathra",
+          "item": "Sitrus Berry",
+          "ability": "Speed Boost",
+          "moves": [
+            "Protect",
+            "Lumina Crash",
+            "Calm Mind",
+            "Baton Pass"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sharp Beak",
+          "ability": "Drizzle",
+          "moves": [
+            "Rain Dance",
+            "Weather Ball",
+            "Hurricane",
+            "Wide Guard"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "Champions Tour LEPE M-B #9",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "PrimeVoltzy",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a4220ea83fd320299bd3c65-timmyinanalleyway",
+      "name": "TimmyInAnAlleyway · Champions Collective #14",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Giga Drain",
+            "Overheat",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Sitrus Berry",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Close Combat",
+            "Dire Claw",
+            "Protect",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Close Combat",
+            "Accelerock",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7,
+      "sampleCount": 10,
+      "tournament": "Champions Collective #14",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "TimmyInAnAlleyway",
+      "record": "7-3-0"
+    },
+    {
+      "id": "6a4220ea83fd320299bd3c65-cfoowl",
+      "name": "Cfoowl · Champions Collective #14",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Overheat",
+            "Leech Seed",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Chople Berry",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Dragon Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Spirit Break",
+            "Reflect",
+            "Light Screen",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Tailwind",
+            "Weather Ball",
+            "Wide Guard"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "Champions Collective #14",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Cfoowl",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a545f013ee4505de4ad5e7e-barnabebryan",
+      "name": "𝐈𝐌𝐎 | Barnabé · 🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Focus Sash",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Tailwind",
+            "Wide Guard",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Overheat",
+            "Leech Seed",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Choice Scarf",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Earthquake",
+            "Low Kick"
+          ]
+        },
+        {
+          "slug": "houndstone",
+          "name": "Houndstone",
+          "item": "Sitrus Berry",
+          "ability": "Sand Rush",
+          "moves": [
+            "Last Respects",
+            "Will-O-Wisp",
+            "Ally Switch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Foul Play",
+            "Reflect",
+            "Light Screen",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Ice Punch",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "𝐈𝐌𝐎 | Barnabé",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a46629683fd320299bd6543-batcoach",
+      "name": "BatCoach · 🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Spirit Break",
+            "Reflect",
+            "Light Screen",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Leftovers",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Dragon Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Rock Slide",
+            "Stomping Tantrum",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Overheat",
+            "Leech Seed",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Sitrus Berry",
+          "ability": "Levitate",
+          "moves": [
+            "Hydro Pump",
+            "Thunderbolt",
+            "Will-O-Wisp",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "BatCoach",
+      "record": "6-3-0"
+    }
+  ],
+  "movePool": [
+    "Bite",
+    "Bullet Seed",
+    "Burning Jealousy",
+    "Crunch",
+    "Double Hit",
+    "Endeavor",
+    "Endure",
+    "Energy Ball",
+    "Facade",
+    "Fire Blast",
+    "Fire Fang",
+    "Fire Spin",
+    "Flamethrower",
+    "Flare Blitz",
+    "Giga Drain",
+    "Giga Impact",
+    "Grass Knot",
+    "Grassy Glide",
+    "Grassy Terrain",
+    "Growth",
+    "Helping Hand",
+    "Hyper Beam",
+    "Ingrain",
+    "Lash Out",
+    "Leaf Storm",
+    "Leech Seed",
+    "Overheat",
+    "Protect",
+    "Rage Powder",
+    "Rest",
+    "Sandstorm",
+    "Scary Face",
+    "Seed Bomb",
+    "Sleep Talk",
+    "Solar Beam",
+    "Spicy Extract",
+    "Stomping Tantrum",
+    "Substitute",
+    "Sunny Day",
+    "Super Fang",
+    "Swagger",
+    "Temper Flare",
+    "Thief",
+    "Thunder Fang",
+    "Trailblaze",
+    "Will-O-Wisp",
+    "Worry Seed",
+    "Zen Headbutt"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Scovillain",
+      "base_name": "Scovillain",
+      "saved_name": "Scovillain",
+      "types": "Grass/Fire",
+      "abilities": "Chlorophyll|Insomnia|Moody",
+      "image_path": "pokemon_champions_assets\\pokemon\\Scovillain.png",
+      "form": "",
+      "hp": 140,
+      "atk": 128,
+      "def": 85,
+      "spa": 128,
+      "spd": 85,
+      "spe": 95,
+      "total": 661
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "move",
+          "rank": 1,
+          "name": "Rage Powder",
+          "percentage": "94.1%",
+          "percentage_value": 94.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Scovillainite",
+          "percentage": "96.2%",
+          "percentage_value": 96.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Bold",
+          "percentage": "47.7%",
+          "percentage_value": 47.7,
+          "stat_up": "Defense",
+          "stat_down": "Attack"
+        },
+        "stat_points": {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "22.6%",
+          "percentage_value": 22.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 19,
+          "sp_atk_points": 0,
+          "sp_def_points": 15,
+          "speed_points": 0
+        },
+        "ability": {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "ability",
+          "rank": 1,
+          "name": "Moody",
+          "percentage": "78.4%",
+          "percentage_value": 78.4,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Rage Powder",
+          "Protect",
+          "Overheat",
+          "Giga Drain",
+          "Leech Seed",
+          "Flamethrower",
+          "Burning Jealousy",
+          "Leaf Storm",
+          "Spicy Extract",
+          "Energy Ball"
+        ],
+        "held_item": [
+          "Scovillainite",
+          "Leftovers",
+          "Focus Sash",
+          "Life Orb",
+          "Sitrus Berry",
+          "Choice Scarf",
+          "White Herb",
+          "Big Root",
+          "Charcoal",
+          "Bright Powder"
+        ],
+        "teammate": [
+          "Basculegion Male",
+          "Kingambit",
+          "Sneasler",
+          "Froslass",
+          "Lycanroc Dusk Form",
+          "Archaludon",
+          "Garchomp",
+          "Sylveon",
+          "Aerodactyl",
+          "Pelipper"
+        ],
+        "stat_alignment": [
+          "Bold",
+          "Calm",
+          "Modest",
+          "Relaxed",
+          "Sassy",
+          "Quiet",
+          "Timid",
+          "Mild",
+          "Careful",
+          "Impish"
+        ],
+        "stat_points": [
+          "HP 32 / Atk 0 / Def 19 / SpA 0 / SpD 15 / Spe 0",
+          "HP 32 / Atk 0 / Def 15 / SpA 0 / SpD 19 / Spe 0",
+          "HP 32 / Atk 0 / Def 32 / SpA 0 / SpD 2 / Spe 0",
+          "HP 32 / Atk 0 / Def 10 / SpA 2 / SpD 10 / Spe 12",
+          "HP 32 / Atk 0 / Def 25 / SpA 0 / SpD 9 / Spe 0",
+          "HP 32 / Atk 0 / Def 15 / SpA 0 / SpD 15 / Spe 4",
+          "HP 32 / Atk 0 / Def 17 / SpA 0 / SpD 17 / Spe 0",
+          "HP 32 / Atk 0 / Def 9 / SpA 0 / SpD 25 / Spe 0"
+        ],
+        "ability": [
+          "Moody",
+          "Chlorophyll",
+          "Insomnia"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "move",
+          "rank": 1,
+          "name": "Rage Powder",
+          "percentage": "94.1%",
+          "percentage_value": 94.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "move",
+          "rank": 2,
+          "name": "Protect",
+          "percentage": "91.6%",
+          "percentage_value": 91.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "move",
+          "rank": 3,
+          "name": "Overheat",
+          "percentage": "63.4%",
+          "percentage_value": 63.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "move",
+          "rank": 4,
+          "name": "Giga Drain",
+          "percentage": "61.9%",
+          "percentage_value": 61.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "move",
+          "rank": 5,
+          "name": "Leech Seed",
+          "percentage": "42.9%",
+          "percentage_value": 42.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "move",
+          "rank": 6,
+          "name": "Flamethrower",
+          "percentage": "23.5%",
+          "percentage_value": 23.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "move",
+          "rank": 7,
+          "name": "Burning Jealousy",
+          "percentage": "3.4%",
+          "percentage_value": 3.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "move",
+          "rank": 8,
+          "name": "Leaf Storm",
+          "percentage": "3.0%",
+          "percentage_value": 3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "move",
+          "rank": 9,
+          "name": "Spicy Extract",
+          "percentage": "2.3%",
+          "percentage_value": 2.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "move",
+          "rank": 10,
+          "name": "Energy Ball",
+          "percentage": "2.0%",
+          "percentage_value": 2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Scovillainite",
+          "percentage": "96.2%",
+          "percentage_value": 96.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Leftovers",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Focus Sash",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Life Orb",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Sitrus Berry",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Choice Scarf",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "held_item",
+          "rank": 7,
+          "name": "White Herb",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Big Root",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Charcoal",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Bright Powder",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Sneasler",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Froslass",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Lycanroc Dusk Form",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Archaludon",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Sylveon",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Aerodactyl",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Pelipper",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Bold",
+          "percentage": "47.7%",
+          "percentage_value": 47.7,
+          "stat_up": "Defense",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Calm",
+          "percentage": "29.0%",
+          "percentage_value": 29,
+          "stat_up": "Sp. Def",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Modest",
+          "percentage": "12.7%",
+          "percentage_value": 12.7,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Relaxed",
+          "percentage": "2.6%",
+          "percentage_value": 2.6,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Sassy",
+          "percentage": "2.3%",
+          "percentage_value": 2.3,
+          "stat_up": "Sp. Def",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Quiet",
+          "percentage": "2.0%",
+          "percentage_value": 2,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Timid",
+          "percentage": "2.0%",
+          "percentage_value": 2,
+          "stat_up": "Speed",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Mild",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Careful",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Sp. Def",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Impish",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "22.6%",
+          "percentage_value": 22.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 19,
+          "sp_atk_points": 0,
+          "sp_def_points": 15,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "7.6%",
+          "percentage_value": 7.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 15,
+          "sp_atk_points": 0,
+          "sp_def_points": 19,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "7.1%",
+          "percentage_value": 7.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 32,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "3.6%",
+          "percentage_value": 3.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 10,
+          "sp_atk_points": 2,
+          "sp_def_points": 10,
+          "speed_points": 12
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "3.1%",
+          "percentage_value": 3.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 25,
+          "sp_atk_points": 0,
+          "sp_def_points": 9,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "2.3%",
+          "percentage_value": 2.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 15,
+          "sp_atk_points": 0,
+          "sp_def_points": 15,
+          "speed_points": 4
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "2.0%",
+          "percentage_value": 2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 17,
+          "sp_atk_points": 0,
+          "sp_def_points": 17,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "1.8%",
+          "percentage_value": 1.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 9,
+          "sp_atk_points": 0,
+          "sp_def_points": 25,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "ability",
+          "rank": 1,
+          "name": "Moody",
+          "percentage": "78.4%",
+          "percentage_value": 78.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "ability",
+          "rank": 2,
+          "name": "Chlorophyll",
+          "percentage": "13.9%",
+          "percentage_value": 13.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scovillain",
+          "column_position": 54,
+          "position": 54,
+          "category": "ability",
+          "rank": 3,
+          "name": "Insomnia",
+          "percentage": "7.7%",
+          "percentage_value": 7.7,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Scovillain.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Scovillain.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Scovillain.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Scovillain.csv"
+      }
+    ]
+  }
+}

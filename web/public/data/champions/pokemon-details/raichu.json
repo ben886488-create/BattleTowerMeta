@@ -1,0 +1,6231 @@
+{
+  "pokemon": {
+    "slug": "raichu",
+    "name": "Raichu",
+    "baseName": "Raichu",
+    "savedName": "Raichu",
+    "form": "",
+    "types": [
+      "Electric"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Raichu.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+    "stats": {
+      "hp": 135,
+      "attack": 110,
+      "defense": 75,
+      "spAttack": 110,
+      "spDefense": 100,
+      "speed": 130,
+      "total": 660
+    },
+    "rank": 17,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Zap Cannon",
+    "topItem": "Raichunite Y",
+    "topTeammate": "Incineroar"
+  },
+  "moves": [
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "move",
+      "rank": 1,
+      "name": "Zap Cannon",
+      "percentage": 0.837,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "move",
+        "rank": 1,
+        "name": "Zap Cannon",
+        "percentage": "83.7%",
+        "percentage_value": 83.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "move",
+      "rank": 2,
+      "name": "Focus Blast",
+      "percentage": 0.832,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "move",
+        "rank": 2,
+        "name": "Focus Blast",
+        "percentage": "83.2%",
+        "percentage_value": 83.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "move",
+      "rank": 3,
+      "name": "Protect",
+      "percentage": 0.8,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "move",
+        "rank": 3,
+        "name": "Protect",
+        "percentage": "80.0%",
+        "percentage_value": 80,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "move",
+      "rank": 4,
+      "name": "Fake Out",
+      "percentage": 0.739,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "move",
+        "rank": 4,
+        "name": "Fake Out",
+        "percentage": "73.9%",
+        "percentage_value": 73.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "move",
+      "rank": 5,
+      "name": "Grass Knot",
+      "percentage": 0.182,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "move",
+        "rank": 5,
+        "name": "Grass Knot",
+        "percentage": "18.2%",
+        "percentage_value": 18.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "move",
+      "rank": 6,
+      "name": "Volt Switch",
+      "percentage": 0.115,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "move",
+        "rank": 6,
+        "name": "Volt Switch",
+        "percentage": "11.5%",
+        "percentage_value": 11.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "move",
+      "rank": 7,
+      "name": "Encore",
+      "percentage": 0.087,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "move",
+        "rank": 7,
+        "name": "Encore",
+        "percentage": "8.7%",
+        "percentage_value": 8.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "move",
+      "rank": 8,
+      "name": "Volt Tackle",
+      "percentage": 0.051,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "move",
+        "rank": 8,
+        "name": "Volt Tackle",
+        "percentage": "5.1%",
+        "percentage_value": 5.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "move",
+      "rank": 9,
+      "name": "Dazzling Gleam",
+      "percentage": 0.048,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "move",
+        "rank": 9,
+        "name": "Dazzling Gleam",
+        "percentage": "4.8%",
+        "percentage_value": 4.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "move",
+      "rank": 10,
+      "name": "Rising Voltage",
+      "percentage": 0.043,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "move",
+        "rank": 10,
+        "name": "Rising Voltage",
+        "percentage": "4.3%",
+        "percentage_value": 4.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Raichunite Y",
+      "percentage": 0.839,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Raichunite Y",
+        "percentage": "83.9%",
+        "percentage_value": 83.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Raichunite X",
+      "percentage": 0.089,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Raichunite X",
+        "percentage": "8.9%",
+        "percentage_value": 8.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Focus Sash",
+      "percentage": 0.037,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Focus Sash",
+        "percentage": "3.7%",
+        "percentage_value": 3.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Shuca Berry",
+      "percentage": 0.8,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Shuca Berry",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Magnet",
+      "percentage": 0.5,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Magnet",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Sitrus Berry",
+      "percentage": 0.4,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Sitrus Berry",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Choice Scarf",
+      "percentage": 0.3,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Choice Scarf",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Life Orb",
+      "percentage": 0.2,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Life Orb",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Quick Claw",
+      "percentage": 0.1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Quick Claw",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Expert Belt",
+      "percentage": 0.1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Expert Belt",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "ability",
+      "rank": 1,
+      "name": "Lightning Rod",
+      "percentage": 0.973,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "ability",
+        "rank": 1,
+        "name": "Lightning Rod",
+        "percentage": "97.3%",
+        "percentage_value": 97.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "ability",
+      "rank": 2,
+      "name": "Static",
+      "percentage": 0.027,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "ability",
+        "rank": 2,
+        "name": "Static",
+        "percentage": "2.7%",
+        "percentage_value": 2.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Whimsicott",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Whimsicott",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Milotic",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Milotic",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Ceruledge",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Ceruledge",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Kingambit",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Kingambit",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Alolan Ninetales",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Alolan Ninetales",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Pelipper",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Pelipper",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Timid",
+      "percentage": 0.173,
+      "statUp": "Speed",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Timid",
+        "percentage": "17.3%",
+        "percentage_value": 17.3,
+        "stat_up": "Speed",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Modest",
+      "percentage": 0.131,
+      "statUp": "Sp. Atk",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Modest",
+        "percentage": "13.1%",
+        "percentage_value": 13.1,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Jolly",
+      "percentage": 0.059,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Jolly",
+        "percentage": "5.9%",
+        "percentage_value": 5.9,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Hasty",
+      "percentage": 0.9,
+      "statUp": "Speed",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Hasty",
+        "percentage": "0.9%",
+        "percentage_value": 0.9,
+        "stat_up": "Speed",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Adamant",
+      "percentage": 0.8,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Adamant",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Naive",
+      "percentage": 0.5,
+      "statUp": "Speed",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Naive",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Bold",
+      "percentage": 0.4,
+      "statUp": "Defense",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Bold",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Defense",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Mild",
+      "percentage": 0.2,
+      "statUp": "Sp. Atk",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Mild",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Quiet",
+      "percentage": 0.2,
+      "statUp": "Sp. Atk",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Quiet",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Brave",
+      "percentage": 0.1,
+      "statUp": "Attack",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Brave",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Attack",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.37,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "37.0%",
+        "percentage_value": 37,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.093,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "9.3%",
+        "percentage_value": 9.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 30,
+        "attack_points": 0,
+        "defense_points": 13,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 23
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.046,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "4.6%",
+        "percentage_value": 4.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 10,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 24
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.045,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "4.5%",
+        "percentage_value": 4.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.037,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "3.7%",
+        "percentage_value": 3.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 2,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.017,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "1.7%",
+        "percentage_value": 1.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 19,
+        "attack_points": 0,
+        "defense_points": 22,
+        "sp_atk_points": 1,
+        "sp_def_points": 0,
+        "speed_points": 24
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.015,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "1.5%",
+        "percentage_value": 1.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 16,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 24,
+        "sp_def_points": 0,
+        "speed_points": 24
+      }
+    },
+    {
+      "pokemon": "Raichu",
+      "position": 17,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.014,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Raichu",
+        "column_position": 17,
+        "position": 17,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "1.4%",
+        "percentage_value": 1.4,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a46b0e683fd320299bd6881-rrdrumond",
+      "name": "Rod · X1 Remote Battle League 2ª Edição - Reg M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Roseli Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Foul Play",
+            "Scary Face",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Trick Room",
+            "Psychic",
+            "Thunderbolt",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Tailwind",
+            "Soak",
+            "Hurricane"
+          ]
+        },
+        {
+          "slug": "greninja",
+          "name": "Greninja",
+          "item": "Life Orb",
+          "ability": "Protean",
+          "moves": [
+            "Ice Beam",
+            "Grass Knot",
+            "Rock Tomb",
+            "Gunk Shot"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite X",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Rising Voltage",
+            "Fake Out",
+            "Volt Switch",
+            "Volt Tackle"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Phantom Force",
+            "Encore",
+            "Gunk Shot",
+            "Close Combat"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.3333333333333333,
+      "sampleCount": 3,
+      "tournament": "X1 Remote Battle League 2ª Edição - Reg M-B",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Rod",
+      "record": "1-2-0"
+    },
+    {
+      "id": "6a46b0e683fd320299bd6881-jupiterro",
+      "name": "Jupiterro · X1 Remote Battle League 2ª Edição - Reg M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Steel Wing",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Tailwind",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Rock Slide",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Light Screen",
+            "Scary Face",
+            "Parting Shot",
+            "Spirit Break"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Focus Sash",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Electroweb",
+            "Volt Switch",
+            "Fake Out",
+            "Charm"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Shadow Ball",
+            "Strength Sap",
+            "Rage Powder"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.3333333333333333,
+      "sampleCount": 3,
+      "tournament": "X1 Remote Battle League 2ª Edição - Reg M-B",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Jupiterro",
+      "record": "1-2-0"
+    },
+    {
+      "id": "6a5055f965724db9ded41c56-dumbores",
+      "name": "Dumbores · Weekly Qualifier for RookideeVGC Grand Tourney",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Leftovers",
+          "ability": "Defiant",
+          "moves": [
+            "Rage Fist",
+            "Drain Punch",
+            "Bulk Up",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Tailwind",
+            "Protect",
+            "Moonblast",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Flip Turn",
+            "Last Respects",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Parting Shot",
+            "Flare Blitz",
+            "Fake Out",
+            "Taunt"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Light Clay",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Aurora Veil",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "Weekly Qualifier for RookideeVGC Grand Tourney",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Dumbores",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a4dfee8063cb29d318e6805-monkeyt",
+      "name": "MonkeyT · VGC UmbreNews 14.07.2026 #23 - Champion",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect",
+            "Grass Knot"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Chople Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Parting Shot",
+            "Flare Blitz",
+            "Protect",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Encore",
+            "Protect",
+            "Moonblast",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Trick Room",
+            "Protect",
+            "Imprison"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Aqua Jet",
+            "Flip Turn",
+            "Wave Crash",
+            "Last Respects"
+          ]
+        },
+        {
+          "slug": "gengar",
+          "name": "Gengar",
+          "item": "Gengarite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Shadow Ball",
+            "Perish Song",
+            "Protect",
+            "Sludge Bomb"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "VGC UmbreNews 14.07.2026 #23 - Champion",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "MonkeyT",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a4dfee8063cb29d318e6805-simba92",
+      "name": "Simba92 · VGC UmbreNews 14.07.2026 #23 - Champion",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "hisuian-samurott",
+          "name": "Hisuian Samurott",
+          "item": "Black Glasses",
+          "ability": "Sharpness",
+          "moves": [
+            "Night Slash",
+            "Sucker Punch",
+            "Sacred Sword",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Moonblast",
+            "Hyper Voice",
+            "Yawn",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Coaching",
+            "Dire Claw"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Metal Coat",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "VGC UmbreNews 14.07.2026 #23 - Champion",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Simba92",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a47c55e65724db9ded3b307-nunzio",
+      "name": "nunzio · VGC Reg M-B Ingame  Tour",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Volt Switch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Taunt",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Quick Attack",
+            "Yawn",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Life Orb",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "VGC Reg M-B Ingame  Tour",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "nunzio",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a47c55e65724db9ded3b307-monkeyt",
+      "name": "MonkeyT · VGC Reg M-B Ingame  Tour",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect",
+            "Grass Knot"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Chople Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Parting Shot",
+            "Flare Blitz",
+            "Protect",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Encore",
+            "Protect",
+            "Moonblast",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Trick Room",
+            "Protect",
+            "Imprison"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Aqua Jet",
+            "Flip Turn",
+            "Wave Crash",
+            "Last Respects"
+          ]
+        },
+        {
+          "slug": "gengar",
+          "name": "Gengar",
+          "item": "Gengarite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Shadow Ball",
+            "Perish Song",
+            "Protect",
+            "Sludge Bomb"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "VGC Reg M-B Ingame  Tour",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "MonkeyT",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a4dbb9665724db9ded3ff83-giozztan",
+      "name": "Giozztan · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Thunder Punch",
+            "Psychic Fangs",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Flare Blitz",
+            "Dual Wingbeat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Dragon Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Protect",
+            "Bulk Up"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Moonblast",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Giozztan",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-aerxdri",
+      "name": "aerxdri - Elétrico/Inseto · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Protect",
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "vivillon",
+          "name": "Vivillon",
+          "item": "Choice Scarf",
+          "ability": "Compound Eyes",
+          "moves": [
+            "Rage Powder",
+            "Sleep Powder",
+            "Tailwind",
+            "Hurricane"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Sitrus Berry",
+          "ability": "Levitate",
+          "moves": [
+            "Hydro Pump",
+            "Thunderbolt",
+            "Will-O-Wisp",
+            "Light Screen"
+          ]
+        },
+        {
+          "slug": "volcarona",
+          "name": "Volcarona",
+          "item": "Life Orb",
+          "ability": "Flame Body",
+          "moves": [
+            "Protect",
+            "Fiery Dance",
+            "Quiver Dance",
+            "Bug Buzz"
+          ]
+        },
+        {
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "item": "Focus Sash",
+          "ability": "Sharpness",
+          "moves": [
+            "Protect",
+            "Stone Axe",
+            "Swords Dance",
+            "X-Scissor"
+          ]
+        },
+        {
+          "slug": "scizor",
+          "name": "Scizor",
+          "item": "Scizorite",
+          "ability": "Technician",
+          "moves": [
+            "Protect",
+            "Bullet Punch",
+            "Swords Dance",
+            "Bug Bite"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "aerxdri - Elétrico/Inseto",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a510fac063cb29d318e8c08-logann0",
+      "name": "Logann0 · SNT Reg M-B Tour #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Protect",
+            "Volt Switch",
+            "Focus Blast"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Sunny Day"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Chople Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Flare Blitz",
+            "Throat Chop"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Life Orb",
+          "ability": "Levitate",
+          "moves": [
+            "Draco Meteor",
+            "Dark Pulse",
+            "Protect",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Solar Power",
+          "moves": [
+            "Solar Beam",
+            "Heat Wave",
+            "Protect",
+            "Air Slash"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Close Combat",
+            "Dire Claw",
+            "Protect",
+            "Fake Out"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "SNT Reg M-B Tour #3",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Logann0",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a4f9758063cb29d318e79a9-yubi",
+      "name": "Yubi · Sky Pillar Saturday Showdown S8 #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Life Dew",
+            "Protect",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "weavile",
+          "name": "Weavile",
+          "item": "Focus Sash",
+          "ability": "Pickpocket",
+          "moves": [
+            "Knock Off",
+            "Triple Axel",
+            "Protect",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Protect",
+            "Bulk Up"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Muddy Water",
+            "Coil",
+            "Protect",
+            "Hypnosis"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Sky Pillar Saturday Showdown S8 #10",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Yubi",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a4f9758063cb29d318e79a9-luongtuan123",
+      "name": "LuongTuan123 · Sky Pillar Saturday Showdown S8 #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "azumarill",
+          "name": "Azumarill",
+          "item": "Sitrus Berry",
+          "ability": "Huge Power",
+          "moves": [
+            "Belly Drum",
+            "Aqua Jet",
+            "Play Rough",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Coba Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Rage Powder",
+            "Matcha Gotcha",
+            "Trick Room",
+            "Life Dew"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Twin Beam",
+            "Trick Room",
+            "Light Screen",
+            "Hyper Voice"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Life Orb",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Weather Ball",
+            "Roost",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "tinkaton",
+          "name": "Tinkaton",
+          "item": "Focus Sash",
+          "ability": "Mold Breaker",
+          "moves": [
+            "Fake Out",
+            "Gigaton Hammer",
+            "Skill Swap",
+            "Knock Off"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Fake Out",
+            "Focus Blast",
+            "Zap Cannon",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Sky Pillar Saturday Showdown S8 #10",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "LuongTuan123",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a4f9758063cb29d318e79a9-nhan",
+      "name": "Nhan · Sky Pillar Saturday Showdown S8 #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Grass Knot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Trick Room",
+            "Helping Hand",
+            "Imprison"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Spirit Break",
+            "Light Screen",
+            "Reflect",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "weavile",
+          "name": "Weavile",
+          "item": "Focus Sash",
+          "ability": "Pickpocket",
+          "moves": [
+            "Triple Axel",
+            "Knock Off",
+            "Low Kick",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Light of Ruin",
+            "Moonblast",
+            "Protect",
+            "Dazzling Gleam"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Fake Out",
+            "Darkest Lariat",
+            "Parting Shot"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "Sky Pillar Saturday Showdown S8 #10",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Nhan",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a420fbf83fd320299bd3c3c-luckylandia",
+      "name": "LuckyLandia · Sketch Academy Sunday Regulation M-B Tournament",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Occa Berry",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Brave Bird",
+            "Iron Head",
+            "Tailwind",
+            "Roost"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Hyper Beam",
+            "Quick Attack",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gyarados",
+          "name": "Gyarados",
+          "item": "Gyaradosite",
+          "ability": "Intimidate",
+          "moves": [
+            "Crunch",
+            "Waterfall",
+            "Dragon Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Flare Blitz",
+            "Darkest Lariat"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Life Dew",
+            "Trick Room"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "Sketch Academy Sunday Regulation M-B Tournament",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "LuckyLandia",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a420fbf83fd320299bd3c3c-glitterckvamp",
+      "name": "glitterckvamp · Sketch Academy Sunday Regulation M-B Tournament",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Life Orb",
+          "ability": "Oblivious",
+          "moves": [
+            "High Horsepower",
+            "Protect",
+            "Ice Shard",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Leftovers",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Shadow Ball",
+            "Trick Room",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Fake Out",
+            "Focus Blast",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Protect",
+            "Iron Head",
+            "Low Kick",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Protect",
+            "Coaching",
+            "Close Combat",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "araquanid",
+          "name": "Araquanid",
+          "item": "Mystic Water",
+          "ability": "Water Bubble",
+          "moves": [
+            "Liquidation",
+            "Leech Life",
+            "Wide Guard",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Sketch Academy Sunday Regulation M-B Tournament",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "glitterckvamp",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a33cff8e334c3c9befd9250-bampu400",
+      "name": "Bampu400 · Rising Stars - S1 (Double Battle)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Flip Turn",
+            "Last Respects",
+            "Wave Crash",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Quick Claw",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect",
+            "Stomping Tantrum"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Dire Claw",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "meganium",
+          "name": "Meganium",
+          "item": "Meganiumite",
+          "ability": "Overgrow",
+          "moves": [
+            "Dazzling Gleam",
+            "Protect",
+            "Weather Ball",
+            "Solar Beam"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Nasty Plot",
+            "Shadow Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Focus Blast",
+            "Zap Cannon",
+            "Encore",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7,
+      "sampleCount": 10,
+      "tournament": "Rising Stars - S1 (Double Battle)",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Bampu400",
+      "record": "7-3-0"
+    },
+    {
+      "id": "6a33cff8e334c3c9befd9250-rage017",
+      "name": "Rage017 · Rising Stars - S1 (Double Battle)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gengar",
+          "name": "Gengar",
+          "item": "Gengarite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Protect",
+            "Shadow Ball",
+            "Sludge Bomb",
+            "Hypnosis"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Dark Pulse",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Fake Out",
+            "Protect",
+            "Zap Cannon",
+            "Focus Punch"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Roseli Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Disable",
+            "Light Screen",
+            "Will-O-Wisp",
+            "Gravity"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Protect",
+            "Moonblast",
+            "Encore",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Sitrus Berry",
+          "ability": "Thick Fat",
+          "moves": [
+            "Rock Slide",
+            "Earthquake",
+            "Ice Shard",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Rising Stars - S1 (Double Battle)",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Rage017",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a3854f7ceacae7d6441c118-giozztan",
+      "name": "Giozztan · PWC - Battle in the Colosseum #19 - Reg M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Thunder Punch",
+            "Psychic Fangs",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Flare Blitz",
+            "Dual Wingbeat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Dragon Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Protect",
+            "Bulk Up"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Moonblast",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "PWC - Battle in the Colosseum #19 - Reg M-B",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Giozztan",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a3854f7ceacae7d6441c118-cinemon_ricky27",
+      "name": "Cinemon_Ricky27 · PWC - Battle in the Colosseum #19 - Reg M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Protect",
+            "Zap Cannon",
+            "Volt Switch",
+            "Focus Blast"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Charcoal",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Darkest Lariat",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Beam",
+            "Quick Attack",
+            "Calm Mind",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Protect",
+            "Dragon Claw",
+            "Rock Slide",
+            "Stomping Tantrum"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Twin Beam",
+            "Foul Play",
+            "Helping Hand",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Tailwind",
+            "Protect",
+            "Moonblast",
+            "Encore"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "PWC - Battle in the Colosseum #19 - Reg M-B",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Cinemon_Ricky27",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a4516dcc87cd9ff0a31469e-bowsetti",
+      "name": "bowsetti · Pride Month 2 Celebration!!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psychic",
+            "Protect",
+            "Calm Mind"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Static",
+          "moves": [
+            "Fake Out",
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Pressure",
+          "moves": [
+            "Dire Claw",
+            "Close Combat",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Shadow Ball",
+            "Life Dew"
+          ]
+        },
+        {
+          "slug": "gyarados",
+          "name": "Gyarados",
+          "item": "Leftovers",
+          "ability": "Intimidate",
+          "moves": [
+            "Waterfall",
+            "Protect",
+            "Power Whip",
+            "Ice Fang"
+          ]
+        },
+        {
+          "slug": "gliscor",
+          "name": "Gliscor",
+          "item": "Sitrus Berry",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Acrobatics",
+            "High Horsepower",
+            "Tailwind",
+            "Rock Slide"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Pride Month 2 Celebration!!",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "bowsetti",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a4685c383fd320299bd6675-eolswold",
+      "name": "Eoin O · Pokémon Champions #1 - (Floette Eternal Flower)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scolipede",
+          "name": "Scolipede",
+          "item": "Scolipite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Protect",
+            "Poison Jab",
+            "Leech Life",
+            "Swords Dance"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Protect",
+            "Fake Out",
+            "Zap Cannon",
+            "Focus Blast"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Protect",
+            "Rage Powder",
+            "Matcha Gotcha",
+            "Life Dew"
+          ]
+        },
+        {
+          "slug": "weavile",
+          "name": "Weavile",
+          "item": "Focus Sash",
+          "ability": "Pickpocket",
+          "moves": [
+            "Fake Out",
+            "Triple Axel",
+            "Knock Off",
+            "Low Kick"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Protect",
+            "Shadow Sneak",
+            "Bitter Blade",
+            "Bulk Up"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Protect",
+            "Coil",
+            "Hypnosis",
+            "Muddy Water"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "Pokémon Champions #1 - (Floette Eternal Flower)",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Eoin O",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a5117e465724db9ded421f1-kevszion2",
+      "name": "kevszion2 · Øutcast's Warm Up Cup",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Life Orb",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Hyper Beam",
+            "Yawn",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Iron Head",
+            "Tailwind",
+            "Brave Bird",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Focus Sash",
+          "ability": "Oblivious",
+          "moves": [
+            "High Horsepower",
+            "Ice Shard",
+            "Icicle Crash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Aqua Jet",
+            "Last Respects",
+            "Wave Crash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Chople Berry",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Superpower",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Fake Out",
+            "Focus Blast",
+            "Zap Cannon",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Øutcast's Warm Up Cup",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "kevszion2",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a55808a232a1a55ee10be16-bboy",
+      "name": "Bboy · 𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Quick Attack",
+            "Protect",
+            "Yawn"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Focus Sash",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Superpower",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Life Orb",
+          "ability": "Oblivious",
+          "moves": [
+            "High Horsepower",
+            "Icicle Crash",
+            "Ice Shard",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Brave Bird",
+            "Iron Head",
+            "Tailwind",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Bboy",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a55808a232a1a55ee10be16-bencamelo",
+      "name": "bencamelo · 𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "snorlax",
+          "name": "Snorlax",
+          "item": "Life Orb",
+          "ability": "Thick Fat",
+          "moves": [
+            "Protect",
+            "Double-Edge",
+            "Crunch",
+            "Hammer Arm"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Encore",
+            "Focus Blast",
+            "Zap Cannon",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Protect",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Throat Chop",
+            "Flare Blitz",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Scald",
+            "Ice Beam",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Trick Room",
+            "Protect",
+            "Matcha Gotcha",
+            "Rage Powder"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "bencamelo",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a5162b8063cb29d318e9199-323232dani",
+      "name": "323232dani · MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Fake Out",
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Darkest Lariat",
+            "Roar",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Muddy Water",
+            "Coil",
+            "Hypnosis",
+            "Recover"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Life Dew",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Play Rough",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Bulk Up",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "323232dani",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a5162b8063cb29d318e9199-anibalruiz11",
+      "name": "Anibalruiz11 · MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Protect",
+            "Focus Blast",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Wish",
+            "Yawn",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Focus Sash",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Protect",
+            "Superpower"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Iron Head",
+            "Tailwind",
+            "Brave Bird",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Life Orb",
+          "ability": "Oblivious",
+          "moves": [
+            "High Horsepower",
+            "Icicle Spear",
+            "Ice Shard",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Protect",
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.25,
+      "sampleCount": 4,
+      "tournament": "MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Anibalruiz11",
+      "record": "1-3-0"
+    },
+    {
+      "id": "6a4d303a65724db9ded3f61e-leninedevectra",
+      "name": "Leninedevectra · LPP On-line",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scolipede",
+          "name": "Scolipede",
+          "item": "Scolipite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Leech Life",
+            "Poison Jab",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Life Dew",
+            "Protect",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "weavile",
+          "name": "Weavile",
+          "item": "Focus Sash",
+          "ability": "Pickpocket",
+          "moves": [
+            "Knock Off",
+            "Triple Axel",
+            "Low Kick",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Protect",
+            "Bulk Up"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Muddy Water",
+            "Coil",
+            "Protect",
+            "Hypnosis"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "LPP On-line",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Leninedevectra",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a4d303a65724db9ded3f61e-alphastorm42",
+      "name": "Alphastorm42 · LPP On-line",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Life Dew",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Muddy Water",
+            "Coil",
+            "Hypnosis",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Light Clay",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Protect",
+            "Aurora Veil",
+            "Freeze-Dry"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Bulk Up",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.25,
+      "sampleCount": 4,
+      "tournament": "LPP On-line",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Alphastorm42",
+      "record": "1-3-0"
+    },
+    {
+      "id": "6a54c9d3232a1a55ee10b346-israelkuro",
+      "name": "NMR | Kuroryu · Intimidators Champions Challenge #27 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Life Dew",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Muddy Water",
+            "Coil",
+            "Hypnosis",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Bulk Up",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Play Rough",
+            "Sucker Punch",
+            "Protect",
+            "Swords Dance"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 1,
+      "sampleCount": 9,
+      "tournament": "Intimidators Champions Challenge #27 REG M-B",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "NMR | Kuroryu",
+      "record": "9-0-0"
+    },
+    {
+      "id": "6a54c9d3232a1a55ee10b346-haasfara",
+      "name": "Haasfara · Intimidators Champions Challenge #27 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Focus Blast",
+            "Zap Cannon",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Sitrus Berry",
+          "ability": "Competitive",
+          "moves": [
+            "Scald",
+            "Icy Wind",
+            "Recover",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Sand Rush",
+          "moves": [
+            "Earthquake",
+            "High Horsepower",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Brave Bird",
+            "Iron Head",
+            "Bulk Up",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Protect",
+            "Knock Off",
+            "Dragon Dance"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Intimidators Champions Challenge #27 REG M-B",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Haasfara",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a5497ab232a1a55ee10b2b8-dumbores",
+      "name": "Dumbores · HeroicTitan’s VGC Battle Arena",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Leftovers",
+          "ability": "Defiant",
+          "moves": [
+            "Rage Fist",
+            "Drain Punch",
+            "Bulk Up",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Tailwind",
+            "Protect",
+            "Moonblast",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Flip Turn",
+            "Last Respects",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Parting Shot",
+            "Flare Blitz",
+            "Fake Out",
+            "Taunt"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Light Clay",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Aurora Veil",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "HeroicTitan’s VGC Battle Arena",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Dumbores",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a5497ab232a1a55ee10b2b8-redbamaxxxx",
+      "name": "RedbamaXxXx · HeroicTitan’s VGC Battle Arena",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "qwilfish",
+          "name": "Qwilfish",
+          "item": "Choice Scarf",
+          "ability": "Intimidate",
+          "moves": [
+            "Poison Jab",
+            "Flip Turn",
+            "Icy Wind",
+            "Liquidation"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Sitrus Berry",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Protect",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Grass Knot",
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Protect",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Protect",
+            "Shadow Ball",
+            "Nasty Plot"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Solar Beam",
+            "Weather Ball",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "HeroicTitan’s VGC Battle Arena",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "RedbamaXxXx",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a467bb683fd320299bd6627-echoresonator",
+      "name": "EchoResonator · Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Roost",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Fairy Feather",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Life Orb",
+          "ability": "Adaptability",
+          "moves": [
+            "Last Respects",
+            "Aqua Jet",
+            "Wave Crash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Sitrus Berry",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Rock Slide",
+            "Stomping Tantrum",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Focus Sash",
+          "ability": "Friend Guard",
+          "moves": [
+            "Feint",
+            "Super Fang",
+            "Follow Me",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.3333333333333333,
+      "sampleCount": 3,
+      "tournament": "Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "placing": null,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "EchoResonator",
+      "record": "1-2-0"
+    },
+    {
+      "id": "6a467bb683fd320299bd6627-smurfz",
+      "name": "Smurfz · Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite X",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Protect",
+            "Fake Out",
+            "Rising Voltage",
+            "Volt Switch"
+          ]
+        },
+        {
+          "slug": "jolteon",
+          "name": "Jolteon",
+          "item": "Life Orb",
+          "ability": "Volt Absorb",
+          "moves": [
+            "Protect",
+            "Rising Voltage",
+            "Weather Ball",
+            "Alluring Voice"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Focus Sash",
+          "ability": "Snow Warning",
+          "moves": [
+            "Protect",
+            "Freeze-Dry",
+            "Blizzard",
+            "Roar"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Coba Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Sunny Day"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Poison Jab",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "gyarados",
+          "name": "Gyarados",
+          "item": "Leftovers",
+          "ability": "Intimidate",
+          "moves": [
+            "Waterfall",
+            "Taunt",
+            "Thunder Wave",
+            "Dragon Dance"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 2,
+      "tournament": "Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "placing": null,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Smurfz",
+      "record": "0-2-0"
+    },
+    {
+      "id": "6a442f7183fd320299bd5187-nillythekid",
+      "name": "Niels Hofman · HALL OF  FAME BELGIUM (Invitational)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Life Dew",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Muddy Water",
+            "Coil",
+            "Hypnosis",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Dazzling Gleam",
+            "Draining Kiss",
+            "Calm Mind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Bulk Up",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "HALL OF  FAME BELGIUM (Invitational)",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Niels Hofman",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a47aff0063cb29d318e1b77-noobly320",
+      "name": "Kevin David Vivero · Cusca Champions Weekly ⚡ #2 (PCVGC)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "pyroar",
+          "name": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Unnerve",
+          "moves": [
+            "Heat Wave",
+            "Solar Beam",
+            "Overheat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Protect",
+            "Taunt",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Twin Beam",
+            "Thunderbolt",
+            "Trick Room",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Life Orb",
+          "ability": "Adaptability",
+          "moves": [
+            "Aqua Jet",
+            "Last Respects",
+            "Wave Crash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Alluring Voice",
+            "Focus Blast",
+            "Volt Switch"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Heat Rock",
+          "ability": "Drought",
+          "moves": [
+            "Solar Beam",
+            "Helping Hand",
+            "Protect",
+            "Eruption"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 3,
+      "tournament": "Cusca Champions Weekly ⚡ #2 (PCVGC)",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Kevin David Vivero",
+      "record": "2-1-0"
+    },
+    {
+      "id": "6a529f1ee09846f1eb4c14e3-gengarballer",
+      "name": "GengarBaller · Chaos League Sunday Slam #104",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "lucario",
+          "name": "Lucario",
+          "item": "Lucarionite",
+          "ability": "Justified",
+          "moves": [
+            "Close Combat",
+            "Bullet Punch",
+            "Ice Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Fake Out",
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Focus Sash",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Brave Bird",
+            "Taunt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Rock Slide",
+            "Dragon Claw",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Supreme Overlord",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Protect",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Leftovers",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "Chaos League Sunday Slam #104",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "GengarBaller",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a529f1ee09846f1eb4c14e3-darth_draco",
+      "name": "Darth_Draco · Chaos League Sunday Slam #104",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Protect",
+            "Dragon Pulse",
+            "Flash Cannon"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Torrent",
+          "moves": [
+            "Ice Punch",
+            "Wave Crash",
+            "Protect",
+            "High Horsepower"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Tailwind",
+            "Protect",
+            "Hurricane",
+            "Weather Ball"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Chople Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Darkest Lariat",
+            "Flare Blitz",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Encore",
+            "Tailwind",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Chaos League Sunday Slam #104",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Darth_Draco",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a529f1ee09846f1eb4c14e3-nefastto",
+      "name": "Nefastto · Chaos League Sunday Slam #104",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "High Jump Kick",
+            "Knock Off",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Mental Herb",
+          "ability": "Prankster",
+          "moves": [
+            "Tailwind",
+            "Encore",
+            "Taunt",
+            "Dazzling Gleam"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite X",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Fake Out",
+            "Focus Blast",
+            "Grass Knot"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Shadow Ball",
+            "Rage Powder",
+            "Life Dew"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Unburden",
+          "moves": [
+            "Dire Claw",
+            "Close Combat",
+            "Taunt",
+            "Fake Out"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Chaos League Sunday Slam #104",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Nefastto",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a57380e6355385f44dd5183-vossi",
+      "name": "Vossi · Champions Tour LEPE M-B #9",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Light Clay",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Moonblast",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Flamethrower",
+            "Giga Drain",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Accelerock",
+            "Rock Slide",
+            "Close Combat",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Close Combat",
+            "Dire Claw",
+            "Fake Out",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8571428571428571,
+      "sampleCount": 7,
+      "tournament": "Champions Tour LEPE M-B #9",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Vossi",
+      "record": "6-1-0"
+    },
+    {
+      "id": "6a4220ea83fd320299bd3c65-sevaunn",
+      "name": "SeVaunn · Champions Collective #14",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Fake Out",
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Life Orb",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Dazzling Gleam",
+            "Protect",
+            "Moonblast"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Protect",
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Darkest Lariat",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Light Clay",
+          "ability": "Snow Warning",
+          "moves": [
+            "Protect",
+            "Blizzard",
+            "Aurora Veil",
+            "Freeze-Dry"
+          ]
+        },
+        {
+          "slug": "gengar",
+          "name": "Gengar",
+          "item": "Gengarite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Protect",
+            "Shadow Ball",
+            "Perish Song",
+            "Sludge Bomb"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 10,
+      "tournament": "Champions Collective #14",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "SeVaunn",
+      "record": "8-2-0"
+    },
+    {
+      "id": "6a39cb01c87cd9ff0a30d791-ovenmutant2",
+      "name": "ovenmutant2 · Cashed Out Gaming Season 1 M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite X",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Fake Out",
+            "Protect",
+            "Rising Voltage",
+            "Volt Switch"
+          ]
+        },
+        {
+          "slug": "jolteon",
+          "name": "Jolteon",
+          "item": "Life Orb",
+          "ability": "Volt Absorb",
+          "moves": [
+            "Rising Voltage",
+            "Protect",
+            "Weather Ball",
+            "Volt Switch"
+          ]
+        },
+        {
+          "slug": "vanilluxe",
+          "name": "Vanilluxe",
+          "item": "Choice Scarf",
+          "ability": "Snow Warning",
+          "moves": [
+            "Freeze-Dry",
+            "Blizzard",
+            "Flash Cannon",
+            "Ice Beam"
+          ]
+        },
+        {
+          "slug": "palafin",
+          "name": "Palafin",
+          "item": "Mystic Water",
+          "ability": "Zero to Hero",
+          "moves": [
+            "Jet Punch",
+            "Wave Crash",
+            "Flip Turn",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "typhlosion",
+          "name": "Typhlosion",
+          "item": "Charcoal",
+          "ability": "Flash Fire",
+          "moves": [
+            "Eruption",
+            "Protect",
+            "Fire Blast",
+            "Scorching Sands"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "No Item",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Acrobatics",
+            "Quick Guard",
+            "Taunt"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Cashed Out Gaming Season 1 M-B",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "ovenmutant2",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a4f486e063cb29d318e781e-josiah_2564",
+      "name": "Josiah_2564 · Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Volt Switch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Dazzling Gleam",
+            "Moonblast",
+            "Draining Kiss",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Last Respects",
+            "Wave Crash",
+            "Flip Turn",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Dire Claw",
+            "Close Combat",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 2,
+      "tournament": "Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Josiah_2564",
+      "record": "1-1-0"
+    },
+    {
+      "id": "6a5970c3cc68177ec6c5710d-arsene",
+      "name": "Arsene · Afternoon Champions #1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Fake Out",
+            "Zap Cannon",
+            "Protect",
+            "Focus Blast"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Sitrus Berry",
+          "ability": "Stamina",
+          "moves": [
+            "Dragon Pulse",
+            "Protect",
+            "Electro Shot",
+            "Flash Cannon"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Leftovers",
+          "ability": "Prankster",
+          "moves": [
+            "Fake Out",
+            "Light Screen",
+            "Will-O-Wisp",
+            "Rain Dance"
+          ]
+        },
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Torrent",
+          "moves": [
+            "Protect",
+            "Wave Crash",
+            "Earthquake",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Damp Rock",
+          "ability": "Drizzle",
+          "moves": [
+            "Protect",
+            "Weather Ball",
+            "Ice Beam",
+            "Hurricane"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Focus Sash",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 1,
+      "sampleCount": 3,
+      "tournament": "Afternoon Champions #1",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Arsene",
+      "record": "3-0-0"
+    },
+    {
+      "id": "6a5970c3cc68177ec6c5710d-coderh",
+      "name": "Coderh · Afternoon Champions #1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "hawlucha",
+          "name": "Hawlucha",
+          "item": "Hawluchanite",
+          "ability": "No Guard",
+          "moves": [
+            "Brave Bird",
+            "Close Combat",
+            "Stone Edge",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hisuian-decidueye",
+          "name": "Hisuian Decidueye",
+          "item": "Scope Lens",
+          "ability": "Scrappy",
+          "moves": [
+            "Triple Arrows",
+            "Leaf Blade",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Focus Sash",
+          "ability": "Gale Wings",
+          "moves": [
+            "Dual Wingbeat",
+            "Taunt",
+            "Tailwind",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "aegislash",
+          "name": "Aegislash",
+          "item": "Spell Tag",
+          "ability": "Stance Change",
+          "moves": [
+            "Poltergeist",
+            "Iron Head",
+            "Shadow Sneak",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.3333333333333333,
+      "sampleCount": 3,
+      "tournament": "Afternoon Champions #1",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Coderh",
+      "record": "1-2-0"
+    },
+    {
+      "id": "6a46629683fd320299bd6543-jackg",
+      "name": "JackG · 🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Sitrus Berry",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Moonblast",
+            "Calm Mind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Leaf Storm",
+            "Trick Room",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Focus Sash",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Bulk Up",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "JackG",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a46629683fd320299bd6543-tryson21",
+      "name": "Tryson21 · 🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Spell Tag",
+          "ability": "Good as Gold",
+          "moves": [
+            "Nasty Plot",
+            "Shadow Ball",
+            "Protect",
+            "Make It Rain"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Protect",
+            "Dragon Claw"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Darkest Lariat",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Coil",
+            "Hypnosis",
+            "Recover",
+            "Scald"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Tailwind",
+            "Moonblast",
+            "Encore",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Tryson21",
+      "record": "6-3-0"
+    }
+  ],
+  "movePool": [
+    "Agility",
+    "Alluring Voice",
+    "Body Slam",
+    "Brick Break",
+    "Brutal Swing",
+    "Charge",
+    "Charge Beam",
+    "Charm",
+    "Dazzling Gleam",
+    "Dig",
+    "Discharge",
+    "Double Team",
+    "Drain Punch",
+    "Draining Kiss",
+    "Eerie Impulse",
+    "Electric Terrain",
+    "Electro Ball",
+    "Electroweb",
+    "Encore",
+    "Endeavor",
+    "Endure",
+    "Facade",
+    "Fake Out",
+    "Fake Tears",
+    "Feint",
+    "Flail",
+    "Fling",
+    "Focus Blast",
+    "Focus Punch",
+    "Giga Impact",
+    "Grass Knot",
+    "Helping Hand",
+    "Hyper Beam",
+    "Iron Tail",
+    "Knock Off",
+    "Light Screen",
+    "Mega Kick",
+    "Nasty Plot",
+    "Nuzzle",
+    "Play Rough",
+    "Protect",
+    "Quick Attack",
+    "Rain Dance",
+    "Reflect",
+    "Rest",
+    "Reversal",
+    "Rising Voltage",
+    "Round",
+    "Sleep Talk",
+    "Snore",
+    "Substitute",
+    "Surf",
+    "Sweet Kiss",
+    "Thief",
+    "Thunder",
+    "Thunder Punch",
+    "Thunder Wave",
+    "Thunderbolt",
+    "Tickle",
+    "Trailblaze",
+    "Upper Hand",
+    "Volt Switch",
+    "Volt Tackle",
+    "Wild Charge",
+    "Wish",
+    "Zap Cannon"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Raichu",
+      "base_name": "Raichu",
+      "saved_name": "Raichu",
+      "types": "Electric",
+      "abilities": "Static|Lightning Rod",
+      "weight": "",
+      "image_path": "pokemon_champions_assets\\pokemon\\Raichu.png",
+      "form": "",
+      "hp": 135,
+      "atk": 110,
+      "def": 75,
+      "spa": 110,
+      "spd": 100,
+      "spe": 130,
+      "total": 660
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "move",
+          "rank": 1,
+          "name": "Zap Cannon",
+          "percentage": "83.7%",
+          "percentage_value": 83.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Raichunite Y",
+          "percentage": "83.9%",
+          "percentage_value": 83.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Timid",
+          "percentage": "17.3%",
+          "percentage_value": 17.3,
+          "stat_up": "Speed",
+          "stat_down": "Attack"
+        },
+        "stat_points": {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "37.0%",
+          "percentage_value": 37,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        "ability": {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "ability",
+          "rank": 1,
+          "name": "Lightning Rod",
+          "percentage": "97.3%",
+          "percentage_value": 97.3,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Zap Cannon",
+          "Focus Blast",
+          "Protect",
+          "Fake Out",
+          "Grass Knot",
+          "Volt Switch",
+          "Encore",
+          "Volt Tackle",
+          "Dazzling Gleam",
+          "Rising Voltage"
+        ],
+        "held_item": [
+          "Raichunite Y",
+          "Raichunite X",
+          "Focus Sash",
+          "Shuca Berry",
+          "Magnet",
+          "Sitrus Berry",
+          "Choice Scarf",
+          "Life Orb",
+          "Quick Claw",
+          "Expert Belt"
+        ],
+        "teammate": [
+          "Incineroar",
+          "Sinistcha",
+          "Whimsicott",
+          "Garchomp",
+          "Milotic",
+          "Basculegion Male",
+          "Ceruledge",
+          "Kingambit",
+          "Alolan Ninetales",
+          "Pelipper"
+        ],
+        "stat_alignment": [
+          "Timid",
+          "Modest",
+          "Jolly",
+          "Hasty",
+          "Adamant",
+          "Naive",
+          "Bold",
+          "Mild",
+          "Quiet",
+          "Brave"
+        ],
+        "stat_points": [
+          "HP 2 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 32",
+          "HP 30 / Atk 0 / Def 13 / SpA 0 / SpD 0 / Spe 23",
+          "HP 32 / Atk 0 / Def 10 / SpA 0 / SpD 0 / Spe 24",
+          "HP 2 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 32",
+          "HP 32 / Atk 0 / Def 0 / SpA 2 / SpD 0 / Spe 32",
+          "HP 19 / Atk 0 / Def 22 / SpA 1 / SpD 0 / Spe 24",
+          "HP 16 / Atk 0 / Def 2 / SpA 24 / SpD 0 / Spe 24",
+          "HP 32 / Atk 0 / Def 2 / SpA 0 / SpD 0 / Spe 32"
+        ],
+        "ability": [
+          "Lightning Rod",
+          "Static"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "move",
+          "rank": 1,
+          "name": "Zap Cannon",
+          "percentage": "83.7%",
+          "percentage_value": 83.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "move",
+          "rank": 2,
+          "name": "Focus Blast",
+          "percentage": "83.2%",
+          "percentage_value": 83.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "move",
+          "rank": 3,
+          "name": "Protect",
+          "percentage": "80.0%",
+          "percentage_value": 80,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "move",
+          "rank": 4,
+          "name": "Fake Out",
+          "percentage": "73.9%",
+          "percentage_value": 73.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "move",
+          "rank": 5,
+          "name": "Grass Knot",
+          "percentage": "18.2%",
+          "percentage_value": 18.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "move",
+          "rank": 6,
+          "name": "Volt Switch",
+          "percentage": "11.5%",
+          "percentage_value": 11.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "move",
+          "rank": 7,
+          "name": "Encore",
+          "percentage": "8.7%",
+          "percentage_value": 8.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "move",
+          "rank": 8,
+          "name": "Volt Tackle",
+          "percentage": "5.1%",
+          "percentage_value": 5.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "move",
+          "rank": 9,
+          "name": "Dazzling Gleam",
+          "percentage": "4.8%",
+          "percentage_value": 4.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "move",
+          "rank": 10,
+          "name": "Rising Voltage",
+          "percentage": "4.3%",
+          "percentage_value": 4.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Raichunite Y",
+          "percentage": "83.9%",
+          "percentage_value": 83.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Raichunite X",
+          "percentage": "8.9%",
+          "percentage_value": 8.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Focus Sash",
+          "percentage": "3.7%",
+          "percentage_value": 3.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Shuca Berry",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Magnet",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Sitrus Berry",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Choice Scarf",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Life Orb",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Quick Claw",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Expert Belt",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Whimsicott",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Milotic",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Ceruledge",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Alolan Ninetales",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Pelipper",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Timid",
+          "percentage": "17.3%",
+          "percentage_value": 17.3,
+          "stat_up": "Speed",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Modest",
+          "percentage": "13.1%",
+          "percentage_value": 13.1,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Jolly",
+          "percentage": "5.9%",
+          "percentage_value": 5.9,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Hasty",
+          "percentage": "0.9%",
+          "percentage_value": 0.9,
+          "stat_up": "Speed",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Adamant",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Naive",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Bold",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Defense",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Mild",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Quiet",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Brave",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Attack",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "37.0%",
+          "percentage_value": 37,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "9.3%",
+          "percentage_value": 9.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 30,
+          "attack_points": 0,
+          "defense_points": 13,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 23
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "4.6%",
+          "percentage_value": 4.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 10,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 24
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "4.5%",
+          "percentage_value": 4.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "3.7%",
+          "percentage_value": 3.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 2,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "1.7%",
+          "percentage_value": 1.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 19,
+          "attack_points": 0,
+          "defense_points": 22,
+          "sp_atk_points": 1,
+          "sp_def_points": 0,
+          "speed_points": 24
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "1.5%",
+          "percentage_value": 1.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 16,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 24,
+          "sp_def_points": 0,
+          "speed_points": 24
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "1.4%",
+          "percentage_value": 1.4,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "ability",
+          "rank": 1,
+          "name": "Lightning Rod",
+          "percentage": "97.3%",
+          "percentage_value": 97.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Raichu",
+          "column_position": 17,
+          "position": 17,
+          "category": "ability",
+          "rank": 2,
+          "name": "Static",
+          "percentage": "2.7%",
+          "percentage_value": 2.7,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Raichu.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Raichu.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Raichu.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Raichu.csv"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2557 @@
+{
+  "pokemon": {
+    "slug": "dragalge",
+    "name": "Dragalge",
+    "baseName": "Dragalge",
+    "savedName": "Dragalge",
+    "form": "",
+    "types": [
+      "Poison",
+      "Dragon"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Dragalge.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/691.png",
+    "stats": {
+      "hp": 140,
+      "attack": 95,
+      "defense": 110,
+      "spAttack": 117,
+      "spDefense": 143,
+      "speed": 64,
+      "total": 669
+    },
+    "rank": 105,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Protect",
+    "topItem": "Dragalgite",
+    "topTeammate": "Sinistcha"
+  },
+  "moves": [
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "move",
+      "rank": 1,
+      "name": "Protect",
+      "percentage": 0.852,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "move",
+        "rank": 1,
+        "name": "Protect",
+        "percentage": "85.2%",
+        "percentage_value": 85.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "move",
+      "rank": 2,
+      "name": "Sludge Bomb",
+      "percentage": 0.813,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "move",
+        "rank": 2,
+        "name": "Sludge Bomb",
+        "percentage": "81.3%",
+        "percentage_value": 81.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "move",
+      "rank": 3,
+      "name": "Draco Meteor",
+      "percentage": 0.604,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "move",
+        "rank": 3,
+        "name": "Draco Meteor",
+        "percentage": "60.4%",
+        "percentage_value": 60.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "move",
+      "rank": 4,
+      "name": "Dragon Pulse",
+      "percentage": 0.397,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "move",
+        "rank": 4,
+        "name": "Dragon Pulse",
+        "percentage": "39.7%",
+        "percentage_value": 39.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "move",
+      "rank": 5,
+      "name": "Toxic",
+      "percentage": 0.258,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "move",
+        "rank": 5,
+        "name": "Toxic",
+        "percentage": "25.8%",
+        "percentage_value": 25.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "move",
+      "rank": 6,
+      "name": "Thunderbolt",
+      "percentage": 0.246,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "move",
+        "rank": 6,
+        "name": "Thunderbolt",
+        "percentage": "24.6%",
+        "percentage_value": 24.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "move",
+      "rank": 7,
+      "name": "Flip Turn",
+      "percentage": 0.175,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "move",
+        "rank": 7,
+        "name": "Flip Turn",
+        "percentage": "17.5%",
+        "percentage_value": 17.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "move",
+      "rank": 8,
+      "name": "Sludge Wave",
+      "percentage": 0.16,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "move",
+        "rank": 8,
+        "name": "Sludge Wave",
+        "percentage": "16.0%",
+        "percentage_value": 16,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "move",
+      "rank": 9,
+      "name": "Scald",
+      "percentage": 0.11,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "move",
+        "rank": 9,
+        "name": "Scald",
+        "percentage": "11.0%",
+        "percentage_value": 11,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "move",
+      "rank": 10,
+      "name": "Focus Blast",
+      "percentage": 0.09,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "move",
+        "rank": 10,
+        "name": "Focus Blast",
+        "percentage": "9.0%",
+        "percentage_value": 9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Dragalgite",
+      "percentage": 0.191,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Dragalgite",
+        "percentage": "19.1%",
+        "percentage_value": 19.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Life Orb",
+      "percentage": 0.127,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Life Orb",
+        "percentage": "12.7%",
+        "percentage_value": 12.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "held_item",
+      "rank": 3,
+      "name": "White Herb",
+      "percentage": 0.014,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "held_item",
+        "rank": 3,
+        "name": "White Herb",
+        "percentage": "1.4%",
+        "percentage_value": 1.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Leftovers",
+      "percentage": 0.012,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Leftovers",
+        "percentage": "1.2%",
+        "percentage_value": 1.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Poison Barb",
+      "percentage": 1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Poison Barb",
+        "percentage": "1.0%",
+        "percentage_value": 1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Sitrus Berry",
+      "percentage": 1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Sitrus Berry",
+        "percentage": "1.0%",
+        "percentage_value": 1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Wise Glasses",
+      "percentage": 0.7,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Wise Glasses",
+        "percentage": "0.7%",
+        "percentage_value": 0.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Quick Claw",
+      "percentage": 0.6,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Quick Claw",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Shuca Berry",
+      "percentage": 0.5,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Shuca Berry",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Expert Belt",
+      "percentage": 0.4,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Expert Belt",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "ability",
+      "rank": 1,
+      "name": "Adaptability",
+      "percentage": 0.848,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "ability",
+        "rank": 1,
+        "name": "Adaptability",
+        "percentage": "84.8%",
+        "percentage_value": 84.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "ability",
+      "rank": 2,
+      "name": "Poison Point",
+      "percentage": 0.119,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "ability",
+        "rank": 2,
+        "name": "Poison Point",
+        "percentage": "11.9%",
+        "percentage_value": 11.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "ability",
+      "rank": 3,
+      "name": "Poison Touch",
+      "percentage": 0.033,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "ability",
+        "rank": 3,
+        "name": "Poison Touch",
+        "percentage": "3.3%",
+        "percentage_value": 3.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Farigiraf",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Farigiraf",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Grimmsnarl",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Grimmsnarl",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Pelipper",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Pelipper",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Archaludon",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Archaludon",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Swampert",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Swampert",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Kingambit",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Kingambit",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Torkoal",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Torkoal",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Sylveon",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Sylveon",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Modest",
+      "percentage": 0.407,
+      "statUp": "Sp. Atk",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Modest",
+        "percentage": "40.7%",
+        "percentage_value": 40.7,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Quiet",
+      "percentage": 0.383,
+      "statUp": "Sp. Atk",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Quiet",
+        "percentage": "38.3%",
+        "percentage_value": 38.3,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Relaxed",
+      "percentage": 0.056,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Relaxed",
+        "percentage": "5.6%",
+        "percentage_value": 5.6,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Bold",
+      "percentage": 0.053,
+      "statUp": "Defense",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Bold",
+        "percentage": "5.3%",
+        "percentage_value": 5.3,
+        "stat_up": "Defense",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Sassy",
+      "percentage": 0.048,
+      "statUp": "Sp. Def",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Sassy",
+        "percentage": "4.8%",
+        "percentage_value": 4.8,
+        "stat_up": "Sp. Def",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Calm",
+      "percentage": 0.041,
+      "statUp": "Sp. Def",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Calm",
+        "percentage": "4.1%",
+        "percentage_value": 4.1,
+        "stat_up": "Sp. Def",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Gentle",
+      "percentage": 0.5,
+      "statUp": "Sp. Def",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Gentle",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "Sp. Def",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Timid",
+      "percentage": 0.3,
+      "statUp": "Speed",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Timid",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Speed",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Mild",
+      "percentage": 0.3,
+      "statUp": "Sp. Atk",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Mild",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Rash",
+      "percentage": 0.1,
+      "statUp": "Sp. Atk",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Rash",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.369,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "36.9%",
+        "percentage_value": 36.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.102,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "10.2%",
+        "percentage_value": 10.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.033,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "3.3%",
+        "percentage_value": 3.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 11,
+        "sp_atk_points": 23,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.021,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "2.1%",
+        "percentage_value": 2.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 32,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.018,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "1.8%",
+        "percentage_value": 1.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 29,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 5
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.015,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "1.5%",
+        "percentage_value": 1.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 32,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.015,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "1.5%",
+        "percentage_value": 1.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 32,
+        "sp_atk_points": 32,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Dragalge",
+      "position": 105,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.015,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragalge",
+        "column_position": 105,
+        "position": 105,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "1.5%",
+        "percentage_value": 1.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 32,
+        "sp_def_points": 32,
+        "speed_points": 0
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a4f390c063cb29d318e77d8-larathegamer",
+      "name": "LaraTheGamer · Women's League VGC #4",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "falinks",
+          "name": "Falinks",
+          "item": "Falinksite",
+          "ability": "Defiant",
+          "moves": [
+            "Close Combat",
+            "Seed Bomb",
+            "Knock Off",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragalge",
+          "name": "Dragalge",
+          "item": "Life Orb",
+          "ability": "Adaptability",
+          "moves": [
+            "Draco Meteor",
+            "Sludge Bomb",
+            "Focus Blast",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Ice Fang",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Low Kick"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Trick Room",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Hyper Beam",
+            "Quick Attack",
+            "Detect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.3333333333333333,
+      "sampleCount": 3,
+      "tournament": "Women's League VGC #4",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "LaraTheGamer",
+      "record": "1-2-0"
+    },
+    {
+      "id": "6a53c2d1e09846f1eb4c161b-noah100800",
+      "name": "noah100800 · The Drywall Series #11",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "dragalge",
+          "name": "Dragalge",
+          "item": "Dragalgite",
+          "ability": "Adaptability",
+          "moves": [
+            "Sludge Bomb",
+            "Dragon Pulse",
+            "Toxic",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Aura Sphere",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Focus Sash",
+          "ability": "Drizzle",
+          "moves": [
+            "Tailwind",
+            "Weather Ball",
+            "Hurricane",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Parting Shot",
+            "Spirit Break",
+            "Reflect",
+            "Light Screen"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Life Dew",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Torrent",
+          "moves": [
+            "Wave Crash",
+            "Earthquake",
+            "Knock Off",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "The Drywall Series #11",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "noah100800",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a42222fc87cd9ff0a31292b-duumz",
+      "name": "Danielle Dumas · King of Champions III",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "dragalge",
+          "name": "Dragalge",
+          "item": "Dragalgite",
+          "ability": "Adaptability",
+          "moves": [
+            "Protect",
+            "Draco Meteor",
+            "Sludge Bomb",
+            "Scald"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Protect",
+            "Sucker Punch",
+            "Kowtow Cleave",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Dazzling Gleam",
+            "Moonblast",
+            "Light of Ruin",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Trick Room",
+            "Life Dew",
+            "Matcha Gotcha",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "hisuian-arcanine",
+          "name": "Hisuian Arcanine",
+          "item": "Choice Scarf",
+          "ability": "Rock Head",
+          "moves": [
+            "Close Combat",
+            "Head Smash",
+            "Rock Slide",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Darkest Lariat",
+            "Flare Blitz"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "King of Champions III",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Danielle Dumas",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a4bc2dd063cb29d318e4b78-peyoteasesino",
+      "name": "Sandro Soto Sánchez · Chacho Cup #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Roseli Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Encore",
+            "Disable",
+            "Foul Play",
+            "Quash"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Shadow Ball",
+            "Protect",
+            "Nasty Plot",
+            "Blizzard"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Blaze",
+          "moves": [
+            "Fake Out",
+            "Will-O-Wisp",
+            "Flare Blitz",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Rage Powder",
+            "Matcha Gotcha",
+            "Life Dew",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "dragalge",
+          "name": "Dragalge",
+          "item": "Dragalgite",
+          "ability": "Toxic Touch",
+          "moves": [
+            "Protect",
+            "Toxic",
+            "Sludge Bomb",
+            "Substitute"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Reflect",
+            "Parting Shot",
+            "Light Screen",
+            "Fake Out"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.25,
+      "sampleCount": 4,
+      "tournament": "Chacho Cup #2",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Sandro Soto Sánchez",
+      "record": "1-3-0"
+    },
+    {
+      "id": "6a519dad65724db9ded42bc9-iannsebastian",
+      "name": "IannSebastian · [PR] Mt. Moon Champions VGC Weekly #6 2026",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "dragalge",
+          "name": "Dragalge",
+          "item": "Life Orb",
+          "ability": "Adaptability",
+          "moves": [
+            "Dragon Pulse",
+            "Sludge Bomb",
+            "Muddy Water",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psyshock",
+            "Trick Room",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Leftovers",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Strength Sap",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "camerupt",
+          "name": "Camerupt",
+          "item": "Cameruptite",
+          "ability": "Solid Rock",
+          "moves": [
+            "Ancient Power",
+            "Protect",
+            "Heat Wave",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "mr-rime",
+          "name": "Mr. Rime",
+          "item": "Expert Belt",
+          "ability": "Screen Cleaner",
+          "moves": [
+            "Freeze-Dry",
+            "Psyshock",
+            "Fake Out",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Play Rough",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 2,
+      "tournament": "[PR] Mt. Moon Champions VGC Weekly #6 2026",
+      "placing": null,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "IannSebastian",
+      "record": "1-1-0"
+    }
+  ],
+  "movePool": [
+    "Acid Armor",
+    "Acid Spray",
+    "Aqua Tail",
+    "Chilling Water",
+    "Dive",
+    "Double Team",
+    "Draco Meteor",
+    "Dragon Pulse",
+    "Dragon Tail",
+    "Endure",
+    "Facade",
+    "Flip Turn",
+    "Focus Blast",
+    "Giga Impact",
+    "Gunk Shot",
+    "Haze",
+    "Hydro Pump",
+    "Hyper Beam",
+    "Icy Wind",
+    "Iron Tail",
+    "Liquidation",
+    "Mud Shot",
+    "Mud-Slap",
+    "Muddy Water",
+    "Outrage",
+    "Play Rough",
+    "Poison Jab",
+    "Protect",
+    "Rain Dance",
+    "Rest",
+    "Round",
+    "Scald",
+    "Scale Shot",
+    "Scary Face",
+    "Shadow Ball",
+    "Sleep Talk",
+    "Sludge Bomb",
+    "Sludge Wave",
+    "Snore",
+    "Snowscape",
+    "Spite",
+    "Substitute",
+    "Surf",
+    "Thief",
+    "Thunder",
+    "Thunderbolt",
+    "Toxic",
+    "Toxic Spikes",
+    "Venoshock",
+    "Water Pulse",
+    "Waterfall",
+    "Whirlpool"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Dragalge",
+      "base_name": "Dragalge",
+      "saved_name": "Dragalge",
+      "types": "Poison/Dragon",
+      "abilities": "Poison Point|Poison Touch|Adaptability",
+      "weight": "179.7 lbs.",
+      "image_path": "pokemon_champions_assets\\pokemon\\Dragalge.png",
+      "form": "",
+      "hp": 140,
+      "atk": 95,
+      "def": 110,
+      "spa": 117,
+      "spd": 143,
+      "spe": 64,
+      "total": 669
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "move",
+          "rank": 1,
+          "name": "Protect",
+          "percentage": "85.2%",
+          "percentage_value": 85.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Dragalgite",
+          "percentage": "19.1%",
+          "percentage_value": 19.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Modest",
+          "percentage": "40.7%",
+          "percentage_value": 40.7,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        "stat_points": {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "36.9%",
+          "percentage_value": 36.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        "ability": {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "ability",
+          "rank": 1,
+          "name": "Adaptability",
+          "percentage": "84.8%",
+          "percentage_value": 84.8,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Protect",
+          "Sludge Bomb",
+          "Draco Meteor",
+          "Dragon Pulse",
+          "Toxic",
+          "Thunderbolt",
+          "Flip Turn",
+          "Sludge Wave",
+          "Scald",
+          "Focus Blast"
+        ],
+        "held_item": [
+          "Dragalgite",
+          "Life Orb",
+          "White Herb",
+          "Leftovers",
+          "Poison Barb",
+          "Sitrus Berry",
+          "Wise Glasses",
+          "Quick Claw",
+          "Shuca Berry",
+          "Expert Belt"
+        ],
+        "teammate": [
+          "Sinistcha",
+          "Farigiraf",
+          "Incineroar",
+          "Grimmsnarl",
+          "Pelipper",
+          "Archaludon",
+          "Swampert",
+          "Kingambit",
+          "Torkoal",
+          "Sylveon"
+        ],
+        "stat_alignment": [
+          "Modest",
+          "Quiet",
+          "Relaxed",
+          "Bold",
+          "Sassy",
+          "Calm",
+          "Gentle",
+          "Timid",
+          "Mild",
+          "Rash"
+        ],
+        "stat_points": [
+          "HP 32 / Atk 0 / Def 2 / SpA 32 / SpD 0 / Spe 0",
+          "HP 32 / Atk 0 / Def 0 / SpA 32 / SpD 2 / Spe 0",
+          "HP 32 / Atk 0 / Def 11 / SpA 23 / SpD 0 / Spe 0",
+          "HP 2 / Atk 0 / Def 0 / SpA 32 / SpD 32 / Spe 0",
+          "HP 29 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 5",
+          "HP 32 / Atk 0 / Def 32 / SpA 0 / SpD 2 / Spe 0",
+          "HP 0 / Atk 0 / Def 32 / SpA 32 / SpD 2 / Spe 0",
+          "HP 0 / Atk 0 / Def 2 / SpA 32 / SpD 32 / Spe 0"
+        ],
+        "ability": [
+          "Adaptability",
+          "Poison Point",
+          "Poison Touch"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "move",
+          "rank": 1,
+          "name": "Protect",
+          "percentage": "85.2%",
+          "percentage_value": 85.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "move",
+          "rank": 2,
+          "name": "Sludge Bomb",
+          "percentage": "81.3%",
+          "percentage_value": 81.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "move",
+          "rank": 3,
+          "name": "Draco Meteor",
+          "percentage": "60.4%",
+          "percentage_value": 60.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "move",
+          "rank": 4,
+          "name": "Dragon Pulse",
+          "percentage": "39.7%",
+          "percentage_value": 39.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "move",
+          "rank": 5,
+          "name": "Toxic",
+          "percentage": "25.8%",
+          "percentage_value": 25.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "move",
+          "rank": 6,
+          "name": "Thunderbolt",
+          "percentage": "24.6%",
+          "percentage_value": 24.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "move",
+          "rank": 7,
+          "name": "Flip Turn",
+          "percentage": "17.5%",
+          "percentage_value": 17.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "move",
+          "rank": 8,
+          "name": "Sludge Wave",
+          "percentage": "16.0%",
+          "percentage_value": 16,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "move",
+          "rank": 9,
+          "name": "Scald",
+          "percentage": "11.0%",
+          "percentage_value": 11,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "move",
+          "rank": 10,
+          "name": "Focus Blast",
+          "percentage": "9.0%",
+          "percentage_value": 9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Dragalgite",
+          "percentage": "19.1%",
+          "percentage_value": 19.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Life Orb",
+          "percentage": "12.7%",
+          "percentage_value": 12.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "held_item",
+          "rank": 3,
+          "name": "White Herb",
+          "percentage": "1.4%",
+          "percentage_value": 1.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Leftovers",
+          "percentage": "1.2%",
+          "percentage_value": 1.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Poison Barb",
+          "percentage": "1.0%",
+          "percentage_value": 1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Sitrus Berry",
+          "percentage": "1.0%",
+          "percentage_value": 1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Wise Glasses",
+          "percentage": "0.7%",
+          "percentage_value": 0.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Quick Claw",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Shuca Berry",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Expert Belt",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Grimmsnarl",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Pelipper",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Archaludon",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Swampert",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Torkoal",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Sylveon",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Modest",
+          "percentage": "40.7%",
+          "percentage_value": 40.7,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Quiet",
+          "percentage": "38.3%",
+          "percentage_value": 38.3,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Relaxed",
+          "percentage": "5.6%",
+          "percentage_value": 5.6,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Bold",
+          "percentage": "5.3%",
+          "percentage_value": 5.3,
+          "stat_up": "Defense",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Sassy",
+          "percentage": "4.8%",
+          "percentage_value": 4.8,
+          "stat_up": "Sp. Def",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Calm",
+          "percentage": "4.1%",
+          "percentage_value": 4.1,
+          "stat_up": "Sp. Def",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Gentle",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "Sp. Def",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Timid",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Speed",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Mild",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Rash",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "36.9%",
+          "percentage_value": 36.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "10.2%",
+          "percentage_value": 10.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "3.3%",
+          "percentage_value": 3.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 11,
+          "sp_atk_points": 23,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "2.1%",
+          "percentage_value": 2.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 32,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "1.8%",
+          "percentage_value": 1.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 29,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 5
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "1.5%",
+          "percentage_value": 1.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 32,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "1.5%",
+          "percentage_value": 1.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 32,
+          "sp_atk_points": 32,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "1.5%",
+          "percentage_value": 1.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 32,
+          "sp_def_points": 32,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "ability",
+          "rank": 1,
+          "name": "Adaptability",
+          "percentage": "84.8%",
+          "percentage_value": 84.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "ability",
+          "rank": 2,
+          "name": "Poison Point",
+          "percentage": "11.9%",
+          "percentage_value": 11.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragalge",
+          "column_position": 105,
+          "position": 105,
+          "category": "ability",
+          "rank": 3,
+          "name": "Poison Touch",
+          "percentage": "3.3%",
+          "percentage_value": 3.3,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Dragalge.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Dragalge.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Dragalge.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Dragalge.csv"
+      }
+    ]
+  }
+}

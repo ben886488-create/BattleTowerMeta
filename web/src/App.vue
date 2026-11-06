@@ -2,15 +2,15 @@
   <div class="app">
     <BackgroundEffects />
 
-    <header class="topbar">
+    <header class="topbar" :class="{ 'topbar--home': nav.length === 0 }">
       <div class="topbar__left">
-        <button class="menu-toggle" @click="toggleMenu" aria-label="Toggle menu">
+        <button v-if="nav.length > 0" class="menu-toggle" @click="toggleMenu" :aria-label="lang === 'zh' ? '開啟導覽選單' : 'Open navigation menu'" :aria-expanded="menuOpen" aria-controls="site-menu">
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        <RouterLink :to="metaHomeRoute" class="brand">
+        <RouterLink :to="homeRoute" class="brand">
           <div>
             <div class="logo">
               <span>Battle Tower</span>
@@ -19,12 +19,24 @@
             <div class="sub">Competition intelligence</div>
           </div>
         </RouterLink>
+
+        <div v-if="currentSection !== 'home'" class="game-switcher" :aria-label="t('nav.games.switcher')">
+          <RouterLink
+            v-for="item in gameSwitcher"
+            :key="item.section"
+            :to="item.to"
+            class="game-switcher__link"
+            :class="{ 'is-active': currentSection === item.section }"
+          >
+            {{ item.label }}
+          </RouterLink>
+        </div>
       </div>
 
-      <nav class="topbar__nav">
+      <nav v-if="nav.length > 0" class="topbar__nav">
         <RouterLink
           v-for="item in nav"
-          :key="item.to"
+          :key="item.key"
           :to="item.to"
           class="navlink"
           active-class="is-active"
@@ -35,18 +47,22 @@
 
       <div class="topbar__right">
         <TopbarAccountMenu />
-        <RouterLink :to="switchLangTo('zh')" class="lang" active-class="is-active">中文</RouterLink>
-        <RouterLink :to="switchLangTo('en')" class="lang" active-class="is-active">EN</RouterLink>
+        <RouterLink :to="switchLangTo('zh')" class="lang" :class="{ 'is-active': lang === 'zh' }">中文</RouterLink>
+        <RouterLink :to="switchLangTo('en')" class="lang" :class="{ 'is-active': lang === 'en' }">EN</RouterLink>
       </div>
     </header>
 
-    <div class="signal-strip" aria-label="Upcoming tournament feed">
+    <div v-if="currentSection !== 'home'" class="signal-strip" aria-label="Upcoming tournament feed">
       <div class="signal-strip__track">
         <div class="upcoming-ticker" aria-label="Upcoming tournaments in the next 24 hours">
-          <span class="upcoming-ticker__label">UPCOMING / 24H</span>
+          <span class="upcoming-ticker__label">{{ tickerLabel }}</span>
 
           <div class="upcoming-ticker__viewport">
-            <div v-if="upcomingTickerMessage" class="upcoming-ticker__status mono">
+            <div v-if="currentSection === 'champions'" class="upcoming-ticker__status mono">
+              {{ championsTickerStatus }}
+            </div>
+
+            <div v-else-if="upcomingTickerMessage" class="upcoming-ticker__status mono">
               {{ upcomingTickerMessage }}
             </div>
 
@@ -96,21 +112,34 @@
       </div>
     </div>
 
-    <div class="sidebar" :class="{ 'sidebar--open': menuOpen }">
+    <div id="site-menu" class="sidebar" :class="{ 'sidebar--open': menuOpen }" :inert="!menuOpen" :aria-hidden="!menuOpen" @keydown.esc="menuOpen = false">
       <div class="sidebar__content">
         <div class="sidebar__header">
-          <RouterLink :to="metaHomeRoute" class="sidebar__brand" @click="toggleMenu">
+          <RouterLink :to="homeRoute" class="sidebar__brand" @click="toggleMenu">
             <div class="logo"><span>Battle Tower</span><em>Meta</em></div>
           </RouterLink>
-          <button class="sidebar__close" @click="toggleMenu" aria-label="Close menu">
+          <button class="sidebar__close" @click="toggleMenu" :aria-label="lang === 'zh' ? '關閉導覽選單' : 'Close navigation menu'">
             &times;
           </button>
+        </div>
+
+        <div v-if="currentSection !== 'home'" class="sidebar__games">
+          <RouterLink
+            v-for="item in gameSwitcher"
+            :key="item.section"
+            :to="item.to"
+            class="sidebar__game-link"
+            :class="{ 'is-active': currentSection === item.section }"
+            @click="toggleMenu"
+          >
+            {{ item.label }}
+          </RouterLink>
         </div>
 
         <nav class="sidebar__nav">
           <RouterLink
             v-for="item in nav"
-            :key="item.to"
+            :key="item.key"
             :to="item.to"
             class="sidebar__link"
             active-class="is-active"
@@ -126,8 +155,8 @@
           </div>
 
           <div class="sidebar__lang">
-            <RouterLink :to="switchLangTo('zh')" class="lang" active-class="is-active" @click="toggleMenu">中文</RouterLink>
-            <RouterLink :to="switchLangTo('en')" class="lang" active-class="is-active" @click="toggleMenu">EN</RouterLink>
+            <RouterLink :to="switchLangTo('zh')" class="lang" :class="{ 'is-active': lang === 'zh' }" @click="toggleMenu">中文</RouterLink>
+            <RouterLink :to="switchLangTo('en')" class="lang" :class="{ 'is-active': lang === 'en' }" @click="toggleMenu">EN</RouterLink>
           </div>
         </div>
       </div>
@@ -141,6 +170,7 @@
           <component :is="Component" :key="route.path" />
         </AnimatedPage>
       </RouterView>
+      <SiteContextPanel :path="String(route.path)" :lang="lang" />
     </main>
 
     <footer class="footer">
@@ -173,7 +203,7 @@
         </a>
       </div>
 
-      <div class="footer__status mono" aria-label="Version and refresh status">
+      <div class="footer__status mono" :class="`footer__status--${currentSection}`" aria-label="Version and refresh status">
         <span class="footer__status-dot" aria-hidden="true"></span>
         <span>{{ footerStatusText }}</span>
       </div>
@@ -182,19 +212,34 @@
 </template>
 
 <script setup lang="ts">
+import { useHead } from "@unhead/vue";
 import { computed, onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
+import SiteContextPanel from "./components/SiteContextPanel.vue";
 import TopbarAccountMenu from "./components/TopbarAccountMenu.vue";
 import AnimatedPage from "./components/ui/AnimatedPage.vue";
 import BackgroundEffects from "./components/ui/BackgroundEffects.vue";
 import { useMotionReveal } from "./lib/motionReveal";
+import {
+  championsSectionNavItems,
+  pocketNavItems,
+  routeLang,
+  routeSection,
+  siteT,
+  withLang,
+  type GameSection,
+  type SiteTranslationKey,
+} from "./lib/siteI18n";
 import { authProfile, initSupabaseAuth } from "./lib/supabase";
 import {
   getUpcomingPocketTournaments,
   type UpcomingTournamentItem,
 } from "./lib/upcomingTournaments";
+import { getChampionsSyncStatus } from "./data/champions/championsDataProvider";
+import type { ChampionsSyncStatusCache } from "./data/champions/championsCacheTypes";
+import { siteHead } from "./lib/siteSeo";
 
-const BASE_URL = (import.meta as any).env?.BASE_URL ?? "/";
+const BASE_URL = import.meta.env.BASE_URL || "/";
 
 const route = useRoute();
 const menuOpen = ref(false);
@@ -202,28 +247,59 @@ void initSupabaseAuth();
 useMotionReveal(() => route.fullPath);
 const authProfileState = authProfile;
 
-const lang = computed<"zh" | "en">(() => (String(route.path).split("/")[1] === "en" ? "en" : "zh"));
-const metaHomeRoute = computed(() => `/${lang.value}/tier-list`);
+const lang = computed(() => routeLang(route));
+const currentSection = computed<GameSection>(() => routeSection(String(route.path)));
+const homeRoute = computed(() => withLang("/", lang.value));
+
+useHead(() => siteHead(route, lang.value));
 
 const nav = computed(() => {
-  const base = `/${lang.value}`;
-  return [
-    { key: "tierList", to: `${base}/tier-list` },
-    { key: "tournaments", to: `${base}/tournaments` },
-    { key: "topDecks", to: `${base}/top-decks` },
-    { key: "topCards", to: `${base}/top-cards` },
-    { key: "battleHub", to: `${base}/battle-hub` },
-    { key: "playerRanking", to: `${base}/player-ranking` },
-    { key: "countryRanking", to: `${base}/country-ranking` },
-  ] as const;
+  const items = currentSection.value === "pocket"
+    ? pocketNavItems
+    : currentSection.value === "champions"
+      ? championsSectionNavItems
+      : [];
+
+  return items.map((item) => ({
+    key: item.key,
+    to: withLang(item.path, lang.value),
+  }));
 });
+
+const gameSwitcher = computed(() => [
+  {
+    section: "pocket" as const,
+    to: withLang("/pocket", lang.value),
+    label: t("nav.games.pocket"),
+  },
+  {
+    section: "champions" as const,
+    to: withLang("/champions", lang.value),
+    label: t("nav.games.champions"),
+  },
+]);
 
 const upcomingState = ref<"loading" | "ready" | "error">("loading");
 const upcomingTournaments = ref<UpcomingTournamentItem[]>([]);
 const footerVersion = ref("—");
 const footerRefreshTime = ref("—");
+const championsSyncStatus = ref<ChampionsSyncStatusCache | null>(null);
+
+const championsTickerStatus = computed(() => {
+  const status = championsSyncStatus.value;
+  if (status?.status === "success") return `DATA SYNCED · updated ${formatChampionsSyncTime(status.lastSyncedAt)}`;
+  if (status?.status === "partial") return "PARTIAL SYNC · some sources unavailable";
+  return "DATA PENDING · run npm run sync:champions";
+});
 
 const footerStatusText = computed(() => {
+  if (currentSection.value === "home") return t("status.home.online");
+  if (currentSection.value === "champions") {
+    const status = championsSyncStatus.value;
+    if (status?.status === "success") return `CHAMPIONS · DATA SYNCED ${formatChampionsSyncTime(status.lastSyncedAt)}`;
+    if (status?.status === "partial") return "CHAMPIONS · PARTIAL SYNC";
+    return "CHAMPIONS · DATA PENDING";
+  }
   return `VERSION / ${footerVersion.value} · DAILY REFRESH ${footerRefreshTime.value}`;
 });
 
@@ -238,12 +314,13 @@ const upcomingTickerMessage = computed(() => {
   if (upcomingState.value === "loading") return "syncing...";
   if (upcomingState.value === "error") return "Limitless unavailable";
   if (upcomingTournaments.value.length > 0) return "";
-  return lang.value === "zh"
-    ? "未來 24 小時暫無 PTCG Pocket 比賽"
-    : "No PTCG Pocket tournaments in next 24h";
+  return t("status.pocket.noUpcoming");
 });
 
 const upcomingMobileSummary = computed(() => {
+  if (currentSection.value === "champions") {
+    return championsTickerStatus.value.toUpperCase();
+  }
   if (upcomingState.value === "loading") return "UPCOMING / 24H · SYNCING";
   if (upcomingState.value === "error") return "UPCOMING / 24H · UNAVAILABLE";
 
@@ -251,10 +328,17 @@ const upcomingMobileSummary = computed(() => {
   return `UPCOMING / 24H · ${count} ${count === 1 ? "EVENT" : "EVENTS"}`;
 });
 
+const tickerLabel = computed(() => currentSection.value === "champions" ? t("status.ticker.champions") : t("status.ticker.pocket"));
+
 onMounted(() => {
   void loadUpcomingTicker();
   void loadFooterStatus();
+  void loadChampionsStatus();
 });
+
+async function loadChampionsStatus() {
+  championsSyncStatus.value = await getChampionsSyncStatus();
+}
 
 async function loadUpcomingTicker() {
   upcomingState.value = "loading";
@@ -270,27 +354,6 @@ async function loadUpcomingTicker() {
     upcomingState.value = "error";
   }
 }
-
-const labels = {
-  zh: {
-    tierList: "牌組環境",
-    tournaments: "線上比賽",
-    topDecks: "最強牌組",
-    topCards: "泛用卡片",
-    battleHub: "排位記錄",
-    playerRanking: "玩家排名",
-    countryRanking: "地區排名",
-  },
-  en: {
-    tierList: "Meta Environment",
-    tournaments: "Tournaments",
-    topDecks: "Top Decks",
-    topCards: "Cards Usage",
-    battleHub: "Rank Recorder",
-    playerRanking: "Player Ranking",
-    countryRanking: "Country Ranking",
-  },
-} as const;
 
 type FooterMeta = {
   generated_at?: string;
@@ -380,18 +443,34 @@ async function loadFooterStatus() {
 }
 
 function switchLangTo(next: "zh" | "en") {
-  const parts = String(route.path).split("/");
-  parts[1] = next;
-  const nextPath = parts.join("/") || `/${next}`;
-  return nextPath === "/" ? `/${next}` : nextPath;
+  const query = { ...route.query };
+  if (next === "en") query.lang = "en";
+  else delete query.lang;
+  return { path: String(route.path) || "/", query };
+}
+
+function formatChampionsSyncTime(value: string) {
+  const date = new Date(value);
+  if (!Number.isFinite(date.getTime())) return "—";
+  return new Intl.DateTimeFormat(lang.value === "zh" ? "zh-HK" : "en-GB", {
+    month: "short",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  }).format(date);
 }
 
 function toggleMenu() {
   menuOpen.value = !menuOpen.value;
 }
 
-function label(key: keyof (typeof labels)["zh"]) {
-  return labels[lang.value][key] || key;
+function label(key: SiteTranslationKey) {
+  return t(key);
+}
+
+function t(key: SiteTranslationKey) {
+  return siteT(lang.value, key);
 }
 
 function isSameLocalDay(a: Date, b: Date) {
@@ -457,9 +536,9 @@ function tickerTitle(tournament: UpcomingTournamentItem) {
   max-width: none;
   margin: 0;
   padding:
-    clamp(32px, 2.8vw, 48px)
+    38px
     var(--page-gutter-right)
-    clamp(56px, 5vw, 84px)
+    var(--space-8)
     var(--page-gutter-left);
   flex: 1;
   box-sizing: border-box;
@@ -474,19 +553,24 @@ function tickerTitle(tournament: UpcomingTournamentItem) {
   top: 0;
   z-index: 1000;
   display: grid;
-  grid-template-columns: minmax(220px, 1fr) auto minmax(220px, 1fr);
+  grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
-  gap: 24px;
-  min-height: 68px;
-  padding: 0 48px;
-  background: rgba(2, 4, 10, 0.97);
-  backdrop-filter: blur(10px);
+  gap: var(--space-5);
+  min-height: var(--topbar-height);
+  padding: 0 var(--space-7);
+  background: var(--bg-topbar);
+  backdrop-filter: blur(18px);
   border-bottom: 1px solid var(--border);
+}
+
+.topbar--home {
+  grid-template-columns: minmax(0, 1fr) auto;
 }
 
 .topbar__left {
   display: flex;
   align-items: center;
+  gap: 16px;
   min-width: 0;
 }
 
@@ -500,9 +584,9 @@ function tickerTitle(tournament: UpcomingTournamentItem) {
 .topbar__nav {
   min-width: 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
-  gap: 30px;
+  gap: var(--space-4);
 }
 
 .topbar__right {
@@ -512,16 +596,54 @@ function tickerTitle(tournament: UpcomingTournamentItem) {
   justify-content: flex-end;
 }
 
+.game-switcher {
+  min-width: 0;
+  display: inline-grid;
+  grid-template-columns: repeat(2, minmax(0, auto));
+  border-top: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+}
+
+.game-switcher__link {
+  min-height: var(--control-height);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--space-3);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: rgba(2, 5, 12, 0.76);
+  color: var(--muted);
+  font-family: var(--font-num);
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  line-height: 1.15;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.game-switcher__link:hover,
+.game-switcher__link.is-active {
+  border-color: rgba(77, 163, 255, 0.62);
+  background: rgba(77, 163, 255, 0.1);
+  color: var(--accent);
+}
+
 .menu-toggle {
   display: none;
   flex-direction: column;
-  justify-content: space-between;
-  width: 24px;
-  height: 20px;
+  justify-content: center;
+  gap: var(--space-1);
+  flex: 0 0 var(--control-height);
+  width: var(--control-height);
+  height: var(--control-height);
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0;
+  padding: var(--space-2);
   z-index: 1001;
 }
 
@@ -529,8 +651,7 @@ function tickerTitle(tournament: UpcomingTournamentItem) {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #fff;
-  border-radius: 2px;
+  background-color: var(--text);
 }
 
 .logo {
@@ -616,7 +737,12 @@ function tickerTitle(tournament: UpcomingTournamentItem) {
 }
 
 .lang {
-  padding: 6px 8px;
+  min-width: var(--control-height);
+  min-height: var(--control-height);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-2);
   border: 1px solid transparent;
   border-radius: 0;
   color: var(--muted);
@@ -635,7 +761,7 @@ function tickerTitle(tournament: UpcomingTournamentItem) {
 
 .signal-strip {
   position: sticky;
-  top: 68px;
+  top: var(--topbar-height);
   z-index: 990;
   overflow: hidden;
   border-bottom: 1px solid var(--border);
@@ -644,7 +770,7 @@ function tickerTitle(tournament: UpcomingTournamentItem) {
 }
 
 .signal-strip__track {
-  min-height: 36px;
+  min-height: var(--ticker-height);
   padding: 0 clamp(24px, 2.5vw, 48px);
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
@@ -866,8 +992,8 @@ function tickerTitle(tournament: UpcomingTournamentItem) {
   font-size: 24px;
   cursor: pointer;
   padding: 0;
-  width: 32px;
-  height: 32px;
+  width: var(--control-height);
+  height: var(--control-height);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -878,6 +1004,34 @@ function tickerTitle(tournament: UpcomingTournamentItem) {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.sidebar__games {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.sidebar__game-link {
+  min-height: var(--control-height);
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  background: rgba(2, 5, 12, 0.76);
+  color: var(--text-soft);
+  font-family: var(--font-num);
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.sidebar__game-link.is-active {
+  border-color: var(--border-accent);
+  color: var(--accent);
 }
 
 .sidebar__link {
@@ -1012,18 +1166,31 @@ function tickerTitle(tournament: UpcomingTournamentItem) {
   box-shadow: 0 0 10px rgba(0, 255, 136, 0.56);
 }
 
+.footer__status--champions .footer__status-dot {
+  background: var(--champions-accent-violet);
+  box-shadow: 0 0 10px rgba(var(--champions-accent-violet-rgb), 0.56);
+}
+
+.footer__status--home .footer__status-dot {
+  background: var(--accent);
+  box-shadow: 0 0 10px rgba(77, 163, 255, 0.56);
+}
+
 @media (max-width: 1280px) {
   .topbar {
-    grid-template-columns: minmax(180px, 1fr) auto minmax(160px, 1fr);
     padding: 0 24px;
   }
 
+  .game-switcher {
+    display: none;
+  }
+
   .topbar__nav {
-    gap: 18px;
+    gap: var(--space-3);
   }
 
   .navlink {
-    font-size: 10px;
+    font-size: 11px;
     letter-spacing: 0.08em;
   }
 
@@ -1052,7 +1219,7 @@ function tickerTitle(tournament: UpcomingTournamentItem) {
 
   .topbar {
     grid-template-columns: 1fr auto;
-    min-height: 62px;
+    min-height: var(--topbar-height);
     padding: 0 16px;
   }
 
@@ -1060,12 +1227,16 @@ function tickerTitle(tournament: UpcomingTournamentItem) {
     min-width: 0;
   }
 
+  .game-switcher {
+    display: none;
+  }
+
   .topbar__right {
     margin-left: 0;
   }
 
   .signal-strip {
-    top: 62px;
+    top: var(--topbar-height);
   }
 
   .signal-strip__track {
@@ -1119,9 +1290,7 @@ function tickerTitle(tournament: UpcomingTournamentItem) {
 
 @media (max-width: 560px) {
   .menu-toggle {
-    flex: 0 0 22px;
-    width: 22px;
-    margin-right: 10px;
+    margin-right: 0;
   }
 
   .logo {

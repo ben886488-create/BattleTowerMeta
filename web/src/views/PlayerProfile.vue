@@ -35,7 +35,7 @@
             </div>
           </div>
 
-          <RouterLink class="backLink" :to="{ name: `${lang}-player-ranking` }">
+          <RouterLink class="backLink" :to="withLang('/pocket/players', lang)">
             {{ ui.back }}
           </RouterLink>
         </div>
@@ -264,6 +264,7 @@ import {
 } from "../lib/playerEntries";
 import { getCountryDisplayName } from "../lib/countryNames";
 import { getLocalizedDeckName } from "../assets/pokemonNames";
+import { routeLang as getRouteLang, withLang } from "../lib/siteI18n";
 
 const deckIconModules = import.meta.glob("../assets/deck-icons/*.{png,webp,svg}", {
   eager: true,
@@ -332,8 +333,7 @@ type FinishRow = {
 const route = useRoute();
 
 const lang = computed<"zh" | "en">(() => {
-  const seg = String(route.path).split("/")[1];
-  return seg === "en" ? "en" : "zh";
+  return getRouteLang(route);
 });
 
 const isZh = computed(() => lang.value === "zh");
@@ -518,8 +518,9 @@ function countryLabel(code?: string) {
 
 function deckProfileTo(deckKey: string) {
   return {
-    path: `/${lang.value}/top-decks/${encodeURIComponent(deckKey)}`,
+    path: `/pocket/decks/${encodeURIComponent(deckKey)}`,
     query: {
+      lang: lang.value === "en" ? "en" : undefined,
       set: selectedSet.value || undefined,
     },
   };

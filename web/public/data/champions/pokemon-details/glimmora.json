@@ -1,0 +1,3659 @@
+{
+  "pokemon": {
+    "slug": "glimmora",
+    "name": "Glimmora",
+    "baseName": "Glimmora",
+    "savedName": "Glimmora",
+    "form": "",
+    "types": [
+      "Rock",
+      "Poison"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Glimmora.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/970.png",
+    "stats": {
+      "hp": 158,
+      "attack": 75,
+      "defense": 110,
+      "spAttack": 150,
+      "spDefense": 101,
+      "speed": 106,
+      "total": 700
+    },
+    "rank": 40,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Power Gem",
+    "topItem": "Focus Sash",
+    "topTeammate": "Whimsicott"
+  },
+  "moves": [
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "move",
+      "rank": 1,
+      "name": "Power Gem",
+      "percentage": 0.963,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "move",
+        "rank": 1,
+        "name": "Power Gem",
+        "percentage": "96.3%",
+        "percentage_value": 96.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "move",
+      "rank": 2,
+      "name": "Spiky Shield",
+      "percentage": 0.906,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "move",
+        "rank": 2,
+        "name": "Spiky Shield",
+        "percentage": "90.6%",
+        "percentage_value": 90.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "move",
+      "rank": 3,
+      "name": "Earth Power",
+      "percentage": 0.887,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "move",
+        "rank": 3,
+        "name": "Earth Power",
+        "percentage": "88.7%",
+        "percentage_value": 88.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "move",
+      "rank": 4,
+      "name": "Sludge Bomb",
+      "percentage": 0.865,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "move",
+        "rank": 4,
+        "name": "Sludge Bomb",
+        "percentage": "86.5%",
+        "percentage_value": 86.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "move",
+      "rank": 5,
+      "name": "Energy Ball",
+      "percentage": 0.084,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "move",
+        "rank": 5,
+        "name": "Energy Ball",
+        "percentage": "8.4%",
+        "percentage_value": 8.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "move",
+      "rank": 6,
+      "name": "Sludge Wave",
+      "percentage": 0.079,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "move",
+        "rank": 6,
+        "name": "Sludge Wave",
+        "percentage": "7.9%",
+        "percentage_value": 7.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "move",
+      "rank": 7,
+      "name": "Mortal Spin",
+      "percentage": 0.061,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "move",
+        "rank": 7,
+        "name": "Mortal Spin",
+        "percentage": "6.1%",
+        "percentage_value": 6.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "move",
+      "rank": 8,
+      "name": "Stealth Rock",
+      "percentage": 0.031,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "move",
+        "rank": 8,
+        "name": "Stealth Rock",
+        "percentage": "3.1%",
+        "percentage_value": 3.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "move",
+      "rank": 9,
+      "name": "Protect",
+      "percentage": 0.023,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "move",
+        "rank": 9,
+        "name": "Protect",
+        "percentage": "2.3%",
+        "percentage_value": 2.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "move",
+      "rank": 10,
+      "name": "Venoshock",
+      "percentage": 0.02,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "move",
+        "rank": 10,
+        "name": "Venoshock",
+        "percentage": "2.0%",
+        "percentage_value": 2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Focus Sash",
+      "percentage": 0.601,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Focus Sash",
+        "percentage": "60.1%",
+        "percentage_value": 60.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Glimmoranite",
+      "percentage": 0.283,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Glimmoranite",
+        "percentage": "28.3%",
+        "percentage_value": 28.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Life Orb",
+      "percentage": 0.026,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Life Orb",
+        "percentage": "2.6%",
+        "percentage_value": 2.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Choice Scarf",
+      "percentage": 0.021,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Choice Scarf",
+        "percentage": "2.1%",
+        "percentage_value": 2.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Expert Belt",
+      "percentage": 0.015,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Expert Belt",
+        "percentage": "1.5%",
+        "percentage_value": 1.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Leftovers",
+      "percentage": 0.012,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Leftovers",
+        "percentage": "1.2%",
+        "percentage_value": 1.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Shuca Berry",
+      "percentage": 0.011,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Shuca Berry",
+        "percentage": "1.1%",
+        "percentage_value": 1.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Sitrus Berry",
+      "percentage": 0.9,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Sitrus Berry",
+        "percentage": "0.9%",
+        "percentage_value": 0.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Quick Claw",
+      "percentage": 0.4,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Quick Claw",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Wise Glasses",
+      "percentage": 0.3,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Wise Glasses",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "ability",
+      "rank": 1,
+      "name": "Toxic Debris",
+      "percentage": 0.97,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "ability",
+        "rank": 1,
+        "name": "Toxic Debris",
+        "percentage": "97.0%",
+        "percentage_value": 97,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "ability",
+      "rank": 2,
+      "name": "Corrosion",
+      "percentage": 0.03,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "ability",
+        "rank": 2,
+        "name": "Corrosion",
+        "percentage": "3.0%",
+        "percentage_value": 3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Whimsicott",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Whimsicott",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Charizard",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Charizard",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Staraptor",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Staraptor",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Kingambit",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Kingambit",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Alolan Ninetales",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Alolan Ninetales",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Farigiraf",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Farigiraf",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Modest",
+      "percentage": 0.648,
+      "statUp": "Sp. Atk",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Modest",
+        "percentage": "64.8%",
+        "percentage_value": 64.8,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Timid",
+      "percentage": 0.301,
+      "statUp": "Speed",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Timid",
+        "percentage": "30.1%",
+        "percentage_value": 30.1,
+        "stat_up": "Speed",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Bold",
+      "percentage": 0.012,
+      "statUp": "Defense",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Bold",
+        "percentage": "1.2%",
+        "percentage_value": 1.2,
+        "stat_up": "Defense",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Calm",
+      "percentage": 0.9,
+      "statUp": "Sp. Def",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Calm",
+        "percentage": "0.9%",
+        "percentage_value": 0.9,
+        "stat_up": "Sp. Def",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Quiet",
+      "percentage": 0.9,
+      "statUp": "Sp. Atk",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Quiet",
+        "percentage": "0.9%",
+        "percentage_value": 0.9,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Jolly",
+      "percentage": 0.5,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Jolly",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Relaxed",
+      "percentage": 0.2,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Relaxed",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Hasty",
+      "percentage": 0.2,
+      "statUp": "Speed",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Hasty",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Speed",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Sassy",
+      "percentage": 0.2,
+      "statUp": "Sp. Def",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Sassy",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Sp. Def",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Adamant",
+      "percentage": 0.2,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Adamant",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.337,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "33.7%",
+        "percentage_value": 33.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 1,
+        "attack_points": 0,
+        "defense_points": 1,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.282,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "28.2%",
+        "percentage_value": 28.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.065,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "6.5%",
+        "percentage_value": 6.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 1,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 1,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.048,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "4.8%",
+        "percentage_value": 4.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 2,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.029,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "2.9%",
+        "percentage_value": 2.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.9,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "0.9%",
+        "percentage_value": 0.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 15,
+        "attack_points": 0,
+        "defense_points": 1,
+        "sp_atk_points": 28,
+        "sp_def_points": 1,
+        "speed_points": 21
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.7,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "0.7%",
+        "percentage_value": 0.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 30,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 22,
+        "sp_def_points": 14,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Glimmora",
+      "position": 40,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.6,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Glimmora",
+        "column_position": 40,
+        "position": 40,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 1,
+        "sp_atk_points": 32,
+        "sp_def_points": 1,
+        "speed_points": 32
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a505ee7063cb29d318e8401-gabeeel",
+      "name": "Gabeeel · VGC UU Regulation M-B Weekly #1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Drain Punch",
+            "Knock Off",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Glimmoranite",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Sludge Bomb",
+            "Power Gem",
+            "Earth Power",
+            "Spiky Shield"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Expert Belt",
+          "ability": "Gale Wings",
+          "moves": [
+            "Brave Bird",
+            "Flare Blitz",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Sitrus Berry",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Moonblast",
+            "Calm Mind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Colbur Berry",
+          "ability": "Clear Body",
+          "moves": [
+            "Bullet Punch",
+            "Iron Head",
+            "Psychic Fangs",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Focus Sash",
+          "ability": "Oblivious",
+          "moves": [
+            "Earthquake",
+            "High Horsepower",
+            "Ice Shard",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "VGC UU Regulation M-B Weekly #1",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Gabeeel",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-rkbnunes",
+      "name": "Rkbnunes - Psíquico/Pedra · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Protect",
+            "Psychic",
+            "Heat Wave",
+            "Grass Knot"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Dual Wingbeat",
+            "Rock Slide",
+            "Protect",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "meowstic",
+          "name": "Meowstic",
+          "item": "Sitrus Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Fake Out",
+            "Sunny Day",
+            "Helping Hand",
+            "Psyshock"
+          ]
+        },
+        {
+          "slug": "gallade",
+          "name": "Gallade",
+          "item": "Choice Scarf",
+          "ability": "Sharpness",
+          "moves": [
+            "Sacred Sword",
+            "Psycho Cut",
+            "Night Slash",
+            "Leaf Blade"
+          ]
+        },
+        {
+          "slug": "hisuian-arcanine",
+          "name": "Hisuian Arcanine",
+          "item": "Life Orb",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Extreme Speed",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Focus Sash",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Sludge Bomb",
+            "Energy Ball",
+            "Earth Power",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Rkbnunes - Psíquico/Pedra",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a32e8b12d97f3b0c26189cc-xxpoemxx",
+      "name": "XxPoemxX · Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Knock Off",
+            "Rock Slide",
+            "Ice Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "None",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Acrobatics",
+            "Quick Guard",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Sand Veil",
+          "moves": [
+            "Earthquake",
+            "Stomping Tantrum",
+            "Dragon Claw",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Focus Sash",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Sludge Bomb",
+            "Power Gem",
+            "Earth Power",
+            "Spiky Shield"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Sitrus Berry",
+          "ability": "Levitate",
+          "moves": [
+            "Thunderbolt",
+            "Hydro Pump",
+            "Will-O-Wisp",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "XxPoemxX",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a4f9758063cb29d318e79a9-lthanh",
+      "name": "lthanh · Sky Pillar Saturday Showdown S8 #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Glimmoranite",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Power Gem",
+            "Sludge Bomb",
+            "Earth Power",
+            "Spiky Shield"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Occa Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragon Fang",
+          "ability": "Multiscale",
+          "moves": [
+            "Dragon Claw",
+            "Extreme Speed",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Darkest Lariat",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Focus Sash",
+          "ability": "Oblivious",
+          "moves": [
+            "Icicle Crash",
+            "High Horsepower",
+            "Ice Shard",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Life Orb",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Moonblast",
+            "Haze",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Sky Pillar Saturday Showdown S8 #10",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "lthanh",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a420fbf83fd320299bd3c3c-itztsuki",
+      "name": "ItzTsuki · Sketch Academy Sunday Regulation M-B Tournament",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gyarados",
+          "name": "Gyarados",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Waterfall",
+            "Power Whip",
+            "Temper Flare",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Snow Cloak",
+          "moves": [
+            "Aurora Veil",
+            "Blizzard",
+            "Shadow Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Fairy Feather",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Protect",
+            "Encore",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Focus Sash",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Earth Power",
+            "Sludge Bomb",
+            "Power Gem",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Protect",
+            "Rock Slide",
+            "Dragon Claw",
+            "Stomping Tantrum"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.42857142857142855,
+      "sampleCount": 7,
+      "tournament": "Sketch Academy Sunday Regulation M-B Tournament",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "ItzTsuki",
+      "record": "3-4-0"
+    },
+    {
+      "id": "6a33cff8e334c3c9befd9250-suvam00619",
+      "name": "Suvam00619 · Rising Stars - S1 (Double Battle)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Earth Power",
+            "Sludge Bomb",
+            "Giga Drain",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Leftovers",
+          "ability": "Hospitality",
+          "moves": [
+            "Protect",
+            "Matcha Gotcha",
+            "Life Dew",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "White Herb",
+          "ability": "Levitate",
+          "moves": [
+            "Hydro Pump",
+            "Dark Pulse",
+            "Shadow Ball",
+            "Volt Switch"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Sitrus Berry",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Baneful Bunker",
+            "Wide Guard",
+            "Toxic"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Chople Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Focus Sash",
+          "ability": "Corrosion",
+          "moves": [
+            "Spiky Shield",
+            "Power Gem",
+            "Mortal Spin",
+            "Earth Power"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.42857142857142855,
+      "sampleCount": 7,
+      "tournament": "Rising Stars - S1 (Double Battle)",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Suvam00619",
+      "record": "3-4-0"
+    },
+    {
+      "id": "6a4685c383fd320299bd6675-kelevra",
+      "name": "Kelevra · Pokémon Champions #1 - (Floette Eternal Flower)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Solar Beam",
+            "Weather Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Kowtow Cleave",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Aqua Jet",
+            "Last Respects",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Glimmoranite",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Sludge Bomb",
+            "Power Gem",
+            "Earth Power",
+            "Spiky Shield"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Life Orb",
+          "ability": "Oblivious",
+          "moves": [
+            "High Horsepower",
+            "Rock Tomb",
+            "Ice Shard",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7,
+      "sampleCount": 10,
+      "tournament": "Pokémon Champions #1 - (Floette Eternal Flower)",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Kelevra",
+      "record": "7-3-0"
+    },
+    {
+      "id": "6a291b172d97f3b0c2612db9-dear",
+      "name": "Dear · Mystery Community Tournament#1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Dual Wingbeat",
+            "Close Combat",
+            "Roost",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Solar Beam",
+            "Weather Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Focus Sash",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Power Gem",
+            "Sludge Bomb",
+            "Earth Power",
+            "Spiky Shield"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Life Orb",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Grass Knot",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Flip Turn"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Sitrus Berry",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Poison Jab",
+            "Dragon Tail"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8571428571428571,
+      "sampleCount": 7,
+      "tournament": "Mystery Community Tournament#1",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Dear",
+      "record": "6-1-0"
+    },
+    {
+      "id": "6a5162b8063cb29d318e9199-138mysx",
+      "name": "138mysx · MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Glimmoranite",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Earth Power",
+            "Power Gem",
+            "Sludge Bomb",
+            "Spiky Shield"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Energy Ball",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Stomping Tantrum",
+            "Earthquake",
+            "Dragon Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Low Kick",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 1,
+      "sampleCount": 7,
+      "tournament": "MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "138mysx",
+      "record": "7-0-0"
+    },
+    {
+      "id": "6a539b48c0a6bab82fbbca0a-wakey",
+      "name": "Wakey · London Corviknight VGC Weekly tour 5!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Roost",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Dragon Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hisuian-zoroark",
+          "name": "Hisuian Zoroark",
+          "item": "Colbur Berry",
+          "ability": "Illusion",
+          "moves": [
+            "Shadow Ball",
+            "Snarl",
+            "Taunt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psyshock",
+            "Substitute",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Focus Sash",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Power Gem",
+            "Sludge Bomb",
+            "Energy Ball",
+            "Spiky Shield"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Sitrus Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 5,
+      "tournament": "London Corviknight VGC Weekly tour 5!",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Wakey",
+      "record": "4-1-0"
+    },
+    {
+      "id": "6a54c9156355385f44dd38cd-wilsongorski",
+      "name": "NMR | Wilson Gorski · Intimidators Champions Challenge #26 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Brave Bird",
+            "Close Combat",
+            "Roost",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Will-O-Wisp",
+            "Light Screen",
+            "Foul Play",
+            "Quash"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "White Herb",
+          "ability": "Sturdy",
+          "moves": [
+            "Draco Meteor",
+            "Aura Sphere",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Focus Sash",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Sludge Bomb",
+            "Power Gem",
+            "Spiky Shield",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Scald",
+            "Ice Beam",
+            "Life Dew",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "heat-rotom",
+          "name": "Heat Rotom",
+          "item": "Sitrus Berry",
+          "ability": "Levitate",
+          "moves": [
+            "Overheat",
+            "Thunderbolt",
+            "Electroweb",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7142857142857143,
+      "sampleCount": 7,
+      "tournament": "Intimidators Champions Challenge #26 REG M-B",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "NMR | Wilson Gorski",
+      "record": "5-2-0"
+    },
+    {
+      "id": "6a5497ab232a1a55ee10b2b8-sitrusc",
+      "name": "SitrusC · HeroicTitan’s VGC Battle Arena",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Protect",
+            "Heat Wave",
+            "Solar Beam",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Protect",
+            "Stone Edge",
+            "Dragon Claw",
+            "Stomping Tantrum"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Protect",
+            "Aqua Jet",
+            "Wave Crash",
+            "Last Respects"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Protect",
+            "Tailwind",
+            "Moonblast",
+            "Light Screen"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Occa Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Low Kick",
+            "Iron Head",
+            "Sucker Punch",
+            "Kowtow Cleave"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Glimmoranite",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Spiky Shield",
+            "Power Gem",
+            "Earth Power",
+            "Sludge Bomb"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "HeroicTitan’s VGC Battle Arena",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "SitrusC",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a5497ab232a1a55ee10b2b8-sooner",
+      "name": "Sooner · HeroicTitan’s VGC Battle Arena",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Aura Sphere",
+            "Dark Pulse",
+            "Protect",
+            "Water Spout"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Glimmoranite",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Sludge Bomb",
+            "Spiky Shield",
+            "Power Gem",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Protect",
+            "Shadow Sneak",
+            "Bulk Up"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Life Orb",
+          "ability": "Flame Body",
+          "moves": [
+            "Tailwind",
+            "Overheat",
+            "Protect",
+            "Dual Wingbeat"
+          ]
+        },
+        {
+          "slug": "meowscarada",
+          "name": "Meowscarada",
+          "item": "Focus Sash",
+          "ability": "Protean",
+          "moves": [
+            "Flower Trick",
+            "Knock Off",
+            "Protect",
+            "Triple Axel"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Leftovers",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Protect",
+            "Nasty Plot",
+            "Shadow Ball"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "HeroicTitan’s VGC Battle Arena",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Sooner",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a467bb683fd320299bd6627-meganvgc",
+      "name": "MeganVGC · Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Glimmoranite",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Sludge Bomb",
+            "Power Gem",
+            "Earth Power",
+            "Spiky Shield"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Brave Bird",
+            "Close Combat",
+            "Roost",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Life Orb",
+          "ability": "Levitate",
+          "moves": [
+            "Dragon Pulse",
+            "Dark Pulse",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Wise Glasses",
+          "ability": "Good as Gold",
+          "moves": [
+            "Flash Cannon",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Scald",
+            "Ice Beam",
+            "Recover",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8333333333333334,
+      "sampleCount": 6,
+      "tournament": "Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "MeganVGC",
+      "record": "5-1-0"
+    },
+    {
+      "id": "6a467bb683fd320299bd6627-pillowprincess",
+      "name": "PillowPrincess · Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "meganium",
+          "name": "Meganium",
+          "item": "Meganiumite",
+          "ability": "Overgrow",
+          "moves": [
+            "Solar Beam",
+            "Weather Ball",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Glimmoranite",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Sludge Bomb",
+            "Power Gem",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Focus Sash",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Dire Claw",
+            "Close Combat",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Thunderbolt",
+            "Hydro Pump",
+            "Electroweb",
+            "Volt Switch"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.25,
+      "sampleCount": 4,
+      "tournament": "Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "PillowPrincess",
+      "record": "1-3-0"
+    },
+    {
+      "id": "6a529f1ee09846f1eb4c14e3-kobraspike",
+      "name": "Kobraspike · Chaos League Sunday Slam #104",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "espathra",
+          "name": "Espathra",
+          "item": "Sitrus Berry",
+          "ability": "Speed Boost",
+          "moves": [
+            "Lumina Crash",
+            "Calm Mind",
+            "Protect",
+            "Baton Pass"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Protect",
+            "Flash Cannon",
+            "Dragon Pulse"
+          ]
+        },
+        {
+          "slug": "politoed",
+          "name": "Politoed",
+          "item": "Mystic Water",
+          "ability": "Drizzle",
+          "moves": [
+            "Weather Ball",
+            "Muddy Water",
+            "Ice Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Protect",
+            "Giga Drain",
+            "Rage Powder",
+            "Overheat"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Glimmoranite",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Sludge Bomb",
+            "Earth Power",
+            "Power Gem",
+            "Spiky Shield"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Pressure",
+          "moves": [
+            "Poison Jab",
+            "Close Combat",
+            "Fake Out",
+            "Quick Guard"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Chaos League Sunday Slam #104",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Kobraspike",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a57380e6355385f44dd5183-shane",
+      "name": "Fernando R · Champions Tour LEPE M-B #9",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Protect",
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Fairy Feather",
+          "ability": "Prankster",
+          "moves": [
+            "Protect",
+            "Encore",
+            "Tailwind",
+            "Moonblast"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Occa Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Protect",
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Life Orb",
+          "ability": "Adaptability",
+          "moves": [
+            "Protect",
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Lum Berry",
+          "ability": "Rough Skin",
+          "moves": [
+            "Protect",
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Focus Sash",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Spiky Shield",
+            "Power Gem",
+            "Sludge Bomb",
+            "Earth Power"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Champions Tour LEPE M-B #9",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Fernando R",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a50864165724db9ded41db6-subzebas",
+      "name": "SubZebas · 4fun sabadín",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Fairy Feather",
+          "ability": "Prankster",
+          "moves": [
+            "Protect",
+            "Encore",
+            "Tailwind",
+            "Moonblast"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Focus Sash",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Spiky Shield",
+            "Power Gem",
+            "Sludge Bomb",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Protect",
+            "Swords Dance",
+            "Sucker Punch",
+            "Kowtow Cleave"
+          ]
+        },
+        {
+          "slug": "gyarados",
+          "name": "Gyarados",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Protect",
+            "Waterfall",
+            "Power Whip",
+            "Temper Flare"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "4fun sabadín",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "SubZebas",
+      "record": "3-2-0"
+    }
+  ],
+  "movePool": [
+    "Acid Armor",
+    "Acid Spray",
+    "Ancient Power",
+    "Confuse Ray",
+    "Dazzling Gleam",
+    "Earth Power",
+    "Endure",
+    "Energy Ball",
+    "Explosion",
+    "Facade",
+    "Flash Cannon",
+    "Giga Impact",
+    "Gunk Shot",
+    "Hyper Beam",
+    "Iron Defense",
+    "Light Screen",
+    "Memento",
+    "Meteor Beam",
+    "Mortal Spin",
+    "Mud Shot",
+    "Power Gem",
+    "Protect",
+    "Rain Dance",
+    "Reflect",
+    "Rest",
+    "Rock Blast",
+    "Rock Polish",
+    "Rock Slide",
+    "Rock Tomb",
+    "Sand Tomb",
+    "Sandstorm",
+    "Self-Destruct",
+    "Sleep Talk",
+    "Sludge Bomb",
+    "Sludge Wave",
+    "Smack Down",
+    "Solar Beam",
+    "Spikes",
+    "Spiky Shield",
+    "Stealth Rock",
+    "Stone Edge",
+    "Substitute",
+    "Sunny Day",
+    "Toxic",
+    "Toxic Spikes",
+    "Venoshock"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Glimmora",
+      "base_name": "Glimmora",
+      "saved_name": "Glimmora",
+      "types": "Rock/Poison",
+      "abilities": "Toxic Debris|Corrosion",
+      "image_path": "pokemon_champions_assets\\pokemon\\Glimmora.png",
+      "form": "",
+      "hp": 158,
+      "atk": 75,
+      "def": 110,
+      "spa": 150,
+      "spd": 101,
+      "spe": 106,
+      "total": 700
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "move",
+          "rank": 1,
+          "name": "Power Gem",
+          "percentage": "96.3%",
+          "percentage_value": 96.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Focus Sash",
+          "percentage": "60.1%",
+          "percentage_value": 60.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Whimsicott",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Modest",
+          "percentage": "64.8%",
+          "percentage_value": 64.8,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        "stat_points": {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "33.7%",
+          "percentage_value": 33.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 1,
+          "attack_points": 0,
+          "defense_points": 1,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        "ability": {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "ability",
+          "rank": 1,
+          "name": "Toxic Debris",
+          "percentage": "97.0%",
+          "percentage_value": 97,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Power Gem",
+          "Spiky Shield",
+          "Earth Power",
+          "Sludge Bomb",
+          "Energy Ball",
+          "Sludge Wave",
+          "Mortal Spin",
+          "Stealth Rock",
+          "Protect",
+          "Venoshock"
+        ],
+        "held_item": [
+          "Focus Sash",
+          "Glimmoranite",
+          "Life Orb",
+          "Choice Scarf",
+          "Expert Belt",
+          "Leftovers",
+          "Shuca Berry",
+          "Sitrus Berry",
+          "Quick Claw",
+          "Wise Glasses"
+        ],
+        "teammate": [
+          "Whimsicott",
+          "Garchomp",
+          "Basculegion Male",
+          "Charizard",
+          "Staraptor",
+          "Kingambit",
+          "Sinistcha",
+          "Incineroar",
+          "Alolan Ninetales",
+          "Farigiraf"
+        ],
+        "stat_alignment": [
+          "Modest",
+          "Timid",
+          "Bold",
+          "Calm",
+          "Quiet",
+          "Jolly",
+          "Relaxed",
+          "Hasty",
+          "Sassy",
+          "Adamant"
+        ],
+        "stat_points": [
+          "HP 1 / Atk 0 / Def 1 / SpA 32 / SpD 0 / Spe 32",
+          "HP 2 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 32",
+          "HP 1 / Atk 0 / Def 0 / SpA 32 / SpD 1 / Spe 32",
+          "HP 0 / Atk 0 / Def 0 / SpA 32 / SpD 2 / Spe 32",
+          "HP 0 / Atk 0 / Def 2 / SpA 32 / SpD 0 / Spe 32",
+          "HP 15 / Atk 0 / Def 1 / SpA 28 / SpD 1 / Spe 21",
+          "HP 30 / Atk 0 / Def 0 / SpA 22 / SpD 14 / Spe 0",
+          "HP 0 / Atk 0 / Def 1 / SpA 32 / SpD 1 / Spe 32"
+        ],
+        "ability": [
+          "Toxic Debris",
+          "Corrosion"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "move",
+          "rank": 1,
+          "name": "Power Gem",
+          "percentage": "96.3%",
+          "percentage_value": 96.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "move",
+          "rank": 2,
+          "name": "Spiky Shield",
+          "percentage": "90.6%",
+          "percentage_value": 90.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "move",
+          "rank": 3,
+          "name": "Earth Power",
+          "percentage": "88.7%",
+          "percentage_value": 88.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "move",
+          "rank": 4,
+          "name": "Sludge Bomb",
+          "percentage": "86.5%",
+          "percentage_value": 86.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "move",
+          "rank": 5,
+          "name": "Energy Ball",
+          "percentage": "8.4%",
+          "percentage_value": 8.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "move",
+          "rank": 6,
+          "name": "Sludge Wave",
+          "percentage": "7.9%",
+          "percentage_value": 7.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "move",
+          "rank": 7,
+          "name": "Mortal Spin",
+          "percentage": "6.1%",
+          "percentage_value": 6.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "move",
+          "rank": 8,
+          "name": "Stealth Rock",
+          "percentage": "3.1%",
+          "percentage_value": 3.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "move",
+          "rank": 9,
+          "name": "Protect",
+          "percentage": "2.3%",
+          "percentage_value": 2.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "move",
+          "rank": 10,
+          "name": "Venoshock",
+          "percentage": "2.0%",
+          "percentage_value": 2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Focus Sash",
+          "percentage": "60.1%",
+          "percentage_value": 60.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Glimmoranite",
+          "percentage": "28.3%",
+          "percentage_value": 28.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Life Orb",
+          "percentage": "2.6%",
+          "percentage_value": 2.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Choice Scarf",
+          "percentage": "2.1%",
+          "percentage_value": 2.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Expert Belt",
+          "percentage": "1.5%",
+          "percentage_value": 1.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Leftovers",
+          "percentage": "1.2%",
+          "percentage_value": 1.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Shuca Berry",
+          "percentage": "1.1%",
+          "percentage_value": 1.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Sitrus Berry",
+          "percentage": "0.9%",
+          "percentage_value": 0.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Quick Claw",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Wise Glasses",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Whimsicott",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Charizard",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Staraptor",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Alolan Ninetales",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Modest",
+          "percentage": "64.8%",
+          "percentage_value": 64.8,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Timid",
+          "percentage": "30.1%",
+          "percentage_value": 30.1,
+          "stat_up": "Speed",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Bold",
+          "percentage": "1.2%",
+          "percentage_value": 1.2,
+          "stat_up": "Defense",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Calm",
+          "percentage": "0.9%",
+          "percentage_value": 0.9,
+          "stat_up": "Sp. Def",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Quiet",
+          "percentage": "0.9%",
+          "percentage_value": 0.9,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Jolly",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Relaxed",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Hasty",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Speed",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Sassy",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Sp. Def",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Adamant",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "33.7%",
+          "percentage_value": 33.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 1,
+          "attack_points": 0,
+          "defense_points": 1,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "28.2%",
+          "percentage_value": 28.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "6.5%",
+          "percentage_value": 6.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 1,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 1,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "4.8%",
+          "percentage_value": 4.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 2,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "2.9%",
+          "percentage_value": 2.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "0.9%",
+          "percentage_value": 0.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 15,
+          "attack_points": 0,
+          "defense_points": 1,
+          "sp_atk_points": 28,
+          "sp_def_points": 1,
+          "speed_points": 21
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "0.7%",
+          "percentage_value": 0.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 30,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 22,
+          "sp_def_points": 14,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 1,
+          "sp_atk_points": 32,
+          "sp_def_points": 1,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "ability",
+          "rank": 1,
+          "name": "Toxic Debris",
+          "percentage": "97.0%",
+          "percentage_value": 97,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Glimmora",
+          "column_position": 40,
+          "position": 40,
+          "category": "ability",
+          "rank": 2,
+          "name": "Corrosion",
+          "percentage": "3.0%",
+          "percentage_value": 3,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Glimmora.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Glimmora.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Glimmora.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Glimmora.csv"
+      }
+    ]
+  }
+}

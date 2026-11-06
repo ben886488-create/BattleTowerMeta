@@ -1,0 +1,2563 @@
+{
+  "pokemon": {
+    "slug": "meowstic",
+    "name": "Meowstic",
+    "baseName": "Meowstic",
+    "savedName": "Meowstic",
+    "form": "",
+    "types": [
+      "Psychic"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Meowstic.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/678.png",
+    "stats": {
+      "hp": 149,
+      "attack": 68,
+      "defense": 96,
+      "spAttack": 103,
+      "spDefense": 101,
+      "speed": 124,
+      "total": 641
+    },
+    "rank": 78,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Fake Out",
+    "topItem": "Bright Powder",
+    "topTeammate": "Overqwil"
+  },
+  "moves": [
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "move",
+      "rank": 1,
+      "name": "Fake Out",
+      "percentage": 0.586,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "move",
+        "rank": 1,
+        "name": "Fake Out",
+        "percentage": "58.6%",
+        "percentage_value": 58.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "move",
+      "rank": 2,
+      "name": "Psychic Terrain",
+      "percentage": 0.405,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "move",
+        "rank": 2,
+        "name": "Psychic Terrain",
+        "percentage": "40.5%",
+        "percentage_value": 40.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "move",
+      "rank": 3,
+      "name": "Expanding Force",
+      "percentage": 0.309,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "move",
+        "rank": 3,
+        "name": "Expanding Force",
+        "percentage": "30.9%",
+        "percentage_value": 30.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "move",
+      "rank": 4,
+      "name": "Sunny Day",
+      "percentage": 0.283,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "move",
+        "rank": 4,
+        "name": "Sunny Day",
+        "percentage": "28.3%",
+        "percentage_value": 28.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "move",
+      "rank": 5,
+      "name": "Skill Swap",
+      "percentage": 0.273,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "move",
+        "rank": 5,
+        "name": "Skill Swap",
+        "percentage": "27.3%",
+        "percentage_value": 27.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "move",
+      "rank": 6,
+      "name": "Yawn",
+      "percentage": 0.261,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "move",
+        "rank": 6,
+        "name": "Yawn",
+        "percentage": "26.1%",
+        "percentage_value": 26.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "move",
+      "rank": 7,
+      "name": "Light Screen",
+      "percentage": 0.199,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "move",
+        "rank": 7,
+        "name": "Light Screen",
+        "percentage": "19.9%",
+        "percentage_value": 19.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "move",
+      "rank": 8,
+      "name": "Rain Dance",
+      "percentage": 0.193,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "move",
+        "rank": 8,
+        "name": "Rain Dance",
+        "percentage": "19.3%",
+        "percentage_value": 19.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "move",
+      "rank": 9,
+      "name": "Reflect",
+      "percentage": 0.191,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "move",
+        "rank": 9,
+        "name": "Reflect",
+        "percentage": "19.1%",
+        "percentage_value": 19.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "move",
+      "rank": 10,
+      "name": "Trick Room",
+      "percentage": 0.18,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "move",
+        "rank": 10,
+        "name": "Trick Room",
+        "percentage": "18.0%",
+        "percentage_value": 18,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Bright Powder",
+      "percentage": 0.177,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Bright Powder",
+        "percentage": "17.7%",
+        "percentage_value": 17.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Focus Sash",
+      "percentage": 0.153,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Focus Sash",
+        "percentage": "15.3%",
+        "percentage_value": 15.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Light Clay",
+      "percentage": 0.137,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Light Clay",
+        "percentage": "13.7%",
+        "percentage_value": 13.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Colbur Berry",
+      "percentage": 0.129,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Colbur Berry",
+        "percentage": "12.9%",
+        "percentage_value": 12.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Sitrus Berry",
+      "percentage": 0.121,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Sitrus Berry",
+        "percentage": "12.1%",
+        "percentage_value": 12.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Mental Herb",
+      "percentage": 0.113,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Mental Herb",
+        "percentage": "11.3%",
+        "percentage_value": 11.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Meowsticite",
+      "percentage": 0.075,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Meowsticite",
+        "percentage": "7.5%",
+        "percentage_value": 7.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Twisted Spoon",
+      "percentage": 0.033,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Twisted Spoon",
+        "percentage": "3.3%",
+        "percentage_value": 3.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Leftovers",
+      "percentage": 0.02,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Leftovers",
+        "percentage": "2.0%",
+        "percentage_value": 2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Kasib Berry",
+      "percentage": 0.8,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Kasib Berry",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "ability",
+      "rank": 1,
+      "name": "Prankster",
+      "percentage": 0.991,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "ability",
+        "rank": 1,
+        "name": "Prankster",
+        "percentage": "99.1%",
+        "percentage_value": 99.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "ability",
+      "rank": 2,
+      "name": "Infiltrator",
+      "percentage": 0.5,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "ability",
+        "rank": 2,
+        "name": "Infiltrator",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "ability",
+      "rank": 3,
+      "name": "Keen Eye",
+      "percentage": 0.3,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "ability",
+        "rank": 3,
+        "name": "Keen Eye",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Overqwil",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Overqwil",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Sneasler",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Sneasler",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Delphox",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Delphox",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Sableye",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Sableye",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Klefki",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Klefki",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Gardevoir",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Gardevoir",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Alakazam",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Alakazam",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Bold",
+      "percentage": 0.312,
+      "statUp": "Defense",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Bold",
+        "percentage": "31.2%",
+        "percentage_value": 31.2,
+        "stat_up": "Defense",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Timid",
+      "percentage": 0.177,
+      "statUp": "Speed",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Timid",
+        "percentage": "17.7%",
+        "percentage_value": 17.7,
+        "stat_up": "Speed",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Calm",
+      "percentage": 0.166,
+      "statUp": "Sp. Def",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Calm",
+        "percentage": "16.6%",
+        "percentage_value": 16.6,
+        "stat_up": "Sp. Def",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Impish",
+      "percentage": 0.144,
+      "statUp": "Defense",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Impish",
+        "percentage": "14.4%",
+        "percentage_value": 14.4,
+        "stat_up": "Defense",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Modest",
+      "percentage": 0.111,
+      "statUp": "Sp. Atk",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Modest",
+        "percentage": "11.1%",
+        "percentage_value": 11.1,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Quiet",
+      "percentage": 0.022,
+      "statUp": "Sp. Atk",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Quiet",
+        "percentage": "2.2%",
+        "percentage_value": 2.2,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Relaxed",
+      "percentage": 0.018,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Relaxed",
+        "percentage": "1.8%",
+        "percentage_value": 1.8,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Sassy",
+      "percentage": 0.012,
+      "statUp": "Sp. Def",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Sassy",
+        "percentage": "1.2%",
+        "percentage_value": 1.2,
+        "stat_up": "Sp. Def",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Jolly",
+      "percentage": 0.011,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Jolly",
+        "percentage": "1.1%",
+        "percentage_value": 1.1,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Careful",
+      "percentage": 0.011,
+      "statUp": "Sp. Def",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Careful",
+        "percentage": "1.1%",
+        "percentage_value": 1.1,
+        "stat_up": "Sp. Def",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.197,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "19.7%",
+        "percentage_value": 19.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 24,
+        "sp_atk_points": 0,
+        "sp_def_points": 10,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.073,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "7.3%",
+        "percentage_value": 7.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 32,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.071,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "7.1%",
+        "percentage_value": 7.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.058,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "5.8%",
+        "percentage_value": 5.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 14,
+        "sp_atk_points": 0,
+        "sp_def_points": 20,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.036,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "3.6%",
+        "percentage_value": 3.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 0,
+        "defense_points": 32,
+        "sp_atk_points": 0,
+        "sp_def_points": 32,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.026,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "2.6%",
+        "percentage_value": 2.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.023,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "2.3%",
+        "percentage_value": 2.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 32,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Meowstic",
+      "position": 78,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.02,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Meowstic",
+        "column_position": 78,
+        "position": 78,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "2.0%",
+        "percentage_value": 2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 2,
+        "speed_points": 32
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a505ee7063cb29d318e8401-skwovetboi",
+      "name": "Skwovetboi · VGC UU Regulation M-B Weekly #1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "pyroar",
+          "name": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Unnerve",
+          "moves": [
+            "Overheat",
+            "Will-O-Wisp",
+            "Snarl",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Brave Bird",
+            "Body Press",
+            "Bulk Up",
+            "Roost"
+          ]
+        },
+        {
+          "slug": "clefable",
+          "name": "Clefable",
+          "item": "Sitrus Berry",
+          "ability": "Unaware",
+          "moves": [
+            "Moonblast",
+            "Follow Me",
+            "Life Dew",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "feraligatr",
+          "name": "Feraligatr",
+          "item": "Life Orb",
+          "ability": "Sheer Force",
+          "moves": [
+            "Liquidation",
+            "Dragon Dance",
+            "Protect",
+            "Crunch"
+          ]
+        },
+        {
+          "slug": "meowstic",
+          "name": "Meowstic",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Psyshock",
+            "Reflect",
+            "Light Screen",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "sceptile",
+          "name": "Sceptile",
+          "item": "Sceptilite",
+          "ability": "Overgrow",
+          "moves": [
+            "Energy Ball",
+            "Dragon Pulse",
+            "Earth Power",
+            "Detect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 4,
+      "tournament": "VGC UU Regulation M-B Weekly #1",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Skwovetboi",
+      "record": "3-1-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-rkbnunes",
+      "name": "Rkbnunes - Psíquico/Pedra · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Protect",
+            "Psychic",
+            "Heat Wave",
+            "Grass Knot"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Dual Wingbeat",
+            "Rock Slide",
+            "Protect",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "meowstic",
+          "name": "Meowstic",
+          "item": "Sitrus Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Fake Out",
+            "Sunny Day",
+            "Helping Hand",
+            "Psyshock"
+          ]
+        },
+        {
+          "slug": "gallade",
+          "name": "Gallade",
+          "item": "Choice Scarf",
+          "ability": "Sharpness",
+          "moves": [
+            "Sacred Sword",
+            "Psycho Cut",
+            "Night Slash",
+            "Leaf Blade"
+          ]
+        },
+        {
+          "slug": "hisuian-arcanine",
+          "name": "Hisuian Arcanine",
+          "item": "Life Orb",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Extreme Speed",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Focus Sash",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Sludge Bomb",
+            "Energy Ball",
+            "Earth Power",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Rkbnunes - Psíquico/Pedra",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a4f9758063cb29d318e79a9-huyhieuf",
+      "name": "huyhieuf · Sky Pillar Saturday Showdown S8 #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "overqwil",
+          "name": "Overqwil",
+          "item": "Leftovers",
+          "ability": "Intimidate",
+          "moves": [
+            "Minimize",
+            "Stockpile",
+            "Pain Split",
+            "Barb Barrage"
+          ]
+        },
+        {
+          "slug": "meowstic",
+          "name": "Meowstic",
+          "item": "Mental Herb",
+          "ability": "Prankster",
+          "moves": [
+            "Light Screen",
+            "Skill Swap",
+            "Rain Dance",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Sablenite",
+          "ability": "Prankster",
+          "moves": [
+            "Dark Pulse",
+            "Will-O-Wisp",
+            "Recover",
+            "Psych Up"
+          ]
+        },
+        {
+          "slug": "klefki",
+          "name": "Klefki",
+          "item": "Sitrus Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Stored Power",
+            "Draining Kiss",
+            "Calm Mind",
+            "Psych Up"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Protect",
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Unburden",
+          "moves": [
+            "Dire Claw",
+            "Close Combat",
+            "Quick Guard",
+            "Fake Out"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Sky Pillar Saturday Showdown S8 #10",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "huyhieuf",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a33cff8e334c3c9befd9250-razz",
+      "name": "RAZZ · Rising Stars - S1 (Double Battle)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Brave Bird",
+            "Close Combat",
+            "Roost",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "malamar",
+          "name": "Malamar",
+          "item": "Malamarite",
+          "ability": "Contrary",
+          "moves": [
+            "Night Slash",
+            "Superpower",
+            "Destiny Bond",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "serperior",
+          "name": "Serperior",
+          "item": "Miracle Seed",
+          "ability": "Contrary",
+          "moves": [
+            "Leaf Storm",
+            "Dragon Pulse",
+            "Synthesis",
+            "Grassy Terrain"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Focus Band",
+          "ability": "Prankster",
+          "moves": [
+            "Fake Tears",
+            "Taunt",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Encore",
+            "Fake Tears",
+            "Tickle",
+            "Worry Seed"
+          ]
+        },
+        {
+          "slug": "meowstic",
+          "name": "Meowstic",
+          "item": "Sitrus Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Fake Out",
+            "Fake Tears",
+            "Tickle",
+            "Skill Swap"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.42857142857142855,
+      "sampleCount": 7,
+      "tournament": "Rising Stars - S1 (Double Battle)",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "RAZZ",
+      "record": "3-4-0"
+    },
+    {
+      "id": "6a5117e465724db9ded421f1-mizuki02292",
+      "name": "Mizuki02292 · Øutcast's Warm Up Cup",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "dragapult",
+          "name": "Dragapult",
+          "item": "Life Orb",
+          "ability": "Clear Body",
+          "moves": [
+            "Protect",
+            "Will-O-Wisp",
+            "Phantom Force",
+            "Dragon Claw"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Big Root",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Leech Seed",
+            "Protect",
+            "Giga Drain",
+            "Sludge Bomb"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Low Kick",
+            "Kowtow Cleave",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Sitrus Berry",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Nasty Plot",
+            "Protect",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "slug": "meowstic",
+          "name": "Meowstic",
+          "item": "Leftovers",
+          "ability": "Prankster",
+          "moves": [
+            "Psych Up",
+            "Stored Power",
+            "Protect",
+            "Dark Pulse"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Protect",
+            "Close Combat",
+            "Roost",
+            "Dual Wingbeat"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 4,
+      "tournament": "Øutcast's Warm Up Cup",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Mizuki02292",
+      "record": "3-1-0"
+    }
+  ],
+  "movePool": [
+    "Alluring Voice",
+    "Baton Pass",
+    "Calm Mind",
+    "Charge Beam",
+    "Charm",
+    "Covet",
+    "Dark Pulse",
+    "Dig",
+    "Disarming Voice",
+    "Endure",
+    "Energy Ball",
+    "Expanding Force",
+    "Facade",
+    "Fake Out",
+    "Fake Tears",
+    "Giga Impact",
+    "Gravity",
+    "Helping Hand",
+    "Hyper Beam",
+    "Imprison",
+    "Iron Tail",
+    "Light Screen",
+    "Magic Room",
+    "Mean Look",
+    "Misty Terrain",
+    "Nasty Plot",
+    "Payback",
+    "Play Rough",
+    "Protect",
+    "Psych Up",
+    "Psychic",
+    "Psychic Noise",
+    "Psychic Terrain",
+    "Psyshock",
+    "Quick Guard",
+    "Rain Dance",
+    "Reflect",
+    "Rest",
+    "Role Play",
+    "Round",
+    "Safeguard",
+    "Shadow Ball",
+    "Skill Swap",
+    "Sleep Talk",
+    "Snore",
+    "Stored Power",
+    "Substitute",
+    "Sucker Punch",
+    "Sunny Day",
+    "Tail Slap",
+    "Thunder Wave",
+    "Thunderbolt",
+    "Tickle",
+    "Trailblaze",
+    "Trick",
+    "Trick Room",
+    "Wish",
+    "Wonder Room",
+    "Yawn",
+    "Zen Headbutt"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Meowstic",
+      "base_name": "Meowstic",
+      "saved_name": "Meowstic",
+      "types": "Psychic",
+      "abilities": "Keen Eye|Infiltrator|Prankster",
+      "image_path": "pokemon_champions_assets\\pokemon\\Meowstic.png",
+      "form": "",
+      "hp": 149,
+      "atk": 68,
+      "def": 96,
+      "spa": 103,
+      "spd": 101,
+      "spe": 124,
+      "total": 641
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "move",
+          "rank": 1,
+          "name": "Fake Out",
+          "percentage": "58.6%",
+          "percentage_value": 58.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Bright Powder",
+          "percentage": "17.7%",
+          "percentage_value": 17.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Overqwil",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Bold",
+          "percentage": "31.2%",
+          "percentage_value": 31.2,
+          "stat_up": "Defense",
+          "stat_down": "Attack"
+        },
+        "stat_points": {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "19.7%",
+          "percentage_value": 19.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 24,
+          "sp_atk_points": 0,
+          "sp_def_points": 10,
+          "speed_points": 0
+        },
+        "ability": {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "ability",
+          "rank": 1,
+          "name": "Prankster",
+          "percentage": "99.1%",
+          "percentage_value": 99.1,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Fake Out",
+          "Psychic Terrain",
+          "Expanding Force",
+          "Sunny Day",
+          "Skill Swap",
+          "Yawn",
+          "Light Screen",
+          "Rain Dance",
+          "Reflect",
+          "Trick Room"
+        ],
+        "held_item": [
+          "Bright Powder",
+          "Focus Sash",
+          "Light Clay",
+          "Colbur Berry",
+          "Sitrus Berry",
+          "Mental Herb",
+          "Meowsticite",
+          "Twisted Spoon",
+          "Leftovers",
+          "Kasib Berry"
+        ],
+        "teammate": [
+          "Overqwil",
+          "Sneasler",
+          "Delphox",
+          "Sableye",
+          "Klefki",
+          "Sinistcha",
+          "Gardevoir",
+          "Basculegion Male",
+          "Garchomp",
+          "Alakazam"
+        ],
+        "stat_alignment": [
+          "Bold",
+          "Timid",
+          "Calm",
+          "Impish",
+          "Modest",
+          "Quiet",
+          "Relaxed",
+          "Sassy",
+          "Jolly",
+          "Careful"
+        ],
+        "stat_points": [
+          "HP 32 / Atk 0 / Def 24 / SpA 0 / SpD 10 / Spe 0",
+          "HP 32 / Atk 0 / Def 32 / SpA 0 / SpD 2 / Spe 0",
+          "HP 2 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 32",
+          "HP 32 / Atk 0 / Def 14 / SpA 0 / SpD 20 / Spe 0",
+          "HP 2 / Atk 0 / Def 32 / SpA 0 / SpD 32 / Spe 0",
+          "HP 32 / Atk 0 / Def 2 / SpA 0 / SpD 0 / Spe 32",
+          "HP 32 / Atk 0 / Def 2 / SpA 0 / SpD 32 / Spe 0",
+          "HP 0 / Atk 0 / Def 0 / SpA 32 / SpD 2 / Spe 32"
+        ],
+        "ability": [
+          "Prankster",
+          "Infiltrator",
+          "Keen Eye"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "move",
+          "rank": 1,
+          "name": "Fake Out",
+          "percentage": "58.6%",
+          "percentage_value": 58.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "move",
+          "rank": 2,
+          "name": "Psychic Terrain",
+          "percentage": "40.5%",
+          "percentage_value": 40.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "move",
+          "rank": 3,
+          "name": "Expanding Force",
+          "percentage": "30.9%",
+          "percentage_value": 30.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "move",
+          "rank": 4,
+          "name": "Sunny Day",
+          "percentage": "28.3%",
+          "percentage_value": 28.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "move",
+          "rank": 5,
+          "name": "Skill Swap",
+          "percentage": "27.3%",
+          "percentage_value": 27.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "move",
+          "rank": 6,
+          "name": "Yawn",
+          "percentage": "26.1%",
+          "percentage_value": 26.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "move",
+          "rank": 7,
+          "name": "Light Screen",
+          "percentage": "19.9%",
+          "percentage_value": 19.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "move",
+          "rank": 8,
+          "name": "Rain Dance",
+          "percentage": "19.3%",
+          "percentage_value": 19.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "move",
+          "rank": 9,
+          "name": "Reflect",
+          "percentage": "19.1%",
+          "percentage_value": 19.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "move",
+          "rank": 10,
+          "name": "Trick Room",
+          "percentage": "18.0%",
+          "percentage_value": 18,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Bright Powder",
+          "percentage": "17.7%",
+          "percentage_value": 17.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Focus Sash",
+          "percentage": "15.3%",
+          "percentage_value": 15.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Light Clay",
+          "percentage": "13.7%",
+          "percentage_value": 13.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Colbur Berry",
+          "percentage": "12.9%",
+          "percentage_value": 12.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Sitrus Berry",
+          "percentage": "12.1%",
+          "percentage_value": 12.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Mental Herb",
+          "percentage": "11.3%",
+          "percentage_value": 11.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Meowsticite",
+          "percentage": "7.5%",
+          "percentage_value": 7.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Twisted Spoon",
+          "percentage": "3.3%",
+          "percentage_value": 3.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Leftovers",
+          "percentage": "2.0%",
+          "percentage_value": 2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Kasib Berry",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Overqwil",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Sneasler",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Delphox",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Sableye",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Klefki",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Gardevoir",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Alakazam",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Bold",
+          "percentage": "31.2%",
+          "percentage_value": 31.2,
+          "stat_up": "Defense",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Timid",
+          "percentage": "17.7%",
+          "percentage_value": 17.7,
+          "stat_up": "Speed",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Calm",
+          "percentage": "16.6%",
+          "percentage_value": 16.6,
+          "stat_up": "Sp. Def",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Impish",
+          "percentage": "14.4%",
+          "percentage_value": 14.4,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Modest",
+          "percentage": "11.1%",
+          "percentage_value": 11.1,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Quiet",
+          "percentage": "2.2%",
+          "percentage_value": 2.2,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Relaxed",
+          "percentage": "1.8%",
+          "percentage_value": 1.8,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Sassy",
+          "percentage": "1.2%",
+          "percentage_value": 1.2,
+          "stat_up": "Sp. Def",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Jolly",
+          "percentage": "1.1%",
+          "percentage_value": 1.1,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Careful",
+          "percentage": "1.1%",
+          "percentage_value": 1.1,
+          "stat_up": "Sp. Def",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "19.7%",
+          "percentage_value": 19.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 24,
+          "sp_atk_points": 0,
+          "sp_def_points": 10,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "7.3%",
+          "percentage_value": 7.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 32,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "7.1%",
+          "percentage_value": 7.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "5.8%",
+          "percentage_value": 5.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 14,
+          "sp_atk_points": 0,
+          "sp_def_points": 20,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "3.6%",
+          "percentage_value": 3.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 32,
+          "sp_atk_points": 0,
+          "sp_def_points": 32,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "2.6%",
+          "percentage_value": 2.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "2.3%",
+          "percentage_value": 2.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 32,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "2.0%",
+          "percentage_value": 2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 2,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "ability",
+          "rank": 1,
+          "name": "Prankster",
+          "percentage": "99.1%",
+          "percentage_value": 99.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "ability",
+          "rank": 2,
+          "name": "Infiltrator",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Meowstic",
+          "column_position": 78,
+          "position": 78,
+          "category": "ability",
+          "rank": 3,
+          "name": "Keen Eye",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Meowstic.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Meowstic.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Meowstic.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Meowstic.csv"
+      }
+    ]
+  }
+}

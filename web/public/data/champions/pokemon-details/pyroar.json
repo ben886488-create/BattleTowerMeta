@@ -1,0 +1,3079 @@
+{
+  "pokemon": {
+    "slug": "pyroar",
+    "name": "Pyroar",
+    "baseName": "Pyroar",
+    "savedName": "Pyroar",
+    "form": "",
+    "types": [
+      "Fire",
+      "Normal"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Pyroar.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/668.png",
+    "stats": {
+      "hp": 161,
+      "attack": 88,
+      "defense": 92,
+      "spAttack": 129,
+      "spDefense": 86,
+      "speed": 126,
+      "total": 682
+    },
+    "rank": 56,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Heat Wave",
+    "topItem": "Pyroarite",
+    "topTeammate": "Farigiraf"
+  },
+  "moves": [
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "move",
+      "rank": 1,
+      "name": "Heat Wave",
+      "percentage": 0.991,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "move",
+        "rank": 1,
+        "name": "Heat Wave",
+        "percentage": "99.1%",
+        "percentage_value": 99.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "move",
+      "rank": 2,
+      "name": "Protect",
+      "percentage": 0.977,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "move",
+        "rank": 2,
+        "name": "Protect",
+        "percentage": "97.7%",
+        "percentage_value": 97.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "move",
+      "rank": 3,
+      "name": "Overheat",
+      "percentage": 0.808,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "move",
+        "rank": 3,
+        "name": "Overheat",
+        "percentage": "80.8%",
+        "percentage_value": 80.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "move",
+      "rank": 4,
+      "name": "Solar Beam",
+      "percentage": 0.509,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "move",
+        "rank": 4,
+        "name": "Solar Beam",
+        "percentage": "50.9%",
+        "percentage_value": 50.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "move",
+      "rank": 5,
+      "name": "Yawn",
+      "percentage": 0.136,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "move",
+        "rank": 5,
+        "name": "Yawn",
+        "percentage": "13.6%",
+        "percentage_value": 13.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "move",
+      "rank": 6,
+      "name": "Flamethrower",
+      "percentage": 0.133,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "move",
+        "rank": 6,
+        "name": "Flamethrower",
+        "percentage": "13.3%",
+        "percentage_value": 13.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "move",
+      "rank": 7,
+      "name": "Scorching Sands",
+      "percentage": 0.122,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "move",
+        "rank": 7,
+        "name": "Scorching Sands",
+        "percentage": "12.2%",
+        "percentage_value": 12.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "move",
+      "rank": 8,
+      "name": "Hyper Voice",
+      "percentage": 0.098,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "move",
+        "rank": 8,
+        "name": "Hyper Voice",
+        "percentage": "9.8%",
+        "percentage_value": 9.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "move",
+      "rank": 9,
+      "name": "Round",
+      "percentage": 0.045,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "move",
+        "rank": 9,
+        "name": "Round",
+        "percentage": "4.5%",
+        "percentage_value": 4.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "move",
+      "rank": 10,
+      "name": "Dark Pulse",
+      "percentage": 0.036,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "move",
+        "rank": 10,
+        "name": "Dark Pulse",
+        "percentage": "3.6%",
+        "percentage_value": 3.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Pyroarite",
+      "percentage": 0.995,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Pyroarite",
+        "percentage": "99.5%",
+        "percentage_value": 99.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Expert Belt",
+      "percentage": 0.1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Expert Belt",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Charcoal",
+      "percentage": 0.1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Charcoal",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Focus Sash",
+      "percentage": 0.1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Focus Sash",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Metronome",
+      "percentage": 0,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Metronome",
+        "percentage": "0.0%",
+        "percentage_value": 0,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Choice Scarf",
+      "percentage": 0,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Choice Scarf",
+        "percentage": "0.0%",
+        "percentage_value": 0,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Life Orb",
+      "percentage": 0,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Life Orb",
+        "percentage": "0.0%",
+        "percentage_value": 0,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Bright Powder",
+      "percentage": 0,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Bright Powder",
+        "percentage": "0.0%",
+        "percentage_value": 0,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Wide Lens",
+      "percentage": 0,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Wide Lens",
+        "percentage": "0.0%",
+        "percentage_value": 0,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Sitrus Berry",
+      "percentage": 0,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Sitrus Berry",
+        "percentage": "0.0%",
+        "percentage_value": 0,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "ability",
+      "rank": 1,
+      "name": "Unnerve",
+      "percentage": 0.887,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "ability",
+        "rank": 1,
+        "name": "Unnerve",
+        "percentage": "88.7%",
+        "percentage_value": 88.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "ability",
+      "rank": 2,
+      "name": "Moxie",
+      "percentage": 0.065,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "ability",
+        "rank": 2,
+        "name": "Moxie",
+        "percentage": "6.5%",
+        "percentage_value": 6.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "ability",
+      "rank": 3,
+      "name": "Rivalry",
+      "percentage": 0.048,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "ability",
+        "rank": 3,
+        "name": "Rivalry",
+        "percentage": "4.8%",
+        "percentage_value": 4.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Farigiraf",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Farigiraf",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Torkoal",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Torkoal",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Whimsicott",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Whimsicott",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Venusaur",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Venusaur",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Scrafty",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Scrafty",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Mamoswine",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Mamoswine",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Sylveon",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Sylveon",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Kingambit",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Kingambit",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Timid",
+      "percentage": 0.863,
+      "statUp": "Speed",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Timid",
+        "percentage": "86.3%",
+        "percentage_value": 86.3,
+        "stat_up": "Speed",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Modest",
+      "percentage": 0.124,
+      "statUp": "Sp. Atk",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Modest",
+        "percentage": "12.4%",
+        "percentage_value": 12.4,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Hasty",
+      "percentage": 0.3,
+      "statUp": "Speed",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Hasty",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Speed",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Jolly",
+      "percentage": 0.3,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Jolly",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Quiet",
+      "percentage": 0.2,
+      "statUp": "Sp. Atk",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Quiet",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Mild",
+      "percentage": 0.2,
+      "statUp": "Sp. Atk",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Mild",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Bold",
+      "percentage": 0.1,
+      "statUp": "Defense",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Bold",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Defense",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Calm",
+      "percentage": 0.1,
+      "statUp": "Sp. Def",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Calm",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Sp. Def",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Serious",
+      "percentage": 0.1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Serious",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Naive",
+      "percentage": 0.1,
+      "statUp": "Speed",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Naive",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.509,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "50.9%",
+        "percentage_value": 50.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.183,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "18.3%",
+        "percentage_value": 18.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 7,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 27
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.065,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "6.5%",
+        "percentage_value": 6.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.046,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "4.6%",
+        "percentage_value": 4.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 2,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.026,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "2.6%",
+        "percentage_value": 2.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 7,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 27
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.8,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 6,
+        "attack_points": 0,
+        "defense_points": 1,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 27
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.6,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 3,
+        "sp_atk_points": 31,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Pyroar",
+      "position": 56,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.6,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Pyroar",
+        "column_position": 56,
+        "position": 56,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 14,
+        "attack_points": 0,
+        "defense_points": 3,
+        "sp_atk_points": 22,
+        "sp_def_points": 0,
+        "speed_points": 27
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a505ee7063cb29d318e8401-skwovetboi",
+      "name": "Skwovetboi · VGC UU Regulation M-B Weekly #1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "pyroar",
+          "name": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Unnerve",
+          "moves": [
+            "Overheat",
+            "Will-O-Wisp",
+            "Snarl",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Brave Bird",
+            "Body Press",
+            "Bulk Up",
+            "Roost"
+          ]
+        },
+        {
+          "slug": "clefable",
+          "name": "Clefable",
+          "item": "Sitrus Berry",
+          "ability": "Unaware",
+          "moves": [
+            "Moonblast",
+            "Follow Me",
+            "Life Dew",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "feraligatr",
+          "name": "Feraligatr",
+          "item": "Life Orb",
+          "ability": "Sheer Force",
+          "moves": [
+            "Liquidation",
+            "Dragon Dance",
+            "Protect",
+            "Crunch"
+          ]
+        },
+        {
+          "slug": "meowstic",
+          "name": "Meowstic",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Psyshock",
+            "Reflect",
+            "Light Screen",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "sceptile",
+          "name": "Sceptile",
+          "item": "Sceptilite",
+          "ability": "Overgrow",
+          "moves": [
+            "Energy Ball",
+            "Dragon Pulse",
+            "Earth Power",
+            "Detect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 4,
+      "tournament": "VGC UU Regulation M-B Weekly #1",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Skwovetboi",
+      "record": "3-1-0"
+    },
+    {
+      "id": "6a4dbb9665724db9ded3ff83-xchunkzx102",
+      "name": "XChunkzx102 · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "pyroar",
+          "name": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Unnerve",
+          "moves": [
+            "Heat Wave",
+            "Overheat",
+            "Solar Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "ninetales",
+          "name": "Ninetales",
+          "item": "Choice Scarf",
+          "ability": "Drought",
+          "moves": [
+            "Heat Wave",
+            "Overheat",
+            "Solar Beam",
+            "Fake Tears"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Sunny Day",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Moonblast",
+            "Light of Ruin",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Life Orb",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Thunderbolt",
+            "Trick Room",
+            "Helping Hand"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "XChunkzx102",
+      "record": "4-1-0"
+    },
+    {
+      "id": "6a53c2d1e09846f1eb4c161b-bingobangobongo",
+      "name": "Bingobangobongo · The Drywall Series #11",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Energy Ball",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Twin Beam",
+            "Thunderbolt",
+            "Trick Room",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "pyroar",
+          "name": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Unnerve",
+          "moves": [
+            "Heat Wave",
+            "Overheat",
+            "Solar Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Eruption",
+            "Weather Ball",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Iron Head",
+            "Close Combat",
+            "Knock Off"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Focus Sash",
+          "ability": "Oblivious",
+          "moves": [
+            "High Horsepower",
+            "Rock Slide",
+            "Ice Shard",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "The Drywall Series #11",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Bingobangobongo",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-hianlucas",
+      "name": "Hianlucas - Normal/Metal · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "klefki",
+          "name": "Klefki",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Reflect",
+            "Light Screen",
+            "Dazzling Gleam",
+            "Sunny Day"
+          ]
+        },
+        {
+          "slug": "toucannon",
+          "name": "Toucannon",
+          "item": "Choice Scarf",
+          "ability": "Keen Eye",
+          "moves": [
+            "Brave Bird",
+            "Bullet Seed",
+            "Rock Blast",
+            "Steel Wing"
+          ]
+        },
+        {
+          "slug": "pyroar",
+          "name": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Rivalry",
+          "moves": [
+            "Overheat",
+            "Solar Beam",
+            "Heat Wave",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Play Rough",
+            "Iron Head",
+            "Knock Off",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Wide Lens",
+          "ability": "Technician",
+          "moves": [
+            "Feint",
+            "After You",
+            "Population Bomb",
+            "Follow Me"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Low Kick",
+            "Sucker Punch",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Hianlucas - Normal/Metal",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-ljr_333",
+      "name": "LJR_333 - Fantasma/Normal · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Protect",
+            "Rage Powder",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Aurora Veil",
+            "Blizzard",
+            "Protect",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "slug": "pyroar",
+          "name": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Unnerve",
+          "moves": [
+            "Flamethrower",
+            "Protect",
+            "Heat Wave",
+            "Hyper Voice"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "White Herb",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Protect",
+            "U-turn",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "gengar",
+          "name": "Gengar",
+          "item": "Expert Belt",
+          "ability": "Cursed Body",
+          "moves": [
+            "Protect",
+            "Shadow Ball",
+            "Sludge Bomb",
+            "Taunt"
+          ]
+        },
+        {
+          "slug": "ditto",
+          "name": "Ditto",
+          "item": "Choice Scarf",
+          "ability": "Imposter",
+          "moves": [
+            "Transform"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "LJR_333 - Fantasma/Normal",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a4685c383fd320299bd6675-trevie",
+      "name": "Trevie · Pokémon Champions #1 - (Floette Eternal Flower)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Drain Punch",
+            "Knock Off",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "pyroar",
+          "name": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Unnerve",
+          "moves": [
+            "Heat Wave",
+            "Overheat",
+            "Yawn",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Energy Ball",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Weather Ball",
+            "Eruption",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Focus Sash",
+          "ability": "Oblivious",
+          "moves": [
+            "Ice Shard",
+            "High Horsepower",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Thunderbolt",
+            "Trick Room",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7272727272727273,
+      "sampleCount": 11,
+      "tournament": "Pokémon Champions #1 - (Floette Eternal Flower)",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Trevie",
+      "record": "8-3-0"
+    },
+    {
+      "id": "6a291b172d97f3b0c2612db9-rockkss",
+      "name": "ROCkkss · Mystery Community Tournament#1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "pyroar",
+          "name": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Unnerve",
+          "moves": [
+            "Heat Wave",
+            "Overheat",
+            "Flamethrower",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Energy Ball",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gliscor",
+          "name": "Gliscor",
+          "item": "Focus Sash",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "High Horsepower",
+            "Rock Slide",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Eruption",
+            "Weather Ball",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Thunderbolt",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Knock Off",
+            "Drain Punch",
+            "Ice Punch",
+            "Fake Out"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Mystery Community Tournament#1",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "ROCkkss",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a54c9156355385f44dd38cd-felipet",
+      "name": "NMR | FelipeT · Intimidators Champions Challenge #26 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Focus Sash",
+          "ability": "Unnerve",
+          "moves": [
+            "Tailwind",
+            "Sunny Day",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "pyroar",
+          "name": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Unnerve",
+          "moves": [
+            "Heat Wave",
+            "Overheat",
+            "Protect",
+            "Hyper Voice"
+          ]
+        },
+        {
+          "slug": "hisuian-samurott",
+          "name": "Hisuian Samurott",
+          "item": "Choice Scarf",
+          "ability": "Sharpness",
+          "moves": [
+            "Sacred Sword",
+            "Night Slash",
+            "Razor Shell",
+            "Flip Turn"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Sitrus Berry",
+          "ability": "Clear Body",
+          "moves": [
+            "Psychic Fangs",
+            "Bullet Punch",
+            "Body Press",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Rock Slide",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Giga Drain",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Intimidators Champions Challenge #26 REG M-B",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "NMR | FelipeT",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a442f7183fd320299bd5187-squidblue1",
+      "name": "Jules Gallo · HALL OF  FAME BELGIUM (Invitational)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "pyroar",
+          "name": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Unnerve",
+          "moves": [
+            "Protect",
+            "Overheat",
+            "Heat Wave",
+            "Solar Beam"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Protect",
+            "Helping Hand",
+            "Eruption",
+            "Weather Ball"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Helping Hand",
+            "Trick Room",
+            "Psychic",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "slug": "vileplume",
+          "name": "Vileplume",
+          "item": "Focus Sash",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sleep Powder",
+            "After You",
+            "Sludge Bomb",
+            "Solar Beam"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "White Herb",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Darkest Lariat",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Protect",
+            "Calm Mind",
+            "Moonblast",
+            "Draining Kiss"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "HALL OF  FAME BELGIUM (Invitational)",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Jules Gallo",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a47aff0063cb29d318e1b77-noobly320",
+      "name": "Kevin David Vivero · Cusca Champions Weekly ⚡ #2 (PCVGC)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "pyroar",
+          "name": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Unnerve",
+          "moves": [
+            "Heat Wave",
+            "Solar Beam",
+            "Overheat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Protect",
+            "Taunt",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Twin Beam",
+            "Thunderbolt",
+            "Trick Room",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Life Orb",
+          "ability": "Adaptability",
+          "moves": [
+            "Aqua Jet",
+            "Last Respects",
+            "Wave Crash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Alluring Voice",
+            "Focus Blast",
+            "Volt Switch"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Heat Rock",
+          "ability": "Drought",
+          "moves": [
+            "Solar Beam",
+            "Helping Hand",
+            "Protect",
+            "Eruption"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 3,
+      "tournament": "Cusca Champions Weekly ⚡ #2 (PCVGC)",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Kevin David Vivero",
+      "record": "2-1-0"
+    },
+    {
+      "id": "6a529f1ee09846f1eb4c14e3-idlefroicker",
+      "name": "IdleFroicker · Chaos League Sunday Slam #104",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "pyroar",
+          "name": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Unnerve",
+          "moves": [
+            "Protect",
+            "Heat Wave",
+            "Hyper Beam",
+            "Overheat"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Protect",
+            "Eruption",
+            "Overheat",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "vileplume",
+          "name": "Vileplume",
+          "item": "Focus Sash",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sleep Powder",
+            "Leaf Storm",
+            "Sludge Bomb",
+            "After You"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Knock Off",
+            "Close Combat",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Flip Turn",
+            "Last Respects",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "malamar",
+          "name": "Malamar",
+          "item": "Sitrus Berry",
+          "ability": "Contrary",
+          "moves": [
+            "Superpower",
+            "Topsy-Turvy",
+            "Rock Slide",
+            "Trick Room"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8888888888888888,
+      "sampleCount": 9,
+      "tournament": "Chaos League Sunday Slam #104",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "IdleFroicker",
+      "record": "8-1-0"
+    }
+  ],
+  "movePool": [
+    "Acrobatics",
+    "Body Slam",
+    "Bulldoze",
+    "Burning Jealousy",
+    "Crunch",
+    "Dark Pulse",
+    "Dig",
+    "Double-Edge",
+    "Endeavor",
+    "Endure",
+    "Entrainment",
+    "Facade",
+    "Fire Blast",
+    "Fire Fang",
+    "Fire Spin",
+    "Flame Charge",
+    "Flamethrower",
+    "Flare Blitz",
+    "Giga Impact",
+    "Heat Wave",
+    "Helping Hand",
+    "Hyper Beam",
+    "Hyper Voice",
+    "Iron Tail",
+    "Mud-Slap",
+    "Noble Roar",
+    "Overheat",
+    "Payback",
+    "Protect",
+    "Psychic Fangs",
+    "Rain Dance",
+    "Rest",
+    "Roar",
+    "Round",
+    "Scorching Sands",
+    "Sleep Talk",
+    "Snarl",
+    "Snore",
+    "Solar Beam",
+    "Substitute",
+    "Sunny Day",
+    "Taunt",
+    "Temper Flare",
+    "Thief",
+    "Thunder Fang",
+    "Trailblaze",
+    "Wild Charge",
+    "Will-O-Wisp",
+    "Yawn"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Pyroar",
+      "base_name": "Pyroar",
+      "saved_name": "Pyroar",
+      "types": "Fire/Normal",
+      "abilities": "Rivalry|Unnerve|Moxie",
+      "weight": "179.7 lbs.",
+      "image_path": "pokemon_champions_assets\\pokemon\\Pyroar.png",
+      "form": "",
+      "hp": 161,
+      "atk": 88,
+      "def": 92,
+      "spa": 129,
+      "spd": 86,
+      "spe": 126,
+      "total": 682
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "move",
+          "rank": 1,
+          "name": "Heat Wave",
+          "percentage": "99.1%",
+          "percentage_value": 99.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Pyroarite",
+          "percentage": "99.5%",
+          "percentage_value": 99.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Timid",
+          "percentage": "86.3%",
+          "percentage_value": 86.3,
+          "stat_up": "Speed",
+          "stat_down": "Attack"
+        },
+        "stat_points": {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "50.9%",
+          "percentage_value": 50.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        "ability": {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "ability",
+          "rank": 1,
+          "name": "Unnerve",
+          "percentage": "88.7%",
+          "percentage_value": 88.7,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Heat Wave",
+          "Protect",
+          "Overheat",
+          "Solar Beam",
+          "Yawn",
+          "Flamethrower",
+          "Scorching Sands",
+          "Hyper Voice",
+          "Round",
+          "Dark Pulse"
+        ],
+        "held_item": [
+          "Pyroarite",
+          "Expert Belt",
+          "Charcoal",
+          "Focus Sash",
+          "Metronome",
+          "Choice Scarf",
+          "Life Orb",
+          "Bright Powder",
+          "Wide Lens",
+          "Sitrus Berry"
+        ],
+        "teammate": [
+          "Farigiraf",
+          "Torkoal",
+          "Whimsicott",
+          "Venusaur",
+          "Scrafty",
+          "Garchomp",
+          "Basculegion Male",
+          "Mamoswine",
+          "Sylveon",
+          "Kingambit"
+        ],
+        "stat_alignment": [
+          "Timid",
+          "Modest",
+          "Hasty",
+          "Jolly",
+          "Quiet",
+          "Mild",
+          "Bold",
+          "Calm",
+          "Serious",
+          "Naive"
+        ],
+        "stat_points": [
+          "HP 2 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 32",
+          "HP 0 / Atk 0 / Def 7 / SpA 32 / SpD 0 / Spe 27",
+          "HP 0 / Atk 0 / Def 2 / SpA 32 / SpD 0 / Spe 32",
+          "HP 0 / Atk 0 / Def 0 / SpA 32 / SpD 2 / Spe 32",
+          "HP 7 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 27",
+          "HP 6 / Atk 0 / Def 1 / SpA 32 / SpD 0 / Spe 27",
+          "HP 0 / Atk 0 / Def 3 / SpA 31 / SpD 0 / Spe 32",
+          "HP 14 / Atk 0 / Def 3 / SpA 22 / SpD 0 / Spe 27"
+        ],
+        "ability": [
+          "Unnerve",
+          "Moxie",
+          "Rivalry"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "move",
+          "rank": 1,
+          "name": "Heat Wave",
+          "percentage": "99.1%",
+          "percentage_value": 99.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "move",
+          "rank": 2,
+          "name": "Protect",
+          "percentage": "97.7%",
+          "percentage_value": 97.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "move",
+          "rank": 3,
+          "name": "Overheat",
+          "percentage": "80.8%",
+          "percentage_value": 80.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "move",
+          "rank": 4,
+          "name": "Solar Beam",
+          "percentage": "50.9%",
+          "percentage_value": 50.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "move",
+          "rank": 5,
+          "name": "Yawn",
+          "percentage": "13.6%",
+          "percentage_value": 13.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "move",
+          "rank": 6,
+          "name": "Flamethrower",
+          "percentage": "13.3%",
+          "percentage_value": 13.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "move",
+          "rank": 7,
+          "name": "Scorching Sands",
+          "percentage": "12.2%",
+          "percentage_value": 12.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "move",
+          "rank": 8,
+          "name": "Hyper Voice",
+          "percentage": "9.8%",
+          "percentage_value": 9.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "move",
+          "rank": 9,
+          "name": "Round",
+          "percentage": "4.5%",
+          "percentage_value": 4.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "move",
+          "rank": 10,
+          "name": "Dark Pulse",
+          "percentage": "3.6%",
+          "percentage_value": 3.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Pyroarite",
+          "percentage": "99.5%",
+          "percentage_value": 99.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Expert Belt",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Charcoal",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Focus Sash",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Metronome",
+          "percentage": "0.0%",
+          "percentage_value": 0,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Choice Scarf",
+          "percentage": "0.0%",
+          "percentage_value": 0,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Life Orb",
+          "percentage": "0.0%",
+          "percentage_value": 0,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Bright Powder",
+          "percentage": "0.0%",
+          "percentage_value": 0,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Wide Lens",
+          "percentage": "0.0%",
+          "percentage_value": 0,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Sitrus Berry",
+          "percentage": "0.0%",
+          "percentage_value": 0,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Torkoal",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Whimsicott",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Venusaur",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Scrafty",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Mamoswine",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Sylveon",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Timid",
+          "percentage": "86.3%",
+          "percentage_value": 86.3,
+          "stat_up": "Speed",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Modest",
+          "percentage": "12.4%",
+          "percentage_value": 12.4,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Hasty",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Speed",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Jolly",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Quiet",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Mild",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Bold",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Defense",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Calm",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Sp. Def",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Serious",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Naive",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "50.9%",
+          "percentage_value": 50.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "18.3%",
+          "percentage_value": 18.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 7,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 27
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "6.5%",
+          "percentage_value": 6.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "4.6%",
+          "percentage_value": 4.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 2,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "2.6%",
+          "percentage_value": 2.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 7,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 27
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 6,
+          "attack_points": 0,
+          "defense_points": 1,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 27
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 3,
+          "sp_atk_points": 31,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 14,
+          "attack_points": 0,
+          "defense_points": 3,
+          "sp_atk_points": 22,
+          "sp_def_points": 0,
+          "speed_points": 27
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "ability",
+          "rank": 1,
+          "name": "Unnerve",
+          "percentage": "88.7%",
+          "percentage_value": 88.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "ability",
+          "rank": 2,
+          "name": "Moxie",
+          "percentage": "6.5%",
+          "percentage_value": 6.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Pyroar",
+          "column_position": 56,
+          "position": 56,
+          "category": "ability",
+          "rank": 3,
+          "name": "Rivalry",
+          "percentage": "4.8%",
+          "percentage_value": 4.8,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Pyroar.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Pyroar.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Pyroar.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Pyroar.csv"
+      }
+    ]
+  }
+}

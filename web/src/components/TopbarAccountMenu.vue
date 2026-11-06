@@ -1,11 +1,11 @@
 <template>
   <div ref="rootRef" class="account-menu">
-    <button type="button" class="account-menu__trigger" @click="toggleOpen">
+    <button type="button" class="account-menu__trigger" :aria-expanded="open" aria-controls="account-panel" @click="toggleOpen">
       <span class="account-menu__status" :class="{ 'account-menu__status--online': !!profile }"></span>
       <span>{{ triggerLabel }}</span>
     </button>
 
-    <div v-if="open" class="account-menu__panel">
+    <div v-if="open" id="account-panel" class="account-menu__panel">
       <template v-if="!hasSupabaseConfig">
         <p class="account-menu__notice">
           Add `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` to enable synced accounts.
@@ -228,93 +228,115 @@ onBeforeUnmount(() => {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  min-height: 34px;
-  padding: 0 12px;
-  border-radius: 999px;
-  border: 1px solid rgba(115, 192, 255, 0.18);
-  background: rgba(12, 28, 48, 0.88);
-  color: #eef7ff;
-  font-size: 12px;
+  min-height: var(--control-height);
+  padding: 0 var(--space-3);
+  border-radius: var(--radius-control);
+  border: 1px solid var(--border);
+  background: var(--bg-control);
+  color: var(--text);
+  font-family: var(--font-label);
+  font-size: 11px;
+  letter-spacing: 0.08em;
   font-weight: 700;
 }
 
 .account-menu__status {
-  width: 8px;
-  height: 8px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.22);
+  width: 6px;
+  height: 6px;
+  flex: 0 0 6px;
+  border-radius: 50%;
+  background: var(--muted);
 }
 
 .account-menu__status--online {
-  background: #56e08f;
-  box-shadow: 0 0 10px rgba(86, 224, 143, 0.6);
+  background: var(--positive);
+  box-shadow: 0 0 8px var(--positive);
 }
 
 .account-menu__panel {
   position: absolute;
-  top: calc(100% + 10px);
+  top: calc(100% + var(--space-2));
   right: 0;
   width: min(360px, calc(100vw - 24px));
-  padding: 14px;
-  border-radius: 18px;
-  border: 1px solid rgba(115, 192, 255, 0.18);
-  background:
-    linear-gradient(180deg, rgba(18, 43, 76, 0.16), rgba(7, 18, 31, 0.2)),
-    rgba(8, 20, 35, 0.98);
-  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.42);
+  padding: var(--space-4);
+  border-radius: var(--radius-panel);
+  border: 1px solid var(--border);
+  background: var(--panel-background);
+  box-shadow: var(--shadow-floating);
   display: grid;
-  gap: 12px;
+  gap: var(--space-3);
   z-index: 1200;
 }
 
 .account-menu__tabs {
   display: inline-grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 6px;
-  padding: 6px;
-  border-radius: 12px;
-  background: rgba(12, 28, 48, 0.82);
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-control);
+  background: var(--bg-control);
 }
 
 .account-menu__tab,
 .account-menu__action {
   appearance: none;
-  border: 1px solid rgba(115, 192, 255, 0.2);
-  border-radius: 10px;
-  padding: 10px 12px;
-  background: rgba(12, 28, 48, 0.88);
-  color: #eef7ff;
+  min-height: var(--control-height);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-control);
+  padding: var(--space-2) var(--space-3);
+  background: var(--bg-control);
+  color: var(--text);
+  font-family: var(--font-label);
+  font-size: 11px;
+  letter-spacing: 0.1em;
   font-weight: 800;
 }
 
 .account-menu__tab--active,
 .account-menu__action {
-  background: linear-gradient(135deg, rgba(44, 130, 201, 0.56), rgba(17, 60, 122, 0.86));
+  background: var(--accent);
+  color: var(--bg-deep);
 }
 
 .account-menu__action--ghost {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--bg-control);
+  color: var(--text);
+}
+
+.account-menu__trigger:hover,
+.account-menu__tab:hover,
+.account-menu__action:hover:not(:disabled) {
+  border-color: var(--accent);
+  background: var(--bg-selected);
+  color: var(--text);
 }
 
 .account-menu__form {
   display: grid;
-  gap: 10px;
+  gap: var(--space-3);
 }
 
 .account-menu__form label {
   display: grid;
-  gap: 6px;
-  font-size: 0.85rem;
-  color: #d7ebff;
+  gap: var(--space-2);
+  font-family: var(--font-label);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: var(--text-soft);
 }
 
 .account-menu__form input {
   width: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  padding: 10px 12px;
-  background: rgba(2, 10, 20, 0.86);
-  color: #fff;
+  min-height: var(--control-height);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-control);
+  padding: var(--space-2) var(--space-3);
+  background: var(--bg-control);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 13px;
+  letter-spacing: 0;
 }
 
 .account-menu__identity {
@@ -333,30 +355,30 @@ onBeforeUnmount(() => {
 .account-menu__name {
   font-size: 1rem;
   font-weight: 900;
-  color: #fff;
+  color: var(--text);
 }
 
 .account-menu__meta {
   font-size: 0.82rem;
-  color: #9fb9d5;
+  color: var(--text-soft);
 }
 
 .account-menu__notice {
-  padding: 12px;
-  border-radius: 14px;
-  background: rgba(255, 183, 77, 0.1);
-  border: 1px solid rgba(255, 183, 77, 0.24);
-  color: #ffe8b2;
+  padding: var(--space-3);
+  border-radius: var(--radius-panel);
+  background: var(--surface);
+  border: 1px solid var(--warning);
+  color: var(--warning);
   line-height: 1.5;
 }
 
 .account-menu__message {
-  color: #8ce6b0;
+  color: var(--positive);
   font-size: 0.82rem;
 }
 
 .account-menu__error {
-  color: #ff9dad;
+  color: var(--negative);
   font-size: 0.82rem;
 }
 

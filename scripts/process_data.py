@@ -1,5 +1,6 @@
 import json, os, datetime, math, re, hashlib
 from urllib.parse import quote
+from pocket_multideck import is_multideck, merge_index
 
 # ===================== 公共配置（和原代码一致） =====================
 MIN_PLAYERS = int(os.environ.get("MIN_PLAYERS", "32"))
@@ -300,6 +301,8 @@ def main():
     missing_tournament_ids = []
     invalid_tournament_ids = []
     invalid_tournament_details = []
+    multideck_tournament_ids = set()
+    multideck_tournaments = []
     
     # 2. 初始化统计字典
     deck_total_counts = {}  # 所有赛事牌组出场次数
@@ -350,7 +353,12 @@ def main():
             invalid_tournament_ids.append(tid)
             invalid_tournament_details.append({"id": tid, "reason": reason})
             continue
-        
+
+        if is_multideck(details, standings):
+            multideck_tournament_ids.add(tid)
+            multideck_tournaments.append({**t, "multideck": True})
+            continue
+
         # 构建「玩家→牌组ID」映射
         p2deck = {}
         for s in standings:
@@ -439,7 +447,8 @@ def main():
         print("无缺失赛事数据")
     
     # 2. 过滤tournaments列表，移除缺失ID的条目
-    excluded_ids = set(missing_tournament_ids) | set(invalid_tournament_ids)
+    excluded_ids = set(missing_tournament_ids) | set(invalid_tournament_ids) | multideck_tournament_ids
+    merge_index(multideck_tournaments)
 
     filtered_tournaments = [
         t for t in original_tournaments

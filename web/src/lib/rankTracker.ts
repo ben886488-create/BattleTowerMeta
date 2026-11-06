@@ -82,7 +82,7 @@ export interface RankTrackerAnalysis {
   matchups: RankTrackerMatchupSummary[];
 }
 
-const RANK_LADDER: RankTierDefinition[] = [
+const RANK_LADDER: [RankTierDefinition, ...RankTierDefinition[]] = [
   {
     id: "newbie-1",
     ball: "newbie",
@@ -309,10 +309,11 @@ export function sanitizeRankTrackerState(input: unknown): RankTrackerState {
   };
 }
 
-export function getRankTier(points: number) {
+export function getRankTier(points: number): RankTierDefinition {
   const safePoints = Math.max(0, Math.floor(points));
   for (let index = RANK_LADDER.length - 1; index >= 0; index -= 1) {
     const entry = RANK_LADDER[index];
+    if (!entry) continue;
     if (safePoints >= entry.floor) return entry;
   }
   return RANK_LADDER[0];
@@ -321,7 +322,7 @@ export function getRankTier(points: number) {
 export function getNextTier(points: number) {
   const current = getRankTier(points);
   const index = RANK_LADDER.findIndex((entry) => entry.id === current.id);
-  return index >= 0 && index < RANK_LADDER.length - 1 ? RANK_LADDER[index + 1] : null;
+  return index >= 0 && index < RANK_LADDER.length - 1 ? RANK_LADDER[index + 1] ?? null : null;
 }
 
 export function getStreakBonus(nextWinStreak: number) {

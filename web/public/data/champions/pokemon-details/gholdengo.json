@@ -1,0 +1,6437 @@
+{
+  "pokemon": {
+    "slug": "gholdengo",
+    "name": "Gholdengo",
+    "baseName": "Gholdengo",
+    "savedName": "Gholdengo",
+    "form": "",
+    "types": [
+      "Steel",
+      "Ghost"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Gholdengo.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1000.png",
+    "stats": {
+      "hp": 162,
+      "attack": 80,
+      "defense": 115,
+      "spAttack": 153,
+      "spDefense": 111,
+      "speed": 104,
+      "total": 725
+    },
+    "rank": 26,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Make It Rain",
+    "topItem": "Life Orb",
+    "topTeammate": "Staraptor"
+  },
+  "moves": [
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "move",
+      "rank": 1,
+      "name": "Make It Rain",
+      "percentage": 0.986,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "move",
+        "rank": 1,
+        "name": "Make It Rain",
+        "percentage": "98.6%",
+        "percentage_value": 98.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "move",
+      "rank": 2,
+      "name": "Shadow Ball",
+      "percentage": 0.974,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "move",
+        "rank": 2,
+        "name": "Shadow Ball",
+        "percentage": "97.4%",
+        "percentage_value": 97.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "move",
+      "rank": 3,
+      "name": "Protect",
+      "percentage": 0.782,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "move",
+        "rank": 3,
+        "name": "Protect",
+        "percentage": "78.2%",
+        "percentage_value": 78.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "move",
+      "rank": 4,
+      "name": "Nasty Plot",
+      "percentage": 0.61,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "move",
+        "rank": 4,
+        "name": "Nasty Plot",
+        "percentage": "61.0%",
+        "percentage_value": 61,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "move",
+      "rank": 5,
+      "name": "Power Gem",
+      "percentage": 0.261,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "move",
+        "rank": 5,
+        "name": "Power Gem",
+        "percentage": "26.1%",
+        "percentage_value": 26.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "move",
+      "rank": 6,
+      "name": "Thunderbolt",
+      "percentage": 0.114,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "move",
+        "rank": 6,
+        "name": "Thunderbolt",
+        "percentage": "11.4%",
+        "percentage_value": 11.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "move",
+      "rank": 7,
+      "name": "Trick",
+      "percentage": 0.067,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "move",
+        "rank": 7,
+        "name": "Trick",
+        "percentage": "6.7%",
+        "percentage_value": 6.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "move",
+      "rank": 8,
+      "name": "Focus Blast",
+      "percentage": 0.061,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "move",
+        "rank": 8,
+        "name": "Focus Blast",
+        "percentage": "6.1%",
+        "percentage_value": 6.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "move",
+      "rank": 9,
+      "name": "Dazzling Gleam",
+      "percentage": 0.042,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "move",
+        "rank": 9,
+        "name": "Dazzling Gleam",
+        "percentage": "4.2%",
+        "percentage_value": 4.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "move",
+      "rank": 10,
+      "name": "Flash Cannon",
+      "percentage": 0.023,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "move",
+        "rank": 10,
+        "name": "Flash Cannon",
+        "percentage": "2.3%",
+        "percentage_value": 2.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Life Orb",
+      "percentage": 0.401,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Life Orb",
+        "percentage": "40.1%",
+        "percentage_value": 40.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Choice Scarf",
+      "percentage": 0.164,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Choice Scarf",
+        "percentage": "16.4%",
+        "percentage_value": 16.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Spell Tag",
+      "percentage": 0.12,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Spell Tag",
+        "percentage": "12.0%",
+        "percentage_value": 12,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "held_item",
+      "rank": 4,
+      "name": "White Herb",
+      "percentage": 0.07,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "held_item",
+        "rank": 4,
+        "name": "White Herb",
+        "percentage": "7.0%",
+        "percentage_value": 7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Sitrus Berry",
+      "percentage": 0.054,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Sitrus Berry",
+        "percentage": "5.4%",
+        "percentage_value": 5.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Metal Coat",
+      "percentage": 0.048,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Metal Coat",
+        "percentage": "4.8%",
+        "percentage_value": 4.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Focus Sash",
+      "percentage": 0.04,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Focus Sash",
+        "percentage": "4.0%",
+        "percentage_value": 4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Leftovers",
+      "percentage": 0.036,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Leftovers",
+        "percentage": "3.6%",
+        "percentage_value": 3.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Expert Belt",
+      "percentage": 0.026,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Expert Belt",
+        "percentage": "2.6%",
+        "percentage_value": 2.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Colbur Berry",
+      "percentage": 1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Colbur Berry",
+        "percentage": "1.0%",
+        "percentage_value": 1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "ability",
+      "rank": 1,
+      "name": "Good as Gold",
+      "percentage": 1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "ability",
+        "rank": 1,
+        "name": "Good as Gold",
+        "percentage": "100.0%",
+        "percentage_value": 100,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Staraptor",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Staraptor",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Whimsicott",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Whimsicott",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Kingambit",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Kingambit",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Tyranitar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Tyranitar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Milotic",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Milotic",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Ceruledge",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Ceruledge",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Modest",
+      "percentage": 0.803,
+      "statUp": "Sp. Atk",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Modest",
+        "percentage": "80.3%",
+        "percentage_value": 80.3,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Timid",
+      "percentage": 0.162,
+      "statUp": "Speed",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Timid",
+        "percentage": "16.2%",
+        "percentage_value": 16.2,
+        "stat_up": "Speed",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Quiet",
+      "percentage": 0.013,
+      "statUp": "Sp. Atk",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Quiet",
+        "percentage": "1.3%",
+        "percentage_value": 1.3,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Bold",
+      "percentage": 0.8,
+      "statUp": "Defense",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Bold",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "Defense",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Calm",
+      "percentage": 0.5,
+      "statUp": "Sp. Def",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Calm",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "Sp. Def",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Mild",
+      "percentage": 0.4,
+      "statUp": "Sp. Atk",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Mild",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Hasty",
+      "percentage": 0.2,
+      "statUp": "Speed",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Hasty",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Speed",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Relaxed",
+      "percentage": 0.1,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Relaxed",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Sassy",
+      "percentage": 0.1,
+      "statUp": "Sp. Def",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Sassy",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Sp. Def",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Jolly",
+      "percentage": 0.1,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Jolly",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.244,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "24.4%",
+        "percentage_value": 24.4,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.106,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "10.6%",
+        "percentage_value": 10.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 29,
+        "attack_points": 0,
+        "defense_points": 1,
+        "sp_atk_points": 27,
+        "sp_def_points": 0,
+        "speed_points": 9
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.037,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "3.7%",
+        "percentage_value": 3.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 31,
+        "attack_points": 0,
+        "defense_points": 7,
+        "sp_atk_points": 17,
+        "sp_def_points": 1,
+        "speed_points": 10
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.036,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "3.6%",
+        "percentage_value": 3.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 1,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 31
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.036,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "3.6%",
+        "percentage_value": 3.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.026,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "2.6%",
+        "percentage_value": 2.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.024,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "2.4%",
+        "percentage_value": 2.4,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 10,
+        "sp_def_points": 3,
+        "speed_points": 19
+      }
+    },
+    {
+      "pokemon": "Gholdengo",
+      "position": 26,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.021,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gholdengo",
+        "column_position": 26,
+        "position": 26,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "2.1%",
+        "percentage_value": 2.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 2
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a4dfee8063cb29d318e6805-geniusmatti",
+      "name": "GeniusMatti · VGC UmbreNews 14.07.2026 #23 - Champion",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Brave Bird",
+            "Close Combat",
+            "Roost",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Darkest Lariat",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Strength Sap",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Choice Scarf",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Aurora Veil",
+            "Icy Wind"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Rock Slide",
+            "Accelerock",
+            "Close Combat",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "VGC UmbreNews 14.07.2026 #23 - Champion",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "GeniusMatti",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a4dfee8063cb29d318e6805-lartizan",
+      "name": "Lartizan · VGC UmbreNews 14.07.2026 #23 - Champion",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "starmie",
+          "name": "Starmie",
+          "item": "Starminite",
+          "ability": "Natural Cure",
+          "moves": [
+            "Protect",
+            "Liquidation",
+            "Aqua Jet",
+            "Psycho Cut"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Life Orb",
+          "ability": "Levitate",
+          "moves": [
+            "Dark Pulse",
+            "Earth Power",
+            "Draco Meteor",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Metal Coat",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Protect",
+            "Nasty Plot"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Trick Room",
+            "Rage Powder",
+            "Imprison"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Pressure",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Coaching",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Keen Eye",
+          "moves": [
+            "Hurricane",
+            "Tailwind",
+            "Protect",
+            "Weather Ball"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "VGC UmbreNews 14.07.2026 #23 - Champion",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Lartizan",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a4dfee8063cb29d318e6805-mrtwizler",
+      "name": "MrTwizler · VGC UmbreNews 14.07.2026 #23 - Champion",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Brave Bird",
+            "Roost",
+            "Protect",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Charm",
+            "Tailwind",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Stomping Tantrum",
+            "Dragon Claw",
+            "Protect",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Flare Blitz",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "White Herb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Protect",
+            "Nasty Plot",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Protect",
+            "Dragon Dance"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "VGC UmbreNews 14.07.2026 #23 - Champion",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "MrTwizler",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a4dfee8063cb29d318e6805-simba92",
+      "name": "Simba92 · VGC UmbreNews 14.07.2026 #23 - Champion",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "hisuian-samurott",
+          "name": "Hisuian Samurott",
+          "item": "Black Glasses",
+          "ability": "Sharpness",
+          "moves": [
+            "Night Slash",
+            "Sucker Punch",
+            "Sacred Sword",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Moonblast",
+            "Hyper Voice",
+            "Yawn",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Coaching",
+            "Dire Claw"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Metal Coat",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "VGC UmbreNews 14.07.2026 #23 - Champion",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Simba92",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a4dbb9665724db9ded3ff83-amoney5",
+      "name": "Amoney5 · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Reflect",
+            "Light Screen",
+            "Rain Dance",
+            "Foul Play"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Flash Cannon",
+            "Dragon Pulse",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Tailwind",
+            "Wide Guard",
+            "Weather Ball"
+          ]
+        },
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Torrent",
+          "moves": [
+            "Earthquake",
+            "Protect",
+            "Wave Crash",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Earth Power",
+            "Sludge Bomb",
+            "Protect",
+            "Giga Drain"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Power Gem",
+            "Shadow Ball",
+            "Make It Rain",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Amoney5",
+      "record": "4-1-0"
+    },
+    {
+      "id": "6a4dbb9665724db9ded3ff83-asura64",
+      "name": "Asura64 · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Thunderbolt",
+            "Nasty Plot"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Hyper Voice",
+            "Calm Mind",
+            "Psychic",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Feint",
+            "Reflect",
+            "Light Screen",
+            "Quash"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Wide Lens",
+          "ability": "Technician",
+          "moves": [
+            "Population Bomb",
+            "Feint",
+            "Thunder Wave",
+            "Charm"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Leftovers",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Dragon Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Solar Beam",
+            "Weather Ball",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Asura64",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a4dbc1e063cb29d318e66e7-mizuno_ami",
+      "name": "mizuno_ami · The Grim Challenge #3 - Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Reflect",
+            "Light Screen",
+            "Will-O-Wisp",
+            "Rain Dance"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Trick Room",
+            "Rage Powder",
+            "Life Dew",
+            "Matcha Gotcha"
+          ]
+        },
+        {
+          "slug": "politoed",
+          "name": "Politoed",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Protect",
+            "Weather Ball",
+            "Icy Wind",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Protect",
+            "Flash Cannon",
+            "Electro Shot",
+            "Aura Sphere"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "White Herb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Protect",
+            "Nasty Plot",
+            "Shadow Ball",
+            "Make It Rain"
+          ]
+        },
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Torrent",
+          "moves": [
+            "Protect",
+            "Wave Crash",
+            "High Horsepower",
+            "Ice Punch"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "The Grim Challenge #3 - Champions",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "mizuno_ami",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a4dbc1e063cb29d318e66e7-filip_3333",
+      "name": "Filip_3333 · The Grim Challenge #3 - Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Lum Berry",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Flash Cannon",
+            "Aura Sphere",
+            "Draco Meteor"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Focus Sash",
+          "ability": "Drizzle",
+          "moves": [
+            "Weather Ball",
+            "Tailwind",
+            "Protect",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Flare Blitz",
+            "Throat Chop"
+          ]
+        },
+        {
+          "slug": "basculegion-female",
+          "name": "Basculegion ♀",
+          "item": "Life Orb",
+          "ability": "Swift Swim",
+          "moves": [
+            "Shadow Ball",
+            "Hydro Pump",
+            "Protect",
+            "Ice Beam"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Leftovers",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Life Dew",
+            "Rage Powder",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Metal Coat",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Nasty Plot",
+            "Protect",
+            "Shadow Ball"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "The Grim Challenge #3 - Champions",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Filip_3333",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a3200c5e334c3c9befd8430-daredevilzz26",
+      "name": "Daredevilzz26 · The Grand Champions Festival Encore",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Knock Off",
+            "Rock Slide",
+            "High Horsepower",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Sand Rush",
+          "moves": [
+            "Earthquake",
+            "Iron Head",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Sitrus Berry",
+          "ability": "Competitive",
+          "moves": [
+            "Scald",
+            "Icy Wind",
+            "Haze",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Shadow Ball",
+            "Protect",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8125,
+      "sampleCount": 16,
+      "tournament": "The Grand Champions Festival Encore",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Daredevilzz26",
+      "record": "13-3-0"
+    },
+    {
+      "id": "6a3200c5e334c3c9befd8430-chelseafan8",
+      "name": "chelseafan8 · The Grand Champions Festival Encore",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Brave Bird",
+            "Close Combat",
+            "Roost",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Darkest Lariat",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Strength Sap",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hisuian-arcanine",
+          "name": "Hisuian Arcanine",
+          "item": "Focus Sash",
+          "ability": "Rock Head",
+          "moves": [
+            "Head Smash",
+            "Flare Blitz",
+            "Extreme Speed",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Aurora Veil",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8125,
+      "sampleCount": 16,
+      "tournament": "The Grand Champions Festival Encore",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "chelseafan8",
+      "record": "13-3-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-gdftgf019",
+      "name": "gdftgf019 - Terra/Fantasma · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Power Gem",
+            "Shadow Ball",
+            "Make It Rain",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Mold Breaker",
+          "moves": [
+            "Iron Head",
+            "Protect",
+            "Rock Slide",
+            "Earthquake"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Rain Dance",
+            "Light Screen",
+            "Will-O-Wisp",
+            "Reflect"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Protect",
+            "Bulk Up"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Garchompite",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Protect",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Torrent",
+          "moves": [
+            "Protect",
+            "Bulk Up",
+            "Wave Crash",
+            "Earthquake"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7142857142857143,
+      "sampleCount": 7,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "gdftgf019 - Terra/Fantasma",
+      "record": "5-2-0"
+    },
+    {
+      "id": "6a51f42365724db9ded43093-bonzo713",
+      "name": "Bonzo713 · Tenki's Cart Weekly #109 - Reg MB",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Leftovers",
+          "ability": "Defiant",
+          "moves": [
+            "Rage Fist",
+            "Drain Punch",
+            "Bulk Up",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Chople Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Follow Me",
+            "Feint",
+            "Protect",
+            "Beat Up"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Rage Powder",
+            "Matcha Gotcha",
+            "Protect",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Choice Scarf",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Power Gem",
+            "Trick"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 8,
+      "tournament": "Tenki's Cart Weekly #109 - Reg MB",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Bonzo713",
+      "record": "6-2-0"
+    },
+    {
+      "id": "6a32e8b12d97f3b0c26189cc-cooperkid",
+      "name": "CooperKid · Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Dragon Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Sand Rush",
+          "moves": [
+            "High Horsepower",
+            "Iron Head",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Life Dew",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Brave Bird",
+            "Close Combat",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Sitrus Berry",
+          "ability": "Competitive",
+          "moves": [
+            "Scald",
+            "Icy Wind",
+            "Recover",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.9166666666666666,
+      "sampleCount": 12,
+      "tournament": "Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "CooperKid",
+      "record": "11-1-0"
+    },
+    {
+      "id": "6a32e8b12d97f3b0c26189cc-jorge_prods",
+      "name": "Jorge_prods · Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Torrent",
+          "moves": [
+            "Protect",
+            "Earthquake",
+            "Wave Crash",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Focus Sash",
+          "ability": "Drizzle",
+          "moves": [
+            "Protect",
+            "Weather Ball",
+            "Hurricane",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Coba Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Protect",
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Protect",
+            "Flash Cannon",
+            "Electro Shot",
+            "Dragon Pulse"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Foul Play",
+            "Reflect",
+            "Light Screen",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Protect",
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8181818181818182,
+      "sampleCount": 11,
+      "tournament": "Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Jorge_prods",
+      "record": "9-2-0"
+    },
+    {
+      "id": "6a32e8b12d97f3b0c26189cc-mati_13062001",
+      "name": "Mati_13062001 · Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Protect",
+            "Roost"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Sitrus Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Follow Me",
+            "Super Fang",
+            "Protect",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Parting Shot",
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Life Orb",
+          "ability": "Levitate",
+          "moves": [
+            "Volt Switch",
+            "Protect",
+            "Thunderbolt",
+            "Hydro Pump"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Leftovers",
+          "ability": "Good as Gold",
+          "moves": [
+            "Nasty Plot",
+            "Protect",
+            "Make It Rain",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Tailwind",
+            "Moonblast",
+            "Protect",
+            "Encore"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Mati_13062001",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a32e8b12d97f3b0c26189cc-xxpoemxx",
+      "name": "XxPoemxX · Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Knock Off",
+            "Rock Slide",
+            "Ice Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "None",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Acrobatics",
+            "Quick Guard",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Sand Veil",
+          "moves": [
+            "Earthquake",
+            "Stomping Tantrum",
+            "Dragon Claw",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Focus Sash",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Sludge Bomb",
+            "Power Gem",
+            "Earth Power",
+            "Spiky Shield"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Sitrus Berry",
+          "ability": "Levitate",
+          "moves": [
+            "Thunderbolt",
+            "Hydro Pump",
+            "Will-O-Wisp",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "XxPoemxX",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a510fac063cb29d318e8c08-cattelli15",
+      "name": "Cattelli15 · SNT Reg M-B Tour #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "High Horsepower",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Sand Rush",
+          "moves": [
+            "Iron Head",
+            "Rock Slide",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Sitrus Berry",
+          "ability": "Competitive",
+          "moves": [
+            "Scald",
+            "Icy Wind",
+            "Haze",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Shadow Ball",
+            "Protect",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Shadow Ball",
+            "Make It Rain",
+            "Nasty Plot",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "SNT Reg M-B Tour #3",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Cattelli15",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a4f9758063cb29d318e79a9-minymudkip",
+      "name": "MinyMudkip · Sky Pillar Saturday Showdown S8 #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Muddy Water",
+            "Coil",
+            "Hypnosis",
+            "Recover"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Sand Rush",
+          "moves": [
+            "High Horsepower",
+            "Iron Head",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.875,
+      "sampleCount": 8,
+      "tournament": "Sky Pillar Saturday Showdown S8 #10",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "MinyMudkip",
+      "record": "7-1-0"
+    },
+    {
+      "id": "6a4f9758063cb29d318e79a9-speshadow",
+      "name": "SpeShadow · Sky Pillar Saturday Showdown S8 #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Knock Off",
+            "Rock Slide",
+            "Dragon Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Sand Rush",
+          "moves": [
+            "Earthquake",
+            "Iron Head",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Sitrus Berry",
+          "ability": "Competitive",
+          "moves": [
+            "Scald",
+            "Icy Wind",
+            "Haze",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Strength Sap",
+            "Protect",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Roost",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8571428571428571,
+      "sampleCount": 7,
+      "tournament": "Sky Pillar Saturday Showdown S8 #10",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "SpeShadow",
+      "record": "6-1-0"
+    },
+    {
+      "id": "6a33cff8e334c3c9befd9250-bampu400",
+      "name": "Bampu400 · Rising Stars - S1 (Double Battle)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Flip Turn",
+            "Last Respects",
+            "Wave Crash",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Quick Claw",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect",
+            "Stomping Tantrum"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Dire Claw",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "meganium",
+          "name": "Meganium",
+          "item": "Meganiumite",
+          "ability": "Overgrow",
+          "moves": [
+            "Dazzling Gleam",
+            "Protect",
+            "Weather Ball",
+            "Solar Beam"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Nasty Plot",
+            "Shadow Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Focus Blast",
+            "Zap Cannon",
+            "Encore",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7,
+      "sampleCount": 10,
+      "tournament": "Rising Stars - S1 (Double Battle)",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Bampu400",
+      "record": "7-3-0"
+    },
+    {
+      "id": "6a33cff8e334c3c9befd9250-n_i_g_h_t",
+      "name": "N_I_G_H_T · Rising Stars - S1 (Double Battle)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Wise Glasses",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Darkest Lariat",
+            "Taunt",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Quick Claw",
+          "ability": "Prankster",
+          "moves": [
+            "Foul Play",
+            "Skill Swap",
+            "Will-O-Wisp",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Pulse",
+            "Dark Pulse",
+            "Aura Sphere",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 8,
+      "tournament": "Rising Stars - S1 (Double Battle)",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "N_I_G_H_T",
+      "record": "4-4-0"
+    },
+    {
+      "id": "6a4516dcc87cd9ff0a31469e-titanopigro3",
+      "name": "TitanoPigro3 · Pride Month 2 Celebration!!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scizor",
+          "name": "Scizor",
+          "item": "Scizorite",
+          "ability": "Technician",
+          "moves": [
+            "Bullet Punch",
+            "Bug Bite",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "vivillon",
+          "name": "Vivillon",
+          "item": "Focus Sash",
+          "ability": "Friend Guard",
+          "moves": [
+            "Rage Powder",
+            "Protect",
+            "Rain Dance",
+            "Hurricane"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Nasty Plot",
+            "Make It Rain",
+            "Shadow Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Tailwind",
+            "Weather Ball",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Electro Shot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Torrent",
+          "moves": [
+            "Wave Crash",
+            "High Horsepower",
+            "Ice Punch",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 2,
+      "tournament": "Pride Month 2 Celebration!!",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "TitanoPigro3",
+      "record": "0-2-0"
+    },
+    {
+      "id": "6a43db49c87cd9ff0a313918-farooqi24",
+      "name": "farooqi24 · Pokepal Smackdown #149 (Champions) (Reg M-B)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Blaze",
+          "moves": [
+            "Flare Blitz",
+            "Fake Out",
+            "Parting Shot",
+            "Roar"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Protect",
+            "Solar Beam",
+            "Dragon Pulse"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Giga Drain",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "quaquaval",
+          "name": "Quaquaval",
+          "item": "Leftovers",
+          "ability": "Moxie",
+          "moves": [
+            "Aqua Step",
+            "Ice Spinner",
+            "Protect",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "White Herb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Psychic",
+            "Thunderbolt",
+            "Power Gem"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Occa Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Protect",
+            "Iron Head",
+            "Sucker Punch"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Pokepal Smackdown #149 (Champions) (Reg M-B)",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "farooqi24",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a4685c383fd320299bd6675-jomccloud23",
+      "name": "JoMcCloud23 · Pokémon Champions #1 - (Floette Eternal Flower)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Ice Fang",
+            "Wide Guard",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Choice Scarf",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Power Gem",
+            "Trick"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Encore",
+            "Tailwind",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.9166666666666666,
+      "sampleCount": 12,
+      "tournament": "Pokémon Champions #1 - (Floette Eternal Flower)",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "JoMcCloud23",
+      "record": "11-1-0"
+    },
+    {
+      "id": "6a5117e465724db9ded421f1-mizuki02292",
+      "name": "Mizuki02292 · Øutcast's Warm Up Cup",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "dragapult",
+          "name": "Dragapult",
+          "item": "Life Orb",
+          "ability": "Clear Body",
+          "moves": [
+            "Protect",
+            "Will-O-Wisp",
+            "Phantom Force",
+            "Dragon Claw"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Big Root",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Leech Seed",
+            "Protect",
+            "Giga Drain",
+            "Sludge Bomb"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Low Kick",
+            "Kowtow Cleave",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Sitrus Berry",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Nasty Plot",
+            "Protect",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "slug": "meowstic",
+          "name": "Meowstic",
+          "item": "Leftovers",
+          "ability": "Prankster",
+          "moves": [
+            "Psych Up",
+            "Stored Power",
+            "Protect",
+            "Dark Pulse"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Protect",
+            "Close Combat",
+            "Roost",
+            "Dual Wingbeat"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 4,
+      "tournament": "Øutcast's Warm Up Cup",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Mizuki02292",
+      "record": "3-1-0"
+    },
+    {
+      "id": "6a55808a232a1a55ee10be16-bahamut",
+      "name": "Bahamut · 𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Kangaskhanite",
+          "ability": "Scrappy",
+          "moves": [
+            "Sucker Punch",
+            "Double-Edge",
+            "Drain Punch",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Hyper Beam",
+            "Quick Attack",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Spell Tag",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8333333333333334,
+      "sampleCount": 6,
+      "tournament": "𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Bahamut",
+      "record": "5-1-0"
+    },
+    {
+      "id": "6a55808a232a1a55ee10be16-saxvgc",
+      "name": "SaxVGC · 𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Contrary",
+          "moves": [
+            "Brave Bird",
+            "Close Combat",
+            "Roost",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Power Gem",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Charm"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Roseli Berry",
+          "ability": "Rough Skin",
+          "moves": [
+            "Stomping Tantrum",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Parting Shot",
+            "Throat Chop"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Muddy Water",
+            "Hypnosis",
+            "Coil",
+            "Recover"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "SaxVGC",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a55808a232a1a55ee10be16-kalimbalin",
+      "name": "Tomás Campos · 𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Draco Meteor",
+            "Thunderbolt",
+            "Tailwind",
+            "Haze"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Giga Drain",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Focus Sash",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Power Gem",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Moonblast",
+            "Hyper Voice",
+            "Quick Attack",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "paldean-tauros-aqua-breed",
+          "name": "Paldean Tauros Aqua Breed",
+          "item": "Choice Scarf",
+          "ability": "Intimidate",
+          "moves": [
+            "Stone Edge",
+            "Raging Bull",
+            "Wave Crash",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Tomás Campos",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a291b172d97f3b0c2612db9-doinf",
+      "name": "DOINF · Mystery Community Tournament#1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Charm",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Bulk Up",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Dragon Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Spell Tag",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Occa Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Low Kick",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Roost",
+            "Brave Bird",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8571428571428571,
+      "sampleCount": 7,
+      "tournament": "Mystery Community Tournament#1",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "DOINF",
+      "record": "6-1-0"
+    },
+    {
+      "id": "6a5162b8063cb29d318e9199-pedrotreiner10",
+      "name": "pedrotreiner10 · MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Swift Swim",
+          "moves": [
+            "Protect",
+            "Earthquake",
+            "Wave Crash",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Focus Sash",
+          "ability": "Drizzle",
+          "moves": [
+            "Protect",
+            "Weather Ball",
+            "Hurricane",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Protect",
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Protect",
+            "Flash Cannon",
+            "Electro Shot",
+            "Dragon Pulse"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Foul Play",
+            "Reflect",
+            "Light Screen",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Protect",
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "pedrotreiner10",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a4d303a65724db9ded3f61e-nelsonsgj",
+      "name": "Nelsonsgj · LPP On-line",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Charm",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Bulk Up",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Dragon Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Spell Tag",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Occa Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Low Kick",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Roost",
+            "Brave Bird",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 1,
+      "tournament": "LPP On-line",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Nelsonsgj",
+      "record": "0-1-0"
+    },
+    {
+      "id": "6a539b48c0a6bab82fbbca0a-cooperkid",
+      "name": "CooperKid · London Corviknight VGC Weekly tour 5!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Dragon Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Sand Rush",
+          "moves": [
+            "High Horsepower",
+            "Iron Head",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Life Dew",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Brave Bird",
+            "Close Combat",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Sitrus Berry",
+          "ability": "Competitive",
+          "moves": [
+            "Scald",
+            "Icy Wind",
+            "Recover",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 1,
+      "sampleCount": 5,
+      "tournament": "London Corviknight VGC Weekly tour 5!",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "CooperKid",
+      "record": "5-0-0"
+    },
+    {
+      "id": "6a539b48c0a6bab82fbbca0a-shmon",
+      "name": "Shmon · London Corviknight VGC Weekly tour 5!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Knock Off",
+            "Rock Slide",
+            "Protect",
+            "Low Kick"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Dual Wingbeat",
+            "Close Combat",
+            "Protect",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Nasty Plot",
+            "Protect",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Sand Rush",
+          "moves": [
+            "High Horsepower",
+            "Iron Head",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Scald",
+            "Icy Wind",
+            "Protect",
+            "Ice Beam"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 5,
+      "tournament": "London Corviknight VGC Weekly tour 5!",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Shmon",
+      "record": "4-1-0"
+    },
+    {
+      "id": "6a539b48c0a6bab82fbbca0a-mameonmon",
+      "name": "mameonmon · London Corviknight VGC Weekly tour 5!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Knock Off",
+            "Rock Slide",
+            "High Horsepower",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Sand Rush",
+          "moves": [
+            "Earthquake",
+            "Iron Head",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Sitrus Berry",
+          "ability": "Competitive",
+          "moves": [
+            "Scald",
+            "Icy Wind",
+            "Haze",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Shadow Ball",
+            "Protect",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 5,
+      "tournament": "London Corviknight VGC Weekly tour 5!",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "mameonmon",
+      "record": "4-1-0"
+    },
+    {
+      "id": "6a54c9d3232a1a55ee10b346-junia",
+      "name": "JUNIA · Intimidators Champions Challenge #27 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Sand Rush",
+          "moves": [
+            "Iron Head",
+            "High Horsepower",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Nasty Plot",
+            "Make It Rain",
+            "Shadow Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Sitrus Berry",
+          "ability": "Competitive",
+          "moves": [
+            "Scald",
+            "Ice Beam",
+            "Recover",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Brave Bird",
+            "Close Combat",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Trick Room",
+            "Rage Powder",
+            "Matcha Gotcha",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "Intimidators Champions Challenge #27 REG M-B",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "JUNIA",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a5497ab232a1a55ee10b2b8-redbamaxxxx",
+      "name": "RedbamaXxXx · HeroicTitan’s VGC Battle Arena",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "qwilfish",
+          "name": "Qwilfish",
+          "item": "Choice Scarf",
+          "ability": "Intimidate",
+          "moves": [
+            "Poison Jab",
+            "Flip Turn",
+            "Icy Wind",
+            "Liquidation"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Sitrus Berry",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Protect",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Grass Knot",
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Protect",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Protect",
+            "Shadow Ball",
+            "Nasty Plot"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Solar Beam",
+            "Weather Ball",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "HeroicTitan’s VGC Battle Arena",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "RedbamaXxXx",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a5497ab232a1a55ee10b2b8-sooner",
+      "name": "Sooner · HeroicTitan’s VGC Battle Arena",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Aura Sphere",
+            "Dark Pulse",
+            "Protect",
+            "Water Spout"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Glimmoranite",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Sludge Bomb",
+            "Spiky Shield",
+            "Power Gem",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Protect",
+            "Shadow Sneak",
+            "Bulk Up"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Life Orb",
+          "ability": "Flame Body",
+          "moves": [
+            "Tailwind",
+            "Overheat",
+            "Protect",
+            "Dual Wingbeat"
+          ]
+        },
+        {
+          "slug": "meowscarada",
+          "name": "Meowscarada",
+          "item": "Focus Sash",
+          "ability": "Protean",
+          "moves": [
+            "Flower Trick",
+            "Knock Off",
+            "Protect",
+            "Triple Axel"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Leftovers",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Protect",
+            "Nasty Plot",
+            "Shadow Ball"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "HeroicTitan’s VGC Battle Arena",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Sooner",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a467bb683fd320299bd6627-meganvgc",
+      "name": "MeganVGC · Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Glimmoranite",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Sludge Bomb",
+            "Power Gem",
+            "Earth Power",
+            "Spiky Shield"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Brave Bird",
+            "Close Combat",
+            "Roost",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Life Orb",
+          "ability": "Levitate",
+          "moves": [
+            "Dragon Pulse",
+            "Dark Pulse",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Wise Glasses",
+          "ability": "Good as Gold",
+          "moves": [
+            "Flash Cannon",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Scald",
+            "Ice Beam",
+            "Recover",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8333333333333334,
+      "sampleCount": 6,
+      "tournament": "Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "MeganVGC",
+      "record": "5-1-0"
+    },
+    {
+      "id": "6a442f7183fd320299bd5187-shmon",
+      "name": "Shmon VdB · HALL OF  FAME BELGIUM (Invitational)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Knock Off",
+            "Rock Slide",
+            "Protect",
+            "Low kick"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Dual Wingbeat",
+            "Close Combat",
+            "Protect",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Sand Rush",
+          "moves": [
+            "High Horsepower",
+            "Iron Head",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Nasty Plot",
+            "Protect",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Scald",
+            "Recover",
+            "Protect",
+            "Ice Beam"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "HALL OF  FAME BELGIUM (Invitational)",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Shmon VdB",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a529f1ee09846f1eb4c14e3-gengarballer",
+      "name": "GengarBaller · Chaos League Sunday Slam #104",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "lucario",
+          "name": "Lucario",
+          "item": "Lucarionite",
+          "ability": "Justified",
+          "moves": [
+            "Close Combat",
+            "Bullet Punch",
+            "Ice Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Fake Out",
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Focus Sash",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Brave Bird",
+            "Taunt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Rock Slide",
+            "Dragon Claw",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Supreme Overlord",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Protect",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Leftovers",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "Chaos League Sunday Slam #104",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "GengarBaller",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a57380e6355385f44dd5183-balla__06",
+      "name": "Balla__06 · Champions Tour LEPE M-B #9",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Solar Beam",
+            "Protect",
+            "Weather Ball"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Close Combat",
+            "Dire Claw",
+            "Protect",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Encore",
+            "Protect",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Metal Coat",
+          "ability": "Good as Gold",
+          "moves": [
+            "Nasty Plot",
+            "Shadow Ball",
+            "Protect",
+            "Make It Rain"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Protect",
+            "Aqua Jet"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "Champions Tour LEPE M-B #9",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Balla__06",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a4bc2dd063cb29d318e4b78-momemanz",
+      "name": "‎Iriome Miguel Delgado Correa · Chacho Cup #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Charcoal",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Overheat",
+            "Brave Bird",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "eelektross",
+          "name": "Eelektross",
+          "item": "Eelektrossite",
+          "ability": "Levitate",
+          "moves": [
+            "Discharge",
+            "Thunderbolt",
+            "Grass Knot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Nasty Plot",
+            "Make It Rain",
+            "Shadow Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "falinks",
+          "name": "Falinks",
+          "item": "Falinksite",
+          "ability": "Defiant",
+          "moves": [
+            "Close Combat",
+            "Protect",
+            "No Retreat",
+            "Knock Off"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Wide Lens",
+          "ability": "Technician",
+          "moves": [
+            "Population Bomb",
+            "Follow Me",
+            "Taunt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Iron Head"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 2,
+      "tournament": "Chacho Cup #2",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "‎Iriome Miguel Delgado Correa",
+      "record": "0-2-0"
+    },
+    {
+      "id": "6a39cb01c87cd9ff0a30d791-neptunum",
+      "name": "Neptunum · Cashed Out Gaming Season 1 M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Protect",
+            "Nasty Plot"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Giga Drain",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Throat Chop",
+            "Fake Out",
+            "Parting Shot",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Scorching Sands",
+            "Solar Beam",
+            "Heat Wave",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Focus Sash",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Ice Fang",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Aqua Jet",
+            "Wave Crash",
+            "Protect",
+            "Last Respects"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "Cashed Out Gaming Season 1 M-B",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Neptunum",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a4f486e063cb29d318e781e-marcopopsi",
+      "name": "MarcoPopsi · Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Protect",
+            "Blaze Kick"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Protect",
+            "Sucker Punch",
+            "Kowtow Cleave",
+            "Low Kick"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Shadow Ball",
+            "Protect",
+            "Make It Rain",
+            "Focus Blast"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Flip Turn",
+            "Aqua Jet",
+            "Last Respects",
+            "Wave Crash"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Encore",
+            "Tailwind",
+            "Charm"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Helping Hand",
+            "Imprison",
+            "Trick"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "MarcoPopsi",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a392e4ac87cd9ff0a30d0b0-snorlaxpikachu1",
+      "name": "Snorlaxpikachu1 · Alpensee Tour (Reg M-B) #66",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "altaria",
+          "name": "Altaria",
+          "item": "Sitrus Berry",
+          "ability": "Cloud Nine",
+          "moves": [
+            "Tailwind",
+            "Will-O-Wisp",
+            "Draco Meteor",
+            "Roost"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Fairy Aura",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Calm Mind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Power Gem",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Dire Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Payapa Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Close Combat",
+            "Phantom Force",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "Alpensee Tour (Reg M-B) #66",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Snorlaxpikachu1",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a392e4ac87cd9ff0a30d0b0-captainrex",
+      "name": "CaptainRex · Alpensee Tour (Reg M-B) #66",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Knock Off",
+            "Rock Slide",
+            "Protect",
+            "Low Kick"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Dual Wingbeat",
+            "Close Combat",
+            "Protect",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Sand Rush",
+          "moves": [
+            "High Horsepower",
+            "Iron Head",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Nasty Plot",
+            "Protect",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Scald",
+            "Recover",
+            "Protect",
+            "Ice Beam"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 8,
+      "tournament": "Alpensee Tour (Reg M-B) #66",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "CaptainRex",
+      "record": "6-2-0"
+    },
+    {
+      "id": "6a50864165724db9ded41db6-sappy",
+      "name": "sappy · 4fun sabadín",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Charm",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Bulk Up",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Dragon Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Spell Tag",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Occa Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Low Kick",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Roost",
+            "Brave Bird",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "4fun sabadín",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "sappy",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a46629683fd320299bd6543-daredevilzz26",
+      "name": "Daredevilzz26 · 🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Knock Off",
+            "Rock Slide",
+            "High Horsepower",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Sand Rush",
+          "moves": [
+            "Earthquake",
+            "Iron Head",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Sitrus Berry",
+          "ability": "Competitive",
+          "moves": [
+            "Scald",
+            "Icy Wind",
+            "Haze",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Shadow Ball",
+            "Protect",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.9166666666666666,
+      "sampleCount": 12,
+      "tournament": "🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Daredevilzz26",
+      "record": "11-1-0"
+    },
+    {
+      "id": "6a46629683fd320299bd6543-batcoach",
+      "name": "BatCoach · 🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Spirit Break",
+            "Reflect",
+            "Light Screen",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Leftovers",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Dragon Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Rock Slide",
+            "Stomping Tantrum",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Overheat",
+            "Leech Seed",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Sitrus Berry",
+          "ability": "Levitate",
+          "moves": [
+            "Hydro Pump",
+            "Thunderbolt",
+            "Will-O-Wisp",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "BatCoach",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a46629683fd320299bd6543-tryson21",
+      "name": "Tryson21 · 🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Spell Tag",
+          "ability": "Good as Gold",
+          "moves": [
+            "Nasty Plot",
+            "Shadow Ball",
+            "Protect",
+            "Make It Rain"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Protect",
+            "Dragon Claw"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Darkest Lariat",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Coil",
+            "Hypnosis",
+            "Recover",
+            "Scald"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Tailwind",
+            "Moonblast",
+            "Encore",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Tryson21",
+      "record": "6-3-0"
+    }
+  ],
+  "movePool": [
+    "Charge Beam",
+    "Confuse Ray",
+    "Dazzling Gleam",
+    "Electro Ball",
+    "Endure",
+    "Flash Cannon",
+    "Fling",
+    "Focus Blast",
+    "Focus Punch",
+    "Giga Impact",
+    "Heavy Slam",
+    "Hex",
+    "Hyper Beam",
+    "Iron Head",
+    "Light Screen",
+    "Low Kick",
+    "Low Sweep",
+    "Make It Rain",
+    "Memento",
+    "Metal Sound",
+    "Nasty Plot",
+    "Night Shade",
+    "Poltergeist",
+    "Power Gem",
+    "Protect",
+    "Psychic",
+    "Psyshock",
+    "Recover",
+    "Reflect",
+    "Rest",
+    "Sandstorm",
+    "Shadow Ball",
+    "Shadow Punch",
+    "Sleep Talk",
+    "Steel Beam",
+    "Substitute",
+    "Surf",
+    "Thief",
+    "Thunder",
+    "Thunder Punch",
+    "Thunderbolt",
+    "Trick"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Gholdengo",
+      "base_name": "Gholdengo",
+      "saved_name": "Gholdengo",
+      "types": "Steel/Ghost",
+      "abilities": "Good as Gold",
+      "weight": "66.1 lbs.",
+      "image_path": "pokemon_champions_assets\\pokemon\\Gholdengo.png",
+      "form": "",
+      "hp": 162,
+      "atk": 80,
+      "def": 115,
+      "spa": 153,
+      "spd": 111,
+      "spe": 104,
+      "total": 725
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "move",
+          "rank": 1,
+          "name": "Make It Rain",
+          "percentage": "98.6%",
+          "percentage_value": 98.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Life Orb",
+          "percentage": "40.1%",
+          "percentage_value": 40.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Staraptor",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Modest",
+          "percentage": "80.3%",
+          "percentage_value": 80.3,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        "stat_points": {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "24.4%",
+          "percentage_value": 24.4,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        "ability": {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "ability",
+          "rank": 1,
+          "name": "Good as Gold",
+          "percentage": "100.0%",
+          "percentage_value": 100,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Make It Rain",
+          "Shadow Ball",
+          "Protect",
+          "Nasty Plot",
+          "Power Gem",
+          "Thunderbolt",
+          "Trick",
+          "Focus Blast",
+          "Dazzling Gleam",
+          "Flash Cannon"
+        ],
+        "held_item": [
+          "Life Orb",
+          "Choice Scarf",
+          "Spell Tag",
+          "White Herb",
+          "Sitrus Berry",
+          "Metal Coat",
+          "Focus Sash",
+          "Leftovers",
+          "Expert Belt",
+          "Colbur Berry"
+        ],
+        "teammate": [
+          "Staraptor",
+          "Garchomp",
+          "Whimsicott",
+          "Sinistcha",
+          "Kingambit",
+          "Incineroar",
+          "Tyranitar",
+          "Basculegion Male",
+          "Milotic",
+          "Ceruledge"
+        ],
+        "stat_alignment": [
+          "Modest",
+          "Timid",
+          "Quiet",
+          "Bold",
+          "Calm",
+          "Mild",
+          "Hasty",
+          "Relaxed",
+          "Sassy",
+          "Jolly"
+        ],
+        "stat_points": [
+          "HP 2 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 32",
+          "HP 29 / Atk 0 / Def 1 / SpA 27 / SpD 0 / Spe 9",
+          "HP 31 / Atk 0 / Def 7 / SpA 17 / SpD 1 / Spe 10",
+          "HP 1 / Atk 0 / Def 2 / SpA 32 / SpD 0 / Spe 31",
+          "HP 0 / Atk 0 / Def 2 / SpA 32 / SpD 0 / Spe 32",
+          "HP 32 / Atk 0 / Def 0 / SpA 32 / SpD 2 / Spe 0",
+          "HP 32 / Atk 0 / Def 2 / SpA 10 / SpD 3 / Spe 19",
+          "HP 32 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 2"
+        ],
+        "ability": [
+          "Good as Gold"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "move",
+          "rank": 1,
+          "name": "Make It Rain",
+          "percentage": "98.6%",
+          "percentage_value": 98.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "move",
+          "rank": 2,
+          "name": "Shadow Ball",
+          "percentage": "97.4%",
+          "percentage_value": 97.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "move",
+          "rank": 3,
+          "name": "Protect",
+          "percentage": "78.2%",
+          "percentage_value": 78.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "move",
+          "rank": 4,
+          "name": "Nasty Plot",
+          "percentage": "61.0%",
+          "percentage_value": 61,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "move",
+          "rank": 5,
+          "name": "Power Gem",
+          "percentage": "26.1%",
+          "percentage_value": 26.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "move",
+          "rank": 6,
+          "name": "Thunderbolt",
+          "percentage": "11.4%",
+          "percentage_value": 11.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "move",
+          "rank": 7,
+          "name": "Trick",
+          "percentage": "6.7%",
+          "percentage_value": 6.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "move",
+          "rank": 8,
+          "name": "Focus Blast",
+          "percentage": "6.1%",
+          "percentage_value": 6.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "move",
+          "rank": 9,
+          "name": "Dazzling Gleam",
+          "percentage": "4.2%",
+          "percentage_value": 4.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "move",
+          "rank": 10,
+          "name": "Flash Cannon",
+          "percentage": "2.3%",
+          "percentage_value": 2.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Life Orb",
+          "percentage": "40.1%",
+          "percentage_value": 40.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Choice Scarf",
+          "percentage": "16.4%",
+          "percentage_value": 16.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Spell Tag",
+          "percentage": "12.0%",
+          "percentage_value": 12,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "held_item",
+          "rank": 4,
+          "name": "White Herb",
+          "percentage": "7.0%",
+          "percentage_value": 7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Sitrus Berry",
+          "percentage": "5.4%",
+          "percentage_value": 5.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Metal Coat",
+          "percentage": "4.8%",
+          "percentage_value": 4.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Focus Sash",
+          "percentage": "4.0%",
+          "percentage_value": 4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Leftovers",
+          "percentage": "3.6%",
+          "percentage_value": 3.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Expert Belt",
+          "percentage": "2.6%",
+          "percentage_value": 2.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Colbur Berry",
+          "percentage": "1.0%",
+          "percentage_value": 1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Staraptor",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Whimsicott",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Tyranitar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Milotic",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Ceruledge",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Modest",
+          "percentage": "80.3%",
+          "percentage_value": 80.3,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Timid",
+          "percentage": "16.2%",
+          "percentage_value": 16.2,
+          "stat_up": "Speed",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Quiet",
+          "percentage": "1.3%",
+          "percentage_value": 1.3,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Bold",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "Defense",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Calm",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "Sp. Def",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Mild",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Hasty",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Speed",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Relaxed",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Sassy",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Sp. Def",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Jolly",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "24.4%",
+          "percentage_value": 24.4,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "10.6%",
+          "percentage_value": 10.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 29,
+          "attack_points": 0,
+          "defense_points": 1,
+          "sp_atk_points": 27,
+          "sp_def_points": 0,
+          "speed_points": 9
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "3.7%",
+          "percentage_value": 3.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 31,
+          "attack_points": 0,
+          "defense_points": 7,
+          "sp_atk_points": 17,
+          "sp_def_points": 1,
+          "speed_points": 10
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "3.6%",
+          "percentage_value": 3.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 1,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 31
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "3.6%",
+          "percentage_value": 3.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "2.6%",
+          "percentage_value": 2.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "2.4%",
+          "percentage_value": 2.4,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 10,
+          "sp_def_points": 3,
+          "speed_points": 19
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "2.1%",
+          "percentage_value": 2.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 2
+        },
+        {
+          "pokemon": "Gholdengo",
+          "column_position": 26,
+          "position": 26,
+          "category": "ability",
+          "rank": 1,
+          "name": "Good as Gold",
+          "percentage": "100.0%",
+          "percentage_value": 100,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Gholdengo.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Gholdengo.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Gholdengo.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Gholdengo.csv"
+      }
+    ]
+  }
+}

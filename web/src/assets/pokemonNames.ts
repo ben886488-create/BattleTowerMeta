@@ -3374,15 +3374,19 @@ const EXTRA_POKEMON_NAME_ENTRY_OVERRIDES: PokemonNameEntry[] = [
   }
 ];
 
-const POKEMON_NAME_ENTRIES: PokemonNameEntry[] = EN_POKEMON_NAMES.map((en, index) => {
-  const aliases = AUTO_ALIASES_BY_EN[en];
-  return {
-    en,
-    zh: ZH_POKEMON_NAMES[index] ?? en,
-    ja: JA_POKEMON_NAMES[index] ?? en,
-    ...(aliases?.length ? { aliases } : {}),
-  };
-}).concat(EXTRA_POKEMON_NAME_ENTRIES, EXTRA_POKEMON_NAME_ENTRY_OVERRIDES);
+const POKEMON_NAME_ENTRIES: PokemonNameEntry[] = [
+  ...EN_POKEMON_NAMES.map((en, index): PokemonNameEntry => {
+    const aliases = AUTO_ALIASES_BY_EN[en];
+    return {
+      en,
+      zh: ZH_POKEMON_NAMES[index] ?? en,
+      ja: JA_POKEMON_NAMES[index] ?? en,
+      ...(aliases?.length ? { aliases } : {}),
+    };
+  }),
+  ...EXTRA_POKEMON_NAME_ENTRIES,
+  ...EXTRA_POKEMON_NAME_ENTRY_OVERRIDES,
+];
 
 const POKEMON_NAME_LOOKUP = new Map<string, PokemonNameEntry>();
 

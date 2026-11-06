@@ -5,9 +5,10 @@
 <script setup lang="ts">
 import { computed, watchEffect } from 'vue'
 import { useRoute } from 'vue-router'
+import { routeLang } from '../lib/siteI18n'
 
 const route = useRoute()
-const lang = computed<'zh' | 'en'>(() => (String(route.path).split('/')[1] === 'en' ? 'en' : 'zh'))
+const lang = computed<'zh' | 'en'>(() => routeLang(route))
 
 watchEffect(() => {
   if (typeof document !== 'undefined') {

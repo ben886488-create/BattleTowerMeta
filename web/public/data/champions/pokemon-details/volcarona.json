@@ -1,0 +1,2528 @@
+{
+  "pokemon": {
+    "slug": "volcarona",
+    "name": "Volcarona",
+    "baseName": "Volcarona",
+    "savedName": "Volcarona",
+    "form": "",
+    "types": [
+      "Bug",
+      "Fire"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Volcarona.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/637.png",
+    "stats": {
+      "hp": 160,
+      "attack": 80,
+      "defense": 85,
+      "spAttack": 155,
+      "spDefense": 125,
+      "speed": 120,
+      "total": 725
+    },
+    "rank": 88,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Protect",
+    "topItem": "Leftovers",
+    "topTeammate": "Whimsicott"
+  },
+  "moves": [
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "move",
+      "rank": 1,
+      "name": "Protect",
+      "percentage": 0.627,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "move",
+        "rank": 1,
+        "name": "Protect",
+        "percentage": "62.7%",
+        "percentage_value": 62.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "move",
+      "rank": 2,
+      "name": "Quiver Dance",
+      "percentage": 0.62,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "move",
+        "rank": 2,
+        "name": "Quiver Dance",
+        "percentage": "62.0%",
+        "percentage_value": 62,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "move",
+      "rank": 3,
+      "name": "Heat Wave",
+      "percentage": 0.561,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "move",
+        "rank": 3,
+        "name": "Heat Wave",
+        "percentage": "56.1%",
+        "percentage_value": 56.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "move",
+      "rank": 4,
+      "name": "Bug Buzz",
+      "percentage": 0.474,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "move",
+        "rank": 4,
+        "name": "Bug Buzz",
+        "percentage": "47.4%",
+        "percentage_value": 47.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "move",
+      "rank": 5,
+      "name": "Giga Drain",
+      "percentage": 0.395,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "move",
+        "rank": 5,
+        "name": "Giga Drain",
+        "percentage": "39.5%",
+        "percentage_value": 39.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "move",
+      "rank": 6,
+      "name": "Fiery Dance",
+      "percentage": 0.356,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "move",
+        "rank": 6,
+        "name": "Fiery Dance",
+        "percentage": "35.6%",
+        "percentage_value": 35.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "move",
+      "rank": 7,
+      "name": "Rage Powder",
+      "percentage": 0.298,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "move",
+        "rank": 7,
+        "name": "Rage Powder",
+        "percentage": "29.8%",
+        "percentage_value": 29.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "move",
+      "rank": 8,
+      "name": "Tailwind",
+      "percentage": 0.16,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "move",
+        "rank": 8,
+        "name": "Tailwind",
+        "percentage": "16.0%",
+        "percentage_value": 16,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "move",
+      "rank": 9,
+      "name": "Struggle Bug",
+      "percentage": 0.105,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "move",
+        "rank": 9,
+        "name": "Struggle Bug",
+        "percentage": "10.5%",
+        "percentage_value": 10.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "move",
+      "rank": 10,
+      "name": "Flamethrower",
+      "percentage": 0.054,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "move",
+        "rank": 10,
+        "name": "Flamethrower",
+        "percentage": "5.4%",
+        "percentage_value": 5.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Leftovers",
+      "percentage": 0.222,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Leftovers",
+        "percentage": "22.2%",
+        "percentage_value": 22.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Sitrus Berry",
+      "percentage": 0.209,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Sitrus Berry",
+        "percentage": "20.9%",
+        "percentage_value": 20.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Life Orb",
+      "percentage": 0.126,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Life Orb",
+        "percentage": "12.6%",
+        "percentage_value": 12.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Focus Sash",
+      "percentage": 0.104,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Focus Sash",
+        "percentage": "10.4%",
+        "percentage_value": 10.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Charti Berry",
+      "percentage": 0.096,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Charti Berry",
+        "percentage": "9.6%",
+        "percentage_value": 9.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Charcoal",
+      "percentage": 0.069,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Charcoal",
+        "percentage": "6.9%",
+        "percentage_value": 6.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Silver Powder",
+      "percentage": 0.031,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Silver Powder",
+        "percentage": "3.1%",
+        "percentage_value": 3.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Choice Scarf",
+      "percentage": 0.023,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Choice Scarf",
+        "percentage": "2.3%",
+        "percentage_value": 2.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Passho Berry",
+      "percentage": 0.019,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Passho Berry",
+        "percentage": "1.9%",
+        "percentage_value": 1.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Expert Belt",
+      "percentage": 0.017,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Expert Belt",
+        "percentage": "1.7%",
+        "percentage_value": 1.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "ability",
+      "rank": 1,
+      "name": "Flame Body",
+      "percentage": 0.958,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "ability",
+        "rank": 1,
+        "name": "Flame Body",
+        "percentage": "95.8%",
+        "percentage_value": 95.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "ability",
+      "rank": 2,
+      "name": "Swarm",
+      "percentage": 0.042,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "ability",
+        "rank": 2,
+        "name": "Swarm",
+        "percentage": "4.2%",
+        "percentage_value": 4.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Whimsicott",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Whimsicott",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Sneasler",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Sneasler",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Raichu",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Raichu",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Aerodactyl",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Aerodactyl",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Tyranitar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Tyranitar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Kingambit",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Kingambit",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Modest",
+      "percentage": 0.475,
+      "statUp": "Sp. Atk",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Modest",
+        "percentage": "47.5%",
+        "percentage_value": 47.5,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Bold",
+      "percentage": 0.233,
+      "statUp": "Defense",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Bold",
+        "percentage": "23.3%",
+        "percentage_value": 23.3,
+        "stat_up": "Defense",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Timid",
+      "percentage": 0.212,
+      "statUp": "Speed",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Timid",
+        "percentage": "21.2%",
+        "percentage_value": 21.2,
+        "stat_up": "Speed",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Calm",
+      "percentage": 0.026,
+      "statUp": "Sp. Def",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Calm",
+        "percentage": "2.6%",
+        "percentage_value": 2.6,
+        "stat_up": "Sp. Def",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Hasty",
+      "percentage": 0.023,
+      "statUp": "Speed",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Hasty",
+        "percentage": "2.3%",
+        "percentage_value": 2.3,
+        "stat_up": "Speed",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Quiet",
+      "percentage": 0.011,
+      "statUp": "Sp. Atk",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Quiet",
+        "percentage": "1.1%",
+        "percentage_value": 1.1,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Relaxed",
+      "percentage": 0.8,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Relaxed",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Mild",
+      "percentage": 0.8,
+      "statUp": "Sp. Atk",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Mild",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Sassy",
+      "percentage": 0.2,
+      "statUp": "Sp. Def",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Sassy",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Sp. Def",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Naive",
+      "percentage": 0.2,
+      "statUp": "Speed",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Naive",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.19,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "19.0%",
+        "percentage_value": 19,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.059,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "5.9%",
+        "percentage_value": 5.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 32,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.048,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "4.8%",
+        "percentage_value": 4.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 2,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.043,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "4.3%",
+        "percentage_value": 4.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 2
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.043,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "4.3%",
+        "percentage_value": 4.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.021,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "2.1%",
+        "percentage_value": 2.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.016,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "1.6%",
+        "percentage_value": 1.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Volcarona",
+      "position": 88,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Volcarona",
+        "column_position": 88,
+        "position": 88,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "1.0%",
+        "percentage_value": 1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a487796063cb29d318e2971-pedroslz",
+      "name": "PedroSlz - Grama/Inseto · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Fake Tears",
+            "Sunny Day",
+            "Tailwind",
+            "Moonblast"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Protect",
+            "Giga Drain",
+            "Earth Power",
+            "Sludge Bomb"
+          ]
+        },
+        {
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "item": "Life Orb",
+          "ability": "Sharpness",
+          "moves": [
+            "Stone Axe",
+            "Protect",
+            "X-Scissor",
+            "Night Slash"
+          ]
+        },
+        {
+          "slug": "volcarona",
+          "name": "Volcarona",
+          "item": "Choice Scarf",
+          "ability": "Flame Body",
+          "moves": [
+            "Heat Wave",
+            "Overheat",
+            "Giga Drain",
+            "Bug Buzz"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Wide Lens",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Helping Hand",
+            "Triple Axel",
+            "Taunt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "araquanid",
+          "name": "Araquanid",
+          "item": "Mystic Water",
+          "ability": "Water Bubble",
+          "moves": [
+            "Liquidation",
+            "Leech Life",
+            "Protect",
+            "Wide Guard"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "PedroSlz - Grama/Inseto",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-aerxdri",
+      "name": "aerxdri - Elétrico/Inseto · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Protect",
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "vivillon",
+          "name": "Vivillon",
+          "item": "Choice Scarf",
+          "ability": "Compound Eyes",
+          "moves": [
+            "Rage Powder",
+            "Sleep Powder",
+            "Tailwind",
+            "Hurricane"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Sitrus Berry",
+          "ability": "Levitate",
+          "moves": [
+            "Hydro Pump",
+            "Thunderbolt",
+            "Will-O-Wisp",
+            "Light Screen"
+          ]
+        },
+        {
+          "slug": "volcarona",
+          "name": "Volcarona",
+          "item": "Life Orb",
+          "ability": "Flame Body",
+          "moves": [
+            "Protect",
+            "Fiery Dance",
+            "Quiver Dance",
+            "Bug Buzz"
+          ]
+        },
+        {
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "item": "Focus Sash",
+          "ability": "Sharpness",
+          "moves": [
+            "Protect",
+            "Stone Axe",
+            "Swords Dance",
+            "X-Scissor"
+          ]
+        },
+        {
+          "slug": "scizor",
+          "name": "Scizor",
+          "item": "Scizorite",
+          "ability": "Technician",
+          "moves": [
+            "Protect",
+            "Bullet Punch",
+            "Swords Dance",
+            "Bug Bite"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "aerxdri - Elétrico/Inseto",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a4f9758063cb29d318e79a9-ntbon",
+      "name": "ntbon · Sky Pillar Saturday Showdown S8 #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Aurora Veil",
+            "Blizzard",
+            "Shadow Ball",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "slug": "beartic",
+          "name": "Beartic",
+          "item": "Life Orb",
+          "ability": "Slush Rush",
+          "moves": [
+            "Protect",
+            "Aqua Jet",
+            "Heavy Slam",
+            "Icicle Crash"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Sitrus Berry",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Protect",
+            "Rock Slide",
+            "Poison Jab"
+          ]
+        },
+        {
+          "slug": "volcarona",
+          "name": "Volcarona",
+          "item": "Charti Berry",
+          "ability": "Flame Body",
+          "moves": [
+            "Heat Wave",
+            "Rage Powder",
+            "Quiver Dance",
+            "Bug Buzz"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Expert Belt",
+          "ability": "Levitate",
+          "moves": [
+            "Tailwind",
+            "Dark Pulse",
+            "Heat Wave",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Tailwind",
+            "Moonblast",
+            "Encore",
+            "Taunt"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "Sky Pillar Saturday Showdown S8 #10",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "ntbon",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a4516dcc87cd9ff0a31469e-lylylysha",
+      "name": "lylylysha · Pride Month 2 Celebration!!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Parting Shot",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "volcarona",
+          "name": "Volcarona",
+          "item": "Leftovers",
+          "ability": "Flame Body",
+          "moves": [
+            "Heat Wave",
+            "Giga Drain",
+            "Quiver Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Fake Out",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gyarados",
+          "name": "Gyarados",
+          "item": "Gyaradosite",
+          "ability": "Intimidate",
+          "moves": [
+            "Waterfall",
+            "Lash Out",
+            "Dragon Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Spirit Break",
+            "Reflect",
+            "Light Screen",
+            "Parting Shot"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 1,
+      "sampleCount": 6,
+      "tournament": "Pride Month 2 Celebration!!",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "lylylysha",
+      "record": "6-0-0"
+    },
+    {
+      "id": "6a4516dcc87cd9ff0a31469e-gewoonbas",
+      "name": "GewoonBas · Pride Month 2 Celebration!!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "hisuian-arcanine",
+          "name": "Hisuian Arcanine",
+          "item": "Focus Sash",
+          "ability": "Rock Head",
+          "moves": [
+            "Head Smash",
+            "Flare Blitz",
+            "Extreme Speed",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Knock Off",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "volcarona",
+          "name": "Volcarona",
+          "item": "Sitrus Berry",
+          "ability": "Flame Body",
+          "moves": [
+            "Rage Powder",
+            "Tailwind",
+            "Fiery Dance",
+            "Struggle Bug"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Heatproof",
+          "moves": [
+            "Matcha Gotcha",
+            "Strength Sap",
+            "Calm Mind",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Mystic Water",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Moonblast",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Iron Head",
+            "Play Rough",
+            "Sucker Punch",
+            "Swords Dance"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "Pride Month 2 Celebration!!",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "GewoonBas",
+      "record": "4-2-0"
+    }
+  ],
+  "movePool": [
+    "Acrobatics",
+    "Air Cutter",
+    "Air Slash",
+    "Amnesia",
+    "Body Slam",
+    "Bug Bite",
+    "Bug Buzz",
+    "Calm Mind",
+    "Double-Edge",
+    "Dual Wingbeat",
+    "Endure",
+    "Facade",
+    "Fiery Dance",
+    "Fire Blast",
+    "Fire Spin",
+    "Flame Charge",
+    "Flame Wheel",
+    "Flamethrower",
+    "Flare Blitz",
+    "Fly",
+    "Giga Drain",
+    "Giga Impact",
+    "Harden",
+    "Heat Wave",
+    "Hurricane",
+    "Hyper Beam",
+    "Leech Life",
+    "Light Screen",
+    "Lunge",
+    "Morning Sun",
+    "Mystical Fire",
+    "Overheat",
+    "Poison Jab",
+    "Pounce",
+    "Protect",
+    "Psychic",
+    "Quiver Dance",
+    "Rage Powder",
+    "Rain Dance",
+    "Rest",
+    "Round",
+    "Safeguard",
+    "Screech",
+    "Skitter Smack",
+    "Sleep Talk",
+    "Snore",
+    "Solar Beam",
+    "String Shot",
+    "Struggle Bug",
+    "Substitute",
+    "Sunny Day",
+    "Tailwind",
+    "Thrash",
+    "Trailblaze",
+    "U-turn",
+    "Whirlwind",
+    "Wild Charge",
+    "Will-O-Wisp",
+    "Zen Headbutt"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Volcarona",
+      "base_name": "Volcarona",
+      "saved_name": "Volcarona",
+      "types": "Bug/Fire",
+      "abilities": "Flame Body|Swarm",
+      "image_path": "pokemon_champions_assets\\pokemon\\Volcarona.png",
+      "form": "",
+      "hp": 160,
+      "atk": 80,
+      "def": 85,
+      "spa": 155,
+      "spd": 125,
+      "spe": 120,
+      "total": 725
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "move",
+          "rank": 1,
+          "name": "Protect",
+          "percentage": "62.7%",
+          "percentage_value": 62.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Leftovers",
+          "percentage": "22.2%",
+          "percentage_value": 22.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Whimsicott",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Modest",
+          "percentage": "47.5%",
+          "percentage_value": 47.5,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        "stat_points": {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "19.0%",
+          "percentage_value": 19,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        "ability": {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "ability",
+          "rank": 1,
+          "name": "Flame Body",
+          "percentage": "95.8%",
+          "percentage_value": 95.8,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Protect",
+          "Quiver Dance",
+          "Heat Wave",
+          "Bug Buzz",
+          "Giga Drain",
+          "Fiery Dance",
+          "Rage Powder",
+          "Tailwind",
+          "Struggle Bug",
+          "Flamethrower"
+        ],
+        "held_item": [
+          "Leftovers",
+          "Sitrus Berry",
+          "Life Orb",
+          "Focus Sash",
+          "Charti Berry",
+          "Charcoal",
+          "Silver Powder",
+          "Choice Scarf",
+          "Passho Berry",
+          "Expert Belt"
+        ],
+        "teammate": [
+          "Whimsicott",
+          "Garchomp",
+          "Sinistcha",
+          "Sneasler",
+          "Raichu",
+          "Basculegion Male",
+          "Aerodactyl",
+          "Tyranitar",
+          "Kingambit",
+          "Incineroar"
+        ],
+        "stat_alignment": [
+          "Modest",
+          "Bold",
+          "Timid",
+          "Calm",
+          "Hasty",
+          "Quiet",
+          "Relaxed",
+          "Mild",
+          "Sassy",
+          "Naive"
+        ],
+        "stat_points": [
+          "HP 2 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 32",
+          "HP 32 / Atk 0 / Def 32 / SpA 0 / SpD 2 / Spe 0",
+          "HP 0 / Atk 0 / Def 0 / SpA 32 / SpD 2 / Spe 32",
+          "HP 32 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 2",
+          "HP 0 / Atk 0 / Def 2 / SpA 32 / SpD 0 / Spe 32",
+          "HP 32 / Atk 0 / Def 2 / SpA 32 / SpD 0 / Spe 0",
+          "HP 32 / Atk 0 / Def 0 / SpA 32 / SpD 2 / Spe 0",
+          "HP 0 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 32"
+        ],
+        "ability": [
+          "Flame Body",
+          "Swarm"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "move",
+          "rank": 1,
+          "name": "Protect",
+          "percentage": "62.7%",
+          "percentage_value": 62.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "move",
+          "rank": 2,
+          "name": "Quiver Dance",
+          "percentage": "62.0%",
+          "percentage_value": 62,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "move",
+          "rank": 3,
+          "name": "Heat Wave",
+          "percentage": "56.1%",
+          "percentage_value": 56.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "move",
+          "rank": 4,
+          "name": "Bug Buzz",
+          "percentage": "47.4%",
+          "percentage_value": 47.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "move",
+          "rank": 5,
+          "name": "Giga Drain",
+          "percentage": "39.5%",
+          "percentage_value": 39.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "move",
+          "rank": 6,
+          "name": "Fiery Dance",
+          "percentage": "35.6%",
+          "percentage_value": 35.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "move",
+          "rank": 7,
+          "name": "Rage Powder",
+          "percentage": "29.8%",
+          "percentage_value": 29.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "move",
+          "rank": 8,
+          "name": "Tailwind",
+          "percentage": "16.0%",
+          "percentage_value": 16,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "move",
+          "rank": 9,
+          "name": "Struggle Bug",
+          "percentage": "10.5%",
+          "percentage_value": 10.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "move",
+          "rank": 10,
+          "name": "Flamethrower",
+          "percentage": "5.4%",
+          "percentage_value": 5.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Leftovers",
+          "percentage": "22.2%",
+          "percentage_value": 22.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Sitrus Berry",
+          "percentage": "20.9%",
+          "percentage_value": 20.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Life Orb",
+          "percentage": "12.6%",
+          "percentage_value": 12.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Focus Sash",
+          "percentage": "10.4%",
+          "percentage_value": 10.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Charti Berry",
+          "percentage": "9.6%",
+          "percentage_value": 9.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Charcoal",
+          "percentage": "6.9%",
+          "percentage_value": 6.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Silver Powder",
+          "percentage": "3.1%",
+          "percentage_value": 3.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Choice Scarf",
+          "percentage": "2.3%",
+          "percentage_value": 2.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Passho Berry",
+          "percentage": "1.9%",
+          "percentage_value": 1.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Expert Belt",
+          "percentage": "1.7%",
+          "percentage_value": 1.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Whimsicott",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Sneasler",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Raichu",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Aerodactyl",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Tyranitar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Modest",
+          "percentage": "47.5%",
+          "percentage_value": 47.5,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Bold",
+          "percentage": "23.3%",
+          "percentage_value": 23.3,
+          "stat_up": "Defense",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Timid",
+          "percentage": "21.2%",
+          "percentage_value": 21.2,
+          "stat_up": "Speed",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Calm",
+          "percentage": "2.6%",
+          "percentage_value": 2.6,
+          "stat_up": "Sp. Def",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Hasty",
+          "percentage": "2.3%",
+          "percentage_value": 2.3,
+          "stat_up": "Speed",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Quiet",
+          "percentage": "1.1%",
+          "percentage_value": 1.1,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Relaxed",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Mild",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Sassy",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Sp. Def",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Naive",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "19.0%",
+          "percentage_value": 19,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "5.9%",
+          "percentage_value": 5.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 32,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "4.8%",
+          "percentage_value": 4.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 2,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "4.3%",
+          "percentage_value": 4.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 2
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "4.3%",
+          "percentage_value": 4.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "2.1%",
+          "percentage_value": 2.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "1.6%",
+          "percentage_value": 1.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "1.0%",
+          "percentage_value": 1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "ability",
+          "rank": 1,
+          "name": "Flame Body",
+          "percentage": "95.8%",
+          "percentage_value": 95.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Volcarona",
+          "column_position": 88,
+          "position": 88,
+          "category": "ability",
+          "rank": 2,
+          "name": "Swarm",
+          "percentage": "4.2%",
+          "percentage_value": 4.2,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Volcarona.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Volcarona.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Volcarona.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Volcarona.csv"
+      }
+    ]
+  }
+}

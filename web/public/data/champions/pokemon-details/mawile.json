@@ -1,0 +1,4684 @@
+{
+  "pokemon": {
+    "slug": "mawile",
+    "name": "Mawile",
+    "baseName": "Mawile",
+    "savedName": "Mawile",
+    "form": "",
+    "types": [
+      "Steel",
+      "Fairy"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Mawile.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/303.png",
+    "stats": {
+      "hp": 125,
+      "attack": 105,
+      "defense": 105,
+      "spAttack": 75,
+      "spDefense": 75,
+      "speed": 70,
+      "total": 555
+    },
+    "rank": 29,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Play Rough",
+    "topItem": "Mawilite",
+    "topTeammate": "Farigiraf"
+  },
+  "moves": [
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "move",
+      "rank": 1,
+      "name": "Play Rough",
+      "percentage": 0.977,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "move",
+        "rank": 1,
+        "name": "Play Rough",
+        "percentage": "97.7%",
+        "percentage_value": 97.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "move",
+      "rank": 2,
+      "name": "Sucker Punch",
+      "percentage": 0.926,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "move",
+        "rank": 2,
+        "name": "Sucker Punch",
+        "percentage": "92.6%",
+        "percentage_value": 92.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "move",
+      "rank": 3,
+      "name": "Protect",
+      "percentage": 0.787,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "move",
+        "rank": 3,
+        "name": "Protect",
+        "percentage": "78.7%",
+        "percentage_value": 78.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "move",
+      "rank": 4,
+      "name": "Iron Head",
+      "percentage": 0.512,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "move",
+        "rank": 4,
+        "name": "Iron Head",
+        "percentage": "51.2%",
+        "percentage_value": 51.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "move",
+      "rank": 5,
+      "name": "Rock Slide",
+      "percentage": 0.425,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "move",
+        "rank": 5,
+        "name": "Rock Slide",
+        "percentage": "42.5%",
+        "percentage_value": 42.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "move",
+      "rank": 6,
+      "name": "Swords Dance",
+      "percentage": 0.201,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "move",
+        "rank": 6,
+        "name": "Swords Dance",
+        "percentage": "20.1%",
+        "percentage_value": 20.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "move",
+      "rank": 7,
+      "name": "Knock Off",
+      "percentage": 0.062,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "move",
+        "rank": 7,
+        "name": "Knock Off",
+        "percentage": "6.2%",
+        "percentage_value": 6.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "move",
+      "rank": 8,
+      "name": "Brick Break",
+      "percentage": 0.058,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "move",
+        "rank": 8,
+        "name": "Brick Break",
+        "percentage": "5.8%",
+        "percentage_value": 5.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "move",
+      "rank": 9,
+      "name": "Thunder Punch",
+      "percentage": 0.013,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "move",
+        "rank": 9,
+        "name": "Thunder Punch",
+        "percentage": "1.3%",
+        "percentage_value": 1.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "move",
+      "rank": 10,
+      "name": "Psychic Fangs",
+      "percentage": 0.8,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "move",
+        "rank": 10,
+        "name": "Psychic Fangs",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Mawilite",
+      "percentage": 0.994,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Mawilite",
+        "percentage": "99.4%",
+        "percentage_value": 99.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Mental Herb",
+      "percentage": 0.2,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Mental Herb",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Life Orb",
+      "percentage": 0.1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Life Orb",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Focus Sash",
+      "percentage": 0,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Focus Sash",
+        "percentage": "0.0%",
+        "percentage_value": 0,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Sitrus Berry",
+      "percentage": 0,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Sitrus Berry",
+        "percentage": "0.0%",
+        "percentage_value": 0,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Muscle Band",
+      "percentage": 0,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Muscle Band",
+        "percentage": "0.0%",
+        "percentage_value": 0,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Lum Berry",
+      "percentage": 0,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Lum Berry",
+        "percentage": "0.0%",
+        "percentage_value": 0,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Occa Berry",
+      "percentage": 0,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Occa Berry",
+        "percentage": "0.0%",
+        "percentage_value": 0,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Metronome",
+      "percentage": 0,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Metronome",
+        "percentage": "0.0%",
+        "percentage_value": 0,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Quick Claw",
+      "percentage": 0,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Quick Claw",
+        "percentage": "0.0%",
+        "percentage_value": 0,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "ability",
+      "rank": 1,
+      "name": "Hyper Cutter",
+      "percentage": 0.502,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "ability",
+        "rank": 1,
+        "name": "Hyper Cutter",
+        "percentage": "50.2%",
+        "percentage_value": 50.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "ability",
+      "rank": 2,
+      "name": "Intimidate",
+      "percentage": 0.486,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "ability",
+        "rank": 2,
+        "name": "Intimidate",
+        "percentage": "48.6%",
+        "percentage_value": 48.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "ability",
+      "rank": 3,
+      "name": "Sheer Force",
+      "percentage": 0.012,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "ability",
+        "rank": 3,
+        "name": "Sheer Force",
+        "percentage": "1.2%",
+        "percentage_value": 1.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Farigiraf",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Farigiraf",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Torkoal",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Torkoal",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Staraptor",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Staraptor",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Kangaskhan",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Kangaskhan",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Gallade",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Gallade",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Maushold Family of Four",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Maushold Family of Four",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Vivillon Fancy Pattern",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Vivillon Fancy Pattern",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Brave",
+      "percentage": 0.645,
+      "statUp": "Attack",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Brave",
+        "percentage": "64.5%",
+        "percentage_value": 64.5,
+        "stat_up": "Attack",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Adamant",
+      "percentage": 0.329,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Adamant",
+        "percentage": "32.9%",
+        "percentage_value": 32.9,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Careful",
+      "percentage": 0.6,
+      "statUp": "Sp. Def",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Careful",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "Sp. Def",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Sassy",
+      "percentage": 0.5,
+      "statUp": "Sp. Def",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Sassy",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "Sp. Def",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Impish",
+      "percentage": 0.3,
+      "statUp": "Defense",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Impish",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Defense",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Jolly",
+      "percentage": 0.3,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Jolly",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Naughty",
+      "percentage": 0.3,
+      "statUp": "Attack",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Naughty",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Relaxed",
+      "percentage": 0.2,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Relaxed",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Serious",
+      "percentage": 0.2,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Serious",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Lax",
+      "percentage": 0.1,
+      "statUp": "Defense",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Lax",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Defense",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.469,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "46.9%",
+        "percentage_value": 46.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.198,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "19.8%",
+        "percentage_value": 19.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.042,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "4.2%",
+        "percentage_value": 4.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 6,
+        "defense_points": 4,
+        "sp_atk_points": 0,
+        "sp_def_points": 23,
+        "speed_points": 1
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.026,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "2.6%",
+        "percentage_value": 2.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 1,
+        "sp_atk_points": 0,
+        "sp_def_points": 1,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.017,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "1.7%",
+        "percentage_value": 1.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 19,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 15
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "1.0%",
+        "percentage_value": 1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 32,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "1.0%",
+        "percentage_value": 1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 32,
+        "defense_points": 32,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Mawile",
+      "position": 29,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.9,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Mawile",
+        "column_position": 29,
+        "position": 29,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "0.9%",
+        "percentage_value": 0.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 25,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 9,
+        "speed_points": 0
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a46b0e683fd320299bd6881-vitoovgc",
+      "name": "vitooVGC · X1 Remote Battle League 2ª Edição - Reg M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "crabominable",
+          "name": "Crabominable",
+          "item": "Crabominite",
+          "ability": "Iron Fist",
+          "moves": [
+            "Ice Hammer",
+            "Drain Punch",
+            "Mach Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Trick Room",
+            "Psychic",
+            "Helping Hand",
+            "Ally Switch"
+          ]
+        },
+        {
+          "slug": "vileplume",
+          "name": "Vileplume",
+          "item": "Focus Sash",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sleep Powder",
+            "Sludge Bomb",
+            "After You",
+            "Energy Ball"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Eruption",
+            "Protect",
+            "Solar Beam",
+            "Heat Wave"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Play Rough",
+            "Sucker Punch",
+            "Protect",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "gallade",
+          "name": "Gallade",
+          "item": "Iron Ball",
+          "ability": "Sharpness",
+          "moves": [
+            "Sacred Sword",
+            "Psycho Cut",
+            "Trick Room",
+            "Leaf Blade"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 3,
+      "tournament": "X1 Remote Battle League 2ª Edição - Reg M-B",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "vitooVGC",
+      "record": "2-1-0"
+    },
+    {
+      "id": "6a5055f965724db9ded41c56-vincenzocaiafa",
+      "name": "Vincenzocaiafa · Weekly Qualifier for RookideeVGC Grand Tourney",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Trick Room",
+            "Protect",
+            "Helping Hand",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "vivillon",
+          "name": "Vivillon",
+          "item": "Focus Sash",
+          "ability": "Compound Eyes",
+          "moves": [
+            "Hurricane",
+            "Sleep Powder",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "camerupt",
+          "name": "Camerupt",
+          "item": "Cameruptite",
+          "ability": "Solid Rock",
+          "moves": [
+            "Heat Wave",
+            "Earth Power",
+            "Ancient Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Play Rough",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hatterene",
+          "name": "Hatterene",
+          "item": "Life Orb",
+          "ability": "Magic Bounce",
+          "moves": [
+            "Trick Room",
+            "Psychic",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Roseli Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Brick Break",
+            "Knock Off",
+            "Ice Punch"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "Weekly Qualifier for RookideeVGC Grand Tourney",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Vincenzocaiafa",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a4dfee8063cb29d318e6805-tinixium",
+      "name": "Tinixium · VGC UmbreNews 14.07.2026 #23 - Champion",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "hatterene",
+          "name": "Hatterene",
+          "item": "Focus Sash",
+          "ability": "Magic Bounce",
+          "moves": [
+            "Psychic",
+            "Dazzling Gleam",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Iron Head",
+            "Protect",
+            "Sucker Punch",
+            "Play Rough"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Rock Slide",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gallade",
+          "name": "Gallade",
+          "item": "Expert Belt",
+          "ability": "Sharpness",
+          "moves": [
+            "Psycho Cut",
+            "Wide Guard",
+            "Sacred Sword",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Brave Bird",
+            "Tailwind",
+            "Protect",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Drain Punch",
+            "Knock Off",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "VGC UmbreNews 14.07.2026 #23 - Champion",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Tinixium",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a4dbb9665724db9ded3ff83-gooyet",
+      "name": "gooyet · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Thunderbolt",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Play Rough",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Throat Chop",
+            "Flare Blitz",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "araquanid",
+          "name": "Araquanid",
+          "item": "Mystic Water",
+          "ability": "Water Bubble",
+          "moves": [
+            "Liquidation",
+            "Lunge",
+            "Wide Guard",
+            "Reflect"
+          ]
+        },
+        {
+          "slug": "gallade",
+          "name": "Gallade",
+          "item": "Iron Ball",
+          "ability": "Sharpness",
+          "moves": [
+            "Sacred Sword",
+            "Leaf Blade",
+            "Psycho Cut",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Leftovers",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Life Dew",
+            "Rage Powder",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "gooyet",
+      "record": "4-1-0"
+    },
+    {
+      "id": "6a4dbc1e063cb29d318e66e7-zephyr0811",
+      "name": "Zephyr0811 · The Grim Challenge #3 - Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Play Rough",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Thunderbolt",
+            "Helping Hand",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Rock Slide",
+            "Dragon Claw",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8571428571428571,
+      "sampleCount": 7,
+      "tournament": "The Grim Challenge #3 - Champions",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Zephyr0811",
+      "record": "6-1-0"
+    },
+    {
+      "id": "6a4dbc1e063cb29d318e66e7-yinji",
+      "name": "Yinji · The Grim Challenge #3 - Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Iron Head",
+            "Play Rough",
+            "Protect",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Thunderbolt",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Darkest Lariat",
+            "Flare Blitz",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Weather Ball",
+            "Protect",
+            "Eruption",
+            "Heat Wave"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Wide Lens",
+          "ability": "Competitive",
+          "moves": [
+            "Hydro Pump",
+            "Alluring Voice",
+            "Ice Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Protect",
+            "Trick Room"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "The Grim Challenge #3 - Champions",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Yinji",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-hianlucas",
+      "name": "Hianlucas - Normal/Metal · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "klefki",
+          "name": "Klefki",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Reflect",
+            "Light Screen",
+            "Dazzling Gleam",
+            "Sunny Day"
+          ]
+        },
+        {
+          "slug": "toucannon",
+          "name": "Toucannon",
+          "item": "Choice Scarf",
+          "ability": "Keen Eye",
+          "moves": [
+            "Brave Bird",
+            "Bullet Seed",
+            "Rock Blast",
+            "Steel Wing"
+          ]
+        },
+        {
+          "slug": "pyroar",
+          "name": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Rivalry",
+          "moves": [
+            "Overheat",
+            "Solar Beam",
+            "Heat Wave",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Play Rough",
+            "Iron Head",
+            "Knock Off",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Wide Lens",
+          "ability": "Technician",
+          "moves": [
+            "Feint",
+            "After You",
+            "Population Bomb",
+            "Follow Me"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Low Kick",
+            "Sucker Punch",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Hianlucas - Normal/Metal",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a32e8b12d97f3b0c26189cc-tomatosaiyan",
+      "name": "TomatoSaiyan · Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Eruption",
+            "Weather Ball",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Life Orb",
+          "ability": "Scrappy",
+          "moves": [
+            "Fake Out",
+            "Double-Edge",
+            "Brick Break",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "aurorus",
+          "name": "Aurorus",
+          "item": "Expert Belt",
+          "ability": "Snow Warning",
+          "moves": [
+            "Freeze-Dry",
+            "Blizzard",
+            "Ancient Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "vileplume",
+          "name": "Vileplume",
+          "item": "Focus Sash",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "After You",
+            "Sleep Powder",
+            "Energy Ball"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Protect",
+            "Imprison",
+            "Psychic",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Sucker Punch",
+            "Play Rough",
+            "Protect",
+            "Rock Slide"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "TomatoSaiyan",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a420fbf83fd320299bd3c3c-sparkles1755",
+      "name": "Sparkles1755 · Sketch Academy Sunday Regulation M-B Tournament",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Play Rough",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Hyper Beam",
+            "Quick Attack",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Dragon Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Twin Beam",
+            "Thunderbolt",
+            "Trick Room",
+            "Helping Hand"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7142857142857143,
+      "sampleCount": 7,
+      "tournament": "Sketch Academy Sunday Regulation M-B Tournament",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Sparkles1755",
+      "record": "5-2-0"
+    },
+    {
+      "id": "6a3854f7ceacae7d6441c118-edf_noko",
+      "name": "EDF_Noko · PWC - Battle in the Colosseum #19 - Reg M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Aurora Veil",
+            "Protect",
+            "Night Shade"
+          ]
+        },
+        {
+          "slug": "glaceon",
+          "name": "Glaceon",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Cloak",
+          "moves": [
+            "Freeze-Dry",
+            "Detect",
+            "Blizzard",
+            "Snowscape"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Marvel Scale",
+          "moves": [
+            "Coil",
+            "Hypnosis",
+            "Protect",
+            "Muddy Water"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Iron Head",
+            "Play Rough",
+            "Protect",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "armarouge",
+          "name": "Armarouge",
+          "item": "White Herb",
+          "ability": "Flash Fire",
+          "moves": [
+            "Armor Cannon",
+            "Trick Room",
+            "Wide Guard",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Life Dew"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 3,
+      "tournament": "PWC - Battle in the Colosseum #19 - Reg M-B",
+      "placing": null,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "EDF_Noko",
+      "record": "2-1-0"
+    },
+    {
+      "id": "6a4516dcc87cd9ff0a31469e-gewoonbas",
+      "name": "GewoonBas · Pride Month 2 Celebration!!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "hisuian-arcanine",
+          "name": "Hisuian Arcanine",
+          "item": "Focus Sash",
+          "ability": "Rock Head",
+          "moves": [
+            "Head Smash",
+            "Flare Blitz",
+            "Extreme Speed",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Knock Off",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "volcarona",
+          "name": "Volcarona",
+          "item": "Sitrus Berry",
+          "ability": "Flame Body",
+          "moves": [
+            "Rage Powder",
+            "Tailwind",
+            "Fiery Dance",
+            "Struggle Bug"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Heatproof",
+          "moves": [
+            "Matcha Gotcha",
+            "Strength Sap",
+            "Calm Mind",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Mystic Water",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Moonblast",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Iron Head",
+            "Play Rough",
+            "Sucker Punch",
+            "Swords Dance"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "Pride Month 2 Celebration!!",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "GewoonBas",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a4516dcc87cd9ff0a31469e-nelias",
+      "name": "Nelias · Pride Month 2 Celebration!!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Protect",
+            "Helping Hand",
+            "Trick Room",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Eruption",
+            "Heat Wave",
+            "Protect",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Dire Claw",
+            "Fake Out",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Hyper Voice",
+            "Psyshock",
+            "Protect",
+            "Calm Mind"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Sucker Punch",
+            "Iron Head",
+            "Play Rough",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Pride Month 2 Celebration!!",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Nelias",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a4516dcc87cd9ff0a31469e-potatolucy",
+      "name": "PotatoLucy · Pride Month 2 Celebration!!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Twin Beam",
+            "Trick Room",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hisuian-arcanine",
+          "name": "Hisuian Arcanine",
+          "item": "Choice Scarf",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Rock Slide",
+            "Extreme Speed",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Trick Room",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "clawitzer",
+          "name": "Clawitzer",
+          "item": "Life Orb",
+          "ability": "Mega Launcher",
+          "moves": [
+            "Water Pulse",
+            "Dark Pulse",
+            "Aura Sphere",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Iron Head",
+            "Play Rough",
+            "Sucker Punch",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Pride Month 2 Celebration!!",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "PotatoLucy",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a43db49c87cd9ff0a313918-mudkipc4",
+      "name": "Patrick Leonard-Brown · Pokepal Smackdown #149 (Champions) (Reg M-B)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Weather Ball",
+            "Heat Wave",
+            "Solar Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Protect",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Imprison",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Play Rough",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Encore",
+            "Tailwind",
+            "Moonblast",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "White Herb",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Close Combat",
+            "Flare Blitz"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 5,
+      "tournament": "Pokepal Smackdown #149 (Champions) (Reg M-B)",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Patrick Leonard-Brown",
+      "record": "4-1-0"
+    },
+    {
+      "id": "6a43db49c87cd9ff0a313918-puck",
+      "name": "Puck · Pokepal Smackdown #149 (Champions) (Reg M-B)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Mental Herb",
+          "ability": "Armor Tail",
+          "moves": [
+            "Trick Room",
+            "Helping Hand",
+            "Twin Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "White Herb",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Darkest Lariat",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "hatterene",
+          "name": "Hatterene",
+          "item": "Life Orb",
+          "ability": "Magic Bounce",
+          "moves": [
+            "Psychic",
+            "Dazzling Gleam",
+            "Protect",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "drampa",
+          "name": "Drampa",
+          "item": "Drampanite",
+          "ability": "Cloud Nine",
+          "moves": [
+            "Hyper Voice",
+            "Energy Ball",
+            "Ice Beam",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Eruption",
+            "Heat Wave",
+            "Weather Ball",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Play Rough",
+            "Protect",
+            "Sucker Punch",
+            "Rock Slide"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 5,
+      "tournament": "Pokepal Smackdown #149 (Champions) (Reg M-B)",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Puck",
+      "record": "4-1-0"
+    },
+    {
+      "id": "6a4685c383fd320299bd6675-migueldaponte",
+      "name": "migueldaponte · Pokémon Champions #1 - (Floette Eternal Flower)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Focus Sash",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Earth Power",
+            "Sleep Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gallade",
+          "name": "Gallade",
+          "item": "Scope Lens",
+          "ability": "Sharpness",
+          "moves": [
+            "Sacred Sword",
+            "Psycho Cut",
+            "Leaf Blade",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Iron Head",
+            "Play Rough",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Solar Power",
+          "moves": [
+            "Heat Wave",
+            "Solar Beam",
+            "Hurricane",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Hyper Voice",
+            "Twin Beam",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Chople Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "Pokémon Champions #1 - (Floette Eternal Flower)",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "migueldaponte",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a5162b8063cb29d318e9199-323232dani",
+      "name": "323232dani · MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Fake Out",
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Darkest Lariat",
+            "Roar",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Muddy Water",
+            "Coil",
+            "Hypnosis",
+            "Recover"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Life Dew",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Play Rough",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Bulk Up",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "323232dani",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a5162b8063cb29d318e9199-enzibu",
+      "name": "Enzibu · MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Protect",
+            "Helping Hand",
+            "Psychic",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Protect",
+            "Sucker Punch",
+            "Play Rough",
+            "Swords Dance"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Flip Turn"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Focus Sash",
+          "ability": "Snow Warning",
+          "moves": [
+            "Protect",
+            "Blizzard",
+            "Freeze-Dry",
+            "Moonblast"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Inner Focus",
+          "moves": [
+            "Protect",
+            "Dragon Pulse",
+            "Thunder",
+            "Heat Wave"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Enzibu",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a54c9d3232a1a55ee10b346-israelkuro",
+      "name": "NMR | Kuroryu · Intimidators Champions Challenge #27 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Life Dew",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Muddy Water",
+            "Coil",
+            "Hypnosis",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Bulk Up",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Play Rough",
+            "Sucker Punch",
+            "Protect",
+            "Swords Dance"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 1,
+      "sampleCount": 9,
+      "tournament": "Intimidators Champions Challenge #27 REG M-B",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "NMR | Kuroryu",
+      "record": "9-0-0"
+    },
+    {
+      "id": "6a54c9156355385f44dd38cd-italosichi",
+      "name": "Zé do lanche · Intimidators Champions Challenge #26 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Damp",
+          "moves": [
+            "Protect",
+            "Wave Crash",
+            "Earthquake",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Protect",
+            "Electro Shot",
+            "Dragon Pulse",
+            "Flash Cannon"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Focus Sash",
+          "ability": "Drizzle",
+          "moves": [
+            "Tailwind",
+            "Wide Guard",
+            "Weather Ball",
+            "Hurricane"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Helping Hand",
+            "Trick Room",
+            "Psychic",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Protect",
+            "Play Rough",
+            "Iron Head",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Roseli Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Fake Out",
+            "Foul Play",
+            "Light Screen",
+            "Parting Shot"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "Intimidators Champions Challenge #26 REG M-B",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Zé do lanche",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a54c9156355385f44dd38cd-erivaldo",
+      "name": "Erivaldo · Intimidators Champions Challenge #26 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "mr-rime",
+          "name": "Mr. Rime",
+          "item": "Never-Melt Ice",
+          "ability": "Screen Cleaner",
+          "moves": [
+            "Freeze-Dry",
+            "Psychic",
+            "Fake Out",
+            "Charm"
+          ]
+        },
+        {
+          "slug": "malamar",
+          "name": "Malamar",
+          "item": "Leftovers",
+          "ability": "Contrary",
+          "moves": [
+            "Knock Off",
+            "Superpower",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Trick Room",
+            "Hyper Voice",
+            "Calm Mind"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Rock Slide",
+            "Play Rough",
+            "Iron Head",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Wide Lens",
+          "ability": "Technician",
+          "moves": [
+            "Population Bomb",
+            "Follow Me",
+            "Protect",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "kommo-o",
+          "name": "Kommo-o",
+          "item": "Life Orb",
+          "ability": "Overcoat",
+          "moves": [
+            "Clanging Scales",
+            "Clangorous Soul",
+            "Aura Sphere",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "Intimidators Champions Challenge #26 REG M-B",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Erivaldo",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a529f1ee09846f1eb4c14e3-elsejoconsoja",
+      "name": "elsejoconsoja · Chaos League Sunday Slam #104",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "vivillon",
+          "name": "Vivillon",
+          "item": "Choice Scarf",
+          "ability": "Compound Eyes",
+          "moves": [
+            "Pollen Puff",
+            "Hurricane",
+            "Giga Drain",
+            "Sleep Powder"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Thunderbolt",
+            "Trick Room",
+            "Psychic",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Weather Ball",
+            "Eruption",
+            "Heat Wave",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Kangaskhanite",
+          "ability": "Scrappy",
+          "moves": [
+            "Last Resort",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Sucker Punch",
+            "Rock Slide",
+            "Protect",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Life Orb",
+          "ability": "Pixilate",
+          "moves": [
+            "Quick Attack",
+            "Hyper Beam",
+            "Hyper Voice",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Chaos League Sunday Slam #104",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "elsejoconsoja",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a4bc2dd063cb29d318e4b78-gundojuan",
+      "name": "Juan Ramirez · Chacho Cup #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Solar Power",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Play Rough",
+            "Rock Slide",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Thunderbolt",
+            "Trick Room",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Aqua Jet",
+            "Last Respects",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Chacho Cup #2",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Juan Ramirez",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a4bc2dd063cb29d318e4b78-marijuan",
+      "name": "marijuan Rodri · Chacho Cup #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Damp",
+          "moves": [
+            "Flip Turn",
+            "Wave Crash",
+            "High Horsepower",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Life Orb",
+          "ability": "Drizzle",
+          "moves": [
+            "Weather Ball",
+            "Tailwind",
+            "Hurricane",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Trick Room",
+            "Thunderbolt",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Protect",
+            "Dire Claw",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Play Rough",
+            "Sucker Punch",
+            "Swords Dance",
+            "Brick Break"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Flash Cannon",
+            "Dragon Pulse",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Chacho Cup #2",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "marijuan Rodri",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a4f486e063cb29d318e781e-redistired",
+      "name": "redistired · Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Protect",
+            "Trick Room",
+            "Psychic",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Protect",
+            "Play Rough",
+            "Rock Slide",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Life Orb",
+          "ability": "Drizzle",
+          "moves": [
+            "Wide Guard",
+            "Tailwind",
+            "Hurricane",
+            "Weather Ball"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Protect",
+            "Electro Shot",
+            "Flash Cannon",
+            "Dragon Pulse"
+          ]
+        },
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Torrent",
+          "moves": [
+            "Protect",
+            "Wave Crash",
+            "Earthquake",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Rage Powder",
+            "Life Dew",
+            "Trick Room",
+            "Matcha Gotcha"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "redistired",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a4f486e063cb29d318e781e-autopilot",
+      "name": "Autopilot · Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "araquanid",
+          "name": "Araquanid",
+          "item": "Mystic Water",
+          "ability": "Water Bubble",
+          "moves": [
+            "Liquidation",
+            "Protect",
+            "Skitter Smack",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Iron Head",
+            "Play Rough",
+            "Knock Off",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Taunt",
+            "Flare Blitz",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Focus Sash",
+          "ability": "Armor Tail",
+          "moves": [
+            "Protect",
+            "Rain Dance",
+            "Trick Room",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "forretress",
+          "name": "Forretress",
+          "item": "Occa Berry",
+          "ability": "Sturdy",
+          "moves": [
+            "Volt Switch",
+            "Rock Slide",
+            "Metal Sound",
+            "Spikes"
+          ]
+        },
+        {
+          "slug": "meganium",
+          "name": "Meganium",
+          "item": "Meganiumite",
+          "ability": "Leaf Guard",
+          "moves": [
+            "Protect",
+            "Weather Ball",
+            "Dazzling Gleam",
+            "Solar Beam"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Autopilot",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a5970c3cc68177ec6c5710d-sebasalta95",
+      "name": "Sebasalta95 · Afternoon Champions #1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Protect",
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Play Rough",
+            "Sucker Punch",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Focus Sash",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Ice Fang",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Life Dew",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Leftovers",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Fake Out",
+            "Darkest Lariat",
+            "Parting Shot"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 3,
+      "tournament": "Afternoon Champions #1",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Sebasalta95",
+      "record": "2-1-0"
+    },
+    {
+      "id": "6a545f013ee4505de4ad5e7e-upinhuu",
+      "name": "uPinhuu · 🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "bellibolt",
+          "name": "Bellibolt",
+          "item": "Magnet",
+          "ability": "Electromorphosis",
+          "moves": [
+            "Parabolic Charge",
+            "Volt Switch",
+            "Thunderbolt",
+            "Soak"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Trick Room",
+            "Psychic Noise",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Eruption",
+            "Protect",
+            "Weather Ball",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Iron Head",
+            "Play Rough",
+            "Protect",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Knock Off",
+            "Rock Slide",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Life Orb",
+          "ability": "Scrappy",
+          "moves": [
+            "Fake Out",
+            "Last Resort"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "uPinhuu",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a519dad65724db9ded42bc9-iannsebastian",
+      "name": "IannSebastian · [PR] Mt. Moon Champions VGC Weekly #6 2026",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "dragalge",
+          "name": "Dragalge",
+          "item": "Life Orb",
+          "ability": "Adaptability",
+          "moves": [
+            "Dragon Pulse",
+            "Sludge Bomb",
+            "Muddy Water",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psyshock",
+            "Trick Room",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Leftovers",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Strength Sap",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "camerupt",
+          "name": "Camerupt",
+          "item": "Cameruptite",
+          "ability": "Solid Rock",
+          "moves": [
+            "Ancient Power",
+            "Protect",
+            "Heat Wave",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "mr-rime",
+          "name": "Mr. Rime",
+          "item": "Expert Belt",
+          "ability": "Screen Cleaner",
+          "moves": [
+            "Freeze-Dry",
+            "Psyshock",
+            "Fake Out",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Play Rough",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 2,
+      "tournament": "[PR] Mt. Moon Champions VGC Weekly #6 2026",
+      "placing": null,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "IannSebastian",
+      "record": "1-1-0"
+    }
+  ],
+  "movePool": [
+    "Ancient Power",
+    "Assurance",
+    "Attract",
+    "Baton Pass",
+    "Bite",
+    "Body Slam",
+    "Brick Break",
+    "Brutal Swing",
+    "Charm",
+    "Crunch",
+    "Dark Pulse",
+    "Double-Edge",
+    "Draining Kiss",
+    "Dynamic Punch",
+    "Endure",
+    "Facade",
+    "Fake Tears",
+    "Fire Blast",
+    "Fire Fang",
+    "Flamethrower",
+    "Flash Cannon",
+    "Fling",
+    "Focus Blast",
+    "Foul Play",
+    "Giga Impact",
+    "Grass Knot",
+    "Guard Swap",
+    "Helping Hand",
+    "Hyper Beam",
+    "Ice Beam",
+    "Ice Fang",
+    "Ice Punch",
+    "Icy Wind",
+    "Iron Defense",
+    "Iron Head",
+    "Knock Off",
+    "Mega Kick",
+    "Misty Terrain",
+    "Payback",
+    "Play Rough",
+    "Poison Fang",
+    "Protect",
+    "Psychic Fangs",
+    "Rain Dance",
+    "Rest",
+    "Rock Slide",
+    "Rock Tomb",
+    "Round",
+    "Sandstorm",
+    "Seismic Toss",
+    "Shadow Ball",
+    "Sleep Talk",
+    "Sludge Bomb",
+    "Snore",
+    "Solar Beam",
+    "Spit Up",
+    "Stealth Rock",
+    "Steel Beam",
+    "Stockpile",
+    "Stone Edge",
+    "Substitute",
+    "Sucker Punch",
+    "Sunny Day",
+    "Swagger",
+    "Swallow",
+    "Sweet Scent",
+    "Swords Dance",
+    "Taunt",
+    "Thunder Fang",
+    "Thunder Punch",
+    "Tickle"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Mawile",
+      "base_name": "Mawile",
+      "saved_name": "Mawile",
+      "types": "Steel/Fairy",
+      "abilities": "Hyper Cutter|Intimidate|Sheer Force",
+      "weight": "25.4 lbs.",
+      "image_path": "pokemon_champions_assets\\pokemon\\Mawile.png",
+      "form": "",
+      "hp": 125,
+      "atk": 105,
+      "def": 105,
+      "spa": 75,
+      "spd": 75,
+      "spe": 70,
+      "total": 555
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "move",
+          "rank": 1,
+          "name": "Play Rough",
+          "percentage": "97.7%",
+          "percentage_value": 97.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Mawilite",
+          "percentage": "99.4%",
+          "percentage_value": 99.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Brave",
+          "percentage": "64.5%",
+          "percentage_value": 64.5,
+          "stat_up": "Attack",
+          "stat_down": "Speed"
+        },
+        "stat_points": {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "46.9%",
+          "percentage_value": 46.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        "ability": {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "ability",
+          "rank": 1,
+          "name": "Hyper Cutter",
+          "percentage": "50.2%",
+          "percentage_value": 50.2,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Play Rough",
+          "Sucker Punch",
+          "Protect",
+          "Iron Head",
+          "Rock Slide",
+          "Swords Dance",
+          "Knock Off",
+          "Brick Break",
+          "Thunder Punch",
+          "Psychic Fangs"
+        ],
+        "held_item": [
+          "Mawilite",
+          "Mental Herb",
+          "Life Orb",
+          "Focus Sash",
+          "Sitrus Berry",
+          "Muscle Band",
+          "Lum Berry",
+          "Occa Berry",
+          "Metronome",
+          "Quick Claw"
+        ],
+        "teammate": [
+          "Farigiraf",
+          "Torkoal",
+          "Incineroar",
+          "Sinistcha",
+          "Basculegion Male",
+          "Staraptor",
+          "Kangaskhan",
+          "Gallade",
+          "Maushold Family of Four",
+          "Vivillon Fancy Pattern"
+        ],
+        "stat_alignment": [
+          "Brave",
+          "Adamant",
+          "Careful",
+          "Sassy",
+          "Impish",
+          "Jolly",
+          "Naughty",
+          "Relaxed",
+          "Serious",
+          "Lax"
+        ],
+        "stat_points": [
+          "HP 32 / Atk 32 / Def 0 / SpA 0 / SpD 2 / Spe 0",
+          "HP 32 / Atk 32 / Def 2 / SpA 0 / SpD 0 / Spe 0",
+          "HP 32 / Atk 6 / Def 4 / SpA 0 / SpD 23 / Spe 1",
+          "HP 32 / Atk 32 / Def 1 / SpA 0 / SpD 1 / Spe 0",
+          "HP 32 / Atk 19 / Def 0 / SpA 0 / SpD 0 / Spe 15",
+          "HP 0 / Atk 32 / Def 2 / SpA 0 / SpD 32 / Spe 0",
+          "HP 2 / Atk 32 / Def 32 / SpA 0 / SpD 0 / Spe 0",
+          "HP 32 / Atk 25 / Def 0 / SpA 0 / SpD 9 / Spe 0"
+        ],
+        "ability": [
+          "Hyper Cutter",
+          "Intimidate",
+          "Sheer Force"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "move",
+          "rank": 1,
+          "name": "Play Rough",
+          "percentage": "97.7%",
+          "percentage_value": 97.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "move",
+          "rank": 2,
+          "name": "Sucker Punch",
+          "percentage": "92.6%",
+          "percentage_value": 92.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "move",
+          "rank": 3,
+          "name": "Protect",
+          "percentage": "78.7%",
+          "percentage_value": 78.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "move",
+          "rank": 4,
+          "name": "Iron Head",
+          "percentage": "51.2%",
+          "percentage_value": 51.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "move",
+          "rank": 5,
+          "name": "Rock Slide",
+          "percentage": "42.5%",
+          "percentage_value": 42.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "move",
+          "rank": 6,
+          "name": "Swords Dance",
+          "percentage": "20.1%",
+          "percentage_value": 20.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "move",
+          "rank": 7,
+          "name": "Knock Off",
+          "percentage": "6.2%",
+          "percentage_value": 6.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "move",
+          "rank": 8,
+          "name": "Brick Break",
+          "percentage": "5.8%",
+          "percentage_value": 5.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "move",
+          "rank": 9,
+          "name": "Thunder Punch",
+          "percentage": "1.3%",
+          "percentage_value": 1.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "move",
+          "rank": 10,
+          "name": "Psychic Fangs",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Mawilite",
+          "percentage": "99.4%",
+          "percentage_value": 99.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Mental Herb",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Life Orb",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Focus Sash",
+          "percentage": "0.0%",
+          "percentage_value": 0,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Sitrus Berry",
+          "percentage": "0.0%",
+          "percentage_value": 0,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Muscle Band",
+          "percentage": "0.0%",
+          "percentage_value": 0,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Lum Berry",
+          "percentage": "0.0%",
+          "percentage_value": 0,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Occa Berry",
+          "percentage": "0.0%",
+          "percentage_value": 0,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Metronome",
+          "percentage": "0.0%",
+          "percentage_value": 0,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Quick Claw",
+          "percentage": "0.0%",
+          "percentage_value": 0,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Torkoal",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Staraptor",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Kangaskhan",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Gallade",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Maushold Family of Four",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Vivillon Fancy Pattern",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Brave",
+          "percentage": "64.5%",
+          "percentage_value": 64.5,
+          "stat_up": "Attack",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Adamant",
+          "percentage": "32.9%",
+          "percentage_value": 32.9,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Careful",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "Sp. Def",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Sassy",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "Sp. Def",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Impish",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Jolly",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Naughty",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Relaxed",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Serious",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Lax",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "46.9%",
+          "percentage_value": 46.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "19.8%",
+          "percentage_value": 19.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "4.2%",
+          "percentage_value": 4.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 6,
+          "defense_points": 4,
+          "sp_atk_points": 0,
+          "sp_def_points": 23,
+          "speed_points": 1
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "2.6%",
+          "percentage_value": 2.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 1,
+          "sp_atk_points": 0,
+          "sp_def_points": 1,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "1.7%",
+          "percentage_value": 1.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 19,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 15
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "1.0%",
+          "percentage_value": 1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 32,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "1.0%",
+          "percentage_value": 1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 32,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "0.9%",
+          "percentage_value": 0.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 25,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 9,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "ability",
+          "rank": 1,
+          "name": "Hyper Cutter",
+          "percentage": "50.2%",
+          "percentage_value": 50.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "ability",
+          "rank": 2,
+          "name": "Intimidate",
+          "percentage": "48.6%",
+          "percentage_value": 48.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Mawile",
+          "column_position": 29,
+          "position": 29,
+          "category": "ability",
+          "rank": 3,
+          "name": "Sheer Force",
+          "percentage": "1.2%",
+          "percentage_value": 1.2,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Mawile.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Mawile.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Mawile.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Mawile.csv"
+      }
+    ]
+  }
+}

@@ -1,0 +1,4838 @@
+{
+  "pokemon": {
+    "slug": "dragonite",
+    "name": "Dragonite",
+    "baseName": "Dragonite",
+    "savedName": "Dragonite",
+    "form": "",
+    "types": [
+      "Dragon",
+      "Flying"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Dragonite.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png",
+    "stats": {
+      "hp": 166,
+      "attack": 154,
+      "defense": 115,
+      "spAttack": 120,
+      "spDefense": 120,
+      "speed": 100,
+      "total": 775
+    },
+    "rank": 35,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Protect",
+    "topItem": "Dragoninite",
+    "topTeammate": "Basculegion Male"
+  },
+  "moves": [
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "move",
+      "rank": 1,
+      "name": "Protect",
+      "percentage": 0.53,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "move",
+        "rank": 1,
+        "name": "Protect",
+        "percentage": "53.0%",
+        "percentage_value": 53,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "move",
+      "rank": 2,
+      "name": "Extreme Speed",
+      "percentage": 0.48,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "move",
+        "rank": 2,
+        "name": "Extreme Speed",
+        "percentage": "48.0%",
+        "percentage_value": 48,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "move",
+      "rank": 3,
+      "name": "Tailwind",
+      "percentage": 0.332,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "move",
+        "rank": 3,
+        "name": "Tailwind",
+        "percentage": "33.2%",
+        "percentage_value": 33.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "move",
+      "rank": 4,
+      "name": "Dragon Pulse",
+      "percentage": 0.313,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "move",
+        "rank": 4,
+        "name": "Dragon Pulse",
+        "percentage": "31.3%",
+        "percentage_value": 31.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "move",
+      "rank": 5,
+      "name": "Draco Meteor",
+      "percentage": 0.283,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "move",
+        "rank": 5,
+        "name": "Draco Meteor",
+        "percentage": "28.3%",
+        "percentage_value": 28.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "move",
+      "rank": 6,
+      "name": "Hurricane",
+      "percentage": 0.252,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "move",
+        "rank": 6,
+        "name": "Hurricane",
+        "percentage": "25.2%",
+        "percentage_value": 25.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "move",
+      "rank": 7,
+      "name": "Heat Wave",
+      "percentage": 0.195,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "move",
+        "rank": 7,
+        "name": "Heat Wave",
+        "percentage": "19.5%",
+        "percentage_value": 19.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "move",
+      "rank": 8,
+      "name": "Thunderbolt",
+      "percentage": 0.189,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "move",
+        "rank": 8,
+        "name": "Thunderbolt",
+        "percentage": "18.9%",
+        "percentage_value": 18.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "move",
+      "rank": 9,
+      "name": "Dragon Claw",
+      "percentage": 0.175,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "move",
+        "rank": 9,
+        "name": "Dragon Claw",
+        "percentage": "17.5%",
+        "percentage_value": 17.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "move",
+      "rank": 10,
+      "name": "Thunder",
+      "percentage": 0.119,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "move",
+        "rank": 10,
+        "name": "Thunder",
+        "percentage": "11.9%",
+        "percentage_value": 11.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Dragoninite",
+      "percentage": 0.587,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Dragoninite",
+        "percentage": "58.7%",
+        "percentage_value": 58.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "held_item",
+      "rank": 2,
+      "name": "White Herb",
+      "percentage": 0.084,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "held_item",
+        "rank": 2,
+        "name": "White Herb",
+        "percentage": "8.4%",
+        "percentage_value": 8.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Life Orb",
+      "percentage": 0.072,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Life Orb",
+        "percentage": "7.2%",
+        "percentage_value": 7.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Leftovers",
+      "percentage": 0.052,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Leftovers",
+        "percentage": "5.2%",
+        "percentage_value": 5.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Dragon Fang",
+      "percentage": 0.049,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Dragon Fang",
+        "percentage": "4.9%",
+        "percentage_value": 4.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Sitrus Berry",
+      "percentage": 0.026,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Sitrus Berry",
+        "percentage": "2.6%",
+        "percentage_value": 2.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Lum Berry",
+      "percentage": 0.024,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Lum Berry",
+        "percentage": "2.4%",
+        "percentage_value": 2.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Expert Belt",
+      "percentage": 0.018,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Expert Belt",
+        "percentage": "1.8%",
+        "percentage_value": 1.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Silk Scarf",
+      "percentage": 0.9,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Silk Scarf",
+        "percentage": "0.9%",
+        "percentage_value": 0.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Quick Claw",
+      "percentage": 0.9,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Quick Claw",
+        "percentage": "0.9%",
+        "percentage_value": 0.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "ability",
+      "rank": 1,
+      "name": "Multiscale",
+      "percentage": 0.767,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "ability",
+        "rank": 1,
+        "name": "Multiscale",
+        "percentage": "76.7%",
+        "percentage_value": 76.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "ability",
+      "rank": 2,
+      "name": "Inner Focus",
+      "percentage": 0.233,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "ability",
+        "rank": 2,
+        "name": "Inner Focus",
+        "percentage": "23.3%",
+        "percentage_value": 23.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Sneasler",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Sneasler",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Kingambit",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Kingambit",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Archaludon",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Archaludon",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Pelipper",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Pelipper",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Sylveon",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Sylveon",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Gholdengo",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Gholdengo",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Alolan Ninetales",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Alolan Ninetales",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Modest",
+      "percentage": 0.524,
+      "statUp": "Sp. Atk",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Modest",
+        "percentage": "52.4%",
+        "percentage_value": 52.4,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Adamant",
+      "percentage": 0.292,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Adamant",
+        "percentage": "29.2%",
+        "percentage_value": 29.2,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Timid",
+      "percentage": 0.089,
+      "statUp": "Speed",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Timid",
+        "percentage": "8.9%",
+        "percentage_value": 8.9,
+        "stat_up": "Speed",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Jolly",
+      "percentage": 0.029,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Jolly",
+        "percentage": "2.9%",
+        "percentage_value": 2.9,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Quiet",
+      "percentage": 0.018,
+      "statUp": "Sp. Atk",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Quiet",
+        "percentage": "1.8%",
+        "percentage_value": 1.8,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Mild",
+      "percentage": 0.6,
+      "statUp": "Sp. Atk",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Mild",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Hasty",
+      "percentage": 0.6,
+      "statUp": "Speed",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Hasty",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "Speed",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Brave",
+      "percentage": 0.6,
+      "statUp": "Attack",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Brave",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "Attack",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Calm",
+      "percentage": 0.5,
+      "statUp": "Sp. Def",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Calm",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "Sp. Def",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Impish",
+      "percentage": 0.4,
+      "statUp": "Defense",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Impish",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Defense",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.29,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "29.0%",
+        "percentage_value": 29,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.071,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "7.1%",
+        "percentage_value": 7.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 25,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 9
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.067,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "6.7%",
+        "percentage_value": 6.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.036,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "3.6%",
+        "percentage_value": 3.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 15,
+        "attack_points": 32,
+        "defense_points": 1,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 18
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.026,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "2.6%",
+        "percentage_value": 2.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 25,
+        "sp_def_points": 5,
+        "speed_points": 4
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.017,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "1.7%",
+        "percentage_value": 1.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 2
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.016,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "1.6%",
+        "percentage_value": 1.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 1,
+        "attack_points": 0,
+        "defense_points": 1,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Dragonite",
+      "position": 35,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.015,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Dragonite",
+        "column_position": 35,
+        "position": 35,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "1.5%",
+        "percentage_value": 1.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 31,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 3
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a5055f965724db9ded41c56-natsukivgc",
+      "name": "NatsukiVGC · Weekly Qualifier for RookideeVGC Grand Tourney",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Claw",
+            "Extreme Speed",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Weekly Qualifier for RookideeVGC Grand Tourney",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "NatsukiVGC",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a47c55e65724db9ded3b307-yegorushhka",
+      "name": "Yegorushhka · VGC Reg M-B Ingame  Tour",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Pulse",
+            "Heat Wave",
+            "Thunderbolt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Fairy Aura",
+          "moves": [
+            "Light of Ruin",
+            "Moonblast",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Dual Wingbeat",
+            "Flare Blitz",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Close Combat",
+            "Dire Claw",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.875,
+      "sampleCount": 8,
+      "tournament": "VGC Reg M-B Ingame  Tour",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Yegorushhka",
+      "record": "7-1-0"
+    },
+    {
+      "id": "6a47c55e65724db9ded3b307-primevoltzy",
+      "name": "PrimeVoltzy · VGC Reg M-B Ingame  Tour",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Protect",
+            "Leech Seed",
+            "Rage Powder",
+            "Overheat"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Unburden",
+          "moves": [
+            "Protect",
+            "Fake Out",
+            "Close Combat",
+            "Dire Claw"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Protect",
+            "Dragon Pulse",
+            "Hurricane",
+            "Extreme Speed"
+          ]
+        },
+        {
+          "slug": "espathra",
+          "name": "Espathra",
+          "item": "Sitrus Berry",
+          "ability": "Speed Boost",
+          "moves": [
+            "Protect",
+            "Lumina Crash",
+            "Calm Mind",
+            "Baton Pass"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sharp Beak",
+          "ability": "Drizzle",
+          "moves": [
+            "Rain Dance",
+            "Weather Ball",
+            "Hurricane",
+            "Wide Guard"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "VGC Reg M-B Ingame  Tour",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "PrimeVoltzy",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a4dbb9665724db9ded3ff83-primevoltzy",
+      "name": "PrimeVoltzy · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Protect",
+            "Leech Seed",
+            "Rage Powder",
+            "Overheat"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Unburden",
+          "moves": [
+            "Protect",
+            "Fake Out",
+            "Close Combat",
+            "Dire Claw"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Protect",
+            "Dragon Pulse",
+            "Hurricane",
+            "Extreme Speed"
+          ]
+        },
+        {
+          "slug": "espathra",
+          "name": "Espathra",
+          "item": "Sitrus Berry",
+          "ability": "Speed Boost",
+          "moves": [
+            "Protect",
+            "Lumina Crash",
+            "Calm Mind",
+            "Baton Pass"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sharp Beak",
+          "ability": "Drizzle",
+          "moves": [
+            "Rain Dance",
+            "Weather Ball",
+            "Hurricane",
+            "Wide Guard"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 1,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "PrimeVoltzy",
+      "record": "5-0-0"
+    },
+    {
+      "id": "6a4dbc1e063cb29d318e66e7-violetkoala",
+      "name": "violetkoala · The Grim Challenge #3 - Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "lopunny",
+          "name": "Lopunny",
+          "item": "Lopunnite",
+          "ability": "Cute Charm",
+          "moves": [
+            "Fake Out",
+            "Giga Impact",
+            "Close Combat",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Focus Sash",
+          "ability": "Adaptability",
+          "moves": [
+            "Aqua Jet",
+            "Liquidation",
+            "Last Respects",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Flash Cannon",
+            "Draco Meteor",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Weather Ball",
+            "Hurricane",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Quick Attack",
+            "Hyper Voice",
+            "Hyper Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Pulse",
+            "Hurricane",
+            "Ice Beam",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "The Grim Challenge #3 - Champions",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "violetkoala",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a3200c5e334c3c9befd8430-whimsicott",
+      "name": "Whimsicott · The Grand Champions Festival Encore",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Claw",
+            "Extreme Speed",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Poison Jab",
+            "Close Combat",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8125,
+      "sampleCount": 16,
+      "tournament": "The Grand Champions Festival Encore",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Whimsicott",
+      "record": "13-3-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-erichmr",
+      "name": "erichmr - Dragão/Lutador · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Dragon Pulse",
+            "Dragon Cheer",
+            "Tailwind",
+            "Air Slash"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Poison Jab",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragapult",
+          "name": "Dragapult",
+          "item": "Focus Sash",
+          "ability": "Infiltrator",
+          "moves": [
+            "Dragon Darts",
+            "Dragon Dance",
+            "Phantom Force",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Close Combat",
+            "Dire Claw",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Choice Scarf",
+          "ability": "Stamina",
+          "moves": [
+            "Flash Cannon",
+            "Draco Meteor",
+            "Thunderbolt",
+            "Snarl"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 8,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "erichmr - Dragão/Lutador",
+      "record": "6-2-0"
+    },
+    {
+      "id": "6a51f42365724db9ded43093-freemangordon",
+      "name": "FreemanGordon · Tenki's Cart Weekly #109 - Reg MB",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Claw",
+            "Extreme Speed",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "Tenki's Cart Weekly #109 - Reg MB",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "FreemanGordon",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a510fac063cb29d318e8c08-abhinav7354",
+      "name": "Abhinav7354 · SNT Reg M-B Tour #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Hex",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Focus Sash",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Taunt",
+            "Trop Kick",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Poison Touch",
+          "moves": [
+            "Fake Out",
+            "Poison Jab",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Aqua Jet",
+            "Flip Turn",
+            "Wave Crash",
+            "Last Respects"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Sitrus Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Fake Out",
+            "Will-O-Wisp",
+            "Thunder Wave",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Inner Focus",
+          "moves": [
+            "Extreme Speed",
+            "Dragon Claw",
+            "Low Kick",
+            "Tailwind"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "SNT Reg M-B Tour #3",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Abhinav7354",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a4f9758063cb29d318e79a9-choker",
+      "name": "Sở Tâm · Sky Pillar Saturday Showdown S8 #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Focus Sash",
+          "ability": "Drizzle",
+          "moves": [
+            "Tailwind",
+            "Protect",
+            "Weather Ball",
+            "Hurricane"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Protect",
+            "Flash Cannon",
+            "Dragon Pulse"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Life Orb",
+          "ability": "Swift Swim",
+          "moves": [
+            "Aqua Jet",
+            "Wave Crash",
+            "Protect",
+            "Last Respects"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Inner Focus",
+          "moves": [
+            "Hurricane",
+            "Weather Ball",
+            "Protect",
+            "Draco Meteor"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Psychic Fangs",
+            "Protect",
+            "Meteor Mash",
+            "Hammer Arm"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Roseli Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Light Screen",
+            "Reflect",
+            "Foul Play",
+            "Rain Dance"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 8,
+      "tournament": "Sky Pillar Saturday Showdown S8 #10",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Sở Tâm",
+      "record": "6-2-0"
+    },
+    {
+      "id": "6a4f9758063cb29d318e79a9-lthanh",
+      "name": "lthanh · Sky Pillar Saturday Showdown S8 #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Glimmoranite",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Power Gem",
+            "Sludge Bomb",
+            "Earth Power",
+            "Spiky Shield"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Occa Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragon Fang",
+          "ability": "Multiscale",
+          "moves": [
+            "Dragon Claw",
+            "Extreme Speed",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Darkest Lariat",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Focus Sash",
+          "ability": "Oblivious",
+          "moves": [
+            "Icicle Crash",
+            "High Horsepower",
+            "Ice Shard",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Life Orb",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Moonblast",
+            "Haze",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Sky Pillar Saturday Showdown S8 #10",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "lthanh",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a3854f7ceacae7d6441c118-samsmorkle",
+      "name": "SamSmorkle · PWC - Battle in the Colosseum #19 - Reg M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Last Respects",
+            "Wave Crash",
+            "Flip Turn",
+            "Psychic Fangs"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Trick Room",
+            "Rage Powder",
+            "Protect",
+            "Matcha Gotcha"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Ice Beam",
+            "Fake Out",
+            "Water Spout",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Chople Berry",
+          "ability": "Stalwart",
+          "moves": [
+            "Electro Shot",
+            "Aura Sphere",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Draco Meteor",
+            "Thunder",
+            "Ice Beam",
+            "Extreme Speed"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Focus Sash",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Tailwind",
+            "Wide Guard",
+            "Weather Ball"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "PWC - Battle in the Colosseum #19 - Reg M-B",
+      "placing": null,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "SamSmorkle",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a4685c383fd320299bd6675-dade",
+      "name": "Dade · Pokémon Champions #1 - (Floette Eternal Flower)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Toxic",
+            "Infestation",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Dragon Pulse",
+            "Heat Wave",
+            "Roost",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Sitrus Berry",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Foul Play",
+            "Light Screen",
+            "Reflect",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Giga Drain",
+            "Sludge Bomb",
+            "Leech Seed",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Hyper Beam",
+            "Quick Attack",
+            "Detect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 12,
+      "tournament": "Pokémon Champions #1 - (Floette Eternal Flower)",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Dade",
+      "record": "9-3-0"
+    },
+    {
+      "id": "6a4685c383fd320299bd6675-primevoltzy",
+      "name": "PrimeVoltzy · Pokémon Champions #1 - (Floette Eternal Flower)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Protect",
+            "Leech Seed",
+            "Rage Powder",
+            "Overheat"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Unburden",
+          "moves": [
+            "Protect",
+            "Fake Out",
+            "Close Combat",
+            "Dire Claw"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Protect",
+            "Dragon Pulse",
+            "Hurricane",
+            "Extreme Speed"
+          ]
+        },
+        {
+          "slug": "espathra",
+          "name": "Espathra",
+          "item": "Sitrus Berry",
+          "ability": "Speed Boost",
+          "moves": [
+            "Protect",
+            "Lumina Crash",
+            "Calm Mind",
+            "Baton Pass"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sharp Beak",
+          "ability": "Drizzle",
+          "moves": [
+            "Rain Dance",
+            "Weather Ball",
+            "Hurricane",
+            "Wide Guard"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "Pokémon Champions #1 - (Floette Eternal Flower)",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "PrimeVoltzy",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a55808a232a1a55ee10be16-kalimbalin",
+      "name": "Tomás Campos · 𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Draco Meteor",
+            "Thunderbolt",
+            "Tailwind",
+            "Haze"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Giga Drain",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Focus Sash",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Power Gem",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Moonblast",
+            "Hyper Voice",
+            "Quick Attack",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "paldean-tauros-aqua-breed",
+          "name": "Paldean Tauros Aqua Breed",
+          "item": "Choice Scarf",
+          "ability": "Intimidate",
+          "moves": [
+            "Stone Edge",
+            "Raging Bull",
+            "Wave Crash",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Tomás Campos",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a56249a232a1a55ee10c29a-jotta",
+      "name": "Jotta · Mesa 1 Champions Séries #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Torrent",
+          "moves": [
+            "Water Spout",
+            "Shell Smash",
+            "Fake Out",
+            "Dark Pulse"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Focus Sash",
+          "ability": "Drizzle",
+          "moves": [
+            "Tailwind",
+            "Protect",
+            "Hurricane",
+            "Weather Ball"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Draco Meteor",
+            "Protect",
+            "Flash Cannon"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Last Respects",
+            "Wave Crash",
+            "Flip Turn",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Diamond Storm",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Draco Meteor",
+            "Thunder",
+            "Hurricane",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Mesa 1 Champions Séries #2",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Jotta",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a5162b8063cb29d318e9199-enzibu",
+      "name": "Enzibu · MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Protect",
+            "Helping Hand",
+            "Psychic",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Protect",
+            "Sucker Punch",
+            "Play Rough",
+            "Swords Dance"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Flip Turn"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Focus Sash",
+          "ability": "Snow Warning",
+          "moves": [
+            "Protect",
+            "Blizzard",
+            "Freeze-Dry",
+            "Moonblast"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Inner Focus",
+          "moves": [
+            "Protect",
+            "Dragon Pulse",
+            "Thunder",
+            "Heat Wave"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Enzibu",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a4d303a65724db9ded3f61e-gmaddox",
+      "name": "Gmaddox · LPP On-line",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Flash Cannon",
+            "Protect",
+            "Electro Shot",
+            "Dragon Pulse"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Tailwind",
+            "Weather Ball",
+            "Hurricane",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Roseli Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Reflect",
+            "Light Screen",
+            "will-o-wisp",
+            "Rain Dance"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Flip Turn",
+            "Last Respects",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Inner Focus",
+          "moves": [
+            "Flamethrower",
+            "Hurricane",
+            "Draco Meteor",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Rage Powder",
+            "Matcha Gotcha",
+            "Life Dew",
+            "Trick Room"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "LPP On-line",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Gmaddox",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a42222fc87cd9ff0a31292b-ronron",
+      "name": "Ronald Cariño · King of Champions III",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Protect",
+            "Fake Out",
+            "Dire Claw",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Protect",
+            "Shell Smash",
+            "Water Spout",
+            "Water Pulse"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Fake Out",
+            "Scary Face",
+            "Reflect",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Life Orb",
+          "ability": "Keen Eye",
+          "moves": [
+            "Protect",
+            "Weather Ball",
+            "Hurricane",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Protect",
+            "Trick Room",
+            "Rage Powder",
+            "Matcha Gotcha"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Protect",
+            "Hurricane",
+            "Dragon Pulse",
+            "Weather Ball"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "King of Champions III",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Ronald Cariño",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a54c9d3232a1a55ee10b346-srroxaskun",
+      "name": "SrRoxasKun · Intimidators Champions Challenge #27 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Sand Rush",
+          "moves": [
+            "Iron Head",
+            "Protect",
+            "Rock Slide",
+            "Earthquake"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Aqua Jet",
+            "Wave Crash",
+            "Last Respects",
+            "Flip Turn"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Solar Beam",
+            "Weather Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Protect",
+            "Dragon Pulse",
+            "Weather Ball",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "klefki",
+          "name": "Klefki",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Trick Room",
+            "Light Screen",
+            "Reflect",
+            "Dazzling Gleam"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Life Orb",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Protect",
+            "Brick Break"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Intimidators Champions Challenge #27 REG M-B",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "SrRoxasKun",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a54c9156355385f44dd38cd-gmaddox",
+      "name": "Gmaddox · Intimidators Champions Challenge #26 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Flash Cannon",
+            "Protect",
+            "Electro Shot",
+            "Dragon Pulse"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Tailwind",
+            "Weather Ball",
+            "Hurricane",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Roseli Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Reflect",
+            "Light Screen",
+            "will-o-wisp",
+            "Rain Dance"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Flip Turn",
+            "Last Respects",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Inner Focus",
+          "moves": [
+            "Flamethrower",
+            "Hurricane",
+            "Draco Meteor",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Rage Powder",
+            "Matcha Gotcha",
+            "Life Dew",
+            "Trick Room"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "Intimidators Champions Challenge #26 REG M-B",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Gmaddox",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a5497ab232a1a55ee10b2b8-altkyle",
+      "name": "Altkyle · HeroicTitan’s VGC Battle Arena",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Pulse",
+            "Flamethrower",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Flip Turn"
+          ]
+        },
+        {
+          "slug": "scizor",
+          "name": "Scizor",
+          "item": "Scizorite",
+          "ability": "Technician",
+          "moves": [
+            "Bullet Punch",
+            "Close Combat",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Chople Berry",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Aura Sphere",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Focus Sash",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Weather Ball",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "HeroicTitan’s VGC Battle Arena",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Altkyle",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a562eb26355385f44dd48d3-ele2317",
+      "name": "Ele2317 · Dark Storm Team testing #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Fake Out",
+            "Poison Jab",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Life Dew",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Protect",
+            "Hurricane",
+            "Extreme Speed",
+            "Draco Meteor"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Roost",
+            "Tailwind",
+            "Brave Bird"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Telepathy",
+          "moves": [
+            "Hyper Voice",
+            "Psychic",
+            "Trick Room",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 3,
+      "tournament": "Dark Storm Team testing #10",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Ele2317",
+      "record": "0-3-0"
+    },
+    {
+      "id": "6a57380e6355385f44dd5183-nirvana",
+      "name": "NIRVANA · Champions Tour LEPE M-B #9",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "hisuian-typhlosion",
+          "name": "Hisuian Typhlosion",
+          "item": "Choice Scarf",
+          "ability": "Blaze",
+          "moves": [
+            "Eruption",
+            "Heat Wave",
+            "Infernal Parade",
+            "Solar Beam"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Solar Power",
+          "moves": [
+            "Heat Wave",
+            "Solar Beam",
+            "Focus Blast",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Lum Berry",
+          "ability": "Multiscale",
+          "moves": [
+            "Dragon Dance",
+            "Outrage",
+            "Rock Slide",
+            "Extreme Speed"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Focus Sash",
+          "ability": "Speed Boost",
+          "moves": [
+            "Protect",
+            "Flare Blitz",
+            "Close Combat",
+            "Coaching"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Life Orb",
+          "ability": "Pixilate",
+          "moves": [
+            "Quick Attack",
+            "Hyper Voice",
+            "Protect",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Quick Claw",
+          "ability": "Intimidate",
+          "moves": [
+            "Bulk Up",
+            "Fake Out",
+            "Knock Off",
+            "Drain Punch"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.25,
+      "sampleCount": 4,
+      "tournament": "Champions Tour LEPE M-B #9",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "NIRVANA",
+      "record": "1-3-0"
+    },
+    {
+      "id": "6a4f486e063cb29d318e781e-lifun",
+      "name": "Lifun · Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "absol",
+          "name": "Absol",
+          "item": "Focus Sash",
+          "ability": "Super Luck",
+          "moves": [
+            "Night Slash",
+            "Psycho Cut",
+            "Focus Energy",
+            "Perish Song"
+          ]
+        },
+        {
+          "slug": "gourgeist",
+          "name": "Gourgeist",
+          "item": "Leftovers",
+          "ability": "Frisk",
+          "moves": [
+            "Poltergeist",
+            "Power Whip",
+            "Phantom Force",
+            "Facade"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Draco Meteor",
+            "Fire Blast",
+            "Ice Beam",
+            "Extreme Speed"
+          ]
+        },
+        {
+          "slug": "empoleon",
+          "name": "Empoleon",
+          "item": "King's Rock",
+          "ability": "Competitive",
+          "moves": [
+            "Hydro Cannon",
+            "Stealth Rock",
+            "Yawn"
+          ]
+        },
+        {
+          "slug": "machamp",
+          "name": "Machamp",
+          "item": "Quick Claw",
+          "ability": "No Guard",
+          "moves": [
+            "Dynamic Punch",
+            "Stone Edge",
+            "Ice Punch",
+            "Bullet Punch"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Sitrus Berry",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Iron Head",
+            "Body Press",
+            "Iron Defense",
+            "Roost"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Lifun",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a4f486e063cb29d318e781e-dumbo5spider",
+      "name": "Dumbo5spider · Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Damp Rock",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Wide Guard",
+            "Tailwind",
+            "Weather Ball"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Hurricane",
+            "Draco Meteor",
+            "Tailwind",
+            "Thunder"
+          ]
+        },
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Torrent",
+          "moves": [
+            "Wave Crash",
+            "High Horsepower",
+            "Protect",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Dragon Pulse",
+            "Electro Shot",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Last Respects",
+            "Wave Crash",
+            "Aqua Jet",
+            "Phantom Force"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Sitrus Berry",
+          "ability": "Competitive",
+          "moves": [
+            "Scald",
+            "Weather Ball",
+            "Blizzard",
+            "Muddy Water"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Dumbo5spider",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a392e4ac87cd9ff0a30d0b0-viophoenixvgc",
+      "name": "VioPhoenixVGC · Alpensee Tour (Reg M-B) #66",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Claw",
+            "Extreme Speed",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8333333333333334,
+      "sampleCount": 12,
+      "tournament": "Alpensee Tour (Reg M-B) #66",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "VioPhoenixVGC",
+      "record": "10-2-0"
+    },
+    {
+      "id": "6a392e4ac87cd9ff0a30d0b0-trevyah",
+      "name": "trevYah · Alpensee Tour (Reg M-B) #66",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Claw",
+            "Extreme Speed",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Swords Dance",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7272727272727273,
+      "sampleCount": 11,
+      "tournament": "Alpensee Tour (Reg M-B) #66",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "trevYah",
+      "record": "8-3-0"
+    },
+    {
+      "id": "6a50864165724db9ded41db6-kyotokugt",
+      "name": "KyotokuGT · 4fun sabadín",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Protect",
+            "Iron Head",
+            "Bullet Punch",
+            "Psychic Fangs"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Protect",
+            "Rock Slide",
+            "Knock Off",
+            "Dragon Dance"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Sand Rush",
+          "moves": [
+            "Protect",
+            "High Horsepower",
+            "Iron Head",
+            "Swords Dance"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Protect",
+            "Helping Hand",
+            "Psychic",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Multiscale",
+          "moves": [
+            "Protect",
+            "Tailwind",
+            "Dragon Claw",
+            "Extreme Speed"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Choice Scarf",
+          "ability": "Snow Cloak",
+          "moves": [
+            "Aurora Veil",
+            "Blizzard",
+            "Freeze-Dry",
+            "Dazzling Gleam"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "4fun sabadín",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "KyotokuGT",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a50864165724db9ded41db6-jonajotajenner",
+      "name": "JonaJotaJenner · 4fun sabadín",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Shell Bell",
+          "ability": "Pixilate",
+          "moves": [
+            "Weather Ball",
+            "Hyper Beam",
+            "Hyper Voice",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "White Herb",
+          "ability": "Multiscale",
+          "moves": [
+            "Draco Meteor",
+            "Hurricane",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Kangaskhanite",
+          "ability": "Scrappy",
+          "moves": [
+            "Fake Out",
+            "Protect",
+            "Crunch",
+            "Low Kick"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Life Orb",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Shadow Ball",
+            "Trick Room",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Leftovers",
+          "ability": "Intimidate",
+          "moves": [
+            "Throat Chop",
+            "Parting Shot",
+            "Eruption",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Stone Edge",
+            "Crunch",
+            "Stomping Tantrum"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.2,
+      "sampleCount": 5,
+      "tournament": "4fun sabadín",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "JonaJotaJenner",
+      "record": "1-4-0"
+    },
+    {
+      "id": "6a519dad65724db9ded42bc9-soralex",
+      "name": "Soralex · [PR] Mt. Moon Champions VGC Weekly #6 2026",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Tailwind",
+            "Protect",
+            "Dazzling Gleam",
+            "Taunt"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Leftovers",
+          "ability": "Defiant",
+          "moves": [
+            "Rage Fist",
+            "Drain Punch",
+            "Gunk Shot",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Muscle Band",
+          "ability": "Sand Veil",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Multiscale",
+          "moves": [
+            "Dragon Pulse",
+            "Air Slash",
+            "Heat Wave",
+            "Extreme Speed"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Solar Power",
+          "moves": [
+            "Protect",
+            "Scorching Sands",
+            "Heat Wave",
+            "Dragon Pulse"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Sitrus Berry",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sleep Powder",
+            "Giga Drain",
+            "Sludge Bomb",
+            "Weather Ball"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.3333333333333333,
+      "sampleCount": 3,
+      "tournament": "[PR] Mt. Moon Champions VGC Weekly #6 2026",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Soralex",
+      "record": "1-2-0"
+    }
+  ],
+  "movePool": [
+    "Aerial Ace",
+    "Agility",
+    "Air Cutter",
+    "Air Slash",
+    "Aqua Jet",
+    "Aqua Tail",
+    "Blizzard",
+    "Body Press",
+    "Body Slam",
+    "Breaking Swipe",
+    "Brick Break",
+    "Brutal Swing",
+    "Bulldoze",
+    "Chilling Water",
+    "Dive",
+    "Draco Meteor",
+    "Dragon Cheer",
+    "Dragon Claw",
+    "Dragon Dance",
+    "Dragon Pulse",
+    "Dragon Rush",
+    "Dragon Tail",
+    "Earthquake",
+    "Endure",
+    "Extreme Speed",
+    "Facade",
+    "Fire Blast",
+    "Fire Punch",
+    "Fire Spin",
+    "Flamethrower",
+    "Fling",
+    "Fly",
+    "Focus Blast",
+    "Focus Punch",
+    "Giga Impact",
+    "Haze",
+    "Heat Wave",
+    "Helping Hand",
+    "Hurricane",
+    "Hydro Pump",
+    "Hyper Beam",
+    "Ice Beam",
+    "Ice Punch",
+    "Ice Spinner",
+    "Icy Wind",
+    "Iron Head",
+    "Iron Tail",
+    "Light Screen",
+    "Low Kick",
+    "Mega Kick",
+    "Outrage",
+    "Protect",
+    "Rain Dance",
+    "Rest",
+    "Roar",
+    "Rock Slide",
+    "Rock Tomb",
+    "Roost",
+    "Round",
+    "Safeguard",
+    "Sandstorm",
+    "Scale Shot",
+    "Scary Face",
+    "Sleep Talk",
+    "Snore",
+    "Snowscape",
+    "Steel Wing",
+    "Stomping Tantrum",
+    "Stone Edge",
+    "Substitute",
+    "Sunny Day",
+    "Superpower",
+    "Surf",
+    "Tailwind",
+    "Thunder",
+    "Thunder Punch",
+    "Thunder Wave",
+    "Thunderbolt",
+    "Water Pulse",
+    "Waterfall",
+    "Weather Ball",
+    "Whirlwind",
+    "Wrap"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Dragonite",
+      "base_name": "Dragonite",
+      "saved_name": "Dragonite",
+      "types": "Dragon/Flying",
+      "abilities": "Inner Focus|Multiscale",
+      "image_path": "pokemon_champions_assets\\pokemon\\Dragonite.png",
+      "form": "",
+      "hp": 166,
+      "atk": 154,
+      "def": 115,
+      "spa": 120,
+      "spd": 120,
+      "spe": 100,
+      "total": 775
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "move",
+          "rank": 1,
+          "name": "Protect",
+          "percentage": "53.0%",
+          "percentage_value": 53,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Dragoninite",
+          "percentage": "58.7%",
+          "percentage_value": 58.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Modest",
+          "percentage": "52.4%",
+          "percentage_value": 52.4,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        "stat_points": {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "29.0%",
+          "percentage_value": 29,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        "ability": {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "ability",
+          "rank": 1,
+          "name": "Multiscale",
+          "percentage": "76.7%",
+          "percentage_value": 76.7,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Protect",
+          "Extreme Speed",
+          "Tailwind",
+          "Dragon Pulse",
+          "Draco Meteor",
+          "Hurricane",
+          "Heat Wave",
+          "Thunderbolt",
+          "Dragon Claw",
+          "Thunder"
+        ],
+        "held_item": [
+          "Dragoninite",
+          "White Herb",
+          "Life Orb",
+          "Leftovers",
+          "Dragon Fang",
+          "Sitrus Berry",
+          "Lum Berry",
+          "Expert Belt",
+          "Silk Scarf",
+          "Quick Claw"
+        ],
+        "teammate": [
+          "Basculegion Male",
+          "Sneasler",
+          "Kingambit",
+          "Archaludon",
+          "Incineroar",
+          "Pelipper",
+          "Sylveon",
+          "Gholdengo",
+          "Sinistcha",
+          "Alolan Ninetales"
+        ],
+        "stat_alignment": [
+          "Modest",
+          "Adamant",
+          "Timid",
+          "Jolly",
+          "Quiet",
+          "Mild",
+          "Hasty",
+          "Brave",
+          "Calm",
+          "Impish"
+        ],
+        "stat_points": [
+          "HP 2 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 32",
+          "HP 25 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 9",
+          "HP 2 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 32",
+          "HP 15 / Atk 32 / Def 1 / SpA 0 / SpD 0 / Spe 18",
+          "HP 32 / Atk 0 / Def 0 / SpA 25 / SpD 5 / Spe 4",
+          "HP 32 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 2",
+          "HP 1 / Atk 0 / Def 1 / SpA 32 / SpD 0 / Spe 32",
+          "HP 31 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 3"
+        ],
+        "ability": [
+          "Multiscale",
+          "Inner Focus"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "move",
+          "rank": 1,
+          "name": "Protect",
+          "percentage": "53.0%",
+          "percentage_value": 53,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "move",
+          "rank": 2,
+          "name": "Extreme Speed",
+          "percentage": "48.0%",
+          "percentage_value": 48,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "move",
+          "rank": 3,
+          "name": "Tailwind",
+          "percentage": "33.2%",
+          "percentage_value": 33.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "move",
+          "rank": 4,
+          "name": "Dragon Pulse",
+          "percentage": "31.3%",
+          "percentage_value": 31.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "move",
+          "rank": 5,
+          "name": "Draco Meteor",
+          "percentage": "28.3%",
+          "percentage_value": 28.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "move",
+          "rank": 6,
+          "name": "Hurricane",
+          "percentage": "25.2%",
+          "percentage_value": 25.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "move",
+          "rank": 7,
+          "name": "Heat Wave",
+          "percentage": "19.5%",
+          "percentage_value": 19.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "move",
+          "rank": 8,
+          "name": "Thunderbolt",
+          "percentage": "18.9%",
+          "percentage_value": 18.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "move",
+          "rank": 9,
+          "name": "Dragon Claw",
+          "percentage": "17.5%",
+          "percentage_value": 17.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "move",
+          "rank": 10,
+          "name": "Thunder",
+          "percentage": "11.9%",
+          "percentage_value": 11.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Dragoninite",
+          "percentage": "58.7%",
+          "percentage_value": 58.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "held_item",
+          "rank": 2,
+          "name": "White Herb",
+          "percentage": "8.4%",
+          "percentage_value": 8.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Life Orb",
+          "percentage": "7.2%",
+          "percentage_value": 7.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Leftovers",
+          "percentage": "5.2%",
+          "percentage_value": 5.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Dragon Fang",
+          "percentage": "4.9%",
+          "percentage_value": 4.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Sitrus Berry",
+          "percentage": "2.6%",
+          "percentage_value": 2.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Lum Berry",
+          "percentage": "2.4%",
+          "percentage_value": 2.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Expert Belt",
+          "percentage": "1.8%",
+          "percentage_value": 1.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Silk Scarf",
+          "percentage": "0.9%",
+          "percentage_value": 0.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Quick Claw",
+          "percentage": "0.9%",
+          "percentage_value": 0.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Sneasler",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Archaludon",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Pelipper",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Sylveon",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Gholdengo",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Alolan Ninetales",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Modest",
+          "percentage": "52.4%",
+          "percentage_value": 52.4,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Adamant",
+          "percentage": "29.2%",
+          "percentage_value": 29.2,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Timid",
+          "percentage": "8.9%",
+          "percentage_value": 8.9,
+          "stat_up": "Speed",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Jolly",
+          "percentage": "2.9%",
+          "percentage_value": 2.9,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Quiet",
+          "percentage": "1.8%",
+          "percentage_value": 1.8,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Mild",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Hasty",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "Speed",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Brave",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "Attack",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Calm",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "Sp. Def",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Impish",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "29.0%",
+          "percentage_value": 29,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "7.1%",
+          "percentage_value": 7.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 25,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 9
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "6.7%",
+          "percentage_value": 6.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "3.6%",
+          "percentage_value": 3.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 15,
+          "attack_points": 32,
+          "defense_points": 1,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 18
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "2.6%",
+          "percentage_value": 2.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 25,
+          "sp_def_points": 5,
+          "speed_points": 4
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "1.7%",
+          "percentage_value": 1.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 2
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "1.6%",
+          "percentage_value": 1.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 1,
+          "attack_points": 0,
+          "defense_points": 1,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "1.5%",
+          "percentage_value": 1.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 31,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 3
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "ability",
+          "rank": 1,
+          "name": "Multiscale",
+          "percentage": "76.7%",
+          "percentage_value": 76.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Dragonite",
+          "column_position": 35,
+          "position": 35,
+          "category": "ability",
+          "rank": 2,
+          "name": "Inner Focus",
+          "percentage": "23.3%",
+          "percentage_value": 23.3,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Dragonite.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Dragonite.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Dragonite.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Dragonite.csv"
+      }
+    ]
+  }
+}

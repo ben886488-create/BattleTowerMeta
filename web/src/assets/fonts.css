@@ -29,19 +29,22 @@
 
 :root{
   --font-en: "Anton", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-  --font-body: "Inter", "Geist", "IBM Plex Sans", "Source Han Sans", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  --font-body: "Source Han Sans", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
   --font-zh: var(--font-body);
   --font-sans: var(--font-body);
   --font-mono: "JetBrains Mono", "IBM Plex Mono", "Geist Mono", "Roboto Mono", "D-DIN", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --font-num: "D-DIN Condensed", "D-DIN", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --font-label: var(--font-mono);
-  --font-display-en: "Cormorant Garamond", "Instrument Serif", "Playfair Display", "Libre Baskerville", Georgia, serif;
+  --font-label: var(--font-num);
+  --font-display-en: "Cormorant Garamond", "Noto Serif TC", "Songti TC", "PMingLiU", Georgia, serif;
   --font-display-cn: "Noto Serif TC", "Source Han Serif TC", "Songti TC", "PMingLiU", serif;
   --font-display: var(--font-display-en);
 
-  --type-display-size: clamp(72px, 7vw, 160px);
-  --type-display-section-size: clamp(30px, 3vw, 58px);
-  --type-display-line-height: 0.9;
+  --type-display-size: clamp(67px, 9vw, 141px);
+  --type-page-size: clamp(43px, 5.2vw, 75px);
+  --type-card-size: clamp(27px, 2.6vw, 38px);
+  --type-section-size: clamp(16px, 1.4vw, 20px);
+  --type-display-section-size: var(--type-card-size);
+  --type-display-line-height: 0.92;
   --type-display-tracking: -0.035em;
   --type-label-size: 10px;
   --type-label-tracking: 0.2em;
@@ -69,13 +72,13 @@
 
 .type-display-cn {
   font-family: var(--font-display-cn);
-  font-style: normal;
+  font-style: oblique 8deg;
   font-weight: 600;
   letter-spacing: -0.025em;
 }
 
 .type-label {
-  color: #94a3b8;
+  color: var(--muted);
   font-family: var(--font-label);
   font-size: var(--type-label-size);
   font-weight: 700;
@@ -90,7 +93,7 @@
 }
 
 .type-metric {
-  color: #fff;
+  color: var(--text);
   font-family: var(--font-num);
   font-size: var(--type-metric-size);
   font-variant-numeric: tabular-nums;
@@ -109,4 +112,13 @@
 
 .type-muted {
   color: var(--muted);
+}
+
+@media (max-width: 760px) {
+  :root {
+    --type-display-size: clamp(54px, 14vw, 72px);
+    --type-page-size: clamp(42px, 11vw, 64px);
+    --type-card-size: clamp(26px, 7vw, 34px);
+    --type-section-size: 18px;
+  }
 }

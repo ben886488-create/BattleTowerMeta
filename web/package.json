@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "node scripts/prepare-card-images.mjs && vite-ssg build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sync:champions": "tsx scripts/sync-champions-data.ts",
+    "test:speed": "tsx --test src/lib/champions/speed.test.ts"
   },
   "dependencies": {
+    "@unhead/vue": "^2.1.4",
     "@supabase/supabase-js": "^2.101.1",
     "flag-icons": "^7.5.0",
     "html-to-image": "^1.11.13",
@@ -22,6 +25,7 @@
     "@types/node": "^24.10.1",
     "@vitejs/plugin-vue": "^6.0.2",
     "@vue/tsconfig": "^0.8.1",
+    "tsx": "^4.20.6",
     "typescript": "~5.9.3",
     "vite": "^7.3.1",
     "vue-tsc": "^3.1.5"

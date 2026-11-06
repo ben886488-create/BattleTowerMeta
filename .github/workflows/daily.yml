@@ -43,12 +43,15 @@ jobs:
           UNLIMITED_DAYS: "false"
           DAYS_BACK: "30"
           MIN_PLAYERS: "64"
+          # Refresh existing recent events as well as new IDs. A tournament may first be
+          # discovered before its standings and pairings are final.
           REFRESH_RECENT: "true"
           FULL_REBUILD: "false"
         run: |
           set -e
           python scripts/fetch_raw_data.py
           python scripts/process_data.py
+          python scripts/build_multideck_views.py
           python scripts/build_precomputed_views.py
           python scripts/build_tournament_pages.py
           python scripts/extract_tournament_players.py
@@ -62,8 +65,13 @@ jobs:
           git add -- \
             web/public/data/tournaments.json \
             web/public/data/upcoming_tournaments.json \
-            web/public/data/excluded_tournaments.json \
+            web/public/data/multideck/tournaments.json \
             web/public/data/raw
+
+          if [ -e web/public/data/excluded_tournaments.json ] || \
+             git ls-files --error-unmatch web/public/data/excluded_tournaments.json >/dev/null 2>&1; then
+            git add -A -- web/public/data/excluded_tournaments.json
+          fi
 
           if git diff --cached --quiet; then
             echo "No source data changes to commit."

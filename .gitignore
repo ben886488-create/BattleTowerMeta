@@ -1,4 +1,14 @@
 /scripts/web/src/data/raw
 /web/src/data
+!/web/src/data/
+!/web/src/data/champions/
+!/web/src/data/champions/**
 /docs/*
 !/docs/CNAME
+
+# Local IDE and generated QA artifacts
+/.vs/
+/output/
+/.playwright-cli/
+**/__pycache__/
+*.py[cod]

@@ -368,6 +368,7 @@ import {
   loadTournamentPairings,
   loadTournamentStandings,
 } from "../lib/publicData";
+import { routeLang as getRouteLang } from "../lib/siteI18n";
 
 const DECK_ROWS_PER_PAGE = 20;
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -622,7 +623,7 @@ type MessageKey = keyof typeof messages.en;
 const route = useRoute();
 
 const locale = computed<Locale>(() => {
-  return String(route.path).split("/")[1] === "en" ? "en" : "zh";
+  return getRouteLang(route);
 });
 
 function t(key: MessageKey, params?: Record<string, string | number>) {
@@ -637,8 +638,9 @@ function t(key: MessageKey, params?: Record<string, string | number>) {
 
 function deckProfileTo(deckKey: string) {
   return {
-    path: `/${locale.value}/top-decks/${encodeURIComponent(deckKey)}`,
+    path: `/pocket/decks/${encodeURIComponent(deckKey)}`,
     query: {
+      lang: locale.value === "en" ? "en" : undefined,
       time: filters.time,
       set: filters.set,
       topCut: filters.topCut,

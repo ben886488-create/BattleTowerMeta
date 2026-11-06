@@ -1,0 +1,2549 @@
+{
+  "pokemon": {
+    "slug": "tinkaton",
+    "name": "Tinkaton",
+    "baseName": "Tinkaton",
+    "savedName": "Tinkaton",
+    "form": "",
+    "types": [
+      "Fairy",
+      "Steel"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Tinkaton.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/959.png",
+    "stats": {
+      "hp": 160,
+      "attack": 95,
+      "defense": 97,
+      "spAttack": 90,
+      "spDefense": 125,
+      "speed": 114,
+      "total": 681
+    },
+    "rank": 82,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Gigaton Hammer",
+    "topItem": "Shuca Berry",
+    "topTeammate": "Incineroar"
+  },
+  "moves": [
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "move",
+      "rank": 1,
+      "name": "Gigaton Hammer",
+      "percentage": 0.981,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "move",
+        "rank": 1,
+        "name": "Gigaton Hammer",
+        "percentage": "98.1%",
+        "percentage_value": 98.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "move",
+      "rank": 2,
+      "name": "Fake Out",
+      "percentage": 0.932,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "move",
+        "rank": 2,
+        "name": "Fake Out",
+        "percentage": "93.2%",
+        "percentage_value": 93.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "move",
+      "rank": 3,
+      "name": "Play Rough",
+      "percentage": 0.566,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "move",
+        "rank": 3,
+        "name": "Play Rough",
+        "percentage": "56.6%",
+        "percentage_value": 56.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "move",
+      "rank": 4,
+      "name": "Protect",
+      "percentage": 0.502,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "move",
+        "rank": 4,
+        "name": "Protect",
+        "percentage": "50.2%",
+        "percentage_value": 50.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "move",
+      "rank": 5,
+      "name": "Encore",
+      "percentage": 0.296,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "move",
+        "rank": 5,
+        "name": "Encore",
+        "percentage": "29.6%",
+        "percentage_value": 29.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "move",
+      "rank": 6,
+      "name": "Feint",
+      "percentage": 0.102,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "move",
+        "rank": 6,
+        "name": "Feint",
+        "percentage": "10.2%",
+        "percentage_value": 10.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "move",
+      "rank": 7,
+      "name": "Knock Off",
+      "percentage": 0.09,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "move",
+        "rank": 7,
+        "name": "Knock Off",
+        "percentage": "9.0%",
+        "percentage_value": 9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "move",
+      "rank": 8,
+      "name": "Ice Hammer",
+      "percentage": 0.076,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "move",
+        "rank": 8,
+        "name": "Ice Hammer",
+        "percentage": "7.6%",
+        "percentage_value": 7.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "move",
+      "rank": 9,
+      "name": "Helping Hand",
+      "percentage": 0.072,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "move",
+        "rank": 9,
+        "name": "Helping Hand",
+        "percentage": "7.2%",
+        "percentage_value": 7.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "move",
+      "rank": 10,
+      "name": "Wood Hammer",
+      "percentage": 0.067,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "move",
+        "rank": 10,
+        "name": "Wood Hammer",
+        "percentage": "6.7%",
+        "percentage_value": 6.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Shuca Berry",
+      "percentage": 0.187,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Shuca Berry",
+        "percentage": "18.7%",
+        "percentage_value": 18.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Sitrus Berry",
+      "percentage": 0.137,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Sitrus Berry",
+        "percentage": "13.7%",
+        "percentage_value": 13.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Occa Berry",
+      "percentage": 0.132,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Occa Berry",
+        "percentage": "13.2%",
+        "percentage_value": 13.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Metal Coat",
+      "percentage": 0.108,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Metal Coat",
+        "percentage": "10.8%",
+        "percentage_value": 10.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Focus Sash",
+      "percentage": 0.098,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Focus Sash",
+        "percentage": "9.8%",
+        "percentage_value": 9.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Leftovers",
+      "percentage": 0.091,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Leftovers",
+        "percentage": "9.1%",
+        "percentage_value": 9.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Life Orb",
+      "percentage": 0.058,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Life Orb",
+        "percentage": "5.8%",
+        "percentage_value": 5.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Muscle Band",
+      "percentage": 0.027,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Muscle Band",
+        "percentage": "2.7%",
+        "percentage_value": 2.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Quick Claw",
+      "percentage": 0.026,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Quick Claw",
+        "percentage": "2.6%",
+        "percentage_value": 2.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Expert Belt",
+      "percentage": 0.022,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Expert Belt",
+        "percentage": "2.2%",
+        "percentage_value": 2.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "ability",
+      "rank": 1,
+      "name": "Mold Breaker",
+      "percentage": 0.828,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "ability",
+        "rank": 1,
+        "name": "Mold Breaker",
+        "percentage": "82.8%",
+        "percentage_value": 82.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "ability",
+      "rank": 2,
+      "name": "Own Tempo",
+      "percentage": 0.152,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "ability",
+        "rank": 2,
+        "name": "Own Tempo",
+        "percentage": "15.2%",
+        "percentage_value": 15.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "ability",
+      "rank": 3,
+      "name": "Pickpocket",
+      "percentage": 0.02,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "ability",
+        "rank": 3,
+        "name": "Pickpocket",
+        "percentage": "2.0%",
+        "percentage_value": 2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Gengar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Gengar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Whimsicott",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Whimsicott",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Sableye",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Sableye",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Farigiraf",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Farigiraf",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Charizard",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Charizard",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Tyranitar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Tyranitar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Adamant",
+      "percentage": 0.458,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Adamant",
+        "percentage": "45.8%",
+        "percentage_value": 45.8,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Jolly",
+      "percentage": 0.353,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Jolly",
+        "percentage": "35.3%",
+        "percentage_value": 35.3,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Brave",
+      "percentage": 0.054,
+      "statUp": "Attack",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Brave",
+        "percentage": "5.4%",
+        "percentage_value": 5.4,
+        "stat_up": "Attack",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Impish",
+      "percentage": 0.053,
+      "statUp": "Defense",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Impish",
+        "percentage": "5.3%",
+        "percentage_value": 5.3,
+        "stat_up": "Defense",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Careful",
+      "percentage": 0.049,
+      "statUp": "Sp. Def",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Careful",
+        "percentage": "4.9%",
+        "percentage_value": 4.9,
+        "stat_up": "Sp. Def",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Lonely",
+      "percentage": 0.7,
+      "statUp": "Attack",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Lonely",
+        "percentage": "0.7%",
+        "percentage_value": 0.7,
+        "stat_up": "Attack",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Naughty",
+      "percentage": 0.5,
+      "statUp": "Attack",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Naughty",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Relaxed",
+      "percentage": 0.5,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Relaxed",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Sassy",
+      "percentage": 0.4,
+      "statUp": "Sp. Def",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Sassy",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Sp. Def",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Hasty",
+      "percentage": 0.3,
+      "statUp": "Speed",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Hasty",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Speed",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.165,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "16.5%",
+        "percentage_value": 16.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.08,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "8.0%",
+        "percentage_value": 8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.049,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "4.9%",
+        "percentage_value": 4.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.036,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "3.6%",
+        "percentage_value": 3.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 23,
+        "attack_points": 8,
+        "defense_points": 7,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 28
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.031,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "3.1%",
+        "percentage_value": 3.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.027,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "2.7%",
+        "percentage_value": 2.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.018,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "1.8%",
+        "percentage_value": 1.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 23,
+        "defense_points": 11,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Tinkaton",
+      "position": 82,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.017,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tinkaton",
+        "column_position": 82,
+        "position": 82,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "1.7%",
+        "percentage_value": 1.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 32,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a4f9758063cb29d318e79a9-luongtuan123",
+      "name": "LuongTuan123 · Sky Pillar Saturday Showdown S8 #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "azumarill",
+          "name": "Azumarill",
+          "item": "Sitrus Berry",
+          "ability": "Huge Power",
+          "moves": [
+            "Belly Drum",
+            "Aqua Jet",
+            "Play Rough",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Coba Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Rage Powder",
+            "Matcha Gotcha",
+            "Trick Room",
+            "Life Dew"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Twin Beam",
+            "Trick Room",
+            "Light Screen",
+            "Hyper Voice"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Life Orb",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Weather Ball",
+            "Roost",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "tinkaton",
+          "name": "Tinkaton",
+          "item": "Focus Sash",
+          "ability": "Mold Breaker",
+          "moves": [
+            "Fake Out",
+            "Gigaton Hammer",
+            "Skill Swap",
+            "Knock Off"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Fake Out",
+            "Focus Blast",
+            "Zap Cannon",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Sky Pillar Saturday Showdown S8 #10",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "LuongTuan123",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a5117e465724db9ded421f1-tsareena",
+      "name": "tsareena · Øutcast's Warm Up Cup",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Torrent",
+          "moves": [
+            "Wave Crash",
+            "Earthquake",
+            "Ice Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tinkaton",
+          "name": "Tinkaton",
+          "item": "Focus Sash",
+          "ability": "Mold Breaker",
+          "moves": [
+            "Gigaton Hammer",
+            "Play Rough",
+            "Fake Out",
+            "Feint"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Giga Drain",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Weather Ball",
+            "Tailwind",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Flip Turn",
+            "Aqua Jet"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.875,
+      "sampleCount": 8,
+      "tournament": "Øutcast's Warm Up Cup",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "tsareena",
+      "record": "7-1-0"
+    },
+    {
+      "id": "6a5117e465724db9ded421f1-sat0ri",
+      "name": "Sat0rI · Øutcast's Warm Up Cup",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "morpeko",
+          "name": "Morpeko",
+          "item": "Focus Sash",
+          "ability": "Hunger Switch",
+          "moves": [
+            "Aura Wheel",
+            "Baton Pass",
+            "Endeavor",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Chople Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Super Fang",
+            "Follow Me",
+            "Low Kick",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "hisuian-arcanine",
+          "name": "Hisuian Arcanine",
+          "item": "Life Orb",
+          "ability": "Rock Head",
+          "moves": [
+            "Protect",
+            "Extreme Speed",
+            "Flare Blitz",
+            "Head Smash"
+          ]
+        },
+        {
+          "slug": "greninja",
+          "name": "Greninja",
+          "item": "Greninjite",
+          "ability": "Protean",
+          "moves": [
+            "Mud Shot",
+            "Protect",
+            "Ice Beam",
+            "Water Shuriken"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Wide Lens",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Protect",
+            "Triple Axel",
+            "Power Whip",
+            "High Jump Kick"
+          ]
+        },
+        {
+          "slug": "tinkaton",
+          "name": "Tinkaton",
+          "item": "Quick Claw",
+          "ability": "Mold Breaker",
+          "moves": [
+            "Protect",
+            "Play Rough",
+            "Fake Out",
+            "Gigaton Hammer"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8571428571428571,
+      "sampleCount": 7,
+      "tournament": "Øutcast's Warm Up Cup",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Sat0rI",
+      "record": "6-1-0"
+    },
+    {
+      "id": "6a5117e465724db9ded421f1-yohaniee",
+      "name": "Yohaniee · Øutcast's Warm Up Cup",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tinkaton",
+          "name": "Tinkaton",
+          "item": "Shuca Berry",
+          "ability": "Mold Breaker",
+          "moves": [
+            "Gigaton Hammer",
+            "Knock Off",
+            "Play Rough",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Silk Scarf",
+          "ability": "Scrappy",
+          "moves": [
+            "Fake Out",
+            "Last Resort"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Cud Chew",
+          "moves": [
+            "Thunderbolt",
+            "Trick Room",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Life Orb",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Protect",
+            "Dazzling Gleam",
+            "Sparkling Aria"
+          ]
+        },
+        {
+          "slug": "camerupt",
+          "name": "Camerupt",
+          "item": "Cameruptite",
+          "ability": "Magma Armor",
+          "moves": [
+            "Eruption",
+            "Heat Wave",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "aromatisse",
+          "name": "Aromatisse",
+          "item": "Babiri Berry",
+          "ability": "Aroma Veil",
+          "moves": [
+            "Sunny Day",
+            "Moonblast",
+            "Trick Room",
+            "Helping Hand"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Øutcast's Warm Up Cup",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Yohaniee",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a42222fc87cd9ff0a31292b-reyrebollos",
+      "name": "Rey Rebollos · King of Champions III",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Fairy Feather",
+          "ability": "Prankster",
+          "moves": [
+            "Tailwind",
+            "Moonblast",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tinkaton",
+          "name": "Tinkaton",
+          "item": "Sitrus Berry",
+          "ability": "Mold Breaker",
+          "moves": [
+            "Gigaton Hammer",
+            "Fake Out",
+            "Protect",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "hisuian-zoroark",
+          "name": "Hisuian Zoroark",
+          "item": "Choice Scarf",
+          "ability": "Illusion",
+          "moves": [
+            "Dark Pulse",
+            "Icy Wind",
+            "Shadow Ball",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Drought",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Protect",
+            "Solar Beam"
+          ]
+        },
+        {
+          "slug": "hisuian-arcanine",
+          "name": "Hisuian Arcanine",
+          "item": "Focus Sash",
+          "ability": "Rock Head",
+          "moves": [
+            "Flare Blitz",
+            "Rock Slide",
+            "Head Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "floette",
+          "name": "Floette",
+          "item": "Floettite",
+          "ability": "Fairy Aura",
+          "moves": [
+            "Light of Ruin",
+            "Calm Mind",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "King of Champions III",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Rey Rebollos",
+      "record": "4-2-0"
+    }
+  ],
+  "movePool": [
+    "Baby-Doll Eyes",
+    "Brick Break",
+    "Brutal Swing",
+    "Bulldoze",
+    "Covet",
+    "Draining Kiss",
+    "Encore",
+    "Endeavor",
+    "Endure",
+    "Facade",
+    "Fake Out",
+    "Fake Tears",
+    "Feint",
+    "Flash Cannon",
+    "Flatter",
+    "Fling",
+    "Foul Play",
+    "Gigaton Hammer",
+    "Hard Press",
+    "Heavy Slam",
+    "Helping Hand",
+    "Ice Hammer",
+    "Knock Off",
+    "Light Screen",
+    "Metal Sound",
+    "Play Rough",
+    "Pounce",
+    "Protect",
+    "Quash",
+    "Reflect",
+    "Rest",
+    "Rock Slide",
+    "Rock Tomb",
+    "Screech",
+    "Skill Swap",
+    "Skitter Smack",
+    "Sleep Talk",
+    "Smack Down",
+    "Stealth Rock",
+    "Steel Beam",
+    "Stone Edge",
+    "Substitute",
+    "Sweet Kiss",
+    "Swords Dance",
+    "Thief",
+    "Thunder Wave",
+    "Wood Hammer"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Tinkaton",
+      "base_name": "Tinkaton",
+      "saved_name": "Tinkaton",
+      "types": "Fairy/Steel",
+      "abilities": "Mold Breaker|Own Tempo|Pickpocket",
+      "image_path": "pokemon_champions_assets\\pokemon\\Tinkaton.png",
+      "form": "",
+      "hp": 160,
+      "atk": 95,
+      "def": 97,
+      "spa": 90,
+      "spd": 125,
+      "spe": 114,
+      "total": 681
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "move",
+          "rank": 1,
+          "name": "Gigaton Hammer",
+          "percentage": "98.1%",
+          "percentage_value": 98.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Shuca Berry",
+          "percentage": "18.7%",
+          "percentage_value": 18.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Adamant",
+          "percentage": "45.8%",
+          "percentage_value": 45.8,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        "stat_points": {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "16.5%",
+          "percentage_value": 16.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        "ability": {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "ability",
+          "rank": 1,
+          "name": "Mold Breaker",
+          "percentage": "82.8%",
+          "percentage_value": 82.8,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Gigaton Hammer",
+          "Fake Out",
+          "Play Rough",
+          "Protect",
+          "Encore",
+          "Feint",
+          "Knock Off",
+          "Ice Hammer",
+          "Helping Hand",
+          "Wood Hammer"
+        ],
+        "held_item": [
+          "Shuca Berry",
+          "Sitrus Berry",
+          "Occa Berry",
+          "Metal Coat",
+          "Focus Sash",
+          "Leftovers",
+          "Life Orb",
+          "Muscle Band",
+          "Quick Claw",
+          "Expert Belt"
+        ],
+        "teammate": [
+          "Incineroar",
+          "Garchomp",
+          "Sinistcha",
+          "Gengar",
+          "Whimsicott",
+          "Sableye",
+          "Farigiraf",
+          "Charizard",
+          "Tyranitar",
+          "Basculegion Male"
+        ],
+        "stat_alignment": [
+          "Adamant",
+          "Jolly",
+          "Brave",
+          "Impish",
+          "Careful",
+          "Lonely",
+          "Naughty",
+          "Relaxed",
+          "Sassy",
+          "Hasty"
+        ],
+        "stat_points": [
+          "HP 2 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 32",
+          "HP 32 / Atk 32 / Def 2 / SpA 0 / SpD 0 / Spe 0",
+          "HP 0 / Atk 32 / Def 2 / SpA 0 / SpD 0 / Spe 32",
+          "HP 23 / Atk 8 / Def 7 / SpA 0 / SpD 0 / Spe 28",
+          "HP 32 / Atk 32 / Def 0 / SpA 0 / SpD 2 / Spe 0",
+          "HP 0 / Atk 32 / Def 0 / SpA 0 / SpD 2 / Spe 32",
+          "HP 32 / Atk 23 / Def 11 / SpA 0 / SpD 0 / Spe 0",
+          "HP 0 / Atk 32 / Def 32 / SpA 0 / SpD 2 / Spe 0"
+        ],
+        "ability": [
+          "Mold Breaker",
+          "Own Tempo",
+          "Pickpocket"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "move",
+          "rank": 1,
+          "name": "Gigaton Hammer",
+          "percentage": "98.1%",
+          "percentage_value": 98.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "move",
+          "rank": 2,
+          "name": "Fake Out",
+          "percentage": "93.2%",
+          "percentage_value": 93.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "move",
+          "rank": 3,
+          "name": "Play Rough",
+          "percentage": "56.6%",
+          "percentage_value": 56.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "move",
+          "rank": 4,
+          "name": "Protect",
+          "percentage": "50.2%",
+          "percentage_value": 50.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "move",
+          "rank": 5,
+          "name": "Encore",
+          "percentage": "29.6%",
+          "percentage_value": 29.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "move",
+          "rank": 6,
+          "name": "Feint",
+          "percentage": "10.2%",
+          "percentage_value": 10.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "move",
+          "rank": 7,
+          "name": "Knock Off",
+          "percentage": "9.0%",
+          "percentage_value": 9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "move",
+          "rank": 8,
+          "name": "Ice Hammer",
+          "percentage": "7.6%",
+          "percentage_value": 7.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "move",
+          "rank": 9,
+          "name": "Helping Hand",
+          "percentage": "7.2%",
+          "percentage_value": 7.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "move",
+          "rank": 10,
+          "name": "Wood Hammer",
+          "percentage": "6.7%",
+          "percentage_value": 6.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Shuca Berry",
+          "percentage": "18.7%",
+          "percentage_value": 18.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Sitrus Berry",
+          "percentage": "13.7%",
+          "percentage_value": 13.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Occa Berry",
+          "percentage": "13.2%",
+          "percentage_value": 13.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Metal Coat",
+          "percentage": "10.8%",
+          "percentage_value": 10.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Focus Sash",
+          "percentage": "9.8%",
+          "percentage_value": 9.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Leftovers",
+          "percentage": "9.1%",
+          "percentage_value": 9.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Life Orb",
+          "percentage": "5.8%",
+          "percentage_value": 5.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Muscle Band",
+          "percentage": "2.7%",
+          "percentage_value": 2.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Quick Claw",
+          "percentage": "2.6%",
+          "percentage_value": 2.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Expert Belt",
+          "percentage": "2.2%",
+          "percentage_value": 2.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Gengar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Whimsicott",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Sableye",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Charizard",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Tyranitar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Adamant",
+          "percentage": "45.8%",
+          "percentage_value": 45.8,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Jolly",
+          "percentage": "35.3%",
+          "percentage_value": 35.3,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Brave",
+          "percentage": "5.4%",
+          "percentage_value": 5.4,
+          "stat_up": "Attack",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Impish",
+          "percentage": "5.3%",
+          "percentage_value": 5.3,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Careful",
+          "percentage": "4.9%",
+          "percentage_value": 4.9,
+          "stat_up": "Sp. Def",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Lonely",
+          "percentage": "0.7%",
+          "percentage_value": 0.7,
+          "stat_up": "Attack",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Naughty",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Relaxed",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Sassy",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Sp. Def",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Hasty",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Speed",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "16.5%",
+          "percentage_value": 16.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "8.0%",
+          "percentage_value": 8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "4.9%",
+          "percentage_value": 4.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "3.6%",
+          "percentage_value": 3.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 23,
+          "attack_points": 8,
+          "defense_points": 7,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 28
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "3.1%",
+          "percentage_value": 3.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "2.7%",
+          "percentage_value": 2.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "1.8%",
+          "percentage_value": 1.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 23,
+          "defense_points": 11,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "1.7%",
+          "percentage_value": 1.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 32,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "ability",
+          "rank": 1,
+          "name": "Mold Breaker",
+          "percentage": "82.8%",
+          "percentage_value": 82.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "ability",
+          "rank": 2,
+          "name": "Own Tempo",
+          "percentage": "15.2%",
+          "percentage_value": 15.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tinkaton",
+          "column_position": 82,
+          "position": 82,
+          "category": "ability",
+          "rank": 3,
+          "name": "Pickpocket",
+          "percentage": "2.0%",
+          "percentage_value": 2,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Tinkaton.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Tinkaton.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Tinkaton.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Tinkaton.csv"
+      }
+    ]
+  }
+}

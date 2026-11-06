@@ -1,0 +1,5173 @@
+{
+  "pokemon": {
+    "slug": "alolan-ninetales",
+    "name": "Ninetales [Alolan Form]",
+    "baseName": "Ninetales",
+    "savedName": "Alolan Ninetales",
+    "form": "Alolan",
+    "types": [
+      "Ice",
+      "Fairy"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Alolan%20Ninetales.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10104.png",
+    "stats": {
+      "hp": 148,
+      "attack": 87,
+      "defense": 95,
+      "spAttack": 101,
+      "spDefense": 120,
+      "speed": 129,
+      "total": 680
+    },
+    "rank": 30,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Blizzard",
+    "topItem": "Never-Melt Ice",
+    "topTeammate": "Incineroar"
+  },
+  "moves": [
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "move",
+      "rank": 1,
+      "name": "Blizzard",
+      "percentage": 0.946,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "move",
+        "rank": 1,
+        "name": "Blizzard",
+        "percentage": "94.6%",
+        "percentage_value": 94.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "move",
+      "rank": 2,
+      "name": "Freeze-Dry",
+      "percentage": 0.769,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "move",
+        "rank": 2,
+        "name": "Freeze-Dry",
+        "percentage": "76.9%",
+        "percentage_value": 76.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "move",
+      "rank": 3,
+      "name": "Protect",
+      "percentage": 0.677,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "move",
+        "rank": 3,
+        "name": "Protect",
+        "percentage": "67.7%",
+        "percentage_value": 67.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "move",
+      "rank": 4,
+      "name": "Aurora Veil",
+      "percentage": 0.521,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "move",
+        "rank": 4,
+        "name": "Aurora Veil",
+        "percentage": "52.1%",
+        "percentage_value": 52.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "move",
+      "rank": 5,
+      "name": "Encore",
+      "percentage": 0.321,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "move",
+        "rank": 5,
+        "name": "Encore",
+        "percentage": "32.1%",
+        "percentage_value": 32.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "move",
+      "rank": 6,
+      "name": "Moonblast",
+      "percentage": 0.294,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "move",
+        "rank": 6,
+        "name": "Moonblast",
+        "percentage": "29.4%",
+        "percentage_value": 29.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "move",
+      "rank": 7,
+      "name": "Dazzling Gleam",
+      "percentage": 0.081,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "move",
+        "rank": 7,
+        "name": "Dazzling Gleam",
+        "percentage": "8.1%",
+        "percentage_value": 8.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "move",
+      "rank": 8,
+      "name": "Icy Wind",
+      "percentage": 0.064,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "move",
+        "rank": 8,
+        "name": "Icy Wind",
+        "percentage": "6.4%",
+        "percentage_value": 6.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "move",
+      "rank": 9,
+      "name": "Roar",
+      "percentage": 0.062,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "move",
+        "rank": 9,
+        "name": "Roar",
+        "percentage": "6.2%",
+        "percentage_value": 6.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "move",
+      "rank": 10,
+      "name": "Rain Dance",
+      "percentage": 0.059,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "move",
+        "rank": 10,
+        "name": "Rain Dance",
+        "percentage": "5.9%",
+        "percentage_value": 5.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Never-Melt Ice",
+      "percentage": 0.384,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Never-Melt Ice",
+        "percentage": "38.4%",
+        "percentage_value": 38.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Focus Sash",
+      "percentage": 0.232,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Focus Sash",
+        "percentage": "23.2%",
+        "percentage_value": 23.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Light Clay",
+      "percentage": 0.194,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Light Clay",
+        "percentage": "19.4%",
+        "percentage_value": 19.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Choice Scarf",
+      "percentage": 0.087,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Choice Scarf",
+        "percentage": "8.7%",
+        "percentage_value": 8.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Life Orb",
+      "percentage": 0.032,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Life Orb",
+        "percentage": "3.2%",
+        "percentage_value": 3.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Sitrus Berry",
+      "percentage": 0.015,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Sitrus Berry",
+        "percentage": "1.5%",
+        "percentage_value": 1.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Occa Berry",
+      "percentage": 0.8,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Occa Berry",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Icy Rock",
+      "percentage": 0.7,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Icy Rock",
+        "percentage": "0.7%",
+        "percentage_value": 0.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Babiri Berry",
+      "percentage": 0.7,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Babiri Berry",
+        "percentage": "0.7%",
+        "percentage_value": 0.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Leftovers",
+      "percentage": 0.7,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Leftovers",
+        "percentage": "0.7%",
+        "percentage_value": 0.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "ability",
+      "rank": 1,
+      "name": "Snow Warning",
+      "percentage": 0.992,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "ability",
+        "rank": 1,
+        "name": "Snow Warning",
+        "percentage": "99.2%",
+        "percentage_value": 99.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "ability",
+      "rank": 2,
+      "name": "Snow Cloak",
+      "percentage": 0.8,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "ability",
+        "rank": 2,
+        "name": "Snow Cloak",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Kingambit",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Kingambit",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Raichu",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Raichu",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Sneasler",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Sneasler",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Whimsicott",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Whimsicott",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Milotic",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Milotic",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Blaziken",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Blaziken",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Timid",
+      "percentage": 0.85,
+      "statUp": "Speed",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Timid",
+        "percentage": "85.0%",
+        "percentage_value": 85,
+        "stat_up": "Speed",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Modest",
+      "percentage": 0.112,
+      "statUp": "Sp. Atk",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Modest",
+        "percentage": "11.2%",
+        "percentage_value": 11.2,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Bold",
+      "percentage": 0.011,
+      "statUp": "Defense",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Bold",
+        "percentage": "1.1%",
+        "percentage_value": 1.1,
+        "stat_up": "Defense",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Mild",
+      "percentage": 0.9,
+      "statUp": "Sp. Atk",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Mild",
+        "percentage": "0.9%",
+        "percentage_value": 0.9,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Calm",
+      "percentage": 0.6,
+      "statUp": "Sp. Def",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Calm",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "Sp. Def",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Hasty",
+      "percentage": 0.4,
+      "statUp": "Speed",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Hasty",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Speed",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Quiet",
+      "percentage": 0.3,
+      "statUp": "Sp. Atk",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Quiet",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Relaxed",
+      "percentage": 0.1,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Relaxed",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Naive",
+      "percentage": 0.1,
+      "statUp": "Speed",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Naive",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Jolly",
+      "percentage": 0.1,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Jolly",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.342,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "34.2%",
+        "percentage_value": 34.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.115,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "11.5%",
+        "percentage_value": 11.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 1,
+        "attack_points": 0,
+        "defense_points": 1,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.062,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "6.2%",
+        "percentage_value": 6.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.052,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "5.2%",
+        "percentage_value": 5.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 9,
+        "attack_points": 0,
+        "defense_points": 11,
+        "sp_atk_points": 19,
+        "sp_def_points": 0,
+        "speed_points": 27
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.039,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "3.9%",
+        "percentage_value": 3.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 2,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.015,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "1.5%",
+        "percentage_value": 1.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 1,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 1,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.014,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "1.4%",
+        "percentage_value": 1.4,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 8,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 26
+      }
+    },
+    {
+      "pokemon": "Alolan Ninetales",
+      "position": 30,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.013,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Alolan Ninetales",
+        "column_position": 30,
+        "position": 30,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "1.3%",
+        "percentage_value": 1.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a46b0e683fd320299bd6881-luankakashi",
+      "name": "LuanKakashi · X1 Remote Battle League 2ª Edição - Reg M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Stone Edge",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Giga Drain",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Encore",
+            "Aurora Veil"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Accelerock",
+            "Rock Slide",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Aqua Jet",
+            "Flip Turn",
+            "Wave Crash",
+            "Last Respects"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "X1 Remote Battle League 2ª Edição - Reg M-B",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "LuanKakashi",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a5055f965724db9ded41c56-pointee",
+      "name": "Pointee · Weekly Qualifier for RookideeVGC Grand Tourney",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Tough Claws",
+          "moves": [
+            "Psychic Fangs",
+            "Hard Press",
+            "Body Press",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bulk Up",
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Light Clay",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Aurora Veil",
+            "Freeze-Dry",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Sitrus Berry",
+          "ability": "Levitate",
+          "moves": [
+            "Hydro Pump",
+            "Volt Switch",
+            "Will-O-Wisp",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Thick Fat",
+          "moves": [
+            "Sludge Bomb",
+            "Earth Power",
+            "Giga Drain",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Draco Meteor",
+            "Snarl",
+            "Dark Pulse",
+            "Earth Power"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Weekly Qualifier for RookideeVGC Grand Tourney",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Pointee",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a5055f965724db9ded41c56-dumbores",
+      "name": "Dumbores · Weekly Qualifier for RookideeVGC Grand Tourney",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Leftovers",
+          "ability": "Defiant",
+          "moves": [
+            "Rage Fist",
+            "Drain Punch",
+            "Bulk Up",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Tailwind",
+            "Protect",
+            "Moonblast",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Flip Turn",
+            "Last Respects",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Parting Shot",
+            "Flare Blitz",
+            "Fake Out",
+            "Taunt"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Light Clay",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Aurora Veil",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "Weekly Qualifier for RookideeVGC Grand Tourney",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Dumbores",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a4dfee8063cb29d318e6805-geniusmatti",
+      "name": "GeniusMatti · VGC UmbreNews 14.07.2026 #23 - Champion",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Brave Bird",
+            "Close Combat",
+            "Roost",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Darkest Lariat",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Strength Sap",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Choice Scarf",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Aurora Veil",
+            "Icy Wind"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Rock Slide",
+            "Accelerock",
+            "Close Combat",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "VGC UmbreNews 14.07.2026 #23 - Champion",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "GeniusMatti",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a4dbb9665724db9ded3ff83-kiri99",
+      "name": "Kiri99 · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Detect",
+            "Flare Blitz",
+            "Stone Edge"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Giga Drain",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Last Respects",
+            "Aqua Jet",
+            "Wave Crash",
+            "Flip Turn"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Kowtow Cleave",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Accelerock",
+            "Close Combat",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Protect",
+            "Encore"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Kiri99",
+      "record": "4-1-0"
+    },
+    {
+      "id": "6a4dbb9665724db9ded3ff83-giozztan",
+      "name": "Giozztan · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Thunder Punch",
+            "Psychic Fangs",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Flare Blitz",
+            "Dual Wingbeat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Dragon Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Protect",
+            "Bulk Up"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Moonblast",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Giozztan",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a4dbc1e063cb29d318e66e7-reddo161",
+      "name": "Reddo161 · The Grim Challenge #3 - Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gengar",
+          "name": "Gengar",
+          "item": "Gengarite",
+          "ability": "Shadow Tag",
+          "moves": [
+            "Shadow Ball",
+            "Disable",
+            "Perish Song",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Parting Shot",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Focus Sash",
+          "ability": "Adaptability",
+          "moves": [
+            "Liquidation",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 8,
+      "tournament": "The Grim Challenge #3 - Champions",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Reddo161",
+      "record": "6-2-0"
+    },
+    {
+      "id": "6a4dbc1e063cb29d318e66e7-yakka94",
+      "name": "Yakka94 · The Grim Challenge #3 - Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Kowtow Cleave",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Choice Scarf",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Moonblast",
+            "Psyshock"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Tailwind",
+            "Ice Fang"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Protect",
+            "Hyper Voice",
+            "Yawn",
+            "Quick Attack"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Focus Sash",
+          "ability": "Adaptability",
+          "moves": [
+            "Liquidation",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "The Grim Challenge #3 - Champions",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Yakka94",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a3200c5e334c3c9befd8430-snorlaxpikachu1",
+      "name": "Snorlaxpikachu1 · The Grand Champions Festival Encore",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Stone Edge",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Giga Drain",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Accelerock",
+            "Rock Slide",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Flip Turn",
+            "Aqua Jet"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8125,
+      "sampleCount": 16,
+      "tournament": "The Grand Champions Festival Encore",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Snorlaxpikachu1",
+      "record": "13-3-0"
+    },
+    {
+      "id": "6a3200c5e334c3c9befd8430-chelseafan8",
+      "name": "chelseafan8 · The Grand Champions Festival Encore",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Brave Bird",
+            "Close Combat",
+            "Roost",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Darkest Lariat",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Strength Sap",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hisuian-arcanine",
+          "name": "Hisuian Arcanine",
+          "item": "Focus Sash",
+          "ability": "Rock Head",
+          "moves": [
+            "Head Smash",
+            "Flare Blitz",
+            "Extreme Speed",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Aurora Veil",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8125,
+      "sampleCount": 16,
+      "tournament": "The Grand Champions Festival Encore",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "chelseafan8",
+      "record": "13-3-0"
+    },
+    {
+      "id": "6a51f42365724db9ded43093-gotou",
+      "name": "Gotou · Tenki's Cart Weekly #109 - Reg MB",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Ice Punch",
+            "Psychic Fangs",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Light of Ruin",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Dual Wingbeat",
+            "Flare Blitz",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Life Orb",
+          "ability": "Levitate",
+          "moves": [
+            "Draco Meteor",
+            "Dark Pulse",
+            "Protect",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Bulk Up",
+            "Shadow Sneak",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Encore",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 10,
+      "tournament": "Tenki's Cart Weekly #109 - Reg MB",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Gotou",
+      "record": "8-2-0"
+    },
+    {
+      "id": "6a4f9758063cb29d318e79a9-lucky777n",
+      "name": "lucky777n · Sky Pillar Saturday Showdown S8 #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gengar",
+          "name": "Gengar",
+          "item": "Gengarite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Shadow Ball",
+            "Disable",
+            "Perish Song",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Parting Shot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "snorlax",
+          "name": "Snorlax",
+          "item": "Leftovers",
+          "ability": "Thick Fat",
+          "moves": [
+            "Fissure",
+            "Encore",
+            "Yawn",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Kowtow Cleave",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Gunk Shot",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "Sky Pillar Saturday Showdown S8 #10",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "lucky777n",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a420fbf83fd320299bd3c3c-girasolia",
+      "name": "girasolia · Sketch Academy Sunday Regulation M-B Tournament",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Rock Slide",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Light of Ruin",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Life Orb",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Sketch Academy Sunday Regulation M-B Tournament",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "girasolia",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a3854f7ceacae7d6441c118-giozztan",
+      "name": "Giozztan · PWC - Battle in the Colosseum #19 - Reg M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Thunder Punch",
+            "Psychic Fangs",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Flare Blitz",
+            "Dual Wingbeat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Dragon Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Protect",
+            "Bulk Up"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Moonblast",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "PWC - Battle in the Colosseum #19 - Reg M-B",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Giozztan",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a4516dcc87cd9ff0a31469e-naturps",
+      "name": "NatuRPS · Pride Month 2 Celebration!!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "hisuian-arcanine",
+          "name": "Hisuian Arcanine",
+          "item": "Choice Scarf",
+          "ability": "Rock Head",
+          "moves": [
+            "Flare Blitz",
+            "Head Smash",
+            "Wild Charge",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "heat-rotom",
+          "name": "Heat Rotom",
+          "item": "Sitrus Berry",
+          "ability": "Levitate",
+          "moves": [
+            "Protect",
+            "Discharge",
+            "Volt Switch",
+            "Overheat"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Close Combat",
+            "Fake Out",
+            "Protect",
+            "Dire Claw"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "High Horsepower",
+            "Knock Off",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sceptile",
+          "name": "Sceptile",
+          "item": "Sceptilite",
+          "ability": "Overgrow",
+          "moves": [
+            "Detect",
+            "Earth Power",
+            "Leaf Storm",
+            "Dragon Pulse"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Focus Sash",
+          "ability": "Snow Cloak",
+          "moves": [
+            "Freeze-Dry",
+            "Aurora Veil",
+            "Blizzard",
+            "Moonblast"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Pride Month 2 Celebration!!",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "NatuRPS",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a55808a232a1a55ee10be16-jaidonkin",
+      "name": "JaiDonkin · 𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Protect",
+            "Roost"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Shuca Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Taunt",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "scizor",
+          "name": "Scizor",
+          "item": "Scizorite",
+          "ability": "Technician",
+          "moves": [
+            "Bullet Punch",
+            "Bug Bite",
+            "Knock Off",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Focus Sash",
+          "ability": "Snow Warning",
+          "moves": [
+            "Freeze-Dry",
+            "Aurora Veil",
+            "Icy Wind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "araquanid",
+          "name": "Araquanid",
+          "item": "Mystic Water",
+          "ability": "Water Bubble",
+          "moves": [
+            "Liquidation",
+            "Wide Guard",
+            "Infestation",
+            "Leech Life"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "JaiDonkin",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a291b172d97f3b0c2612db9-xylluloid",
+      "name": "Xylluloid · Mystery Community Tournament#1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Giga Drain",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Sitrus Berry",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Aqua Jet",
+            "Last Respects",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Focus Sash",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Tailwind",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Dark Pulse",
+            "Snarl",
+            "Draco Meteor",
+            "Flamethrower"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Defense",
+            "Psychic Fangs",
+            "Body Press",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7142857142857143,
+      "sampleCount": 7,
+      "tournament": "Mystery Community Tournament#1",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Xylluloid",
+      "record": "5-2-0"
+    },
+    {
+      "id": "6a5162b8063cb29d318e9199-138mysx",
+      "name": "138mysx · MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Glimmoranite",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Earth Power",
+            "Power Gem",
+            "Sludge Bomb",
+            "Spiky Shield"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Energy Ball",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Stomping Tantrum",
+            "Earthquake",
+            "Dragon Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Low Kick",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 1,
+      "sampleCount": 7,
+      "tournament": "MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "138mysx",
+      "record": "7-0-0"
+    },
+    {
+      "id": "6a5162b8063cb29d318e9199-jumbosaur",
+      "name": "Makin K · MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "item": "Focus Sash",
+          "ability": "Sharpness",
+          "moves": [
+            "Stone Axe",
+            "X-Scissor",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Sitrus Berry",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Trop Kick",
+            "Triple Axel",
+            "Taunt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "lucario",
+          "name": "Lucario",
+          "item": "Lucarionite",
+          "ability": "Inner Focus",
+          "moves": [
+            "Vacuum Wave",
+            "Detect",
+            "Aura Sphere",
+            "Flash Cannon"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "No Item",
+          "ability": "Gale Wings",
+          "moves": [
+            "Flare Blitz",
+            "Protect",
+            "Tailwind",
+            "Acrobatics"
+          ]
+        },
+        {
+          "slug": "azumarill",
+          "name": "Azumarill",
+          "item": "Life Orb",
+          "ability": "Huge Power",
+          "moves": [
+            "Play Rough",
+            "Aqua Jet",
+            "Liquidation",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Light Clay",
+          "ability": "Snow Warning",
+          "moves": [
+            "Freeze-Dry",
+            "Moonblast",
+            "Protect",
+            "Aurora Veil"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Makin K",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a5162b8063cb29d318e9199-enzibu",
+      "name": "Enzibu · MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Protect",
+            "Helping Hand",
+            "Psychic",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Protect",
+            "Sucker Punch",
+            "Play Rough",
+            "Swords Dance"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Flip Turn"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Focus Sash",
+          "ability": "Snow Warning",
+          "moves": [
+            "Protect",
+            "Blizzard",
+            "Freeze-Dry",
+            "Moonblast"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Inner Focus",
+          "moves": [
+            "Protect",
+            "Dragon Pulse",
+            "Thunder",
+            "Heat Wave"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Enzibu",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a4d303a65724db9ded3f61e-alphastorm42",
+      "name": "Alphastorm42 · LPP On-line",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Life Dew",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Muddy Water",
+            "Coil",
+            "Hypnosis",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Light Clay",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Protect",
+            "Aurora Veil",
+            "Freeze-Dry"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Bulk Up",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.25,
+      "sampleCount": 4,
+      "tournament": "LPP On-line",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Alphastorm42",
+      "record": "1-3-0"
+    },
+    {
+      "id": "6a54c9d3232a1a55ee10b346-sydneykk",
+      "name": "Sydneykk · Intimidators Champions Challenge #27 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Flare Blitz",
+            "Rock Slide",
+            "Close Combat",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Protect",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Focus Sash",
+          "ability": "Adaptability",
+          "moves": [
+            "Liquidation",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gengar",
+          "name": "Gengar",
+          "item": "Gengarite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Shadow Ball",
+            "Disable",
+            "Perish Song",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Flare Blitz",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7142857142857143,
+      "sampleCount": 7,
+      "tournament": "Intimidators Champions Challenge #27 REG M-B",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Sydneykk",
+      "record": "5-2-0"
+    },
+    {
+      "id": "6a5497ab232a1a55ee10b2b8-dumbores",
+      "name": "Dumbores · HeroicTitan’s VGC Battle Arena",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Leftovers",
+          "ability": "Defiant",
+          "moves": [
+            "Rage Fist",
+            "Drain Punch",
+            "Bulk Up",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Tailwind",
+            "Protect",
+            "Moonblast",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Flip Turn",
+            "Last Respects",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Parting Shot",
+            "Flare Blitz",
+            "Fake Out",
+            "Taunt"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Light Clay",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Aurora Veil",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "HeroicTitan’s VGC Battle Arena",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Dumbores",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a467bb683fd320299bd6627-fluna",
+      "name": "Fluna · Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Protect",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Ice Fang",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Protect",
+            "Iron Head",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Focus Sash",
+          "ability": "Adaptability",
+          "moves": [
+            "Liquidation",
+            "Protect",
+            "Last Respects",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Moonblast",
+            "Quick Attack",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Choice Scarf",
+          "ability": "Snow Warning",
+          "moves": [
+            "Psyshock",
+            "Moonblast",
+            "Blizzard",
+            "Freeze-Dry"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Fluna",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a467bb683fd320299bd6627-lunaticofwinds",
+      "name": "LunaticOfWinds · Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Snow Cloak",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Protect",
+            "Weather Ball"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Focus Sash",
+          "ability": "Snow Warning",
+          "moves": [
+            "Aurora Veil",
+            "Blizzard",
+            "Freeze-Dry",
+            "Moonblast"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Chople Berry",
+          "ability": "Sand Stream",
+          "moves": [
+            "Ice Punch",
+            "Rock Slide",
+            "Protect",
+            "Knock Off"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Protect",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Dual Wingbeat",
+            "Quick Guard",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Excadrite",
+          "ability": "Sand Rush",
+          "moves": [
+            "Protect",
+            "Drill Run",
+            "Iron Head",
+            "Earthquake"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.25,
+      "sampleCount": 4,
+      "tournament": "Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "LunaticOfWinds",
+      "record": "1-3-0"
+    },
+    {
+      "id": "6a467bb683fd320299bd6627-smurfz",
+      "name": "Smurfz · Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite X",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Protect",
+            "Fake Out",
+            "Rising Voltage",
+            "Volt Switch"
+          ]
+        },
+        {
+          "slug": "jolteon",
+          "name": "Jolteon",
+          "item": "Life Orb",
+          "ability": "Volt Absorb",
+          "moves": [
+            "Protect",
+            "Rising Voltage",
+            "Weather Ball",
+            "Alluring Voice"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Focus Sash",
+          "ability": "Snow Warning",
+          "moves": [
+            "Protect",
+            "Freeze-Dry",
+            "Blizzard",
+            "Roar"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Coba Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Sunny Day"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Poison Jab",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "gyarados",
+          "name": "Gyarados",
+          "item": "Leftovers",
+          "ability": "Intimidate",
+          "moves": [
+            "Waterfall",
+            "Taunt",
+            "Thunder Wave",
+            "Dragon Dance"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 2,
+      "tournament": "Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "placing": null,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Smurfz",
+      "record": "0-2-0"
+    },
+    {
+      "id": "6a442f7183fd320299bd5187-latios66",
+      "name": "Semih Erdogdu · HALL OF  FAME BELGIUM (Invitational)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Light Clay",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Aurora Veil",
+            "Freeze-Dry",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "skeledirge",
+          "name": "Skeledirge",
+          "item": "Leftovers",
+          "ability": "Unaware",
+          "moves": [
+            "Torch Song",
+            "Earth Power",
+            "Will-O-Wisp",
+            "Slack Off"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Tailwind",
+            "Ice Fang",
+            "Rock Slide",
+            "Dual Wingbeat"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Fake Out",
+            "Dire Claw",
+            "Close Combat",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Life Orb",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Protect",
+            "Aqua Jet"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 8,
+      "tournament": "HALL OF  FAME BELGIUM (Invitational)",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Semih Erdogdu",
+      "record": "6-2-0"
+    },
+    {
+      "id": "6a4d3355063cb29d318e5f6a-kaori_uy",
+      "name": "Mauro Gonzalez · Circuito Pretemporada: Pokémon Champions #4",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Rock Slide",
+            "Flare Blitz",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Protect",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Focus Sash",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gengar",
+          "name": "Gengar",
+          "item": "Gengarite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Shadow Ball",
+            "Disable",
+            "Perish Song",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Flare Blitz",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 1,
+      "sampleCount": 4,
+      "tournament": "Circuito Pretemporada: Pokémon Champions #4",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Mauro Gonzalez",
+      "record": "4-0-0"
+    },
+    {
+      "id": "6a57380e6355385f44dd5183-vossi",
+      "name": "Vossi · Champions Tour LEPE M-B #9",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Light Clay",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Moonblast",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Flamethrower",
+            "Giga Drain",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Accelerock",
+            "Rock Slide",
+            "Close Combat",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Close Combat",
+            "Dire Claw",
+            "Fake Out",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8571428571428571,
+      "sampleCount": 7,
+      "tournament": "Champions Tour LEPE M-B #9",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Vossi",
+      "record": "6-1-0"
+    },
+    {
+      "id": "6a4220ea83fd320299bd3c65-sevaunn",
+      "name": "SeVaunn · Champions Collective #14",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Fake Out",
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Life Orb",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Dazzling Gleam",
+            "Protect",
+            "Moonblast"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Protect",
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Darkest Lariat",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Light Clay",
+          "ability": "Snow Warning",
+          "moves": [
+            "Protect",
+            "Blizzard",
+            "Aurora Veil",
+            "Freeze-Dry"
+          ]
+        },
+        {
+          "slug": "gengar",
+          "name": "Gengar",
+          "item": "Gengarite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Protect",
+            "Shadow Ball",
+            "Perish Song",
+            "Sludge Bomb"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 10,
+      "tournament": "Champions Collective #14",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "SeVaunn",
+      "record": "8-2-0"
+    },
+    {
+      "id": "6a4220ea83fd320299bd3c65-gotou",
+      "name": "Gotou · Champions Collective #14",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Ice Punch",
+            "Psychic Fangs",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Light of Ruin",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Dual Wingbeat",
+            "Flare Blitz",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Life Orb",
+          "ability": "Levitate",
+          "moves": [
+            "Draco Meteor",
+            "Dark Pulse",
+            "Protect",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Bulk Up",
+            "Shadow Sneak",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Encore",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "Champions Collective #14",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Gotou",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a4220ea83fd320299bd3c65-enjevgc",
+      "name": "EnjeVGC · Champions Collective #14",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Protect",
+            "Iron Head",
+            "Bullet Punch",
+            "Psychic Fangs"
+          ]
+        },
+        {
+          "slug": "dragapult",
+          "name": "Dragapult",
+          "item": "Life Orb",
+          "ability": "Clear Body",
+          "moves": [
+            "Protect",
+            "Dragon Darts",
+            "Phantom Force",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Protect",
+            "Freeze-Dry",
+            "Blizzard",
+            "Aurora Veil"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Focus Sash",
+          "ability": "Unnerve",
+          "moves": [
+            "Protect",
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Sitrus Berry",
+          "ability": "Levitate",
+          "moves": [
+            "Protect",
+            "Thunderbolt",
+            "Hydro Pump",
+            "Nasty Plot"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Dire Claw",
+            "Close Combat",
+            "Acrobatics",
+            "Fake Out"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "Champions Collective #14",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "EnjeVGC",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a4f486e063cb29d318e781e-newsquidbeaksplatoon",
+      "name": "NewSquidbeakSplatoon · Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Focus Sash",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Dazzling Gleam",
+            "Aurora Veil",
+            "Nasty Plot"
+          ]
+        },
+        {
+          "slug": "lucario",
+          "name": "Lucario",
+          "item": "Leftovers",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Pulse",
+            "Calm Mind",
+            "Aura Sphere",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "snorlax",
+          "name": "Snorlax",
+          "item": "Sitrus Berry",
+          "ability": "Immunity",
+          "moves": [
+            "Body Slam",
+            "Earthquake",
+            "Yawn",
+            "Crunch"
+          ]
+        },
+        {
+          "slug": "vaporeon",
+          "name": "Vaporeon",
+          "item": "Quick Claw",
+          "ability": "Water Absorb",
+          "moves": [
+            "Shadow Ball",
+            "Surf",
+            "Iron Tail",
+            "Liquidation"
+          ]
+        },
+        {
+          "slug": "beedrill",
+          "name": "Beedrill",
+          "item": "Beedrillite",
+          "ability": "Swarm",
+          "moves": [
+            "Poison Jab",
+            "U-turn",
+            "Drill Run",
+            "Knock Off"
+          ]
+        },
+        {
+          "slug": "hippowdon",
+          "name": "Hippowdon",
+          "item": "Lum Berry",
+          "ability": "Sand Force",
+          "moves": [
+            "Earthquake",
+            "Substitute",
+            "Thunder Fang",
+            "High Horsepower"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "NewSquidbeakSplatoon",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a50864165724db9ded41db6-kyotokugt",
+      "name": "KyotokuGT · 4fun sabadín",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Protect",
+            "Iron Head",
+            "Bullet Punch",
+            "Psychic Fangs"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Protect",
+            "Rock Slide",
+            "Knock Off",
+            "Dragon Dance"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Sand Rush",
+          "moves": [
+            "Protect",
+            "High Horsepower",
+            "Iron Head",
+            "Swords Dance"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Protect",
+            "Helping Hand",
+            "Psychic",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Multiscale",
+          "moves": [
+            "Protect",
+            "Tailwind",
+            "Dragon Claw",
+            "Extreme Speed"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Choice Scarf",
+          "ability": "Snow Cloak",
+          "moves": [
+            "Aurora Veil",
+            "Blizzard",
+            "Freeze-Dry",
+            "Dazzling Gleam"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "4fun sabadín",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "KyotokuGT",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a46629683fd320299bd6543-jackg",
+      "name": "JackG · 🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Sitrus Berry",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Moonblast",
+            "Calm Mind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Leaf Storm",
+            "Trick Room",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Focus Sash",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Bulk Up",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "JackG",
+      "record": "6-3-0"
+    }
+  ],
+  "movePool": [
+    "Agility",
+    "Attract",
+    "Aurora Veil",
+    "Avalanche",
+    "Baby-Doll Eyes",
+    "Baton Pass",
+    "Blizzard",
+    "Body Slam",
+    "Calm Mind",
+    "Charm",
+    "Chilling Water",
+    "Confuse Ray",
+    "Dark Pulse",
+    "Dazzling Gleam",
+    "Dig",
+    "Disable",
+    "Double-Edge",
+    "Draining Kiss",
+    "Encore",
+    "Endure",
+    "Extrasensory",
+    "Facade",
+    "Fake Tears",
+    "Flail",
+    "Foul Play",
+    "Freeze-Dry",
+    "Giga Impact",
+    "Helping Hand",
+    "Hex",
+    "Howl",
+    "Hyper Beam",
+    "Hypnosis",
+    "Ice Beam",
+    "Ice Shard",
+    "Icicle Spear",
+    "Icy Wind",
+    "Imprison",
+    "Iron Tail",
+    "Misty Terrain",
+    "Moonblast",
+    "Nasty Plot",
+    "Pain Split",
+    "Payback",
+    "Play Rough",
+    "Power Swap",
+    "Protect",
+    "Psych Up",
+    "Psyshock",
+    "Rain Dance",
+    "Rest",
+    "Roar",
+    "Round",
+    "Safeguard",
+    "Sleep Talk",
+    "Snore",
+    "Snowscape",
+    "Spite",
+    "Stored Power",
+    "Substitute",
+    "Tail Slap",
+    "Triple Axel",
+    "Weather Ball",
+    "Wonder Room",
+    "Zen Headbutt"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Ninetales [Alolan Form]",
+      "base_name": "Ninetales",
+      "saved_name": "Alolan Ninetales",
+      "types": "Ice/Fairy",
+      "abilities": "Snow Cloak|Snow Warning",
+      "image_path": "pokemon_champions_assets\\pokemon\\Alolan Ninetales.png",
+      "form": "Alolan",
+      "hp": 148,
+      "atk": 87,
+      "def": 95,
+      "spa": 101,
+      "spd": 120,
+      "spe": 129,
+      "total": 680
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "move",
+          "rank": 1,
+          "name": "Blizzard",
+          "percentage": "94.6%",
+          "percentage_value": 94.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Never-Melt Ice",
+          "percentage": "38.4%",
+          "percentage_value": 38.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Timid",
+          "percentage": "85.0%",
+          "percentage_value": 85,
+          "stat_up": "Speed",
+          "stat_down": "Attack"
+        },
+        "stat_points": {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "34.2%",
+          "percentage_value": 34.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        "ability": {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "ability",
+          "rank": 1,
+          "name": "Snow Warning",
+          "percentage": "99.2%",
+          "percentage_value": 99.2,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Blizzard",
+          "Freeze-Dry",
+          "Protect",
+          "Aurora Veil",
+          "Encore",
+          "Moonblast",
+          "Dazzling Gleam",
+          "Icy Wind",
+          "Roar",
+          "Rain Dance"
+        ],
+        "held_item": [
+          "Never-Melt Ice",
+          "Focus Sash",
+          "Light Clay",
+          "Choice Scarf",
+          "Life Orb",
+          "Sitrus Berry",
+          "Occa Berry",
+          "Icy Rock",
+          "Babiri Berry",
+          "Leftovers"
+        ],
+        "teammate": [
+          "Incineroar",
+          "Kingambit",
+          "Raichu",
+          "Basculegion Male",
+          "Garchomp",
+          "Sneasler",
+          "Whimsicott",
+          "Sinistcha",
+          "Milotic",
+          "Blaziken"
+        ],
+        "stat_alignment": [
+          "Timid",
+          "Modest",
+          "Bold",
+          "Mild",
+          "Calm",
+          "Hasty",
+          "Quiet",
+          "Relaxed",
+          "Naive",
+          "Jolly"
+        ],
+        "stat_points": [
+          "HP 2 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 32",
+          "HP 1 / Atk 0 / Def 1 / SpA 32 / SpD 0 / Spe 32",
+          "HP 0 / Atk 0 / Def 2 / SpA 32 / SpD 0 / Spe 32",
+          "HP 9 / Atk 0 / Def 11 / SpA 19 / SpD 0 / Spe 27",
+          "HP 0 / Atk 0 / Def 0 / SpA 32 / SpD 2 / Spe 32",
+          "HP 1 / Atk 0 / Def 0 / SpA 32 / SpD 1 / Spe 32",
+          "HP 8 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 26",
+          "HP 0 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 32"
+        ],
+        "ability": [
+          "Snow Warning",
+          "Snow Cloak"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "move",
+          "rank": 1,
+          "name": "Blizzard",
+          "percentage": "94.6%",
+          "percentage_value": 94.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "move",
+          "rank": 2,
+          "name": "Freeze-Dry",
+          "percentage": "76.9%",
+          "percentage_value": 76.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "move",
+          "rank": 3,
+          "name": "Protect",
+          "percentage": "67.7%",
+          "percentage_value": 67.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "move",
+          "rank": 4,
+          "name": "Aurora Veil",
+          "percentage": "52.1%",
+          "percentage_value": 52.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "move",
+          "rank": 5,
+          "name": "Encore",
+          "percentage": "32.1%",
+          "percentage_value": 32.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "move",
+          "rank": 6,
+          "name": "Moonblast",
+          "percentage": "29.4%",
+          "percentage_value": 29.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "move",
+          "rank": 7,
+          "name": "Dazzling Gleam",
+          "percentage": "8.1%",
+          "percentage_value": 8.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "move",
+          "rank": 8,
+          "name": "Icy Wind",
+          "percentage": "6.4%",
+          "percentage_value": 6.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "move",
+          "rank": 9,
+          "name": "Roar",
+          "percentage": "6.2%",
+          "percentage_value": 6.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "move",
+          "rank": 10,
+          "name": "Rain Dance",
+          "percentage": "5.9%",
+          "percentage_value": 5.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Never-Melt Ice",
+          "percentage": "38.4%",
+          "percentage_value": 38.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Focus Sash",
+          "percentage": "23.2%",
+          "percentage_value": 23.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Light Clay",
+          "percentage": "19.4%",
+          "percentage_value": 19.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Choice Scarf",
+          "percentage": "8.7%",
+          "percentage_value": 8.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Life Orb",
+          "percentage": "3.2%",
+          "percentage_value": 3.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Sitrus Berry",
+          "percentage": "1.5%",
+          "percentage_value": 1.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Occa Berry",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Icy Rock",
+          "percentage": "0.7%",
+          "percentage_value": 0.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Babiri Berry",
+          "percentage": "0.7%",
+          "percentage_value": 0.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Leftovers",
+          "percentage": "0.7%",
+          "percentage_value": 0.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Raichu",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Sneasler",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Whimsicott",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Milotic",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Blaziken",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Timid",
+          "percentage": "85.0%",
+          "percentage_value": 85,
+          "stat_up": "Speed",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Modest",
+          "percentage": "11.2%",
+          "percentage_value": 11.2,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Bold",
+          "percentage": "1.1%",
+          "percentage_value": 1.1,
+          "stat_up": "Defense",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Mild",
+          "percentage": "0.9%",
+          "percentage_value": 0.9,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Calm",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "Sp. Def",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Hasty",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Speed",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Quiet",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Relaxed",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Naive",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Jolly",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "34.2%",
+          "percentage_value": 34.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "11.5%",
+          "percentage_value": 11.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 1,
+          "attack_points": 0,
+          "defense_points": 1,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "6.2%",
+          "percentage_value": 6.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "5.2%",
+          "percentage_value": 5.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 9,
+          "attack_points": 0,
+          "defense_points": 11,
+          "sp_atk_points": 19,
+          "sp_def_points": 0,
+          "speed_points": 27
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "3.9%",
+          "percentage_value": 3.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 2,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "1.5%",
+          "percentage_value": 1.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 1,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 1,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "1.4%",
+          "percentage_value": 1.4,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 8,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 26
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "1.3%",
+          "percentage_value": 1.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "ability",
+          "rank": 1,
+          "name": "Snow Warning",
+          "percentage": "99.2%",
+          "percentage_value": 99.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Alolan Ninetales",
+          "column_position": 30,
+          "position": 30,
+          "category": "ability",
+          "rank": 2,
+          "name": "Snow Cloak",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Alolan Ninetales.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Alolan Ninetales.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Alolan Ninetales.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Alolan Ninetales.csv"
+      }
+    ]
+  }
+}

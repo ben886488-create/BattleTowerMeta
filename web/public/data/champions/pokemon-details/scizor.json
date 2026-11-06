@@ -1,0 +1,3096 @@
+{
+  "pokemon": {
+    "slug": "scizor",
+    "name": "Scizor",
+    "baseName": "Scizor",
+    "savedName": "Scizor",
+    "form": "",
+    "types": [
+      "Bug",
+      "Steel"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Scizor.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/212.png",
+    "stats": {
+      "hp": 145,
+      "attack": 150,
+      "defense": 120,
+      "spAttack": 75,
+      "spDefense": 100,
+      "speed": 85,
+      "total": 675
+    },
+    "rank": 60,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Bullet Punch",
+    "topItem": "Scizorite",
+    "topTeammate": "Incineroar"
+  },
+  "moves": [
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "move",
+      "rank": 1,
+      "name": "Bullet Punch",
+      "percentage": 0.994,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "move",
+        "rank": 1,
+        "name": "Bullet Punch",
+        "percentage": "99.4%",
+        "percentage_value": 99.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "move",
+      "rank": 2,
+      "name": "Protect",
+      "percentage": 0.715,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "move",
+        "rank": 2,
+        "name": "Protect",
+        "percentage": "71.5%",
+        "percentage_value": 71.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "move",
+      "rank": 3,
+      "name": "Bug Bite",
+      "percentage": 0.655,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "move",
+        "rank": 3,
+        "name": "Bug Bite",
+        "percentage": "65.5%",
+        "percentage_value": 65.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "move",
+      "rank": 4,
+      "name": "Swords Dance",
+      "percentage": 0.516,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "move",
+        "rank": 4,
+        "name": "Swords Dance",
+        "percentage": "51.6%",
+        "percentage_value": 51.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "move",
+      "rank": 5,
+      "name": "Close Combat",
+      "percentage": 0.363,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "move",
+        "rank": 5,
+        "name": "Close Combat",
+        "percentage": "36.3%",
+        "percentage_value": 36.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "move",
+      "rank": 6,
+      "name": "Dual Wingbeat",
+      "percentage": 0.182,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "move",
+        "rank": 6,
+        "name": "Dual Wingbeat",
+        "percentage": "18.2%",
+        "percentage_value": 18.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "move",
+      "rank": 7,
+      "name": "U-turn",
+      "percentage": 0.112,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "move",
+        "rank": 7,
+        "name": "U-turn",
+        "percentage": "11.2%",
+        "percentage_value": 11.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "move",
+      "rank": 8,
+      "name": "Trailblaze",
+      "percentage": 0.093,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "move",
+        "rank": 8,
+        "name": "Trailblaze",
+        "percentage": "9.3%",
+        "percentage_value": 9.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "move",
+      "rank": 9,
+      "name": "Knock Off",
+      "percentage": 0.09,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "move",
+        "rank": 9,
+        "name": "Knock Off",
+        "percentage": "9.0%",
+        "percentage_value": 9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "move",
+      "rank": 10,
+      "name": "Brick Break",
+      "percentage": 0.037,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "move",
+        "rank": 10,
+        "name": "Brick Break",
+        "percentage": "3.7%",
+        "percentage_value": 3.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Scizorite",
+      "percentage": 0.355,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Scizorite",
+        "percentage": "35.5%",
+        "percentage_value": 35.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Life Orb",
+      "percentage": 0.168,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Life Orb",
+        "percentage": "16.8%",
+        "percentage_value": 16.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Metal Coat",
+      "percentage": 0.077,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Metal Coat",
+        "percentage": "7.7%",
+        "percentage_value": 7.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Expert Belt",
+      "percentage": 0.065,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Expert Belt",
+        "percentage": "6.5%",
+        "percentage_value": 6.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Focus Sash",
+      "percentage": 0.028,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Focus Sash",
+        "percentage": "2.8%",
+        "percentage_value": 2.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Sitrus Berry",
+      "percentage": 0.026,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Sitrus Berry",
+        "percentage": "2.6%",
+        "percentage_value": 2.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Occa Berry",
+      "percentage": 0.017,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Occa Berry",
+        "percentage": "1.7%",
+        "percentage_value": 1.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Leftovers",
+      "percentage": 0.011,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Leftovers",
+        "percentage": "1.1%",
+        "percentage_value": 1.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "held_item",
+      "rank": 9,
+      "name": "White Herb",
+      "percentage": 0.011,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "held_item",
+        "rank": 9,
+        "name": "White Herb",
+        "percentage": "1.1%",
+        "percentage_value": 1.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Lum Berry",
+      "percentage": 0.011,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Lum Berry",
+        "percentage": "1.1%",
+        "percentage_value": 1.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "ability",
+      "rank": 1,
+      "name": "Technician",
+      "percentage": 0.977,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "ability",
+        "rank": 1,
+        "name": "Technician",
+        "percentage": "97.7%",
+        "percentage_value": 97.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "ability",
+      "rank": 2,
+      "name": "Light Metal",
+      "percentage": 0.012,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "ability",
+        "rank": 2,
+        "name": "Light Metal",
+        "percentage": "1.2%",
+        "percentage_value": 1.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "ability",
+      "rank": 3,
+      "name": "Swarm",
+      "percentage": 0.011,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "ability",
+        "rank": 3,
+        "name": "Swarm",
+        "percentage": "1.1%",
+        "percentage_value": 1.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Pelipper",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Pelipper",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Farigiraf",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Farigiraf",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Whimsicott",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Whimsicott",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Archaludon",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Archaludon",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Milotic",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Milotic",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Sylveon",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Sylveon",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Adamant",
+      "percentage": 0.836,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Adamant",
+        "percentage": "83.6%",
+        "percentage_value": 83.6,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Brave",
+      "percentage": 0.093,
+      "statUp": "Attack",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Brave",
+        "percentage": "9.3%",
+        "percentage_value": 9.3,
+        "stat_up": "Attack",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Jolly",
+      "percentage": 0.026,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Jolly",
+        "percentage": "2.6%",
+        "percentage_value": 2.6,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Careful",
+      "percentage": 0.015,
+      "statUp": "Sp. Def",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Careful",
+        "percentage": "1.5%",
+        "percentage_value": 1.5,
+        "stat_up": "Sp. Def",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Impish",
+      "percentage": 0.012,
+      "statUp": "Defense",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Impish",
+        "percentage": "1.2%",
+        "percentage_value": 1.2,
+        "stat_up": "Defense",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Naughty",
+      "percentage": 0.4,
+      "statUp": "Attack",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Naughty",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Sassy",
+      "percentage": 0.4,
+      "statUp": "Sp. Def",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Sassy",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Sp. Def",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Lonely",
+      "percentage": 0.3,
+      "statUp": "Attack",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Lonely",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Attack",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Hasty",
+      "percentage": 0.2,
+      "statUp": "Speed",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Hasty",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Speed",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Relaxed",
+      "percentage": 0.2,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Relaxed",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.276,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "27.6%",
+        "percentage_value": 27.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.113,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "11.3%",
+        "percentage_value": 11.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.085,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "8.5%",
+        "percentage_value": 8.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 2
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.051,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "5.1%",
+        "percentage_value": 5.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 26,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 8,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.037,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "3.7%",
+        "percentage_value": 3.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.019,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "1.9%",
+        "percentage_value": 1.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 32,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.016,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "1.6%",
+        "percentage_value": 1.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Scizor",
+      "position": 60,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.012,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scizor",
+        "column_position": 60,
+        "position": 60,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "1.2%",
+        "percentage_value": 1.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 32,
+        "speed_points": 0
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a5055f965724db9ded41c56-klito",
+      "name": "Klito · Weekly Qualifier for RookideeVGC Grand Tourney",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Protect",
+            "Roost"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Tickle",
+            "Sunny Day"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Helping Hand",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scizor",
+          "name": "Scizor",
+          "item": "Expert Belt",
+          "ability": "Technician",
+          "moves": [
+            "Bullet Punch",
+            "Bug Bite",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hisuian-typhlosion",
+          "name": "Hisuian Typhlosion",
+          "item": "Choice Scarf",
+          "ability": "Blaze",
+          "moves": [
+            "Eruption",
+            "Shadow Ball",
+            "Heat Wave",
+            "Overheat"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "Weekly Qualifier for RookideeVGC Grand Tourney",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Klito",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-aerxdri",
+      "name": "aerxdri - Elétrico/Inseto · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Protect",
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "vivillon",
+          "name": "Vivillon",
+          "item": "Choice Scarf",
+          "ability": "Compound Eyes",
+          "moves": [
+            "Rage Powder",
+            "Sleep Powder",
+            "Tailwind",
+            "Hurricane"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Sitrus Berry",
+          "ability": "Levitate",
+          "moves": [
+            "Hydro Pump",
+            "Thunderbolt",
+            "Will-O-Wisp",
+            "Light Screen"
+          ]
+        },
+        {
+          "slug": "volcarona",
+          "name": "Volcarona",
+          "item": "Life Orb",
+          "ability": "Flame Body",
+          "moves": [
+            "Protect",
+            "Fiery Dance",
+            "Quiver Dance",
+            "Bug Buzz"
+          ]
+        },
+        {
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "item": "Focus Sash",
+          "ability": "Sharpness",
+          "moves": [
+            "Protect",
+            "Stone Axe",
+            "Swords Dance",
+            "X-Scissor"
+          ]
+        },
+        {
+          "slug": "scizor",
+          "name": "Scizor",
+          "item": "Scizorite",
+          "ability": "Technician",
+          "moves": [
+            "Protect",
+            "Bullet Punch",
+            "Swords Dance",
+            "Bug Bite"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "aerxdri - Elétrico/Inseto",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a51f42365724db9ded43093-joaenna",
+      "name": "Joaenna · Tenki's Cart Weekly #109 - Reg MB",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Brave Bird",
+            "Close Combat",
+            "Roost",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Tickle",
+            "Sunny Day"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Helping Hand",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hisuian-typhlosion",
+          "name": "Hisuian Typhlosion",
+          "item": "Choice Scarf",
+          "ability": "Blaze",
+          "moves": [
+            "Eruption",
+            "Heat Wave",
+            "Shadow Ball",
+            "Solar Beam"
+          ]
+        },
+        {
+          "slug": "scizor",
+          "name": "Scizor",
+          "item": "Expert Belt",
+          "ability": "Technician",
+          "moves": [
+            "Bullet Punch",
+            "Bug Bite",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 8,
+      "tournament": "Tenki's Cart Weekly #109 - Reg MB",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Joaenna",
+      "record": "6-2-0"
+    },
+    {
+      "id": "6a4516dcc87cd9ff0a31469e-xbro1441",
+      "name": "xbro1441 · Pride Month 2 Celebration!!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "hisuian-goodra",
+          "name": "Hisuian Goodra",
+          "item": "Leftovers",
+          "ability": "Shell Armor",
+          "moves": [
+            "Body Press",
+            "Shelter",
+            "Heavy Slam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Rage Powder",
+            "Leech Seed",
+            "Overheat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "heliolisk",
+          "name": "Heliolisk",
+          "item": "Choice Scarf",
+          "ability": "Dry Skin",
+          "moves": [
+            "Volt Switch",
+            "Shed Tail",
+            "Eerie Impulse",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Weather Ball",
+            "Hurricane",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Accelerock",
+            "Rock Slide",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scizor",
+          "name": "Scizor",
+          "item": "Scizorite",
+          "ability": "Technician",
+          "moves": [
+            "Bullet Punch",
+            "Bug Bite",
+            "Swords Dance",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 2,
+      "tournament": "Pride Month 2 Celebration!!",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "xbro1441",
+      "record": "1-1-0"
+    },
+    {
+      "id": "6a4516dcc87cd9ff0a31469e-titanopigro3",
+      "name": "TitanoPigro3 · Pride Month 2 Celebration!!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scizor",
+          "name": "Scizor",
+          "item": "Scizorite",
+          "ability": "Technician",
+          "moves": [
+            "Bullet Punch",
+            "Bug Bite",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "vivillon",
+          "name": "Vivillon",
+          "item": "Focus Sash",
+          "ability": "Friend Guard",
+          "moves": [
+            "Rage Powder",
+            "Protect",
+            "Rain Dance",
+            "Hurricane"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Nasty Plot",
+            "Make It Rain",
+            "Shadow Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Tailwind",
+            "Weather Ball",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Electro Shot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Torrent",
+          "moves": [
+            "Wave Crash",
+            "High Horsepower",
+            "Ice Punch",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 2,
+      "tournament": "Pride Month 2 Celebration!!",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "TitanoPigro3",
+      "record": "0-2-0"
+    },
+    {
+      "id": "6a5117e465724db9ded421f1-hwakeen",
+      "name": "Hwakeen · Øutcast's Warm Up Cup",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scizor",
+          "name": "Scizor",
+          "item": "Scizorite",
+          "ability": "Technician",
+          "moves": [
+            "Bug Bite",
+            "Bullet Punch",
+            "Protect",
+            "Swords Dance"
+          ]
+        },
+        {
+          "slug": "kommo-o",
+          "name": "Kommo-o",
+          "item": "Sitrus Berry",
+          "ability": "Soundproof",
+          "moves": [
+            "Clangorous Soul",
+            "Clanging Scales",
+            "Aura Sphere",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Chople Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Parting Shot",
+            "Darkest Lariat",
+            "Flare Blitz",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Last Respects",
+            "Wave Crash",
+            "Flip Turn",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "politoed",
+          "name": "Politoed",
+          "item": "Leftovers",
+          "ability": "Drizzle",
+          "moves": [
+            "Helping Hand",
+            "Ice Beam",
+            "Protect",
+            "Weather Ball"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Coba Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Life Dew"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "Øutcast's Warm Up Cup",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Hwakeen",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a55808a232a1a55ee10be16-jaidonkin",
+      "name": "JaiDonkin · 𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Protect",
+            "Roost"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Shuca Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Taunt",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "scizor",
+          "name": "Scizor",
+          "item": "Scizorite",
+          "ability": "Technician",
+          "moves": [
+            "Bullet Punch",
+            "Bug Bite",
+            "Knock Off",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Focus Sash",
+          "ability": "Snow Warning",
+          "moves": [
+            "Freeze-Dry",
+            "Aurora Veil",
+            "Icy Wind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "araquanid",
+          "name": "Araquanid",
+          "item": "Mystic Water",
+          "ability": "Water Bubble",
+          "moves": [
+            "Liquidation",
+            "Wide Guard",
+            "Infestation",
+            "Leech Life"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "JaiDonkin",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a5497ab232a1a55ee10b2b8-altkyle",
+      "name": "Altkyle · HeroicTitan’s VGC Battle Arena",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Pulse",
+            "Flamethrower",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Flip Turn"
+          ]
+        },
+        {
+          "slug": "scizor",
+          "name": "Scizor",
+          "item": "Scizorite",
+          "ability": "Technician",
+          "moves": [
+            "Bullet Punch",
+            "Close Combat",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Chople Berry",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Aura Sphere",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Focus Sash",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Weather Ball",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "HeroicTitan’s VGC Battle Arena",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Altkyle",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a5497ab232a1a55ee10b2b8-dazedyak",
+      "name": "dazedyak · HeroicTitan’s VGC Battle Arena",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Rock Slide",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "scizor",
+          "name": "Scizor",
+          "item": "Life Orb",
+          "ability": "Technician",
+          "moves": [
+            "Protect",
+            "Bullet Punch",
+            "Bug Bite",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Roseli Berry",
+          "ability": "Rough Skin",
+          "moves": [
+            "Stomping Tantrum",
+            "Protect",
+            "Rock Slide",
+            "Dragon Claw"
+          ]
+        },
+        {
+          "slug": "meowscarada",
+          "name": "Meowscarada",
+          "item": "Focus Sash",
+          "ability": "Overgrow",
+          "moves": [
+            "Protect",
+            "Flower Trick",
+            "Sucker Punch",
+            "Triple Axel"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Parting Shot",
+            "Throat Chop"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Leftovers",
+          "ability": "Levitate",
+          "moves": [
+            "Protect",
+            "Hydro Pump",
+            "Thunderbolt",
+            "Will-O-Wisp"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "HeroicTitan’s VGC Battle Arena",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "dazedyak",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a442f7183fd320299bd5187-tombac",
+      "name": "Thomas Bacu · HALL OF  FAME BELGIUM (Invitational)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scizor",
+          "name": "Scizor",
+          "item": "Scizorite",
+          "ability": "Technician",
+          "moves": [
+            "Bullet Punch",
+            "Swords Dance",
+            "Protect",
+            "Bug Bite"
+          ]
+        },
+        {
+          "slug": "kommo-o",
+          "name": "Kommo-o",
+          "item": "Leftovers",
+          "ability": "Soundproof",
+          "moves": [
+            "Clanging Scales",
+            "Aura Sphere",
+            "Clangorous Soul",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Flip Turn",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Trick Room",
+            "Rage Powder",
+            "Life Dew"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Helping Hand",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Low Kick",
+            "Knock Off",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "HALL OF  FAME BELGIUM (Invitational)",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Thomas Bacu",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a46629683fd320299bd6543-joaenna",
+      "name": "Joaenna · 🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Brave Bird",
+            "Close Combat",
+            "Roost",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Tickle",
+            "Sunny Day"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Helping Hand",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hisuian-typhlosion",
+          "name": "Hisuian Typhlosion",
+          "item": "Choice Scarf",
+          "ability": "Blaze",
+          "moves": [
+            "Eruption",
+            "Heat Wave",
+            "Shadow Ball",
+            "Solar Beam"
+          ]
+        },
+        {
+          "slug": "scizor",
+          "name": "Scizor",
+          "item": "Expert Belt",
+          "ability": "Technician",
+          "moves": [
+            "Bullet Punch",
+            "Bug Bite",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Joaenna",
+      "record": "6-3-0"
+    }
+  ],
+  "movePool": [
+    "Acrobatics",
+    "Aerial Ace",
+    "Agility",
+    "Air Cutter",
+    "Air Slash",
+    "Assurance",
+    "Baton Pass",
+    "Brick Break",
+    "Brutal Swing",
+    "Bug Bite",
+    "Bug Buzz",
+    "Bullet Punch",
+    "Close Combat",
+    "Counter",
+    "Curse",
+    "Defog",
+    "Double Hit",
+    "Double Team",
+    "Double-Edge",
+    "Dual Wingbeat",
+    "Endure",
+    "Facade",
+    "Feint",
+    "Flash Cannon",
+    "Fling",
+    "Focus Energy",
+    "Giga Impact",
+    "Hard Press",
+    "Helping Hand",
+    "Hyper Beam",
+    "Iron Defense",
+    "Iron Head",
+    "Knock Off",
+    "Light Screen",
+    "Lunge",
+    "Night Slash",
+    "Pounce",
+    "Protect",
+    "Psycho Cut",
+    "Quick Attack",
+    "Quick Guard",
+    "Rain Dance",
+    "Rest",
+    "Reversal",
+    "Roost",
+    "Round",
+    "Sandstorm",
+    "Scary Face",
+    "Skitter Smack",
+    "Sleep Talk",
+    "Snore",
+    "Steel Beam",
+    "Steel Wing",
+    "Struggle Bug",
+    "Substitute",
+    "Sunny Day",
+    "Superpower",
+    "Swords Dance",
+    "Tailwind",
+    "Thief",
+    "Trailblaze",
+    "U-turn",
+    "Vacuum Wave",
+    "X-Scissor"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Scizor",
+      "base_name": "Scizor",
+      "saved_name": "Scizor",
+      "types": "Bug/Steel",
+      "abilities": "Swarm|Technician|Light Metal",
+      "image_path": "pokemon_champions_assets\\pokemon\\Scizor.png",
+      "form": "",
+      "hp": 145,
+      "atk": 150,
+      "def": 120,
+      "spa": 75,
+      "spd": 100,
+      "spe": 85,
+      "total": 675
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "move",
+          "rank": 1,
+          "name": "Bullet Punch",
+          "percentage": "99.4%",
+          "percentage_value": 99.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Scizorite",
+          "percentage": "35.5%",
+          "percentage_value": 35.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Adamant",
+          "percentage": "83.6%",
+          "percentage_value": 83.6,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        "stat_points": {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "27.6%",
+          "percentage_value": 27.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        "ability": {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "ability",
+          "rank": 1,
+          "name": "Technician",
+          "percentage": "97.7%",
+          "percentage_value": 97.7,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Bullet Punch",
+          "Protect",
+          "Bug Bite",
+          "Swords Dance",
+          "Close Combat",
+          "Dual Wingbeat",
+          "U-turn",
+          "Trailblaze",
+          "Knock Off",
+          "Brick Break"
+        ],
+        "held_item": [
+          "Scizorite",
+          "Life Orb",
+          "Metal Coat",
+          "Expert Belt",
+          "Focus Sash",
+          "Sitrus Berry",
+          "Occa Berry",
+          "Leftovers",
+          "White Herb",
+          "Lum Berry"
+        ],
+        "teammate": [
+          "Incineroar",
+          "Garchomp",
+          "Pelipper",
+          "Sinistcha",
+          "Farigiraf",
+          "Whimsicott",
+          "Basculegion Male",
+          "Archaludon",
+          "Milotic",
+          "Sylveon"
+        ],
+        "stat_alignment": [
+          "Adamant",
+          "Brave",
+          "Jolly",
+          "Careful",
+          "Impish",
+          "Naughty",
+          "Sassy",
+          "Lonely",
+          "Hasty",
+          "Relaxed"
+        ],
+        "stat_points": [
+          "HP 32 / Atk 32 / Def 0 / SpA 0 / SpD 2 / Spe 0",
+          "HP 32 / Atk 32 / Def 2 / SpA 0 / SpD 0 / Spe 0",
+          "HP 32 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 2",
+          "HP 26 / Atk 32 / Def 0 / SpA 0 / SpD 8 / Spe 0",
+          "HP 2 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 32",
+          "HP 0 / Atk 32 / Def 32 / SpA 0 / SpD 2 / Spe 0",
+          "HP 0 / Atk 32 / Def 2 / SpA 0 / SpD 0 / Spe 32",
+          "HP 0 / Atk 32 / Def 2 / SpA 0 / SpD 32 / Spe 0"
+        ],
+        "ability": [
+          "Technician",
+          "Light Metal",
+          "Swarm"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "move",
+          "rank": 1,
+          "name": "Bullet Punch",
+          "percentage": "99.4%",
+          "percentage_value": 99.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "move",
+          "rank": 2,
+          "name": "Protect",
+          "percentage": "71.5%",
+          "percentage_value": 71.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "move",
+          "rank": 3,
+          "name": "Bug Bite",
+          "percentage": "65.5%",
+          "percentage_value": 65.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "move",
+          "rank": 4,
+          "name": "Swords Dance",
+          "percentage": "51.6%",
+          "percentage_value": 51.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "move",
+          "rank": 5,
+          "name": "Close Combat",
+          "percentage": "36.3%",
+          "percentage_value": 36.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "move",
+          "rank": 6,
+          "name": "Dual Wingbeat",
+          "percentage": "18.2%",
+          "percentage_value": 18.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "move",
+          "rank": 7,
+          "name": "U-turn",
+          "percentage": "11.2%",
+          "percentage_value": 11.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "move",
+          "rank": 8,
+          "name": "Trailblaze",
+          "percentage": "9.3%",
+          "percentage_value": 9.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "move",
+          "rank": 9,
+          "name": "Knock Off",
+          "percentage": "9.0%",
+          "percentage_value": 9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "move",
+          "rank": 10,
+          "name": "Brick Break",
+          "percentage": "3.7%",
+          "percentage_value": 3.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Scizorite",
+          "percentage": "35.5%",
+          "percentage_value": 35.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Life Orb",
+          "percentage": "16.8%",
+          "percentage_value": 16.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Metal Coat",
+          "percentage": "7.7%",
+          "percentage_value": 7.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Expert Belt",
+          "percentage": "6.5%",
+          "percentage_value": 6.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Focus Sash",
+          "percentage": "2.8%",
+          "percentage_value": 2.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Sitrus Berry",
+          "percentage": "2.6%",
+          "percentage_value": 2.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Occa Berry",
+          "percentage": "1.7%",
+          "percentage_value": 1.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Leftovers",
+          "percentage": "1.1%",
+          "percentage_value": 1.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "held_item",
+          "rank": 9,
+          "name": "White Herb",
+          "percentage": "1.1%",
+          "percentage_value": 1.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Lum Berry",
+          "percentage": "1.1%",
+          "percentage_value": 1.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Pelipper",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Whimsicott",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Archaludon",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Milotic",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Sylveon",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Adamant",
+          "percentage": "83.6%",
+          "percentage_value": 83.6,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Brave",
+          "percentage": "9.3%",
+          "percentage_value": 9.3,
+          "stat_up": "Attack",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Jolly",
+          "percentage": "2.6%",
+          "percentage_value": 2.6,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Careful",
+          "percentage": "1.5%",
+          "percentage_value": 1.5,
+          "stat_up": "Sp. Def",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Impish",
+          "percentage": "1.2%",
+          "percentage_value": 1.2,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Naughty",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Sassy",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Sp. Def",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Lonely",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Attack",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Hasty",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Speed",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Relaxed",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "27.6%",
+          "percentage_value": 27.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "11.3%",
+          "percentage_value": 11.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "8.5%",
+          "percentage_value": 8.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 2
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "5.1%",
+          "percentage_value": 5.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 26,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 8,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "3.7%",
+          "percentage_value": 3.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "1.9%",
+          "percentage_value": 1.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 32,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "1.6%",
+          "percentage_value": 1.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "1.2%",
+          "percentage_value": 1.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 32,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "ability",
+          "rank": 1,
+          "name": "Technician",
+          "percentage": "97.7%",
+          "percentage_value": 97.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "ability",
+          "rank": 2,
+          "name": "Light Metal",
+          "percentage": "1.2%",
+          "percentage_value": 1.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scizor",
+          "column_position": 60,
+          "position": 60,
+          "category": "ability",
+          "rank": 3,
+          "name": "Swarm",
+          "percentage": "1.1%",
+          "percentage_value": 1.1,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Scizor.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Scizor.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Scizor.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Scizor.csv"
+      }
+    ]
+  }
+}

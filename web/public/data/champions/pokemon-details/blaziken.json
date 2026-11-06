@@ -1,0 +1,4484 @@
+{
+  "pokemon": {
+    "slug": "blaziken",
+    "name": "Blaziken",
+    "baseName": "Blaziken",
+    "savedName": "Blaziken",
+    "form": "",
+    "types": [
+      "Fire",
+      "Fighting"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Blaziken.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/257.png",
+    "stats": {
+      "hp": 155,
+      "attack": 140,
+      "defense": 90,
+      "spAttack": 130,
+      "spDefense": 90,
+      "speed": 100,
+      "total": 705
+    },
+    "rank": 44,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Close Combat",
+    "topItem": "Blazikenite",
+    "topTeammate": "Kingambit"
+  },
+  "moves": [
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "move",
+      "rank": 1,
+      "name": "Close Combat",
+      "percentage": 0.874,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "move",
+        "rank": 1,
+        "name": "Close Combat",
+        "percentage": "87.4%",
+        "percentage_value": 87.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "move",
+      "rank": 2,
+      "name": "Flare Blitz",
+      "percentage": 0.865,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "move",
+        "rank": 2,
+        "name": "Flare Blitz",
+        "percentage": "86.5%",
+        "percentage_value": 86.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "move",
+      "rank": 3,
+      "name": "Rock Slide",
+      "percentage": 0.701,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "move",
+        "rank": 3,
+        "name": "Rock Slide",
+        "percentage": "70.1%",
+        "percentage_value": 70.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "move",
+      "rank": 4,
+      "name": "Protect",
+      "percentage": 0.541,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "move",
+        "rank": 4,
+        "name": "Protect",
+        "percentage": "54.1%",
+        "percentage_value": 54.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "move",
+      "rank": 5,
+      "name": "Detect",
+      "percentage": 0.438,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "move",
+        "rank": 5,
+        "name": "Detect",
+        "percentage": "43.8%",
+        "percentage_value": 43.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "move",
+      "rank": 6,
+      "name": "Swords Dance",
+      "percentage": 0.065,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "move",
+        "rank": 6,
+        "name": "Swords Dance",
+        "percentage": "6.5%",
+        "percentage_value": 6.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "move",
+      "rank": 7,
+      "name": "Heat Wave",
+      "percentage": 0.058,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "move",
+        "rank": 7,
+        "name": "Heat Wave",
+        "percentage": "5.8%",
+        "percentage_value": 5.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "move",
+      "rank": 8,
+      "name": "Aura Sphere",
+      "percentage": 0.052,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "move",
+        "rank": 8,
+        "name": "Aura Sphere",
+        "percentage": "5.2%",
+        "percentage_value": 5.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "move",
+      "rank": 9,
+      "name": "Thunder Punch",
+      "percentage": 0.051,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "move",
+        "rank": 9,
+        "name": "Thunder Punch",
+        "percentage": "5.1%",
+        "percentage_value": 5.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "move",
+      "rank": 10,
+      "name": "Coaching",
+      "percentage": 0.041,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "move",
+        "rank": 10,
+        "name": "Coaching",
+        "percentage": "4.1%",
+        "percentage_value": 4.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Blazikenite",
+      "percentage": 0.831,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Blazikenite",
+        "percentage": "83.1%",
+        "percentage_value": 83.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Focus Sash",
+      "percentage": 0.068,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Focus Sash",
+        "percentage": "6.8%",
+        "percentage_value": 6.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Life Orb",
+      "percentage": 0.044,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Life Orb",
+        "percentage": "4.4%",
+        "percentage_value": 4.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Expert Belt",
+      "percentage": 0.8,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Expert Belt",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "held_item",
+      "rank": 5,
+      "name": "White Herb",
+      "percentage": 0.7,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "held_item",
+        "rank": 5,
+        "name": "White Herb",
+        "percentage": "0.7%",
+        "percentage_value": 0.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Muscle Band",
+      "percentage": 0.7,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Muscle Band",
+        "percentage": "0.7%",
+        "percentage_value": 0.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Sitrus Berry",
+      "percentage": 0.6,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Sitrus Berry",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Leftovers",
+      "percentage": 0.4,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Leftovers",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Wide Lens",
+      "percentage": 0.4,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Wide Lens",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Charcoal",
+      "percentage": 0.3,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Charcoal",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "ability",
+      "rank": 1,
+      "name": "Speed Boost",
+      "percentage": 0.945,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "ability",
+        "rank": 1,
+        "name": "Speed Boost",
+        "percentage": "94.5%",
+        "percentage_value": 94.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "ability",
+      "rank": 2,
+      "name": "Blaze",
+      "percentage": 0.055,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "ability",
+        "rank": 2,
+        "name": "Blaze",
+        "percentage": "5.5%",
+        "percentage_value": 5.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Kingambit",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Kingambit",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Sylveon",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Sylveon",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Aerodactyl",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Aerodactyl",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Alolan Ninetales",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Alolan Ninetales",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Whimsicott",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Whimsicott",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Torkoal",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Torkoal",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Dragonite",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Dragonite",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Farigiraf",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Farigiraf",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Adamant",
+      "percentage": 0.179,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Adamant",
+        "percentage": "17.9%",
+        "percentage_value": 17.9,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Jolly",
+      "percentage": 0.127,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Jolly",
+        "percentage": "12.7%",
+        "percentage_value": 12.7,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Modest",
+      "percentage": 0.039,
+      "statUp": "Sp. Atk",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Modest",
+        "percentage": "3.9%",
+        "percentage_value": 3.9,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Timid",
+      "percentage": 0.02,
+      "statUp": "Speed",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Timid",
+        "percentage": "2.0%",
+        "percentage_value": 2,
+        "stat_up": "Speed",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Naughty",
+      "percentage": 0.7,
+      "statUp": "Attack",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Naughty",
+        "percentage": "0.7%",
+        "percentage_value": 0.7,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Impish",
+      "percentage": 0.6,
+      "statUp": "Defense",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Impish",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "Defense",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Lonely",
+      "percentage": 0.4,
+      "statUp": "Attack",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Lonely",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Attack",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Careful",
+      "percentage": 0.4,
+      "statUp": "Sp. Def",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Careful",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Sp. Def",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Naive",
+      "percentage": 0.4,
+      "statUp": "Speed",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Naive",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Hasty",
+      "percentage": 0.3,
+      "statUp": "Speed",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Hasty",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Speed",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.583,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "58.3%",
+        "percentage_value": 58.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.07,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "7.0%",
+        "percentage_value": 7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.04,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "4.0%",
+        "percentage_value": 4,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.027,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "2.7%",
+        "percentage_value": 2.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.021,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "2.1%",
+        "percentage_value": 2.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 12,
+        "attack_points": 30,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 24
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.012,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "1.2%",
+        "percentage_value": 1.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 2
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.8,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 1,
+        "sp_atk_points": 0,
+        "sp_def_points": 1,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Blaziken",
+      "position": 44,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.5,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blaziken",
+        "column_position": 44,
+        "position": 44,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a46b0e683fd320299bd6881-luankakashi",
+      "name": "LuanKakashi · X1 Remote Battle League 2ª Edição - Reg M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Stone Edge",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Giga Drain",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Encore",
+            "Aurora Veil"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Accelerock",
+            "Rock Slide",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Aqua Jet",
+            "Flip Turn",
+            "Wave Crash",
+            "Last Respects"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "X1 Remote Battle League 2ª Edição - Reg M-B",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "LuanKakashi",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a5055f965724db9ded41c56-natsukivgc",
+      "name": "NatsukiVGC · Weekly Qualifier for RookideeVGC Grand Tourney",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Claw",
+            "Extreme Speed",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Weekly Qualifier for RookideeVGC Grand Tourney",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "NatsukiVGC",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a4dbb9665724db9ded3ff83-kiri99",
+      "name": "Kiri99 · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Detect",
+            "Flare Blitz",
+            "Stone Edge"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Giga Drain",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Last Respects",
+            "Aqua Jet",
+            "Wave Crash",
+            "Flip Turn"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Kowtow Cleave",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Accelerock",
+            "Close Combat",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Protect",
+            "Encore"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Kiri99",
+      "record": "4-1-0"
+    },
+    {
+      "id": "6a4dbc1e063cb29d318e66e7-reddo161",
+      "name": "Reddo161 · The Grim Challenge #3 - Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gengar",
+          "name": "Gengar",
+          "item": "Gengarite",
+          "ability": "Shadow Tag",
+          "moves": [
+            "Shadow Ball",
+            "Disable",
+            "Perish Song",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Parting Shot",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Focus Sash",
+          "ability": "Adaptability",
+          "moves": [
+            "Liquidation",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 8,
+      "tournament": "The Grim Challenge #3 - Champions",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Reddo161",
+      "record": "6-2-0"
+    },
+    {
+      "id": "6a4dbc1e063cb29d318e66e7-yakka94",
+      "name": "Yakka94 · The Grim Challenge #3 - Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Kowtow Cleave",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Choice Scarf",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Moonblast",
+            "Psyshock"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Tailwind",
+            "Ice Fang"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Protect",
+            "Hyper Voice",
+            "Yawn",
+            "Quick Attack"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Focus Sash",
+          "ability": "Adaptability",
+          "moves": [
+            "Liquidation",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "The Grim Challenge #3 - Champions",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Yakka94",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a3200c5e334c3c9befd8430-snorlaxpikachu1",
+      "name": "Snorlaxpikachu1 · The Grand Champions Festival Encore",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Stone Edge",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Giga Drain",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Accelerock",
+            "Rock Slide",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Flip Turn",
+            "Aqua Jet"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8125,
+      "sampleCount": 16,
+      "tournament": "The Grand Champions Festival Encore",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Snorlaxpikachu1",
+      "record": "13-3-0"
+    },
+    {
+      "id": "6a3200c5e334c3c9befd8430-whimsicott",
+      "name": "Whimsicott · The Grand Champions Festival Encore",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Claw",
+            "Extreme Speed",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Poison Jab",
+            "Close Combat",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8125,
+      "sampleCount": 16,
+      "tournament": "The Grand Champions Festival Encore",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Whimsicott",
+      "record": "13-3-0"
+    },
+    {
+      "id": "6a53c2d1e09846f1eb4c161b-averagememer57",
+      "name": "averagememer57 · The Drywall Series #11",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "vanilluxe",
+          "name": "Vanilluxe",
+          "item": "Choice Scarf",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Icy Wind",
+            "Sheer Cold"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Rock Slide",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Tailwind",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Life Orb",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Focus Sash",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Trop Kick",
+            "Taunt",
+            "Helping Hand",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7142857142857143,
+      "sampleCount": 7,
+      "tournament": "The Drywall Series #11",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "averagememer57",
+      "record": "5-2-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-erichmr",
+      "name": "erichmr - Dragão/Lutador · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Dragon Pulse",
+            "Dragon Cheer",
+            "Tailwind",
+            "Air Slash"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Poison Jab",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragapult",
+          "name": "Dragapult",
+          "item": "Focus Sash",
+          "ability": "Infiltrator",
+          "moves": [
+            "Dragon Darts",
+            "Dragon Dance",
+            "Phantom Force",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Close Combat",
+            "Dire Claw",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Choice Scarf",
+          "ability": "Stamina",
+          "moves": [
+            "Flash Cannon",
+            "Draco Meteor",
+            "Thunderbolt",
+            "Snarl"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 8,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "erichmr - Dragão/Lutador",
+      "record": "6-2-0"
+    },
+    {
+      "id": "6a51f42365724db9ded43093-freemangordon",
+      "name": "FreemanGordon · Tenki's Cart Weekly #109 - Reg MB",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Claw",
+            "Extreme Speed",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "Tenki's Cart Weekly #109 - Reg MB",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "FreemanGordon",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a4f9758063cb29d318e79a9-nhh41",
+      "name": "nhh41 · Sky Pillar Saturday Showdown S8 #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "houndstone",
+          "name": "Houndstone",
+          "item": "Sitrus Berry",
+          "ability": "Sand Rush",
+          "moves": [
+            "Last Respects",
+            "Will-O-Wisp",
+            "Ally Switch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Choice Scarf",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Ice Punch",
+            "Low Kick"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Protect",
+            "Giga Drain",
+            "Sludge Bomb",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "aegislash",
+          "name": "Aegislash",
+          "item": "Focus Sash",
+          "ability": "Stance Change",
+          "moves": [
+            "Wide Guard",
+            "Close Combat",
+            "Poltergeist",
+            "Shadow Sneak"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Protect",
+            "Flare Blitz",
+            "Close Combat",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Protect",
+            "Life Dew",
+            "Scald",
+            "Ice Beam"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Sky Pillar Saturday Showdown S8 #10",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "nhh41",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a420fbf83fd320299bd3c3c-girasolia",
+      "name": "girasolia · Sketch Academy Sunday Regulation M-B Tournament",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Rock Slide",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Light of Ruin",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Life Orb",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Sketch Academy Sunday Regulation M-B Tournament",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "girasolia",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a420fbf83fd320299bd3c3c-glitterckvamp",
+      "name": "glitterckvamp · Sketch Academy Sunday Regulation M-B Tournament",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Life Orb",
+          "ability": "Oblivious",
+          "moves": [
+            "High Horsepower",
+            "Protect",
+            "Ice Shard",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Leftovers",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Shadow Ball",
+            "Trick Room",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Fake Out",
+            "Focus Blast",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Protect",
+            "Iron Head",
+            "Low Kick",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Protect",
+            "Coaching",
+            "Close Combat",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "araquanid",
+          "name": "Araquanid",
+          "item": "Mystic Water",
+          "ability": "Water Bubble",
+          "moves": [
+            "Liquidation",
+            "Leech Life",
+            "Wide Guard",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Sketch Academy Sunday Regulation M-B Tournament",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "glitterckvamp",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a4516dcc87cd9ff0a31469e-arceon",
+      "name": "Arceon · Pride Month 2 Celebration!!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Focus Sash",
+          "ability": "Speed Boost",
+          "moves": [
+            "Swords Dance",
+            "Protect",
+            "Thunder Punch",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Aurora Veil",
+            "Destiny Bond",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Pressure",
+          "moves": [
+            "Roost",
+            "Iron Defense",
+            "Body Press",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "meowscarada",
+          "name": "Meowscarada",
+          "item": "Choice Scarf",
+          "ability": "Protean",
+          "moves": [
+            "Play Rough",
+            "Triple Axel",
+            "Flower Trick",
+            "Knock Off"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Yache Berry",
+          "ability": "Pressure",
+          "moves": [
+            "Tailwind",
+            "Dual Wingbeat",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Sitrus Berry",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Brick Break",
+            "Rock Slide",
+            "Outrage"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.25,
+      "sampleCount": 4,
+      "tournament": "Pride Month 2 Celebration!!",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Arceon",
+      "record": "1-3-0"
+    },
+    {
+      "id": "6a43db49c87cd9ff0a313918-emprov",
+      "name": "Emprov · Pokepal Smackdown #149 (Champions) (Reg M-B)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Rock Slide",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Tailwind",
+            "Ice Fang"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Leftovers",
+          "ability": "Drought",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Yawn",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Focus Sash",
+          "ability": "Adaptability",
+          "moves": [
+            "Liquidation",
+            "Aqua Jet",
+            "Last Respects",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Moonblast",
+            "Hyper Voice",
+            "Quick Attack",
+            "Detect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Pokepal Smackdown #149 (Champions) (Reg M-B)",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Emprov",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a539b48c0a6bab82fbbca0a-zenority",
+      "name": "Michael Jerez · London Corviknight VGC Weekly tour 5!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Occa Berry",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Leaf Storm",
+            "Sleep Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Hyper Beam",
+            "Quick Attack",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Leftovers",
+          "ability": "Drought",
+          "moves": [
+            "Weather Ball",
+            "Stone Edge",
+            "Yawn",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Focus Sash",
+          "ability": "Adaptability",
+          "moves": [
+            "Last Respects",
+            "Liquidation",
+            "Aqua Jet",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 5,
+      "tournament": "London Corviknight VGC Weekly tour 5!",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Michael Jerez",
+      "record": "4-1-0"
+    },
+    {
+      "id": "6a54c9d3232a1a55ee10b346-sydneykk",
+      "name": "Sydneykk · Intimidators Champions Challenge #27 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Flare Blitz",
+            "Rock Slide",
+            "Close Combat",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Protect",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Focus Sash",
+          "ability": "Adaptability",
+          "moves": [
+            "Liquidation",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gengar",
+          "name": "Gengar",
+          "item": "Gengarite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Shadow Ball",
+            "Disable",
+            "Perish Song",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Flare Blitz",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7142857142857143,
+      "sampleCount": 7,
+      "tournament": "Intimidators Champions Challenge #27 REG M-B",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Sydneykk",
+      "record": "5-2-0"
+    },
+    {
+      "id": "6a54c9d3232a1a55ee10b346-silvioueda",
+      "name": "NMR | Ueda · Intimidators Champions Challenge #27 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Rock Slide",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Focus Sash",
+          "ability": "Adaptability",
+          "moves": [
+            "Liquidation",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Moonblast",
+            "Hyper Voice",
+            "Quick Attack",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Leftovers",
+          "ability": "Drought",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Yawn",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Tailwind",
+            "Ice Fang"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Intimidators Champions Challenge #27 REG M-B",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "NMR | Ueda",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a54c9d3232a1a55ee10b346-rokusasu",
+      "name": "rokusasu · Intimidators Champions Challenge #27 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Detect",
+            "Rock Slide",
+            "Close Combat",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Life Orb",
+          "ability": "Adaptability",
+          "moves": [
+            "Protect",
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Thunderbolt",
+            "Roar",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Draco Meteor",
+            "Snarl",
+            "Earth Power",
+            "Dark Pulse"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Protect",
+            "Moonblast",
+            "Energy Ball",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Protect",
+            "Psychic Fangs",
+            "Iron Head",
+            "Stomping Tantrum"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Intimidators Champions Challenge #27 REG M-B",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "rokusasu",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a5497ab232a1a55ee10b2b8-dazedyak",
+      "name": "dazedyak · HeroicTitan’s VGC Battle Arena",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Rock Slide",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "scizor",
+          "name": "Scizor",
+          "item": "Life Orb",
+          "ability": "Technician",
+          "moves": [
+            "Protect",
+            "Bullet Punch",
+            "Bug Bite",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Roseli Berry",
+          "ability": "Rough Skin",
+          "moves": [
+            "Stomping Tantrum",
+            "Protect",
+            "Rock Slide",
+            "Dragon Claw"
+          ]
+        },
+        {
+          "slug": "meowscarada",
+          "name": "Meowscarada",
+          "item": "Focus Sash",
+          "ability": "Overgrow",
+          "moves": [
+            "Protect",
+            "Flower Trick",
+            "Sucker Punch",
+            "Triple Axel"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Parting Shot",
+            "Throat Chop"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Leftovers",
+          "ability": "Levitate",
+          "moves": [
+            "Protect",
+            "Hydro Pump",
+            "Thunderbolt",
+            "Will-O-Wisp"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "HeroicTitan’s VGC Battle Arena",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "dazedyak",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a467bb683fd320299bd6627-fluna",
+      "name": "Fluna · Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Protect",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Ice Fang",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Protect",
+            "Iron Head",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Focus Sash",
+          "ability": "Adaptability",
+          "moves": [
+            "Liquidation",
+            "Protect",
+            "Last Respects",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Moonblast",
+            "Quick Attack",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Choice Scarf",
+          "ability": "Snow Warning",
+          "moves": [
+            "Psyshock",
+            "Moonblast",
+            "Blizzard",
+            "Freeze-Dry"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Fluna",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a442f7183fd320299bd5187-arkhept",
+      "name": "Max Doebeli · HALL OF  FAME BELGIUM (Invitational)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Flare Blitz",
+            "Rock Slide",
+            "Detect",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Hyper Beam",
+            "Quick Attack",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Life Orb",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Aqua Jet",
+            "Last Respects",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Reflect",
+            "Trick Room",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Ice Fang",
+            "Tailwind"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "HALL OF  FAME BELGIUM (Invitational)",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Max Doebeli",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a4d3355063cb29d318e5f6a-kaori_uy",
+      "name": "Mauro Gonzalez · Circuito Pretemporada: Pokémon Champions #4",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Rock Slide",
+            "Flare Blitz",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Protect",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Focus Sash",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gengar",
+          "name": "Gengar",
+          "item": "Gengarite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Shadow Ball",
+            "Disable",
+            "Perish Song",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Flare Blitz",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 1,
+      "sampleCount": 4,
+      "tournament": "Circuito Pretemporada: Pokémon Champions #4",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Mauro Gonzalez",
+      "record": "4-0-0"
+    },
+    {
+      "id": "6a57380e6355385f44dd5183-nirvana",
+      "name": "NIRVANA · Champions Tour LEPE M-B #9",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "hisuian-typhlosion",
+          "name": "Hisuian Typhlosion",
+          "item": "Choice Scarf",
+          "ability": "Blaze",
+          "moves": [
+            "Eruption",
+            "Heat Wave",
+            "Infernal Parade",
+            "Solar Beam"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Solar Power",
+          "moves": [
+            "Heat Wave",
+            "Solar Beam",
+            "Focus Blast",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Lum Berry",
+          "ability": "Multiscale",
+          "moves": [
+            "Dragon Dance",
+            "Outrage",
+            "Rock Slide",
+            "Extreme Speed"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Focus Sash",
+          "ability": "Speed Boost",
+          "moves": [
+            "Protect",
+            "Flare Blitz",
+            "Close Combat",
+            "Coaching"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Life Orb",
+          "ability": "Pixilate",
+          "moves": [
+            "Quick Attack",
+            "Hyper Voice",
+            "Protect",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Quick Claw",
+          "ability": "Intimidate",
+          "moves": [
+            "Bulk Up",
+            "Fake Out",
+            "Knock Off",
+            "Drain Punch"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.25,
+      "sampleCount": 4,
+      "tournament": "Champions Tour LEPE M-B #9",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "NIRVANA",
+      "record": "1-3-0"
+    },
+    {
+      "id": "6a392e4ac87cd9ff0a30d0b0-viophoenixvgc",
+      "name": "VioPhoenixVGC · Alpensee Tour (Reg M-B) #66",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Claw",
+            "Extreme Speed",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8333333333333334,
+      "sampleCount": 12,
+      "tournament": "Alpensee Tour (Reg M-B) #66",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "VioPhoenixVGC",
+      "record": "10-2-0"
+    },
+    {
+      "id": "6a392e4ac87cd9ff0a30d0b0-xbro1441",
+      "name": "xbro1441 · Alpensee Tour (Reg M-B) #66",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Protect",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Protect",
+            "Quick Guard",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Focus Sash",
+          "ability": "Adaptability",
+          "moves": [
+            "Liquidation",
+            "Protect",
+            "Last Respects",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Hyper Beam",
+            "Quick Attack",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Leftovers",
+          "ability": "Drought",
+          "moves": [
+            "Stone Edge",
+            "Weather Ball",
+            "Protect",
+            "Yawn"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Occa Berry",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Leaf Storm",
+            "Sludge Bomb",
+            "Protect",
+            "Sleep Powder"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 12,
+      "tournament": "Alpensee Tour (Reg M-B) #66",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "xbro1441",
+      "record": "9-3-0"
+    },
+    {
+      "id": "6a392e4ac87cd9ff0a30d0b0-trevyah",
+      "name": "trevYah · Alpensee Tour (Reg M-B) #66",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Claw",
+            "Extreme Speed",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Swords Dance",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7272727272727273,
+      "sampleCount": 11,
+      "tournament": "Alpensee Tour (Reg M-B) #66",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "trevYah",
+      "record": "8-3-0"
+    }
+  ],
+  "movePool": [
+    "Acrobatics",
+    "Aerial Ace",
+    "Agility",
+    "Assurance",
+    "Aura Sphere",
+    "Baton Pass",
+    "Blast Burn",
+    "Blaze Kick",
+    "Body Slam",
+    "Bounce",
+    "Brave Bird",
+    "Brick Break",
+    "Bulk Up",
+    "Bulldoze",
+    "Close Combat",
+    "Coaching",
+    "Counter",
+    "Crush Claw",
+    "Curse",
+    "Detect",
+    "Dig",
+    "Double-Edge",
+    "Earthquake",
+    "Endure",
+    "Facade",
+    "Feather Dance",
+    "Feint",
+    "Fire Blast",
+    "Fire Punch",
+    "Fire Spin",
+    "Flame Charge",
+    "Flamethrower",
+    "Flare Blitz",
+    "Fling",
+    "Focus Blast",
+    "Focus Energy",
+    "Focus Punch",
+    "Giga Impact",
+    "Heat Crash",
+    "Heat Wave",
+    "Helping Hand",
+    "High Jump Kick",
+    "Hyper Beam",
+    "Knock Off",
+    "Last Resort",
+    "Low Kick",
+    "Low Sweep",
+    "Mega Kick",
+    "Mud-Slap",
+    "Night Slash",
+    "Overheat",
+    "Poison Jab",
+    "Protect",
+    "Quick Attack",
+    "Rest",
+    "Reversal",
+    "Roar",
+    "Rock Slide",
+    "Rock Tomb",
+    "Round",
+    "Scorching Sands",
+    "Shadow Claw",
+    "Sleep Talk",
+    "Snore",
+    "Solar Beam",
+    "Stone Edge",
+    "Substitute",
+    "Sunny Day",
+    "Superpower",
+    "Swords Dance",
+    "Temper Flare",
+    "Thief",
+    "Thunder Punch",
+    "U-turn",
+    "Upper Hand",
+    "Uproar",
+    "Vacuum Wave",
+    "Will-O-Wisp"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Blaziken",
+      "base_name": "Blaziken",
+      "saved_name": "Blaziken",
+      "types": "Fire/Fighting",
+      "abilities": "Blaze|Speed Boost",
+      "weight": "114.6 lbs.",
+      "image_path": "pokemon_champions_assets\\pokemon\\Blaziken.png",
+      "form": "",
+      "hp": 155,
+      "atk": 140,
+      "def": 90,
+      "spa": 130,
+      "spd": 90,
+      "spe": 100,
+      "total": 705
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "move",
+          "rank": 1,
+          "name": "Close Combat",
+          "percentage": "87.4%",
+          "percentage_value": 87.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Blazikenite",
+          "percentage": "83.1%",
+          "percentage_value": 83.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Adamant",
+          "percentage": "17.9%",
+          "percentage_value": 17.9,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        "stat_points": {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "58.3%",
+          "percentage_value": 58.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        "ability": {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "ability",
+          "rank": 1,
+          "name": "Speed Boost",
+          "percentage": "94.5%",
+          "percentage_value": 94.5,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Close Combat",
+          "Flare Blitz",
+          "Rock Slide",
+          "Protect",
+          "Detect",
+          "Swords Dance",
+          "Heat Wave",
+          "Aura Sphere",
+          "Thunder Punch",
+          "Coaching"
+        ],
+        "held_item": [
+          "Blazikenite",
+          "Focus Sash",
+          "Life Orb",
+          "Expert Belt",
+          "White Herb",
+          "Muscle Band",
+          "Sitrus Berry",
+          "Leftovers",
+          "Wide Lens",
+          "Charcoal"
+        ],
+        "teammate": [
+          "Kingambit",
+          "Basculegion Male",
+          "Sylveon",
+          "Aerodactyl",
+          "Alolan Ninetales",
+          "Whimsicott",
+          "Torkoal",
+          "Dragonite",
+          "Incineroar",
+          "Farigiraf"
+        ],
+        "stat_alignment": [
+          "Adamant",
+          "Jolly",
+          "Modest",
+          "Timid",
+          "Naughty",
+          "Impish",
+          "Lonely",
+          "Careful",
+          "Naive",
+          "Hasty"
+        ],
+        "stat_points": [
+          "HP 2 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 32",
+          "HP 0 / Atk 32 / Def 2 / SpA 0 / SpD 0 / Spe 32",
+          "HP 2 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 32",
+          "HP 0 / Atk 32 / Def 0 / SpA 0 / SpD 2 / Spe 32",
+          "HP 12 / Atk 30 / Def 0 / SpA 0 / SpD 0 / Spe 24",
+          "HP 32 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 2",
+          "HP 0 / Atk 32 / Def 1 / SpA 0 / SpD 1 / Spe 32",
+          "HP 32 / Atk 32 / Def 2 / SpA 0 / SpD 0 / Spe 0"
+        ],
+        "ability": [
+          "Speed Boost",
+          "Blaze"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "move",
+          "rank": 1,
+          "name": "Close Combat",
+          "percentage": "87.4%",
+          "percentage_value": 87.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "move",
+          "rank": 2,
+          "name": "Flare Blitz",
+          "percentage": "86.5%",
+          "percentage_value": 86.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "move",
+          "rank": 3,
+          "name": "Rock Slide",
+          "percentage": "70.1%",
+          "percentage_value": 70.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "move",
+          "rank": 4,
+          "name": "Protect",
+          "percentage": "54.1%",
+          "percentage_value": 54.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "move",
+          "rank": 5,
+          "name": "Detect",
+          "percentage": "43.8%",
+          "percentage_value": 43.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "move",
+          "rank": 6,
+          "name": "Swords Dance",
+          "percentage": "6.5%",
+          "percentage_value": 6.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "move",
+          "rank": 7,
+          "name": "Heat Wave",
+          "percentage": "5.8%",
+          "percentage_value": 5.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "move",
+          "rank": 8,
+          "name": "Aura Sphere",
+          "percentage": "5.2%",
+          "percentage_value": 5.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "move",
+          "rank": 9,
+          "name": "Thunder Punch",
+          "percentage": "5.1%",
+          "percentage_value": 5.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "move",
+          "rank": 10,
+          "name": "Coaching",
+          "percentage": "4.1%",
+          "percentage_value": 4.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Blazikenite",
+          "percentage": "83.1%",
+          "percentage_value": 83.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Focus Sash",
+          "percentage": "6.8%",
+          "percentage_value": 6.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Life Orb",
+          "percentage": "4.4%",
+          "percentage_value": 4.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Expert Belt",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "held_item",
+          "rank": 5,
+          "name": "White Herb",
+          "percentage": "0.7%",
+          "percentage_value": 0.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Muscle Band",
+          "percentage": "0.7%",
+          "percentage_value": 0.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Sitrus Berry",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Leftovers",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Wide Lens",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Charcoal",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Sylveon",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Aerodactyl",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Alolan Ninetales",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Whimsicott",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Torkoal",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Dragonite",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Adamant",
+          "percentage": "17.9%",
+          "percentage_value": 17.9,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Jolly",
+          "percentage": "12.7%",
+          "percentage_value": 12.7,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Modest",
+          "percentage": "3.9%",
+          "percentage_value": 3.9,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Timid",
+          "percentage": "2.0%",
+          "percentage_value": 2,
+          "stat_up": "Speed",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Naughty",
+          "percentage": "0.7%",
+          "percentage_value": 0.7,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Impish",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Lonely",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Attack",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Careful",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Sp. Def",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Naive",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Hasty",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Speed",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "58.3%",
+          "percentage_value": 58.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "7.0%",
+          "percentage_value": 7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "4.0%",
+          "percentage_value": 4,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "2.7%",
+          "percentage_value": 2.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "2.1%",
+          "percentage_value": 2.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 12,
+          "attack_points": 30,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 24
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "1.2%",
+          "percentage_value": 1.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 2
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 1,
+          "sp_atk_points": 0,
+          "sp_def_points": 1,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "ability",
+          "rank": 1,
+          "name": "Speed Boost",
+          "percentage": "94.5%",
+          "percentage_value": 94.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blaziken",
+          "column_position": 44,
+          "position": 44,
+          "category": "ability",
+          "rank": 2,
+          "name": "Blaze",
+          "percentage": "5.5%",
+          "percentage_value": 5.5,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Blaziken.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Blaziken.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Blaziken.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Blaziken.csv"
+      }
+    ]
+  }
+}

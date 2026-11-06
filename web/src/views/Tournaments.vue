@@ -2,7 +2,7 @@
   <div class="page">
     <div class="header">
       <div>
-        <div class="title page-hero-title" :class="{ 'page-hero-title--cn': isZh }">{{ ui.title }}</div>
+        <h1 class="title page-hero-title" :class="{ 'page-hero-title--cn': isZh }">{{ ui.title }}</h1>
       </div>
     </div>
 
@@ -43,7 +43,7 @@
 
             <div class="tournament-timeline__x mono" aria-hidden="true">
               <span
-                v-for="(bar, index) in tournamentTimelineRows"
+                v-for="bar in tournamentTimelineRows"
                 :key="`${bar.iso}-label`"
                 :class="{ 'tournament-timeline__x-label--muted': !bar.showLabel }"
               >
@@ -75,6 +75,14 @@
 
     <!-- Filters -->
     <div class="filters">
+      <div class="f">
+        <label>{{ isZh ? '牌組賽制' : 'Deck format' }}</label>
+        <select v-model="filters.deckMode" :aria-label="isZh ? '牌組賽制' : 'Deck format'">
+          <option value="all">{{ isZh ? '全部賽制' : 'All formats' }}</option>
+          <option value="single">{{ isZh ? '單牌組' : 'Single deck' }}</option>
+          <option value="dual">{{ isZh ? '雙牌組' : 'Dual deck' }}</option>
+        </select>
+      </div>
       <div class="f">
         <label>{{ isZh ? "玩家數" : "Players " }}
         </label>
@@ -218,6 +226,7 @@
                     </RouterLink>
                   </div>
                   <div class="nameMeta muted">
+                    <span v-if="t.multideck" class="pill mono">{{ isZh ? '雙牌組' : 'DUAL DECK' }}</span>
                     <button
                       v-if="t.set"
                       type="button"
@@ -248,7 +257,8 @@
               <td class="num mono">{{ t.players ?? "—" }}</td>
 
               <td>
-                <div v-if="t.topDecks.length" class="topDecksGrid" :aria-label="ui.top4AriaLabel">
+                <RouterLink v-if="t.multideck" :to="tournamentDetailTo(t.id)">{{ isZh ? '查看雙牌組牌表' : 'View both decklists' }} ↗</RouterLink>
+                <div v-else-if="t.topDecks.length" class="topDecksGrid" :aria-label="ui.top4AriaLabel">
                   <div v-for="(d, i) in t.topDecks" :key="i" class="deckPair" :title="deckPairTitle(d, i + 1)">
                     <div class="deckIconsWrap">
                       <div class="deckIconsRow">
@@ -324,6 +334,7 @@
           </div>
 
           <div class="card-meta">
+            <span v-if="t.multideck" class="pill mono">{{ isZh ? '雙牌組' : 'DUAL DECK' }}</span>
             <button
               v-if="t.set"
               type="button"
@@ -393,6 +404,7 @@
           </div>
 
           <div class="card-actions">
+            <RouterLink v-if="t.multideck" class="linkDot" :to="tournamentDetailTo(t.id)">{{ isZh ? '查看雙牌組牌表' : 'View both decklists' }}</RouterLink>
             <a
               class="linkDot"
               :href="t.standingsUrl"
@@ -417,12 +429,10 @@
 <script setup lang="ts">
 import { useRoute } from "vue-router";
 import { computed, reactive, ref, watch, onMounted } from "vue";
+import { routeLang as getRouteLang, withLang } from "../lib/siteI18n";
 
 function tournamentDetailTo(id: string) {
-  return {
-    name: `${lang.value}-tournament-report`,
-    params: { id },
-  };
+  return withLang(`/pocket/tournaments/${id}`, lang.value);
 }
 
 type SwissLabel = "BO1" | "BO3" | "Other";
@@ -508,6 +518,7 @@ type TopDeck = {
 
 type TournamentRow = {
   id: string;
+  multideck: boolean;
   dateISO?: string;
   dateMs?: number;
   dateStr: string;
@@ -524,8 +535,7 @@ type TournamentRow = {
 const route = useRoute();
 
 const lang = computed<"zh" | "en">(() => {
-  const seg = String(route.path).split("/")[1];
-  return seg === "en" ? "en" : "zh";
+  return getRouteLang(route);
 });
 
 const isZh = computed(() => lang.value === "zh");
@@ -622,6 +632,7 @@ function versionLabel(code?: string) {
 const setOptions = computed(() => GAME_VERSIONS.map((v) => v.code).reverse());
 
 const filters = reactive({
+  deckMode: (route.query.deckMode === 'dual' ? 'dual' : 'all') as 'all' | 'single' | 'dual',
   minPlayers: undefined as number | undefined,
   time: "all" as string,
   set: "" as string,
@@ -848,8 +859,9 @@ function formatTimelineFullDate(ms: number) {
   });
 }
 
+const formatTournaments = computed(() => tournaments.value.filter(t => filters.deckMode === 'all' || (filters.deckMode === 'dual' ? t.multideck : !t.multideck)));
 const tournamentTimelineMaxDayMs = computed(() => {
-  const latest = tournaments.value.reduce((max, tournament) => {
+  const latest = formatTournaments.value.reduce((max, tournament) => {
     return Math.max(max, tournament.dateMs ? startOfUtcDayMs(tournament.dateMs) : 0);
   }, 0);
   return latest || startOfUtcDayMs(Date.now());
@@ -860,7 +872,7 @@ const tournamentTimelineCounts = computed(() => {
   const endMs = tournamentTimelineMaxDayMs.value;
   const startMs = endMs - (TOURNAMENT_TIMELINE_DAYS - 1) * DAY_MS;
 
-  for (const tournament of tournaments.value) {
+  for (const tournament of formatTournaments.value) {
     if (!tournament.dateMs) continue;
     const dayMs = startOfUtcDayMs(tournament.dateMs);
     if (dayMs < startMs || dayMs > endMs) continue;
@@ -875,7 +887,7 @@ const timelineWindowTournaments = computed(() => {
   const endMs = tournamentTimelineMaxDayMs.value;
   const startMs = endMs - (TOURNAMENT_TIMELINE_DAYS - 1) * DAY_MS;
 
-  return tournaments.value.filter((tournament) => {
+  return formatTournaments.value.filter((tournament) => {
     if (!tournament.dateMs) return false;
     const dayMs = startOfUtcDayMs(tournament.dateMs);
     return dayMs >= startMs && dayMs <= endMs;
@@ -1044,12 +1056,15 @@ async function ensureTopDecksForIds(ids: string[]) {
 onMounted(async () => {
   const rows: TournamentRow[] = [];
 
-  const list = await fetchJson<TournamentIndexRow[]>(`${BASE_URL}data/tournaments.json`).catch(
+  const singleList = await fetchJson<TournamentIndexRow[]>(`${BASE_URL}data/tournaments.json`).catch(
     async () =>
       await fetchJson<TournamentIndexRow[]>(
         new URL("../data/tournaments.json", import.meta.url).toString()
       )
   );
+
+  const dualList = await fetchJson<(TournamentIndexRow & { multideck?: boolean })[]>(`${BASE_URL}data/multideck/tournaments.json`).catch(() => []);
+  const list = [...new Map([...singleList, ...dualList].map(row => [row.id, row])).values()];
 
   for (const r of list) {
     const g = String(r?.game ?? "").toUpperCase();
@@ -1067,12 +1082,13 @@ onMounted(async () => {
 
     rows.push({
       id,
+      multideck: 'multideck' in r && r.multideck === true,
       dateISO,
       dateMs,
       dateStr: dateISO ?? "—",
       name: r?.name ?? id,
       players: typeof r?.players === "number" ? r.players : Number(r?.players) || undefined,
-      set: set || undefined,
+      set: ('multideck' in r && r.multideck === true) ? (r?.set ? String(r.set) : undefined) : set || undefined,
       swiss,
       topDecks: topDecksCache.get(id) ?? [],
       standingsUrl: `https://play.limitlesstcg.com/tournament/${id}/standings`,
@@ -1135,6 +1151,8 @@ function inTimeRange(t: TournamentRow) {
 
 const filtered = computed(() => {
   return tournaments.value.filter((t) => {
+    if (filters.deckMode === 'dual' && !t.multideck) return false;
+    if (filters.deckMode === 'single' && t.multideck) return false;
     if (filters.minPlayers != null && Number.isFinite(filters.minPlayers)) {
       if ((t.players ?? 0) < (filters.minPlayers as number)) return false;
     }
@@ -1601,7 +1619,7 @@ watch([total, pageSize], () => {
 
 .filters {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 10px;
   margin: 10px 0 12px;
 }

@@ -1,0 +1,4998 @@
+{
+  "pokemon": {
+    "slug": "froslass",
+    "name": "Froslass",
+    "baseName": "Froslass",
+    "savedName": "Froslass",
+    "form": "",
+    "types": [
+      "Ice",
+      "Ghost"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Froslass.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/478.png",
+    "stats": {
+      "hp": 145,
+      "attack": 100,
+      "defense": 90,
+      "spAttack": 100,
+      "spDefense": 90,
+      "speed": 130,
+      "total": 655
+    },
+    "rank": 32,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Blizzard",
+    "topItem": "Froslassite",
+    "topTeammate": "Sneasler"
+  },
+  "moves": [
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "move",
+      "rank": 1,
+      "name": "Blizzard",
+      "percentage": 0.989,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "move",
+        "rank": 1,
+        "name": "Blizzard",
+        "percentage": "98.9%",
+        "percentage_value": 98.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "move",
+      "rank": 2,
+      "name": "Protect",
+      "percentage": 0.881,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "move",
+        "rank": 2,
+        "name": "Protect",
+        "percentage": "88.1%",
+        "percentage_value": 88.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "move",
+      "rank": 3,
+      "name": "Shadow Ball",
+      "percentage": 0.842,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "move",
+        "rank": 3,
+        "name": "Shadow Ball",
+        "percentage": "84.2%",
+        "percentage_value": 84.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "move",
+      "rank": 4,
+      "name": "Aurora Veil",
+      "percentage": 0.73,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "move",
+        "rank": 4,
+        "name": "Aurora Veil",
+        "percentage": "73.0%",
+        "percentage_value": 73,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "move",
+      "rank": 5,
+      "name": "Rain Dance",
+      "percentage": 0.1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "move",
+        "rank": 5,
+        "name": "Rain Dance",
+        "percentage": "10.0%",
+        "percentage_value": 10,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "move",
+      "rank": 6,
+      "name": "Thunderbolt",
+      "percentage": 0.089,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "move",
+        "rank": 6,
+        "name": "Thunderbolt",
+        "percentage": "8.9%",
+        "percentage_value": 8.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "move",
+      "rank": 7,
+      "name": "Frost Breath",
+      "percentage": 0.071,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "move",
+        "rank": 7,
+        "name": "Frost Breath",
+        "percentage": "7.1%",
+        "percentage_value": 7.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "move",
+      "rank": 8,
+      "name": "Taunt",
+      "percentage": 0.062,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "move",
+        "rank": 8,
+        "name": "Taunt",
+        "percentage": "6.2%",
+        "percentage_value": 6.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "move",
+      "rank": 9,
+      "name": "Destiny Bond",
+      "percentage": 0.045,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "move",
+        "rank": 9,
+        "name": "Destiny Bond",
+        "percentage": "4.5%",
+        "percentage_value": 4.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "move",
+      "rank": 10,
+      "name": "Nasty Plot",
+      "percentage": 0.042,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "move",
+        "rank": 10,
+        "name": "Nasty Plot",
+        "percentage": "4.2%",
+        "percentage_value": 4.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Froslassite",
+      "percentage": 0.985,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Froslassite",
+        "percentage": "98.5%",
+        "percentage_value": 98.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Focus Sash",
+      "percentage": 0.4,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Focus Sash",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Choice Scarf",
+      "percentage": 0.2,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Choice Scarf",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Wide Lens",
+      "percentage": 0.1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Wide Lens",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Never-Melt Ice",
+      "percentage": 0.1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Never-Melt Ice",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Wise Glasses",
+      "percentage": 0,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Wise Glasses",
+        "percentage": "0.0%",
+        "percentage_value": 0,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Bright Powder",
+      "percentage": 0,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Bright Powder",
+        "percentage": "0.0%",
+        "percentage_value": 0,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Sitrus Berry",
+      "percentage": 0,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Sitrus Berry",
+        "percentage": "0.0%",
+        "percentage_value": 0,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Shell Bell",
+      "percentage": 0,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Shell Bell",
+        "percentage": "0.0%",
+        "percentage_value": 0,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Occa Berry",
+      "percentage": 0,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Occa Berry",
+        "percentage": "0.0%",
+        "percentage_value": 0,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "ability",
+      "rank": 1,
+      "name": "Cursed Body",
+      "percentage": 0.684,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "ability",
+        "rank": 1,
+        "name": "Cursed Body",
+        "percentage": "68.4%",
+        "percentage_value": 68.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "ability",
+      "rank": 2,
+      "name": "Snow Cloak",
+      "percentage": 0.316,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "ability",
+        "rank": 2,
+        "name": "Snow Cloak",
+        "percentage": "31.6%",
+        "percentage_value": 31.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Sneasler",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Sneasler",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Kingambit",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Kingambit",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Whimsicott",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Whimsicott",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Lycanroc Dusk Form",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Lycanroc Dusk Form",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Scovillain",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Scovillain",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Archaludon",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Archaludon",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Timid",
+      "percentage": 0.653,
+      "statUp": "Speed",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Timid",
+        "percentage": "65.3%",
+        "percentage_value": 65.3,
+        "stat_up": "Speed",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Modest",
+      "percentage": 0.323,
+      "statUp": "Sp. Atk",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Modest",
+        "percentage": "32.3%",
+        "percentage_value": 32.3,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Calm",
+      "percentage": 0.6,
+      "statUp": "Sp. Def",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Calm",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "Sp. Def",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Hasty",
+      "percentage": 0.4,
+      "statUp": "Speed",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Hasty",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Speed",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Mild",
+      "percentage": 0.4,
+      "statUp": "Sp. Atk",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Mild",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Jolly",
+      "percentage": 0.3,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Jolly",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Bold",
+      "percentage": 0.2,
+      "statUp": "Defense",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Bold",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Defense",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Quiet",
+      "percentage": 0.1,
+      "statUp": "Sp. Atk",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Quiet",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Gentle",
+      "percentage": 0,
+      "statUp": "Sp. Def",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Gentle",
+        "percentage": "0.0%",
+        "percentage_value": 0,
+        "stat_up": "Sp. Def",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Adamant",
+      "percentage": 0,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Adamant",
+        "percentage": "0.0%",
+        "percentage_value": 0,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.413,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "41.3%",
+        "percentage_value": 41.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.061,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "6.1%",
+        "percentage_value": 6.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 2,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.046,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "4.6%",
+        "percentage_value": 4.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 2,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.043,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "4.3%",
+        "percentage_value": 4.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.022,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "2.2%",
+        "percentage_value": 2.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 24,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 10,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.015,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "1.5%",
+        "percentage_value": 1.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.014,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "1.4%",
+        "percentage_value": 1.4,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 4,
+        "sp_def_points": 0,
+        "speed_points": 30
+      }
+    },
+    {
+      "pokemon": "Froslass",
+      "position": 32,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.012,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Froslass",
+        "column_position": 32,
+        "position": 32,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "1.2%",
+        "percentage_value": 1.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 14,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 20,
+        "sp_def_points": 0,
+        "speed_points": 30
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a5055f965724db9ded41c56-zachk052510",
+      "name": "Zach K · Weekly Qualifier for RookideeVGC Grand Tourney",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Flamethrower",
+            "Giga Drain",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Rock Slide",
+            "Close Combat",
+            "Accelerock",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Sitrus Berry",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Gunk Shot",
+            "Close Combat",
+            "Fake Out",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 8,
+      "tournament": "Weekly Qualifier for RookideeVGC Grand Tourney",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Zach K",
+      "record": "6-2-0"
+    },
+    {
+      "id": "6a5055f965724db9ded41c56-vegas_key62140",
+      "name": "Vegas_key62140 · Weekly Qualifier for RookideeVGC Grand Tourney",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Rage Powder",
+            "Protect",
+            "Overheat",
+            "Giga Drain"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Quick Attack",
+            "Hyper Beam",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Rock Slide",
+            "Close Combat",
+            "Accelerock",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Kowtow Cleave",
+            "Protect",
+            "Swords Dance"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Sitrus Berry",
+          "ability": "Adaptability",
+          "moves": [
+            "Last Respects",
+            "Aqua Jet",
+            "Wave Crash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Aurora Veil",
+            "Blizzard",
+            "Shadow Ball",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Weekly Qualifier for RookideeVGC Grand Tourney",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Vegas_key62140",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a5055f965724db9ded41c56-natsukivgc",
+      "name": "NatsukiVGC · Weekly Qualifier for RookideeVGC Grand Tourney",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Claw",
+            "Extreme Speed",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Weekly Qualifier for RookideeVGC Grand Tourney",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "NatsukiVGC",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a4dfee8063cb29d318e6805-spasio",
+      "name": "Spasio · VGC UmbreNews 14.07.2026 #23 - Champion",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Thunderbolt",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hisuian-arcanine",
+          "name": "Hisuian Arcanine",
+          "item": "Focus Sash",
+          "ability": "Rock Head",
+          "moves": [
+            "Flare Blitz",
+            "Head Smash",
+            "Extreme Speed",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Stomping Tantrum",
+            "Rock Slide",
+            "Dragon Claw",
+            "Poison Jab"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Dire Claw",
+            "Close Combat",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Muddy Water",
+            "Hypnosis",
+            "Coil",
+            "Recover"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "VGC UmbreNews 14.07.2026 #23 - Champion",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Spasio",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a47c55e65724db9ded3b307-mariosr",
+      "name": "Mariosr · VGC Reg M-B Ingame  Tour",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Protect",
+            "Overheat",
+            "Giga Drain",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Protect",
+            "Blizzard",
+            "Aurora Veil",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Protect",
+            "Accelerock",
+            "Rock Slide",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Protect",
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Sitrus Berry",
+          "ability": "Adaptability",
+          "moves": [
+            "Protect",
+            "Last Respects",
+            "Wave Crash",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "poison jab",
+            "Close Combat",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "VGC Reg M-B Ingame  Tour",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Mariosr",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a47c55e65724db9ded3b307-nevada",
+      "name": "Nevada · VGC Reg M-B Ingame  Tour",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Aurora Veil",
+            "Rain Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "politoed",
+          "name": "Politoed",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Weather Ball",
+            "Perish Song",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Rage Powder",
+            "Matcha Gotcha",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gengar",
+          "name": "Gengar",
+          "item": "Gengarite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Shadow Ball",
+            "Disable",
+            "Perish Song",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Throat Chop",
+            "Parting Shot",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "VGC Reg M-B Ingame  Tour",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Nevada",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a4dbb9665724db9ded3ff83-minhi",
+      "name": "Minhi · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Aqua Jet",
+            "Wave Crash",
+            "Flip Turn",
+            "Last Respects"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Overheat",
+            "Giga Drain",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Life Orb",
+          "ability": "Thick Fat",
+          "moves": [
+            "High Horsepower",
+            "Protect",
+            "Ice Shard",
+            "Icicle Crash"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Snow Cloak",
+          "moves": [
+            "Aurora Veil",
+            "Blizzard",
+            "Protect",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Encore",
+            "Tailwind",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Kowtow Cleave",
+            "Low Kick",
+            "Iron Head"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Minhi",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a3200c5e334c3c9befd8430-whimsicott",
+      "name": "Whimsicott · The Grand Champions Festival Encore",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Claw",
+            "Extreme Speed",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Poison Jab",
+            "Close Combat",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8125,
+      "sampleCount": 16,
+      "tournament": "The Grand Champions Festival Encore",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Whimsicott",
+      "record": "13-3-0"
+    },
+    {
+      "id": "6a53c2d1e09846f1eb4c161b-orangesteve",
+      "name": "OrangeSteve · The Drywall Series #11",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "chesnaught",
+          "name": "Chesnaught",
+          "item": "Chesnaughtite",
+          "ability": "Bulletproof",
+          "moves": [
+            "Wide Guard",
+            "Body Press",
+            "Leech Seed",
+            "Spiky Shield"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Rock Slide",
+            "Accelerock",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Gunk Shot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Sitrus Berry",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "The Drywall Series #11",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "OrangeSteve",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-ljr_333",
+      "name": "LJR_333 - Fantasma/Normal · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Protect",
+            "Rage Powder",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Aurora Veil",
+            "Blizzard",
+            "Protect",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "slug": "pyroar",
+          "name": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Unnerve",
+          "moves": [
+            "Flamethrower",
+            "Protect",
+            "Heat Wave",
+            "Hyper Voice"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "White Herb",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Protect",
+            "U-turn",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "gengar",
+          "name": "Gengar",
+          "item": "Expert Belt",
+          "ability": "Cursed Body",
+          "moves": [
+            "Protect",
+            "Shadow Ball",
+            "Sludge Bomb",
+            "Taunt"
+          ]
+        },
+        {
+          "slug": "ditto",
+          "name": "Ditto",
+          "item": "Choice Scarf",
+          "ability": "Imposter",
+          "moves": [
+            "Transform"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "LJR_333 - Fantasma/Normal",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a51f42365724db9ded43093-freemangordon",
+      "name": "FreemanGordon · Tenki's Cart Weekly #109 - Reg MB",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Claw",
+            "Extreme Speed",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "Tenki's Cart Weekly #109 - Reg MB",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "FreemanGordon",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a510fac063cb29d318e8c08-abhinav7354",
+      "name": "Abhinav7354 · SNT Reg M-B Tour #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Hex",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Focus Sash",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Taunt",
+            "Trop Kick",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Poison Touch",
+          "moves": [
+            "Fake Out",
+            "Poison Jab",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Aqua Jet",
+            "Flip Turn",
+            "Wave Crash",
+            "Last Respects"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Sitrus Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Fake Out",
+            "Will-O-Wisp",
+            "Thunder Wave",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Inner Focus",
+          "moves": [
+            "Extreme Speed",
+            "Dragon Claw",
+            "Low Kick",
+            "Tailwind"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "SNT Reg M-B Tour #3",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Abhinav7354",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a4f9758063cb29d318e79a9-ntbon",
+      "name": "ntbon · Sky Pillar Saturday Showdown S8 #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Aurora Veil",
+            "Blizzard",
+            "Shadow Ball",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "slug": "beartic",
+          "name": "Beartic",
+          "item": "Life Orb",
+          "ability": "Slush Rush",
+          "moves": [
+            "Protect",
+            "Aqua Jet",
+            "Heavy Slam",
+            "Icicle Crash"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Sitrus Berry",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Protect",
+            "Rock Slide",
+            "Poison Jab"
+          ]
+        },
+        {
+          "slug": "volcarona",
+          "name": "Volcarona",
+          "item": "Charti Berry",
+          "ability": "Flame Body",
+          "moves": [
+            "Heat Wave",
+            "Rage Powder",
+            "Quiver Dance",
+            "Bug Buzz"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Expert Belt",
+          "ability": "Levitate",
+          "moves": [
+            "Tailwind",
+            "Dark Pulse",
+            "Heat Wave",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Tailwind",
+            "Moonblast",
+            "Encore",
+            "Taunt"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "Sky Pillar Saturday Showdown S8 #10",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "ntbon",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a420fbf83fd320299bd3c3c-smearglegoat",
+      "name": "smearglegoat · Sketch Academy Sunday Regulation M-B Tournament",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Low Kick",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Sitrus Berry",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Trop Kick",
+            "Low Kick",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Flip Turn",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Earthquake",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "Sketch Academy Sunday Regulation M-B Tournament",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "smearglegoat",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a420fbf83fd320299bd3c3c-itztsuki",
+      "name": "ItzTsuki · Sketch Academy Sunday Regulation M-B Tournament",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gyarados",
+          "name": "Gyarados",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Waterfall",
+            "Power Whip",
+            "Temper Flare",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Snow Cloak",
+          "moves": [
+            "Aurora Veil",
+            "Blizzard",
+            "Shadow Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Fairy Feather",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Protect",
+            "Encore",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Focus Sash",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Earth Power",
+            "Sludge Bomb",
+            "Power Gem",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Protect",
+            "Rock Slide",
+            "Dragon Claw",
+            "Stomping Tantrum"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.42857142857142855,
+      "sampleCount": 7,
+      "tournament": "Sketch Academy Sunday Regulation M-B Tournament",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "ItzTsuki",
+      "record": "3-4-0"
+    },
+    {
+      "id": "6a3854f7ceacae7d6441c118-edf_noko",
+      "name": "EDF_Noko · PWC - Battle in the Colosseum #19 - Reg M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Aurora Veil",
+            "Protect",
+            "Night Shade"
+          ]
+        },
+        {
+          "slug": "glaceon",
+          "name": "Glaceon",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Cloak",
+          "moves": [
+            "Freeze-Dry",
+            "Detect",
+            "Blizzard",
+            "Snowscape"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Marvel Scale",
+          "moves": [
+            "Coil",
+            "Hypnosis",
+            "Protect",
+            "Muddy Water"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Iron Head",
+            "Play Rough",
+            "Protect",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "armarouge",
+          "name": "Armarouge",
+          "item": "White Herb",
+          "ability": "Flash Fire",
+          "moves": [
+            "Armor Cannon",
+            "Trick Room",
+            "Wide Guard",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Life Dew"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 3,
+      "tournament": "PWC - Battle in the Colosseum #19 - Reg M-B",
+      "placing": null,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "EDF_Noko",
+      "record": "2-1-0"
+    },
+    {
+      "id": "6a4516dcc87cd9ff0a31469e-beautjecadootje",
+      "name": "BeautjeCadootje · Pride Month 2 Celebration!!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "glaceon",
+          "name": "Glaceon",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Cloak",
+          "moves": [
+            "Freeze-Dry",
+            "Blizzard",
+            "Yawn",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Hyper Beam",
+            "Quick Attack",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Telepathy",
+          "moves": [
+            "Hyper Voice",
+            "Hyper Beam",
+            "Psychic",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "clefable",
+          "name": "Clefable",
+          "item": "Sitrus Berry",
+          "ability": "Unaware",
+          "moves": [
+            "Moonblast",
+            "Follow Me",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Life Orb",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Moonblast",
+            "Calm Mind",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.25,
+      "sampleCount": 4,
+      "tournament": "Pride Month 2 Celebration!!",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "BeautjeCadootje",
+      "record": "1-3-0"
+    },
+    {
+      "id": "6a4516dcc87cd9ff0a31469e-arceon",
+      "name": "Arceon · Pride Month 2 Celebration!!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Focus Sash",
+          "ability": "Speed Boost",
+          "moves": [
+            "Swords Dance",
+            "Protect",
+            "Thunder Punch",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Aurora Veil",
+            "Destiny Bond",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Pressure",
+          "moves": [
+            "Roost",
+            "Iron Defense",
+            "Body Press",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "meowscarada",
+          "name": "Meowscarada",
+          "item": "Choice Scarf",
+          "ability": "Protean",
+          "moves": [
+            "Play Rough",
+            "Triple Axel",
+            "Flower Trick",
+            "Knock Off"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Yache Berry",
+          "ability": "Pressure",
+          "moves": [
+            "Tailwind",
+            "Dual Wingbeat",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Sitrus Berry",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Brick Break",
+            "Rock Slide",
+            "Outrage"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.25,
+      "sampleCount": 4,
+      "tournament": "Pride Month 2 Celebration!!",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Arceon",
+      "record": "1-3-0"
+    },
+    {
+      "id": "6a4685c383fd320299bd6675-catoona",
+      "name": "Catoona · Pokémon Champions #1 - (Floette Eternal Flower)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Snow Cloak",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Energy Ball",
+            "Tailwind",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Dire Claw",
+            "Close Combat",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Tailwind",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Throat Chop",
+            "Flare Blitz",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7,
+      "sampleCount": 10,
+      "tournament": "Pokémon Champions #1 - (Floette Eternal Flower)",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Catoona",
+      "record": "7-3-0"
+    },
+    {
+      "id": "6a55808a232a1a55ee10be16-kalarse",
+      "name": "kalarse · 𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "item": "Focus Sash",
+          "ability": "Sharpness",
+          "moves": [
+            "Stone Axe",
+            "Close Combat",
+            "Feint",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Dire Claw",
+            "Close Combat",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Flip Turn",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Coba Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8333333333333334,
+      "sampleCount": 6,
+      "tournament": "𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "kalarse",
+      "record": "5-1-0"
+    },
+    {
+      "id": "6a539b48c0a6bab82fbbca0a-reddo161",
+      "name": "Reddo161 · London Corviknight VGC Weekly tour 5!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Swords Dance",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Flip Turn"
+          ]
+        },
+        {
+          "slug": "hisuian-arcanine",
+          "name": "Hisuian Arcanine",
+          "item": "Focus Sash",
+          "ability": "Rock Head",
+          "moves": [
+            "Flare Blitz",
+            "Rock Slide",
+            "Head Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Giga Drain",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Dire Claw",
+            "Close Combat",
+            "Quick Guard"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "London Corviknight VGC Weekly tour 5!",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Reddo161",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a54c9156355385f44dd38cd-blane",
+      "name": "Blane · Intimidators Champions Challenge #26 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Protect",
+            "Low Kick"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Sitrus Berry",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Iron Head",
+            "Brave Bird",
+            "Taunt",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Foul Play",
+            "Light Screen",
+            "Reflect",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Rock Slide",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hisuian-arcanine",
+          "name": "Hisuian Arcanine",
+          "item": "Focus Sash",
+          "ability": "Rock Head",
+          "moves": [
+            "Flare Blitz",
+            "Head Smash",
+            "Extreme Speed",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Intimidators Champions Challenge #26 REG M-B",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Blane",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a467bb683fd320299bd6627-eunoiacritter",
+      "name": "eunoiaCritter · Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Focus Sash",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Protect",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Insomnia",
+          "moves": [
+            "Overheat",
+            "Giga Drain",
+            "Protect",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Life Orb",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Iron Head",
+            "Protect",
+            "Swords Dance"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Gunk Shot",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "eunoiaCritter",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a467bb683fd320299bd6627-lunaticofwinds",
+      "name": "LunaticOfWinds · Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Snow Cloak",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Protect",
+            "Weather Ball"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Focus Sash",
+          "ability": "Snow Warning",
+          "moves": [
+            "Aurora Veil",
+            "Blizzard",
+            "Freeze-Dry",
+            "Moonblast"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Chople Berry",
+          "ability": "Sand Stream",
+          "moves": [
+            "Ice Punch",
+            "Rock Slide",
+            "Protect",
+            "Knock Off"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Protect",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Dual Wingbeat",
+            "Quick Guard",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Excadrite",
+          "ability": "Sand Rush",
+          "moves": [
+            "Protect",
+            "Drill Run",
+            "Iron Head",
+            "Earthquake"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.25,
+      "sampleCount": 4,
+      "tournament": "Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "LunaticOfWinds",
+      "record": "1-3-0"
+    },
+    {
+      "id": "6a442f7183fd320299bd5187-snowballl",
+      "name": "Theo Delanoy · HALL OF  FAME BELGIUM (Invitational)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Dire Claw",
+            "Coaching"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Flip Turn"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Brave Bird",
+            "Close Combat",
+            "Tailwind",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "HALL OF  FAME BELGIUM (Invitational)",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Theo Delanoy",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a47aff0063cb29d318e1b77-bodylovexd",
+      "name": "Admin Sasuke · Cusca Champions Weekly ⚡ #2 (PCVGC)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Tough Claws",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Focus Sash",
+          "ability": "Cursed Body",
+          "moves": [
+            "Icy Wind",
+            "Shadow Ball",
+            "Will-O-Wisp",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Kowtow Cleave",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Close Combat",
+            "Dire Claw",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Shadow Ball",
+            "Quick Attack",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 2,
+      "tournament": "Cusca Champions Weekly ⚡ #2 (PCVGC)",
+      "placing": null,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Admin Sasuke",
+      "record": "0-2-0"
+    },
+    {
+      "id": "6a529f1ee09846f1eb4c14e3-peekachu",
+      "name": "Peekachu · Chaos League Sunday Slam #104",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Rock Slide",
+            "Close Combat",
+            "Accelerock",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Overheat",
+            "Giga Drain",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Snow Cloak",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Sitrus Berry",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Close Combat",
+            "Dire Claw",
+            "Fake Out",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Chaos League Sunday Slam #104",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Peekachu",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a4220ea83fd320299bd3c65-timmyinanalleyway",
+      "name": "TimmyInAnAlleyway · Champions Collective #14",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Giga Drain",
+            "Overheat",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Sitrus Berry",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Close Combat",
+            "Dire Claw",
+            "Protect",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Close Combat",
+            "Accelerock",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7,
+      "sampleCount": 10,
+      "tournament": "Champions Collective #14",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "TimmyInAnAlleyway",
+      "record": "7-3-0"
+    },
+    {
+      "id": "6a4bc2dd063cb29d318e4b78-peyoteasesino",
+      "name": "Sandro Soto Sánchez · Chacho Cup #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Roseli Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Encore",
+            "Disable",
+            "Foul Play",
+            "Quash"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Shadow Ball",
+            "Protect",
+            "Nasty Plot",
+            "Blizzard"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Blaze",
+          "moves": [
+            "Fake Out",
+            "Will-O-Wisp",
+            "Flare Blitz",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Rage Powder",
+            "Matcha Gotcha",
+            "Life Dew",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "dragalge",
+          "name": "Dragalge",
+          "item": "Dragalgite",
+          "ability": "Toxic Touch",
+          "moves": [
+            "Protect",
+            "Toxic",
+            "Sludge Bomb",
+            "Substitute"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Reflect",
+            "Parting Shot",
+            "Light Screen",
+            "Fake Out"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.25,
+      "sampleCount": 4,
+      "tournament": "Chacho Cup #2",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Sandro Soto Sánchez",
+      "record": "1-3-0"
+    },
+    {
+      "id": "6a4f486e063cb29d318e781e-email7897",
+      "name": "Email7897 · Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "palafin",
+          "name": "Palafin",
+          "item": "Mystic Water",
+          "ability": "Zero to Hero",
+          "moves": [
+            "Protect",
+            "Close Combat",
+            "Flip Turn",
+            "Jet Punch"
+          ]
+        },
+        {
+          "slug": "hisuian-arcanine",
+          "name": "Hisuian Arcanine",
+          "item": "Focus Sash",
+          "ability": "Intimidate",
+          "moves": [
+            "Extreme Speed",
+            "Protect",
+            "Flare Blitz",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Snow Cloak",
+          "moves": [
+            "Blizzard",
+            "Aurora Veil",
+            "Protect",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Protect",
+            "Close Combat",
+            "Dire Claw"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Trick Room",
+            "Rage Powder",
+            "Life Dew"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Email7897",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a392e4ac87cd9ff0a30d0b0-viophoenixvgc",
+      "name": "VioPhoenixVGC · Alpensee Tour (Reg M-B) #66",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Claw",
+            "Extreme Speed",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8333333333333334,
+      "sampleCount": 12,
+      "tournament": "Alpensee Tour (Reg M-B) #66",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "VioPhoenixVGC",
+      "record": "10-2-0"
+    },
+    {
+      "id": "6a392e4ac87cd9ff0a30d0b0-trevyah",
+      "name": "trevYah · Alpensee Tour (Reg M-B) #66",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Claw",
+            "Extreme Speed",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Swords Dance",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7272727272727273,
+      "sampleCount": 11,
+      "tournament": "Alpensee Tour (Reg M-B) #66",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "trevYah",
+      "record": "8-3-0"
+    },
+    {
+      "id": "6a50864165724db9ded41db6-subzebas",
+      "name": "SubZebas · 4fun sabadín",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Fairy Feather",
+          "ability": "Prankster",
+          "moves": [
+            "Protect",
+            "Encore",
+            "Tailwind",
+            "Moonblast"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Focus Sash",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Spiky Shield",
+            "Power Gem",
+            "Sludge Bomb",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Protect",
+            "Swords Dance",
+            "Sucker Punch",
+            "Kowtow Cleave"
+          ]
+        },
+        {
+          "slug": "gyarados",
+          "name": "Gyarados",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Protect",
+            "Waterfall",
+            "Power Whip",
+            "Temper Flare"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "4fun sabadín",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "SubZebas",
+      "record": "3-2-0"
+    }
+  ],
+  "movePool": [
+    "Aurora Veil",
+    "Avalanche",
+    "Bite",
+    "Blizzard",
+    "Block",
+    "Body Slam",
+    "Charm",
+    "Chilling Water",
+    "Confuse Ray",
+    "Crunch",
+    "Curse",
+    "Destiny Bond",
+    "Disable",
+    "Double Team",
+    "Draining Kiss",
+    "Endure",
+    "Facade",
+    "Fake Tears",
+    "Fling",
+    "Frost Breath",
+    "Giga Impact",
+    "Haze",
+    "Helping Hand",
+    "Hex",
+    "Hyper Beam",
+    "Ice Beam",
+    "Ice Fang",
+    "Ice Punch",
+    "Ice Shard",
+    "Ice Spinner",
+    "Icicle Crash",
+    "Icicle Spear",
+    "Icy Wind",
+    "Imprison",
+    "Light Screen",
+    "Nasty Plot",
+    "Night Shade",
+    "Pain Split",
+    "Payback",
+    "Phantom Force",
+    "Poltergeist",
+    "Protect",
+    "Psych Up",
+    "Psychic",
+    "Rain Dance",
+    "Reflect",
+    "Rest",
+    "Round",
+    "Safeguard",
+    "Scary Face",
+    "Shadow Ball",
+    "Sleep Talk",
+    "Snore",
+    "Snowscape",
+    "Spikes",
+    "Spite",
+    "Substitute",
+    "Switcheroo",
+    "Taunt",
+    "Thunder",
+    "Thunder Wave",
+    "Thunderbolt",
+    "Trailblaze",
+    "Trick",
+    "Triple Axel",
+    "Water Pulse",
+    "Weather Ball",
+    "Will-O-Wisp"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Froslass",
+      "base_name": "Froslass",
+      "saved_name": "Froslass",
+      "types": "Ice/Ghost",
+      "abilities": "Snow Cloak|Cursed Body",
+      "image_path": "pokemon_champions_assets\\pokemon\\Froslass.png",
+      "form": "",
+      "hp": 145,
+      "atk": 100,
+      "def": 90,
+      "spa": 100,
+      "spd": 90,
+      "spe": 130,
+      "total": 655
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "move",
+          "rank": 1,
+          "name": "Blizzard",
+          "percentage": "98.9%",
+          "percentage_value": 98.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Froslassite",
+          "percentage": "98.5%",
+          "percentage_value": 98.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Sneasler",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Timid",
+          "percentage": "65.3%",
+          "percentage_value": 65.3,
+          "stat_up": "Speed",
+          "stat_down": "Attack"
+        },
+        "stat_points": {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "41.3%",
+          "percentage_value": 41.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        "ability": {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "ability",
+          "rank": 1,
+          "name": "Cursed Body",
+          "percentage": "68.4%",
+          "percentage_value": 68.4,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Blizzard",
+          "Protect",
+          "Shadow Ball",
+          "Aurora Veil",
+          "Rain Dance",
+          "Thunderbolt",
+          "Frost Breath",
+          "Taunt",
+          "Destiny Bond",
+          "Nasty Plot"
+        ],
+        "held_item": [
+          "Froslassite",
+          "Focus Sash",
+          "Choice Scarf",
+          "Wide Lens",
+          "Never-Melt Ice",
+          "Wise Glasses",
+          "Bright Powder",
+          "Sitrus Berry",
+          "Shell Bell",
+          "Occa Berry"
+        ],
+        "teammate": [
+          "Sneasler",
+          "Kingambit",
+          "Basculegion Male",
+          "Garchomp",
+          "Incineroar",
+          "Sinistcha",
+          "Whimsicott",
+          "Lycanroc Dusk Form",
+          "Scovillain",
+          "Archaludon"
+        ],
+        "stat_alignment": [
+          "Timid",
+          "Modest",
+          "Calm",
+          "Hasty",
+          "Mild",
+          "Jolly",
+          "Bold",
+          "Quiet",
+          "Gentle",
+          "Adamant"
+        ],
+        "stat_points": [
+          "HP 2 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 32",
+          "HP 32 / Atk 0 / Def 0 / SpA 2 / SpD 0 / Spe 32",
+          "HP 0 / Atk 0 / Def 0 / SpA 32 / SpD 2 / Spe 32",
+          "HP 0 / Atk 0 / Def 2 / SpA 32 / SpD 0 / Spe 32",
+          "HP 24 / Atk 0 / Def 0 / SpA 10 / SpD 0 / Spe 32",
+          "HP 0 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 32",
+          "HP 32 / Atk 0 / Def 0 / SpA 4 / SpD 0 / Spe 30",
+          "HP 14 / Atk 0 / Def 2 / SpA 20 / SpD 0 / Spe 30"
+        ],
+        "ability": [
+          "Cursed Body",
+          "Snow Cloak"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "move",
+          "rank": 1,
+          "name": "Blizzard",
+          "percentage": "98.9%",
+          "percentage_value": 98.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "move",
+          "rank": 2,
+          "name": "Protect",
+          "percentage": "88.1%",
+          "percentage_value": 88.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "move",
+          "rank": 3,
+          "name": "Shadow Ball",
+          "percentage": "84.2%",
+          "percentage_value": 84.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "move",
+          "rank": 4,
+          "name": "Aurora Veil",
+          "percentage": "73.0%",
+          "percentage_value": 73,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "move",
+          "rank": 5,
+          "name": "Rain Dance",
+          "percentage": "10.0%",
+          "percentage_value": 10,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "move",
+          "rank": 6,
+          "name": "Thunderbolt",
+          "percentage": "8.9%",
+          "percentage_value": 8.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "move",
+          "rank": 7,
+          "name": "Frost Breath",
+          "percentage": "7.1%",
+          "percentage_value": 7.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "move",
+          "rank": 8,
+          "name": "Taunt",
+          "percentage": "6.2%",
+          "percentage_value": 6.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "move",
+          "rank": 9,
+          "name": "Destiny Bond",
+          "percentage": "4.5%",
+          "percentage_value": 4.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "move",
+          "rank": 10,
+          "name": "Nasty Plot",
+          "percentage": "4.2%",
+          "percentage_value": 4.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Froslassite",
+          "percentage": "98.5%",
+          "percentage_value": 98.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Focus Sash",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Choice Scarf",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Wide Lens",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Never-Melt Ice",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Wise Glasses",
+          "percentage": "0.0%",
+          "percentage_value": 0,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Bright Powder",
+          "percentage": "0.0%",
+          "percentage_value": 0,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Sitrus Berry",
+          "percentage": "0.0%",
+          "percentage_value": 0,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Shell Bell",
+          "percentage": "0.0%",
+          "percentage_value": 0,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Occa Berry",
+          "percentage": "0.0%",
+          "percentage_value": 0,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Sneasler",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Whimsicott",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Lycanroc Dusk Form",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Scovillain",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Archaludon",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Timid",
+          "percentage": "65.3%",
+          "percentage_value": 65.3,
+          "stat_up": "Speed",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Modest",
+          "percentage": "32.3%",
+          "percentage_value": 32.3,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Calm",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "Sp. Def",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Hasty",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Speed",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Mild",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Jolly",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Bold",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Defense",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Quiet",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Gentle",
+          "percentage": "0.0%",
+          "percentage_value": 0,
+          "stat_up": "Sp. Def",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Adamant",
+          "percentage": "0.0%",
+          "percentage_value": 0,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "41.3%",
+          "percentage_value": 41.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "6.1%",
+          "percentage_value": 6.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 2,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "4.6%",
+          "percentage_value": 4.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 2,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "4.3%",
+          "percentage_value": 4.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "2.2%",
+          "percentage_value": 2.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 24,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 10,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "1.5%",
+          "percentage_value": 1.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "1.4%",
+          "percentage_value": 1.4,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 4,
+          "sp_def_points": 0,
+          "speed_points": 30
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "1.2%",
+          "percentage_value": 1.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 14,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 20,
+          "sp_def_points": 0,
+          "speed_points": 30
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "ability",
+          "rank": 1,
+          "name": "Cursed Body",
+          "percentage": "68.4%",
+          "percentage_value": 68.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Froslass",
+          "column_position": 32,
+          "position": 32,
+          "category": "ability",
+          "rank": 2,
+          "name": "Snow Cloak",
+          "percentage": "31.6%",
+          "percentage_value": 31.6,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Froslass.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Froslass.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Froslass.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Froslass.csv"
+      }
+    ]
+  }
+}

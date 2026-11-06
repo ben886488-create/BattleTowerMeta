@@ -76,6 +76,15 @@
             </label>
 
             <label class="topCardsField">
+              <span>{{ ui.cardSet }}</span>
+              <select v-model="selectedInclusionCardSet">
+                <option v-for="option in inclusionCardSetOptions" :key="option.value" :value="option.value">
+                  {{ option.label }}
+                </option>
+              </select>
+            </label>
+
+            <label class="topCardsField">
               <span>{{ ui.topCut }}</span>
               <select v-model="filters.topCut">
                 <option
@@ -313,6 +322,7 @@ import cardsCatalogUrl from "../assets/limitless_dump/limitless_cards.json?url";
 import setsCatalogUrl from "../assets/limitless_dump/limitless_sets.json?url";
 import oneCopyDiskIcon from "../assets/deck-disks/3.png";
 import twoCopyDiskIcon from "../assets/deck-disks/4.png";
+import { routeLang as getRouteLang } from "../lib/siteI18n";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 const CARDS_PER_PAGE = 30;
@@ -489,7 +499,7 @@ function inferVersionByStartMs(ms: number) {
 }
 
 const route = useRoute();
-const locale = computed<Locale>(() => (String(route.path).split("/")[1] === "en" ? "en" : "zh"));
+const locale = computed<Locale>(() => getRouteLang(route));
 
 const messages = {
   en: {
@@ -507,6 +517,8 @@ const messages = {
     time: "Time",
     month: "Month",
     set: "Meta set",
+    cardSet: "Card version",
+    allCardSets: "All card versions",
     pack: "Card set",
     topCut: "Top Cut",
     search: "Search",
@@ -565,6 +577,8 @@ const messages = {
     time: "時間",
     month: "月份",
     set: "環境版本",
+    cardSet: "卡片版本",
+    allCardSets: "全部卡片版本",
     pack: "卡包版本",
     topCut: "Top Cut",
     search: "搜尋",
@@ -620,6 +634,7 @@ const categoryFilter = ref<CategoryFilter>("all");
 const cardSearch = ref("");
 const currentPage = ref(1);
 const selectedCatalogSet = ref("");
+const selectedInclusionCardSet = ref("");
 
 const filters = reactive<{
   minPlayers: number | undefined;
@@ -828,33 +843,6 @@ function inferCatalogSubtypeSafe(card: RawCatalogCard, category: CardCategory) {
 
   const pokemonMatch =
     extraText.match(/\b(Basic|Stage 1|Stage 2|Baby)\b/i) ?? source.match(/\b(Basic|Stage 1|Stage 2|Baby)\b/i);
-  if (pokemonMatch?.[1]) return pokemonMatch[1];
-  if (/\bex\b/i.test(cleanText(card.name))) return "ex";
-  return "";
-}
-
-function inferCatalogCategory(card: RawCatalogCard): CardCategory {
-  const text = `${cleanText(card.page_line)} ${cleanText(card.extra_text)}`.toLowerCase();
-  if (/\btrainer\b|\bsupporter\b|\bitem\b|\bstadium\b/.test(text)) return "Trainer";
-  if (/\benergy\b/.test(text)) return "Energy";
-  if (/pokémon|pokemon/.test(text)) return "Pokemon";
-  return "Other";
-}
-
-function inferCatalogSubtype(card: RawCatalogCard, category: CardCategory) {
-  const source = `${cleanText(card.page_line)} ${cleanText(card.extra_text)}`.replace(/Pokémon/g, "Pokemon");
-
-  if (category === "Trainer") {
-    const trainerMatch = source.match(/\b(Supporter|Item|Stadium)\b/i);
-    return trainerMatch?.[1] ?? "";
-  }
-
-  if (category === "Energy") {
-    const energyMatch = source.match(/\b(Basic|Special)\s+Energy\b/i);
-    return energyMatch ? `${energyMatch[1]} Energy` : "Energy";
-  }
-
-  const pokemonMatch = source.match(/\b(Basic|Stage 1|Stage 2|Baby)\b/i);
   if (pokemonMatch?.[1]) return pokemonMatch[1];
   if (/\bex\b/i.test(cleanText(card.name))) return "ex";
   return "";
@@ -1111,6 +1099,11 @@ const catalogSetOptions = computed<Array<{ value: string; label: string }>>(() =
     label: item.label,
   }));
 });
+
+const inclusionCardSetOptions = computed<Array<{ value: string; label: string }>>(() => [
+  { value: "", label: ui.value.allCardSets },
+  ...catalogSetOptions.value,
+]);
 
 const selectedCatalogSetMeta = computed(() => {
   return catalogSets.value.find((item) => item.code === selectedCatalogSet.value) ?? null;
@@ -1524,6 +1517,7 @@ const inclusionDisplayCards = computed(() => {
   const search = normalizedSearch.value;
 
   return inclusionAnalytics.value.cards.filter((card) => {
+    if (selectedInclusionCardSet.value && card.setCode !== selectedInclusionCardSet.value) return false;
     if (!matchesCategory(card.category)) return false;
     if (search && !normalizeSearchableText(`${card.name} ${card.codeLabel}`).toLowerCase().includes(search)) {
       return false;
@@ -1570,6 +1564,7 @@ watch(
       filters.minPlayers ?? "",
       filters.time,
       filters.set,
+      selectedInclusionCardSet.value,
       filters.topCut,
       selectedCatalogSet.value,
       categoryFilter.value,
@@ -1603,8 +1598,11 @@ const inclusionScopeText = computed(() => {
     )?.label ?? ui.value.allDates;
   const topCutLabel =
     topCutOptions.value.find((item) => item.value === filters.topCut)?.label ?? ui.value.all;
+  const cardSetLabel =
+    inclusionCardSetOptions.value.find((item) => item.value === selectedInclusionCardSet.value)?.label ??
+    ui.value.allCardSets;
 
-  return `${timeLabel} / ${setLabel} / ${topCutLabel}`;
+  return `${timeLabel} / ${setLabel} / ${cardSetLabel} / ${topCutLabel}`;
 });
 
 const inclusionStatsText = computed(() => {

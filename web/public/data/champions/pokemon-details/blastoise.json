@@ -1,0 +1,7029 @@
+{
+  "pokemon": {
+    "slug": "blastoise",
+    "name": "Blastoise",
+    "baseName": "Blastoise",
+    "savedName": "Blastoise",
+    "form": "",
+    "types": [
+      "Water"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Blastoise.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png",
+    "stats": {
+      "hp": 154,
+      "attack": 103,
+      "defense": 120,
+      "spAttack": 105,
+      "spDefense": 125,
+      "speed": 98,
+      "total": 705
+    },
+    "rank": 19,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Water Spout",
+    "topItem": "Blastoisinite",
+    "topTeammate": "Sinistcha"
+  },
+  "moves": [
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "move",
+      "rank": 1,
+      "name": "Water Spout",
+      "percentage": 0.946,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "move",
+        "rank": 1,
+        "name": "Water Spout",
+        "percentage": "94.6%",
+        "percentage_value": 94.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "move",
+      "rank": 2,
+      "name": "Dark Pulse",
+      "percentage": 0.895,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "move",
+        "rank": 2,
+        "name": "Dark Pulse",
+        "percentage": "89.5%",
+        "percentage_value": 89.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "move",
+      "rank": 3,
+      "name": "Shell Smash",
+      "percentage": 0.708,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "move",
+        "rank": 3,
+        "name": "Shell Smash",
+        "percentage": "70.8%",
+        "percentage_value": 70.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "move",
+      "rank": 4,
+      "name": "Protect",
+      "percentage": 0.691,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "move",
+        "rank": 4,
+        "name": "Protect",
+        "percentage": "69.1%",
+        "percentage_value": 69.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "move",
+      "rank": 5,
+      "name": "Aura Sphere",
+      "percentage": 0.289,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "move",
+        "rank": 5,
+        "name": "Aura Sphere",
+        "percentage": "28.9%",
+        "percentage_value": 28.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "move",
+      "rank": 6,
+      "name": "Fake Out",
+      "percentage": 0.271,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "move",
+        "rank": 6,
+        "name": "Fake Out",
+        "percentage": "27.1%",
+        "percentage_value": 27.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "move",
+      "rank": 7,
+      "name": "Ice Beam",
+      "percentage": 0.058,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "move",
+        "rank": 7,
+        "name": "Ice Beam",
+        "percentage": "5.8%",
+        "percentage_value": 5.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "move",
+      "rank": 8,
+      "name": "Water Pulse",
+      "percentage": 0.045,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "move",
+        "rank": 8,
+        "name": "Water Pulse",
+        "percentage": "4.5%",
+        "percentage_value": 4.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "move",
+      "rank": 9,
+      "name": "Dragon Pulse",
+      "percentage": 0.02,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "move",
+        "rank": 9,
+        "name": "Dragon Pulse",
+        "percentage": "2.0%",
+        "percentage_value": 2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "move",
+      "rank": 10,
+      "name": "Muddy Water",
+      "percentage": 0.013,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "move",
+        "rank": 10,
+        "name": "Muddy Water",
+        "percentage": "1.3%",
+        "percentage_value": 1.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Blastoisinite",
+      "percentage": 0.964,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Blastoisinite",
+        "percentage": "96.4%",
+        "percentage_value": 96.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "held_item",
+      "rank": 2,
+      "name": "White Herb",
+      "percentage": 0.8,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "held_item",
+        "rank": 2,
+        "name": "White Herb",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Mystic Water",
+      "percentage": 0.5,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Mystic Water",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Choice Scarf",
+      "percentage": 0.5,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Choice Scarf",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Leftovers",
+      "percentage": 0.5,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Leftovers",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Sitrus Berry",
+      "percentage": 0.3,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Sitrus Berry",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Life Orb",
+      "percentage": 0.2,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Life Orb",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Expert Belt",
+      "percentage": 0.1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Expert Belt",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Rindo Berry",
+      "percentage": 0.1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Rindo Berry",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Wise Glasses",
+      "percentage": 0.1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Wise Glasses",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "ability",
+      "rank": 1,
+      "name": "Rain Dish",
+      "percentage": 0.784,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "ability",
+        "rank": 1,
+        "name": "Rain Dish",
+        "percentage": "78.4%",
+        "percentage_value": 78.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "ability",
+      "rank": 2,
+      "name": "Torrent",
+      "percentage": 0.216,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "ability",
+        "rank": 2,
+        "name": "Torrent",
+        "percentage": "21.6%",
+        "percentage_value": 21.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Sneasler",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Sneasler",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Kingambit",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Kingambit",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Delphox",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Delphox",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Farigiraf",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Farigiraf",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Maushold Family of Four",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Maushold Family of Four",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Torkoal",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Torkoal",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Sylveon",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Sylveon",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Vivillon Fancy Pattern",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Vivillon Fancy Pattern",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Modest",
+      "percentage": 0.765,
+      "statUp": "Sp. Atk",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Modest",
+        "percentage": "76.5%",
+        "percentage_value": 76.5,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Quiet",
+      "percentage": 0.17,
+      "statUp": "Sp. Atk",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Quiet",
+        "percentage": "17.0%",
+        "percentage_value": 17,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Timid",
+      "percentage": 0.046,
+      "statUp": "Speed",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Timid",
+        "percentage": "4.6%",
+        "percentage_value": 4.6,
+        "stat_up": "Speed",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Calm",
+      "percentage": 0.4,
+      "statUp": "Sp. Def",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Calm",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Sp. Def",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Bold",
+      "percentage": 0.4,
+      "statUp": "Defense",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Bold",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Defense",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Mild",
+      "percentage": 0.2,
+      "statUp": "Sp. Atk",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Mild",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Sassy",
+      "percentage": 0.1,
+      "statUp": "Sp. Def",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Sassy",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Sp. Def",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Relaxed",
+      "percentage": 0.1,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Relaxed",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Gentle",
+      "percentage": 0.1,
+      "statUp": "Sp. Def",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Gentle",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Sp. Def",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Adamant",
+      "percentage": 0.1,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Adamant",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.312,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "31.2%",
+        "percentage_value": 31.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 1,
+        "attack_points": 0,
+        "defense_points": 1,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.227,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "22.7%",
+        "percentage_value": 22.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.134,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "13.4%",
+        "percentage_value": 13.4,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.041,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "4.1%",
+        "percentage_value": 4.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.016,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "1.6%",
+        "percentage_value": 1.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 1,
+        "sp_atk_points": 32,
+        "sp_def_points": 1,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.015,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "1.5%",
+        "percentage_value": 1.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 16,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 18
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "1.0%",
+        "percentage_value": 1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Blastoise",
+      "position": 19,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.9,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Blastoise",
+        "column_position": 19,
+        "position": 19,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "0.9%",
+        "percentage_value": 0.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 2,
+        "speed_points": 32
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a5055f965724db9ded41c56-naibot2814",
+      "name": "naibot2814 · Weekly Qualifier for RookideeVGC Grand Tourney",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Torrent",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Darkest Lariat",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Poison Jab",
+            "Rock Tomb"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Trick Room",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psyshock",
+            "Nasty Plot",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "Weekly Qualifier for RookideeVGC Grand Tourney",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "naibot2814",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a5055f965724db9ded41c56-vyralgalaxy",
+      "name": "VyralGalaxy · Weekly Qualifier for RookideeVGC Grand Tourney",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psyshock",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Shell Smash",
+            "Protect",
+            "Water Spout",
+            "Dark Pulse"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Throat Chop",
+            "Flare Blitz",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Fake Out",
+            "Dire Claw",
+            "Quick Guard",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Protect",
+            "Life Dew",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Chople Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Follow Me",
+            "Super Fang",
+            "Feint",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Weekly Qualifier for RookideeVGC Grand Tourney",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "VyralGalaxy",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a4dfee8063cb29d318e6805-javivarela",
+      "name": "Javivarela · VGC UmbreNews 14.07.2026 #23 - Champion",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psyshock",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Dire Claw",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Life Dew",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Chople Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Super Fang",
+            "Feint",
+            "Follow Me",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8888888888888888,
+      "sampleCount": 9,
+      "tournament": "VGC UmbreNews 14.07.2026 #23 - Champion",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Javivarela",
+      "record": "8-1-0"
+    },
+    {
+      "id": "6a4dfee8063cb29d318e6805-m_rada",
+      "name": "M_rada · VGC UmbreNews 14.07.2026 #23 - Champion",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Poison Jab",
+            "Close Combat",
+            "Fake Out",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psyshock",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Flare Blitz",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "VGC UmbreNews 14.07.2026 #23 - Champion",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "M_rada",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a47c55e65724db9ded3b307-cj__black98",
+      "name": "CJ__black98 · VGC Reg M-B Ingame  Tour",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Magician",
+          "moves": [
+            "Heat Wave",
+            "Nasty Plot",
+            "Protect",
+            "Psyshock"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Trick Room",
+            "Life Dew",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Shell Smash",
+            "Dark Pulse",
+            "Water Spout",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Helping Hand",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Unburden",
+          "moves": [
+            "Gunk Shot",
+            "Close Combat",
+            "Quick Guard",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "VGC Reg M-B Ingame  Tour",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "CJ__black98",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a47c55e65724db9ded3b307-javivarela",
+      "name": "Javivarela · VGC Reg M-B Ingame  Tour",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psyshock",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Dire Claw",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Life Dew",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Chople Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Super Fang",
+            "Feint",
+            "Follow Me",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7142857142857143,
+      "sampleCount": 7,
+      "tournament": "VGC Reg M-B Ingame  Tour",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Javivarela",
+      "record": "5-2-0"
+    },
+    {
+      "id": "6a4dbc1e063cb29d318e66e7-tsumi88",
+      "name": "tsumi88 · The Grim Challenge #3 - Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Parting Shot",
+            "Flare Blitz",
+            "Helping Hand",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Life Dew"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Kowtow Cleave",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Dazzling Gleam",
+            "Draining Kiss",
+            "Calm Mind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Poison Jab",
+            "Close Combat",
+            "Quick Guard",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.875,
+      "sampleCount": 8,
+      "tournament": "The Grim Challenge #3 - Champions",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "tsumi88",
+      "record": "7-1-0"
+    },
+    {
+      "id": "6a4dbc1e063cb29d318e66e7-animod",
+      "name": "Animod · The Grim Challenge #3 - Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Fake Out",
+            "Aura Sphere",
+            "Ice Beam"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Trick Room",
+            "Rain Dance",
+            "Thunderbolt",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Life Dew",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Kowtow Cleave",
+            "Low Kick",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Choice Scarf",
+          "ability": "Intimidate",
+          "moves": [
+            "Brave Bird",
+            "Final Gambit",
+            "U-turn",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Focus Sash",
+          "ability": "Oblivious",
+          "moves": [
+            "High Horsepower",
+            "Ice Shard",
+            "Icicle Crash",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "The Grim Challenge #3 - Champions",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Animod",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a3200c5e334c3c9befd8430-didilamalice",
+      "name": "DidiLaMalice · The Grand Champions Festival Encore",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Quick Guard",
+            "Fake Out",
+            "Dire Claw",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Protect",
+            "Rage Powder",
+            "Matcha Gotcha",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Swords Dance",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Protect",
+            "Nasty Plot",
+            "Heat Wave",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8125,
+      "sampleCount": 16,
+      "tournament": "The Grand Champions Festival Encore",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "DidiLaMalice",
+      "record": "13-3-0"
+    },
+    {
+      "id": "6a3200c5e334c3c9befd8430-kravell",
+      "name": "Kravell · The Grand Champions Festival Encore",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Fake Out",
+            "Parting Shot",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Poison Jab",
+            "Close Combat",
+            "Fake Out",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psyshock",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8125,
+      "sampleCount": 16,
+      "tournament": "The Grand Champions Festival Encore",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Kravell",
+      "record": "13-3-0"
+    },
+    {
+      "id": "6a53c2d1e09846f1eb4c161b-cj__black98",
+      "name": "CJ__black98 · The Drywall Series #11",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Magician",
+          "moves": [
+            "Heat Wave",
+            "Nasty Plot",
+            "Protect",
+            "Psyshock"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Trick Room",
+            "Life Dew",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Shell Smash",
+            "Dark Pulse",
+            "Water Spout",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Helping Hand",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Unburden",
+          "moves": [
+            "Gunk Shot",
+            "Close Combat",
+            "Quick Guard",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "The Drywall Series #11",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "CJ__black98",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a53c2d1e09846f1eb4c161b-jaxies",
+      "name": "Jaxies · The Drywall Series #11",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psychic",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Torrent",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Assurance",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Imprison"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Fake Out",
+            "Light Screen",
+            "Reflect",
+            "Spirit Break"
+          ]
+        },
+        {
+          "slug": "jolteon",
+          "name": "Jolteon",
+          "item": "Focus Sash",
+          "ability": "Volt Absorb",
+          "moves": [
+            "Thunderbolt",
+            "Electroweb",
+            "Fake Tears",
+            "Detect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "The Drywall Series #11",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Jaxies",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-brayzao",
+      "name": "Brayzao - Água/Terra · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Wacan Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Muddy Water",
+            "Hurricane",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Torrent",
+          "moves": [
+            "Water Spout",
+            "Aura Sphere",
+            "Ice Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Sitrus Berry",
+          "ability": "Levitate",
+          "moves": [
+            "Hydro Pump",
+            "Volt Switch",
+            "Shadow Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "runerigus",
+          "name": "Runerigus",
+          "item": "Focus Sash",
+          "ability": "Wandering Spirit",
+          "moves": [
+            "Poltergeist",
+            "Rock Blast",
+            "Trick Room",
+            "Memento"
+          ]
+        },
+        {
+          "slug": "mudsdale",
+          "name": "Mudsdale",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Body Press",
+            "Heavy Slam",
+            "Iron Defense",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "golurk",
+          "name": "Golurk",
+          "item": "Golurkite",
+          "ability": "Iron Fist",
+          "moves": [
+            "Headlong Rush",
+            "Poltergeist",
+            "Thunder Punch",
+            "Ice Punch"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Brayzao - Água/Terra",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a51f42365724db9ded43093-fr33z",
+      "name": "Fr33z · Tenki's Cart Weekly #109 - Reg MB",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Trick Room",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Dire Claw",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Chople Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Helping Hand",
+            "Follow Me",
+            "Feint",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psyshock",
+            "Nasty Plot",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "Tenki's Cart Weekly #109 - Reg MB",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Fr33z",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a32e8b12d97f3b0c26189cc-cj__black98",
+      "name": "CJ__black98 · Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Magician",
+          "moves": [
+            "Heat Wave",
+            "Nasty Plot",
+            "Protect",
+            "Psyshock"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Trick Room",
+            "Life Dew",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Shell Smash",
+            "Dark Pulse",
+            "Water Spout",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Helping Hand",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Unburden",
+          "moves": [
+            "Gunk Shot",
+            "Close Combat",
+            "Quick Guard",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7,
+      "sampleCount": 10,
+      "tournament": "Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "CJ__black98",
+      "record": "7-3-0"
+    },
+    {
+      "id": "6a510fac063cb29d318e8c08-januo",
+      "name": "januo · SNT Reg M-B Tour #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Unburden",
+          "moves": [
+            "Dire Claw",
+            "Close Combat",
+            "Fake Out",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Dark Pulse",
+            "Water Spout",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Helping Hand",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Nasty Plot",
+            "Psyshock",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.9,
+      "sampleCount": 10,
+      "tournament": "SNT Reg M-B Tour #3",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "januo",
+      "record": "9-1-0"
+    },
+    {
+      "id": "6a4f9758063cb29d318e79a9-huyhieuf",
+      "name": "huyhieuf · Sky Pillar Saturday Showdown S8 #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "overqwil",
+          "name": "Overqwil",
+          "item": "Leftovers",
+          "ability": "Intimidate",
+          "moves": [
+            "Minimize",
+            "Stockpile",
+            "Pain Split",
+            "Barb Barrage"
+          ]
+        },
+        {
+          "slug": "meowstic",
+          "name": "Meowstic",
+          "item": "Mental Herb",
+          "ability": "Prankster",
+          "moves": [
+            "Light Screen",
+            "Skill Swap",
+            "Rain Dance",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Sablenite",
+          "ability": "Prankster",
+          "moves": [
+            "Dark Pulse",
+            "Will-O-Wisp",
+            "Recover",
+            "Psych Up"
+          ]
+        },
+        {
+          "slug": "klefki",
+          "name": "Klefki",
+          "item": "Sitrus Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Stored Power",
+            "Draining Kiss",
+            "Calm Mind",
+            "Psych Up"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Protect",
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Unburden",
+          "moves": [
+            "Dire Claw",
+            "Close Combat",
+            "Quick Guard",
+            "Fake Out"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Sky Pillar Saturday Showdown S8 #10",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "huyhieuf",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a4f9758063cb29d318e79a9-po",
+      "name": "Po · Sky Pillar Saturday Showdown S8 #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psyshock",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Fake Out",
+            "Poison Jab",
+            "Close Combat",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Parting Shot",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Life Dew",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "Sky Pillar Saturday Showdown S8 #10",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Po",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a420fbf83fd320299bd3c3c-joniaco",
+      "name": "joniaco · Sketch Academy Sunday Regulation M-B Tournament",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Trick Room",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psyshock",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Dire Claw",
+            "Fake Out",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Fake Out",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.9,
+      "sampleCount": 10,
+      "tournament": "Sketch Academy Sunday Regulation M-B Tournament",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "joniaco",
+      "record": "9-1-0"
+    },
+    {
+      "id": "6a33cff8e334c3c9befd9250-kevs",
+      "name": "Kevs · Rising Stars - S1 (Double Battle)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Poison Jab",
+            "Close Combat",
+            "Fake Out",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Dark Pulse",
+            "Water Spout",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Helping Hand",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Nasty Plot",
+            "Psyshock",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 10,
+      "tournament": "Rising Stars - S1 (Double Battle)",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Kevs",
+      "record": "8-2-0"
+    },
+    {
+      "id": "6a33cff8e334c3c9befd9250-n_i_g_h_t",
+      "name": "N_I_G_H_T · Rising Stars - S1 (Double Battle)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Wise Glasses",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Darkest Lariat",
+            "Taunt",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Quick Claw",
+          "ability": "Prankster",
+          "moves": [
+            "Foul Play",
+            "Skill Swap",
+            "Will-O-Wisp",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Pulse",
+            "Dark Pulse",
+            "Aura Sphere",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 8,
+      "tournament": "Rising Stars - S1 (Double Battle)",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "N_I_G_H_T",
+      "record": "4-4-0"
+    },
+    {
+      "id": "6a33cff8e334c3c9befd9250-kyromax",
+      "name": "KYromaX · Rising Stars - S1 (Double Battle)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Poison Jab",
+            "Close Combat",
+            "Fake Out",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Torrent",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Helping Hand",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Nasty Plot",
+            "Psyshock",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Rising Stars - S1 (Double Battle)",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "KYromaX",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a33cff8e334c3c9befd9250-m1ss1ngn0",
+      "name": "M1ss1ngN0 · Rising Stars - S1 (Double Battle)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psyshock",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Helping Hand",
+            "Twin Beam",
+            "Imprison",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Black Glasses",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Life Dew",
+            "Rage Powder",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Chople Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Super Fang",
+            "Feint",
+            "Follow Me",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Rising Stars - S1 (Double Battle)",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "M1ss1ngN0",
+      "record": "4-2-1"
+    },
+    {
+      "id": "6a33cff8e334c3c9befd9250-shreyasplays",
+      "name": "ShreyasPlays · Rising Stars - S1 (Double Battle)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Torrent",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Fake Out",
+            "Dire Claw",
+            "Quick Guard",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Chople Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Feint",
+            "U-turn",
+            "Protect",
+            "Follow Me"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Helping Hand",
+            "Parting Shot",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Life Dew"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Magician",
+          "moves": [
+            "Nasty Plot",
+            "Psyshock",
+            "Protect",
+            "Heat Wave"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.42857142857142855,
+      "sampleCount": 7,
+      "tournament": "Rising Stars - S1 (Double Battle)",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "ShreyasPlays",
+      "record": "3-3-1"
+    },
+    {
+      "id": "6a33cff8e334c3c9befd9250-no_face",
+      "name": "No_Face · Rising Stars - S1 (Double Battle)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Helping Hand",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psyshock",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Chople Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Super Fang",
+            "Feint",
+            "Protect",
+            "Follow Me"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Poison Jab",
+            "Close Combat",
+            "Fake Out",
+            "Quick Attack"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Dark Pulse",
+            "Water Spout",
+            "Shell Smash",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.42857142857142855,
+      "sampleCount": 7,
+      "tournament": "Rising Stars - S1 (Double Battle)",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "No_Face",
+      "record": "3-4-0"
+    },
+    {
+      "id": "6a3854f7ceacae7d6441c118-samsmorkle",
+      "name": "SamSmorkle · PWC - Battle in the Colosseum #19 - Reg M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Last Respects",
+            "Wave Crash",
+            "Flip Turn",
+            "Psychic Fangs"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Trick Room",
+            "Rage Powder",
+            "Protect",
+            "Matcha Gotcha"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Ice Beam",
+            "Fake Out",
+            "Water Spout",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Chople Berry",
+          "ability": "Stalwart",
+          "moves": [
+            "Electro Shot",
+            "Aura Sphere",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Draco Meteor",
+            "Thunder",
+            "Ice Beam",
+            "Extreme Speed"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Focus Sash",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Tailwind",
+            "Wide Guard",
+            "Weather Ball"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "PWC - Battle in the Colosseum #19 - Reg M-B",
+      "placing": null,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "SamSmorkle",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a4516dcc87cd9ff0a31469e-sam73597479",
+      "name": "sam73597479 · Pride Month 2 Celebration!!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Protect",
+            "Helping Hand",
+            "Psychic",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Worry Seed",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Overheat",
+            "Protect",
+            "Solar Beam"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Torrent",
+          "moves": [
+            "Shell Smash",
+            "Water Spout",
+            "Protect",
+            "Dark Pulse"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Life Orb",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Beam",
+            "Hyper Voice",
+            "Mystical Fire",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Last Respects",
+            "Wave Crash",
+            "Flip Turn",
+            "Psychic Fangs"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 1,
+      "tournament": "Pride Month 2 Celebration!!",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "sam73597479",
+      "record": "0-1-0"
+    },
+    {
+      "id": "6a43db49c87cd9ff0a313918-lykemafiaa",
+      "name": "lykemafiaa · Pokepal Smackdown #149 (Champions) (Reg M-B)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Dire Claw",
+            "Close Combat",
+            "Fake Out",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Dark Pulse",
+            "Water Spout",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Helping Hand",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Nasty Plot",
+            "Psyshock",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 5,
+      "tournament": "Pokepal Smackdown #149 (Champions) (Reg M-B)",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "lykemafiaa",
+      "record": "4-1-0"
+    },
+    {
+      "id": "6a43db49c87cd9ff0a313918-viterbo",
+      "name": "Viterbo · Pokepal Smackdown #149 (Champions) (Reg M-B)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psyshock",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Fake Out",
+            "Dire Claw",
+            "Close Combat",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Life Dew",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Chople Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Super Fang",
+            "Feint",
+            "Follow Me",
+            "Encore"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Pokepal Smackdown #149 (Champions) (Reg M-B)",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Viterbo",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a4685c383fd320299bd6675-timmyinanalleyway",
+      "name": "TimmyInAnAlleyway · Pokémon Champions #1 - (Floette Eternal Flower)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Protect",
+            "Shell Smash"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psychic",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Poison Jab",
+            "Close Combat",
+            "Fake Out",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Helping Hand",
+            "Flare Blitz",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Coba Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Life Dew",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7,
+      "sampleCount": 10,
+      "tournament": "Pokémon Champions #1 - (Floette Eternal Flower)",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "TimmyInAnAlleyway",
+      "record": "7-3-0"
+    },
+    {
+      "id": "6a4685c383fd320299bd6675-skykiller016",
+      "name": "Skykiller016 · Pokémon Champions #1 - (Floette Eternal Flower)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Protect",
+            "Shell Smash",
+            "Dark Pulse",
+            "Water Spout"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Protect",
+            "Psyshock",
+            "Nasty Plot"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Darkest Lariat",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Fake Out",
+            "Poison Jab",
+            "Close Combat",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Kowtow Cleave",
+            "Swords Dance",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "Pokémon Champions #1 - (Floette Eternal Flower)",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Skykiller016",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a4fcb1f65724db9ded413ac-libiakvgc",
+      "name": "LibiakVGC · Pep_uni Pokémon Champions #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Poison Jab",
+            "Close Combat",
+            "Fake Out",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Dark Pulse",
+            "Water Spout",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Helping Hand",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Nasty Plot",
+            "Psyshock",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 10,
+      "tournament": "Pep_uni Pokémon Champions #2",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "LibiakVGC",
+      "record": "6-3-1"
+    },
+    {
+      "id": "6a5117e465724db9ded421f1-marzooz",
+      "name": "Marzooz · Øutcast's Warm Up Cup",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Shell Smash",
+            "Dark Pulse",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Nasty Plot",
+            "Psyshock",
+            "Heat Wave",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Quick Guard",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Darkest Lariat",
+            "Flare Blitz",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Øutcast's Warm Up Cup",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Marzooz",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a291b172d97f3b0c2612db9-raitz",
+      "name": "Raitz · Mystery Community Tournament#1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Fake Out",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Dark Pulse",
+            "Water Spout",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Helping Hand",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Nasty Plot",
+            "Psyshock",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7142857142857143,
+      "sampleCount": 7,
+      "tournament": "Mystery Community Tournament#1",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Raitz",
+      "record": "5-2-0"
+    },
+    {
+      "id": "6a56249a232a1a55ee10c29a-leoshadow",
+      "name": "Leoshadow · Mesa 1 Champions Séries #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Torrent",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Fake Out",
+            "Poison Jab",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Helping Hand",
+            "Parting Shot",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Wide Lens",
+          "ability": "Friend Guard",
+          "moves": [
+            "Population Bomb",
+            "Follow Me",
+            "Protect",
+            "Super Fang"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Rage Powder",
+            "Life Dew",
+            "Matcha Gotcha",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psyshock",
+            "Nasty Plot",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Mesa 1 Champions Séries #2",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Leoshadow",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a56249a232a1a55ee10c29a-jotta",
+      "name": "Jotta · Mesa 1 Champions Séries #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Torrent",
+          "moves": [
+            "Water Spout",
+            "Shell Smash",
+            "Fake Out",
+            "Dark Pulse"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Focus Sash",
+          "ability": "Drizzle",
+          "moves": [
+            "Tailwind",
+            "Protect",
+            "Hurricane",
+            "Weather Ball"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Draco Meteor",
+            "Protect",
+            "Flash Cannon"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Last Respects",
+            "Wave Crash",
+            "Flip Turn",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Diamond Storm",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Draco Meteor",
+            "Thunder",
+            "Hurricane",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Mesa 1 Champions Séries #2",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Jotta",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a56249a232a1a55ee10c29a-sieghart",
+      "name": "Sieghart · Mesa 1 Champions Séries #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Aura Sphere",
+            "Water Spout",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Focus Sash",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Helping Hand",
+            "Wide Guard",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Leftovers",
+          "ability": "Hospitality",
+          "moves": [
+            "Life Dew",
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Helping Hand",
+            "Trick Room",
+            "Protect",
+            "Twin Beam"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Calm Mind",
+            "Draining Kiss",
+            "Protect",
+            "Dazzling Gleam"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Poison Touch",
+          "moves": [
+            "Poison Jab",
+            "Fake Out",
+            "Protect",
+            "Close Combat"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.3333333333333333,
+      "sampleCount": 3,
+      "tournament": "Mesa 1 Champions Séries #2",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Sieghart",
+      "record": "1-2-0"
+    },
+    {
+      "id": "6a5162b8063cb29d318e9199-marzooz",
+      "name": "Marzooz · MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Shell Smash",
+            "Dark Pulse",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Nasty Plot",
+            "Psyshock",
+            "Heat Wave",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Quick Guard",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Darkest Lariat",
+            "Flare Blitz",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Marzooz",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a539b48c0a6bab82fbbca0a-bofrostmann93",
+      "name": "Bofrostmann93 · London Corviknight VGC Weekly tour 5!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Torrent",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Protect",
+            "Shell Smash"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Dire Claw",
+            "Close Combat",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Darkest Lariat",
+            "Flare Blitz",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Trick Room",
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Life Dew"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Chople Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Population Bomb",
+            "Protect",
+            "Follow Me",
+            "Taunt"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Protect",
+            "Nasty Plot",
+            "Psyshock"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "London Corviknight VGC Weekly tour 5!",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Bofrostmann93",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a42222fc87cd9ff0a31292b-mr_h",
+      "name": "Hanz Harder · King of Champions III",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Darkest Lariat",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Life Dew",
+            "Rage Powder",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Poison Jab",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Torrent",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psychic",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "King of Champions III",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Hanz Harder",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a42222fc87cd9ff0a31292b-ronron",
+      "name": "Ronald Cariño · King of Champions III",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Protect",
+            "Fake Out",
+            "Dire Claw",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Protect",
+            "Shell Smash",
+            "Water Spout",
+            "Water Pulse"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Fake Out",
+            "Scary Face",
+            "Reflect",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Life Orb",
+          "ability": "Keen Eye",
+          "moves": [
+            "Protect",
+            "Weather Ball",
+            "Hurricane",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Protect",
+            "Trick Room",
+            "Rage Powder",
+            "Matcha Gotcha"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Protect",
+            "Hurricane",
+            "Dragon Pulse",
+            "Weather Ball"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "King of Champions III",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Ronald Cariño",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a54c9d3232a1a55ee10b346-moreiraxyz07",
+      "name": "Moreiraxyz07 · Intimidators Champions Challenge #27 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psyshock",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Dire Claw",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Taunt",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Life Dew",
+            "Rage Powder",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Intimidators Champions Challenge #27 REG M-B",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Moreiraxyz07",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a5497ab232a1a55ee10b2b8-wolf91102",
+      "name": "Wolf91102 · HeroicTitan’s VGC Battle Arena",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Dark Pulse",
+            "Water Spout",
+            "Protect",
+            "Shell Smash"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Psyshock",
+            "Heat Wave",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Blaze",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Flare Blitz",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Dire Claw",
+            "Close Combat",
+            "Quick Guard",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect",
+            "Kowtow Cleave"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "HeroicTitan’s VGC Battle Arena",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Wolf91102",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a5497ab232a1a55ee10b2b8-sooner",
+      "name": "Sooner · HeroicTitan’s VGC Battle Arena",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Aura Sphere",
+            "Dark Pulse",
+            "Protect",
+            "Water Spout"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Glimmoranite",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Sludge Bomb",
+            "Spiky Shield",
+            "Power Gem",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Protect",
+            "Shadow Sneak",
+            "Bulk Up"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Life Orb",
+          "ability": "Flame Body",
+          "moves": [
+            "Tailwind",
+            "Overheat",
+            "Protect",
+            "Dual Wingbeat"
+          ]
+        },
+        {
+          "slug": "meowscarada",
+          "name": "Meowscarada",
+          "item": "Focus Sash",
+          "ability": "Protean",
+          "moves": [
+            "Flower Trick",
+            "Knock Off",
+            "Protect",
+            "Triple Axel"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Leftovers",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Protect",
+            "Nasty Plot",
+            "Shadow Ball"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "HeroicTitan’s VGC Battle Arena",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Sooner",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a442f7183fd320299bd5187-doomnik",
+      "name": "Dominik Mellentin · HALL OF  FAME BELGIUM (Invitational)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psychic",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Throat Chop",
+            "Flare Blitz",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Chople Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Follow Me",
+            "Feint",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Protect",
+            "Matcha Gotcha",
+            "Life Dew",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Poison Jab",
+            "Close Combat",
+            "Fake Out",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Protect",
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.875,
+      "sampleCount": 8,
+      "tournament": "HALL OF  FAME BELGIUM (Invitational)",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Dominik Mellentin",
+      "record": "7-1-0"
+    },
+    {
+      "id": "6a442f7183fd320299bd5187-eliottb",
+      "name": "Eliott Bacu · HALL OF  FAME BELGIUM (Invitational)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Kangaskhanite",
+          "ability": "Inner Focus",
+          "moves": [
+            "Fake Out",
+            "Double-Edge",
+            "Low Kick",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Thunderbolt",
+            "Trick Room",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Eruption",
+            "Heat Wave",
+            "Weather Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "vivillon",
+          "name": "Vivillon",
+          "item": "Choice Scarf",
+          "ability": "Compound Eyes",
+          "moves": [
+            "Sleep Powder",
+            "Rage Powder",
+            "Hurricane",
+            "Rain Dance"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Focus Sash",
+          "ability": "Adaptability",
+          "moves": [
+            "Liquidation",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7142857142857143,
+      "sampleCount": 7,
+      "tournament": "HALL OF  FAME BELGIUM (Invitational)",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Eliott Bacu",
+      "record": "5-2-0"
+    },
+    {
+      "id": "6a442f7183fd320299bd5187-willie3105",
+      "name": "William Raes · HALL OF  FAME BELGIUM (Invitational)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Wide Lens",
+          "ability": "Technician",
+          "moves": [
+            "Protect",
+            "Population Bomb",
+            "Follow Me",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Thunderbolt",
+            "Helping Hand",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Shell Smash",
+            "Dark Pulse",
+            "Aura Sphere"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Life Orb",
+          "ability": "Pixilate",
+          "moves": [
+            "Detect",
+            "Hyper Voice",
+            "Hyper Beam",
+            "Quick Attack"
+          ]
+        },
+        {
+          "slug": "meowscarada",
+          "name": "Meowscarada",
+          "item": "Focus Sash",
+          "ability": "Protean",
+          "moves": [
+            "Flower Trick",
+            "Triple Axel",
+            "Low Kick",
+            "Power Gem"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Eruption",
+            "Weather Ball",
+            "Earth Power",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "HALL OF  FAME BELGIUM (Invitational)",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "William Raes",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a57380e6355385f44dd5183-javivarela",
+      "name": "Javivarela · Champions Tour LEPE M-B #9",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psyshock",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Dire Claw",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Life Dew",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Chople Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Super Fang",
+            "Feint",
+            "Follow Me",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Champions Tour LEPE M-B #9",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Javivarela",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a4220ea83fd320299bd3c65-dug",
+      "name": "dug · Champions Collective #14",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Psychic",
+            "Heat Wave",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Fake Out",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Fake Out",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Life Dew",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Chople Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Follow Me",
+            "Feint",
+            "Super Fang",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "Champions Collective #14",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "dug",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a4bc2dd063cb29d318e4b78-pablix",
+      "name": "Pablo Ramírez Florido · Chacho Cup #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Poison Jab",
+            "Close Combat",
+            "Fake Out",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Dark Pulse",
+            "Water Spout",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Helping Hand",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Nasty Plot",
+            "Psyshock",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Chacho Cup #2",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Pablo Ramírez Florido",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a392e4ac87cd9ff0a30d0b0-fr33z",
+      "name": "Fr33z · Alpensee Tour (Reg M-B) #66",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Trick Room",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Dire Claw",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Chople Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Helping Hand",
+            "Follow Me",
+            "Feint",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psyshock",
+            "Nasty Plot",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 10,
+      "tournament": "Alpensee Tour (Reg M-B) #66",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Fr33z",
+      "record": "8-2-0"
+    },
+    {
+      "id": "6a392e4ac87cd9ff0a30d0b0-cactusmax",
+      "name": "Cactusmax · Alpensee Tour (Reg M-B) #66",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Quick Guard",
+            "Fake Out",
+            "Poison Jab",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Protect",
+            "Rage Powder",
+            "Matcha Gotcha",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Swords Dance",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Protect",
+            "Nasty Plot",
+            "Heat Wave",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "Alpensee Tour (Reg M-B) #66",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Cactusmax",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a50864165724db9ded41db6-josamus",
+      "name": "Josamus · 4fun sabadín",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Poison Jab",
+            "Close Combat",
+            "Fake Out",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Dark Pulse",
+            "Water Spout",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Helping Hand",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Nasty Plot",
+            "Psyshock",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 1,
+      "sampleCount": 5,
+      "tournament": "4fun sabadín",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Josamus",
+      "record": "5-0-0"
+    },
+    {
+      "id": "6a545f013ee4505de4ad5e7e-pequenorei1",
+      "name": "PequenoRei · 🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psyshock",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Fake Out",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Trick Room",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.875,
+      "sampleCount": 8,
+      "tournament": "🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "PequenoRei",
+      "record": "7-1-0"
+    },
+    {
+      "id": "6a545f013ee4505de4ad5e7e-cogao",
+      "name": "Z2R Cogao · 🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Light of Ruin",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Fairy Feather",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Protect",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "item": "Focus Sash",
+          "ability": "Sharpness",
+          "moves": [
+            "Stone Axe",
+            "X-Scissor",
+            "Feint",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Flip Turn",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Ice Beam",
+            "Dark Pulse",
+            "Aura Sphere",
+            "Water Spout"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Protect",
+            "Helping Hand",
+            "Low Kick",
+            "Psychic Fangs"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Z2R Cogao",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a519dad65724db9ded42bc9-zacksacred09",
+      "name": "Zacksacred09 · [PR] Mt. Moon Champions VGC Weekly #6 2026",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Protect",
+            "Nasty Plot",
+            "Psyshock",
+            "Heat Wave"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Protect",
+            "Shell Smash",
+            "Water Spout",
+            "Dark Pulse"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Helping Hand",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Fake Out",
+            "Dire Claw",
+            "Close Combat",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Protect",
+            "Trick Room",
+            "Rage Powder",
+            "Matcha Gotcha"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Chople Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Protect",
+            "Follow Me",
+            "Feint",
+            "Super Fang"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 2,
+      "tournament": "[PR] Mt. Moon Champions VGC Weekly #6 2026",
+      "placing": null,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Zacksacred09",
+      "record": "0-2-0"
+    }
+  ],
+  "movePool": [
+    "Aqua Jet",
+    "Aqua Ring",
+    "Aqua Tail",
+    "Aura Sphere",
+    "Avalanche",
+    "Bite",
+    "Blizzard",
+    "Body Press",
+    "Body Slam",
+    "Brick Break",
+    "Bulldoze",
+    "Chilling Water",
+    "Crunch",
+    "Dark Pulse",
+    "Dig",
+    "Dive",
+    "Double-Edge",
+    "Dragon Pulse",
+    "Earthquake",
+    "Endure",
+    "Facade",
+    "Fake Out",
+    "Flail",
+    "Flash Cannon",
+    "Fling",
+    "Flip Turn",
+    "Focus Blast",
+    "Focus Punch",
+    "Giga Impact",
+    "Gyro Ball",
+    "Haze",
+    "Helping Hand",
+    "Hydro Cannon",
+    "Hydro Pump",
+    "Hyper Beam",
+    "Ice Beam",
+    "Ice Punch",
+    "Ice Spinner",
+    "Icy Wind",
+    "Iron Defense",
+    "Iron Head",
+    "Iron Tail",
+    "Life Dew",
+    "Liquidation",
+    "Mega Kick",
+    "Mirror Coat",
+    "Mud Shot",
+    "Muddy Water",
+    "Outrage",
+    "Protect",
+    "Rain Dance",
+    "Rapid Spin",
+    "Rest",
+    "Roar",
+    "Rock Slide",
+    "Rock Tomb",
+    "Round",
+    "Scary Face",
+    "Shell Smash",
+    "Sleep Talk",
+    "Smack Down",
+    "Snore",
+    "Substitute",
+    "Surf",
+    "Terrain Pulse",
+    "Water Pulse",
+    "Water Spout",
+    "Waterfall",
+    "Wave Crash",
+    "Weather Ball",
+    "Whirlpool",
+    "Yawn",
+    "Zen Headbutt"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Blastoise",
+      "base_name": "Blastoise",
+      "saved_name": "Blastoise",
+      "types": "Water",
+      "abilities": "Torrent|Rain Dish",
+      "image_path": "pokemon_champions_assets\\pokemon\\Blastoise.png",
+      "form": "",
+      "hp": 154,
+      "atk": 103,
+      "def": 120,
+      "spa": 105,
+      "spd": 125,
+      "spe": 98,
+      "total": 705
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "move",
+          "rank": 1,
+          "name": "Water Spout",
+          "percentage": "94.6%",
+          "percentage_value": 94.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Blastoisinite",
+          "percentage": "96.4%",
+          "percentage_value": 96.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Modest",
+          "percentage": "76.5%",
+          "percentage_value": 76.5,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        "stat_points": {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "31.2%",
+          "percentage_value": 31.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 1,
+          "attack_points": 0,
+          "defense_points": 1,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        "ability": {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "ability",
+          "rank": 1,
+          "name": "Rain Dish",
+          "percentage": "78.4%",
+          "percentage_value": 78.4,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Water Spout",
+          "Dark Pulse",
+          "Shell Smash",
+          "Protect",
+          "Aura Sphere",
+          "Fake Out",
+          "Ice Beam",
+          "Water Pulse",
+          "Dragon Pulse",
+          "Muddy Water"
+        ],
+        "held_item": [
+          "Blastoisinite",
+          "White Herb",
+          "Mystic Water",
+          "Choice Scarf",
+          "Leftovers",
+          "Sitrus Berry",
+          "Life Orb",
+          "Expert Belt",
+          "Rindo Berry",
+          "Wise Glasses"
+        ],
+        "teammate": [
+          "Sinistcha",
+          "Sneasler",
+          "Incineroar",
+          "Kingambit",
+          "Delphox",
+          "Farigiraf",
+          "Maushold Family of Four",
+          "Torkoal",
+          "Sylveon",
+          "Vivillon Fancy Pattern"
+        ],
+        "stat_alignment": [
+          "Modest",
+          "Quiet",
+          "Timid",
+          "Calm",
+          "Bold",
+          "Mild",
+          "Sassy",
+          "Relaxed",
+          "Gentle",
+          "Adamant"
+        ],
+        "stat_points": [
+          "HP 1 / Atk 0 / Def 1 / SpA 32 / SpD 0 / Spe 32",
+          "HP 2 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 32",
+          "HP 32 / Atk 0 / Def 2 / SpA 32 / SpD 0 / Spe 0",
+          "HP 32 / Atk 0 / Def 0 / SpA 32 / SpD 2 / Spe 0",
+          "HP 0 / Atk 0 / Def 1 / SpA 32 / SpD 1 / Spe 32",
+          "HP 16 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 18",
+          "HP 32 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 0",
+          "HP 0 / Atk 0 / Def 0 / SpA 32 / SpD 2 / Spe 32"
+        ],
+        "ability": [
+          "Rain Dish",
+          "Torrent"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "move",
+          "rank": 1,
+          "name": "Water Spout",
+          "percentage": "94.6%",
+          "percentage_value": 94.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "move",
+          "rank": 2,
+          "name": "Dark Pulse",
+          "percentage": "89.5%",
+          "percentage_value": 89.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "move",
+          "rank": 3,
+          "name": "Shell Smash",
+          "percentage": "70.8%",
+          "percentage_value": 70.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "move",
+          "rank": 4,
+          "name": "Protect",
+          "percentage": "69.1%",
+          "percentage_value": 69.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "move",
+          "rank": 5,
+          "name": "Aura Sphere",
+          "percentage": "28.9%",
+          "percentage_value": 28.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "move",
+          "rank": 6,
+          "name": "Fake Out",
+          "percentage": "27.1%",
+          "percentage_value": 27.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "move",
+          "rank": 7,
+          "name": "Ice Beam",
+          "percentage": "5.8%",
+          "percentage_value": 5.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "move",
+          "rank": 8,
+          "name": "Water Pulse",
+          "percentage": "4.5%",
+          "percentage_value": 4.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "move",
+          "rank": 9,
+          "name": "Dragon Pulse",
+          "percentage": "2.0%",
+          "percentage_value": 2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "move",
+          "rank": 10,
+          "name": "Muddy Water",
+          "percentage": "1.3%",
+          "percentage_value": 1.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Blastoisinite",
+          "percentage": "96.4%",
+          "percentage_value": 96.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "held_item",
+          "rank": 2,
+          "name": "White Herb",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Mystic Water",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Choice Scarf",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Leftovers",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Sitrus Berry",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Life Orb",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Expert Belt",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Rindo Berry",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Wise Glasses",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Sneasler",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Delphox",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Maushold Family of Four",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Torkoal",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Sylveon",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Vivillon Fancy Pattern",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Modest",
+          "percentage": "76.5%",
+          "percentage_value": 76.5,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Quiet",
+          "percentage": "17.0%",
+          "percentage_value": 17,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Timid",
+          "percentage": "4.6%",
+          "percentage_value": 4.6,
+          "stat_up": "Speed",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Calm",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Sp. Def",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Bold",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Defense",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Mild",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Sassy",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Sp. Def",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Relaxed",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Gentle",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Sp. Def",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Adamant",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "31.2%",
+          "percentage_value": 31.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 1,
+          "attack_points": 0,
+          "defense_points": 1,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "22.7%",
+          "percentage_value": 22.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "13.4%",
+          "percentage_value": 13.4,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "4.1%",
+          "percentage_value": 4.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "1.6%",
+          "percentage_value": 1.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 1,
+          "sp_atk_points": 32,
+          "sp_def_points": 1,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "1.5%",
+          "percentage_value": 1.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 16,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 18
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "1.0%",
+          "percentage_value": 1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "0.9%",
+          "percentage_value": 0.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 2,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "ability",
+          "rank": 1,
+          "name": "Rain Dish",
+          "percentage": "78.4%",
+          "percentage_value": 78.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Blastoise",
+          "column_position": 19,
+          "position": 19,
+          "category": "ability",
+          "rank": 2,
+          "name": "Torrent",
+          "percentage": "21.6%",
+          "percentage_value": 21.6,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Blastoise.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Blastoise.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Blastoise.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Blastoise.csv"
+      }
+    ]
+  }
+}

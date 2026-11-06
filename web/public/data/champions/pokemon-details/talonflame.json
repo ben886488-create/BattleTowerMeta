@@ -1,0 +1,4544 @@
+{
+  "pokemon": {
+    "slug": "talonflame",
+    "name": "Talonflame",
+    "baseName": "Talonflame",
+    "savedName": "Talonflame",
+    "form": "",
+    "types": [
+      "Fire",
+      "Flying"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Talonflame.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/663.png",
+    "stats": {
+      "hp": 153,
+      "attack": 101,
+      "defense": 91,
+      "spAttack": 94,
+      "spDefense": 89,
+      "speed": 146,
+      "total": 674
+    },
+    "rank": 33,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Tailwind",
+    "topItem": "Sharp Beak",
+    "topTeammate": "Garchomp"
+  },
+  "moves": [
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "move",
+      "rank": 1,
+      "name": "Tailwind",
+      "percentage": 0.972,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "move",
+        "rank": 1,
+        "name": "Tailwind",
+        "percentage": "97.2%",
+        "percentage_value": 97.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "move",
+      "rank": 2,
+      "name": "Flare Blitz",
+      "percentage": 0.541,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "move",
+        "rank": 2,
+        "name": "Flare Blitz",
+        "percentage": "54.1%",
+        "percentage_value": 54.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "move",
+      "rank": 3,
+      "name": "Protect",
+      "percentage": 0.538,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "move",
+        "rank": 3,
+        "name": "Protect",
+        "percentage": "53.8%",
+        "percentage_value": 53.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "move",
+      "rank": 4,
+      "name": "Dual Wingbeat",
+      "percentage": 0.44,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "move",
+        "rank": 4,
+        "name": "Dual Wingbeat",
+        "percentage": "44.0%",
+        "percentage_value": 44,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "move",
+      "rank": 5,
+      "name": "Brave Bird",
+      "percentage": 0.352,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "move",
+        "rank": 5,
+        "name": "Brave Bird",
+        "percentage": "35.2%",
+        "percentage_value": 35.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "move",
+      "rank": 6,
+      "name": "Quick Guard",
+      "percentage": 0.346,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "move",
+        "rank": 6,
+        "name": "Quick Guard",
+        "percentage": "34.6%",
+        "percentage_value": 34.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "move",
+      "rank": 7,
+      "name": "Taunt",
+      "percentage": 0.162,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "move",
+        "rank": 7,
+        "name": "Taunt",
+        "percentage": "16.2%",
+        "percentage_value": 16.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "move",
+      "rank": 8,
+      "name": "Acrobatics",
+      "percentage": 0.151,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "move",
+        "rank": 8,
+        "name": "Acrobatics",
+        "percentage": "15.1%",
+        "percentage_value": 15.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "move",
+      "rank": 9,
+      "name": "Will-O-Wisp",
+      "percentage": 0.106,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "move",
+        "rank": 9,
+        "name": "Will-O-Wisp",
+        "percentage": "10.6%",
+        "percentage_value": 10.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "move",
+      "rank": 10,
+      "name": "Upper Hand",
+      "percentage": 0.075,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "move",
+        "rank": 10,
+        "name": "Upper Hand",
+        "percentage": "7.5%",
+        "percentage_value": 7.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Sharp Beak",
+      "percentage": 0.448,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Sharp Beak",
+        "percentage": "44.8%",
+        "percentage_value": 44.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Focus Sash",
+      "percentage": 0.194,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Focus Sash",
+        "percentage": "19.4%",
+        "percentage_value": 19.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Life Orb",
+      "percentage": 0.045,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Life Orb",
+        "percentage": "4.5%",
+        "percentage_value": 4.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Expert Belt",
+      "percentage": 0.042,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Expert Belt",
+        "percentage": "4.2%",
+        "percentage_value": 4.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Charcoal",
+      "percentage": 0.04,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Charcoal",
+        "percentage": "4.0%",
+        "percentage_value": 4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Leftovers",
+      "percentage": 0.017,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Leftovers",
+        "percentage": "1.7%",
+        "percentage_value": 1.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Mental Herb",
+      "percentage": 0.013,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Mental Herb",
+        "percentage": "1.3%",
+        "percentage_value": 1.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Charti Berry",
+      "percentage": 0.013,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Charti Berry",
+        "percentage": "1.3%",
+        "percentage_value": 1.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Sitrus Berry",
+      "percentage": 0.012,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Sitrus Berry",
+        "percentage": "1.2%",
+        "percentage_value": 1.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Bright Powder",
+      "percentage": 0.7,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Bright Powder",
+        "percentage": "0.7%",
+        "percentage_value": 0.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "ability",
+      "rank": 1,
+      "name": "Gale Wings",
+      "percentage": 0.99,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "ability",
+        "rank": 1,
+        "name": "Gale Wings",
+        "percentage": "99.0%",
+        "percentage_value": 99,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "ability",
+      "rank": 2,
+      "name": "Flame Body",
+      "percentage": 1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "ability",
+        "rank": 2,
+        "name": "Flame Body",
+        "percentage": "1.0%",
+        "percentage_value": 1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Kingambit",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Kingambit",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Raichu",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Raichu",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Gardevoir",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Gardevoir",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Maushold Family of Four",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Maushold Family of Four",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Sneasler",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Sneasler",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Alolan Ninetales",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Alolan Ninetales",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Metagross",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Metagross",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Jolly",
+      "percentage": 0.757,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Jolly",
+        "percentage": "75.7%",
+        "percentage_value": 75.7,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Adamant",
+      "percentage": 0.148,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Adamant",
+        "percentage": "14.8%",
+        "percentage_value": 14.8,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Timid",
+      "percentage": 0.046,
+      "statUp": "Speed",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Timid",
+        "percentage": "4.6%",
+        "percentage_value": 4.6,
+        "stat_up": "Speed",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Naive",
+      "percentage": 0.017,
+      "statUp": "Speed",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Naive",
+        "percentage": "1.7%",
+        "percentage_value": 1.7,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Hasty",
+      "percentage": 0.011,
+      "statUp": "Speed",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Hasty",
+        "percentage": "1.1%",
+        "percentage_value": 1.1,
+        "stat_up": "Speed",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Modest",
+      "percentage": 0.6,
+      "statUp": "Sp. Atk",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Modest",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Naughty",
+      "percentage": 0.4,
+      "statUp": "Attack",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Naughty",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Lonely",
+      "percentage": 0.3,
+      "statUp": "Attack",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Lonely",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Attack",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Careful",
+      "percentage": 0.2,
+      "statUp": "Sp. Def",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Careful",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Sp. Def",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Impish",
+      "percentage": 0.2,
+      "statUp": "Defense",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Impish",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Defense",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.533,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "53.3%",
+        "percentage_value": 53.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.064,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "6.4%",
+        "percentage_value": 6.4,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.048,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "4.8%",
+        "percentage_value": 4.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 7,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 27
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.046,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "4.6%",
+        "percentage_value": 4.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.034,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "3.4%",
+        "percentage_value": 3.4,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 1,
+        "sp_atk_points": 0,
+        "sp_def_points": 1,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.016,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "1.6%",
+        "percentage_value": 1.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 27,
+        "defense_points": 12,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 27
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.013,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "1.3%",
+        "percentage_value": 1.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Talonflame",
+      "position": 33,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Talonflame",
+        "column_position": 33,
+        "position": 33,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "1.0%",
+        "percentage_value": 1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 11,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 23
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a505ee7063cb29d318e8401-gabeeel",
+      "name": "Gabeeel · VGC UU Regulation M-B Weekly #1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Drain Punch",
+            "Knock Off",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Glimmoranite",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Sludge Bomb",
+            "Power Gem",
+            "Earth Power",
+            "Spiky Shield"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Expert Belt",
+          "ability": "Gale Wings",
+          "moves": [
+            "Brave Bird",
+            "Flare Blitz",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Sitrus Berry",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Moonblast",
+            "Calm Mind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Colbur Berry",
+          "ability": "Clear Body",
+          "moves": [
+            "Bullet Punch",
+            "Iron Head",
+            "Psychic Fangs",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Focus Sash",
+          "ability": "Oblivious",
+          "moves": [
+            "Earthquake",
+            "High Horsepower",
+            "Ice Shard",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "VGC UU Regulation M-B Weekly #1",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Gabeeel",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a505ee7063cb29d318e8401-businesspiggy",
+      "name": "businesspiggy · VGC UU Regulation M-B Weekly #1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "eelektross",
+          "name": "Eelektross",
+          "item": "Eelektrossite",
+          "ability": "Levitate",
+          "moves": [
+            "Wild Charge",
+            "Close Combat",
+            "Heavy Slam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sceptile",
+          "name": "Sceptile",
+          "item": "Sceptilite",
+          "ability": "Overgrow",
+          "moves": [
+            "Energy Ball",
+            "Dragon Pulse",
+            "Earth Power",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Brave Bird",
+            "Flare Blitz",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "krookodile",
+          "name": "Krookodile",
+          "item": "Life Orb",
+          "ability": "Intimidate",
+          "moves": [
+            "High Horsepower",
+            "Knock Off",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Mystic Water",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Moonblast",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Shuca Berry",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Bullet Punch",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 3,
+      "tournament": "VGC UU Regulation M-B Weekly #1",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "businesspiggy",
+      "record": "2-1-0"
+    },
+    {
+      "id": "6a4dfee8063cb29d318e6805-tinixium",
+      "name": "Tinixium · VGC UmbreNews 14.07.2026 #23 - Champion",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "hatterene",
+          "name": "Hatterene",
+          "item": "Focus Sash",
+          "ability": "Magic Bounce",
+          "moves": [
+            "Psychic",
+            "Dazzling Gleam",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Iron Head",
+            "Protect",
+            "Sucker Punch",
+            "Play Rough"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Rock Slide",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gallade",
+          "name": "Gallade",
+          "item": "Expert Belt",
+          "ability": "Sharpness",
+          "moves": [
+            "Psycho Cut",
+            "Wide Guard",
+            "Sacred Sword",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Brave Bird",
+            "Tailwind",
+            "Protect",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Drain Punch",
+            "Knock Off",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "VGC UmbreNews 14.07.2026 #23 - Champion",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Tinixium",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a47c55e65724db9ded3b307-yegorushhka",
+      "name": "Yegorushhka · VGC Reg M-B Ingame  Tour",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Pulse",
+            "Heat Wave",
+            "Thunderbolt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Fairy Aura",
+          "moves": [
+            "Light of Ruin",
+            "Moonblast",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Dual Wingbeat",
+            "Flare Blitz",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Close Combat",
+            "Dire Claw",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.875,
+      "sampleCount": 8,
+      "tournament": "VGC Reg M-B Ingame  Tour",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Yegorushhka",
+      "record": "7-1-0"
+    },
+    {
+      "id": "6a4dbb9665724db9ded3ff83-jadensmaden",
+      "name": "Jadensmaden · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Hyper Voice",
+            "Psyshock",
+            "Vacuum Wave",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Focus Sash",
+          "ability": "Friend Guard",
+          "moves": [
+            "Super Fang",
+            "Taunt",
+            "Follow Me",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Protect",
+            "Sucker Punch",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Quick Guard",
+            "Tailwind",
+            "Brave Bird",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Swift Swim",
+          "moves": [
+            "Wave Crash",
+            "Aqua Jet",
+            "Flip Turn",
+            "Last Respects"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Jadensmaden",
+      "record": "4-1-0"
+    },
+    {
+      "id": "6a4dbb9665724db9ded3ff83-giozztan",
+      "name": "Giozztan · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Thunder Punch",
+            "Psychic Fangs",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Flare Blitz",
+            "Dual Wingbeat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Dragon Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Protect",
+            "Bulk Up"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Moonblast",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Giozztan",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a3200c5e334c3c9befd8430-vovomaxben10",
+      "name": "VOVOMAXBEN10 · The Grand Champions Festival Encore",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Hyper Voice",
+            "Psychic",
+            "Thunderbolt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Flip Turn",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Dual Wingbeat",
+            "Flare Blitz",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Focus Sash",
+          "ability": "Friend Guard",
+          "moves": [
+            "Super Fang",
+            "Feint",
+            "Follow Me",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Expert Belt",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Low Kick"
+          ]
+        },
+        {
+          "slug": "kommo-o",
+          "name": "Kommo-o",
+          "item": "Life Orb",
+          "ability": "Soundproof",
+          "moves": [
+            "Clanging Scales",
+            "Draco Meteor",
+            "Aura Sphere",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8235294117647058,
+      "sampleCount": 17,
+      "tournament": "The Grand Champions Festival Encore",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "VOVOMAXBEN10",
+      "record": "14-3-0"
+    },
+    {
+      "id": "6a51f42365724db9ded43093-gotou",
+      "name": "Gotou · Tenki's Cart Weekly #109 - Reg MB",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Ice Punch",
+            "Psychic Fangs",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Light of Ruin",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Dual Wingbeat",
+            "Flare Blitz",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Life Orb",
+          "ability": "Levitate",
+          "moves": [
+            "Draco Meteor",
+            "Dark Pulse",
+            "Protect",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Bulk Up",
+            "Shadow Sneak",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Encore",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 10,
+      "tournament": "Tenki's Cart Weekly #109 - Reg MB",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Gotou",
+      "record": "8-2-0"
+    },
+    {
+      "id": "6a32e8b12d97f3b0c26189cc-nintendojay",
+      "name": "nintendojay · Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Flame Body",
+          "moves": [
+            "Tailwind",
+            "Brave Bird",
+            "Quick Guard",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Focus Sash",
+          "ability": "Friend Guard",
+          "moves": [
+            "Follow Me",
+            "Super Fang",
+            "Taunt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Flip Turn",
+            "Last Respects",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Hyper Voice",
+            "Psyshock",
+            "Vacuum Wave",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 10,
+      "tournament": "Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "nintendojay",
+      "record": "8-2-0"
+    },
+    {
+      "id": "6a32e8b12d97f3b0c26189cc-xxpoemxx",
+      "name": "XxPoemxX · Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Knock Off",
+            "Rock Slide",
+            "Ice Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "None",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Acrobatics",
+            "Quick Guard",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Sand Veil",
+          "moves": [
+            "Earthquake",
+            "Stomping Tantrum",
+            "Dragon Claw",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Focus Sash",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Sludge Bomb",
+            "Power Gem",
+            "Earth Power",
+            "Spiky Shield"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Sitrus Berry",
+          "ability": "Levitate",
+          "moves": [
+            "Thunderbolt",
+            "Hydro Pump",
+            "Will-O-Wisp",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "XxPoemxX",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a510fac063cb29d318e8c08-shedfan",
+      "name": "Shedfan · SNT Reg M-B Tour #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Throat Chop",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Protect",
+            "Vacuum Wave",
+            "Psyshock",
+            "Hyper Voice"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Life Orb",
+          "ability": "Gale Wings",
+          "moves": [
+            "Protect",
+            "Tailwind",
+            "Flare Blitz",
+            "Brave Bird"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Wide Lens",
+          "ability": "Leaf Guard",
+          "moves": [
+            "Protect",
+            "Triple Axel",
+            "Low Kick",
+            "Power Whip"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Focus Sash",
+          "ability": "Friend Guard",
+          "moves": [
+            "Protect",
+            "Taunt",
+            "Follow Me",
+            "Super Fang"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Protect",
+            "Aqua Jet",
+            "Wave Crash",
+            "Last Respects"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 8,
+      "tournament": "SNT Reg M-B Tour #3",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Shedfan",
+      "record": "6-2-0"
+    },
+    {
+      "id": "6a3854f7ceacae7d6441c118-giozztan",
+      "name": "Giozztan · PWC - Battle in the Colosseum #19 - Reg M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Thunder Punch",
+            "Psychic Fangs",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Flare Blitz",
+            "Dual Wingbeat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Dragon Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Protect",
+            "Bulk Up"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Moonblast",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "PWC - Battle in the Colosseum #19 - Reg M-B",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Giozztan",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a291b172d97f3b0c2612db9-amazemaker",
+      "name": "AmazeMaker · Mystery Community Tournament#1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Weather Ball",
+            "Heat Wave",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Earth Power",
+            "Solar Beam",
+            "Sleep Powder"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Dual Wingbeat",
+            "U-turn",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Damp",
+          "moves": [
+            "Wave Crash",
+            "Ice Punch",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Expert Belt",
+          "ability": "Drizzle",
+          "moves": [
+            "Weather Ball",
+            "Hurricane",
+            "Wide Guard",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7142857142857143,
+      "sampleCount": 7,
+      "tournament": "Mystery Community Tournament#1",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "AmazeMaker",
+      "record": "5-2-0"
+    },
+    {
+      "id": "6a5162b8063cb29d318e9199-jumbosaur",
+      "name": "Makin K · MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "item": "Focus Sash",
+          "ability": "Sharpness",
+          "moves": [
+            "Stone Axe",
+            "X-Scissor",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Sitrus Berry",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Trop Kick",
+            "Triple Axel",
+            "Taunt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "lucario",
+          "name": "Lucario",
+          "item": "Lucarionite",
+          "ability": "Inner Focus",
+          "moves": [
+            "Vacuum Wave",
+            "Detect",
+            "Aura Sphere",
+            "Flash Cannon"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "No Item",
+          "ability": "Gale Wings",
+          "moves": [
+            "Flare Blitz",
+            "Protect",
+            "Tailwind",
+            "Acrobatics"
+          ]
+        },
+        {
+          "slug": "azumarill",
+          "name": "Azumarill",
+          "item": "Life Orb",
+          "ability": "Huge Power",
+          "moves": [
+            "Play Rough",
+            "Aqua Jet",
+            "Liquidation",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Light Clay",
+          "ability": "Snow Warning",
+          "moves": [
+            "Freeze-Dry",
+            "Moonblast",
+            "Protect",
+            "Aurora Veil"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Makin K",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a539b48c0a6bab82fbbca0a-phhhvgc",
+      "name": "pHHHVGC · London Corviknight VGC Weekly tour 5!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Thunderbolt",
+            "Protect",
+            "Hyper Voice",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Dual Wingbeat",
+            "Protect",
+            "Flare Blitz",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "kommo-o",
+          "name": "Kommo-o",
+          "item": "Life Orb",
+          "ability": "Soundproof",
+          "moves": [
+            "Clanging Scales",
+            "Draco Meteor",
+            "Aura Sphere",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Focus Sash",
+          "ability": "Friend Guard",
+          "moves": [
+            "Super Fang",
+            "Feint",
+            "Follow Me",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Expert Belt",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Low Kick",
+            "Iron Head",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Last Respects",
+            "Aqua Jet",
+            "Wave Crash",
+            "Flip Turn"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "London Corviknight VGC Weekly tour 5!",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "pHHHVGC",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a54c9d3232a1a55ee10b346-paparott",
+      "name": "PapaRott · Intimidators Champions Challenge #27 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Hyper Voice",
+            "Psyshock",
+            "Vacuum Wave",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Focus Sash",
+          "ability": "Friend Guard",
+          "moves": [
+            "Super Fang",
+            "Taunt",
+            "Follow Me",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Protect",
+            "Sucker Punch",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Quick Guard",
+            "Brave Bird",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Aqua Jet",
+            "Flip Turn",
+            "Last Respects"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Intimidators Champions Challenge #27 REG M-B",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "PapaRott",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a5497ab232a1a55ee10b2b8-sooner",
+      "name": "Sooner · HeroicTitan’s VGC Battle Arena",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Aura Sphere",
+            "Dark Pulse",
+            "Protect",
+            "Water Spout"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Glimmoranite",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Sludge Bomb",
+            "Spiky Shield",
+            "Power Gem",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Protect",
+            "Shadow Sneak",
+            "Bulk Up"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Life Orb",
+          "ability": "Flame Body",
+          "moves": [
+            "Tailwind",
+            "Overheat",
+            "Protect",
+            "Dual Wingbeat"
+          ]
+        },
+        {
+          "slug": "meowscarada",
+          "name": "Meowscarada",
+          "item": "Focus Sash",
+          "ability": "Protean",
+          "moves": [
+            "Flower Trick",
+            "Knock Off",
+            "Protect",
+            "Triple Axel"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Leftovers",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Protect",
+            "Nasty Plot",
+            "Shadow Ball"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "HeroicTitan’s VGC Battle Arena",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Sooner",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a467bb683fd320299bd6627-lunaticofwinds",
+      "name": "LunaticOfWinds · Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Snow Cloak",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Protect",
+            "Weather Ball"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Focus Sash",
+          "ability": "Snow Warning",
+          "moves": [
+            "Aurora Veil",
+            "Blizzard",
+            "Freeze-Dry",
+            "Moonblast"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Chople Berry",
+          "ability": "Sand Stream",
+          "moves": [
+            "Ice Punch",
+            "Rock Slide",
+            "Protect",
+            "Knock Off"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Protect",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Dual Wingbeat",
+            "Quick Guard",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Excadrite",
+          "ability": "Sand Rush",
+          "moves": [
+            "Protect",
+            "Drill Run",
+            "Iron Head",
+            "Earthquake"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.25,
+      "sampleCount": 4,
+      "tournament": "Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "LunaticOfWinds",
+      "record": "1-3-0"
+    },
+    {
+      "id": "6a562eb26355385f44dd48d3-luke__2317",
+      "name": "Luke__2317 · Dark Storm Team testing #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Damp",
+          "moves": [
+            "Wave Crash",
+            "Earthquake",
+            "Ice Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Charti Berry",
+          "ability": "Gale Wings",
+          "moves": [
+            "Rain Dance",
+            "Brave Bird",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Electro Shot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mow-rotom",
+          "name": "Mow Rotom",
+          "item": "Sitrus Berry",
+          "ability": "Levitate",
+          "moves": [
+            "Leaf Storm",
+            "Volt Switch",
+            "Will-O-Wisp",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Swift Swim",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Poison Jab",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.3333333333333333,
+      "sampleCount": 3,
+      "tournament": "Dark Storm Team testing #10",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Luke__2317",
+      "record": "1-2-0"
+    },
+    {
+      "id": "6a529f1ee09846f1eb4c14e3-gengarballer",
+      "name": "GengarBaller · Chaos League Sunday Slam #104",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "lucario",
+          "name": "Lucario",
+          "item": "Lucarionite",
+          "ability": "Justified",
+          "moves": [
+            "Close Combat",
+            "Bullet Punch",
+            "Ice Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Fake Out",
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Focus Sash",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Brave Bird",
+            "Taunt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Rock Slide",
+            "Dragon Claw",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Supreme Overlord",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Protect",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Leftovers",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "Chaos League Sunday Slam #104",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "GengarBaller",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a4220ea83fd320299bd3c65-gotou",
+      "name": "Gotou · Champions Collective #14",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Ice Punch",
+            "Psychic Fangs",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Light of Ruin",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Dual Wingbeat",
+            "Flare Blitz",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Life Orb",
+          "ability": "Levitate",
+          "moves": [
+            "Draco Meteor",
+            "Dark Pulse",
+            "Protect",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Bulk Up",
+            "Shadow Sneak",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Encore",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "Champions Collective #14",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Gotou",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a4bc2dd063cb29d318e4b78-momemanz",
+      "name": "‎Iriome Miguel Delgado Correa · Chacho Cup #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Charcoal",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Overheat",
+            "Brave Bird",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "eelektross",
+          "name": "Eelektross",
+          "item": "Eelektrossite",
+          "ability": "Levitate",
+          "moves": [
+            "Discharge",
+            "Thunderbolt",
+            "Grass Knot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Nasty Plot",
+            "Make It Rain",
+            "Shadow Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "falinks",
+          "name": "Falinks",
+          "item": "Falinksite",
+          "ability": "Defiant",
+          "moves": [
+            "Close Combat",
+            "Protect",
+            "No Retreat",
+            "Knock Off"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Wide Lens",
+          "ability": "Technician",
+          "moves": [
+            "Population Bomb",
+            "Follow Me",
+            "Taunt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Iron Head"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 2,
+      "tournament": "Chacho Cup #2",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "‎Iriome Miguel Delgado Correa",
+      "record": "0-2-0"
+    },
+    {
+      "id": "6a39cb01c87cd9ff0a30d791-kortlen",
+      "name": "kortlen · Cashed Out Gaming Season 1 M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Synchronize",
+          "moves": [
+            "Hyper Voice",
+            "Psychic",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Aqua Jet",
+            "Wave Crash",
+            "Flip Turn",
+            "Last Respects"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Haban Berry",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Focus Sash",
+          "ability": "Flame Body",
+          "moves": [
+            "Dual Wingbeat",
+            "Flare Blitz",
+            "Protect",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Wide Lens",
+          "ability": "Overgrow",
+          "moves": [
+            "Giga Drain",
+            "Sludge Bomb",
+            "Protect",
+            "Sleep Powder"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Chople Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Follow Me",
+            "Protect",
+            "Taunt",
+            "Super Fang"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "Cashed Out Gaming Season 1 M-B",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "kortlen",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a39cb01c87cd9ff0a30d791-ovenmutant2",
+      "name": "ovenmutant2 · Cashed Out Gaming Season 1 M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite X",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Fake Out",
+            "Protect",
+            "Rising Voltage",
+            "Volt Switch"
+          ]
+        },
+        {
+          "slug": "jolteon",
+          "name": "Jolteon",
+          "item": "Life Orb",
+          "ability": "Volt Absorb",
+          "moves": [
+            "Rising Voltage",
+            "Protect",
+            "Weather Ball",
+            "Volt Switch"
+          ]
+        },
+        {
+          "slug": "vanilluxe",
+          "name": "Vanilluxe",
+          "item": "Choice Scarf",
+          "ability": "Snow Warning",
+          "moves": [
+            "Freeze-Dry",
+            "Blizzard",
+            "Flash Cannon",
+            "Ice Beam"
+          ]
+        },
+        {
+          "slug": "palafin",
+          "name": "Palafin",
+          "item": "Mystic Water",
+          "ability": "Zero to Hero",
+          "moves": [
+            "Jet Punch",
+            "Wave Crash",
+            "Flip Turn",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "typhlosion",
+          "name": "Typhlosion",
+          "item": "Charcoal",
+          "ability": "Flash Fire",
+          "moves": [
+            "Eruption",
+            "Protect",
+            "Fire Blast",
+            "Scorching Sands"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "No Item",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Acrobatics",
+            "Quick Guard",
+            "Taunt"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Cashed Out Gaming Season 1 M-B",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "ovenmutant2",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a4f486e063cb29d318e781e-hexonic",
+      "name": "Hexonic · Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sceptile",
+          "name": "Sceptile",
+          "item": "Sceptilite",
+          "ability": "Overgrow",
+          "moves": [
+            "Energy Ball",
+            "Dragon Pulse",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "heat-rotom",
+          "name": "Heat Rotom",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Discharge",
+            "Trick",
+            "Overheat",
+            "Volt Switch"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Dual Wingbeat",
+            "Tailwind",
+            "Flare Blitz",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Protect",
+            "Sucker Punch",
+            "Iron Head",
+            "Low Kick"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 1,
+      "sampleCount": 5,
+      "tournament": "Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Hexonic",
+      "record": "5-0-0"
+    },
+    {
+      "id": "6a5970c3cc68177ec6c5710d-coderh",
+      "name": "Coderh · Afternoon Champions #1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "hawlucha",
+          "name": "Hawlucha",
+          "item": "Hawluchanite",
+          "ability": "No Guard",
+          "moves": [
+            "Brave Bird",
+            "Close Combat",
+            "Stone Edge",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hisuian-decidueye",
+          "name": "Hisuian Decidueye",
+          "item": "Scope Lens",
+          "ability": "Scrappy",
+          "moves": [
+            "Triple Arrows",
+            "Leaf Blade",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Focus Sash",
+          "ability": "Gale Wings",
+          "moves": [
+            "Dual Wingbeat",
+            "Taunt",
+            "Tailwind",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "aegislash",
+          "name": "Aegislash",
+          "item": "Spell Tag",
+          "ability": "Stance Change",
+          "moves": [
+            "Poltergeist",
+            "Iron Head",
+            "Shadow Sneak",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.3333333333333333,
+      "sampleCount": 3,
+      "tournament": "Afternoon Champions #1",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Coderh",
+      "record": "1-2-0"
+    },
+    {
+      "id": "6a50864165724db9ded41db6-ironsoul",
+      "name": "IronSoul · 4fun sabadín",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sceptile",
+          "name": "Sceptile",
+          "item": "Sceptilite",
+          "ability": "Overgrow",
+          "moves": [
+            "Energy Ball",
+            "Dragon Pulse",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gallade",
+          "name": "Gallade",
+          "item": "Galladite",
+          "ability": "Inner Focus",
+          "moves": [
+            "Close Combat",
+            "Psycho Cut",
+            "Ice Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "jolteon",
+          "name": "Jolteon",
+          "item": "Life Orb",
+          "ability": "Volt Absorb",
+          "moves": [
+            "Discharge",
+            "Weather Ball",
+            "Shadow Ball",
+            "Alluring Voice"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Brave Bird",
+            "Flare Blitz",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Sand Rush",
+          "moves": [
+            "Iron Head",
+            "High Horsepower",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Chople Berry",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Crunch",
+            "Low Kick",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "4fun sabadín",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "IronSoul",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a46629683fd320299bd6543-mrawesome",
+      "name": "MrAwesome · 🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Psychic",
+            "Hyper Voice",
+            "Thunderbolt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Flare Blitz",
+            "Dual Wingbeat",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Flip Turn",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Focus Sash",
+          "ability": "Friend Guard",
+          "moves": [
+            "Super Fang",
+            "Protect",
+            "Follow Me",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Expert Belt",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Low Kick"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 10,
+      "tournament": "🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "MrAwesome",
+      "record": "8-2-0"
+    }
+  ],
+  "movePool": [
+    "Acrobatics",
+    "Aerial Ace",
+    "Agility",
+    "Air Cutter",
+    "Air Slash",
+    "Blaze Kick",
+    "Brave Bird",
+    "Bulk Up",
+    "Defog",
+    "Double-Edge",
+    "Dual Wingbeat",
+    "Endure",
+    "Facade",
+    "Feather Dance",
+    "Feint",
+    "Fire Blast",
+    "Fire Spin",
+    "Flail",
+    "Flame Charge",
+    "Flamethrower",
+    "Flare Blitz",
+    "Fly",
+    "Giga Impact",
+    "Heat Wave",
+    "Hurricane",
+    "Hyper Beam",
+    "Overheat",
+    "Protect",
+    "Quick Attack",
+    "Quick Guard",
+    "Rain Dance",
+    "Rest",
+    "Roost",
+    "Round",
+    "Sky Attack",
+    "Sleep Talk",
+    "Snore",
+    "Solar Beam",
+    "Steel Wing",
+    "Substitute",
+    "Sunny Day",
+    "Swords Dance",
+    "Tailwind",
+    "Taunt",
+    "Temper Flare",
+    "Tera Blast",
+    "Thief",
+    "U-turn",
+    "Upper Hand",
+    "Whirlwind",
+    "Will-O-Wisp"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Talonflame",
+      "base_name": "Talonflame",
+      "saved_name": "Talonflame",
+      "types": "Fire/Flying",
+      "abilities": "Flame Body|Gale Wings",
+      "image_path": "pokemon_champions_assets\\pokemon\\Talonflame.png",
+      "form": "",
+      "hp": 153,
+      "atk": 101,
+      "def": 91,
+      "spa": 94,
+      "spd": 89,
+      "spe": 146,
+      "total": 674
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "move",
+          "rank": 1,
+          "name": "Tailwind",
+          "percentage": "97.2%",
+          "percentage_value": 97.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Sharp Beak",
+          "percentage": "44.8%",
+          "percentage_value": 44.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Jolly",
+          "percentage": "75.7%",
+          "percentage_value": 75.7,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        "stat_points": {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "53.3%",
+          "percentage_value": 53.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        "ability": {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "ability",
+          "rank": 1,
+          "name": "Gale Wings",
+          "percentage": "99.0%",
+          "percentage_value": 99,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Tailwind",
+          "Flare Blitz",
+          "Protect",
+          "Dual Wingbeat",
+          "Brave Bird",
+          "Quick Guard",
+          "Taunt",
+          "Acrobatics",
+          "Will-O-Wisp",
+          "Upper Hand"
+        ],
+        "held_item": [
+          "Sharp Beak",
+          "Focus Sash",
+          "Life Orb",
+          "Expert Belt",
+          "Charcoal",
+          "Leftovers",
+          "Mental Herb",
+          "Charti Berry",
+          "Sitrus Berry",
+          "Bright Powder"
+        ],
+        "teammate": [
+          "Garchomp",
+          "Basculegion Male",
+          "Kingambit",
+          "Raichu",
+          "Gardevoir",
+          "Maushold Family of Four",
+          "Sneasler",
+          "Alolan Ninetales",
+          "Sinistcha",
+          "Metagross"
+        ],
+        "stat_alignment": [
+          "Jolly",
+          "Adamant",
+          "Timid",
+          "Naive",
+          "Hasty",
+          "Modest",
+          "Naughty",
+          "Lonely",
+          "Careful",
+          "Impish"
+        ],
+        "stat_points": [
+          "HP 2 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 32",
+          "HP 0 / Atk 32 / Def 0 / SpA 0 / SpD 2 / Spe 32",
+          "HP 7 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 27",
+          "HP 0 / Atk 32 / Def 2 / SpA 0 / SpD 0 / Spe 32",
+          "HP 0 / Atk 32 / Def 1 / SpA 0 / SpD 1 / Spe 32",
+          "HP 0 / Atk 27 / Def 12 / SpA 0 / SpD 0 / Spe 27",
+          "HP 2 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 32",
+          "HP 11 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 23"
+        ],
+        "ability": [
+          "Gale Wings",
+          "Flame Body"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "move",
+          "rank": 1,
+          "name": "Tailwind",
+          "percentage": "97.2%",
+          "percentage_value": 97.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "move",
+          "rank": 2,
+          "name": "Flare Blitz",
+          "percentage": "54.1%",
+          "percentage_value": 54.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "move",
+          "rank": 3,
+          "name": "Protect",
+          "percentage": "53.8%",
+          "percentage_value": 53.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "move",
+          "rank": 4,
+          "name": "Dual Wingbeat",
+          "percentage": "44.0%",
+          "percentage_value": 44,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "move",
+          "rank": 5,
+          "name": "Brave Bird",
+          "percentage": "35.2%",
+          "percentage_value": 35.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "move",
+          "rank": 6,
+          "name": "Quick Guard",
+          "percentage": "34.6%",
+          "percentage_value": 34.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "move",
+          "rank": 7,
+          "name": "Taunt",
+          "percentage": "16.2%",
+          "percentage_value": 16.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "move",
+          "rank": 8,
+          "name": "Acrobatics",
+          "percentage": "15.1%",
+          "percentage_value": 15.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "move",
+          "rank": 9,
+          "name": "Will-O-Wisp",
+          "percentage": "10.6%",
+          "percentage_value": 10.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "move",
+          "rank": 10,
+          "name": "Upper Hand",
+          "percentage": "7.5%",
+          "percentage_value": 7.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Sharp Beak",
+          "percentage": "44.8%",
+          "percentage_value": 44.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Focus Sash",
+          "percentage": "19.4%",
+          "percentage_value": 19.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Life Orb",
+          "percentage": "4.5%",
+          "percentage_value": 4.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Expert Belt",
+          "percentage": "4.2%",
+          "percentage_value": 4.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Charcoal",
+          "percentage": "4.0%",
+          "percentage_value": 4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Leftovers",
+          "percentage": "1.7%",
+          "percentage_value": 1.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Mental Herb",
+          "percentage": "1.3%",
+          "percentage_value": 1.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Charti Berry",
+          "percentage": "1.3%",
+          "percentage_value": 1.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Sitrus Berry",
+          "percentage": "1.2%",
+          "percentage_value": 1.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Bright Powder",
+          "percentage": "0.7%",
+          "percentage_value": 0.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Raichu",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Gardevoir",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Maushold Family of Four",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Sneasler",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Alolan Ninetales",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Metagross",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Jolly",
+          "percentage": "75.7%",
+          "percentage_value": 75.7,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Adamant",
+          "percentage": "14.8%",
+          "percentage_value": 14.8,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Timid",
+          "percentage": "4.6%",
+          "percentage_value": 4.6,
+          "stat_up": "Speed",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Naive",
+          "percentage": "1.7%",
+          "percentage_value": 1.7,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Hasty",
+          "percentage": "1.1%",
+          "percentage_value": 1.1,
+          "stat_up": "Speed",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Modest",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Naughty",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Lonely",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Attack",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Careful",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Sp. Def",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Impish",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "53.3%",
+          "percentage_value": 53.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "6.4%",
+          "percentage_value": 6.4,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "4.8%",
+          "percentage_value": 4.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 7,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 27
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "4.6%",
+          "percentage_value": 4.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "3.4%",
+          "percentage_value": 3.4,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 1,
+          "sp_atk_points": 0,
+          "sp_def_points": 1,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "1.6%",
+          "percentage_value": 1.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 27,
+          "defense_points": 12,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 27
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "1.3%",
+          "percentage_value": 1.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "1.0%",
+          "percentage_value": 1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 11,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 23
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "ability",
+          "rank": 1,
+          "name": "Gale Wings",
+          "percentage": "99.0%",
+          "percentage_value": 99,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Talonflame",
+          "column_position": 33,
+          "position": 33,
+          "category": "ability",
+          "rank": 2,
+          "name": "Flame Body",
+          "percentage": "1.0%",
+          "percentage_value": 1,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Talonflame.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Talonflame.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Talonflame.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Talonflame.csv"
+      }
+    ]
+  }
+}

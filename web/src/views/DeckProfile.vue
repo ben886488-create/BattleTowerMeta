@@ -155,7 +155,7 @@
       </section>
     </div>
     <div ref="heroCaptureRef" class="hero-grid">
-      <aside ref="leftPanelRef" class="hero-sidebar">
+      <aside class="hero-sidebar">
       <section class="hero-panel hero-panel--title">
         <span class="panel-kicker mono">{{ isZhUi ? "精選牌組" : "DECK SPOTLIGHT" }}</span>
 
@@ -558,7 +558,7 @@
 
     <div v-if="exportStageActive" class="export-stage" aria-hidden="true">
       <section
-        v-for="panel in exportRenderedTopDeckPanels"
+        v-for="panel in exportStageTopDeckPanels"
         :key="`export-card-panel-${panel.key}`"
         :ref="(el) => setTopDeckExportPanelRef(el, panel.key)"
         class="export-panel export-card-panel"
@@ -649,10 +649,14 @@
       </section>
 
       <section
-        v-for="panel in exportSampleDeckPanels"
+        v-for="panel in exportStageSampleDeckPanels"
         :key="`export-sample-panel-${panel.key}`"
         :ref="(el) => setSampleDeckExportPanelRef(el, panel.key)"
         class="export-panel export-sample-panel"
+        :class="{
+          'export-decklist-panel': exportStageRenderKind === 'decklist',
+          'export-broadcast-panel': exportStageRenderKind === 'broadcast',
+        }"
       >
         <div v-if="false" class="export-panel__head">
           <div>
@@ -675,7 +679,241 @@
           </div>
         </div>
 
-        <div class="cardsGrid cardsGrid--profile export-sample-grid">
+        <div v-if="exportStageRenderKind === 'decklist'" class="export-decklist-grid">
+          <article
+            v-for="card in panel.cards"
+            :key="`export-decklist-${panel.key}-${card.key}`"
+            class="export-decklist-card"
+            :title="card.title"
+          >
+            <CardImageWithCount
+              class="export-decklist-card__media"
+              :card="card"
+              :image-src="card.image && !failedCardImages[card.key] ? card.image : ''"
+              :alt="card.name"
+              :count="card.count"
+              :fallback-name="card.name"
+              :fallback-code="`${card.set || '?'} ${card.number || card.code || '?'}`"
+              :show-tooltip="false"
+              :locale="routeLang === 'en' ? 'en' : 'zh'"
+              crossorigin="anonymous"
+              loading="eager"
+              variant="deck"
+              @image-error="onCardImageError(card.key)"
+            />
+          </article>
+        </div>
+
+        <div v-else class="creator-broadcast">
+          <section class="creator-broadcast__deck-frame btm-broadcast-frame">
+            <aside class="creator-broadcast__intel">
+              <div class="creator-broadcast__label mono">
+                <span class="creator-broadcast__signal" aria-hidden="true"></span>
+                DECK INTELLIGENCE
+              </div>
+
+              <div class="creator-broadcast__title-group">
+                <p class="creator-broadcast__rank mono">
+                  {{ creatorPanelRankText(panel) }}
+                </p>
+                <h2 class="creator-broadcast__title">
+                  {{ panel.displayName }}
+                </h2>
+                <p
+                  v-if="panel.displayNameEn && panel.displayNameEn !== panel.displayName"
+                  class="creator-broadcast__subtitle mono"
+                >
+                  {{ panel.displayNameEn }}
+                </p>
+              </div>
+
+              <div class="creator-broadcast__sprites" :title="panel.displayName">
+                <template v-if="panel.spriteUrls.length > 0">
+                  <img
+                    v-for="(sprite, index) in panel.spriteUrls"
+                    :key="`broadcast-title-${panel.key}-${sprite}-${index}`"
+                    class="creator-broadcast__sprite"
+                    :src="sprite"
+                    :alt="panel.displayName"
+                    draggable="false"
+                  />
+                </template>
+                <div v-else class="creator-broadcast__sprite-fallback mono">
+                  {{ cardInitials(panel.displayName) }}
+                </div>
+              </div>
+
+              <div class="creator-broadcast__metrics">
+                <article class="creator-broadcast__metric creator-broadcast__metric--wide">
+                  <span class="creator-broadcast__metric-label mono">勝率</span>
+                  <strong class="creator-broadcast__metric-value mono">
+                    {{ creatorBroadcastPct(panel.row.winRate) }}
+                  </strong>
+                  <small class="mono">OVERALL WIN RATE</small>
+                </article>
+
+                <article class="creator-broadcast__metric">
+                  <span class="creator-broadcast__metric-label mono">最新排名</span>
+                  <strong class="creator-broadcast__metric-value mono">
+                    {{ creatorPanelRankText(panel) }}
+                  </strong>
+                  <small class="mono">CURRENT RANK</small>
+                </article>
+
+                <article
+                  class="creator-broadcast__metric creator-broadcast__metric--tier"
+                  :class="creatorPanelTierClass(panel)"
+                >
+                  <span class="creator-broadcast__metric-label mono">Tier</span>
+                  <strong class="creator-broadcast__metric-value mono">
+                    {{ creatorPanelTierLabel(panel) }}
+                  </strong>
+                  <small class="mono">POWER BAND</small>
+                </article>
+
+                <article class="creator-broadcast__metric">
+                  <span class="creator-broadcast__metric-label mono">樣本</span>
+                  <strong class="creator-broadcast__metric-value mono">
+                    {{ Number(panel.row.selectedSamples ?? 0).toLocaleString() }}
+                  </strong>
+                  <small class="mono">DECKLISTS</small>
+                </article>
+              </div>
+
+              <div v-if="panel.sample" class="creator-broadcast__sample mono">
+                <span>{{ panel.sample.player }}</span>
+                <span>{{ panel.sample.placeLabel }}</span>
+                <span>{{ panel.sample.tournamentName }}</span>
+              </div>
+            </aside>
+
+            <div class="creator-broadcast__decklist">
+              <header class="creator-broadcast__section-head">
+                <div>
+                  <span class="creator-broadcast__label mono">DECKLIST</span>
+                  <strong>Sample Cards</strong>
+                </div>
+                <span class="creator-broadcast__deck-count mono">
+                  {{ panel.cards.length }} CARDS / 5 COL
+                </span>
+              </header>
+
+              <div
+                class="creator-broadcast__card-grid"
+                :class="{ 'creator-broadcast__card-grid--dense': panel.cards.length > 15 }"
+              >
+                <article
+                  v-for="card in panel.cards"
+                  :key="`export-sample-${panel.key}-${card.key}`"
+                  class="creator-broadcast-card"
+                  :title="card.title"
+                >
+                  <CardImageWithCount
+                    class="creator-broadcast-card__media"
+                    :card="card"
+                    :image-src="card.image && !failedCardImages[card.key] ? card.image : ''"
+                    :alt="card.name"
+                    :count="card.count"
+                    :fallback-name="card.name"
+                    :fallback-code="`${card.set || '?'} ${card.number || card.code || '?'}`"
+                    :show-tooltip="false"
+                    :locale="routeLang === 'en' ? 'en' : 'zh'"
+                    crossorigin="anonymous"
+                    loading="eager"
+                    variant="deck"
+                    @image-error="onCardImageError(card.key)"
+                  />
+                </article>
+              </div>
+
+              <div
+                v-if="creatorPanelEnergy(panel)"
+                class="creator-broadcast__energy"
+                :class="creatorPanelEnergy(panel)?.className"
+              >
+                <img
+                  v-for="icon in creatorPanelEnergy(panel)?.icons"
+                  :key="`${panel.key}-${icon.src}`"
+                  class="creator-broadcast__energy-icon"
+                  :src="icon.src"
+                  :alt="icon.alt"
+                  draggable="false"
+                />
+              </div>
+            </div>
+          </section>
+
+          <section class="creator-broadcast__game-frame btm-broadcast-frame">
+            <header class="creator-broadcast__game-status mono">
+              <span class="creator-broadcast__live-dot" aria-hidden="true"></span>
+              MATCH FEED / LIVE VIEW / REC / ACTIVE
+            </header>
+            <div class="creator-broadcast__game-viewport" aria-label="Transparent gameplay area">
+              <span class="creator-broadcast__focus creator-broadcast__focus--tl" aria-hidden="true"></span>
+              <span class="creator-broadcast__focus creator-broadcast__focus--tr" aria-hidden="true"></span>
+              <span class="creator-broadcast__focus creator-broadcast__focus--bl" aria-hidden="true"></span>
+              <span class="creator-broadcast__focus creator-broadcast__focus--br" aria-hidden="true"></span>
+            </div>
+          </section>
+
+          <section class="creator-broadcast__timeline btm-broadcast-frame">
+            <header class="creator-broadcast__timeline-head">
+              <div>
+                <span class="creator-broadcast__label mono">MATCHUP TIMELINE</span>
+                <strong>Episode Matchup Rail</strong>
+              </div>
+              <span class="creator-broadcast__timeline-meta mono">
+                {{ creatorBroadcastTimelinePanels(panel).length }} SIGNALS
+              </span>
+            </header>
+
+            <div
+              class="creator-broadcast__timeline-rail"
+              :style="creatorTimelineRailStyle(panel)"
+            >
+              <article
+                v-for="item in creatorBroadcastTimelineItems(panel)"
+                :key="`broadcast-timeline-${panel.key}-${item.panel.key}`"
+                class="creator-broadcast-tick"
+                :class="[
+                  creatorTimelineToneClass(item),
+                  { 'creator-broadcast-tick--active': item.isActive },
+                ]"
+                :title="creatorTimelineTitle(item)"
+              >
+                <span class="creator-broadcast-tick__time mono">
+                  {{ item.startLabel }} · {{ creatorTimelineDurationLabel(item.durationSeconds) }}
+                </span>
+                <span class="creator-broadcast-tick__sprites">
+                  <template v-if="item.panel.spriteUrls.length > 0">
+                    <img
+                      v-for="(sprite, index) in item.panel.spriteUrls.slice(0, 2)"
+                      :key="`broadcast-timeline-${item.panel.key}-${sprite}-${index}`"
+                      class="creator-broadcast-tick__sprite"
+                      :src="sprite"
+                      :alt="item.panel.displayName"
+                      draggable="false"
+                    />
+                  </template>
+                  <span v-else class="creator-broadcast-tick__fallback mono">
+                    {{ cardInitials(item.panel.displayName) }}
+                  </span>
+                </span>
+                <strong class="creator-broadcast-tick__rate mono">
+                  {{ item.isActive ? "ACTIVE" : creatorBroadcastPct(item.matchup.winRate) }}
+                </strong>
+                <span class="creator-broadcast-tick__result mono">
+                  {{ creatorTimelineResultLabel(item) }}
+                </span>
+                <span class="creator-broadcast-tick__bar" aria-hidden="true">
+                  <i></i>
+                </span>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <div v-if="false" class="cardsGrid cardsGrid--profile export-sample-grid">
           <article
             v-for="card in panel.cards"
             :key="`export-sample-${panel.key}-${card.key}`"
@@ -832,6 +1070,13 @@ import {
 import { inTimeRange as matchesTimeFilter } from "../lib/playerEntries";
 import oneCopyDiskIcon from "../assets/deck-disks/3.png";
 import twoCopyDiskIcon from "../assets/deck-disks/4.png";
+import darkEnergyIcon from "../assets/energy/cmn_icn_ene_dar.png";
+import fightingEnergyIcon from "../assets/energy/cmn_icn_ene_fig.png";
+import fireEnergyIcon from "../assets/energy/cmn_icn_ene_fir.png";
+import grassEnergyIcon from "../assets/energy/cmn_icn_ene_gra.png";
+import lightningEnergyIcon from "../assets/energy/cmn_icn_ene_lig.png";
+import psychicEnergyIcon from "../assets/energy/cmn_icn_ene_psy.png";
+import waterEnergyIcon from "../assets/energy/cmn_icn_ene_wat.png";
 import cardsCatalogUrl from "../assets/limitless_dump/limitless_cards.json?url";
 import cardImageManifest from "../assets/limitless_dump/limitless_image_manifest.json";
 import {
@@ -845,10 +1090,12 @@ import {
   type PrecomputedTopDecksPayload,
 } from "../lib/precomputedViews";
 import {
+  loadPublicJson,
   loadTournamentList,
   loadTournamentPairings,
   loadTournamentStandings,
 } from "../lib/publicData";
+import { routeLang as getRouteLang } from "../lib/siteI18n";
 
 const DeckDiscussionPanel = defineAsyncComponent(() => import("../components/DeckDiscussionPanel.vue"));
 
@@ -861,6 +1108,786 @@ const MIN_SLOT_RATE_PCT = 10;
 const CREATOR_EXPORT_TIERS = ["SSS", "SS", "S", "A", "B", "C"] as const;
 const CREATOR_EXPORT_TIER_SET = new Set<string>(CREATOR_EXPORT_TIERS);
 const CREATOR_EXPORT_PIXEL_RATIO = 1.5;
+const CREATOR_DEMO_QUERY_KEY = "creatorDemo";
+const CREATOR_EPISODE_QUERY_KEY = "creatorEpisode";
+
+type CreatorEnergyKind = "dark" | "fighting" | "fire" | "grass" | "lightning" | "psychic" | "water";
+
+interface CreatorEpisodeEntry {
+  time: string;
+  endTime?: string;
+  key: string;
+  displayName: string;
+  displayNameEn: string;
+  iconKeys: string[];
+  energy: CreatorEnergyKind[];
+  rank: number;
+  tier: string;
+  score: number;
+  topCutShare: number;
+  winRate: number;
+  selectedSamples: number;
+}
+
+interface CreatorEpisodeSourcePayload {
+  generatedAt?: string;
+  decks?: AnyRecord[];
+  matchups?: AnyRecord[];
+}
+
+const CREATOR_EPISODE_DATA_FILES: Record<string, string> = {
+  b4aw1: "data/creator-episodes/b4aw1.json",
+  b4aw2: "data/creator-episodes/b4aw2.json",
+  b4aw3: "data/creator-episodes/b4aw3.json",
+  b4aw4: "data/creator-episodes/b4aw4.json",
+};
+
+const CREATOR_EPISODES: Record<string, CreatorEpisodeEntry[]> = {
+  "b3b-1807": [
+    {
+      time: "0:26",
+      key: "zoroark-ex-b3-mega-absol-ex-b1",
+      displayName: "索羅亞克 ex / 超級阿勃梭魯 ex",
+      displayNameEn: "Zoroark ex / Mega Absol ex",
+      iconKeys: ["zoroark", "absol-mega"],
+      energy: ["dark"],
+      rank: 11,
+      tier: "C",
+      score: 0.5597904356977152,
+      topCutShare: 0.015224358974358974,
+      winRate: 0.527027027027027,
+      selectedSamples: 19,
+    },
+    {
+      time: "1:38",
+      key: "indeedee-ex-b1-giratina-ex-a2b",
+      displayName: "花舞鳥",
+      displayNameEn: "Oricorio",
+      iconKeys: ["oricorio-pom-pom"],
+      energy: ["lightning", "psychic"],
+      rank: 10,
+      tier: "C",
+      score: 0.5626889921355824,
+      topCutShare: 0.021634615384615384,
+      winRate: 0.5503355704697986,
+      selectedSamples: 27,
+    },
+    {
+      time: "2:46",
+      key: "hydreigon-b1-mega-sableye-ex-b3b",
+      displayName: "三頭龍 / 超級勾魂眼 ex",
+      displayNameEn: "Hydreigon / Mega Sableye ex",
+      iconKeys: ["hydreigon", "sableye-mega"],
+      energy: ["dark"],
+      rank: 8,
+      tier: "C",
+      score: 0.6658437328715536,
+      topCutShare: 0.027243589743589744,
+      winRate: 0.5138888888888888,
+      selectedSamples: 34,
+    },
+    {
+      time: "4:01",
+      key: "mega-altaria-ex-b1-espeon-b3a",
+      displayName: "超級七夕青鳥 ex / 太陽伊布",
+      displayNameEn: "Mega Altaria ex / Espeon",
+      iconKeys: ["altaria-mega", "espeon"],
+      energy: ["psychic"],
+      rank: 7,
+      tier: "B",
+      score: 0.7518322050113362,
+      topCutShare: 0.035256410256410256,
+      winRate: 0.5370370370370371,
+      selectedSamples: 44,
+    },
+    {
+      time: "5:13",
+      key: "greninja-a1-mega-sableye-ex-b3b",
+      displayName: "甲賀忍蛙 / 超級勾魂眼 ex",
+      displayNameEn: "Greninja / Mega Sableye ex",
+      iconKeys: ["greninja", "sableye-mega"],
+      energy: ["dark"],
+      rank: 6,
+      tier: "B",
+      score: 0.7683523673499381,
+      topCutShare: 0.06490384615384616,
+      winRate: 0.4782110091743119,
+      selectedSamples: 81,
+    },
+    {
+      time: "6:48",
+      key: "mega-blaziken-ex-b1-greninja-a1",
+      displayName: "超級火焰雞 ex / 甲賀忍蛙",
+      displayNameEn: "Mega Blaziken ex / Greninja",
+      iconKeys: ["blaziken-mega", "greninja"],
+      energy: ["fire"],
+      rank: 5,
+      tier: "B",
+      score: 0.7689158622737862,
+      topCutShare: 0.040865384615384616,
+      winRate: 0.5647840531561462,
+      selectedSamples: 51,
+    },
+    {
+      time: "7:42",
+      key: "mega-sceptile-ex-b3-greninja-a1",
+      displayName: "超級蜥蜴王 ex / 甲賀忍蛙",
+      displayNameEn: "Mega Sceptile ex / Greninja",
+      iconKeys: ["sceptile-mega", "greninja"],
+      energy: ["grass"],
+      rank: 3,
+      tier: "A",
+      score: 0.8875481864101503,
+      topCutShare: 0.055288461538461536,
+      winRate: 0.5803782505910166,
+      selectedSamples: 69,
+    },
+    {
+      time: "9:15",
+      key: "suicune-ex-a4a-baxcalibur-b2a",
+      displayName: "水君 ex / 戟脊龍",
+      displayNameEn: "Suicune ex / Baxcalibur",
+      iconKeys: ["suicune", "baxcalibur"],
+      energy: ["water"],
+      rank: 4,
+      tier: "A",
+      score: 0.8664231350174441,
+      topCutShare: 0.06891025641025642,
+      winRate: 0.5140997830802603,
+      selectedSamples: 86,
+    },
+    {
+      time: "11:11",
+      key: "mega-lucario-ex-b3-lucario-a2",
+      displayName: "超級路卡利歐 ex / 路卡利歐",
+      displayNameEn: "Mega Lucario ex / Lucario",
+      iconKeys: ["lucario-mega", "lucario"],
+      energy: ["fighting"],
+      rank: 2,
+      tier: "S",
+      score: 0.9340994236481183,
+      topCutShare: 0.08814102564102565,
+      winRate: 0.5168350168350169,
+      selectedSamples: 110,
+    },
+    {
+      time: "12:48",
+      key: "miraidon-ex-b3a-magnezone-b1a",
+      displayName: "密勒頓 ex / 自爆磁怪",
+      displayNameEn: "Miraidon ex / Magnezone",
+      iconKeys: ["miraidon", "magnezone"],
+      energy: ["lightning"],
+      rank: 1,
+      tier: "SS",
+      score: 0.9964805498106979,
+      topCutShare: 0.11778846153846154,
+      winRate: 0.5342548076923077,
+      selectedSamples: 147,
+    },
+  ],
+  b4aw1: [
+    {
+      time: "0:32",
+      key: "mega-charizard-y-ex-b1a-entei-ex-a4a",
+      displayName: "超級噴火龍Y ex / 炎帝 ex",
+      displayNameEn: "Mega Charizard Y ex / Entei ex",
+      iconKeys: ["charizard-mega-y", "entei"],
+      energy: ["fire"],
+      rank: 12,
+      tier: "C",
+      score: 0.6446004319240413,
+      topCutShare: 0.014905149051490514,
+      winRate: 0.5693069306930693,
+      selectedSamples: 33,
+    },
+    {
+      time: "1:15",
+      key: "dedenne-ex-b3b-indeedee-ex-b1",
+      displayName: "咚咚鼠 ex",
+      displayNameEn: "Dedenne ex",
+      iconKeys: ["dedenne"],
+      energy: ["lightning"],
+      rank: 14,
+      tier: "C",
+      score: 0.601015724069378,
+      topCutShare: 0.013098464317976514,
+      winRate: 0.5919540229885057,
+      selectedSamples: 29,
+    },
+    {
+      time: "2:17",
+      key: "mega-altaria-ex-b1",
+      displayName: "超級七夕青鳥 ex",
+      displayNameEn: "Mega Altaria ex",
+      iconKeys: ["altaria-mega"],
+      energy: ["psychic"],
+      rank: 10,
+      tier: "B",
+      score: 0.7118869673385937,
+      topCutShare: 0.017615176151761516,
+      winRate: 0.5425101214574899,
+      selectedSamples: 39,
+    },
+    {
+      time: "3:16",
+      key: "mega-sceptile-ex-b3-greninja-a1",
+      displayName: "超級蜥蜴王 ex / 甲賀忍蛙",
+      displayNameEn: "Mega Sceptile ex / Greninja",
+      iconKeys: ["sceptile-mega", "greninja"],
+      energy: ["grass"],
+      rank: 9,
+      tier: "B",
+      score: 0.7211167889555357,
+      topCutShare: 0.026648599819331528,
+      winRate: 0.5151057401812689,
+      selectedSamples: 59,
+    },
+    {
+      time: "3:58",
+      key: "suicune-ex-a4a-baxcalibur-b2a",
+      displayName: "水君 ex / 戟脊龍",
+      displayNameEn: "Suicune ex / Baxcalibur",
+      iconKeys: ["suicune", "baxcalibur"],
+      energy: ["water"],
+      rank: 8,
+      tier: "B",
+      score: 0.738365552265557,
+      topCutShare: 0.04200542005420054,
+      winRate: 0.5134615384615384,
+      selectedSamples: 93,
+    },
+    {
+      time: "4:56",
+      key: "mega-blaziken-ex-b1",
+      displayName: "超級火焰雞 ex",
+      displayNameEn: "Mega Blaziken ex",
+      iconKeys: ["blaziken-mega"],
+      energy: ["fire"],
+      rank: 7,
+      tier: "B",
+      score: 0.7408908308160802,
+      topCutShare: 0.045167118337850046,
+      winRate: 0.5095602294455067,
+      selectedSamples: 100,
+    },
+    {
+      time: "6:11",
+      key: "team-rockets-weezing-ex-b4a-hoopa-ex-b4",
+      displayName: "雙彈瓦斯 ex / 胡帕 ex",
+      displayNameEn: "Team Rocket's Weezing ex / Hoopa ex",
+      iconKeys: ["weezing", "hoopa-unbound"],
+      energy: ["dark"],
+      rank: 6,
+      tier: "B",
+      score: 0.7558759665096179,
+      topCutShare: 0.04065040650406504,
+      winRate: 0.5020491803278688,
+      selectedSamples: 90,
+    },
+    {
+      time: "7:22",
+      key: "hydreigon-mega-absol-ex-b1",
+      displayName: "三首惡龍 / 超級阿勃梭魯 ex",
+      displayNameEn: "Hydreigon / Mega Absol ex",
+      iconKeys: ["hydreigon", "absol-mega"],
+      energy: ["dark"],
+      rank: 5,
+      tier: "B",
+      score: 0.7671191492827323,
+      topCutShare: 0.04652213188798555,
+      winRate: 0.5340136054421769,
+      selectedSamples: 103,
+    },
+    {
+      time: "8:09",
+      key: "butterfree-b3b-mega-sceptile-ex-b3",
+      displayName: "巴大蝶 / 超級蜥蜴王 ex",
+      displayNameEn: "Butterfree / Mega Sceptile ex",
+      iconKeys: ["butterfree", "sceptile-mega"],
+      energy: ["grass"],
+      rank: 4,
+      tier: "A",
+      score: 0.8354772207237974,
+      topCutShare: 0.051490514905149054,
+      winRate: 0.5305785123966942,
+      selectedSamples: 114,
+    },
+    {
+      time: "9:46",
+      key: "mega-altaria-ex-b1-espeon-b3a",
+      displayName: "超級七夕青鳥 ex / 達克萊伊睡眠流",
+      displayNameEn: "Mega Altaria ex / Darkrai Sleep",
+      iconKeys: ["altaria-mega", "darkrai"],
+      energy: ["psychic"],
+      rank: 3,
+      tier: "A",
+      score: 0.8876998422893226,
+      topCutShare: 0.058265582655826556,
+      winRate: 0.5549019607843138,
+      selectedSamples: 129,
+    },
+    {
+      time: "10:33",
+      key: "vespiquen-ex-b4-shuckle-ex-a4",
+      displayName: "蜂女王 ex / 壺壺 ex",
+      displayNameEn: "Vespiquen ex / Shuckle ex",
+      iconKeys: ["vespiquen", "shuckle"],
+      energy: ["grass"],
+      rank: 2,
+      tier: "A",
+      score: 0.8878793161708742,
+      topCutShare: 0.053297199638663056,
+      winRate: 0.5275650842266463,
+      selectedSamples: 118,
+    },
+    {
+      time: "11:25",
+      key: "mega-lucario-ex-b3-lucario-a2",
+      displayName: "超級路卡利歐 ex / 盆才怪",
+      displayNameEn: "Mega Lucario ex / Bonsly",
+      iconKeys: ["lucario-mega", "bonsly"],
+      energy: ["fighting"],
+      rank: 1,
+      tier: "SSS",
+      score: 1,
+      topCutShare: 0.0921409214092141,
+      winRate: 0.5268014059753954,
+      selectedSamples: 204,
+    },
+  ],
+  b4aw2: [
+    {
+      time: "1:26",
+      key: "team-rockets-weezing-ex-b4a-hoopa-ex-b4",
+      displayName: "雙彈瓦斯 ex / 胡帕 ex",
+      displayNameEn: "Team Rocket's Weezing ex / Hoopa ex",
+      iconKeys: ["weezing", "hoopa-unbound"],
+      energy: ["dark"],
+      rank: 20,
+      tier: "C",
+      score: 0.5699646327627473,
+      topCutShare: 0.02549286199864038,
+      winRate: 0.47468354430379744,
+      selectedSamples: 75,
+    },
+    {
+      time: "2:54",
+      key: "mega-sharpedo-ex-b4-gyarados-a4",
+      displayName: "超級巨牙鯊 ex",
+      displayNameEn: "Mega Sharpedo ex",
+      iconKeys: ["sharpedo-mega"],
+      energy: ["water"],
+      rank: 17,
+      tier: "C",
+      score: 0.6030044017316647,
+      topCutShare: 0.015295717199184228,
+      winRate: 0.526595744680851,
+      selectedSamples: 45,
+    },
+    {
+      time: "4:19",
+      key: "mega-altaria-ex-b1",
+      displayName: "超級七夕青鳥 ex",
+      displayNameEn: "Mega Altaria ex",
+      iconKeys: ["altaria-mega"],
+      energy: ["psychic"],
+      rank: 13,
+      tier: "C",
+      score: 0.6425459393679764,
+      topCutShare: 0.01053704962610469,
+      winRate: 0.5105820105820106,
+      selectedSamples: 31,
+    },
+    {
+      time: "5:59",
+      key: "mega-blaziken-ex-b1",
+      displayName: "超級火焰雞 ex",
+      displayNameEn: "Mega Blaziken ex",
+      iconKeys: ["blaziken-mega"],
+      energy: ["fire"],
+      rank: 9,
+      tier: "B",
+      score: 0.7244369987811152,
+      topCutShare: 0.03569000679809653,
+      winRate: 0.48534798534798534,
+      selectedSamples: 105,
+    },
+    {
+      time: "6:53",
+      key: "mega-charizard-y-ex-b1a-entei-ex-a4a",
+      displayName: "超級噴火龍Y ex",
+      displayNameEn: "Mega Charizard Y ex",
+      iconKeys: ["charizard-mega-y"],
+      energy: ["fire"],
+      rank: 8,
+      tier: "B",
+      score: 0.7635871951333408,
+      topCutShare: 0.028552005438477225,
+      winRate: 0.5366336633663367,
+      selectedSamples: 84,
+    },
+    {
+      time: "7:43",
+      key: "magnezone-b1a-miraidon-ex-b3a",
+      displayName: "自爆磁怪 / 密勒頓 ex",
+      displayNameEn: "Magnezone / Miraidon ex",
+      iconKeys: ["magnezone", "miraidon"],
+      energy: ["lightning"],
+      rank: 4,
+      tier: "B",
+      score: 0.8286814862881552,
+      topCutShare: 0.03602991162474507,
+      winRate: 0.5628787878787879,
+      selectedSamples: 106,
+    },
+    {
+      time: "8:39",
+      key: "vespiquen-ex-b4-shuckle-ex-a4",
+      displayName: "蜂女王 ex",
+      displayNameEn: "Vespiquen ex",
+      iconKeys: ["vespiquen"],
+      energy: ["grass"],
+      rank: 7,
+      tier: "B",
+      score: 0.7735593032650927,
+      topCutShare: 0.03942895989123046,
+      winRate: 0.4952076677316294,
+      selectedSamples: 116,
+    },
+    {
+      time: "9:56",
+      key: "suicune-ex-a4a-baxcalibur-b2a",
+      displayName: "水君 ex / 戟脊龍",
+      displayNameEn: "Suicune ex / Baxcalibur",
+      iconKeys: ["suicune", "baxcalibur"],
+      energy: ["water"],
+      rank: 6,
+      tier: "B",
+      score: 0.7789686876132949,
+      topCutShare: 0.03195105370496261,
+      winRate: 0.5315398886827458,
+      selectedSamples: 94,
+    },
+    {
+      time: "10:56",
+      key: "hydreigon-mega-absol-ex-b1",
+      displayName: "三首惡龍 / 超級阿勃梭魯 ex",
+      displayNameEn: "Hydreigon / Mega Absol ex",
+      iconKeys: ["hydreigon", "absol-mega"],
+      energy: ["dark"],
+      rank: 5,
+      tier: "A",
+      score: 0.8237523421697371,
+      topCutShare: 0.038069340584636305,
+      winRate: 0.5160513643659711,
+      selectedSamples: 112,
+    },
+    {
+      time: "12:16",
+      key: "butterfree-b3b-mega-sceptile-ex-b3",
+      displayName: "超級蜥蜴王 ex / 巴大蝶",
+      displayNameEn: "Mega Sceptile ex / Butterfree",
+      iconKeys: ["sceptile-mega", "butterfree"],
+      energy: ["grass"],
+      rank: 3,
+      tier: "A",
+      score: 0.8941825480059383,
+      topCutShare: 0.06152277362338545,
+      winRate: 0.5285996055226825,
+      selectedSamples: 181,
+    },
+    {
+      time: "13:01",
+      key: "mega-altaria-ex-b1-espeon-b3a",
+      displayName: "睡眠流超級七夕青鳥 ex",
+      displayNameEn: "Mega Altaria ex / Darkrai Sleep",
+      iconKeys: ["altaria-mega", "darkrai"],
+      energy: ["psychic"],
+      rank: 2,
+      tier: "S",
+      score: 0.9815749761104834,
+      topCutShare: 0.07579877634262407,
+      winRate: 0.5431164901664145,
+      selectedSamples: 223,
+    },
+    {
+      time: "14:06",
+      key: "mega-lucario-ex-b3-lucario-a2",
+      displayName: "超級路卡利歐 ex",
+      displayNameEn: "Mega Lucario ex",
+      iconKeys: ["lucario-mega"],
+      energy: ["fighting"],
+      rank: 1,
+      tier: "S",
+      score: 1,
+      topCutShare: 0.09279401767505098,
+      winRate: 0.5086705202312138,
+      selectedSamples: 273,
+    },
+  ],
+  b4aw3: [
+    {
+      time: "0:29",
+      key: "vespiquen-ex-b4-shuckle-ex-a4",
+      displayName: "蜂女王 ex",
+      displayNameEn: "Vespiquen ex",
+      iconKeys: ["vespiquen"],
+      energy: ["grass"],
+      rank: 14,
+      tier: "C",
+      score: 0.6218519982955448,
+      topCutShare: 0.03810820006805036,
+      winRate: 0.4821109123434705,
+      selectedSamples: 112,
+    },
+    {
+      time: "1:46",
+      key: "dedenne-ex-b3b-indeedee-ex-b1",
+      displayName: "咚咚鼠 ex",
+      displayNameEn: "Dedenne ex",
+      iconKeys: ["dedenne"],
+      energy: ["lightning"],
+      rank: 12,
+      tier: "C",
+      score: 0.6553305135008918,
+      topCutShare: 0.026539639333106498,
+      winRate: 0.5169683257918553,
+      selectedSamples: 78,
+    },
+    {
+      time: "3:13",
+      key: "suicune-ex-a4a-baxcalibur-b2a",
+      displayName: "水君 ex / 戟脊龍",
+      displayNameEn: "Suicune ex / Baxcalibur",
+      iconKeys: ["suicune", "baxcalibur"],
+      energy: ["water"],
+      rank: 9,
+      tier: "B",
+      score: 0.7206750574584103,
+      topCutShare: 0.023477373256209595,
+      winRate: 0.5506329113924051,
+      selectedSamples: 69,
+    },
+    {
+      time: "4:12",
+      key: "mega-manectric-ex-b2b-heliolisk-b4",
+      displayName: "超級雷電獸 ex",
+      displayNameEn: "Mega Manectric ex",
+      iconKeys: ["manectric-mega"],
+      energy: ["lightning"],
+      rank: 8,
+      tier: "B",
+      score: 0.7292304522743822,
+      topCutShare: 0.03232391970057843,
+      winRate: 0.543630017452007,
+      selectedSamples: 95,
+    },
+    {
+      time: "4:50",
+      key: "mega-altaria-ex-b1-greninja-a1",
+      displayName: "甲賀忍蛙 / 超級七夕青鳥 ex",
+      displayNameEn: "Greninja / Mega Altaria ex",
+      iconKeys: ["greninja", "altaria-mega"],
+      energy: ["psychic"],
+      rank: 7,
+      tier: "B",
+      score: 0.736300316813538,
+      topCutShare: 0.03198366791425655,
+      winRate: 0.5289719626168224,
+      selectedSamples: 94,
+    },
+    {
+      time: "5:33",
+      key: "mega-charizard-y-ex-b1a-entei-ex-a4a",
+      displayName: "超級噴火龍Y ex / 炎帝 ex",
+      displayNameEn: "Mega Charizard Y ex / Entei ex",
+      iconKeys: ["charizard-mega-y", "entei"],
+      energy: ["fire"],
+      rank: 6,
+      tier: "B",
+      score: 0.7402037649111429,
+      topCutShare: 0.03028240898264716,
+      winRate: 0.5270793036750484,
+      selectedSamples: 89,
+    },
+    {
+      time: "6:38",
+      key: "dragonair-mega-rayquaza-ex-b4",
+      displayName: "超級烈空坐 ex / 哈克龍 / 破空焰",
+      displayNameEn: "Mega Rayquaza ex / Dragonair / Gouging Fire",
+      iconKeys: ["rayquaza-mega", "dragonair", "gouging-fire"],
+      energy: ["fire"],
+      rank: 5,
+      tier: "B",
+      score: 0.7684627978602135,
+      topCutShare: 0.04048996257230351,
+      winRate: 0.5537848605577689,
+      selectedSamples: 119,
+    },
+    {
+      time: "7:58",
+      key: "butterfree-b3b-mega-sceptile-ex-b3",
+      displayName: "巴大蝶 / 超級蜥蜴王 ex",
+      displayNameEn: "Butterfree / Mega Sceptile ex",
+      iconKeys: ["butterfree", "sceptile-mega"],
+      energy: ["grass"],
+      rank: 4,
+      tier: "A",
+      score: 0.8270687644641237,
+      topCutShare: 0.05205852330724736,
+      winRate: 0.5252051582649473,
+      selectedSamples: 153,
+    },
+    {
+      time: "9:17",
+      key: "magnezone-b1a-miraidon-ex-b3a",
+      displayName: "自爆磁怪 / 密勒頓 ex",
+      displayNameEn: "Magnezone / Miraidon ex",
+      iconKeys: ["magnezone", "miraidon"],
+      energy: ["lightning"],
+      rank: 3,
+      tier: "A",
+      score: 0.8552827906384981,
+      topCutShare: 0.04899625723035046,
+      winRate: 0.5352601156069364,
+      selectedSamples: 144,
+    },
+    {
+      time: "10:31",
+      key: "mega-lucario-ex-b3-lucario-a2",
+      displayName: "超級路卡利歐 ex / 路卡利歐",
+      displayNameEn: "Mega Lucario ex / Lucario",
+      iconKeys: ["lucario-mega", "lucario"],
+      energy: ["fighting"],
+      rank: 2,
+      tier: "A",
+      score: 0.8756115150935464,
+      topCutShare: 0.08982647158897585,
+      winRate: 0.4747067448680352,
+      selectedSamples: 264,
+    },
+    {
+      time: "11:30",
+      key: "mega-altaria-ex-b1-espeon-b3a",
+      displayName: "睡眠流超級七夕青鳥 ex",
+      displayNameEn: "Mega Altaria ex / Darkrai Sleep",
+      iconKeys: ["altaria-mega", "darkrai"],
+      energy: ["psychic"],
+      rank: 1,
+      tier: "SSS",
+      score: 1,
+      topCutShare: 0.08642395372575706,
+      winRate: 0.5564356435643565,
+      selectedSamples: 254,
+    },
+  ],
+  b4aw4: [
+    {
+      time: "5:22",
+      key: "mega-altaria-ex-b1-espeon-b3a",
+      displayName: "睡眠流超級七夕青鳥 ex",
+      displayNameEn: "Mega Altaria ex / Darkrai Sleep",
+      iconKeys: ["altaria-mega", "darkrai"],
+      energy: ["psychic"],
+      rank: 1,
+      tier: "SSS",
+      score: 1,
+      topCutShare: 0.11950549450549451,
+      winRate: 0.5565302144249513,
+      selectedSamples: 87,
+    },
+    {
+      time: "6:09",
+      key: "vespiquen-ex-b4-shuckle-ex-a4",
+      displayName: "蜂女王 ex",
+      displayNameEn: "Vespiquen ex",
+      iconKeys: ["vespiquen"],
+      energy: ["grass"],
+      rank: 2,
+      tier: "A",
+      score: 0.8217751210856826,
+      topCutShare: 0.07005494505494506,
+      winRate: 0.5236486486486487,
+      selectedSamples: 51,
+    },
+    {
+      time: "7:13",
+      key: "hoopa-ex-b4-mega-absol-ex-b1",
+      displayName: "胡帕 ex / 超級阿勃梭魯 ex",
+      displayNameEn: "Hoopa ex / Mega Absol ex",
+      iconKeys: ["hoopa-unbound", "absol-mega"],
+      energy: ["dark"],
+      rank: 3,
+      tier: "A",
+      score: 0.8130622555089235,
+      topCutShare: 0.046703296703296704,
+      winRate: 0.6,
+      selectedSamples: 34,
+    },
+    {
+      time: "8:13",
+      key: "dragonair-mega-rayquaza-ex-b4",
+      displayName: "哈克龍 / 超級烈空坐 ex / 破空焰",
+      displayNameEn: "Dragonair / Mega Rayquaza ex / Gouging Fire",
+      iconKeys: ["dragonair", "rayquaza-mega", "gouging-fire"],
+      energy: ["fire", "lightning"],
+      rank: 4,
+      tier: "B",
+      score: 0.7819508063987952,
+      topCutShare: 0.07005494505494506,
+      winRate: 0.5374149659863946,
+      selectedSamples: 51,
+    },
+    {
+      time: "9:34",
+      key: "butterfree-b3b-mega-sceptile-ex-b3",
+      displayName: "巴大蝶 / 超級蜥蜴王 ex",
+      displayNameEn: "Butterfree / Mega Sceptile ex",
+      iconKeys: ["butterfree", "sceptile-mega"],
+      energy: ["grass"],
+      rank: 5,
+      tier: "B",
+      score: 0.773676841944806,
+      topCutShare: 0.05631868131868132,
+      winRate: 0.5165289256198347,
+      selectedSamples: 41,
+    },
+    {
+      time: "10:27",
+      endTime: "12:45",
+      key: "mega-charizard-y-ex-b1a-entei-ex-a4a",
+      displayName: "超級噴火龍Y ex / 炎帝 ex",
+      displayNameEn: "Mega Charizard Y ex / Entei ex",
+      iconKeys: ["charizard-mega-y", "entei"],
+      energy: ["fire"],
+      rank: 10,
+      tier: "C",
+      score: 0.5109286151877835,
+      topCutShare: 0.027472527472527472,
+      winRate: 0.53,
+      selectedSamples: 20,
+    },
+  ],
+};
+const CREATOR_HISTORICAL_DEMO_ROWS: Record<string, PrecomputedTopDeckRow> = {
+  "mega-lucario-ex-sawk-b3": {
+    key: "mega-lucario-ex-sawk-b3",
+    rawName: "Mega Lucario ex Sawk",
+    iconKeys: ["lucario-mega", "sawk"],
+    sortName: "mega lucario ex sawk",
+    allSamples: 87,
+    baselineTop32Samples: 0,
+    weightedPoints: 0,
+    selectedSamples: 87,
+    topCutShare: 0.026094781043791242,
+    winRate: 0.5458984375,
+    baselineTop32SharePct: 0,
+    emaScore: 0,
+    score: 0.6932125969664281,
+    tier: "C",
+    baseRank: 12,
+  },
+};
 
 type LocaleCode = "zh" | "en";
 type TopCutValue = "all" | "64" | "32" | "16" | "8" | "4" | "2" | "1";
@@ -1081,6 +2108,7 @@ interface RightDeckPanelGroup {
 type FinishSortKey = "player" | "tournamentName" | "dateMs" | "place";
 type RightDeckMode = "cards" | "sample";
 type CreatorPackAssetMode = "all" | "decklists";
+type CreatorExportKind = "card-rate" | "broadcast" | "decklist";
 
 interface Props {
   deck?: AnyRecord | null;
@@ -1117,7 +2145,6 @@ const emit = defineEmits<{
 const route = useRoute();
 
 const failedCardImages = ref<Record<string, boolean>>({});
-const leftPanelRef = ref<HTMLElement | null>(null);
 const deckPanelRef = ref<HTMLElement | null>(null);
 const downloadingDeckPanel = ref(false);
 const downloadingCreatorPack = ref(false);
@@ -1129,6 +2156,8 @@ const deckCardsGridRef = ref<HTMLElement | null>(null);
 const downloadingPanel = ref(false);
 const deckViewportHeight = ref<number | null>(null);
 const exportStageActive = ref(false);
+const exportStagePanelKey = ref("");
+const exportStageRenderKind = ref<CreatorExportKind>("decklist");
 const topDeckExportPanelRefs = new Map<string, HTMLElement>();
 const sampleDeckExportPanelRefs = new Map<string, HTMLElement>();
 const cardCatalogByCode = shallowRef(new Map<string, CatalogCardInfo>());
@@ -1300,6 +2329,8 @@ const precomputedTopDecks = shallowRef<PrecomputedTopDecksPayload | null>(null);
 const precomputedTopDecksLoading = ref(false);
 const creatorTopDeckProfiles = shallowRef(new Map<string, PrecomputedDeckProfilePayload>());
 const creatorTopDeckProfilesLoading = ref(false);
+const creatorEpisodeSource = shallowRef<CreatorEpisodeSourcePayload | null>(null);
+const creatorEpisodeSourceLoading = ref(false);
 
 
 
@@ -1313,7 +2344,7 @@ const hasExternalData = computed(() => {
 });
 
 const routeLang = computed<LocaleCode>(() => {
-  return String(route.path).split("/")[1] === "en" ? "en" : "zh";
+  return getRouteLang(route);
 });
 
 const activeLocale = computed(() => {
@@ -1677,7 +2708,182 @@ const creatorTopDeckRows = computed(() =>
   ),
 );
 
-const creatorDefaultDeckKey = computed(() => cleanDeckText(creatorTopDeckRows.value[0]?.key));
+const creatorDemoDeckKey = computed(() =>
+  normalizeDeckKey(firstQueryValue(route.query[CREATOR_DEMO_QUERY_KEY])),
+);
+
+const creatorEpisodeKey = computed(() =>
+  cleanDeckText(firstQueryValue(route.query[CREATOR_EPISODE_QUERY_KEY])).toLowerCase(),
+);
+
+const creatorEpisodeEntries = computed<CreatorEpisodeEntry[]>(() =>
+  CREATOR_EPISODES[creatorEpisodeKey.value] ?? [],
+);
+
+const creatorEpisodeDataFile = computed(() =>
+  CREATOR_EPISODE_DATA_FILES[creatorEpisodeKey.value] ?? "",
+);
+
+const creatorEpisodeSourceDeckByKey = computed(() =>
+  new Map(
+    (creatorEpisodeSource.value?.decks ?? [])
+      .map((deck) => [cleanDeckText(deck?.key), deck] as const)
+      .filter(([key]) => Boolean(key)),
+  ),
+);
+
+watch(
+  creatorEpisodeDataFile,
+  async (dataFile) => {
+    creatorEpisodeSource.value = null;
+    if (!dataFile) return;
+
+    creatorEpisodeSourceLoading.value = true;
+    try {
+      creatorEpisodeSource.value = await loadPublicJson<CreatorEpisodeSourcePayload>(dataFile);
+    } catch (error) {
+      console.warn("[DeckProfile] creator episode source unavailable:", dataFile, error);
+    } finally {
+      creatorEpisodeSourceLoading.value = false;
+    }
+  },
+  { immediate: true },
+);
+
+const creatorEpisodeEntryByKey = computed(() =>
+  new Map(creatorEpisodeEntries.value.map((entry) => [entry.key, entry])),
+);
+
+const creatorEpisodeRows = computed<PrecomputedTopDeckRow[]>(() =>
+  creatorEpisodeEntries.value.map((entry) => ({
+    key: entry.key,
+    rawName: entry.displayNameEn,
+    iconKeys: entry.iconKeys,
+    sortName: entry.displayNameEn.toLowerCase(),
+    allSamples: entry.selectedSamples,
+    baselineTop32Samples: 0,
+    weightedPoints: 0,
+    selectedSamples: entry.selectedSamples,
+    topCutShare: entry.topCutShare,
+    winRate: entry.winRate,
+    baselineTop32SharePct: 0,
+    emaScore: 0,
+    score: entry.score,
+    tier: entry.tier,
+    baseRank: entry.rank,
+  })),
+);
+
+function buildCreatorEpisodeDeckScope(
+  row: PrecomputedTopDeckRow,
+  sourceDeck: AnyRecord,
+): PrecomputedDeckProfileScope {
+  const episodeEntry = creatorEpisodeEntryByKey.value.get(row.key);
+  const record = (sourceDeck.record ?? {}) as AnyRecord;
+  const samples = (sourceDeck.samples ?? {}) as AnyRecord;
+  const sampleDeck = (sourceDeck.sampleDeck as AnyRecord | null) ?? null;
+
+  return {
+    tournamentCount: 0,
+    analytics: {
+      totalStandingRows: Number(samples.all ?? samples.selected ?? 0),
+      targetStandingRows: Number(samples.selected ?? 0),
+      totalSeenDeckRows: Number(samples.selected ?? 0),
+      top4Counts: sourceDeck.top4Counts ?? {},
+      metaShare: Number(sourceDeck.topCutShare ?? 0),
+      winRate: sourceDeck.winRate == null ? null : Number(sourceDeck.winRate),
+      wins: Number(record.wins ?? 0),
+      losses: Number(record.losses ?? 0),
+      draws: Number(record.draws ?? 0),
+      matchCount: Number(record.matches ?? 0),
+      cardsFlat: Array.isArray(sourceDeck.cardTable) ? sourceDeck.cardTable : [],
+      featuredGoodMatchups: [],
+      featuredBadMatchups: [],
+      bestFinishes: Array.isArray(sourceDeck.bestFinishes) ? sourceDeck.bestFinishes : [],
+      sampleDeck,
+      targetSpriteUrls: [],
+      targetIconKeys: episodeEntry?.iconKeys ?? row.iconKeys ?? [],
+      resolvedDeckDisplayName: episodeEntry?.displayName ?? cleanDeckText(sourceDeck.name),
+      resolvedDeckDisplayNameEn: episodeEntry?.displayNameEn ?? cleanDeckText(sourceDeck.nameEn),
+    },
+    tierRow: {
+      deck: row.key,
+      tier: row.tier,
+      score: row.score,
+      usage: row.topCutShare,
+      total_samples: row.selectedSamples,
+    },
+    topDeckRow: row,
+  } as unknown as PrecomputedDeckProfileScope;
+}
+
+const creatorDemoTopDeckRow = computed<PrecomputedTopDeckRow | null>(() => {
+  const demoKey = creatorDemoDeckKey.value;
+  if (!demoKey) return null;
+
+  const payload = creatorTopDeckProfiles.value.get(demoKey) ?? null;
+  const scope = findDeckProfileScopeFromPayload(payload);
+  if (!scope) return null;
+
+  const scopedRow = (scope as PrecomputedDeckProfileScope & { topDeckRow?: PrecomputedTopDeckRow | null })
+    .topDeckRow;
+  const historicalRow = CREATOR_HISTORICAL_DEMO_ROWS[demoKey];
+
+  if (historicalRow) {
+    return {
+      ...historicalRow,
+      iconKeys: scopedRow?.iconKeys?.length ? scopedRow.iconKeys : historicalRow.iconKeys,
+    };
+  }
+
+  if (scopedRow?.key) return scopedRow;
+
+  const analytics = (scope.analytics ?? {}) as AnyRecord;
+  const tierRow = (scope.tierRow ?? {}) as AnyRecord;
+  const iconKeys = Array.isArray(analytics.targetIconKeys)
+    ? analytics.targetIconKeys.map(cleanDeckText).filter(Boolean)
+    : parseTwoFromDeckId(demoKey);
+
+  return {
+    key: demoKey,
+    rawName:
+      cleanDeckText(analytics.resolvedDeckDisplayNameEn) ||
+      cleanDeckText(analytics.resolvedDeckDisplayName) ||
+      defaultDeckLabelFromKey(demoKey),
+    iconKeys,
+    sortName: defaultDeckLabelFromKey(demoKey).toLowerCase(),
+    allSamples: Number(tierRow.allSamples ?? tierRow.total_samples ?? 0),
+    baselineTop32Samples: Number(tierRow.baselineTop32Samples ?? 0),
+    weightedPoints: Number(tierRow.weightedPoints ?? 0),
+    selectedSamples: Number(tierRow.total_samples ?? analytics.totalSeenDeckRows ?? 0),
+    topCutShare: Number(tierRow.usage ?? analytics.metaShare ?? 0),
+    winRate: Number.isFinite(Number(tierRow.winRate ?? analytics.winRate))
+      ? Number(tierRow.winRate ?? analytics.winRate)
+      : null,
+    baselineTop32SharePct: Number(tierRow.top32SharePct ?? 0),
+    emaScore: Number(tierRow.emaScore ?? 0),
+    score: Number(tierRow.score ?? 0),
+    tier: cleanDeckText(tierRow.tier) || "-",
+    baseRank: Number(tierRow.baseRank ?? tierRow.rank ?? 0),
+  };
+});
+
+const creatorExportRows = computed<PrecomputedTopDeckRow[]>(() => {
+  if (creatorEpisodeRows.value.length > 0) return creatorEpisodeRows.value;
+
+  const demoRow = creatorDemoTopDeckRow.value;
+  if (creatorDemoDeckKey.value && !demoRow) return [];
+  if (!demoRow) return creatorTopDeckRows.value;
+
+  return [
+    demoRow,
+    ...creatorTopDeckRows.value.filter((row) => row.key !== demoRow.key).slice(0, 14),
+  ];
+});
+
+const creatorDefaultDeckKey = computed(
+  () => creatorDemoDeckKey.value || cleanDeckText(creatorExportRows.value[0]?.key),
+);
 
 function findDeckProfileScopeFromPayload(payload: PrecomputedDeckProfilePayload | null) {
   if (!payload) return null;
@@ -1721,11 +2927,32 @@ watch(
 );
 
 watch(
-  () => (props.autoDownloadCreatorPack ? creatorTopDeckRows.value.map((row) => row.key).join("|") : ""),
-  async () => {
-    if (!props.autoDownloadCreatorPack || creatorTopDeckRows.value.length === 0) return;
+  () => (props.autoDownloadCreatorPack ? creatorDemoDeckKey.value : ""),
+  async (deckKey) => {
+    if (!deckKey || creatorTopDeckProfiles.value.has(deckKey)) return;
 
-    const missing = creatorTopDeckRows.value.filter(
+    creatorTopDeckProfilesLoading.value = true;
+
+    try {
+      const loaded = new Map(creatorTopDeckProfiles.value);
+      loaded.set(deckKey, await loadDeckProfilePrecomputed(deckKey));
+      creatorTopDeckProfiles.value = loaded;
+    } catch (error) {
+      console.warn("[DeckProfile] creator demo deck profile unavailable:", deckKey, error);
+    } finally {
+      creatorTopDeckProfilesLoading.value = false;
+    }
+  },
+  { immediate: true },
+);
+
+watch(
+  () => (props.autoDownloadCreatorPack ? creatorExportRows.value.map((row) => row.key).join("|") : ""),
+  async () => {
+    if (!props.autoDownloadCreatorPack || creatorExportRows.value.length === 0) return;
+    if (creatorEpisodeDataFile.value) return;
+
+    const missing = creatorExportRows.value.filter(
       (row) => !creatorTopDeckProfiles.value.has(row.key),
     );
 
@@ -1749,6 +2976,7 @@ watch(
       creatorTopDeckProfilesLoading.value = false;
     }
   },
+  { immediate: true },
 );
 
 function normalizeTournamentIndex(raw: TournamentListItem): IndexedTournament | null {
@@ -2109,13 +3337,6 @@ function formatPercentValue(value: number | null | undefined) {
 function formatPct(value: number | null | undefined) {
   if (value == null || !Number.isFinite(value)) return "—";
   return formatPercentValue(value * 100);
-}
-
-function formatCopies(value: number | null | undefined) {
-  const safe = Number(value ?? 0);
-  if (!Number.isFinite(safe)) return "0";
-  if (Math.abs(safe - Math.round(safe)) < 0.05) return String(Math.round(safe));
-  return safe.toFixed(1).replace(/\.0$/, "");
 }
 
 const SEMI_GAUGE_ARC_LENGTH = Math.PI * 50;
@@ -2912,7 +4133,7 @@ const targetDeckKeySet = computed(() => {
   const deckSource =
     props.deck && typeof props.deck === "object" ? (props.deck as AnyRecord) : null;
 
-  // When the page is opened from a route like /top-decks/:deckKey, keep the
+  // When the page is opened from a route like /pocket/decks/:slug, keep the
   // aggregation scoped to that exact deck row. Expanding aliases here can merge
   // nearby archetype variants and make the profile win rate diverge from TopDecks.
   if (!deckSource || Object.keys(deckSource).length === 0) {
@@ -3366,8 +4587,6 @@ const tierRows = computed<TierRow[]>(() =>
   buildTierRowsFromScope(leftPanelTournaments.value, leftPanelFilters.topCut),
 );
 
-const rightCardTournaments = computed(() => leftPanelTournaments.value);
-
 function hydratePrecomputedCard(card: AnyRecord): CardAggregate {
   const displayMeta = resolveCardDisplayMeta(card);
 
@@ -3435,10 +4654,10 @@ function hydratePrecomputedAnalytics(scope: PrecomputedDeckProfileScope): DeckPr
     };
   };
 
-  const sampleDeck = raw.sampleDeck && typeof raw.sampleDeck === "object"
+  const sampleDeck: SampleDeckEntry | null = raw.sampleDeck && typeof raw.sampleDeck === "object"
     ? {
         ...(raw.sampleDeck as SampleDeckEntry),
-        cards: unwrapCollection<AnyRecord>((raw.sampleDeck as AnyRecord).cards).map((card) => {
+        cards: normalizeDeckCardsSource((raw.sampleDeck as AnyRecord).cards).map((card) => {
           const displayMeta = resolveCardDisplayMeta(card);
 
           return {
@@ -4013,7 +5232,7 @@ function parseDecklistText(source: string, categoryHint = "Other"): NormalizedDe
   return String(source)
     .split(/\r?\n/)
     .map((line) => line.trim())
-    .map((line) => {
+    .map((line): NormalizedDeckCard | null => {
       const match = line.match(/^(\d+)\s*[xX]?\s+(.+)$/);
 
       const countText = match?.[1];
@@ -4952,21 +6171,6 @@ const rightDeckPanelSubtitleText = computed(() => {
     : "Pokemon, Supporters, and other Trainer cards grouped by inclusion, with 2x / 1x breakdown";
 });
 
-const rightDeckPanelSubtitle = computed(() => {
-  if (rightDeckMode.value === "sample") {
-    if (!rightAnalytics.value.sampleDeck) {
-      return "Best-performing filtered sample deck";
-    }
-
-    const sample = rightAnalytics.value.sampleDeck;
-    return `${sample.player} | ${sample.placeLabel}`;
-  }
-
-  return routeLang.value === "zh"
-    ? "寶可夢、支援者、其他訓練家依投入率分組"
-    : "Pokemon, Supporters, and other Trainer cards grouped by inclusion rate";
-});
-
 const rightDeckPanelEmptyText = computed(() => {
   if (rightDeckMode.value === "sample") {
     return "No sample deck is available for the current filters.";
@@ -5092,14 +6296,6 @@ const titleSpriteUrls = computed(() => {
   ]).slice(0, 3);
 });
 
-const primaryNameLines = computed(() => {
-  const base = displayDeckName.value || "";
-  if (!base) return [];
-  const tokens = base.split(/[／/]/).map((item) => item.trim()).filter(Boolean);
-  if (tokens.length >= 2) return [tokens[0], tokens[1]];
-  return [base];
-});
-
 const activeTierRow = computed<TierRow | null>(() => {
   const precomputedTierRow = activePrecomputedProfileScope.value?.tierRow;
   if (precomputedTierRow?.tier) {
@@ -5156,13 +6352,39 @@ interface CreatorDeckExport {
   spriteUrls: string[];
 }
 
+interface CreatorBroadcastTimelineItem {
+  panel: CreatorDeckExport;
+  startLabel: string;
+  durationSeconds: number;
+  isActive: boolean;
+  matchup: {
+    wins: number;
+    losses: number;
+    ties: number;
+    total: number;
+    winRate: number | null;
+  };
+}
+
+interface CreatorBroadcastEnergy {
+  icons: Array<{
+    src: string;
+    alt: string;
+  }>;
+  className: string;
+}
+
 const creatorDeckExports = computed<CreatorDeckExport[]>(() =>
-  creatorTopDeckRows.value
+  creatorExportRows.value
     .map((row, index) => {
-      const scope = findDeckProfileScopeFromPayload(creatorTopDeckProfiles.value.get(row.key) ?? null);
+      const sourceDeck = creatorEpisodeSourceDeckByKey.value.get(row.key);
+      const scope = sourceDeck
+        ? buildCreatorEpisodeDeckScope(row, sourceDeck)
+        : findDeckProfileScopeFromPayload(creatorTopDeckProfiles.value.get(row.key) ?? null);
       if (!scope) return null;
 
       const analytics = hydratePrecomputedAnalytics(scope);
+      const episodeEntry = creatorEpisodeEntryByKey.value.get(row.key);
       const groups = buildCardPanelGroupsFromAnalytics(analytics);
       const cards = groups.flatMap((group) => group.cards);
       const sampleCards = sampleDeckToPanelCards(analytics.sampleDeck);
@@ -5177,6 +6399,7 @@ const creatorDeckExports = computed<CreatorDeckExport[]>(() =>
         sampleCards,
         sample: analytics.sampleDeck,
         displayName:
+          episodeEntry?.displayName ||
           (routeLang.value === "zh"
             ? getLocalizedDeckName(row.rawName, row.iconKeys ?? [], "zh")
             : "") ||
@@ -5185,12 +6408,15 @@ const creatorDeckExports = computed<CreatorDeckExport[]>(() =>
           defaultDeckLabelFromKey(row.key) ||
           row.key,
         displayNameEn:
+          episodeEntry?.displayNameEn ||
           analytics.resolvedDeckDisplayNameEn ||
           getLocalizedDeckName(row.rawName, row.iconKeys ?? [], "en") ||
           row.rawName ||
           row.key,
         spriteUrls:
-          analytics.targetSpriteUrls.length > 0
+          episodeEntry
+            ? resolveDeckSpriteUrlsFromIconKeys(episodeEntry.iconKeys)
+            : analytics.targetSpriteUrls.length > 0
             ? analytics.targetSpriteUrls
             : resolveDeckSpriteUrlsFromIconKeys(row.iconKeys ?? parseTwoFromDeckId(row.key)),
       };
@@ -5199,7 +6425,10 @@ const creatorDeckExports = computed<CreatorDeckExport[]>(() =>
 );
 
 const exportTopDeckPanels = computed(() =>
-  creatorDeckExports.value.filter((panel) => panel.cards.length > 0),
+  creatorDeckExports.value.filter((panel) => {
+    if (creatorDemoDeckKey.value && panel.key !== creatorDemoDeckKey.value) return false;
+    return panel.cards.length > 0;
+  }),
 );
 
 const exportRenderedTopDeckPanels = computed(() =>
@@ -5240,34 +6469,185 @@ function sampleDeckToPanelCards(sample: SampleDeckEntry | null): RightDeckPanelC
 
 const exportSampleDeckPanels = computed(() =>
   creatorDeckExports.value
-    .filter((panel) => panel.sampleCards.length > 0)
+    .filter((panel) => {
+      if (creatorDemoDeckKey.value && panel.key !== creatorDemoDeckKey.value) return false;
+      return panel.sampleCards.length > 0;
+    })
     .map((panel) => ({
       ...panel,
       cards: panel.sampleCards,
     })),
 );
 
-function creatorDeckNameZh(row: PrecomputedTopDeckRow) {
-  return (
-    getLocalizedDeckName(row.rawName, row.iconKeys ?? [], "zh") ||
-    row.rawName ||
-    defaultDeckLabelFromKey(row.key) ||
-    row.key
-  );
-}
+const exportStageTopDeckPanels = computed(() =>
+  exportRenderedTopDeckPanels.value.filter((panel) => panel.key === exportStagePanelKey.value),
+);
 
-function creatorDeckNameEn(row: PrecomputedTopDeckRow) {
-  return (
-    getLocalizedDeckName(row.rawName, row.iconKeys ?? [], "en") ||
-    row.rawName ||
-    defaultDeckLabelFromKey(row.key) ||
-    row.key
-  );
-}
+const exportStageSampleDeckPanels = computed(() =>
+  exportSampleDeckPanels.value.filter((panel) => panel.key === exportStagePanelKey.value),
+);
 
 function creatorCurrentRank(row: PrecomputedTopDeckRow, fallbackIndex: number) {
   const rank = Number(row.baseRank ?? fallbackIndex + 1);
   return Number.isFinite(rank) && rank > 0 ? Math.round(rank) : fallbackIndex + 1;
+}
+
+function creatorPanelRankText(panel: CreatorDeckExport) {
+  return `#${creatorCurrentRank(panel.row, panel.index)}`;
+}
+
+function creatorPanelTierLabel(panel: CreatorDeckExport) {
+  return cleanDeckText(panel.row.tier).toUpperCase() || "-";
+}
+
+function creatorPanelTierClass(panel: CreatorDeckExport) {
+  const tier = creatorPanelTierLabel(panel).toLowerCase().replace(/[^a-z0-9]+/g, "-");
+  return tier ? `creator-broadcast-tier--${tier}` : "";
+}
+
+function creatorPanelEnergy(panel: CreatorDeckExport): CreatorBroadcastEnergy | null {
+  const episodeEnergy = creatorEpisodeEntryByKey.value.get(panel.key)?.energy ?? [];
+  const energyAssets: Record<CreatorEnergyKind, { src: string; alt: string }> = {
+    dark: { src: darkEnergyIcon, alt: "惡能量" },
+    fighting: { src: fightingEnergyIcon, alt: "鬥能量" },
+    fire: { src: fireEnergyIcon, alt: "火能量" },
+    grass: { src: grassEnergyIcon, alt: "草能量" },
+    lightning: { src: lightningEnergyIcon, alt: "電能量" },
+    psychic: { src: psychicEnergyIcon, alt: "超能能量" },
+    water: { src: waterEnergyIcon, alt: "水能量" },
+  };
+
+  if (episodeEnergy.length > 0) {
+    return {
+      icons: episodeEnergy.map((kind) => energyAssets[kind]),
+      className: episodeEnergy.length > 1
+        ? "creator-broadcast__energy--multiple"
+        : `creator-broadcast__energy--${episodeEnergy[0]}`,
+    };
+  }
+
+  if (!creatorDemoDeckKey.value || panel.key !== creatorDemoDeckKey.value) return null;
+
+  const tokenText = normalizeDeckKey([
+    panel.key,
+    panel.row.rawName,
+    panel.displayName,
+    panel.displayNameEn,
+    ...(panel.row.iconKeys ?? []),
+  ].join(" "));
+
+  if (!/(^|-)mega-lucario|(^|-)lucario|(^|-)sawk/.test(tokenText)) return null;
+
+  return {
+    icons: [{ src: fightingEnergyIcon, alt: "鬥能量" }],
+    className: "creator-broadcast__energy--fighting",
+  };
+}
+
+function creatorBroadcastPct(value: number | null | undefined) {
+  if (value == null || !Number.isFinite(value)) return "--";
+  return formatPercentValue(value * 100);
+}
+
+function creatorBroadcastTimelinePanels(activePanel: CreatorDeckExport) {
+  const panels = creatorDeckExports.value.slice(0, 15);
+  if (panels.some((panel) => panel.key === activePanel.key)) return panels;
+  return [...panels.slice(0, 14), activePanel];
+}
+
+function creatorTimestampSeconds(value: string) {
+  const parts = value
+    .split(":")
+    .map((part) => Number(part.trim()))
+    .filter((part) => Number.isFinite(part));
+  if (parts.length === 2) {
+    const [minutes = 0, seconds = 0] = parts;
+    return minutes * 60 + seconds;
+  }
+  if (parts.length === 3) {
+    const [hours = 0, minutes = 0, seconds = 0] = parts;
+    return hours * 3600 + minutes * 60 + seconds;
+  }
+  return 0;
+}
+
+function creatorTimelineDurations(panels: CreatorDeckExport[]) {
+  const starts = panels.map((panel) =>
+    creatorTimestampSeconds(creatorEpisodeEntryByKey.value.get(panel.key)?.time ?? ""),
+  );
+  const knownDurations = starts
+    .slice(0, -1)
+    .map((start, index) => (starts[index + 1] ?? start) - start)
+    .filter((duration) => duration > 0);
+  const sortedDurations = [...knownDurations].sort((a, b) => a - b);
+  const fallbackDuration = sortedDurations.length > 0
+    ? sortedDurations[Math.floor(sortedDurations.length / 2)] ?? 60
+    : 60;
+
+  return panels.map((_, index) => {
+    const start = starts[index] ?? 0;
+    const panel = panels[index];
+    const explicitEnd = panel
+      ? creatorTimestampSeconds(creatorEpisodeEntryByKey.value.get(panel.key)?.endTime ?? "")
+      : 0;
+    const duration = index < panels.length - 1
+      ? (starts[index + 1] ?? start) - start
+      : explicitEnd > start
+        ? explicitEnd - start
+        : fallbackDuration;
+    return duration > 0 ? duration : fallbackDuration;
+  });
+}
+
+function creatorBroadcastTimelineItems(activePanel: CreatorDeckExport): CreatorBroadcastTimelineItem[] {
+  const panels = creatorBroadcastTimelinePanels(activePanel);
+  const durations = creatorTimelineDurations(panels);
+  return panels.map((panel, index) => ({
+    panel,
+    startLabel: creatorEpisodeEntryByKey.value.get(panel.key)?.time || `#${index + 1}`,
+    durationSeconds: durations[index] ?? 60,
+    isActive: panel.key === activePanel.key,
+    matchup: panel.key === activePanel.key
+      ? { wins: 0, losses: 0, ties: 0, total: 0, winRate: null }
+      : getTopDeckMatchup(activePanel.key, panel.key),
+  }));
+}
+
+function creatorTimelineRailStyle(activePanel: CreatorDeckExport) {
+  const items = creatorBroadcastTimelineItems(activePanel);
+  return {
+    gridTemplateColumns: items.length > 0
+      ? items.map((item) => `minmax(0, ${Math.max(1, item.durationSeconds)}fr)`).join(" ")
+      : "minmax(0, 1fr)",
+  };
+}
+
+function creatorTimelineToneClass(item: CreatorBroadcastTimelineItem) {
+  if (item.isActive || item.matchup.winRate == null) return "creator-broadcast-tick--neutral";
+  const winRate = Number(item.matchup.winRate);
+  if (winRate >= 0.525) return "creator-broadcast-tick--positive";
+  if (winRate <= 0.475) return "creator-broadcast-tick--negative";
+  return "creator-broadcast-tick--neutral";
+}
+
+function creatorTimelineDurationLabel(durationSeconds: number) {
+  const seconds = Math.max(0, Math.round(durationSeconds));
+  return `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`;
+}
+
+function creatorTimelineResultLabel(item: CreatorBroadcastTimelineItem) {
+  if (item.isActive) return "CURRENT SEGMENT";
+  if (!item.matchup.total || item.matchup.winRate == null) return "NO DATA";
+  return `${item.matchup.wins}-${item.matchup.losses}-${item.matchup.ties} / ${item.matchup.total}`;
+}
+
+function creatorTimelineTitle(item: CreatorBroadcastTimelineItem) {
+  const segment = `${item.startLabel} +${creatorTimelineDurationLabel(item.durationSeconds)}`;
+  if (item.isActive) return `${segment} / ${item.panel.displayName} / ACTIVE`;
+  if (!item.matchup.total || item.matchup.winRate == null) {
+    return `${segment} / ${item.panel.displayName} / NO MATCHUP DATA`;
+  }
+  return `${segment} / ${item.panel.displayName} / ${creatorBroadcastPct(item.matchup.winRate)} / ${item.matchup.wins}-${item.matchup.losses}-${item.matchup.ties}`;
 }
 
 function creatorPreviousRank(row: PrecomputedTopDeckRow) {
@@ -5288,6 +6668,41 @@ function htmlEscape(value: unknown) {
 }
 
 function getTopDeckMatchup(sourceKey: string, targetKey: string) {
+  const episodeMatchups = creatorEpisodeSource.value?.matchups ?? [];
+  const episodeDirect = episodeMatchups.find(
+    (item) => item.sourceKey === sourceKey && item.targetKey === targetKey,
+  );
+  if (episodeDirect) {
+    const wins = Number(episodeDirect.wins ?? 0);
+    const losses = Number(episodeDirect.losses ?? 0);
+    const ties = Number(episodeDirect.draws ?? 0);
+    const total = Number(episodeDirect.total ?? wins + losses + ties);
+    return {
+      wins,
+      losses,
+      ties,
+      total,
+      winRate: total > 0 ? (wins + ties * 0.5) / total : 0,
+    };
+  }
+
+  const episodeReverse = episodeMatchups.find(
+    (item) => item.sourceKey === targetKey && item.targetKey === sourceKey,
+  );
+  if (episodeReverse) {
+    const wins = Number(episodeReverse.losses ?? 0);
+    const losses = Number(episodeReverse.wins ?? 0);
+    const ties = Number(episodeReverse.draws ?? 0);
+    const total = Number(episodeReverse.total ?? wins + losses + ties);
+    return {
+      wins,
+      losses,
+      ties,
+      total,
+      winRate: total > 0 ? (wins + ties * 0.5) / total : 0,
+    };
+  }
+
   const matchups = activeCreatorTopDeckScope.value?.matchups ?? [];
   const direct = matchups.find((item) => item.deckA === sourceKey && item.deckB === targetKey);
   if (direct) {
@@ -5800,7 +7215,14 @@ function buildCreatorDataZipFiles(): ExportZipFile[] {
 }
 
 const creatorTopDeckProfilesReady = computed(() => {
-  const rows = creatorTopDeckRows.value;
+  const rows = creatorExportRows.value;
+  if (creatorEpisodeDataFile.value) {
+    return (
+      !creatorEpisodeSourceLoading.value &&
+      rows.length > 0 &&
+      rows.every((row) => creatorEpisodeSourceDeckByKey.value.has(row.key))
+    );
+  }
   return rows.length > 0 && rows.every((row) => creatorTopDeckProfiles.value.has(row.key));
 });
 
@@ -5821,6 +7243,7 @@ const creatorPackDataLoading = computed(() => {
   return (
     precomputedTopDecksLoading.value ||
     creatorTopDeckProfilesLoading.value ||
+    creatorEpisodeSourceLoading.value ||
     precomputedProfileLoading.value
   );
 });
@@ -5889,6 +7312,10 @@ function zipSafePngPath(value: string) {
   return `${parts.join("/") || "battle-tower-panel"}.png`;
 }
 
+function creatorPanelFileLabel(panel: CreatorDeckExport) {
+  return (panel.displayNameEn || panel.displayName).replace(/\s*[/\\]+\s*/g, " ");
+}
+
 function createTextZipFile(name: string, content: string, type = "text/html;charset=utf-8"): ExportZipFile {
   return {
     name: name.replace(/\\/g, "/"),
@@ -5908,6 +7335,7 @@ async function renderElementAsTransparentPng(
     cacheBust: true,
     pixelRatio: CREATOR_EXPORT_PIXEL_RATIO,
     backgroundColor: "rgba(0,0,0,0)",
+    skipFonts: true,
     filter: (node) => !(node instanceof HTMLElement && node.dataset.exportIgnore === "true"),
   });
 
@@ -5937,7 +7365,7 @@ function crc32(bytes: Uint8Array) {
   let crc = 0xffffffff;
 
   for (const byte of bytes) {
-    crc = CRC32_TABLE[(crc ^ byte) & 0xff] ^ (crc >>> 8);
+    crc = (CRC32_TABLE[(crc ^ byte) & 0xff] ?? 0) ^ (crc >>> 8);
   }
 
   return (crc ^ 0xffffffff) >>> 0;
@@ -6070,18 +7498,27 @@ async function downloadCreatorPack() {
     const includeCardRatePanels = props.creatorPackAssetMode !== "decklists";
     const baseName =
       props.creatorPackAssetMode === "decklists"
-        ? "battle-tower-meta-s-to-c-decklists"
-        : "battle-tower-meta-s-to-c";
-    const downloads: Array<{ element: HTMLElement | null; fileName: string }> = [
+        ? "battle-tower-meta-s-to-c-decklists-v2"
+        : "battle-tower-meta-s-to-c-v2";
+    const downloads: Array<{ panelKey: string; kind: CreatorExportKind; fileName: string }> = [
       ...(includeCardRatePanels
         ? exportRenderedTopDeckPanels.value.map((panel) => ({
-            element: topDeckExportPanelRefs.get(panel.key) ?? null,
-            fileName: `card-rates/top-${String(panel.index + 1).padStart(2, "0")}-${panel.displayNameEn || panel.displayName}-card-rates`,
+            panelKey: panel.key,
+            kind: "card-rate" as const,
+            fileName: `card-rates/top-${String(creatorCurrentRank(panel.row, panel.index)).padStart(2, "0")}-${creatorPanelFileLabel(panel)}-card-rates`,
+          }))
+        : []),
+      ...(includeCardRatePanels
+        ? exportSampleDeckPanels.value.map((panel) => ({
+            panelKey: panel.key,
+            kind: "broadcast" as const,
+            fileName: `broadcasts/top-${String(creatorCurrentRank(panel.row, panel.index)).padStart(2, "0")}-${creatorPanelFileLabel(panel)}-broadcast`,
           }))
         : []),
       ...exportSampleDeckPanels.value.map((panel) => ({
-        element: sampleDeckExportPanelRefs.get(panel.key) ?? null,
-        fileName: `decklists/top-${String(panel.index + 1).padStart(2, "0")}-${panel.displayNameEn || panel.displayName}-decklist`,
+        panelKey: panel.key,
+        kind: "decklist" as const,
+        fileName: `decklists/top-${String(creatorCurrentRank(panel.row, panel.index)).padStart(2, "0")}-${creatorPanelFileLabel(panel)}-decklist`,
       })),
     ];
     const files: ExportZipFile[] = [];
@@ -6093,9 +7530,20 @@ async function downloadCreatorPack() {
     files.push(...buildCreatorDataZipFiles());
 
     for (const item of downloads) {
-      if (!item.element) continue;
-      const rendered = await renderElementAsTransparentPng(item.element, item.fileName);
+      exportStageRenderKind.value = item.kind;
+      exportStagePanelKey.value = item.panelKey;
+      await nextTick();
+      await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
+
+      const element = item.kind === "card-rate"
+        ? topDeckExportPanelRefs.get(item.panelKey) ?? null
+        : sampleDeckExportPanelRefs.get(item.panelKey) ?? null;
+      if (!element) continue;
+
+      const rendered = await renderElementAsTransparentPng(element, item.fileName);
       if (rendered) files.push(rendered);
+      exportStagePanelKey.value = "";
+      await nextTick();
       await new Promise<void>((resolve) => window.setTimeout(resolve, 80));
     }
 
@@ -6106,6 +7554,8 @@ async function downloadCreatorPack() {
   } catch (error) {
     console.error("[DeckProfile] downloadCreatorPack failed:", error);
   } finally {
+    exportStagePanelKey.value = "";
+    exportStageRenderKind.value = "decklist";
     exportStageActive.value = false;
     downloadingCreatorPack.value = false;
   }
@@ -6117,10 +7567,9 @@ watch(
       props.autoDownloadCreatorPack,
       creatorPackAvailable.value,
       creatorPackDataLoading.value,
-      cardCatalogLoaded.value,
     ] as const,
-  async ([shouldDownload, available, loading, catalogReady]) => {
-    if (!shouldDownload || !available || loading || !catalogReady || autoCreatorStarted.value) return;
+  async ([shouldDownload, available, loading]) => {
+    if (!shouldDownload || !available || loading || autoCreatorStarted.value) return;
 
     autoCreatorStarted.value = true;
     await nextTick();
@@ -8518,7 +9967,7 @@ function resetPage() {
   z-index: -1;
   display: grid;
   gap: 24px;
-  width: 1600px;
+  width: 1920px;
   pointer-events: none;
 }
 
@@ -8527,15 +9976,13 @@ function resetPage() {
   overflow: hidden;
   width: 1500px;
   padding: 28px;
-  border-radius: 20px;
-  border: 1px solid rgba(77, 154, 220, 0.26);
+  border-radius: 0;
+  border: 1px solid var(--border);
   background:
-    linear-gradient(180deg, rgba(18, 43, 76, 0.2), rgba(6, 12, 22, 0.2)),
-    rgba(9, 22, 39, 0.96);
-  box-shadow:
-    0 18px 50px rgba(0, 0, 0, 0.28),
-    inset 0 1px 0 rgba(255, 255, 255, 0.04),
-    inset 0 0 0 1px rgba(86, 173, 255, 0.06);
+    linear-gradient(135deg, rgba(77, 163, 255, 0.032), transparent 44%),
+    linear-gradient(315deg, rgba(255, 209, 102, 0.026), transparent 44%),
+    var(--bg-panel);
+  box-shadow: none;
 }
 
 .export-panel__head {
@@ -8648,7 +10095,8 @@ function resetPage() {
 }
 
 .export-sample-panel {
-  width: 1180px;
+  width: 1920px;
+  height: 1080px;
   padding: 0;
   border: 0;
   border-radius: 0;
@@ -8656,9 +10104,726 @@ function resetPage() {
   box-shadow: none;
 }
 
+.export-sample-panel.export-decklist-panel {
+  width: 1180px;
+  height: auto;
+  min-height: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  background: #02050a;
+}
+
+.export-decklist-grid {
+  width: 1180px;
+  display: grid;
+  grid-template-columns: repeat(5, 220px);
+  grid-auto-rows: 308px;
+  column-gap: 20px;
+  row-gap: 16px;
+  align-content: start;
+  background: #02050a;
+}
+
+.export-decklist-card {
+  width: 220px;
+  height: 308px;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.export-decklist-card__media {
+  width: 220px;
+  height: 308px;
+  max-width: none;
+  border: 0;
+  background: #030812;
+  box-shadow: none;
+}
+
+.export-decklist-card__media:hover,
+.export-decklist-card__media:focus-visible {
+  border: 0;
+  box-shadow: none;
+  filter: none;
+  transform: none;
+}
+
+.export-decklist-card__media :deep(.card-display__quantity) {
+  left: 24px;
+  right: 24px;
+  bottom: 14px;
+  width: auto;
+  min-width: 0;
+  height: 74px;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0 14px;
+  overflow: hidden;
+  border: 2px solid #15cce8;
+  background:
+    linear-gradient(90deg, rgba(1, 31, 55, 0.98), rgba(2, 13, 32, 0.98));
+  color: #f8fbff;
+  font-size: 38px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  box-shadow:
+    0 0 14px rgba(21, 204, 232, 0.52),
+    inset 0 0 18px rgba(35, 173, 255, 0.12);
+  backdrop-filter: none;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.72);
+}
+
+.export-decklist-card__media :deep(.card-display__quantity::before) {
+  content: "";
+  position: absolute;
+  top: 12px;
+  bottom: 12px;
+  left: 78px;
+  width: 1px;
+  background: rgba(21, 204, 232, 0.74);
+}
+
+.export-decklist-card__media :deep(.card-display__quantity-icon) {
+  width: 38px;
+  height: 48px;
+  flex: 0 0 auto;
+  border-width: 2px;
+  border-radius: 4px;
+  transform: translateX(4px);
+}
+
+.export-decklist-card__media :deep(.card-display__quantity-icon::before) {
+  top: -8px;
+  left: 7px;
+  border-width: 2px;
+  border-radius: 4px;
+}
+
+.export-decklist-card__media :deep(.card-display__quantity-icon-ball) {
+  width: 18px;
+  height: 18px;
+  border-width: 2px;
+}
+
+.export-decklist-card__media :deep(.card-display__quantity-icon-ball::before) {
+  left: -9px;
+  right: -9px;
+  height: 2px;
+}
+
+.export-decklist-card__media :deep(.card-display__quantity-icon-ball::after) {
+  width: 5px;
+  height: 5px;
+}
+
 .export-sample-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
   gap: 16px;
+}
+
+.creator-broadcast {
+  --broadcast-safe: 48px;
+  --broadcast-gap: 24px;
+  --broadcast-left: 1116px;
+  --broadcast-right: 684px;
+  --broadcast-top: 816px;
+  --broadcast-timeline: 144px;
+
+  width: 1920px;
+  height: 1080px;
+  display: grid;
+  grid-template-columns: var(--broadcast-left) var(--broadcast-right);
+  grid-template-rows: var(--broadcast-top) var(--broadcast-timeline);
+  gap: var(--broadcast-gap);
+  padding: var(--broadcast-safe);
+  box-sizing: border-box;
+  color: var(--text-main);
+  font-family: var(--font-body);
+  background: transparent;
+}
+
+.btm-broadcast-frame {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 0;
+  background:
+    linear-gradient(135deg, rgba(77, 163, 255, 0.04), transparent 46%),
+    linear-gradient(315deg, rgba(255, 209, 102, 0.026), transparent 52%),
+    var(--bg-panel);
+  box-shadow: none;
+}
+
+.btm-broadcast-frame::before,
+.btm-broadcast-frame::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  width: 12px;
+  height: 12px;
+  pointer-events: none;
+}
+
+.btm-broadcast-frame::before {
+  top: -1px;
+  left: -1px;
+  border-top: 1px solid var(--accent-primary);
+  border-left: 1px solid var(--accent-primary);
+}
+
+.btm-broadcast-frame::after {
+  right: -1px;
+  bottom: -1px;
+  border-right: 1px solid var(--accent-primary);
+  border-bottom: 1px solid var(--accent-primary);
+}
+
+.creator-broadcast__deck-frame {
+  grid-column: 1;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 272px minmax(0, 1fr);
+  gap: 24px;
+  padding: 24px;
+}
+
+.creator-broadcast__intel {
+  min-width: 0;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto;
+  gap: 16px;
+  padding-right: 24px;
+  border-right: 1px solid var(--border);
+}
+
+.creator-broadcast__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent-primary-soft);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.creator-broadcast__signal,
+.creator-broadcast__live-dot {
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  background: var(--accent-success);
+}
+
+.creator-broadcast__title-group {
+  min-width: 0;
+}
+
+.creator-broadcast__rank {
+  margin: 0 0 8px;
+  color: var(--accent-secondary);
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  line-height: 1;
+}
+
+.creator-broadcast__title {
+  margin: 0;
+  color: var(--text-main);
+  font-family: var(--font-display-cn);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.08;
+}
+
+.creator-broadcast__subtitle {
+  margin: 10px 0 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.creator-broadcast__sprites {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.creator-broadcast__sprite {
+  width: 62px;
+  height: 62px;
+  object-fit: contain;
+  image-rendering: auto;
+}
+
+.creator-broadcast__sprite-fallback {
+  min-width: 62px;
+  min-height: 62px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border);
+  background: rgba(8, 15, 28, 0.96);
+  color: var(--text-secondary);
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.creator-broadcast__metrics {
+  align-self: start;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.creator-broadcast__metric {
+  min-width: 0;
+  min-height: 106px;
+  display: grid;
+  align-content: center;
+  gap: 6px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--accent-primary);
+  background: rgba(8, 15, 28, 0.76);
+}
+
+.creator-broadcast__metric--wide {
+  grid-column: span 2;
+  min-height: 142px;
+}
+
+.creator-broadcast__metric-label {
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.creator-broadcast__metric-value {
+  color: var(--text-main);
+  font-size: 38px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 0.95;
+}
+
+.creator-broadcast__metric--wide .creator-broadcast__metric-value {
+  font-size: 68px;
+}
+
+.creator-broadcast__metric small {
+  color: var(--text-muted);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.creator-broadcast__metric--tier {
+  --creator-tier-accent: var(--tier-b);
+  border-left-color: var(--creator-tier-accent);
+}
+
+.creator-broadcast-tier--sss,
+.creator-broadcast-tier--ss,
+.creator-broadcast-tier--s {
+  --creator-tier-accent: var(--tier-s);
+}
+
+.creator-broadcast-tier--a {
+  --creator-tier-accent: var(--tier-a);
+}
+
+.creator-broadcast-tier--b {
+  --creator-tier-accent: var(--tier-b);
+}
+
+.creator-broadcast-tier--c {
+  --creator-tier-accent: var(--tier-c);
+}
+
+.creator-broadcast__metric--tier .creator-broadcast__metric-value {
+  color: var(--creator-tier-accent);
+}
+
+.creator-broadcast__sample {
+  display: grid;
+  gap: 6px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.creator-broadcast__sample span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.creator-broadcast__decklist {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 12px;
+}
+
+.creator-broadcast__section-head,
+.creator-broadcast__timeline-head {
+  min-width: 0;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.creator-broadcast__section-head strong,
+.creator-broadcast__timeline-head strong {
+  display: block;
+  margin-top: 4px;
+  color: var(--text-main);
+  font-family: var(--font-display-en);
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.creator-broadcast__deck-count,
+.creator-broadcast__timeline-meta {
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.creator-broadcast__card-grid {
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+  align-content: start;
+  overflow: hidden;
+}
+
+.creator-broadcast__card-grid--dense {
+  grid-template-columns: repeat(5, minmax(0, 120px));
+  justify-content: space-between;
+  gap: 8px 10px;
+}
+
+.creator-broadcast-card {
+  min-width: 0;
+}
+
+.creator-broadcast-card__media {
+  width: 100%;
+  max-width: none;
+  border-color: var(--border);
+  background: var(--bg-card);
+  box-shadow: none;
+}
+
+.creator-broadcast__card-grid--dense .creator-broadcast-card__media {
+  max-width: 120px;
+  justify-self: center;
+}
+
+.creator-broadcast__energy {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  width: auto;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+.creator-broadcast__energy-icon {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
+
+.creator-broadcast-card__media:hover,
+.creator-broadcast-card__media:focus-visible {
+  border-color: var(--border);
+  box-shadow: none;
+  filter: none;
+  transform: none;
+}
+
+.creator-broadcast-card__media :deep(.card-display__quantity) {
+  right: 8px;
+  bottom: 8px;
+  min-width: 54px;
+  height: 34px;
+  gap: 8px;
+  padding: 0 10px;
+  border: 1px solid var(--border-accent);
+  background: rgba(3, 10, 20, 0.9);
+  color: var(--text-main);
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: 0;
+  box-shadow: inset 0 1px 0 rgba(248, 250, 252, 0.08);
+  backdrop-filter: none;
+  text-shadow: none;
+}
+
+.creator-broadcast-card__media :deep(.card-display__quantity-icon) {
+  width: 10px;
+  height: 14px;
+  border-color: var(--accent-primary-soft);
+  background: rgba(77, 163, 255, 0.12);
+  box-shadow: none;
+}
+
+.creator-broadcast__game-frame {
+  grid-column: 2;
+  grid-row: 1;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 16px;
+  padding: 24px;
+  background: transparent;
+}
+
+.creator-broadcast__game-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+
+.creator-broadcast__game-viewport {
+  position: relative;
+  width: min(100%, 576px);
+  aspect-ratio: 3 / 4;
+  align-self: center;
+  justify-self: center;
+  border: 1px solid var(--border);
+  background: transparent;
+}
+
+.creator-broadcast__focus {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  pointer-events: none;
+}
+
+.creator-broadcast__focus--tl {
+  top: 12px;
+  left: 12px;
+  border-top: 1px solid var(--accent-primary);
+  border-left: 1px solid var(--accent-primary);
+}
+
+.creator-broadcast__focus--tr {
+  top: 12px;
+  right: 12px;
+  border-top: 1px solid var(--accent-secondary);
+  border-right: 1px solid var(--accent-secondary);
+}
+
+.creator-broadcast__focus--bl {
+  bottom: 12px;
+  left: 12px;
+  border-bottom: 1px solid var(--accent-primary);
+  border-left: 1px solid var(--accent-primary);
+}
+
+.creator-broadcast__focus--br {
+  right: 12px;
+  bottom: 12px;
+  border-right: 1px solid var(--accent-secondary);
+  border-bottom: 1px solid var(--accent-secondary);
+}
+
+.creator-broadcast__timeline {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 8px;
+  padding: 12px 24px;
+}
+
+.creator-broadcast__timeline-head {
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+.creator-broadcast__timeline-head > div {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.creator-broadcast__timeline .creator-broadcast__label {
+  font-size: 11px;
+}
+
+.creator-broadcast__timeline-head strong {
+  display: inline;
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.creator-broadcast__timeline-rail {
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: repeat(15, minmax(0, 1fr));
+  gap: 8px;
+  align-items: stretch;
+}
+
+.creator-broadcast-tick {
+  --tick-accent: var(--accent-secondary);
+  position: relative;
+  min-width: 0;
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto minmax(34px, 1fr) auto auto 8px;
+  align-items: center;
+  justify-items: center;
+  row-gap: 2px;
+  padding: 3px 5px 4px;
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--tick-accent);
+  background: rgba(8, 15, 28, 0.72);
+}
+
+.creator-broadcast-tick--positive {
+  --tick-accent: rgba(0, 255, 136, 0.78);
+}
+
+.creator-broadcast-tick--negative {
+  --tick-accent: rgba(255, 59, 79, 0.78);
+}
+
+.creator-broadcast-tick--neutral {
+  --tick-accent: rgba(255, 209, 102, 0.72);
+}
+
+.creator-broadcast-tick--active {
+  --tick-accent: var(--accent-primary);
+  border-color: var(--border-accent);
+  background: rgba(77, 163, 255, 0.12);
+}
+
+.creator-broadcast-tick__time {
+  width: 100%;
+  overflow: hidden;
+  color: var(--text-muted);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.creator-broadcast-tick__sprites {
+  min-width: 0;
+  min-height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.creator-broadcast-tick__sprite {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.creator-broadcast-tick__fallback {
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.creator-broadcast-tick__rate {
+  color: var(--text-main);
+  font-size: clamp(14px, 1.2vw, 22px);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.creator-broadcast-tick__result {
+  width: 100%;
+  overflow: hidden;
+  color: var(--text-muted);
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.creator-broadcast-tick__bar {
+  grid-column: 1;
+  position: relative;
+  width: calc(100% + 8px);
+  height: 1px;
+  align-self: end;
+  background: var(--border-accent);
+}
+
+.creator-broadcast-tick__bar i {
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  width: 7px;
+  height: 7px;
+  border: 1px solid var(--tick-accent);
+  background: var(--bg-deep);
+  transform: translate(-50%, -50%);
+}
+
+.creator-broadcast-tick--active .creator-broadcast-tick__bar i {
+  background: var(--accent-primary);
+  box-shadow: 0 0 8px rgba(77, 163, 255, 0.48);
 }
 
 @media (max-width: 1080px) {

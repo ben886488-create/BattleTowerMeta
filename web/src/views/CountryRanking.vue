@@ -85,7 +85,7 @@
                     v-for="leader in row.topPlayers"
                     :key="`${row.countryCode}-${leader.player}`"
                     class="leaderLink"
-                    :to="{ name: `${lang}-player-profile`, params: { playerSlug: leader.playerSlug } }"
+                    :to="playerProfileTo(leader.playerSlug)"
                   >
                     <span class="leaderName">{{ leader.player }}</span>
                     <span class="leaderPoints mono">{{ formatPoints(leader.points) }}</span>
@@ -152,7 +152,7 @@
               v-for="leader in row.topPlayers"
               :key="`${row.countryCode}-${leader.player}-mobile`"
               class="leaderLink"
-              :to="{ name: `${lang}-player-profile`, params: { playerSlug: leader.playerSlug } }"
+              :to="playerProfileTo(leader.playerSlug)"
             >
               <span class="leaderName">{{ leader.player }}</span>
               <span class="leaderPoints mono">{{ formatPoints(leader.points) }}</span>
@@ -234,7 +234,7 @@
               </span>
               <RouterLink
                 class="playerLink"
-                :to="{ name: `${lang}-player-profile`, params: { playerSlug: leader.playerSlug } }"
+                :to="playerProfileTo(leader.playerSlug)"
                 @click="closeCountryModal"
               >
                 {{ leader.player }}
@@ -277,6 +277,7 @@ import {
   type TimeFilterValue,
 } from "../lib/playerEntries";
 import { getCountryDisplayName } from "../lib/countryNames";
+import { routeLang as getRouteLang, withLang } from "../lib/siteI18n";
 
 type CountryLeader = {
   player: string;
@@ -297,12 +298,13 @@ type CountryRow = {
 
 const route = useRoute();
 
-const lang = computed<"zh" | "en">(() => {
-  const seg = String(route.path).split("/")[1];
-  return seg === "en" ? "en" : "zh";
-});
+const lang = computed<"zh" | "en">(() => getRouteLang(route));
 
 const isZh = computed(() => lang.value === "zh");
+
+function playerProfileTo(playerSlug: string) {
+  return withLang(`/pocket/players/${playerSlug}`, lang.value);
+}
 
 const ui = computed(() => {
   if (isZh.value) {

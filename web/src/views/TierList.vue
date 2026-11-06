@@ -1080,6 +1080,7 @@ import {
   type PrecomputedTopDeckScope,
   type PrecomputedTopDecksPayload,
 } from "../lib/precomputedViews";
+import { routeLang as getRouteLang } from "../lib/siteI18n";
 
 const BASE_URL = (import.meta as any).env?.BASE_URL ?? "/";
 const DeckProfile = defineAsyncComponent(() => import("./DeckProfile.vue"));
@@ -1211,7 +1212,7 @@ const creatorPackActive = ref(false);
 const creatorPackMode = ref<"all" | "decklists">("decklists");
 
 const locale = computed<"zh" | "en">(() => {
-  return String(route.path).split("/")[1] === "en" ? "en" : "zh";
+  return getRouteLang(route);
 });
 
 const ui = computed(() => {
@@ -1436,7 +1437,7 @@ const evRailItems = EV_RAIL_ITEMS;
 const activeEvSectionId = ref<string>(EV_RAIL_ITEMS[0].id);
 const pressedEvSectionId = ref<string | null>(null);
 let evRailRaf = 0;
-let evRailPressTimer: ReturnType<typeof window.setTimeout> | undefined;
+let evRailPressTimer: number | undefined;
 
 const evRailProgress = computed(() => {
   const index = Math.max(0, EV_RAIL_ITEMS.findIndex((item) => item.id === activeEvSectionId.value));
@@ -1445,7 +1446,6 @@ const evRailProgress = computed(() => {
 type TimeFilterValue = "all" | "past7" | "prev7" | "past4w" | string;
 type SetFilterValue = "" | string;
 type SwissLabel = "BO1" | "BO3" | "Other";
-type SwissValue = "" | SwissLabel;
 type TopCutValue = "all" | "64" | "32" | "16" | "8" | "4" | "2" | "1";
 
 async function fetchJson<T>(url: string): Promise<T> {
@@ -1507,7 +1507,7 @@ function updateActiveEvSection() {
   if (typeof window === "undefined" || typeof document === "undefined") return;
 
   const viewportTarget = window.innerHeight * 0.42;
-  let nextActive = EV_RAIL_ITEMS[0].id;
+  let nextActive: string = EV_RAIL_ITEMS[0].id;
   let bestDistance = Number.POSITIVE_INFINITY;
 
   for (const item of EV_RAIL_ITEMS) {
@@ -1821,8 +1821,9 @@ function deckShortLabel(deckKey: string) {
 
 function deckProfileTo(deckKey: string) {
   return {
-    path: `/${locale.value}/top-decks/${encodeURIComponent(deckKey)}`,
+    path: `/pocket/decks/${encodeURIComponent(deckKey)}`,
     query: {
+      lang: locale.value === "en" ? "en" : undefined,
       time: filters.time,
       set: filters.set,
       topCut: filters.topCut,
@@ -1860,7 +1861,6 @@ const visibleTierGroups = computed(() => {
 
 const tierPanelDeckCount = computed(() => tierPanelRows.value.length);
 
-const topDeckKeySet = computed(() => new Set(topDeckRows.value.map((row) => row.deck)));
 const usageTopDeckKeySet = computed(() => new Set(usageTopDeckRows.value.map((row) => row.deck)));
 
 const otherUsageRow = computed<TierRow | null>(() => {
@@ -1885,10 +1885,6 @@ const otherUsageRow = computed<TierRow | null>(() => {
 
 const usageBreakdownRows = computed(() => {
   return otherUsageRow.value ? [...usageTopDeckRows.value, otherUsageRow.value] : [...usageTopDeckRows.value];
-});
-
-const usageMax = computed(() => {
-  return usageTopDeckRows.value.reduce((max, row) => Math.max(max, row.usage), 0);
 });
 
 type UsagePieSegment = {
@@ -2025,22 +2021,7 @@ function scoreTooltip(value: number) {
 
 function usagePieColor(row: TierRow, index: number) {
   if (row.isOther) return "rgba(100, 116, 139, 0.9)";
-  return USAGE_PIE_COLORS[index % USAGE_PIE_COLORS.length];
-}
-
-function usageBarWidth(usage: number) {
-  const max = usageMax.value;
-  if (!max || usage <= 0) return "0%";
-  return `${Math.max(3, Math.min(100, (usage / max) * 100)).toFixed(2)}%`;
-}
-
-function usageBarFill(row: TierRow) {
-  if (row.isOther) {
-    return "linear-gradient(90deg, rgba(100, 116, 139, 0.95), rgba(168, 179, 199, 0.72))";
-  }
-  const tier = row.tier;
-  const accent = tierColor(tier).replace(/0\.\d+\)/, "0.98)");
-  return `linear-gradient(90deg, rgba(77, 163, 255, 0.98), ${accent})`;
+  return USAGE_PIE_COLORS[index % USAGE_PIE_COLORS.length] ?? USAGE_PIE_COLORS[0];
 }
 
 function scoreBarWidth(score: number) {
@@ -2722,10 +2703,8 @@ const tournamentsError = ref("");
 
 const standingsCache = reactive<Record<string, StandingRow[]>>({});
 const pairingsCache = reactive<Record<string, PairingRow[]>>({});
-const detailsCache = reactive<Record<string, Record<string, any> | null>>({});
 const standingsLoading = reactive<Record<string, boolean>>({});
 const pairingsLoading = reactive<Record<string, boolean>>({});
-const detailsLoading = reactive<Record<string, boolean>>({});
 
 function dataUrl(path: string) {
   return `${BASE_URL}${path}`;
@@ -2743,20 +2722,12 @@ function pairingsUrl(id: string) {
   return dataUrl(`data/raw/${id}/pairings.json`);
 }
 
-function detailsUrl(id: string) {
-  return dataUrl(`data/raw/${id}/details.json`);
-}
-
 function hasStandings(id: string) {
   return Object.prototype.hasOwnProperty.call(standingsCache, id);
 }
 
 function hasPairings(id: string) {
   return Object.prototype.hasOwnProperty.call(pairingsCache, id);
-}
-
-function hasDetails(id: string) {
-  return Object.prototype.hasOwnProperty.call(detailsCache, id);
 }
 
 function startOfUtcDayMs(ms: number) {
@@ -2774,18 +2745,6 @@ function normalizeSwissValue(raw: unknown): SwissLabel | undefined {
   if (!text) return undefined;
   if (text === "BO1") return "BO1";
   if (text === "BO3") return "BO3";
-  return "Other";
-}
-
-function swissLabelFromDetails(details: Record<string, any> | null | undefined): SwissLabel {
-  const phases = Array.isArray(details?.phases) ? details.phases : [];
-  const phase1 = phases.find((phase: any) => phase?.phase === 1) ?? phases[0];
-  const phaseType = String(phase1?.type ?? "").trim().toUpperCase();
-  const phaseMode = String(phase1?.mode ?? "").trim().toUpperCase();
-
-  if (phaseType !== "SWISS") return "Other";
-  if (phaseMode === "BO1") return "BO1";
-  if (phaseMode === "BO3") return "BO3";
   return "Other";
 }
 
@@ -2917,32 +2876,6 @@ async function ensureTournamentDataForIds(ids: string[]) {
   });
 }
 
-async function ensureSwissForIds(ids: string[]) {
-  const missing = ids.filter((id) => !hasDetails(id) && !detailsLoading[id]);
-
-  await runWithConcurrency(missing, 4, async (id) => {
-    detailsLoading[id] = true;
-    try {
-      const details = await fetchJson<Record<string, any>>(detailsUrl(id));
-      detailsCache[id] = details ?? null;
-    } catch {
-      detailsCache[id] = null;
-    } finally {
-      detailsLoading[id] = false;
-    }
-  });
-
-  if (ids.length === 0) return;
-  const idSet = new Set(ids);
-  tournaments.value = tournaments.value.map((tournament) => {
-    if (!idSet.has(tournament.id)) return tournament;
-    const swiss =
-      normalizeSwissValue(tournament.swiss) ??
-      swissLabelFromDetails(detailsCache[tournament.id]);
-    return { ...tournament, swiss };
-  });
-}
-
 function normalizeStringArray(value: unknown): string[] {
   const input = Array.isArray(value) ? value : value == null ? [] : [value];
   const mapped = input
@@ -3012,15 +2945,17 @@ async function waitForTierPanelImages(root: HTMLElement) {
 async function downloadTierPanelPng() {
   if (downloadingTierPanel.value || !tierPanelCaptureRef.value || tierPanelDeckCount.value === 0) return;
 
+  const captureElement = tierPanelCaptureRef.value;
   downloadingTierPanel.value = true;
+  captureElement.dataset.exporting = "true";
 
   try {
     await nextTick();
-    await waitForTierPanelImages(tierPanelCaptureRef.value);
+    await waitForTierPanelImages(captureElement);
     await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
 
     const { toPng } = await import("html-to-image");
-    const dataUrl = await toPng(tierPanelCaptureRef.value, {
+    const dataUrl = await toPng(captureElement, {
       cacheBust: true,
       pixelRatio: 2,
       filter: (node) => {
@@ -3041,6 +2976,7 @@ async function downloadTierPanelPng() {
   } catch (error) {
     console.error("[TierList] downloadTierPanelPng failed:", error);
   } finally {
+    delete captureElement.dataset.exporting;
     downloadingTierPanel.value = false;
   }
 }
@@ -5676,6 +5612,7 @@ onMounted(async () => {
 
 .tier-section__title {
   display: inline-flex;
+  width: 100%;
   align-items: baseline;
   flex-wrap: wrap;
   gap: 4px 10px;

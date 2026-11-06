@@ -58,9 +58,7 @@ function safeMetadataText(source: Record<string, JsonValue> | undefined, key: st
 
 function fallbackProfile(user: User): UserProfile {
   const meta = user.user_metadata as Record<string, JsonValue> | undefined;
-  const emailName = String(user.email ?? "")
-    .split("@")[0]
-    .trim();
+  const emailName = (String(user.email ?? "").split("@")[0] ?? "").trim();
 
   return {
     id: user.id,

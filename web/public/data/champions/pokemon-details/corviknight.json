@@ -1,0 +1,3437 @@
+{
+  "pokemon": {
+    "slug": "corviknight",
+    "name": "Corviknight",
+    "baseName": "Corviknight",
+    "savedName": "Corviknight",
+    "form": "",
+    "types": [
+      "Flying",
+      "Steel"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Corviknight.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/823.png",
+    "stats": {
+      "hp": 173,
+      "attack": 107,
+      "defense": 125,
+      "spAttack": 73,
+      "spDefense": 105,
+      "speed": 87,
+      "total": 670
+    },
+    "rank": 61,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Brave Bird",
+    "topItem": "Leftovers",
+    "topTeammate": "Tyranitar"
+  },
+  "moves": [
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "move",
+      "rank": 1,
+      "name": "Brave Bird",
+      "percentage": 0.748,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "move",
+        "rank": 1,
+        "name": "Brave Bird",
+        "percentage": "74.8%",
+        "percentage_value": 74.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "move",
+      "rank": 2,
+      "name": "Tailwind",
+      "percentage": 0.637,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "move",
+        "rank": 2,
+        "name": "Tailwind",
+        "percentage": "63.7%",
+        "percentage_value": 63.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "move",
+      "rank": 3,
+      "name": "Roost",
+      "percentage": 0.579,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "move",
+        "rank": 3,
+        "name": "Roost",
+        "percentage": "57.9%",
+        "percentage_value": 57.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "move",
+      "rank": 4,
+      "name": "Iron Head",
+      "percentage": 0.502,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "move",
+        "rank": 4,
+        "name": "Iron Head",
+        "percentage": "50.2%",
+        "percentage_value": 50.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "move",
+      "rank": 5,
+      "name": "Body Press",
+      "percentage": 0.478,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "move",
+        "rank": 5,
+        "name": "Body Press",
+        "percentage": "47.8%",
+        "percentage_value": 47.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "move",
+      "rank": 6,
+      "name": "Bulk Up",
+      "percentage": 0.332,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "move",
+        "rank": 6,
+        "name": "Bulk Up",
+        "percentage": "33.2%",
+        "percentage_value": 33.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "move",
+      "rank": 7,
+      "name": "Iron Defense",
+      "percentage": 0.26,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "move",
+        "rank": 7,
+        "name": "Iron Defense",
+        "percentage": "26.0%",
+        "percentage_value": 26,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "move",
+      "rank": 8,
+      "name": "Protect",
+      "percentage": 0.238,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "move",
+        "rank": 8,
+        "name": "Protect",
+        "percentage": "23.8%",
+        "percentage_value": 23.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "move",
+      "rank": 9,
+      "name": "Taunt",
+      "percentage": 0.064,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "move",
+        "rank": 9,
+        "name": "Taunt",
+        "percentage": "6.4%",
+        "percentage_value": 6.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "move",
+      "rank": 10,
+      "name": "U-turn",
+      "percentage": 0.032,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "move",
+        "rank": 10,
+        "name": "U-turn",
+        "percentage": "3.2%",
+        "percentage_value": 3.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Leftovers",
+      "percentage": 0.73,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Leftovers",
+        "percentage": "73.0%",
+        "percentage_value": 73,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Sitrus Berry",
+      "percentage": 0.118,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Sitrus Berry",
+        "percentage": "11.8%",
+        "percentage_value": 11.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Occa Berry",
+      "percentage": 0.062,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Occa Berry",
+        "percentage": "6.2%",
+        "percentage_value": 6.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Lum Berry",
+      "percentage": 0.011,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Lum Berry",
+        "percentage": "1.1%",
+        "percentage_value": 1.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Quick Claw",
+      "percentage": 0.011,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Quick Claw",
+        "percentage": "1.1%",
+        "percentage_value": 1.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Metal Coat",
+      "percentage": 0.9,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Metal Coat",
+        "percentage": "0.9%",
+        "percentage_value": 0.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Sharp Beak",
+      "percentage": 0.8,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Sharp Beak",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Life Orb",
+      "percentage": 0.8,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Life Orb",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Mental Herb",
+      "percentage": 0.8,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Mental Herb",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Shell Bell",
+      "percentage": 0.5,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Shell Bell",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "ability",
+      "rank": 1,
+      "name": "Mirror Armor",
+      "percentage": 0.951,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "ability",
+        "rank": 1,
+        "name": "Mirror Armor",
+        "percentage": "95.1%",
+        "percentage_value": 95.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "ability",
+      "rank": 2,
+      "name": "Pressure",
+      "percentage": 0.032,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "ability",
+        "rank": 2,
+        "name": "Pressure",
+        "percentage": "3.2%",
+        "percentage_value": 3.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "ability",
+      "rank": 3,
+      "name": "Unnerve",
+      "percentage": 0.017,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "ability",
+        "rank": 3,
+        "name": "Unnerve",
+        "percentage": "1.7%",
+        "percentage_value": 1.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Tyranitar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Tyranitar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Excadrill",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Excadrill",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Rotom Wash",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Rotom Wash",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Houndstone",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Houndstone",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Raichu",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Raichu",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Sneasler",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Sneasler",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Sylveon",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Sylveon",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Impish",
+      "percentage": 0.401,
+      "statUp": "Defense",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Impish",
+        "percentage": "40.1%",
+        "percentage_value": 40.1,
+        "stat_up": "Defense",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Careful",
+      "percentage": 0.282,
+      "statUp": "Sp. Def",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Careful",
+        "percentage": "28.2%",
+        "percentage_value": 28.2,
+        "stat_up": "Sp. Def",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Adamant",
+      "percentage": 0.223,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Adamant",
+        "percentage": "22.3%",
+        "percentage_value": 22.3,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Jolly",
+      "percentage": 0.034,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Jolly",
+        "percentage": "3.4%",
+        "percentage_value": 3.4,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Relaxed",
+      "percentage": 0.019,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Relaxed",
+        "percentage": "1.9%",
+        "percentage_value": 1.9,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Brave",
+      "percentage": 0.015,
+      "statUp": "Attack",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Brave",
+        "percentage": "1.5%",
+        "percentage_value": 1.5,
+        "stat_up": "Attack",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Bold",
+      "percentage": 1,
+      "statUp": "Defense",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Bold",
+        "percentage": "1.0%",
+        "percentage_value": 1,
+        "stat_up": "Defense",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Sassy",
+      "percentage": 0.8,
+      "statUp": "Sp. Def",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Sassy",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "Sp. Def",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Lax",
+      "percentage": 0.2,
+      "statUp": "Defense",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Lax",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Defense",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Naughty",
+      "percentage": 0.2,
+      "statUp": "Attack",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Naughty",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.129,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "12.9%",
+        "percentage_value": 12.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 32,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.058,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "5.8%",
+        "percentage_value": 5.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 32,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 2
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.057,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "5.7%",
+        "percentage_value": 5.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 27,
+        "attack_points": 11,
+        "defense_points": 1,
+        "sp_atk_points": 0,
+        "sp_def_points": 5,
+        "speed_points": 22
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.029,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "2.9%",
+        "percentage_value": 2.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 32,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.026,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "2.6%",
+        "percentage_value": 2.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 2,
+        "defense_points": 32,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.018,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "1.8%",
+        "percentage_value": 1.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.016,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "1.6%",
+        "percentage_value": 1.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 13,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 13,
+        "speed_points": 8
+      }
+    },
+    {
+      "pokemon": "Corviknight",
+      "position": 61,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.015,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Corviknight",
+        "column_position": 61,
+        "position": 61,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "1.5%",
+        "percentage_value": 1.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 10,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 24,
+        "speed_points": 0
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a505ee7063cb29d318e8401-skwovetboi",
+      "name": "Skwovetboi · VGC UU Regulation M-B Weekly #1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "pyroar",
+          "name": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Unnerve",
+          "moves": [
+            "Overheat",
+            "Will-O-Wisp",
+            "Snarl",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Brave Bird",
+            "Body Press",
+            "Bulk Up",
+            "Roost"
+          ]
+        },
+        {
+          "slug": "clefable",
+          "name": "Clefable",
+          "item": "Sitrus Berry",
+          "ability": "Unaware",
+          "moves": [
+            "Moonblast",
+            "Follow Me",
+            "Life Dew",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "feraligatr",
+          "name": "Feraligatr",
+          "item": "Life Orb",
+          "ability": "Sheer Force",
+          "moves": [
+            "Liquidation",
+            "Dragon Dance",
+            "Protect",
+            "Crunch"
+          ]
+        },
+        {
+          "slug": "meowstic",
+          "name": "Meowstic",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Psyshock",
+            "Reflect",
+            "Light Screen",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "sceptile",
+          "name": "Sceptile",
+          "item": "Sceptilite",
+          "ability": "Overgrow",
+          "moves": [
+            "Energy Ball",
+            "Dragon Pulse",
+            "Earth Power",
+            "Detect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 4,
+      "tournament": "VGC UU Regulation M-B Weekly #1",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Skwovetboi",
+      "record": "3-1-0"
+    },
+    {
+      "id": "6a4dbc1e063cb29d318e66e7-orielstar",
+      "name": "orielstar · The Grim Challenge #3 - Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Protect",
+            "Moonblast",
+            "Dazzling Gleam",
+            "Calm Mind"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Protect",
+            "Brave Bird",
+            "Iron Head",
+            "Bulk Up"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Thunderbolt",
+            "Volt Switch",
+            "Electroweb",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Protect",
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite X",
+          "ability": "Blaze",
+          "moves": [
+            "Protect",
+            "Flare Blitz",
+            "Dragon Claw",
+            "Dragon Dance"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "The Grim Challenge #3 - Champions",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "orielstar",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-fael",
+      "name": "Fael - Grama/Metal · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sceptile",
+          "name": "Sceptile",
+          "item": "Sceptilite",
+          "ability": "Overgrow",
+          "moves": [
+            "Energy Ball",
+            "Earth Power",
+            "Dragon Pulse",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mow-rotom",
+          "name": "Mow Rotom",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Discharge",
+            "Volt Switch",
+            "Leaf Storm",
+            "Trick"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Psychic Fangs",
+            "Rock Slide",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Encore",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Iron Head",
+            "Sucker Punch",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Brave Bird",
+            "Bulk Up",
+            "Body Press",
+            "Tailwind"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Fael - Grama/Metal",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a51f42365724db9ded43093-tobiyume",
+      "name": "TobiYume · Tenki's Cart Weekly #109 - Reg MB",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Sand Rush",
+          "moves": [
+            "Earthquake",
+            "Iron Head",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Brave Bird",
+            "Bulk Up",
+            "Roost",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Thunderbolt",
+            "Hydro Pump",
+            "Electroweb",
+            "Trick"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Dire Claw",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Calm Mind",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "Tenki's Cart Weekly #109 - Reg MB",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "TobiYume",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a420fbf83fd320299bd3c3c-luckylandia",
+      "name": "LuckyLandia · Sketch Academy Sunday Regulation M-B Tournament",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Occa Berry",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Brave Bird",
+            "Iron Head",
+            "Tailwind",
+            "Roost"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Hyper Beam",
+            "Quick Attack",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gyarados",
+          "name": "Gyarados",
+          "item": "Gyaradosite",
+          "ability": "Intimidate",
+          "moves": [
+            "Crunch",
+            "Waterfall",
+            "Dragon Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Flare Blitz",
+            "Darkest Lariat"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Life Dew",
+            "Trick Room"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "Sketch Academy Sunday Regulation M-B Tournament",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "LuckyLandia",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a4516dcc87cd9ff0a31469e-arceon",
+      "name": "Arceon · Pride Month 2 Celebration!!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Focus Sash",
+          "ability": "Speed Boost",
+          "moves": [
+            "Swords Dance",
+            "Protect",
+            "Thunder Punch",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Aurora Veil",
+            "Destiny Bond",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Pressure",
+          "moves": [
+            "Roost",
+            "Iron Defense",
+            "Body Press",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "meowscarada",
+          "name": "Meowscarada",
+          "item": "Choice Scarf",
+          "ability": "Protean",
+          "moves": [
+            "Play Rough",
+            "Triple Axel",
+            "Flower Trick",
+            "Knock Off"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Yache Berry",
+          "ability": "Pressure",
+          "moves": [
+            "Tailwind",
+            "Dual Wingbeat",
+            "Rock Slide",
+            "Stealth Rock"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Sitrus Berry",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Brick Break",
+            "Rock Slide",
+            "Outrage"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.25,
+      "sampleCount": 4,
+      "tournament": "Pride Month 2 Celebration!!",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Arceon",
+      "record": "1-3-0"
+    },
+    {
+      "id": "6a5117e465724db9ded421f1-kevszion2",
+      "name": "kevszion2 · Øutcast's Warm Up Cup",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Life Orb",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Hyper Beam",
+            "Yawn",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Iron Head",
+            "Tailwind",
+            "Brave Bird",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Focus Sash",
+          "ability": "Oblivious",
+          "moves": [
+            "High Horsepower",
+            "Ice Shard",
+            "Icicle Crash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Aqua Jet",
+            "Last Respects",
+            "Wave Crash",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Chople Berry",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Superpower",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Fake Out",
+            "Focus Blast",
+            "Zap Cannon",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Øutcast's Warm Up Cup",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "kevszion2",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a55808a232a1a55ee10be16-bboy",
+      "name": "Bboy · 𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Quick Attack",
+            "Protect",
+            "Yawn"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Focus Sash",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Superpower",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Life Orb",
+          "ability": "Oblivious",
+          "moves": [
+            "High Horsepower",
+            "Icicle Crash",
+            "Ice Shard",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Brave Bird",
+            "Iron Head",
+            "Tailwind",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Bboy",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a5162b8063cb29d318e9199-flipper",
+      "name": "Flipper · MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Protect",
+            "Brick Break"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Brave Bird",
+            "Bulk Up",
+            "Roost",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Sitrus Berry",
+          "ability": "Levitate",
+          "moves": [
+            "Thunderbolt",
+            "Protect",
+            "Hydro Pump",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Close Combat",
+            "Dire Claw",
+            "Fake Out",
+            "Taunt"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 4,
+      "tournament": "MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Flipper",
+      "record": "3-1-0"
+    },
+    {
+      "id": "6a5162b8063cb29d318e9199-anibalruiz11",
+      "name": "Anibalruiz11 · MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Protect",
+            "Focus Blast",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Wish",
+            "Yawn",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Focus Sash",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Protect",
+            "Superpower"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Iron Head",
+            "Tailwind",
+            "Brave Bird",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Life Orb",
+          "ability": "Oblivious",
+          "moves": [
+            "High Horsepower",
+            "Icicle Spear",
+            "Ice Shard",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Protect",
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.25,
+      "sampleCount": 4,
+      "tournament": "MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Anibalruiz11",
+      "record": "1-3-0"
+    },
+    {
+      "id": "6a54c9d3232a1a55ee10b346-haasfara",
+      "name": "Haasfara · Intimidators Champions Challenge #27 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Focus Blast",
+            "Zap Cannon",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Sitrus Berry",
+          "ability": "Competitive",
+          "moves": [
+            "Scald",
+            "Icy Wind",
+            "Recover",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Sand Rush",
+          "moves": [
+            "Earthquake",
+            "High Horsepower",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Brave Bird",
+            "Iron Head",
+            "Bulk Up",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Protect",
+            "Knock Off",
+            "Dragon Dance"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Intimidators Champions Challenge #27 REG M-B",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Haasfara",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a54c9156355385f44dd38cd-blane",
+      "name": "Blane · Intimidators Champions Challenge #26 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Protect",
+            "Low Kick"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Sitrus Berry",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Iron Head",
+            "Brave Bird",
+            "Taunt",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Foul Play",
+            "Light Screen",
+            "Reflect",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Rock Slide",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hisuian-arcanine",
+          "name": "Hisuian Arcanine",
+          "item": "Focus Sash",
+          "ability": "Rock Head",
+          "moves": [
+            "Flare Blitz",
+            "Head Smash",
+            "Extreme Speed",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Intimidators Champions Challenge #26 REG M-B",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Blane",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a562eb26355385f44dd48d3-ele2317",
+      "name": "Ele2317 · Dark Storm Team testing #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Fake Out",
+            "Poison Jab",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Life Dew",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Protect",
+            "Hurricane",
+            "Extreme Speed",
+            "Draco Meteor"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Roost",
+            "Tailwind",
+            "Brave Bird"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Telepathy",
+          "moves": [
+            "Hyper Voice",
+            "Psychic",
+            "Trick Room",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 3,
+      "tournament": "Dark Storm Team testing #10",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Ele2317",
+      "record": "0-3-0"
+    },
+    {
+      "id": "6a4f486e063cb29d318e781e-lifun",
+      "name": "Lifun · Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "absol",
+          "name": "Absol",
+          "item": "Focus Sash",
+          "ability": "Super Luck",
+          "moves": [
+            "Night Slash",
+            "Psycho Cut",
+            "Focus Energy",
+            "Perish Song"
+          ]
+        },
+        {
+          "slug": "gourgeist",
+          "name": "Gourgeist",
+          "item": "Leftovers",
+          "ability": "Frisk",
+          "moves": [
+            "Poltergeist",
+            "Power Whip",
+            "Phantom Force",
+            "Facade"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Draco Meteor",
+            "Fire Blast",
+            "Ice Beam",
+            "Extreme Speed"
+          ]
+        },
+        {
+          "slug": "empoleon",
+          "name": "Empoleon",
+          "item": "King's Rock",
+          "ability": "Competitive",
+          "moves": [
+            "Hydro Cannon",
+            "Stealth Rock",
+            "Yawn"
+          ]
+        },
+        {
+          "slug": "machamp",
+          "name": "Machamp",
+          "item": "Quick Claw",
+          "ability": "No Guard",
+          "moves": [
+            "Dynamic Punch",
+            "Stone Edge",
+            "Ice Punch",
+            "Bullet Punch"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Sitrus Berry",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Iron Head",
+            "Body Press",
+            "Iron Defense",
+            "Roost"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Lifun",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a545f013ee4505de4ad5e7e-buhkashi",
+      "name": "Camila Kachi · 🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "serperior",
+          "name": "Serperior",
+          "item": "Focus Sash",
+          "ability": "Contrary",
+          "moves": [
+            "Leaf Storm",
+            "Knock Off",
+            "Protect",
+            "Dragon Pulse"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Parting Shot",
+            "Throat Chop",
+            "Fake Out",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Mystic Water",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hydro Pump",
+            "Hyper Voice",
+            "Protect",
+            "Moonblast"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Synchronize",
+          "moves": [
+            "Hyper Voice",
+            "Psychic",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Brave Bird",
+            "Body Press",
+            "Tailwind",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 5,
+      "tournament": "🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Camila Kachi",
+      "record": "0-5-0"
+    }
+  ],
+  "movePool": [
+    "Aerial Ace",
+    "Agility",
+    "Air Cutter",
+    "Air Slash",
+    "Assurance",
+    "Body Press",
+    "Body Slam",
+    "Brave Bird",
+    "Bulk Up",
+    "Curse",
+    "Defog",
+    "Double-Edge",
+    "Drill Peck",
+    "Dual Wingbeat",
+    "Endure",
+    "Facade",
+    "Fake Tears",
+    "Feather Dance",
+    "Flash Cannon",
+    "Fly",
+    "Focus Energy",
+    "Giga Impact",
+    "Heavy Slam",
+    "Hurricane",
+    "Hyper Beam",
+    "Iron Defense",
+    "Iron Head",
+    "Light Screen",
+    "Metal Sound",
+    "Nasty Plot",
+    "Payback",
+    "Pluck",
+    "Power Trip",
+    "Protect",
+    "Rain Dance",
+    "Reflect",
+    "Rest",
+    "Reversal",
+    "Roost",
+    "Round",
+    "Scary Face",
+    "Screech",
+    "Sky Attack",
+    "Sleep Talk",
+    "Snore",
+    "Spite",
+    "Steel Beam",
+    "Steel Wing",
+    "Substitute",
+    "Sunny Day",
+    "Swagger",
+    "Tailwind",
+    "Taunt",
+    "Thief",
+    "U-turn"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Corviknight",
+      "base_name": "Corviknight",
+      "saved_name": "Corviknight",
+      "types": "Flying/Steel",
+      "abilities": "Pressure|Unnerve|Mirror Armor",
+      "image_path": "pokemon_champions_assets\\pokemon\\Corviknight.png",
+      "form": "",
+      "hp": 173,
+      "atk": 107,
+      "def": 125,
+      "spa": 73,
+      "spd": 105,
+      "spe": 87,
+      "total": 670
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "move",
+          "rank": 1,
+          "name": "Brave Bird",
+          "percentage": "74.8%",
+          "percentage_value": 74.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Leftovers",
+          "percentage": "73.0%",
+          "percentage_value": 73,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Tyranitar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Impish",
+          "percentage": "40.1%",
+          "percentage_value": 40.1,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Atk"
+        },
+        "stat_points": {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "12.9%",
+          "percentage_value": 12.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 32,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        "ability": {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "ability",
+          "rank": 1,
+          "name": "Mirror Armor",
+          "percentage": "95.1%",
+          "percentage_value": 95.1,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Brave Bird",
+          "Tailwind",
+          "Roost",
+          "Iron Head",
+          "Body Press",
+          "Bulk Up",
+          "Iron Defense",
+          "Protect",
+          "Taunt",
+          "U-turn"
+        ],
+        "held_item": [
+          "Leftovers",
+          "Sitrus Berry",
+          "Occa Berry",
+          "Lum Berry",
+          "Quick Claw",
+          "Metal Coat",
+          "Sharp Beak",
+          "Life Orb",
+          "Mental Herb",
+          "Shell Bell"
+        ],
+        "teammate": [
+          "Tyranitar",
+          "Excadrill",
+          "Garchomp",
+          "Sinistcha",
+          "Rotom Wash",
+          "Incineroar",
+          "Houndstone",
+          "Raichu",
+          "Sneasler",
+          "Sylveon"
+        ],
+        "stat_alignment": [
+          "Impish",
+          "Careful",
+          "Adamant",
+          "Jolly",
+          "Relaxed",
+          "Brave",
+          "Bold",
+          "Sassy",
+          "Lax",
+          "Naughty"
+        ],
+        "stat_points": [
+          "HP 32 / Atk 0 / Def 32 / SpA 0 / SpD 2 / Spe 0",
+          "HP 32 / Atk 0 / Def 32 / SpA 0 / SpD 0 / Spe 2",
+          "HP 27 / Atk 11 / Def 1 / SpA 0 / SpD 5 / Spe 22",
+          "HP 32 / Atk 0 / Def 2 / SpA 0 / SpD 32 / Spe 0",
+          "HP 32 / Atk 2 / Def 32 / SpA 0 / SpD 0 / Spe 0",
+          "HP 32 / Atk 32 / Def 0 / SpA 0 / SpD 2 / Spe 0",
+          "HP 32 / Atk 13 / Def 0 / SpA 0 / SpD 13 / Spe 8",
+          "HP 32 / Atk 10 / Def 0 / SpA 0 / SpD 24 / Spe 0"
+        ],
+        "ability": [
+          "Mirror Armor",
+          "Pressure",
+          "Unnerve"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "move",
+          "rank": 1,
+          "name": "Brave Bird",
+          "percentage": "74.8%",
+          "percentage_value": 74.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "move",
+          "rank": 2,
+          "name": "Tailwind",
+          "percentage": "63.7%",
+          "percentage_value": 63.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "move",
+          "rank": 3,
+          "name": "Roost",
+          "percentage": "57.9%",
+          "percentage_value": 57.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "move",
+          "rank": 4,
+          "name": "Iron Head",
+          "percentage": "50.2%",
+          "percentage_value": 50.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "move",
+          "rank": 5,
+          "name": "Body Press",
+          "percentage": "47.8%",
+          "percentage_value": 47.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "move",
+          "rank": 6,
+          "name": "Bulk Up",
+          "percentage": "33.2%",
+          "percentage_value": 33.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "move",
+          "rank": 7,
+          "name": "Iron Defense",
+          "percentage": "26.0%",
+          "percentage_value": 26,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "move",
+          "rank": 8,
+          "name": "Protect",
+          "percentage": "23.8%",
+          "percentage_value": 23.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "move",
+          "rank": 9,
+          "name": "Taunt",
+          "percentage": "6.4%",
+          "percentage_value": 6.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "move",
+          "rank": 10,
+          "name": "U-turn",
+          "percentage": "3.2%",
+          "percentage_value": 3.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Leftovers",
+          "percentage": "73.0%",
+          "percentage_value": 73,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Sitrus Berry",
+          "percentage": "11.8%",
+          "percentage_value": 11.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Occa Berry",
+          "percentage": "6.2%",
+          "percentage_value": 6.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Lum Berry",
+          "percentage": "1.1%",
+          "percentage_value": 1.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Quick Claw",
+          "percentage": "1.1%",
+          "percentage_value": 1.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Metal Coat",
+          "percentage": "0.9%",
+          "percentage_value": 0.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Sharp Beak",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Life Orb",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Mental Herb",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Shell Bell",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Tyranitar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Excadrill",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Rotom Wash",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Houndstone",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Raichu",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Sneasler",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Sylveon",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Impish",
+          "percentage": "40.1%",
+          "percentage_value": 40.1,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Careful",
+          "percentage": "28.2%",
+          "percentage_value": 28.2,
+          "stat_up": "Sp. Def",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Adamant",
+          "percentage": "22.3%",
+          "percentage_value": 22.3,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Jolly",
+          "percentage": "3.4%",
+          "percentage_value": 3.4,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Relaxed",
+          "percentage": "1.9%",
+          "percentage_value": 1.9,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Brave",
+          "percentage": "1.5%",
+          "percentage_value": 1.5,
+          "stat_up": "Attack",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Bold",
+          "percentage": "1.0%",
+          "percentage_value": 1,
+          "stat_up": "Defense",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Sassy",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "Sp. Def",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Lax",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Naughty",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "12.9%",
+          "percentage_value": 12.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 32,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "5.8%",
+          "percentage_value": 5.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 32,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 2
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "5.7%",
+          "percentage_value": 5.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 27,
+          "attack_points": 11,
+          "defense_points": 1,
+          "sp_atk_points": 0,
+          "sp_def_points": 5,
+          "speed_points": 22
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "2.9%",
+          "percentage_value": 2.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 32,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "2.6%",
+          "percentage_value": 2.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 2,
+          "defense_points": 32,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "1.8%",
+          "percentage_value": 1.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "1.6%",
+          "percentage_value": 1.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 13,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 13,
+          "speed_points": 8
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "1.5%",
+          "percentage_value": 1.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 10,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 24,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "ability",
+          "rank": 1,
+          "name": "Mirror Armor",
+          "percentage": "95.1%",
+          "percentage_value": 95.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "ability",
+          "rank": 2,
+          "name": "Pressure",
+          "percentage": "3.2%",
+          "percentage_value": 3.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Corviknight",
+          "column_position": 61,
+          "position": 61,
+          "category": "ability",
+          "rank": 3,
+          "name": "Unnerve",
+          "percentage": "1.7%",
+          "percentage_value": 1.7,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Corviknight.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Corviknight.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Corviknight.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Corviknight.csv"
+      }
+    ]
+  }
+}

@@ -1,0 +1,3262 @@
+{
+  "pokemon": {
+    "slug": "tsareena",
+    "name": "Tsareena",
+    "baseName": "Tsareena",
+    "savedName": "Tsareena",
+    "form": "",
+    "types": [
+      "Grass"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Tsareena.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/763.png",
+    "stats": {
+      "hp": 147,
+      "attack": 140,
+      "defense": 118,
+      "spAttack": 70,
+      "spDefense": 118,
+      "speed": 92,
+      "total": 685
+    },
+    "rank": 42,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Triple Axel",
+    "topItem": "Wide Lens",
+    "topTeammate": "Garchomp"
+  },
+  "moves": [
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "move",
+      "rank": 1,
+      "name": "Triple Axel",
+      "percentage": 0.883,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "move",
+        "rank": 1,
+        "name": "Triple Axel",
+        "percentage": "88.3%",
+        "percentage_value": 88.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "move",
+      "rank": 2,
+      "name": "Protect",
+      "percentage": 0.616,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "move",
+        "rank": 2,
+        "name": "Protect",
+        "percentage": "61.6%",
+        "percentage_value": 61.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "move",
+      "rank": 3,
+      "name": "Trop Kick",
+      "percentage": 0.514,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "move",
+        "rank": 3,
+        "name": "Trop Kick",
+        "percentage": "51.4%",
+        "percentage_value": 51.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "move",
+      "rank": 4,
+      "name": "Power Whip",
+      "percentage": 0.461,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "move",
+        "rank": 4,
+        "name": "Power Whip",
+        "percentage": "46.1%",
+        "percentage_value": 46.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "move",
+      "rank": 5,
+      "name": "Low Kick",
+      "percentage": 0.35,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "move",
+        "rank": 5,
+        "name": "Low Kick",
+        "percentage": "35.0%",
+        "percentage_value": 35,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "move",
+      "rank": 6,
+      "name": "High Jump Kick",
+      "percentage": 0.304,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "move",
+        "rank": 6,
+        "name": "High Jump Kick",
+        "percentage": "30.4%",
+        "percentage_value": 30.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "move",
+      "rank": 7,
+      "name": "Taunt",
+      "percentage": 0.28,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "move",
+        "rank": 7,
+        "name": "Taunt",
+        "percentage": "28.0%",
+        "percentage_value": 28,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "move",
+      "rank": 8,
+      "name": "U-turn",
+      "percentage": 0.16,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "move",
+        "rank": 8,
+        "name": "U-turn",
+        "percentage": "16.0%",
+        "percentage_value": 16,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "move",
+      "rank": 9,
+      "name": "Knock Off",
+      "percentage": 0.139,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "move",
+        "rank": 9,
+        "name": "Knock Off",
+        "percentage": "13.9%",
+        "percentage_value": 13.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "move",
+      "rank": 10,
+      "name": "Helping Hand",
+      "percentage": 0.081,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "move",
+        "rank": 10,
+        "name": "Helping Hand",
+        "percentage": "8.1%",
+        "percentage_value": 8.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Wide Lens",
+      "percentage": 0.446,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Wide Lens",
+        "percentage": "44.6%",
+        "percentage_value": 44.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Choice Scarf",
+      "percentage": 0.139,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Choice Scarf",
+        "percentage": "13.9%",
+        "percentage_value": 13.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Sitrus Berry",
+      "percentage": 0.096,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Sitrus Berry",
+        "percentage": "9.6%",
+        "percentage_value": 9.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Focus Sash",
+      "percentage": 0.084,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Focus Sash",
+        "percentage": "8.4%",
+        "percentage_value": 8.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Life Orb",
+      "percentage": 0.047,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Life Orb",
+        "percentage": "4.7%",
+        "percentage_value": 4.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Occa Berry",
+      "percentage": 0.043,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Occa Berry",
+        "percentage": "4.3%",
+        "percentage_value": 4.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Expert Belt",
+      "percentage": 0.023,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Expert Belt",
+        "percentage": "2.3%",
+        "percentage_value": 2.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Quick Claw",
+      "percentage": 0.022,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Quick Claw",
+        "percentage": "2.2%",
+        "percentage_value": 2.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Miracle Seed",
+      "percentage": 0.022,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Miracle Seed",
+        "percentage": "2.2%",
+        "percentage_value": 2.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Leftovers",
+      "percentage": 0.014,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Leftovers",
+        "percentage": "1.4%",
+        "percentage_value": 1.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "ability",
+      "rank": 1,
+      "name": "Queenly Majesty",
+      "percentage": 0.991,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "ability",
+        "rank": 1,
+        "name": "Queenly Majesty",
+        "percentage": "99.1%",
+        "percentage_value": 99.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "ability",
+      "rank": 2,
+      "name": "Sweet Veil",
+      "percentage": 0.8,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "ability",
+        "rank": 2,
+        "name": "Sweet Veil",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "ability",
+      "rank": 3,
+      "name": "Leaf Guard",
+      "percentage": 0.1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "ability",
+        "rank": 3,
+        "name": "Leaf Guard",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Whimsicott",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Whimsicott",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Raichu",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Raichu",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Aerodactyl",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Aerodactyl",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Sneasler",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Sneasler",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Kingambit",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Kingambit",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Milotic",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Milotic",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Talonflame",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Talonflame",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Charizard",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Charizard",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Adamant",
+      "percentage": 0.652,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Adamant",
+        "percentage": "65.2%",
+        "percentage_value": 65.2,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Jolly",
+      "percentage": 0.254,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Jolly",
+        "percentage": "25.4%",
+        "percentage_value": 25.4,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Brave",
+      "percentage": 0.041,
+      "statUp": "Attack",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Brave",
+        "percentage": "4.1%",
+        "percentage_value": 4.1,
+        "stat_up": "Attack",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Impish",
+      "percentage": 0.021,
+      "statUp": "Defense",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Impish",
+        "percentage": "2.1%",
+        "percentage_value": 2.1,
+        "stat_up": "Defense",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Careful",
+      "percentage": 0.017,
+      "statUp": "Sp. Def",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Careful",
+        "percentage": "1.7%",
+        "percentage_value": 1.7,
+        "stat_up": "Sp. Def",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Naughty",
+      "percentage": 0.5,
+      "statUp": "Attack",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Naughty",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Relaxed",
+      "percentage": 0.3,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Relaxed",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Hasty",
+      "percentage": 0.2,
+      "statUp": "Speed",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Hasty",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Speed",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Lonely",
+      "percentage": 0.2,
+      "statUp": "Attack",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Lonely",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Attack",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Sassy",
+      "percentage": 0.1,
+      "statUp": "Sp. Def",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Sassy",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Sp. Def",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.284,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "28.4%",
+        "percentage_value": 28.4,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.048,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "4.8%",
+        "percentage_value": 4.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 30,
+        "attack_points": 8,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 26
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.038,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "3.8%",
+        "percentage_value": 3.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 25,
+        "attack_points": 20,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 21
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.035,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "3.5%",
+        "percentage_value": 3.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.032,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "3.2%",
+        "percentage_value": 3.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.022,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "2.2%",
+        "percentage_value": 2.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 2
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.021,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "2.1%",
+        "percentage_value": 2.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 24,
+        "attack_points": 10,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Tsareena",
+      "position": 42,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.017,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Tsareena",
+        "column_position": 42,
+        "position": 42,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "1.7%",
+        "percentage_value": 1.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 1,
+        "sp_atk_points": 0,
+        "sp_def_points": 1,
+        "speed_points": 0
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a4f390c063cb29d318e77d8-reis637",
+      "name": "Reis637 · Women's League VGC #4",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "chandelure",
+          "name": "Chandelure",
+          "item": "Chandelurite",
+          "ability": "Flash Fire",
+          "moves": [
+            "Heat Wave",
+            "Shadow Ball",
+            "Substitute",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Scald",
+            "Icy Wind",
+            "Ice Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Wide Lens",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Power Whip",
+            "Low Kick",
+            "Triple Axel",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Dire Claw",
+            "Close Combat",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Sunny Day",
+            "Encore"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 4,
+      "tournament": "Women's League VGC #4",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Reis637",
+      "record": "3-1-0"
+    },
+    {
+      "id": "6a47c55e65724db9ded3b307-ceres",
+      "name": "Ceres · VGC Reg M-B Ingame  Tour",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "chandelure",
+          "name": "Chandelure",
+          "item": "Chandelurite",
+          "ability": "Flash Fire",
+          "moves": [
+            "Heat Wave",
+            "Shadow Ball",
+            "Protect",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Sunny Day",
+            "Tailwind",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Low Kick",
+            "Protect",
+            "Iron Defense"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Wide Lens",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Power Whip",
+            "Protect",
+            "Triple Axel",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "starmie",
+          "name": "Starmie",
+          "item": "Choice Scarf",
+          "ability": "Natural Cure",
+          "moves": [
+            "Thunderbolt",
+            "Psychic",
+            "Icy Wind",
+            "Scald"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Stomping Tantrum",
+            "Rock Slide",
+            "Dragon Claw",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "VGC Reg M-B Ingame  Tour",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Ceres",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a4dbb9665724db9ded3ff83-onigirioni",
+      "name": "OnigiriOni · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psychic",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Wide Lens",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Triple Axel",
+            "Trop Kick",
+            "High Jump Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Roseli Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Sunny Day",
+            "Reflect",
+            "Light Screen",
+            "Quash"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Low Kick",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Focus Sash",
+          "ability": "Friend Guard",
+          "moves": [
+            "Super Fang",
+            "Taunt",
+            "Follow Me",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Tailwind",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "OnigiriOni",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a53c2d1e09846f1eb4c161b-averagememer57",
+      "name": "averagememer57 · The Drywall Series #11",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "vanilluxe",
+          "name": "Vanilluxe",
+          "item": "Choice Scarf",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Icy Wind",
+            "Sheer Cold"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Rock Slide",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Tailwind",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Life Orb",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Focus Sash",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Trop Kick",
+            "Taunt",
+            "Helping Hand",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7142857142857143,
+      "sampleCount": 7,
+      "tournament": "The Drywall Series #11",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "averagememer57",
+      "record": "5-2-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-pedroslz",
+      "name": "PedroSlz - Grama/Inseto · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Fake Tears",
+            "Sunny Day",
+            "Tailwind",
+            "Moonblast"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Protect",
+            "Giga Drain",
+            "Earth Power",
+            "Sludge Bomb"
+          ]
+        },
+        {
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "item": "Life Orb",
+          "ability": "Sharpness",
+          "moves": [
+            "Stone Axe",
+            "Protect",
+            "X-Scissor",
+            "Night Slash"
+          ]
+        },
+        {
+          "slug": "volcarona",
+          "name": "Volcarona",
+          "item": "Choice Scarf",
+          "ability": "Flame Body",
+          "moves": [
+            "Heat Wave",
+            "Overheat",
+            "Giga Drain",
+            "Bug Buzz"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Wide Lens",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Helping Hand",
+            "Triple Axel",
+            "Taunt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "araquanid",
+          "name": "Araquanid",
+          "item": "Mystic Water",
+          "ability": "Water Bubble",
+          "moves": [
+            "Liquidation",
+            "Leech Life",
+            "Protect",
+            "Wide Guard"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "PedroSlz - Grama/Inseto",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a510fac063cb29d318e8c08-shedfan",
+      "name": "Shedfan · SNT Reg M-B Tour #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Throat Chop",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Protect",
+            "Vacuum Wave",
+            "Psyshock",
+            "Hyper Voice"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Life Orb",
+          "ability": "Gale Wings",
+          "moves": [
+            "Protect",
+            "Tailwind",
+            "Flare Blitz",
+            "Brave Bird"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Wide Lens",
+          "ability": "Leaf Guard",
+          "moves": [
+            "Protect",
+            "Triple Axel",
+            "Low Kick",
+            "Power Whip"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Focus Sash",
+          "ability": "Friend Guard",
+          "moves": [
+            "Protect",
+            "Taunt",
+            "Follow Me",
+            "Super Fang"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Protect",
+            "Aqua Jet",
+            "Wave Crash",
+            "Last Respects"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 8,
+      "tournament": "SNT Reg M-B Tour #3",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Shedfan",
+      "record": "6-2-0"
+    },
+    {
+      "id": "6a510fac063cb29d318e8c08-abhinav7354",
+      "name": "Abhinav7354 · SNT Reg M-B Tour #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Hex",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Focus Sash",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Taunt",
+            "Trop Kick",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Poison Touch",
+          "moves": [
+            "Fake Out",
+            "Poison Jab",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Aqua Jet",
+            "Flip Turn",
+            "Wave Crash",
+            "Last Respects"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Sitrus Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Fake Out",
+            "Will-O-Wisp",
+            "Thunder Wave",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Inner Focus",
+          "moves": [
+            "Extreme Speed",
+            "Dragon Claw",
+            "Low Kick",
+            "Tailwind"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "SNT Reg M-B Tour #3",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Abhinav7354",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a420fbf83fd320299bd3c3c-smearglegoat",
+      "name": "smearglegoat · Sketch Academy Sunday Regulation M-B Tournament",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Low Kick",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Sitrus Berry",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Trop Kick",
+            "Low Kick",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Flip Turn",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Earthquake",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "Sketch Academy Sunday Regulation M-B Tournament",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "smearglegoat",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a5117e465724db9ded421f1-sat0ri",
+      "name": "Sat0rI · Øutcast's Warm Up Cup",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "morpeko",
+          "name": "Morpeko",
+          "item": "Focus Sash",
+          "ability": "Hunger Switch",
+          "moves": [
+            "Aura Wheel",
+            "Baton Pass",
+            "Endeavor",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Chople Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Super Fang",
+            "Follow Me",
+            "Low Kick",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "hisuian-arcanine",
+          "name": "Hisuian Arcanine",
+          "item": "Life Orb",
+          "ability": "Rock Head",
+          "moves": [
+            "Protect",
+            "Extreme Speed",
+            "Flare Blitz",
+            "Head Smash"
+          ]
+        },
+        {
+          "slug": "greninja",
+          "name": "Greninja",
+          "item": "Greninjite",
+          "ability": "Protean",
+          "moves": [
+            "Mud Shot",
+            "Protect",
+            "Ice Beam",
+            "Water Shuriken"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Wide Lens",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Protect",
+            "Triple Axel",
+            "Power Whip",
+            "High Jump Kick"
+          ]
+        },
+        {
+          "slug": "tinkaton",
+          "name": "Tinkaton",
+          "item": "Quick Claw",
+          "ability": "Mold Breaker",
+          "moves": [
+            "Protect",
+            "Play Rough",
+            "Fake Out",
+            "Gigaton Hammer"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8571428571428571,
+      "sampleCount": 7,
+      "tournament": "Øutcast's Warm Up Cup",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Sat0rI",
+      "record": "6-1-0"
+    },
+    {
+      "id": "6a5162b8063cb29d318e9199-jumbosaur",
+      "name": "Makin K · MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "item": "Focus Sash",
+          "ability": "Sharpness",
+          "moves": [
+            "Stone Axe",
+            "X-Scissor",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Sitrus Berry",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Trop Kick",
+            "Triple Axel",
+            "Taunt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "lucario",
+          "name": "Lucario",
+          "item": "Lucarionite",
+          "ability": "Inner Focus",
+          "moves": [
+            "Vacuum Wave",
+            "Detect",
+            "Aura Sphere",
+            "Flash Cannon"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "No Item",
+          "ability": "Gale Wings",
+          "moves": [
+            "Flare Blitz",
+            "Protect",
+            "Tailwind",
+            "Acrobatics"
+          ]
+        },
+        {
+          "slug": "azumarill",
+          "name": "Azumarill",
+          "item": "Life Orb",
+          "ability": "Huge Power",
+          "moves": [
+            "Play Rough",
+            "Aqua Jet",
+            "Liquidation",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Light Clay",
+          "ability": "Snow Warning",
+          "moves": [
+            "Freeze-Dry",
+            "Moonblast",
+            "Protect",
+            "Aurora Veil"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Makin K",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a5497ab232a1a55ee10b2b8-aliene",
+      "name": "Aliene · HeroicTitan’s VGC Battle Arena",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Wide Lens",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Protect",
+            "Power Whip",
+            "Triple Axel",
+            "Low Kick"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Telepathy",
+          "moves": [
+            "Protect",
+            "Hyper Voice",
+            "Psychic",
+            "Vacuum Wave"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Protect",
+            "Wave Crash",
+            "Aqua Jet",
+            "Last Respects"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Protect",
+            "Dragon Claw",
+            "Rock Slide",
+            "Earthquake"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Supreme Overlord",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Low Kick"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Protect",
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "HeroicTitan’s VGC Battle Arena",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Aliene",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a57380e6355385f44dd5183-vinasauur",
+      "name": "vinasauur · Champions Tour LEPE M-B #9",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Protect",
+            "Encore",
+            "Psychic",
+            "Heat Wave"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Protect",
+            "Fake Out",
+            "Dire Claw",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Soft Sand",
+          "ability": "Rough Skin",
+          "moves": [
+            "Protect",
+            "Earthquake",
+            "Rock Slide",
+            "Stomping Tantrum"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Focus Sash",
+          "ability": "Unnerve",
+          "moves": [
+            "Protect",
+            "Tailwind",
+            "Dual Wingbeat",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Protect",
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Sitrus Berry",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Sunny Day",
+            "Triple Axel",
+            "Trop Kick",
+            "Low Kick"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Champions Tour LEPE M-B #9",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "vinasauur",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a39cb01c87cd9ff0a30d791-frostyhands",
+      "name": "Frostyhands · Cashed Out Gaming Season 1 M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Wide Guard",
+            "Tailwind",
+            "Dual Wingbeat"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Chople Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Protect",
+            "Follow Me",
+            "Feint",
+            "Super Fang"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Protect",
+            "Psychic",
+            "Hyper Voice",
+            "Vacuum Wave"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Muddy Water",
+            "Coil",
+            "Hypnosis",
+            "Recover"
+          ]
+        },
+        {
+          "slug": "hisuian-typhlosion",
+          "name": "Hisuian Typhlosion",
+          "item": "Life Orb",
+          "ability": "Blaze",
+          "moves": [
+            "Shadow Ball",
+            "Eruption",
+            "Heat Wave",
+            "Overheat"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Focus Sash",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Protect",
+            "Triple Axel",
+            "Helping Hand",
+            "Trop Kick"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "Cashed Out Gaming Season 1 M-B",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Frostyhands",
+      "record": "4-2-0"
+    }
+  ],
+  "movePool": [
+    "Acrobatics",
+    "Acupressure",
+    "Aromatic Mist",
+    "Bounce",
+    "Bullet Seed",
+    "Charm",
+    "Dazzling Gleam",
+    "Draining Kiss",
+    "Endeavor",
+    "Endure",
+    "Energy Ball",
+    "Facade",
+    "Flail",
+    "Fling",
+    "Giga Drain",
+    "Giga Impact",
+    "Grass Knot",
+    "Grassy Glide",
+    "Grassy Terrain",
+    "Helping Hand",
+    "High Jump Kick",
+    "Hyper Beam",
+    "Knock Off",
+    "Leaf Storm",
+    "Light Screen",
+    "Low Kick",
+    "Low Sweep",
+    "Magical Leaf",
+    "Mega Kick",
+    "Payback",
+    "Petal Blizzard",
+    "Play Rough",
+    "Power Whip",
+    "Protect",
+    "Rapid Spin",
+    "Reflect",
+    "Rest",
+    "Round",
+    "Seed Bomb",
+    "Sleep Talk",
+    "Snore",
+    "Solar Beam",
+    "Solar Blade",
+    "Substitute",
+    "Sunny Day",
+    "Swagger",
+    "Sweet Scent",
+    "Synthesis",
+    "Taunt",
+    "Teeter Dance",
+    "Trailblaze",
+    "Triple Axel",
+    "Trop Kick",
+    "U-turn",
+    "Zen Headbutt"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Tsareena",
+      "base_name": "Tsareena",
+      "saved_name": "Tsareena",
+      "types": "Grass",
+      "abilities": "Leaf Guard|Queenly Majesty|Sweet Veil",
+      "image_path": "pokemon_champions_assets\\pokemon\\Tsareena.png",
+      "form": "",
+      "hp": 147,
+      "atk": 140,
+      "def": 118,
+      "spa": 70,
+      "spd": 118,
+      "spe": 92,
+      "total": 685
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "move",
+          "rank": 1,
+          "name": "Triple Axel",
+          "percentage": "88.3%",
+          "percentage_value": 88.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Wide Lens",
+          "percentage": "44.6%",
+          "percentage_value": 44.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Adamant",
+          "percentage": "65.2%",
+          "percentage_value": 65.2,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        "stat_points": {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "28.4%",
+          "percentage_value": 28.4,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        "ability": {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "ability",
+          "rank": 1,
+          "name": "Queenly Majesty",
+          "percentage": "99.1%",
+          "percentage_value": 99.1,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Triple Axel",
+          "Protect",
+          "Trop Kick",
+          "Power Whip",
+          "Low Kick",
+          "High Jump Kick",
+          "Taunt",
+          "U-turn",
+          "Knock Off",
+          "Helping Hand"
+        ],
+        "held_item": [
+          "Wide Lens",
+          "Choice Scarf",
+          "Sitrus Berry",
+          "Focus Sash",
+          "Life Orb",
+          "Occa Berry",
+          "Expert Belt",
+          "Quick Claw",
+          "Miracle Seed",
+          "Leftovers"
+        ],
+        "teammate": [
+          "Garchomp",
+          "Whimsicott",
+          "Raichu",
+          "Basculegion Male",
+          "Aerodactyl",
+          "Sneasler",
+          "Kingambit",
+          "Milotic",
+          "Talonflame",
+          "Charizard"
+        ],
+        "stat_alignment": [
+          "Adamant",
+          "Jolly",
+          "Brave",
+          "Impish",
+          "Careful",
+          "Naughty",
+          "Relaxed",
+          "Hasty",
+          "Lonely",
+          "Sassy"
+        ],
+        "stat_points": [
+          "HP 2 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 32",
+          "HP 30 / Atk 8 / Def 2 / SpA 0 / SpD 0 / Spe 26",
+          "HP 25 / Atk 20 / Def 0 / SpA 0 / SpD 0 / Spe 21",
+          "HP 32 / Atk 32 / Def 2 / SpA 0 / SpD 0 / Spe 0",
+          "HP 0 / Atk 32 / Def 2 / SpA 0 / SpD 0 / Spe 32",
+          "HP 32 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 2",
+          "HP 24 / Atk 10 / Def 0 / SpA 0 / SpD 0 / Spe 32",
+          "HP 32 / Atk 32 / Def 1 / SpA 0 / SpD 1 / Spe 0"
+        ],
+        "ability": [
+          "Queenly Majesty",
+          "Sweet Veil",
+          "Leaf Guard"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "move",
+          "rank": 1,
+          "name": "Triple Axel",
+          "percentage": "88.3%",
+          "percentage_value": 88.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "move",
+          "rank": 2,
+          "name": "Protect",
+          "percentage": "61.6%",
+          "percentage_value": 61.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "move",
+          "rank": 3,
+          "name": "Trop Kick",
+          "percentage": "51.4%",
+          "percentage_value": 51.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "move",
+          "rank": 4,
+          "name": "Power Whip",
+          "percentage": "46.1%",
+          "percentage_value": 46.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "move",
+          "rank": 5,
+          "name": "Low Kick",
+          "percentage": "35.0%",
+          "percentage_value": 35,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "move",
+          "rank": 6,
+          "name": "High Jump Kick",
+          "percentage": "30.4%",
+          "percentage_value": 30.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "move",
+          "rank": 7,
+          "name": "Taunt",
+          "percentage": "28.0%",
+          "percentage_value": 28,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "move",
+          "rank": 8,
+          "name": "U-turn",
+          "percentage": "16.0%",
+          "percentage_value": 16,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "move",
+          "rank": 9,
+          "name": "Knock Off",
+          "percentage": "13.9%",
+          "percentage_value": 13.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "move",
+          "rank": 10,
+          "name": "Helping Hand",
+          "percentage": "8.1%",
+          "percentage_value": 8.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Wide Lens",
+          "percentage": "44.6%",
+          "percentage_value": 44.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Choice Scarf",
+          "percentage": "13.9%",
+          "percentage_value": 13.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Sitrus Berry",
+          "percentage": "9.6%",
+          "percentage_value": 9.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Focus Sash",
+          "percentage": "8.4%",
+          "percentage_value": 8.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Life Orb",
+          "percentage": "4.7%",
+          "percentage_value": 4.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Occa Berry",
+          "percentage": "4.3%",
+          "percentage_value": 4.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Expert Belt",
+          "percentage": "2.3%",
+          "percentage_value": 2.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Quick Claw",
+          "percentage": "2.2%",
+          "percentage_value": 2.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Miracle Seed",
+          "percentage": "2.2%",
+          "percentage_value": 2.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Leftovers",
+          "percentage": "1.4%",
+          "percentage_value": 1.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Whimsicott",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Raichu",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Aerodactyl",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Sneasler",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Milotic",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Talonflame",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Charizard",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Adamant",
+          "percentage": "65.2%",
+          "percentage_value": 65.2,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Jolly",
+          "percentage": "25.4%",
+          "percentage_value": 25.4,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Brave",
+          "percentage": "4.1%",
+          "percentage_value": 4.1,
+          "stat_up": "Attack",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Impish",
+          "percentage": "2.1%",
+          "percentage_value": 2.1,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Careful",
+          "percentage": "1.7%",
+          "percentage_value": 1.7,
+          "stat_up": "Sp. Def",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Naughty",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Relaxed",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Hasty",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Speed",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Lonely",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Attack",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Sassy",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Sp. Def",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "28.4%",
+          "percentage_value": 28.4,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "4.8%",
+          "percentage_value": 4.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 30,
+          "attack_points": 8,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 26
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "3.8%",
+          "percentage_value": 3.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 25,
+          "attack_points": 20,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 21
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "3.5%",
+          "percentage_value": 3.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "3.2%",
+          "percentage_value": 3.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "2.2%",
+          "percentage_value": 2.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 2
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "2.1%",
+          "percentage_value": 2.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 24,
+          "attack_points": 10,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "1.7%",
+          "percentage_value": 1.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 1,
+          "sp_atk_points": 0,
+          "sp_def_points": 1,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "ability",
+          "rank": 1,
+          "name": "Queenly Majesty",
+          "percentage": "99.1%",
+          "percentage_value": 99.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "ability",
+          "rank": 2,
+          "name": "Sweet Veil",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Tsareena",
+          "column_position": 42,
+          "position": 42,
+          "category": "ability",
+          "rank": 3,
+          "name": "Leaf Guard",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Tsareena.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Tsareena.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Tsareena.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Tsareena.csv"
+      }
+    ]
+  }
+}

@@ -22,6 +22,7 @@ import json
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
+from pocket_multideck import is_multideck, standing_decks
 
 
 def find_project_root() -> Path:
@@ -207,6 +208,9 @@ def normalize_entry(row, source_index: int):
 
     deck = normalize_deck(row.get("deck"))
     decklist = normalize_decklist(row.get("decklist"))
+    slots = standing_decks(row)
+    decks = {slot: normalize_deck(raw) for slot, raw, _ in slots}
+    decklists = {slot: normalize_decklist(raw_list) for slot, _, raw_list in slots}
     record = normalize_record(row.get("record"))
 
     entry = {
@@ -218,8 +222,10 @@ def normalize_entry(row, source_index: int):
         "recordText": f"{record['wins']}-{record['losses']}-{record['ties']}",
         "drop": to_int(row.get("drop"), None),
         "deck": deck,
-        "decklistAvailable": decklist is not None,
+        "decklistAvailable": decklist is not None or any(value is not None for value in decklists.values()),
         "decklist": decklist,
+        "decks": decks,
+        "decklists": decklists,
         "_sourceIndex": source_index,
     }
     return entry
@@ -264,6 +270,20 @@ def compute_countries(entries):
 
     items.sort(key=lambda item: (-item["count"], item["label"]))
     return items
+
+
+def deck_entries(entries):
+    """Expand deck slots for deck/card analytics while retaining one player standing."""
+    output = []
+    for entry in entries:
+        slots = set(entry.get("decks", {})) | set(entry.get("decklists", {}))
+        if not slots:
+            output.append(entry)
+            continue
+        for slot in sorted(slots):
+            decklist = entry.get("decklists", {}).get(slot)
+            output.append({**entry, "deck": entry.get("decks", {}).get(slot) or {}, "decklist": decklist, "decklistAvailable": decklist is not None})
+    return output
 
 
 def compute_archetypes(entries):
@@ -564,7 +584,7 @@ def build_page(index_row):
     players_with_deck = sum(
         1
         for entry in standings
-        if (entry.get("deck") or {}).get("id") or (entry.get("deck") or {}).get("name")
+        if (entry.get("deck") or {}).get("id") or (entry.get("deck") or {}).get("name") or any(deck.get("id") for deck in entry.get("decks", {}).values())
     )
     players_with_decklist = sum(1 for entry in standings if entry.get("decklistAvailable"))
     players_dropped = sum(1 for entry in standings if entry.get("drop") is not None)
@@ -590,6 +610,7 @@ def build_page(index_row):
         "setNameEn": pick(index_row.get("setNameEn"), details_raw.get("setNameEn")),
         "formatUi": pick(index_row.get("formatUi"), details_raw.get("formatUi")),
         "decklists": pick(details_raw.get("decklists"), index_row.get("decklists")),
+        "multideck": is_multideck(details_raw, standings_raw),
         "pagePath": f"/data/tournament-pages/{tid}.json",
         "rawPaths": {
             "details": f"/data/raw/{tid}/details.json",
@@ -609,7 +630,7 @@ def build_page(index_row):
         "uniqueCountries": len({entry.get("country") or "UNKNOWN" for entry in standings}),
         "uniqueArchetypes": len({
             (entry.get("deck") or {}).get("id") or (entry.get("deck") or {}).get("name") or "__unknown__"
-            for entry in standings
+            for entry in deck_entries(standings)
         }),
         "pairingsRounds": pairings_summary["rounds"],
         "pairingsMatches": pairings_summary["matches"],
@@ -632,11 +653,11 @@ def build_page(index_row):
             "top16": standings[:16],
             "top32": standings[:32],
         },
-        "archetypes": compute_archetypes(standings),
-        "top32Archetypes": compute_archetypes(standings[:32]),
+        "archetypes": compute_archetypes(deck_entries(standings)),
+        "top32Archetypes": compute_archetypes(deck_entries(standings[:32])),
         "countries": compute_countries(standings),
-        "cardUsage": compute_card_usage(standings),
-        "energyUsage": compute_energy_usage(standings),
+        "cardUsage": compute_card_usage(deck_entries(standings)),
+        "energyUsage": compute_energy_usage(deck_entries(standings)),
         "pairingsSummary": pairings_summary,
         "standings": standings,
         "source": {
@@ -654,6 +675,9 @@ def load_tournament_rows(selected_ids=None):
         raise RuntimeError(f"讀取 tournaments.json 失敗: {tournaments_err}")
 
     tournaments_raw = tournaments_raw if isinstance(tournaments_raw, list) else []
+    multideck_rows, _ = load_json(DATA_DIR / "multideck/tournaments.json", default=[])
+    if isinstance(multideck_rows, list):
+        tournaments_raw = list({str(row.get("id")): row for row in [*tournaments_raw, *multideck_rows] if isinstance(row, dict) and row.get("id")}.values())
     rows = [
         row for row in tournaments_raw
         if isinstance(row, dict) and clean_str(row.get("id"))

@@ -63,9 +63,10 @@ import { onMounted, ref, watch, computed } from "vue";
 import { useRoute } from "vue-router";
 import { authProfile, hasSupabaseConfig, initSupabaseAuth } from "../lib/supabase";
 import { createDeckDiscussion, fetchDeckDiscussion, type DeckDiscussionEntry } from "../lib/interactive";
+import { routeLang as getRouteLang } from "../lib/siteI18n";
 
 const route = useRoute();
-const isZhUi = computed(() => String(route.path).split("/")[1] === "zh");
+const isZhUi = computed(() => getRouteLang(route) === "zh");
 
 const props = defineProps<{
   deckKey: string;

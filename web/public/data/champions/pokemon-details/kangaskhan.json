@@ -1,0 +1,3350 @@
+{
+  "pokemon": {
+    "slug": "kangaskhan",
+    "name": "Kangaskhan",
+    "baseName": "Kangaskhan",
+    "savedName": "Kangaskhan",
+    "form": "",
+    "types": [
+      "Normal"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Kangaskhan.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/115.png",
+    "stats": {
+      "hp": 180,
+      "attack": 115,
+      "defense": 100,
+      "spAttack": 60,
+      "spDefense": 100,
+      "speed": 110,
+      "total": 665
+    },
+    "rank": 37,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Fake Out",
+    "topItem": "Kangaskhanite",
+    "topTeammate": "Farigiraf"
+  },
+  "moves": [
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "move",
+      "rank": 1,
+      "name": "Fake Out",
+      "percentage": 0.987,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "move",
+        "rank": 1,
+        "name": "Fake Out",
+        "percentage": "98.7%",
+        "percentage_value": 98.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "move",
+      "rank": 2,
+      "name": "Last Resort",
+      "percentage": 0.483,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "move",
+        "rank": 2,
+        "name": "Last Resort",
+        "percentage": "48.3%",
+        "percentage_value": 48.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "move",
+      "rank": 3,
+      "name": "Double-Edge",
+      "percentage": 0.46,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "move",
+        "rank": 3,
+        "name": "Double-Edge",
+        "percentage": "46.0%",
+        "percentage_value": 46,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "move",
+      "rank": 4,
+      "name": "Sucker Punch",
+      "percentage": 0.238,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "move",
+        "rank": 4,
+        "name": "Sucker Punch",
+        "percentage": "23.8%",
+        "percentage_value": 23.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "move",
+      "rank": 5,
+      "name": "Ice Punch",
+      "percentage": 0.238,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "move",
+        "rank": 5,
+        "name": "Ice Punch",
+        "percentage": "23.8%",
+        "percentage_value": 23.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "move",
+      "rank": 6,
+      "name": "Brick Break",
+      "percentage": 0.133,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "move",
+        "rank": 6,
+        "name": "Brick Break",
+        "percentage": "13.3%",
+        "percentage_value": 13.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "move",
+      "rank": 7,
+      "name": "Low Kick",
+      "percentage": 0.131,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "move",
+        "rank": 7,
+        "name": "Low Kick",
+        "percentage": "13.1%",
+        "percentage_value": 13.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "move",
+      "rank": 8,
+      "name": "Drain Punch",
+      "percentage": 0.121,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "move",
+        "rank": 8,
+        "name": "Drain Punch",
+        "percentage": "12.1%",
+        "percentage_value": 12.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "move",
+      "rank": 9,
+      "name": "Hammer Arm",
+      "percentage": 0.098,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "move",
+        "rank": 9,
+        "name": "Hammer Arm",
+        "percentage": "9.8%",
+        "percentage_value": 9.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "move",
+      "rank": 10,
+      "name": "Protect",
+      "percentage": 0.052,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "move",
+        "rank": 10,
+        "name": "Protect",
+        "percentage": "5.2%",
+        "percentage_value": 5.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Kangaskhanite",
+      "percentage": 0.453,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Kangaskhanite",
+        "percentage": "45.3%",
+        "percentage_value": 45.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Silk Scarf",
+      "percentage": 0.421,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Silk Scarf",
+        "percentage": "42.1%",
+        "percentage_value": 42.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Life Orb",
+      "percentage": 0.064,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Life Orb",
+        "percentage": "6.4%",
+        "percentage_value": 6.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Chople Berry",
+      "percentage": 0.014,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Chople Berry",
+        "percentage": "1.4%",
+        "percentage_value": 1.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Sitrus Berry",
+      "percentage": 0.013,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Sitrus Berry",
+        "percentage": "1.3%",
+        "percentage_value": 1.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Metronome",
+      "percentage": 0.6,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Metronome",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Leftovers",
+      "percentage": 0.5,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Leftovers",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Iron Ball",
+      "percentage": 0.5,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Iron Ball",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Muscle Band",
+      "percentage": 0.3,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Muscle Band",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Expert Belt",
+      "percentage": 0.3,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Expert Belt",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "ability",
+      "rank": 1,
+      "name": "Scrappy",
+      "percentage": 0.967,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "ability",
+        "rank": 1,
+        "name": "Scrappy",
+        "percentage": "96.7%",
+        "percentage_value": 96.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "ability",
+      "rank": 2,
+      "name": "Inner Focus",
+      "percentage": 0.031,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "ability",
+        "rank": 2,
+        "name": "Inner Focus",
+        "percentage": "3.1%",
+        "percentage_value": 3.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "ability",
+      "rank": 3,
+      "name": "Early Bird",
+      "percentage": 0.1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "ability",
+        "rank": 3,
+        "name": "Early Bird",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Farigiraf",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Farigiraf",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Torkoal",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Torkoal",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Kingambit",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Kingambit",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Mawile",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Mawile",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Sylveon",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Sylveon",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Gallade",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Gallade",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Blastoise",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Blastoise",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Vivillon Fancy Pattern",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Vivillon Fancy Pattern",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Staraptor",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Staraptor",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Brave",
+      "percentage": 0.512,
+      "statUp": "Attack",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Brave",
+        "percentage": "51.2%",
+        "percentage_value": 51.2,
+        "stat_up": "Attack",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Adamant",
+      "percentage": 0.433,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Adamant",
+        "percentage": "43.3%",
+        "percentage_value": 43.3,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Jolly",
+      "percentage": 0.037,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Jolly",
+        "percentage": "3.7%",
+        "percentage_value": 3.7,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Impish",
+      "percentage": 0.5,
+      "statUp": "Defense",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Impish",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "Defense",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Lonely",
+      "percentage": 0.3,
+      "statUp": "Attack",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Lonely",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Attack",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Naughty",
+      "percentage": 0.2,
+      "statUp": "Attack",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Naughty",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Relaxed",
+      "percentage": 0.2,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Relaxed",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Careful",
+      "percentage": 0.2,
+      "statUp": "Sp. Def",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Careful",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Sp. Def",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Sassy",
+      "percentage": 0.1,
+      "statUp": "Sp. Def",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Sassy",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Sp. Def",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Naive",
+      "percentage": 0.1,
+      "statUp": "Speed",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Naive",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.319,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "31.9%",
+        "percentage_value": 31.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.215,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "21.5%",
+        "percentage_value": 21.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 1,
+        "sp_atk_points": 0,
+        "sp_def_points": 1,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.086,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "8.6%",
+        "percentage_value": 8.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.062,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "6.2%",
+        "percentage_value": 6.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.045,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "4.5%",
+        "percentage_value": 4.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 2
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.9,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "0.9%",
+        "percentage_value": 0.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 32,
+        "defense_points": 32,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.9,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "0.9%",
+        "percentage_value": 0.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 14,
+        "attack_points": 31,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 21,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Kangaskhan",
+      "position": 37,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.7,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kangaskhan",
+        "column_position": 37,
+        "position": 37,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "0.7%",
+        "percentage_value": 0.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 32
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a4f390c063cb29d318e77d8-koalina",
+      "name": "Koalina · Women's League VGC #4",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Last Respects",
+            "Wave Crash",
+            "Aqua Jet",
+            "Flip Turn"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Sitrus Berry",
+          "ability": "Rough Skin",
+          "moves": [
+            "Stomping Tantrum",
+            "Dragon Claw",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Focus Sash",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Tailwind",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Hyper Beam",
+            "Yawn",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Kangaskhanite",
+          "ability": "Scrappy",
+          "moves": [
+            "Double-Edge",
+            "Ice Punch",
+            "Low Kick",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Women's League VGC #4",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Koalina",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a4dbb9665724db9ded3ff83-pokimono",
+      "name": "pokimono · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Kangaskhanite",
+          "ability": "Scrappy",
+          "moves": [
+            "Fake Out",
+            "Last Resort"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Foul Play",
+            "Trick Room",
+            "Endeavor",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Heat Wave",
+            "Solar Beam",
+            "Eruption",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "chesnaught",
+          "name": "Chesnaught",
+          "item": "Chesnaughtite",
+          "ability": "Bulletproof",
+          "moves": [
+            "Wood Hammer",
+            "Wide Guard",
+            "Hammer Arm",
+            "Spiky Shield"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Leftovers",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Protect",
+            "Moonblast",
+            "Calm Mind"
+          ]
+        },
+        {
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "item": "Choice Scarf",
+          "ability": "Sharpness",
+          "moves": [
+            "Stone Axe",
+            "Night Slash",
+            "X-Scissor",
+            "Close Combat"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "pokimono",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a32e8b12d97f3b0c26189cc-tomatosaiyan",
+      "name": "TomatoSaiyan · Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Eruption",
+            "Weather Ball",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Life Orb",
+          "ability": "Scrappy",
+          "moves": [
+            "Fake Out",
+            "Double-Edge",
+            "Brick Break",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "aurorus",
+          "name": "Aurorus",
+          "item": "Expert Belt",
+          "ability": "Snow Warning",
+          "moves": [
+            "Freeze-Dry",
+            "Blizzard",
+            "Ancient Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "vileplume",
+          "name": "Vileplume",
+          "item": "Focus Sash",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "After You",
+            "Sleep Powder",
+            "Energy Ball"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Protect",
+            "Imprison",
+            "Psychic",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Sucker Punch",
+            "Play Rough",
+            "Protect",
+            "Rock Slide"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "TomatoSaiyan",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a33cff8e334c3c9befd9250-tyrant_zilla",
+      "name": "Tyrant_zilla · Rising Stars - S1 (Double Battle)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Roost",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psyshock",
+            "Ally Switch",
+            "Helping Hand",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "item": "Focus Sash",
+          "ability": "Sharpness",
+          "moves": [
+            "Stone Axe",
+            "Acrobatics",
+            "X-Scissor",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Bright Powder",
+          "ability": "Prankster",
+          "moves": [
+            "Charm",
+            "Moonblast",
+            "Fake Tears",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Metronome",
+          "ability": "Scrappy",
+          "moves": [
+            "Last Resort",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "typhlosion",
+          "name": "Typhlosion",
+          "item": "Choice Scarf",
+          "ability": "Flash Fire",
+          "moves": [
+            "Eruption",
+            "Heat Wave",
+            "Will-O-Wisp",
+            "Focus Blast"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8888888888888888,
+      "sampleCount": 9,
+      "tournament": "Rising Stars - S1 (Double Battle)",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Tyrant_zilla",
+      "record": "8-1-0"
+    },
+    {
+      "id": "6a33cff8e334c3c9befd9250-ravichawda",
+      "name": "Ravichawda · Rising Stars - S1 (Double Battle)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "chandelure",
+          "name": "Chandelure",
+          "item": "Focus Sash",
+          "ability": "Flash Fire",
+          "moves": [
+            "Protect",
+            "Heat Wave",
+            "Shadow Ball",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "kommo-o",
+          "name": "Kommo-o",
+          "item": "Life Orb",
+          "ability": "Soundproof",
+          "moves": [
+            "Clanging Scales",
+            "Aura Sphere",
+            "Flamethrower",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Low Kick",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Kangaskhanite",
+          "ability": "Scrappy",
+          "moves": [
+            "Fake Out",
+            "Double-Edge",
+            "Sucker Punch",
+            "Brick Break"
+          ]
+        },
+        {
+          "slug": "gallade",
+          "name": "Gallade",
+          "item": "Expert Belt",
+          "ability": "Sharpness",
+          "moves": [
+            "Sacred Sword",
+            "Leaf Blade",
+            "Psycho Cut",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Sitrus Berry",
+          "ability": "Adaptability",
+          "moves": [
+            "Protect",
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "Rising Stars - S1 (Double Battle)",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Ravichawda",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a4fcb1f65724db9ded413ac-capravolante97",
+      "name": "Capravolante97 · Pep_uni Pokémon Champions #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "chandelure",
+          "name": "Chandelure",
+          "item": "Chandelurite",
+          "ability": "Flash Fire",
+          "moves": [
+            "Heat Wave",
+            "Shadow Ball",
+            "Protect",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Silk Scarf",
+          "ability": "Scrappy",
+          "moves": [
+            "Fake Out",
+            "Last Resort"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Light of Ruin",
+            "Protect",
+            "Dazzling Gleam",
+            "Moonblast"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Tailwind",
+            "Protect",
+            "Encore",
+            "Moonblast"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Stomping Tantrum",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Quick Guard",
+            "Dire Claw",
+            "Close Combat"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6363636363636364,
+      "sampleCount": 11,
+      "tournament": "Pep_uni Pokémon Champions #2",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Capravolante97",
+      "record": "7-3-1"
+    },
+    {
+      "id": "6a5117e465724db9ded421f1-oyashiro",
+      "name": "oyashiro · Øutcast's Warm Up Cup",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Poison Touch",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Protect",
+            "Dire Claw"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Protect",
+            "Dragon Claw"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Focus Sash",
+          "ability": "Unnerve",
+          "moves": [
+            "Wide Guard",
+            "Rock Slide",
+            "Tailwind",
+            "Dual Wingbeat"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Detect",
+            "Hyper Voice",
+            "Hyper Beam",
+            "Shadow Ball"
+          ]
+        },
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Kangaskhanite",
+          "ability": "Scrappy",
+          "moves": [
+            "Fake Out",
+            "Sucker Punch",
+            "Double-Edge",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Nasty Plot",
+            "Psyshock",
+            "Heat Wave",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "Øutcast's Warm Up Cup",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "oyashiro",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a5117e465724db9ded421f1-yohaniee",
+      "name": "Yohaniee · Øutcast's Warm Up Cup",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tinkaton",
+          "name": "Tinkaton",
+          "item": "Shuca Berry",
+          "ability": "Mold Breaker",
+          "moves": [
+            "Gigaton Hammer",
+            "Knock Off",
+            "Play Rough",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Silk Scarf",
+          "ability": "Scrappy",
+          "moves": [
+            "Fake Out",
+            "Last Resort"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Cud Chew",
+          "moves": [
+            "Thunderbolt",
+            "Trick Room",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Life Orb",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Protect",
+            "Dazzling Gleam",
+            "Sparkling Aria"
+          ]
+        },
+        {
+          "slug": "camerupt",
+          "name": "Camerupt",
+          "item": "Cameruptite",
+          "ability": "Magma Armor",
+          "moves": [
+            "Eruption",
+            "Heat Wave",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "aromatisse",
+          "name": "Aromatisse",
+          "item": "Babiri Berry",
+          "ability": "Aroma Veil",
+          "moves": [
+            "Sunny Day",
+            "Moonblast",
+            "Trick Room",
+            "Helping Hand"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Øutcast's Warm Up Cup",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Yohaniee",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a55808a232a1a55ee10be16-bahamut",
+      "name": "Bahamut · 𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Kangaskhanite",
+          "ability": "Scrappy",
+          "moves": [
+            "Sucker Punch",
+            "Double-Edge",
+            "Drain Punch",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Hyper Beam",
+            "Quick Attack",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Spell Tag",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Nasty Plot",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8333333333333334,
+      "sampleCount": 6,
+      "tournament": "𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Bahamut",
+      "record": "5-1-0"
+    },
+    {
+      "id": "6a442f7183fd320299bd5187-eliottb",
+      "name": "Eliott Bacu · HALL OF  FAME BELGIUM (Invitational)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Water Spout",
+            "Dark Pulse",
+            "Shell Smash",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Kangaskhanite",
+          "ability": "Inner Focus",
+          "moves": [
+            "Fake Out",
+            "Double-Edge",
+            "Low Kick",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Thunderbolt",
+            "Trick Room",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Eruption",
+            "Heat Wave",
+            "Weather Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "vivillon",
+          "name": "Vivillon",
+          "item": "Choice Scarf",
+          "ability": "Compound Eyes",
+          "moves": [
+            "Sleep Powder",
+            "Rage Powder",
+            "Hurricane",
+            "Rain Dance"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Focus Sash",
+          "ability": "Adaptability",
+          "moves": [
+            "Liquidation",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7142857142857143,
+      "sampleCount": 7,
+      "tournament": "HALL OF  FAME BELGIUM (Invitational)",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Eliott Bacu",
+      "record": "5-2-0"
+    },
+    {
+      "id": "6a529f1ee09846f1eb4c14e3-elsejoconsoja",
+      "name": "elsejoconsoja · Chaos League Sunday Slam #104",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "vivillon",
+          "name": "Vivillon",
+          "item": "Choice Scarf",
+          "ability": "Compound Eyes",
+          "moves": [
+            "Pollen Puff",
+            "Hurricane",
+            "Giga Drain",
+            "Sleep Powder"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Thunderbolt",
+            "Trick Room",
+            "Psychic",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Weather Ball",
+            "Eruption",
+            "Heat Wave",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Kangaskhanite",
+          "ability": "Scrappy",
+          "moves": [
+            "Last Resort",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Sucker Punch",
+            "Rock Slide",
+            "Protect",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Life Orb",
+          "ability": "Pixilate",
+          "moves": [
+            "Quick Attack",
+            "Hyper Beam",
+            "Hyper Voice",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Chaos League Sunday Slam #104",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "elsejoconsoja",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a57380e6355385f44dd5183-orttega15",
+      "name": "Orttega15 · Champions Tour LEPE M-B #9",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Kangaskhanite",
+          "ability": "Scrappy",
+          "moves": [
+            "Double-Edge",
+            "Crunch",
+            "Brick Break",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Eruption",
+            "Weather Ball",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Trick Room",
+            "Twin Beam",
+            "Thunderbolt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hatterene",
+          "name": "Hatterene",
+          "item": "Focus Sash",
+          "ability": "Magic Bounce",
+          "moves": [
+            "Dazzling Gleam",
+            "Psychic",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Iron Ball",
+          "ability": "Poison Touch",
+          "moves": [
+            "Protect",
+            "Fake Out",
+            "Dire Claw",
+            "Close Combat"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.25,
+      "sampleCount": 4,
+      "tournament": "Champions Tour LEPE M-B #9",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Orttega15",
+      "record": "1-3-0"
+    },
+    {
+      "id": "6a50864165724db9ded41db6-jonajotajenner",
+      "name": "JonaJotaJenner · 4fun sabadín",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Shell Bell",
+          "ability": "Pixilate",
+          "moves": [
+            "Weather Ball",
+            "Hyper Beam",
+            "Hyper Voice",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "White Herb",
+          "ability": "Multiscale",
+          "moves": [
+            "Draco Meteor",
+            "Hurricane",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Kangaskhanite",
+          "ability": "Scrappy",
+          "moves": [
+            "Fake Out",
+            "Protect",
+            "Crunch",
+            "Low Kick"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Life Orb",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Shadow Ball",
+            "Trick Room",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Leftovers",
+          "ability": "Intimidate",
+          "moves": [
+            "Throat Chop",
+            "Parting Shot",
+            "Eruption",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Stone Edge",
+            "Crunch",
+            "Stomping Tantrum"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.2,
+      "sampleCount": 5,
+      "tournament": "4fun sabadín",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "JonaJotaJenner",
+      "record": "1-4-0"
+    },
+    {
+      "id": "6a545f013ee4505de4ad5e7e-upinhuu",
+      "name": "uPinhuu · 🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "bellibolt",
+          "name": "Bellibolt",
+          "item": "Magnet",
+          "ability": "Electromorphosis",
+          "moves": [
+            "Parabolic Charge",
+            "Volt Switch",
+            "Thunderbolt",
+            "Soak"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Trick Room",
+            "Psychic Noise",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Eruption",
+            "Protect",
+            "Weather Ball",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Iron Head",
+            "Play Rough",
+            "Protect",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Knock Off",
+            "Rock Slide",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Life Orb",
+          "ability": "Scrappy",
+          "moves": [
+            "Fake Out",
+            "Last Resort"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "uPinhuu",
+      "record": "2-3-0"
+    }
+  ],
+  "movePool": [
+    "Assurance",
+    "Attract",
+    "Avalanche",
+    "Beat Up",
+    "Bite",
+    "Blizzard",
+    "Body Slam",
+    "Brick Break",
+    "Bulldoze",
+    "Circle Throw",
+    "Counter",
+    "Crunch",
+    "Dig",
+    "Disable",
+    "Double Hit",
+    "Double-Edge",
+    "Drain Punch",
+    "Dynamic Punch",
+    "Earthquake",
+    "Endeavor",
+    "Endure",
+    "Facade",
+    "Fake Out",
+    "Fire Blast",
+    "Fire Punch",
+    "Flamethrower",
+    "Fling",
+    "Focus Blast",
+    "Focus Energy",
+    "Giga Impact",
+    "Hammer Arm",
+    "Helping Hand",
+    "Hydro Pump",
+    "Hyper Beam",
+    "Ice Beam",
+    "Ice Punch",
+    "Icy Wind",
+    "Iron Tail",
+    "Last Resort",
+    "Low Kick",
+    "Mega Kick",
+    "Outrage",
+    "Protect",
+    "Rain Dance",
+    "Rest",
+    "Reversal",
+    "Rock Slide",
+    "Rock Tomb",
+    "Round",
+    "Safeguard",
+    "Sandstorm",
+    "Shadow Ball",
+    "Shadow Claw",
+    "Sleep Talk",
+    "Snore",
+    "Solar Beam",
+    "Substitute",
+    "Sucker Punch",
+    "Sunny Day",
+    "Surf",
+    "Terrain Pulse",
+    "Thief",
+    "Thunder",
+    "Thunder Punch",
+    "Thunderbolt",
+    "Uproar",
+    "Whirlpool"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Kangaskhan",
+      "base_name": "Kangaskhan",
+      "saved_name": "Kangaskhan",
+      "types": "Normal",
+      "abilities": "Early Bird|Scrappy|Inner Focus",
+      "image_path": "pokemon_champions_assets\\pokemon\\Kangaskhan.png",
+      "form": "",
+      "hp": 180,
+      "atk": 115,
+      "def": 100,
+      "spa": 60,
+      "spd": 100,
+      "spe": 110,
+      "total": 665
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "move",
+          "rank": 1,
+          "name": "Fake Out",
+          "percentage": "98.7%",
+          "percentage_value": 98.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Kangaskhanite",
+          "percentage": "45.3%",
+          "percentage_value": 45.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Brave",
+          "percentage": "51.2%",
+          "percentage_value": 51.2,
+          "stat_up": "Attack",
+          "stat_down": "Speed"
+        },
+        "stat_points": {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "31.9%",
+          "percentage_value": 31.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        "ability": {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "ability",
+          "rank": 1,
+          "name": "Scrappy",
+          "percentage": "96.7%",
+          "percentage_value": 96.7,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Fake Out",
+          "Last Resort",
+          "Double-Edge",
+          "Sucker Punch",
+          "Ice Punch",
+          "Brick Break",
+          "Low Kick",
+          "Drain Punch",
+          "Hammer Arm",
+          "Protect"
+        ],
+        "held_item": [
+          "Kangaskhanite",
+          "Silk Scarf",
+          "Life Orb",
+          "Chople Berry",
+          "Sitrus Berry",
+          "Metronome",
+          "Leftovers",
+          "Iron Ball",
+          "Muscle Band",
+          "Expert Belt"
+        ],
+        "teammate": [
+          "Farigiraf",
+          "Torkoal",
+          "Basculegion Male",
+          "Kingambit",
+          "Mawile",
+          "Sylveon",
+          "Gallade",
+          "Blastoise",
+          "Vivillon Fancy Pattern",
+          "Staraptor"
+        ],
+        "stat_alignment": [
+          "Brave",
+          "Adamant",
+          "Jolly",
+          "Impish",
+          "Lonely",
+          "Naughty",
+          "Relaxed",
+          "Careful",
+          "Sassy",
+          "Naive"
+        ],
+        "stat_points": [
+          "HP 32 / Atk 32 / Def 2 / SpA 0 / SpD 0 / Spe 0",
+          "HP 32 / Atk 32 / Def 1 / SpA 0 / SpD 1 / Spe 0",
+          "HP 32 / Atk 32 / Def 0 / SpA 0 / SpD 2 / Spe 0",
+          "HP 2 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 32",
+          "HP 32 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 2",
+          "HP 2 / Atk 32 / Def 32 / SpA 0 / SpD 0 / Spe 0",
+          "HP 14 / Atk 31 / Def 0 / SpA 0 / SpD 21 / Spe 0",
+          "HP 0 / Atk 32 / Def 0 / SpA 0 / SpD 2 / Spe 32"
+        ],
+        "ability": [
+          "Scrappy",
+          "Inner Focus",
+          "Early Bird"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "move",
+          "rank": 1,
+          "name": "Fake Out",
+          "percentage": "98.7%",
+          "percentage_value": 98.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "move",
+          "rank": 2,
+          "name": "Last Resort",
+          "percentage": "48.3%",
+          "percentage_value": 48.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "move",
+          "rank": 3,
+          "name": "Double-Edge",
+          "percentage": "46.0%",
+          "percentage_value": 46,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "move",
+          "rank": 4,
+          "name": "Sucker Punch",
+          "percentage": "23.8%",
+          "percentage_value": 23.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "move",
+          "rank": 5,
+          "name": "Ice Punch",
+          "percentage": "23.8%",
+          "percentage_value": 23.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "move",
+          "rank": 6,
+          "name": "Brick Break",
+          "percentage": "13.3%",
+          "percentage_value": 13.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "move",
+          "rank": 7,
+          "name": "Low Kick",
+          "percentage": "13.1%",
+          "percentage_value": 13.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "move",
+          "rank": 8,
+          "name": "Drain Punch",
+          "percentage": "12.1%",
+          "percentage_value": 12.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "move",
+          "rank": 9,
+          "name": "Hammer Arm",
+          "percentage": "9.8%",
+          "percentage_value": 9.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "move",
+          "rank": 10,
+          "name": "Protect",
+          "percentage": "5.2%",
+          "percentage_value": 5.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Kangaskhanite",
+          "percentage": "45.3%",
+          "percentage_value": 45.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Silk Scarf",
+          "percentage": "42.1%",
+          "percentage_value": 42.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Life Orb",
+          "percentage": "6.4%",
+          "percentage_value": 6.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Chople Berry",
+          "percentage": "1.4%",
+          "percentage_value": 1.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Sitrus Berry",
+          "percentage": "1.3%",
+          "percentage_value": 1.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Metronome",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Leftovers",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Iron Ball",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Muscle Band",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Expert Belt",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Torkoal",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Mawile",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Sylveon",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Gallade",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Blastoise",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Vivillon Fancy Pattern",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Staraptor",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Brave",
+          "percentage": "51.2%",
+          "percentage_value": 51.2,
+          "stat_up": "Attack",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Adamant",
+          "percentage": "43.3%",
+          "percentage_value": 43.3,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Jolly",
+          "percentage": "3.7%",
+          "percentage_value": 3.7,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Impish",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Lonely",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Attack",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Naughty",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Relaxed",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Careful",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Sp. Def",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Sassy",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Sp. Def",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Naive",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "31.9%",
+          "percentage_value": 31.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "21.5%",
+          "percentage_value": 21.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 1,
+          "sp_atk_points": 0,
+          "sp_def_points": 1,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "8.6%",
+          "percentage_value": 8.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "6.2%",
+          "percentage_value": 6.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "4.5%",
+          "percentage_value": 4.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 2
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "0.9%",
+          "percentage_value": 0.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 32,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "0.9%",
+          "percentage_value": 0.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 14,
+          "attack_points": 31,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 21,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "0.7%",
+          "percentage_value": 0.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "ability",
+          "rank": 1,
+          "name": "Scrappy",
+          "percentage": "96.7%",
+          "percentage_value": 96.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "ability",
+          "rank": 2,
+          "name": "Inner Focus",
+          "percentage": "3.1%",
+          "percentage_value": 3.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kangaskhan",
+          "column_position": 37,
+          "position": 37,
+          "category": "ability",
+          "rank": 3,
+          "name": "Early Bird",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Kangaskhan.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Kangaskhan.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Kangaskhan.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Kangaskhan.csv"
+      }
+    ]
+  }
+}

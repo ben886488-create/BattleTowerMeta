@@ -433,11 +433,13 @@ import { getLocalizedDeckName } from "../assets/pokemonNames";
 import { inferVersionByStartMs, loadPlayerEntries, type DecoratedPlayerEntry } from "../lib/playerEntries";
 import { createRankLog, deleteRankLog, deleteRankLogs } from "../lib/interactive";
 import { authProfile, hasSupabaseConfig } from "../lib/supabase";
+import { routeLang as getRouteLang } from "../lib/siteI18n";
 import {
   analyzeRankTrackerState,
   createDefaultRankTrackerState,
   sanitizeRankTrackerState,
   type RankMatchResult,
+  type RankTrackerMatch,
   type RankTierDefinition,
   type RankTrackerState,
 } from "../lib/rankTracker";
@@ -467,7 +469,7 @@ const playerDeckQuery = ref("");
 const opponentDeckQuery = ref("");
 const status = reactive({ message: "", error: "" });
 const state = reactive<RankTrackerState>(createDefaultRankTrackerState());
-const locale = computed<"zh" | "en">(() => (String(route.path).split("/")[1] === "en" ? "en" : "zh"));
+const locale = computed<"zh" | "en">(() => getRouteLang(route));
 const numberLocale = computed(() => (locale.value === "en" ? "en-US" : "zh-HK"));
 const ui = computed(() =>
   locale.value === "en"
@@ -481,6 +483,7 @@ const ui = computed(() =>
         currentStreak: "Current streak",
         streakWins: "Win streak",
         nextWinGain: "Next win",
+        winRate: "Win rate",
         record: "Record",
         yourDecks: "Your decks",
         opponents: "Opponent decks",
@@ -559,6 +562,7 @@ const ui = computed(() =>
         currentStreak: "\u76ee\u524d\u9023\u52dd",
         streakWins: "\u9023\u52dd\u5834\u6578",
         nextWinGain: "\u4e0b\u4e00\u5834\u53ef\u5f97",
+        winRate: "\u52dd\u7387",
         record: "\u6230\u7e3e",
         yourDecks: "\u81ea\u5df1\u4f7f\u7528\u7684\u724c\u7d44",
         opponents: "\u9047\u5230\u7684\u724c\u7d44",
@@ -800,7 +804,7 @@ async function addMatch(result: RankMatchResult) {
     return;
   }
 
-  const match = {
+  const match: RankTrackerMatch = {
     id: `match-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
     playerDeck: state.currentPlayerDeck,
     opponentDeck: state.lastOpponentDeck,
@@ -1180,8 +1184,8 @@ function clearDeckSelection(side: "player" | "opponent") {
 
 <style scoped>
  .tracker { display: grid; gap: 1.5rem; }
- .card, .subcard { background: rgba(10, 24, 44, 0.92); border: 1px solid rgba(111, 189, 255, 0.16); border-radius: 28px; padding: 1.4rem; box-shadow: inset 0 1px 0 rgba(255,255,255,0.04); }
- .hero { display: grid; gap: 1.15rem; }
+ .card, .subcard { background: var(--panel-background); border: 1px solid var(--border); border-radius: var(--radius-panel); padding: var(--space-5); box-shadow: none; }
+ .hero { display: grid; gap: var(--space-5); }
  .hero__stats, .summary-grid, .ops-grid, .selector-grid--slots, .fields, .deck-card__stats { display: grid; gap: 1rem; }
  .hero__stats { grid-template-columns: minmax(0, 1.24fr) repeat(2, minmax(0, 1fr)); align-items: stretch; }
  .summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -1189,7 +1193,7 @@ function clearDeckSelection(side: "player" | "opponent") {
  .selector-grid--slots, .fields { grid-template-columns: repeat(2, minmax(0, 1fr)); }
  .hero__head, .section-head, .stat__head, .opponent-bar__head, .selector-card__top, .deck-card__main, .deck-row__main, .log__matchup, .deck-row__meta, .actions { display: flex; align-items: center; justify-content: space-between; gap: 0.9rem; }
  .hero__controls { display: grid; justify-items: end; gap: 0.5rem; }
- .mode-switch { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.35rem; border-radius: 999px; border: 1px solid rgba(111, 189, 255, 0.18); background: rgba(9, 20, 36, 0.82); }
+ .mode-switch { display: inline-flex; align-items: center; gap: 0; padding: 0; border-radius: var(--radius-control); border: 1px solid var(--border); background: var(--bg-control); }
  .mode-switch__button { border: 0; border-radius: 999px; padding: 0.6rem 1rem; background: transparent; color: #9db8db; cursor: pointer; font-weight: 800; }
  .mode-switch__button--active { background: linear-gradient(180deg, rgba(56, 129, 220, 0.92), rgba(34, 94, 170, 0.92)); color: #f5fbff; }
  .kicker { letter-spacing: 0.24em; color: #76c9ff; margin: 0 0 0.45rem; font-size: 0.76rem; }
@@ -1205,7 +1209,7 @@ function clearDeckSelection(side: "player" | "opponent") {
  .rankline__copy { margin-left: auto; text-align: right; display: grid; gap: 0.2rem; justify-items: end; }
  .ball { width: 4rem; height: 4rem; object-fit: contain; }
  .split { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
- .split--compact div { padding: 0.9rem 1rem; border-radius: 18px; background: rgba(26, 54, 91, 0.74); min-height: 100%; display: grid; align-content: center; }
+ .split--compact div { padding: var(--space-4); border: 1px solid var(--border); border-radius: var(--radius-panel); background: var(--surface-raised); min-height: 100%; display: grid; align-content: center; }
   .stream-splitline { display: grid; grid-template-columns: 1fr; gap: 0.55rem; }
   .stream-splitline__item { border-radius: 16px; background: rgba(26, 54, 91, 0.74); padding: 0.7rem 0.75rem; display: grid; gap: 0.16rem; align-content: center; min-height: 100%; }
   .stream-splitline__item strong { font-size: clamp(2.2rem, 5.5vw, 2.8rem); line-height: 1; }
@@ -1219,15 +1223,16 @@ function clearDeckSelection(side: "player" | "opponent") {
 .deck-list, .opponent-bars, .records, .logs { display: grid; gap: 1rem; }
 .deck-card, .opponent-bar, .record-row, .deck-picker__selected { border: 1px solid rgba(111, 189, 255, 0.16); border-radius: 22px; background: rgba(13, 29, 52, 0.82); padding: 1rem; }
 .deck-card__stats { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 1rem; }
-.mini-stat { border-radius: 18px; background: rgba(29, 58, 94, 0.75); padding: 0.9rem 1rem; display: grid; gap: 0.35rem; }
+.mini-stat { border: 1px solid var(--border); border-radius: var(--radius-panel); background: var(--surface-raised); padding: var(--space-4); display: grid; gap: var(--space-2); }
 .mini-stat strong { font-size: 1.55rem; }
 .opponent-bar__track { margin-top: 0.9rem; height: 0.75rem; border-radius: 999px; background: rgba(44, 73, 116, 0.72); overflow: hidden; }
 .opponent-bar__fill { height: 100%; border-radius: inherit; background: linear-gradient(90deg, #6bc8ff, #dca35d); }
 .opponent-bar__streamline { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.75rem; }
-.tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.85rem; margin-bottom: 1rem; }
-.tab, .action, .ghost, .deck-search__option { border: 1px solid rgba(111, 189, 255, 0.2); background: rgba(14, 32, 57, 0.9); color: #eef6ff; cursor: pointer; }
-.tab { border-radius: 18px; padding: 0.95rem 1rem; font-weight: 700; }
-.tab--active { background: linear-gradient(180deg, rgba(56, 129, 220, 0.92), rgba(34, 94, 170, 0.92)); }
+.tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin-bottom: var(--space-4); }
+.tab, .action, .ghost, .deck-search__option { min-height: var(--control-height); border: 1px solid var(--border); background: var(--bg-control); color: var(--text); cursor: pointer; }
+.tab { border-radius: var(--radius-control); padding: var(--space-3) var(--space-4); font-weight: 700; }
+.tab--active { background: var(--accent); color: var(--bg-deep); }
+.tab:hover:not(:disabled), .action:hover:not(:disabled), .ghost:hover:not(:disabled) { border-color: var(--accent); background: var(--bg-selected); color: var(--text); }
 .fields label { display: grid; gap: 0.45rem; color: #d9e9ff; font-weight: 700; }
 .fields input, .deck-search__field input { width: 100%; border: 1px solid rgba(111, 189, 255, 0.22); border-radius: 14px; background: #081223; color: #f4f9ff; padding: 0.85rem 0.95rem; }
  .deck-picker { position: relative; display: grid; gap: 0.85rem; }
@@ -1250,10 +1255,10 @@ function clearDeckSelection(side: "player" | "opponent") {
 .fallback--small { width: 2rem; height: 2rem; font-size: 0.75rem; }
 .actions { flex-wrap: wrap; margin-top: 1rem; }
 .action, .ghost { border-radius: 16px; padding: 0.9rem 1.1rem; font-weight: 800; }
-.action--win { background: rgba(16, 121, 74, 0.92); }
-.action--loss { background: rgba(150, 42, 55, 0.92); }
-.action--draw { background: rgba(174, 129, 33, 0.92); }
-.ghost--danger { border-color: rgba(255, 120, 120, 0.36); color: #ffd0d0; }
+.action--win { background: color-mix(in srgb, var(--positive) 14%, var(--surface)); color: var(--positive); }
+.action--loss { background: color-mix(in srgb, var(--negative) 14%, var(--surface)); color: var(--negative); }
+.action--draw { background: color-mix(in srgb, var(--warning) 14%, var(--surface)); color: var(--warning); }
+.ghost--danger { border-color: var(--negative); color: var(--negative); }
 .notice { margin-top: 1rem; padding: 0.9rem 1rem; border-radius: 16px; }
 .notice--ok { background: rgba(22, 96, 62, 0.32); color: #bff3d8; }
 .notice--error { background: rgba(121, 37, 49, 0.32); color: #ffd4dc; }

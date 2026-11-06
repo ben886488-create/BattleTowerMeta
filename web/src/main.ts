@@ -2,11 +2,13 @@ import { ViteSSG } from 'vite-ssg'
 import App from './App.vue'
 import { routes } from './routes'
 import { initGoogleAnalytics } from './lib/analytics'
+import { SSG_STATIC_ROUTES } from './lib/siteSeo'
 
 import './assets/theme.css'
 import './assets/fonts.css'
 import './responsive.css'
 import './assets/editorial.css'
+import './assets/champions.css'
 
 export const createApp = ViteSSG(
   App,
@@ -25,10 +27,13 @@ type TierRow = {
   deck?: string
 }
 
+const NODE_FS_PROMISES_MODULE = 'node:fs/promises'
+const NODE_PATH_MODULE = 'node:path'
+
 async function loadDeckProfileRoutes() {
   const [{ readFile, readdir }, pathModule] = await Promise.all([
-    import('node:fs/promises'),
-    import('node:path'),
+    import(/* @vite-ignore */ NODE_FS_PROMISES_MODULE) as Promise<typeof import('node:fs/promises')>,
+    import(/* @vite-ignore */ NODE_PATH_MODULE) as Promise<typeof import('node:path')>,
   ])
 
   const tierJsonPath = pathModule.resolve(process.cwd(), 'public/data/tier.json')
@@ -47,11 +52,11 @@ async function loadDeckProfileRoutes() {
     ),
   )
 
-  return deckKeys.flatMap((deckKey) => [`/zh/top-decks/${deckKey}`, `/en/top-decks/${deckKey}`])
+  return deckKeys.map((deckKey) => `/pocket/decks/${deckKey}`)
 }
 
 export async function includedRoutes(paths: string[]) {
   const deckProfileRoutes = await loadDeckProfileRoutes()
-  const staticPaths = paths.filter((path) => !path.includes(':'))
-  return Array.from(new Set([...staticPaths, ...deckProfileRoutes]))
+  void paths
+  return Array.from(new Set([...SSG_STATIC_ROUTES, ...deckProfileRoutes]))
 }

@@ -1,0 +1,3991 @@
+{
+  "pokemon": {
+    "slug": "gardevoir",
+    "name": "Gardevoir",
+    "baseName": "Gardevoir",
+    "savedName": "Gardevoir",
+    "form": "",
+    "types": [
+      "Psychic",
+      "Fairy"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Gardevoir.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/282.png",
+    "stats": {
+      "hp": 143,
+      "attack": 85,
+      "defense": 85,
+      "spAttack": 145,
+      "spDefense": 135,
+      "speed": 100,
+      "total": 693
+    },
+    "rank": 46,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Protect",
+    "topItem": "Gardevoirite",
+    "topTeammate": "Garchomp"
+  },
+  "moves": [
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "move",
+      "rank": 1,
+      "name": "Protect",
+      "percentage": 0.886,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "move",
+        "rank": 1,
+        "name": "Protect",
+        "percentage": "88.6%",
+        "percentage_value": 88.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "move",
+      "rank": 2,
+      "name": "Hyper Voice",
+      "percentage": 0.886,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "move",
+        "rank": 2,
+        "name": "Hyper Voice",
+        "percentage": "88.6%",
+        "percentage_value": 88.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "move",
+      "rank": 3,
+      "name": "Psychic",
+      "percentage": 0.461,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "move",
+        "rank": 3,
+        "name": "Psychic",
+        "percentage": "46.1%",
+        "percentage_value": 46.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "move",
+      "rank": 4,
+      "name": "Psyshock",
+      "percentage": 0.319,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "move",
+        "rank": 4,
+        "name": "Psyshock",
+        "percentage": "31.9%",
+        "percentage_value": 31.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "move",
+      "rank": 5,
+      "name": "Trick Room",
+      "percentage": 0.209,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "move",
+        "rank": 5,
+        "name": "Trick Room",
+        "percentage": "20.9%",
+        "percentage_value": 20.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "move",
+      "rank": 6,
+      "name": "Vacuum Wave",
+      "percentage": 0.208,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "move",
+        "rank": 6,
+        "name": "Vacuum Wave",
+        "percentage": "20.8%",
+        "percentage_value": 20.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "move",
+      "rank": 7,
+      "name": "Thunderbolt",
+      "percentage": 0.132,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "move",
+        "rank": 7,
+        "name": "Thunderbolt",
+        "percentage": "13.2%",
+        "percentage_value": 13.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "move",
+      "rank": 8,
+      "name": "Calm Mind",
+      "percentage": 0.12,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "move",
+        "rank": 8,
+        "name": "Calm Mind",
+        "percentage": "12.0%",
+        "percentage_value": 12,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "move",
+      "rank": 9,
+      "name": "Moonblast",
+      "percentage": 0.11,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "move",
+        "rank": 9,
+        "name": "Moonblast",
+        "percentage": "11.0%",
+        "percentage_value": 11,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "move",
+      "rank": 10,
+      "name": "Aura Sphere",
+      "percentage": 0.093,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "move",
+        "rank": 10,
+        "name": "Aura Sphere",
+        "percentage": "9.3%",
+        "percentage_value": 9.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Gardevoirite",
+      "percentage": 0.912,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Gardevoirite",
+        "percentage": "91.2%",
+        "percentage_value": 91.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Choice Scarf",
+      "percentage": 0.025,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Choice Scarf",
+        "percentage": "2.5%",
+        "percentage_value": 2.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Focus Sash",
+      "percentage": 0.017,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Focus Sash",
+        "percentage": "1.7%",
+        "percentage_value": 1.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Sitrus Berry",
+      "percentage": 0.011,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Sitrus Berry",
+        "percentage": "1.1%",
+        "percentage_value": 1.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Fairy Feather",
+      "percentage": 0.8,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Fairy Feather",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Life Orb",
+      "percentage": 0.4,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Life Orb",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Leftovers",
+      "percentage": 0.3,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Leftovers",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Wise Glasses",
+      "percentage": 0.3,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Wise Glasses",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Expert Belt",
+      "percentage": 0.2,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Expert Belt",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Shell Bell",
+      "percentage": 0.2,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Shell Bell",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "ability",
+      "rank": 1,
+      "name": "Trace",
+      "percentage": 0.765,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "ability",
+        "rank": 1,
+        "name": "Trace",
+        "percentage": "76.5%",
+        "percentage_value": 76.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "ability",
+      "rank": 2,
+      "name": "Telepathy",
+      "percentage": 0.196,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "ability",
+        "rank": 2,
+        "name": "Telepathy",
+        "percentage": "19.6%",
+        "percentage_value": 19.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "ability",
+      "rank": 3,
+      "name": "Synchronize",
+      "percentage": 0.039,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "ability",
+        "rank": 3,
+        "name": "Synchronize",
+        "percentage": "3.9%",
+        "percentage_value": 3.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Kingambit",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Kingambit",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Maushold Family of Four",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Maushold Family of Four",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Talonflame",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Talonflame",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Whimsicott",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Whimsicott",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Sneasler",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Sneasler",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Farigiraf",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Farigiraf",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Modest",
+      "percentage": 0.736,
+      "statUp": "Sp. Atk",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Modest",
+        "percentage": "73.6%",
+        "percentage_value": 73.6,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Timid",
+      "percentage": 0.166,
+      "statUp": "Speed",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Timid",
+        "percentage": "16.6%",
+        "percentage_value": 16.6,
+        "stat_up": "Speed",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Quiet",
+      "percentage": 0.064,
+      "statUp": "Sp. Atk",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Quiet",
+        "percentage": "6.4%",
+        "percentage_value": 6.4,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Bold",
+      "percentage": 0.018,
+      "statUp": "Defense",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Bold",
+        "percentage": "1.8%",
+        "percentage_value": 1.8,
+        "stat_up": "Defense",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Relaxed",
+      "percentage": 0.5,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Relaxed",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Calm",
+      "percentage": 0.4,
+      "statUp": "Sp. Def",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Calm",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Sp. Def",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Mild",
+      "percentage": 0.3,
+      "statUp": "Sp. Atk",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Mild",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Sassy",
+      "percentage": 0.1,
+      "statUp": "Sp. Def",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Sassy",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Sp. Def",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Hasty",
+      "percentage": 0.1,
+      "statUp": "Speed",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Hasty",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Speed",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Gentle",
+      "percentage": 0,
+      "statUp": "Sp. Def",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Gentle",
+        "percentage": "0.0%",
+        "percentage_value": 0,
+        "stat_up": "Sp. Def",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.299,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "29.9%",
+        "percentage_value": 29.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.071,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "7.1%",
+        "percentage_value": 7.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.028,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "2.8%",
+        "percentage_value": 2.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 2
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.028,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "2.8%",
+        "percentage_value": 2.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.026,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "2.6%",
+        "percentage_value": 2.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 2,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.017,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "1.7%",
+        "percentage_value": 1.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 9,
+        "sp_atk_points": 25,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.013,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "1.3%",
+        "percentage_value": 1.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Gardevoir",
+      "position": 46,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.013,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gardevoir",
+        "column_position": 46,
+        "position": 46,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "1.3%",
+        "percentage_value": 1.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 0,
+        "defense_points": 32,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a505ee7063cb29d318e8401-swaggervgc",
+      "name": "swaggervgc · VGC UU Regulation M-B Weekly #1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gengar",
+          "name": "Gengar",
+          "item": "Gengarite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Shadow Ball",
+            "Substitute",
+            "Perish Song",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Hyper Voice",
+            "Protect",
+            "Trick Room",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Knock Off",
+            "Close Combat",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "arcanine",
+          "name": "Arcanine",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Snarl",
+            "Will-O-Wisp",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "meowscarada",
+          "name": "Meowscarada",
+          "item": "Choice Scarf",
+          "ability": "Protean",
+          "moves": [
+            "Flower Trick",
+            "U-turn",
+            "Triple Axel",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "palafin",
+          "name": "Palafin",
+          "item": "Mystic Water",
+          "ability": "Zero to Hero",
+          "moves": [
+            "Wave Crash",
+            "Jet Punch",
+            "Flip Turn",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 3,
+      "tournament": "VGC UU Regulation M-B Weekly #1",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "swaggervgc",
+      "record": "0-3-0"
+    },
+    {
+      "id": "6a4dbb9665724db9ded3ff83-jadensmaden",
+      "name": "Jadensmaden · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Hyper Voice",
+            "Psyshock",
+            "Vacuum Wave",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Focus Sash",
+          "ability": "Friend Guard",
+          "moves": [
+            "Super Fang",
+            "Taunt",
+            "Follow Me",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Protect",
+            "Sucker Punch",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Quick Guard",
+            "Tailwind",
+            "Brave Bird",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Swift Swim",
+          "moves": [
+            "Wave Crash",
+            "Aqua Jet",
+            "Flip Turn",
+            "Last Respects"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Jadensmaden",
+      "record": "4-1-0"
+    },
+    {
+      "id": "6a4dbb9665724db9ded3ff83-asura64",
+      "name": "Asura64 · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Thunderbolt",
+            "Nasty Plot"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Hyper Voice",
+            "Calm Mind",
+            "Psychic",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Feint",
+            "Reflect",
+            "Light Screen",
+            "Quash"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Wide Lens",
+          "ability": "Technician",
+          "moves": [
+            "Population Bomb",
+            "Feint",
+            "Thunder Wave",
+            "Charm"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Leftovers",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Dragon Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Solar Beam",
+            "Weather Ball",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Asura64",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a3200c5e334c3c9befd8430-vovomaxben10",
+      "name": "VOVOMAXBEN10 · The Grand Champions Festival Encore",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Hyper Voice",
+            "Psychic",
+            "Thunderbolt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Flip Turn",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Dual Wingbeat",
+            "Flare Blitz",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Focus Sash",
+          "ability": "Friend Guard",
+          "moves": [
+            "Super Fang",
+            "Feint",
+            "Follow Me",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Expert Belt",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Low Kick"
+          ]
+        },
+        {
+          "slug": "kommo-o",
+          "name": "Kommo-o",
+          "item": "Life Orb",
+          "ability": "Soundproof",
+          "moves": [
+            "Clanging Scales",
+            "Draco Meteor",
+            "Aura Sphere",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8235294117647058,
+      "sampleCount": 17,
+      "tournament": "The Grand Champions Festival Encore",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "VOVOMAXBEN10",
+      "record": "14-3-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-whayron",
+      "name": "Whayron - Dragão/Psíquico · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "dragapult",
+          "name": "Dragapult",
+          "item": "White Herb",
+          "ability": "Clear Body",
+          "moves": [
+            "Protect",
+            "Draco Meteor",
+            "Shadow Ball",
+            "Flamethrower"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Protect",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Aura Sphere"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Protect",
+            "Meteor Mash",
+            "Psychic Fangs",
+            "Hammer Arm"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Synchronize",
+          "moves": [
+            "Protect",
+            "Moonblast",
+            "Hyper Voice",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Protect",
+            "Heat Wave",
+            "Psychic",
+            "Dazzling Gleam"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Protect",
+            "Psychic",
+            "Dazzling Gleam",
+            "Trick Room"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 8,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Whayron - Dragão/Psíquico",
+      "record": "6-2-0"
+    },
+    {
+      "id": "6a32e8b12d97f3b0c26189cc-nintendojay",
+      "name": "nintendojay · Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Flame Body",
+          "moves": [
+            "Tailwind",
+            "Brave Bird",
+            "Quick Guard",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Focus Sash",
+          "ability": "Friend Guard",
+          "moves": [
+            "Follow Me",
+            "Super Fang",
+            "Taunt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Flip Turn",
+            "Last Respects",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Hyper Voice",
+            "Psyshock",
+            "Vacuum Wave",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 10,
+      "tournament": "Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "nintendojay",
+      "record": "8-2-0"
+    },
+    {
+      "id": "6a510fac063cb29d318e8c08-shedfan",
+      "name": "Shedfan · SNT Reg M-B Tour #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Throat Chop",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Protect",
+            "Vacuum Wave",
+            "Psyshock",
+            "Hyper Voice"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Life Orb",
+          "ability": "Gale Wings",
+          "moves": [
+            "Protect",
+            "Tailwind",
+            "Flare Blitz",
+            "Brave Bird"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Wide Lens",
+          "ability": "Leaf Guard",
+          "moves": [
+            "Protect",
+            "Triple Axel",
+            "Low Kick",
+            "Power Whip"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Focus Sash",
+          "ability": "Friend Guard",
+          "moves": [
+            "Protect",
+            "Taunt",
+            "Follow Me",
+            "Super Fang"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Protect",
+            "Aqua Jet",
+            "Wave Crash",
+            "Last Respects"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 8,
+      "tournament": "SNT Reg M-B Tour #3",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Shedfan",
+      "record": "6-2-0"
+    },
+    {
+      "id": "6a4516dcc87cd9ff0a31469e-nelias",
+      "name": "Nelias · Pride Month 2 Celebration!!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Protect",
+            "Helping Hand",
+            "Trick Room",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Eruption",
+            "Heat Wave",
+            "Protect",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Dire Claw",
+            "Fake Out",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Hyper Voice",
+            "Psyshock",
+            "Protect",
+            "Calm Mind"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Sucker Punch",
+            "Iron Head",
+            "Play Rough",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Pride Month 2 Celebration!!",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Nelias",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a4516dcc87cd9ff0a31469e-beautjecadootje",
+      "name": "BeautjeCadootje · Pride Month 2 Celebration!!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "glaceon",
+          "name": "Glaceon",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Cloak",
+          "moves": [
+            "Freeze-Dry",
+            "Blizzard",
+            "Yawn",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Hyper Beam",
+            "Quick Attack",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Telepathy",
+          "moves": [
+            "Hyper Voice",
+            "Hyper Beam",
+            "Psychic",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "clefable",
+          "name": "Clefable",
+          "item": "Sitrus Berry",
+          "ability": "Unaware",
+          "moves": [
+            "Moonblast",
+            "Follow Me",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Life Orb",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Moonblast",
+            "Calm Mind",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.25,
+      "sampleCount": 4,
+      "tournament": "Pride Month 2 Celebration!!",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "BeautjeCadootje",
+      "record": "1-3-0"
+    },
+    {
+      "id": "6a539b48c0a6bab82fbbca0a-phhhvgc",
+      "name": "pHHHVGC · London Corviknight VGC Weekly tour 5!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Thunderbolt",
+            "Protect",
+            "Hyper Voice",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Dual Wingbeat",
+            "Protect",
+            "Flare Blitz",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "kommo-o",
+          "name": "Kommo-o",
+          "item": "Life Orb",
+          "ability": "Soundproof",
+          "moves": [
+            "Clanging Scales",
+            "Draco Meteor",
+            "Aura Sphere",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Focus Sash",
+          "ability": "Friend Guard",
+          "moves": [
+            "Super Fang",
+            "Feint",
+            "Follow Me",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Expert Belt",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Low Kick",
+            "Iron Head",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Last Respects",
+            "Aqua Jet",
+            "Wave Crash",
+            "Flip Turn"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "London Corviknight VGC Weekly tour 5!",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "pHHHVGC",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a54c9d3232a1a55ee10b346-paparott",
+      "name": "PapaRott · Intimidators Champions Challenge #27 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Hyper Voice",
+            "Psyshock",
+            "Vacuum Wave",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Focus Sash",
+          "ability": "Friend Guard",
+          "moves": [
+            "Super Fang",
+            "Taunt",
+            "Follow Me",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Protect",
+            "Sucker Punch",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Quick Guard",
+            "Brave Bird",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Aqua Jet",
+            "Flip Turn",
+            "Last Respects"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Intimidators Champions Challenge #27 REG M-B",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "PapaRott",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a54c9156355385f44dd38cd-srroxaskun",
+      "name": "SrRoxasKun · Intimidators Champions Challenge #26 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Taunt",
+            "Flare Blitz",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Breaking Swipe",
+            "Stomping Tantrum",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Solar Beam",
+            "Weather Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Expert Belt",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Dire Claw",
+            "Fake Out",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Protect",
+            "Vacuum Wave",
+            "Hyper Voice",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Tailwind",
+            "Protect",
+            "Encore",
+            "Dazzling Gleam"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 8,
+      "tournament": "Intimidators Champions Challenge #26 REG M-B",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "SrRoxasKun",
+      "record": "6-2-0"
+    },
+    {
+      "id": "6a5497ab232a1a55ee10b2b8-aliene",
+      "name": "Aliene · HeroicTitan’s VGC Battle Arena",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Wide Lens",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Protect",
+            "Power Whip",
+            "Triple Axel",
+            "Low Kick"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Telepathy",
+          "moves": [
+            "Protect",
+            "Hyper Voice",
+            "Psychic",
+            "Vacuum Wave"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Protect",
+            "Wave Crash",
+            "Aqua Jet",
+            "Last Respects"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Protect",
+            "Dragon Claw",
+            "Rock Slide",
+            "Earthquake"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Supreme Overlord",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Low Kick"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Protect",
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "HeroicTitan’s VGC Battle Arena",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Aliene",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a562eb26355385f44dd48d3-ele2317",
+      "name": "Ele2317 · Dark Storm Team testing #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Fake Out",
+            "Poison Jab",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Life Dew",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Protect",
+            "Hurricane",
+            "Extreme Speed",
+            "Draco Meteor"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Roost",
+            "Tailwind",
+            "Brave Bird"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Telepathy",
+          "moves": [
+            "Hyper Voice",
+            "Psychic",
+            "Trick Room",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 3,
+      "tournament": "Dark Storm Team testing #10",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Ele2317",
+      "record": "0-3-0"
+    },
+    {
+      "id": "6a39cb01c87cd9ff0a30d791-kortlen",
+      "name": "kortlen · Cashed Out Gaming Season 1 M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Synchronize",
+          "moves": [
+            "Hyper Voice",
+            "Psychic",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Aqua Jet",
+            "Wave Crash",
+            "Flip Turn",
+            "Last Respects"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Haban Berry",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Focus Sash",
+          "ability": "Flame Body",
+          "moves": [
+            "Dual Wingbeat",
+            "Flare Blitz",
+            "Protect",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Wide Lens",
+          "ability": "Overgrow",
+          "moves": [
+            "Giga Drain",
+            "Sludge Bomb",
+            "Protect",
+            "Sleep Powder"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Chople Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Follow Me",
+            "Protect",
+            "Taunt",
+            "Super Fang"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "Cashed Out Gaming Season 1 M-B",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "kortlen",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a39cb01c87cd9ff0a30d791-frostyhands",
+      "name": "Frostyhands · Cashed Out Gaming Season 1 M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Wide Guard",
+            "Tailwind",
+            "Dual Wingbeat"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Chople Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Protect",
+            "Follow Me",
+            "Feint",
+            "Super Fang"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Protect",
+            "Psychic",
+            "Hyper Voice",
+            "Vacuum Wave"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Muddy Water",
+            "Coil",
+            "Hypnosis",
+            "Recover"
+          ]
+        },
+        {
+          "slug": "hisuian-typhlosion",
+          "name": "Hisuian Typhlosion",
+          "item": "Life Orb",
+          "ability": "Blaze",
+          "moves": [
+            "Shadow Ball",
+            "Eruption",
+            "Heat Wave",
+            "Overheat"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Focus Sash",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Protect",
+            "Triple Axel",
+            "Helping Hand",
+            "Trop Kick"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "Cashed Out Gaming Season 1 M-B",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Frostyhands",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a39cb01c87cd9ff0a30d791-paparott",
+      "name": "PapaRott · Cashed Out Gaming Season 1 M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Hyper Voice",
+            "Psyshock",
+            "Calm Mind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Fake Out",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Taunt",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Scald",
+            "Coil",
+            "Hypnosis",
+            "Recover"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Coba Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Life Dew",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Dragon Dance",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Cashed Out Gaming Season 1 M-B",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "PapaRott",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a50864165724db9ded41db6-mejia",
+      "name": "Mejia · 4fun sabadín",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Telepathy",
+          "moves": [
+            "Protect",
+            "Hyper Voice",
+            "Psychic",
+            "Moonblast"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Fairy Feather",
+          "ability": "Prankster",
+          "moves": [
+            "Tailwind",
+            "Encore",
+            "Fake Tears",
+            "Moonblast"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Play Rough",
+            "Bulk Up",
+            "Bitter Blade",
+            "Shadow Sneak"
+          ]
+        },
+        {
+          "slug": "hisuian-zoroark",
+          "name": "Hisuian Zoroark",
+          "item": "Focus Sash",
+          "ability": "Illusion",
+          "moves": [
+            "Protect",
+            "Taunt",
+            "Bitter Malice",
+            "Icy Wind"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Quick Guard",
+            "Close Combat",
+            "Dire Claw"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Protect",
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 5,
+      "tournament": "4fun sabadín",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Mejia",
+      "record": "4-1-0"
+    },
+    {
+      "id": "6a545f013ee4505de4ad5e7e-buhkashi",
+      "name": "Camila Kachi · 🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "serperior",
+          "name": "Serperior",
+          "item": "Focus Sash",
+          "ability": "Contrary",
+          "moves": [
+            "Leaf Storm",
+            "Knock Off",
+            "Protect",
+            "Dragon Pulse"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Parting Shot",
+            "Throat Chop",
+            "Fake Out",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Mystic Water",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hydro Pump",
+            "Hyper Voice",
+            "Protect",
+            "Moonblast"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Synchronize",
+          "moves": [
+            "Hyper Voice",
+            "Psychic",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Brave Bird",
+            "Body Press",
+            "Tailwind",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 5,
+      "tournament": "🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Camila Kachi",
+      "record": "0-5-0"
+    },
+    {
+      "id": "6a46629683fd320299bd6543-mrawesome",
+      "name": "MrAwesome · 🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Psychic",
+            "Hyper Voice",
+            "Thunderbolt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Flare Blitz",
+            "Dual Wingbeat",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Flip Turn",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Focus Sash",
+          "ability": "Friend Guard",
+          "moves": [
+            "Super Fang",
+            "Protect",
+            "Follow Me",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Expert Belt",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Low Kick"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 10,
+      "tournament": "🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "MrAwesome",
+      "record": "8-2-0"
+    },
+    {
+      "id": "6a519dad65724db9ded42bc9-king32bit",
+      "name": "King32bit · [PR] Mt. Moon Champions VGC Weekly #6 2026",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Chople Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Parting Shot",
+            "Flare Blitz",
+            "Fake Out",
+            "Throat Chop"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Psyshock",
+            "Hyper Voice",
+            "Protect",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Last Respects",
+            "Wave Crash",
+            "Psychic Fangs",
+            "Flip Turn"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Tailwind",
+            "Weather Ball",
+            "Rain Dance"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Focus Sash",
+          "ability": "Friend Guard",
+          "moves": [
+            "Feint",
+            "Super Fang",
+            "Protect",
+            "Follow Me"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 3,
+      "tournament": "[PR] Mt. Moon Champions VGC Weekly #6 2026",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "King32bit",
+      "record": "0-3-0"
+    }
+  ],
+  "movePool": [
+    "Alluring Voice",
+    "Aura Sphere",
+    "Body Slam",
+    "Calm Mind",
+    "Charge Beam",
+    "Charm",
+    "Confuse Ray",
+    "Dazzling Gleam",
+    "Destiny Bond",
+    "Disable",
+    "Double Team",
+    "Draining Kiss",
+    "Encore",
+    "Endure",
+    "Energy Ball",
+    "Expanding Force",
+    "Facade",
+    "Fire Punch",
+    "Fling",
+    "Focus Blast",
+    "Future Sight",
+    "Giga Impact",
+    "Grass Knot",
+    "Gravity",
+    "Guard Swap",
+    "Heal Pulse",
+    "Healing Wish",
+    "Helping Hand",
+    "Hyper Beam",
+    "Hyper Voice",
+    "Hypnosis",
+    "Ice Punch",
+    "Icy Wind",
+    "Imprison",
+    "Knock Off",
+    "Life Dew",
+    "Light Screen",
+    "Magic Room",
+    "Mean Look",
+    "Memento",
+    "Misty Explosion",
+    "Misty Terrain",
+    "Moonblast",
+    "Mystical Fire",
+    "Night Shade",
+    "Pain Split",
+    "Power Swap",
+    "Protect",
+    "Psych Up",
+    "Psychic",
+    "Psychic Noise",
+    "Psychic Terrain",
+    "Psyshock",
+    "Rain Dance",
+    "Reflect",
+    "Rest",
+    "Round",
+    "Safeguard",
+    "Shadow Ball",
+    "Shadow Sneak",
+    "Skill Swap",
+    "Sleep Talk",
+    "Snore",
+    "Stored Power",
+    "Substitute",
+    "Sunny Day",
+    "Swagger",
+    "Taunt",
+    "Thief",
+    "Thunder Punch",
+    "Thunder Wave",
+    "Thunderbolt",
+    "Trick",
+    "Trick Room",
+    "Triple Axel",
+    "Vacuum Wave",
+    "Will-O-Wisp",
+    "Wish",
+    "Wonder Room",
+    "Zen Headbutt"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Gardevoir",
+      "base_name": "Gardevoir",
+      "saved_name": "Gardevoir",
+      "types": "Psychic/Fairy",
+      "abilities": "Synchronize|Trace|Telepathy",
+      "image_path": "pokemon_champions_assets\\pokemon\\Gardevoir.png",
+      "form": "",
+      "hp": 143,
+      "atk": 85,
+      "def": 85,
+      "spa": 145,
+      "spd": 135,
+      "spe": 100,
+      "total": 693
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "move",
+          "rank": 1,
+          "name": "Protect",
+          "percentage": "88.6%",
+          "percentage_value": 88.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Gardevoirite",
+          "percentage": "91.2%",
+          "percentage_value": 91.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Modest",
+          "percentage": "73.6%",
+          "percentage_value": 73.6,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        "stat_points": {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "29.9%",
+          "percentage_value": 29.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        "ability": {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "ability",
+          "rank": 1,
+          "name": "Trace",
+          "percentage": "76.5%",
+          "percentage_value": 76.5,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Protect",
+          "Hyper Voice",
+          "Psychic",
+          "Psyshock",
+          "Trick Room",
+          "Vacuum Wave",
+          "Thunderbolt",
+          "Calm Mind",
+          "Moonblast",
+          "Aura Sphere"
+        ],
+        "held_item": [
+          "Gardevoirite",
+          "Choice Scarf",
+          "Focus Sash",
+          "Sitrus Berry",
+          "Fairy Feather",
+          "Life Orb",
+          "Leftovers",
+          "Wise Glasses",
+          "Expert Belt",
+          "Shell Bell"
+        ],
+        "teammate": [
+          "Garchomp",
+          "Kingambit",
+          "Maushold Family of Four",
+          "Basculegion Male",
+          "Talonflame",
+          "Incineroar",
+          "Whimsicott",
+          "Sinistcha",
+          "Sneasler",
+          "Farigiraf"
+        ],
+        "stat_alignment": [
+          "Modest",
+          "Timid",
+          "Quiet",
+          "Bold",
+          "Relaxed",
+          "Calm",
+          "Mild",
+          "Sassy",
+          "Hasty",
+          "Gentle"
+        ],
+        "stat_points": [
+          "HP 2 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 32",
+          "HP 32 / Atk 0 / Def 2 / SpA 32 / SpD 0 / Spe 0",
+          "HP 32 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 2",
+          "HP 0 / Atk 0 / Def 2 / SpA 32 / SpD 0 / Spe 32",
+          "HP 0 / Atk 0 / Def 0 / SpA 32 / SpD 2 / Spe 32",
+          "HP 32 / Atk 0 / Def 9 / SpA 25 / SpD 0 / Spe 0",
+          "HP 0 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 32",
+          "HP 2 / Atk 0 / Def 32 / SpA 32 / SpD 0 / Spe 0"
+        ],
+        "ability": [
+          "Trace",
+          "Telepathy",
+          "Synchronize"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "move",
+          "rank": 1,
+          "name": "Protect",
+          "percentage": "88.6%",
+          "percentage_value": 88.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "move",
+          "rank": 2,
+          "name": "Hyper Voice",
+          "percentage": "88.6%",
+          "percentage_value": 88.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "move",
+          "rank": 3,
+          "name": "Psychic",
+          "percentage": "46.1%",
+          "percentage_value": 46.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "move",
+          "rank": 4,
+          "name": "Psyshock",
+          "percentage": "31.9%",
+          "percentage_value": 31.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "move",
+          "rank": 5,
+          "name": "Trick Room",
+          "percentage": "20.9%",
+          "percentage_value": 20.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "move",
+          "rank": 6,
+          "name": "Vacuum Wave",
+          "percentage": "20.8%",
+          "percentage_value": 20.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "move",
+          "rank": 7,
+          "name": "Thunderbolt",
+          "percentage": "13.2%",
+          "percentage_value": 13.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "move",
+          "rank": 8,
+          "name": "Calm Mind",
+          "percentage": "12.0%",
+          "percentage_value": 12,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "move",
+          "rank": 9,
+          "name": "Moonblast",
+          "percentage": "11.0%",
+          "percentage_value": 11,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "move",
+          "rank": 10,
+          "name": "Aura Sphere",
+          "percentage": "9.3%",
+          "percentage_value": 9.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Gardevoirite",
+          "percentage": "91.2%",
+          "percentage_value": 91.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Choice Scarf",
+          "percentage": "2.5%",
+          "percentage_value": 2.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Focus Sash",
+          "percentage": "1.7%",
+          "percentage_value": 1.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Sitrus Berry",
+          "percentage": "1.1%",
+          "percentage_value": 1.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Fairy Feather",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Life Orb",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Leftovers",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Wise Glasses",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Expert Belt",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Shell Bell",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Maushold Family of Four",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Talonflame",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Whimsicott",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Sneasler",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Modest",
+          "percentage": "73.6%",
+          "percentage_value": 73.6,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Timid",
+          "percentage": "16.6%",
+          "percentage_value": 16.6,
+          "stat_up": "Speed",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Quiet",
+          "percentage": "6.4%",
+          "percentage_value": 6.4,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Bold",
+          "percentage": "1.8%",
+          "percentage_value": 1.8,
+          "stat_up": "Defense",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Relaxed",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Calm",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Sp. Def",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Mild",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Sassy",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Sp. Def",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Hasty",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Speed",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Gentle",
+          "percentage": "0.0%",
+          "percentage_value": 0,
+          "stat_up": "Sp. Def",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "29.9%",
+          "percentage_value": 29.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "7.1%",
+          "percentage_value": 7.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "2.8%",
+          "percentage_value": 2.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 2
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "2.8%",
+          "percentage_value": 2.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "2.6%",
+          "percentage_value": 2.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 2,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "1.7%",
+          "percentage_value": 1.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 9,
+          "sp_atk_points": 25,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "1.3%",
+          "percentage_value": 1.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "1.3%",
+          "percentage_value": 1.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 32,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "ability",
+          "rank": 1,
+          "name": "Trace",
+          "percentage": "76.5%",
+          "percentage_value": 76.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "ability",
+          "rank": 2,
+          "name": "Telepathy",
+          "percentage": "19.6%",
+          "percentage_value": 19.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gardevoir",
+          "column_position": 46,
+          "position": 46,
+          "category": "ability",
+          "rank": 3,
+          "name": "Synchronize",
+          "percentage": "3.9%",
+          "percentage_value": 3.9,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Gardevoir.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Gardevoir.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Gardevoir.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Gardevoir.csv"
+      }
+    ]
+  }
+}

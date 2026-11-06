@@ -1,0 +1,2918 @@
+{
+  "pokemon": {
+    "slug": "starmie",
+    "name": "Starmie",
+    "baseName": "Starmie",
+    "savedName": "Starmie",
+    "form": "",
+    "types": [
+      "Water",
+      "Psychic"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Starmie.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/121.png",
+    "stats": {
+      "hp": 135,
+      "attack": 95,
+      "defense": 105,
+      "spAttack": 120,
+      "spDefense": 105,
+      "speed": 135,
+      "total": 695
+    },
+    "rank": 90,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Liquidation",
+    "topItem": "Starminite",
+    "topTeammate": "Pelipper"
+  },
+  "moves": [
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "move",
+      "rank": 1,
+      "name": "Liquidation",
+      "percentage": 0.614,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "move",
+        "rank": 1,
+        "name": "Liquidation",
+        "percentage": "61.4%",
+        "percentage_value": 61.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "move",
+      "rank": 2,
+      "name": "Protect",
+      "percentage": 0.519,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "move",
+        "rank": 2,
+        "name": "Protect",
+        "percentage": "51.9%",
+        "percentage_value": 51.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "move",
+      "rank": 3,
+      "name": "Aqua Jet",
+      "percentage": 0.468,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "move",
+        "rank": 3,
+        "name": "Aqua Jet",
+        "percentage": "46.8%",
+        "percentage_value": 46.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "move",
+      "rank": 4,
+      "name": "Ice Spinner",
+      "percentage": 0.447,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "move",
+        "rank": 4,
+        "name": "Ice Spinner",
+        "percentage": "44.7%",
+        "percentage_value": 44.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "move",
+      "rank": 5,
+      "name": "Psycho Cut",
+      "percentage": 0.26,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "move",
+        "rank": 5,
+        "name": "Psycho Cut",
+        "percentage": "26.0%",
+        "percentage_value": 26,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "move",
+      "rank": 6,
+      "name": "Zen Headbutt",
+      "percentage": 0.203,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "move",
+        "rank": 6,
+        "name": "Zen Headbutt",
+        "percentage": "20.3%",
+        "percentage_value": 20.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "move",
+      "rank": 7,
+      "name": "Scald",
+      "percentage": 0.173,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "move",
+        "rank": 7,
+        "name": "Scald",
+        "percentage": "17.3%",
+        "percentage_value": 17.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "move",
+      "rank": 8,
+      "name": "Ice Beam",
+      "percentage": 0.165,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "move",
+        "rank": 8,
+        "name": "Ice Beam",
+        "percentage": "16.5%",
+        "percentage_value": 16.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "move",
+      "rank": 9,
+      "name": "Psychic",
+      "percentage": 0.159,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "move",
+        "rank": 9,
+        "name": "Psychic",
+        "percentage": "15.9%",
+        "percentage_value": 15.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "move",
+      "rank": 10,
+      "name": "Flip Turn",
+      "percentage": 0.151,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "move",
+        "rank": 10,
+        "name": "Flip Turn",
+        "percentage": "15.1%",
+        "percentage_value": 15.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Starminite",
+      "percentage": 0.75,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Starminite",
+        "percentage": "75.0%",
+        "percentage_value": 75,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Choice Scarf",
+      "percentage": 0.072,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Choice Scarf",
+        "percentage": "7.2%",
+        "percentage_value": 7.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Life Orb",
+      "percentage": 0.063,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Life Orb",
+        "percentage": "6.3%",
+        "percentage_value": 6.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Expert Belt",
+      "percentage": 0.031,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Expert Belt",
+        "percentage": "3.1%",
+        "percentage_value": 3.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Focus Sash",
+      "percentage": 0.028,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Focus Sash",
+        "percentage": "2.8%",
+        "percentage_value": 2.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Mystic Water",
+      "percentage": 0.8,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Mystic Water",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Wise Glasses",
+      "percentage": 0.7,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Wise Glasses",
+        "percentage": "0.7%",
+        "percentage_value": 0.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Leftovers",
+      "percentage": 0.7,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Leftovers",
+        "percentage": "0.7%",
+        "percentage_value": 0.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Bright Powder",
+      "percentage": 0.5,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Bright Powder",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Colbur Berry",
+      "percentage": 0.4,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Colbur Berry",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "ability",
+      "rank": 1,
+      "name": "Natural Cure",
+      "percentage": 0.746,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "ability",
+        "rank": 1,
+        "name": "Natural Cure",
+        "percentage": "74.6%",
+        "percentage_value": 74.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "ability",
+      "rank": 2,
+      "name": "Illuminate",
+      "percentage": 0.16,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "ability",
+        "rank": 2,
+        "name": "Illuminate",
+        "percentage": "16.0%",
+        "percentage_value": 16,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "ability",
+      "rank": 3,
+      "name": "Analytic",
+      "percentage": 0.094,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "ability",
+        "rank": 3,
+        "name": "Analytic",
+        "percentage": "9.4%",
+        "percentage_value": 9.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Pelipper",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Pelipper",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Kingambit",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Kingambit",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Sneasler",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Sneasler",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Whimsicott",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Whimsicott",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Archaludon",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Archaludon",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Sableye",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Sableye",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Adamant",
+      "percentage": 0.467,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Adamant",
+        "percentage": "46.7%",
+        "percentage_value": 46.7,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Jolly",
+      "percentage": 0.228,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Jolly",
+        "percentage": "22.8%",
+        "percentage_value": 22.8,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Timid",
+      "percentage": 0.144,
+      "statUp": "Speed",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Timid",
+        "percentage": "14.4%",
+        "percentage_value": 14.4,
+        "stat_up": "Speed",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Modest",
+      "percentage": 0.116,
+      "statUp": "Sp. Atk",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Modest",
+        "percentage": "11.6%",
+        "percentage_value": 11.6,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Hasty",
+      "percentage": 1,
+      "statUp": "Speed",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Hasty",
+        "percentage": "1.0%",
+        "percentage_value": 1,
+        "stat_up": "Speed",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Naive",
+      "percentage": 0.7,
+      "statUp": "Speed",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Naive",
+        "percentage": "0.7%",
+        "percentage_value": 0.7,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Rash",
+      "percentage": 0.6,
+      "statUp": "Sp. Atk",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Rash",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Quiet",
+      "percentage": 0.4,
+      "statUp": "Sp. Atk",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Quiet",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Calm",
+      "percentage": 0.4,
+      "statUp": "Sp. Def",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Calm",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Sp. Def",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Naughty",
+      "percentage": 0.2,
+      "statUp": "Attack",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Naughty",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.518,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "51.8%",
+        "percentage_value": 51.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.131,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "13.1%",
+        "percentage_value": 13.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.043,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "4.3%",
+        "percentage_value": 4.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 13,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 21
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.021,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "2.1%",
+        "percentage_value": 2.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 18,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 16
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.016,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "1.6%",
+        "percentage_value": 1.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "1.0%",
+        "percentage_value": 1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 11,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 23
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.9,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "0.9%",
+        "percentage_value": 0.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 5,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 29
+      }
+    },
+    {
+      "pokemon": "Starmie",
+      "position": 90,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.8,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Starmie",
+        "column_position": 90,
+        "position": 90,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 2,
+        "speed_points": 32
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a46b0e683fd320299bd6881-ninabruxa",
+      "name": "NinaBruxa · X1 Remote Battle League 2ª Edição - Reg M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Life Orb",
+          "ability": "Poison Touch",
+          "moves": [
+            "Protect",
+            "Rain Dance",
+            "Dire Claw",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "sceptile",
+          "name": "Sceptile",
+          "item": "Sceptilite",
+          "ability": "Overgrow",
+          "moves": [
+            "Energy Ball",
+            "Dragon Pulse",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "heliolisk",
+          "name": "Heliolisk",
+          "item": "Choice Scarf",
+          "ability": "Dry Skin",
+          "moves": [
+            "Discharge",
+            "Shed Tail",
+            "Electroweb",
+            "Volt Switch"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Trick Room",
+            "Helping Hand",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "slug": "starmie",
+          "name": "Starmie",
+          "item": "Starminite",
+          "ability": "Natural Cure",
+          "moves": [
+            "Ice Spinner",
+            "Liquidation",
+            "Protect",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Focus Sash",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Wide Guard",
+            "Weather Ball",
+            "Tailwind"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 3,
+      "tournament": "X1 Remote Battle League 2ª Edição - Reg M-B",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "NinaBruxa",
+      "record": "0-3-0"
+    },
+    {
+      "id": "6a4dfee8063cb29d318e6805-lartizan",
+      "name": "Lartizan · VGC UmbreNews 14.07.2026 #23 - Champion",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "starmie",
+          "name": "Starmie",
+          "item": "Starminite",
+          "ability": "Natural Cure",
+          "moves": [
+            "Protect",
+            "Liquidation",
+            "Aqua Jet",
+            "Psycho Cut"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Life Orb",
+          "ability": "Levitate",
+          "moves": [
+            "Dark Pulse",
+            "Earth Power",
+            "Draco Meteor",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Metal Coat",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Protect",
+            "Nasty Plot"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Trick Room",
+            "Rage Powder",
+            "Imprison"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Pressure",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Coaching",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Keen Eye",
+          "moves": [
+            "Hurricane",
+            "Tailwind",
+            "Protect",
+            "Weather Ball"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "VGC UmbreNews 14.07.2026 #23 - Champion",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Lartizan",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a47c55e65724db9ded3b307-timotheus",
+      "name": "Timotheus · VGC Reg M-B Ingame  Tour",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Dire Claw",
+            "Close Combat",
+            "Fake Out",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Helping Hand",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psyshock",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "starmie",
+          "name": "Starmie",
+          "item": "Starminite",
+          "ability": "Natural Cure",
+          "moves": [
+            "Liquidation",
+            "Aqua Jet",
+            "Ice Spinner",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "VGC Reg M-B Ingame  Tour",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Timotheus",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a47c55e65724db9ded3b307-ceres",
+      "name": "Ceres · VGC Reg M-B Ingame  Tour",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "chandelure",
+          "name": "Chandelure",
+          "item": "Chandelurite",
+          "ability": "Flash Fire",
+          "moves": [
+            "Heat Wave",
+            "Shadow Ball",
+            "Protect",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Sunny Day",
+            "Tailwind",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Low Kick",
+            "Protect",
+            "Iron Defense"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Wide Lens",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Power Whip",
+            "Protect",
+            "Triple Axel",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "starmie",
+          "name": "Starmie",
+          "item": "Choice Scarf",
+          "ability": "Natural Cure",
+          "moves": [
+            "Thunderbolt",
+            "Psychic",
+            "Icy Wind",
+            "Scald"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Stomping Tantrum",
+            "Rock Slide",
+            "Dragon Claw",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "VGC Reg M-B Ingame  Tour",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Ceres",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-lgaspar18",
+      "name": "Luan Gaspar - Grama/Psíquico · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Overheat",
+            "Giga Drain",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "espathra",
+          "name": "Espathra",
+          "item": "Sitrus Berry",
+          "ability": "Speed Boost",
+          "moves": [
+            "Lumina Crash",
+            "Calm Mind",
+            "Baton Pass",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Leftovers",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Giga Drain",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mow-rotom",
+          "name": "Mow Rotom",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Leaf Storm",
+            "Thunderbolt",
+            "Volt Switch",
+            "Electroweb"
+          ]
+        },
+        {
+          "slug": "armarouge",
+          "name": "Armarouge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Armor Cannon",
+            "Psychic",
+            "Heat Wave",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "starmie",
+          "name": "Starmie",
+          "item": "Starminite",
+          "ability": "Natural Cure",
+          "moves": [
+            "Psycho Cut",
+            "Liquidation",
+            "Aqua Jet",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Luan Gaspar - Grama/Psíquico",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a4685c383fd320299bd6675-walaye",
+      "name": "walaye · Pokémon Champions #1 - (Floette Eternal Flower)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "starmie",
+          "name": "Starmie",
+          "item": "Starminite",
+          "ability": "Natural Cure",
+          "moves": [
+            "Liquidation",
+            "Zen Headbutt",
+            "Bulk Up",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Weather Ball",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Electro Shot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Fake Out",
+            "Reflect",
+            "Light Screen",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Giga Drain",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Poison Jab",
+            "Fake Out",
+            "Close Combat",
+            "Coaching"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "Pokémon Champions #1 - (Floette Eternal Flower)",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "walaye",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a4fcb1f65724db9ded413ac-walaye",
+      "name": "walaye · Pep_uni Pokémon Champions #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "starmie",
+          "name": "Starmie",
+          "item": "Starminite",
+          "ability": "Natural Cure",
+          "moves": [
+            "Liquidation",
+            "Zen Headbutt",
+            "Bulk Up",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Weather Ball",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Electro Shot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Spirit Break",
+            "Reflect",
+            "Light Screen",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Giga Drain",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Dire Claw",
+            "Fake Out",
+            "Close Combat",
+            "Coaching"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 12,
+      "tournament": "Pep_uni Pokémon Champions #2",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "walaye",
+      "record": "8-3-1"
+    },
+    {
+      "id": "6a54c9d3232a1a55ee10b346-ninabruxa",
+      "name": "NinaBruxa · Intimidators Champions Challenge #27 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Calm Mind",
+            "Moonblast",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "starmie",
+          "name": "Starmie",
+          "item": "Starminite",
+          "ability": "Natural Cure",
+          "moves": [
+            "Liquidation",
+            "Psycho Cut",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Weather Ball",
+            "Tailwind",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Life Dew",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Wide Lens",
+          "ability": "Technician",
+          "moves": [
+            "Population Bomb",
+            "Follow Me",
+            "Protect",
+            "Rain Dance"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Intimidators Champions Challenge #27 REG M-B",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "NinaBruxa",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a50864165724db9ded41db6-capra336",
+      "name": "capra336 · 4fun sabadín",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "starmie",
+          "name": "Starmie",
+          "item": "Starminite",
+          "ability": "Natural Cure",
+          "moves": [
+            "Liquidation",
+            "Psycho Cut",
+            "Ice Spinner",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "politoed",
+          "name": "Politoed",
+          "item": "Damp Rock",
+          "ability": "Drizzle",
+          "moves": [
+            "Protect",
+            "Muddy Water",
+            "Earth Power",
+            "Surf"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Protect",
+            "Flash Cannon",
+            "Draco Meteor"
+          ]
+        },
+        {
+          "slug": "eelektross",
+          "name": "Eelektross",
+          "item": "Eelektrossite",
+          "ability": "Levitate",
+          "moves": [
+            "Discharge",
+            "Thunder",
+            "Knock Off",
+            "Stomping Tantrum"
+          ]
+        },
+        {
+          "slug": "goodra",
+          "name": "Goodra",
+          "item": "Shell Bell",
+          "ability": "Hydration",
+          "moves": [
+            "Thunderbolt",
+            "Dragon Pulse",
+            "Focus Blast",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "morpeko",
+          "name": "Morpeko",
+          "item": "Focus Sash",
+          "ability": "Hunger Switch",
+          "moves": [
+            "Protect",
+            "Endeavor",
+            "Fake Out",
+            "Aura Wheel"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "4fun sabadín",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "capra336",
+      "record": "2-3-0"
+    }
+  ],
+  "movePool": [
+    "Agility",
+    "Ally Switch",
+    "Ancient Power",
+    "Aqua Jet",
+    "Avalanche",
+    "Blizzard",
+    "Bulk Up",
+    "Charge Beam",
+    "Chilling Water",
+    "Confuse Ray",
+    "Cosmic Power",
+    "Dazzling Gleam",
+    "Dive",
+    "Double-Edge",
+    "Endure",
+    "Expanding Force",
+    "Facade",
+    "Flash Cannon",
+    "Flip Turn",
+    "Giga Impact",
+    "Grass Knot",
+    "Gravity",
+    "Gyro Ball",
+    "Hydro Pump",
+    "Hyper Beam",
+    "Ice Beam",
+    "Ice Spinner",
+    "Icy Wind",
+    "Light Screen",
+    "Liquidation",
+    "Meteor Beam",
+    "Minimize",
+    "Power Gem",
+    "Protect",
+    "Psychic",
+    "Psycho Cut",
+    "Psyshock",
+    "Rain Dance",
+    "Rapid Spin",
+    "Recover",
+    "Reflect",
+    "Rest",
+    "Round",
+    "Safeguard",
+    "Scald",
+    "Self-Destruct",
+    "Skill Swap",
+    "Sleep Talk",
+    "Snore",
+    "Substitute",
+    "Surf",
+    "Thunder",
+    "Thunder Wave",
+    "Thunderbolt",
+    "Tri Attack",
+    "Trick",
+    "Trick Room",
+    "Water Pulse",
+    "Waterfall",
+    "Whirlpool",
+    "Wonder Room",
+    "Zen Headbutt"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Starmie",
+      "base_name": "Starmie",
+      "saved_name": "Starmie",
+      "types": "Water/Psychic",
+      "abilities": "Illuminate|Natural Cure|Analytic",
+      "image_path": "pokemon_champions_assets\\pokemon\\Starmie.png",
+      "form": "",
+      "hp": 135,
+      "atk": 95,
+      "def": 105,
+      "spa": 120,
+      "spd": 105,
+      "spe": 135,
+      "total": 695
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "move",
+          "rank": 1,
+          "name": "Liquidation",
+          "percentage": "61.4%",
+          "percentage_value": 61.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Starminite",
+          "percentage": "75.0%",
+          "percentage_value": 75,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Pelipper",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Adamant",
+          "percentage": "46.7%",
+          "percentage_value": 46.7,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        "stat_points": {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "51.8%",
+          "percentage_value": 51.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        "ability": {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "ability",
+          "rank": 1,
+          "name": "Natural Cure",
+          "percentage": "74.6%",
+          "percentage_value": 74.6,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Liquidation",
+          "Protect",
+          "Aqua Jet",
+          "Ice Spinner",
+          "Psycho Cut",
+          "Zen Headbutt",
+          "Scald",
+          "Ice Beam",
+          "Psychic",
+          "Flip Turn"
+        ],
+        "held_item": [
+          "Starminite",
+          "Choice Scarf",
+          "Life Orb",
+          "Expert Belt",
+          "Focus Sash",
+          "Mystic Water",
+          "Wise Glasses",
+          "Leftovers",
+          "Bright Powder",
+          "Colbur Berry"
+        ],
+        "teammate": [
+          "Pelipper",
+          "Kingambit",
+          "Sneasler",
+          "Whimsicott",
+          "Garchomp",
+          "Archaludon",
+          "Sinistcha",
+          "Incineroar",
+          "Basculegion Male",
+          "Sableye"
+        ],
+        "stat_alignment": [
+          "Adamant",
+          "Jolly",
+          "Timid",
+          "Modest",
+          "Hasty",
+          "Naive",
+          "Rash",
+          "Quiet",
+          "Calm",
+          "Naughty"
+        ],
+        "stat_points": [
+          "HP 2 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 32",
+          "HP 2 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 32",
+          "HP 13 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 21",
+          "HP 18 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 16",
+          "HP 0 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 32",
+          "HP 11 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 23",
+          "HP 5 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 29",
+          "HP 0 / Atk 0 / Def 0 / SpA 32 / SpD 2 / Spe 32"
+        ],
+        "ability": [
+          "Natural Cure",
+          "Illuminate",
+          "Analytic"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "move",
+          "rank": 1,
+          "name": "Liquidation",
+          "percentage": "61.4%",
+          "percentage_value": 61.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "move",
+          "rank": 2,
+          "name": "Protect",
+          "percentage": "51.9%",
+          "percentage_value": 51.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "move",
+          "rank": 3,
+          "name": "Aqua Jet",
+          "percentage": "46.8%",
+          "percentage_value": 46.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "move",
+          "rank": 4,
+          "name": "Ice Spinner",
+          "percentage": "44.7%",
+          "percentage_value": 44.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "move",
+          "rank": 5,
+          "name": "Psycho Cut",
+          "percentage": "26.0%",
+          "percentage_value": 26,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "move",
+          "rank": 6,
+          "name": "Zen Headbutt",
+          "percentage": "20.3%",
+          "percentage_value": 20.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "move",
+          "rank": 7,
+          "name": "Scald",
+          "percentage": "17.3%",
+          "percentage_value": 17.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "move",
+          "rank": 8,
+          "name": "Ice Beam",
+          "percentage": "16.5%",
+          "percentage_value": 16.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "move",
+          "rank": 9,
+          "name": "Psychic",
+          "percentage": "15.9%",
+          "percentage_value": 15.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "move",
+          "rank": 10,
+          "name": "Flip Turn",
+          "percentage": "15.1%",
+          "percentage_value": 15.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Starminite",
+          "percentage": "75.0%",
+          "percentage_value": 75,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Choice Scarf",
+          "percentage": "7.2%",
+          "percentage_value": 7.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Life Orb",
+          "percentage": "6.3%",
+          "percentage_value": 6.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Expert Belt",
+          "percentage": "3.1%",
+          "percentage_value": 3.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Focus Sash",
+          "percentage": "2.8%",
+          "percentage_value": 2.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Mystic Water",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Wise Glasses",
+          "percentage": "0.7%",
+          "percentage_value": 0.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Leftovers",
+          "percentage": "0.7%",
+          "percentage_value": 0.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Bright Powder",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Colbur Berry",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Pelipper",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Sneasler",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Whimsicott",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Archaludon",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Sableye",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Adamant",
+          "percentage": "46.7%",
+          "percentage_value": 46.7,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Jolly",
+          "percentage": "22.8%",
+          "percentage_value": 22.8,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Timid",
+          "percentage": "14.4%",
+          "percentage_value": 14.4,
+          "stat_up": "Speed",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Modest",
+          "percentage": "11.6%",
+          "percentage_value": 11.6,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Hasty",
+          "percentage": "1.0%",
+          "percentage_value": 1,
+          "stat_up": "Speed",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Naive",
+          "percentage": "0.7%",
+          "percentage_value": 0.7,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Rash",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Quiet",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Calm",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Sp. Def",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Naughty",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "51.8%",
+          "percentage_value": 51.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "13.1%",
+          "percentage_value": 13.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "4.3%",
+          "percentage_value": 4.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 13,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 21
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "2.1%",
+          "percentage_value": 2.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 18,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 16
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "1.6%",
+          "percentage_value": 1.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "1.0%",
+          "percentage_value": 1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 11,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 23
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "0.9%",
+          "percentage_value": 0.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 5,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 29
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 2,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "ability",
+          "rank": 1,
+          "name": "Natural Cure",
+          "percentage": "74.6%",
+          "percentage_value": 74.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "ability",
+          "rank": 2,
+          "name": "Illuminate",
+          "percentage": "16.0%",
+          "percentage_value": 16,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Starmie",
+          "column_position": 90,
+          "position": 90,
+          "category": "ability",
+          "rank": 3,
+          "name": "Analytic",
+          "percentage": "9.4%",
+          "percentage_value": 9.4,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Starmie.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Starmie.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Starmie.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Starmie.csv"
+      }
+    ]
+  }
+}

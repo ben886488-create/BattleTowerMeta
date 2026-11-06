@@ -1,0 +1,2542 @@
+{
+  "pokemon": {
+    "slug": "weavile",
+    "name": "Weavile",
+    "baseName": "Weavile",
+    "savedName": "Weavile",
+    "form": "",
+    "types": [
+      "Dark",
+      "Ice"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Weavile.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/461.png",
+    "stats": {
+      "hp": 145,
+      "attack": 140,
+      "defense": 85,
+      "spAttack": 65,
+      "spDefense": 105,
+      "speed": 145,
+      "total": 685
+    },
+    "rank": 69,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Fake Out",
+    "topItem": "Focus Sash",
+    "topTeammate": "Sinistcha"
+  },
+  "moves": [
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "move",
+      "rank": 1,
+      "name": "Fake Out",
+      "percentage": 0.938,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "move",
+        "rank": 1,
+        "name": "Fake Out",
+        "percentage": "93.8%",
+        "percentage_value": 93.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "move",
+      "rank": 2,
+      "name": "Knock Off",
+      "percentage": 0.849,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "move",
+        "rank": 2,
+        "name": "Knock Off",
+        "percentage": "84.9%",
+        "percentage_value": 84.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "move",
+      "rank": 3,
+      "name": "Triple Axel",
+      "percentage": 0.712,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "move",
+        "rank": 3,
+        "name": "Triple Axel",
+        "percentage": "71.2%",
+        "percentage_value": 71.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "move",
+      "rank": 4,
+      "name": "Low Kick",
+      "percentage": 0.421,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "move",
+        "rank": 4,
+        "name": "Low Kick",
+        "percentage": "42.1%",
+        "percentage_value": 42.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "move",
+      "rank": 5,
+      "name": "Protect",
+      "percentage": 0.196,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "move",
+        "rank": 5,
+        "name": "Protect",
+        "percentage": "19.6%",
+        "percentage_value": 19.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "move",
+      "rank": 6,
+      "name": "Ice Spinner",
+      "percentage": 0.107,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "move",
+        "rank": 6,
+        "name": "Ice Spinner",
+        "percentage": "10.7%",
+        "percentage_value": 10.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "move",
+      "rank": 7,
+      "name": "Ice Shard",
+      "percentage": 0.096,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "move",
+        "rank": 7,
+        "name": "Ice Shard",
+        "percentage": "9.6%",
+        "percentage_value": 9.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "move",
+      "rank": 8,
+      "name": "Icicle Crash",
+      "percentage": 0.093,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "move",
+        "rank": 8,
+        "name": "Icicle Crash",
+        "percentage": "9.3%",
+        "percentage_value": 9.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "move",
+      "rank": 9,
+      "name": "Throat Chop",
+      "percentage": 0.081,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "move",
+        "rank": 9,
+        "name": "Throat Chop",
+        "percentage": "8.1%",
+        "percentage_value": 8.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "move",
+      "rank": 10,
+      "name": "Brick Break",
+      "percentage": 0.081,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "move",
+        "rank": 10,
+        "name": "Brick Break",
+        "percentage": "8.1%",
+        "percentage_value": 8.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Focus Sash",
+      "percentage": 0.745,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Focus Sash",
+        "percentage": "74.5%",
+        "percentage_value": 74.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Wide Lens",
+      "percentage": 0.07,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Wide Lens",
+        "percentage": "7.0%",
+        "percentage_value": 7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Life Orb",
+      "percentage": 0.049,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Life Orb",
+        "percentage": "4.9%",
+        "percentage_value": 4.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "held_item",
+      "rank": 4,
+      "name": "King's Rock",
+      "percentage": 0.027,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "held_item",
+        "rank": 4,
+        "name": "King's Rock",
+        "percentage": "2.7%",
+        "percentage_value": 2.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Expert Belt",
+      "percentage": 0.017,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Expert Belt",
+        "percentage": "1.7%",
+        "percentage_value": 1.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "held_item",
+      "rank": 6,
+      "name": "White Herb",
+      "percentage": 0.015,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "held_item",
+        "rank": 6,
+        "name": "White Herb",
+        "percentage": "1.5%",
+        "percentage_value": 1.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Never-Melt Ice",
+      "percentage": 0.014,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Never-Melt Ice",
+        "percentage": "1.4%",
+        "percentage_value": 1.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Black Glasses",
+      "percentage": 1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Black Glasses",
+        "percentage": "1.0%",
+        "percentage_value": 1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Chople Berry",
+      "percentage": 0.7,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Chople Berry",
+        "percentage": "0.7%",
+        "percentage_value": 0.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Muscle Band",
+      "percentage": 0.6,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Muscle Band",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "ability",
+      "rank": 1,
+      "name": "Pickpocket",
+      "percentage": 0.682,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "ability",
+        "rank": 1,
+        "name": "Pickpocket",
+        "percentage": "68.2%",
+        "percentage_value": 68.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "ability",
+      "rank": 2,
+      "name": "Pressure",
+      "percentage": 0.318,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "ability",
+        "rank": 2,
+        "name": "Pressure",
+        "percentage": "31.8%",
+        "percentage_value": 31.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Raichu",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Raichu",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Milotic",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Milotic",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Ceruledge",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Ceruledge",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Scolipede",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Scolipede",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Whimsicott",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Whimsicott",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Charizard",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Charizard",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Jolly",
+      "percentage": 0.861,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Jolly",
+        "percentage": "86.1%",
+        "percentage_value": 86.1,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Adamant",
+      "percentage": 0.097,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Adamant",
+        "percentage": "9.7%",
+        "percentage_value": 9.7,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Hasty",
+      "percentage": 0.016,
+      "statUp": "Speed",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Hasty",
+        "percentage": "1.6%",
+        "percentage_value": 1.6,
+        "stat_up": "Speed",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Naive",
+      "percentage": 0.9,
+      "statUp": "Speed",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Naive",
+        "percentage": "0.9%",
+        "percentage_value": 0.9,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Lonely",
+      "percentage": 0.6,
+      "statUp": "Attack",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Lonely",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "Attack",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Naughty",
+      "percentage": 0.5,
+      "statUp": "Attack",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Naughty",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Impish",
+      "percentage": 0.3,
+      "statUp": "Defense",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Impish",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Defense",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Careful",
+      "percentage": 0.1,
+      "statUp": "Sp. Def",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Careful",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Sp. Def",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Brave",
+      "percentage": 0.1,
+      "statUp": "Attack",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Brave",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Attack",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Timid",
+      "percentage": 0.1,
+      "statUp": "Speed",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Timid",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Speed",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.389,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "38.9%",
+        "percentage_value": 38.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.258,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "25.8%",
+        "percentage_value": 25.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 3,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 31
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.096,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "9.6%",
+        "percentage_value": 9.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.085,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "8.5%",
+        "percentage_value": 8.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.035,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "3.5%",
+        "percentage_value": 3.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.7,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "0.7%",
+        "percentage_value": 0.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 1,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.6,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 6,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 28
+      }
+    },
+    {
+      "pokemon": "Weavile",
+      "position": 69,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.5,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Weavile",
+        "column_position": 69,
+        "position": 69,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 1,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a487796063cb29d318e2971-comox",
+      "name": "comox - Dark/Venenoso · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Protect",
+            "Giga Drain",
+            "Toxic",
+            "Leech Seed"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Protect",
+            "Fake Out",
+            "Flare Blitz",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Protect",
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "weavile",
+          "name": "Weavile",
+          "item": "Focus Sash",
+          "ability": "Pickpocket",
+          "moves": [
+            "Protect",
+            "Fake Out",
+            "Triple Axel",
+            "Low Kick"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Baneful Bunker",
+            "Wide Guard",
+            "Toxic",
+            "Infestation"
+          ]
+        },
+        {
+          "slug": "gengar",
+          "name": "Gengar",
+          "item": "Gengarite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Protect",
+            "Shadow Ball",
+            "Perish Song",
+            "Disable"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "comox - Dark/Venenoso",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a4f9758063cb29d318e79a9-yubi",
+      "name": "Yubi · Sky Pillar Saturday Showdown S8 #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Life Dew",
+            "Protect",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "weavile",
+          "name": "Weavile",
+          "item": "Focus Sash",
+          "ability": "Pickpocket",
+          "moves": [
+            "Knock Off",
+            "Triple Axel",
+            "Protect",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Protect",
+            "Bulk Up"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Muddy Water",
+            "Coil",
+            "Protect",
+            "Hypnosis"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Sky Pillar Saturday Showdown S8 #10",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Yubi",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a4f9758063cb29d318e79a9-nhan",
+      "name": "Nhan · Sky Pillar Saturday Showdown S8 #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Grass Knot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Trick Room",
+            "Helping Hand",
+            "Imprison"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Spirit Break",
+            "Light Screen",
+            "Reflect",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "weavile",
+          "name": "Weavile",
+          "item": "Focus Sash",
+          "ability": "Pickpocket",
+          "moves": [
+            "Triple Axel",
+            "Knock Off",
+            "Low Kick",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Light of Ruin",
+            "Moonblast",
+            "Protect",
+            "Dazzling Gleam"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Fake Out",
+            "Darkest Lariat",
+            "Parting Shot"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "Sky Pillar Saturday Showdown S8 #10",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Nhan",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a4685c383fd320299bd6675-eolswold",
+      "name": "Eoin O · Pokémon Champions #1 - (Floette Eternal Flower)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scolipede",
+          "name": "Scolipede",
+          "item": "Scolipite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Protect",
+            "Poison Jab",
+            "Leech Life",
+            "Swords Dance"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Protect",
+            "Fake Out",
+            "Zap Cannon",
+            "Focus Blast"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Protect",
+            "Rage Powder",
+            "Matcha Gotcha",
+            "Life Dew"
+          ]
+        },
+        {
+          "slug": "weavile",
+          "name": "Weavile",
+          "item": "Focus Sash",
+          "ability": "Pickpocket",
+          "moves": [
+            "Fake Out",
+            "Triple Axel",
+            "Knock Off",
+            "Low Kick"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Protect",
+            "Shadow Sneak",
+            "Bitter Blade",
+            "Bulk Up"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Protect",
+            "Coil",
+            "Hypnosis",
+            "Muddy Water"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "Pokémon Champions #1 - (Floette Eternal Flower)",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Eoin O",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a4d303a65724db9ded3f61e-leninedevectra",
+      "name": "Leninedevectra · LPP On-line",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scolipede",
+          "name": "Scolipede",
+          "item": "Scolipite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Leech Life",
+            "Poison Jab",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Protect",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Life Dew",
+            "Protect",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "weavile",
+          "name": "Weavile",
+          "item": "Focus Sash",
+          "ability": "Pickpocket",
+          "moves": [
+            "Knock Off",
+            "Triple Axel",
+            "Low Kick",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Protect",
+            "Bulk Up"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Muddy Water",
+            "Coil",
+            "Protect",
+            "Hypnosis"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "LPP On-line",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Leninedevectra",
+      "record": "2-2-0"
+    }
+  ],
+  "movePool": [
+    "Aerial Ace",
+    "Agility",
+    "Assurance",
+    "Avalanche",
+    "Baton Pass",
+    "Beat Up",
+    "Bite",
+    "Blizzard",
+    "Brick Break",
+    "Calm Mind",
+    "Chilling Water",
+    "Counter",
+    "Dark Pulse",
+    "Dig",
+    "Double Hit",
+    "Endure",
+    "Facade",
+    "Fake Out",
+    "Fake Tears",
+    "Feint",
+    "Fling",
+    "Focus Blast",
+    "Focus Punch",
+    "Foul Play",
+    "Giga Impact",
+    "Helping Hand",
+    "Hyper Beam",
+    "Ice Beam",
+    "Ice Punch",
+    "Ice Shard",
+    "Ice Spinner",
+    "Icicle Crash",
+    "Icicle Spear",
+    "Icy Wind",
+    "Knock Off",
+    "Lash Out",
+    "Low Kick",
+    "Low Sweep",
+    "Mega Kick",
+    "Metal Claw",
+    "Nasty Plot",
+    "Night Slash",
+    "Payback",
+    "Poison Jab",
+    "Protect",
+    "Psycho Cut",
+    "Quick Attack",
+    "Rain Dance",
+    "Reflect",
+    "Rest",
+    "Reversal",
+    "Round",
+    "Scary Face",
+    "Screech",
+    "Shadow Ball",
+    "Shadow Claw",
+    "Sleep Talk",
+    "Snarl",
+    "Snore",
+    "Snowscape",
+    "Spite",
+    "Substitute",
+    "Sunny Day",
+    "Surf",
+    "Swords Dance",
+    "Taunt",
+    "Thief",
+    "Throat Chop",
+    "Trailblaze",
+    "Triple Axel",
+    "Upper Hand",
+    "Water Pulse",
+    "X-Scissor"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Weavile",
+      "base_name": "Weavile",
+      "saved_name": "Weavile",
+      "types": "Dark/Ice",
+      "abilities": "Pressure|Pickpocket",
+      "image_path": "pokemon_champions_assets\\pokemon\\Weavile.png",
+      "form": "",
+      "hp": 145,
+      "atk": 140,
+      "def": 85,
+      "spa": 65,
+      "spd": 105,
+      "spe": 145,
+      "total": 685
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "move",
+          "rank": 1,
+          "name": "Fake Out",
+          "percentage": "93.8%",
+          "percentage_value": 93.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Focus Sash",
+          "percentage": "74.5%",
+          "percentage_value": 74.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Jolly",
+          "percentage": "86.1%",
+          "percentage_value": 86.1,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        "stat_points": {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "38.9%",
+          "percentage_value": 38.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        "ability": {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "ability",
+          "rank": 1,
+          "name": "Pickpocket",
+          "percentage": "68.2%",
+          "percentage_value": 68.2,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Fake Out",
+          "Knock Off",
+          "Triple Axel",
+          "Low Kick",
+          "Protect",
+          "Ice Spinner",
+          "Ice Shard",
+          "Icicle Crash",
+          "Throat Chop",
+          "Brick Break"
+        ],
+        "held_item": [
+          "Focus Sash",
+          "Wide Lens",
+          "Life Orb",
+          "King's Rock",
+          "Expert Belt",
+          "White Herb",
+          "Never-Melt Ice",
+          "Black Glasses",
+          "Chople Berry",
+          "Muscle Band"
+        ],
+        "teammate": [
+          "Sinistcha",
+          "Raichu",
+          "Milotic",
+          "Ceruledge",
+          "Scolipede",
+          "Whimsicott",
+          "Garchomp",
+          "Charizard",
+          "Basculegion Male",
+          "Incineroar"
+        ],
+        "stat_alignment": [
+          "Jolly",
+          "Adamant",
+          "Hasty",
+          "Naive",
+          "Lonely",
+          "Naughty",
+          "Impish",
+          "Careful",
+          "Brave",
+          "Timid"
+        ],
+        "stat_points": [
+          "HP 2 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 32",
+          "HP 3 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 31",
+          "HP 0 / Atk 32 / Def 2 / SpA 0 / SpD 0 / Spe 32",
+          "HP 0 / Atk 32 / Def 0 / SpA 0 / SpD 2 / Spe 32",
+          "HP 0 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 32",
+          "HP 0 / Atk 32 / Def 0 / SpA 0 / SpD 1 / Spe 32",
+          "HP 6 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 28",
+          "HP 1 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 32"
+        ],
+        "ability": [
+          "Pickpocket",
+          "Pressure"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "move",
+          "rank": 1,
+          "name": "Fake Out",
+          "percentage": "93.8%",
+          "percentage_value": 93.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "move",
+          "rank": 2,
+          "name": "Knock Off",
+          "percentage": "84.9%",
+          "percentage_value": 84.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "move",
+          "rank": 3,
+          "name": "Triple Axel",
+          "percentage": "71.2%",
+          "percentage_value": 71.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "move",
+          "rank": 4,
+          "name": "Low Kick",
+          "percentage": "42.1%",
+          "percentage_value": 42.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "move",
+          "rank": 5,
+          "name": "Protect",
+          "percentage": "19.6%",
+          "percentage_value": 19.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "move",
+          "rank": 6,
+          "name": "Ice Spinner",
+          "percentage": "10.7%",
+          "percentage_value": 10.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "move",
+          "rank": 7,
+          "name": "Ice Shard",
+          "percentage": "9.6%",
+          "percentage_value": 9.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "move",
+          "rank": 8,
+          "name": "Icicle Crash",
+          "percentage": "9.3%",
+          "percentage_value": 9.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "move",
+          "rank": 9,
+          "name": "Throat Chop",
+          "percentage": "8.1%",
+          "percentage_value": 8.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "move",
+          "rank": 10,
+          "name": "Brick Break",
+          "percentage": "8.1%",
+          "percentage_value": 8.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Focus Sash",
+          "percentage": "74.5%",
+          "percentage_value": 74.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Wide Lens",
+          "percentage": "7.0%",
+          "percentage_value": 7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Life Orb",
+          "percentage": "4.9%",
+          "percentage_value": 4.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "held_item",
+          "rank": 4,
+          "name": "King's Rock",
+          "percentage": "2.7%",
+          "percentage_value": 2.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Expert Belt",
+          "percentage": "1.7%",
+          "percentage_value": 1.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "held_item",
+          "rank": 6,
+          "name": "White Herb",
+          "percentage": "1.5%",
+          "percentage_value": 1.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Never-Melt Ice",
+          "percentage": "1.4%",
+          "percentage_value": 1.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Black Glasses",
+          "percentage": "1.0%",
+          "percentage_value": 1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Chople Berry",
+          "percentage": "0.7%",
+          "percentage_value": 0.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Muscle Band",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Raichu",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Milotic",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Ceruledge",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Scolipede",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Whimsicott",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Charizard",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Jolly",
+          "percentage": "86.1%",
+          "percentage_value": 86.1,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Adamant",
+          "percentage": "9.7%",
+          "percentage_value": 9.7,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Hasty",
+          "percentage": "1.6%",
+          "percentage_value": 1.6,
+          "stat_up": "Speed",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Naive",
+          "percentage": "0.9%",
+          "percentage_value": 0.9,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Lonely",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "Attack",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Naughty",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Impish",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Careful",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Sp. Def",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Brave",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Attack",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Timid",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Speed",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "38.9%",
+          "percentage_value": 38.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "25.8%",
+          "percentage_value": 25.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 3,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 31
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "9.6%",
+          "percentage_value": 9.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "8.5%",
+          "percentage_value": 8.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "3.5%",
+          "percentage_value": 3.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "0.7%",
+          "percentage_value": 0.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 1,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 6,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 28
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 1,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "ability",
+          "rank": 1,
+          "name": "Pickpocket",
+          "percentage": "68.2%",
+          "percentage_value": 68.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Weavile",
+          "column_position": 69,
+          "position": 69,
+          "category": "ability",
+          "rank": 2,
+          "name": "Pressure",
+          "percentage": "31.8%",
+          "percentage_value": 31.8,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Weavile.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Weavile.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Weavile.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Weavile.csv"
+      }
+    ]
+  }
+}

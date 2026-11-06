@@ -1,0 +1,3553 @@
+{
+  "pokemon": {
+    "slug": "scrafty",
+    "name": "Scrafty",
+    "baseName": "Scrafty",
+    "savedName": "Scrafty",
+    "form": "",
+    "types": [
+      "Dark",
+      "Fighting"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Scrafty.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/560.png",
+    "stats": {
+      "hp": 140,
+      "attack": 110,
+      "defense": 135,
+      "spAttack": 65,
+      "spDefense": 135,
+      "speed": 78,
+      "total": 663
+    },
+    "rank": 51,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Fake Out",
+    "topItem": "Scraftinite",
+    "topTeammate": "Farigiraf"
+  },
+  "moves": [
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "move",
+      "rank": 1,
+      "name": "Fake Out",
+      "percentage": 0.9,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "move",
+        "rank": 1,
+        "name": "Fake Out",
+        "percentage": "90.0%",
+        "percentage_value": 90,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "move",
+      "rank": 2,
+      "name": "Knock Off",
+      "percentage": 0.898,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "move",
+        "rank": 2,
+        "name": "Knock Off",
+        "percentage": "89.8%",
+        "percentage_value": 89.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "move",
+      "rank": 3,
+      "name": "Drain Punch",
+      "percentage": 0.619,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "move",
+        "rank": 3,
+        "name": "Drain Punch",
+        "percentage": "61.9%",
+        "percentage_value": 61.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "move",
+      "rank": 4,
+      "name": "Close Combat",
+      "percentage": 0.369,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "move",
+        "rank": 4,
+        "name": "Close Combat",
+        "percentage": "36.9%",
+        "percentage_value": 36.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "move",
+      "rank": 5,
+      "name": "Ice Punch",
+      "percentage": 0.273,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "move",
+        "rank": 5,
+        "name": "Ice Punch",
+        "percentage": "27.3%",
+        "percentage_value": 27.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "move",
+      "rank": 6,
+      "name": "Protect",
+      "percentage": 0.195,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "move",
+        "rank": 6,
+        "name": "Protect",
+        "percentage": "19.5%",
+        "percentage_value": 19.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "move",
+      "rank": 7,
+      "name": "Detect",
+      "percentage": 0.146,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "move",
+        "rank": 7,
+        "name": "Detect",
+        "percentage": "14.6%",
+        "percentage_value": 14.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "move",
+      "rank": 8,
+      "name": "Iron Head",
+      "percentage": 0.138,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "move",
+        "rank": 8,
+        "name": "Iron Head",
+        "percentage": "13.8%",
+        "percentage_value": 13.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "move",
+      "rank": 9,
+      "name": "Rock Slide",
+      "percentage": 0.085,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "move",
+        "rank": 9,
+        "name": "Rock Slide",
+        "percentage": "8.5%",
+        "percentage_value": 8.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "move",
+      "rank": 10,
+      "name": "Throat Chop",
+      "percentage": 0.066,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "move",
+        "rank": 10,
+        "name": "Throat Chop",
+        "percentage": "6.6%",
+        "percentage_value": 6.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Scraftinite",
+      "percentage": 0.903,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Scraftinite",
+        "percentage": "90.3%",
+        "percentage_value": 90.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Sitrus Berry",
+      "percentage": 0.02,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Sitrus Berry",
+        "percentage": "2.0%",
+        "percentage_value": 2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Roseli Berry",
+      "percentage": 0.02,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Roseli Berry",
+        "percentage": "2.0%",
+        "percentage_value": 2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Leftovers",
+      "percentage": 0.02,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Leftovers",
+        "percentage": "2.0%",
+        "percentage_value": 2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Life Orb",
+      "percentage": 0.011,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Life Orb",
+        "percentage": "1.1%",
+        "percentage_value": 1.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Focus Sash",
+      "percentage": 0.7,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Focus Sash",
+        "percentage": "0.7%",
+        "percentage_value": 0.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Expert Belt",
+      "percentage": 0.3,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Expert Belt",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "held_item",
+      "rank": 8,
+      "name": "White Herb",
+      "percentage": 0.3,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "held_item",
+        "rank": 8,
+        "name": "White Herb",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Black Glasses",
+      "percentage": 0.2,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Black Glasses",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Black Belt",
+      "percentage": 0.2,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Black Belt",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "ability",
+      "rank": 1,
+      "name": "Intimidate",
+      "percentage": 0.972,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "ability",
+        "rank": 1,
+        "name": "Intimidate",
+        "percentage": "97.2%",
+        "percentage_value": 97.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "ability",
+      "rank": 2,
+      "name": "Moxie",
+      "percentage": 0.026,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "ability",
+        "rank": 2,
+        "name": "Moxie",
+        "percentage": "2.6%",
+        "percentage_value": 2.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "ability",
+      "rank": 3,
+      "name": "Shed Skin",
+      "percentage": 0.2,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "ability",
+        "rank": 3,
+        "name": "Shed Skin",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Farigiraf",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Farigiraf",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Torkoal",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Torkoal",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Sylveon",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Sylveon",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Pyroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Pyroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Venusaur",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Venusaur",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Mamoswine",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Mamoswine",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Vileplume",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Vileplume",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Staraptor",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Staraptor",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Adamant",
+      "percentage": 0.484,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Adamant",
+        "percentage": "48.4%",
+        "percentage_value": 48.4,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Brave",
+      "percentage": 0.373,
+      "statUp": "Attack",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Brave",
+        "percentage": "37.3%",
+        "percentage_value": 37.3,
+        "stat_up": "Attack",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Careful",
+      "percentage": 0.075,
+      "statUp": "Sp. Def",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Careful",
+        "percentage": "7.5%",
+        "percentage_value": 7.5,
+        "stat_up": "Sp. Def",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Impish",
+      "percentage": 0.03,
+      "statUp": "Defense",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Impish",
+        "percentage": "3.0%",
+        "percentage_value": 3,
+        "stat_up": "Defense",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Sassy",
+      "percentage": 0.015,
+      "statUp": "Sp. Def",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Sassy",
+        "percentage": "1.5%",
+        "percentage_value": 1.5,
+        "stat_up": "Sp. Def",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Jolly",
+      "percentage": 0.012,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Jolly",
+        "percentage": "1.2%",
+        "percentage_value": 1.2,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Relaxed",
+      "percentage": 0.6,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Relaxed",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Lonely",
+      "percentage": 0.1,
+      "statUp": "Attack",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Lonely",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Attack",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Naughty",
+      "percentage": 0.1,
+      "statUp": "Attack",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Naughty",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Gentle",
+      "percentage": 0,
+      "statUp": "Sp. Def",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Gentle",
+        "percentage": "0.0%",
+        "percentage_value": 0,
+        "stat_up": "Sp. Def",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.266,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "26.6%",
+        "percentage_value": 26.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.217,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "21.7%",
+        "percentage_value": 21.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.067,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "6.7%",
+        "percentage_value": 6.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 1,
+        "sp_atk_points": 0,
+        "sp_def_points": 1,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.028,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "2.8%",
+        "percentage_value": 2.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 31,
+        "attack_points": 30,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 5
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.019,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "1.9%",
+        "percentage_value": 1.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 2
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.011,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "1.1%",
+        "percentage_value": 1.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 32,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.011,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "1.1%",
+        "percentage_value": 1.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 30,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 4,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Scrafty",
+      "position": 51,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.9,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Scrafty",
+        "column_position": 51,
+        "position": 51,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "0.9%",
+        "percentage_value": 0.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 32,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a5055f965724db9ded41c56-vincenzocaiafa",
+      "name": "Vincenzocaiafa · Weekly Qualifier for RookideeVGC Grand Tourney",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Trick Room",
+            "Protect",
+            "Helping Hand",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "vivillon",
+          "name": "Vivillon",
+          "item": "Focus Sash",
+          "ability": "Compound Eyes",
+          "moves": [
+            "Hurricane",
+            "Sleep Powder",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "camerupt",
+          "name": "Camerupt",
+          "item": "Cameruptite",
+          "ability": "Solid Rock",
+          "moves": [
+            "Heat Wave",
+            "Earth Power",
+            "Ancient Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Play Rough",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hatterene",
+          "name": "Hatterene",
+          "item": "Life Orb",
+          "ability": "Magic Bounce",
+          "moves": [
+            "Trick Room",
+            "Psychic",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Roseli Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Brick Break",
+            "Knock Off",
+            "Ice Punch"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "Weekly Qualifier for RookideeVGC Grand Tourney",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Vincenzocaiafa",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a505ee7063cb29d318e8401-gabeeel",
+      "name": "Gabeeel · VGC UU Regulation M-B Weekly #1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Drain Punch",
+            "Knock Off",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Glimmoranite",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Sludge Bomb",
+            "Power Gem",
+            "Earth Power",
+            "Spiky Shield"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Expert Belt",
+          "ability": "Gale Wings",
+          "moves": [
+            "Brave Bird",
+            "Flare Blitz",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Sitrus Berry",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Moonblast",
+            "Calm Mind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Colbur Berry",
+          "ability": "Clear Body",
+          "moves": [
+            "Bullet Punch",
+            "Iron Head",
+            "Psychic Fangs",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Focus Sash",
+          "ability": "Oblivious",
+          "moves": [
+            "Earthquake",
+            "High Horsepower",
+            "Ice Shard",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "VGC UU Regulation M-B Weekly #1",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Gabeeel",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a505ee7063cb29d318e8401-swaggervgc",
+      "name": "swaggervgc · VGC UU Regulation M-B Weekly #1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gengar",
+          "name": "Gengar",
+          "item": "Gengarite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Shadow Ball",
+            "Substitute",
+            "Perish Song",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Trace",
+          "moves": [
+            "Hyper Voice",
+            "Protect",
+            "Trick Room",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Knock Off",
+            "Close Combat",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "arcanine",
+          "name": "Arcanine",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Snarl",
+            "Will-O-Wisp",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "meowscarada",
+          "name": "Meowscarada",
+          "item": "Choice Scarf",
+          "ability": "Protean",
+          "moves": [
+            "Flower Trick",
+            "U-turn",
+            "Triple Axel",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "palafin",
+          "name": "Palafin",
+          "item": "Mystic Water",
+          "ability": "Zero to Hero",
+          "moves": [
+            "Wave Crash",
+            "Jet Punch",
+            "Flip Turn",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 3,
+      "tournament": "VGC UU Regulation M-B Weekly #1",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "swaggervgc",
+      "record": "0-3-0"
+    },
+    {
+      "id": "6a4dfee8063cb29d318e6805-tinixium",
+      "name": "Tinixium · VGC UmbreNews 14.07.2026 #23 - Champion",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "hatterene",
+          "name": "Hatterene",
+          "item": "Focus Sash",
+          "ability": "Magic Bounce",
+          "moves": [
+            "Psychic",
+            "Dazzling Gleam",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Iron Head",
+            "Protect",
+            "Sucker Punch",
+            "Play Rough"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Rock Slide",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gallade",
+          "name": "Gallade",
+          "item": "Expert Belt",
+          "ability": "Sharpness",
+          "moves": [
+            "Psycho Cut",
+            "Wide Guard",
+            "Sacred Sword",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Brave Bird",
+            "Tailwind",
+            "Protect",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Drain Punch",
+            "Knock Off",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "VGC UmbreNews 14.07.2026 #23 - Champion",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Tinixium",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a53c2d1e09846f1eb4c161b-bingobangobongo",
+      "name": "Bingobangobongo · The Drywall Series #11",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Energy Ball",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Twin Beam",
+            "Thunderbolt",
+            "Trick Room",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "pyroar",
+          "name": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Unnerve",
+          "moves": [
+            "Heat Wave",
+            "Overheat",
+            "Solar Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Eruption",
+            "Weather Ball",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Iron Head",
+            "Close Combat",
+            "Knock Off"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Focus Sash",
+          "ability": "Oblivious",
+          "moves": [
+            "High Horsepower",
+            "Rock Slide",
+            "Ice Shard",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "The Drywall Series #11",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Bingobangobongo",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-kadoiis",
+      "name": "Kadoiis -Dark/Fogo · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Knock Off",
+            "Protect",
+            "Low Kick",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Roseli Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Knock Off",
+            "Detect",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Occa Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Fake Out",
+            "Darkest Lariat",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Spirit Break",
+            "Light Screen",
+            "Reflect",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Kadoiis -Dark/Fogo",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a4516dcc87cd9ff0a31469e-gewoonbas",
+      "name": "GewoonBas · Pride Month 2 Celebration!!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "hisuian-arcanine",
+          "name": "Hisuian Arcanine",
+          "item": "Focus Sash",
+          "ability": "Rock Head",
+          "moves": [
+            "Head Smash",
+            "Flare Blitz",
+            "Extreme Speed",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Knock Off",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "volcarona",
+          "name": "Volcarona",
+          "item": "Sitrus Berry",
+          "ability": "Flame Body",
+          "moves": [
+            "Rage Powder",
+            "Tailwind",
+            "Fiery Dance",
+            "Struggle Bug"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Heatproof",
+          "moves": [
+            "Matcha Gotcha",
+            "Strength Sap",
+            "Calm Mind",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Mystic Water",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Moonblast",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Iron Head",
+            "Play Rough",
+            "Sucker Punch",
+            "Swords Dance"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "Pride Month 2 Celebration!!",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "GewoonBas",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a4685c383fd320299bd6675-trevie",
+      "name": "Trevie · Pokémon Champions #1 - (Floette Eternal Flower)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Drain Punch",
+            "Knock Off",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "pyroar",
+          "name": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Unnerve",
+          "moves": [
+            "Heat Wave",
+            "Overheat",
+            "Yawn",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Energy Ball",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Weather Ball",
+            "Eruption",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Focus Sash",
+          "ability": "Oblivious",
+          "moves": [
+            "Ice Shard",
+            "High Horsepower",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Thunderbolt",
+            "Trick Room",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7272727272727273,
+      "sampleCount": 11,
+      "tournament": "Pokémon Champions #1 - (Floette Eternal Flower)",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Trevie",
+      "record": "8-3-0"
+    },
+    {
+      "id": "6a291b172d97f3b0c2612db9-rockkss",
+      "name": "ROCkkss · Mystery Community Tournament#1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "pyroar",
+          "name": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Unnerve",
+          "moves": [
+            "Heat Wave",
+            "Overheat",
+            "Flamethrower",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Energy Ball",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gliscor",
+          "name": "Gliscor",
+          "item": "Focus Sash",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "High Horsepower",
+            "Rock Slide",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Eruption",
+            "Weather Ball",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Thunderbolt",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Knock Off",
+            "Drain Punch",
+            "Ice Punch",
+            "Fake Out"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Mystery Community Tournament#1",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "ROCkkss",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a5162b8063cb29d318e9199-leoscerni",
+      "name": "NMR| leoscerni · MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gengar",
+          "name": "Gengar",
+          "item": "Gengarite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Protect",
+            "Shadow Ball",
+            "Sludge Bomb",
+            "Perish Song"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Throat Chop",
+            "Parting Shot",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Knock Off",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "azumarill",
+          "name": "Azumarill",
+          "item": "Leftovers",
+          "ability": "Sap Sipper",
+          "moves": [
+            "Protect",
+            "Muddy Water",
+            "Helping Hand",
+            "Perish Song"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Life Orb",
+          "ability": "Poison Touch",
+          "moves": [
+            "Protect",
+            "Close Combat",
+            "Rock Slide",
+            "Throat Chop"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Leaf Storm",
+            "Rage Powder",
+            "Strength Sap",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8333333333333334,
+      "sampleCount": 6,
+      "tournament": "MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "NMR| leoscerni",
+      "record": "5-1-0"
+    },
+    {
+      "id": "6a4d3355063cb29d318e5f6a-meme",
+      "name": "Meme · Circuito Pretemporada: Pokémon Champions #4",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Knock Off",
+            "Drain Punch",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Thunderbolt",
+            "Psychic",
+            "Trick Room",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Dire Claw",
+            "Close Combat",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "ampharos",
+          "name": "Ampharos",
+          "item": "Ampharosite",
+          "ability": "Static",
+          "moves": [
+            "Thunderbolt",
+            "Dragon Pulse",
+            "Cotton Guard",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Eruption",
+            "Weather Ball",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Rage Powder",
+            "Matcha Gotcha",
+            "Trick Room",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.3333333333333333,
+      "sampleCount": 3,
+      "tournament": "Circuito Pretemporada: Pokémon Champions #4",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Meme",
+      "record": "1-2-0"
+    },
+    {
+      "id": "6a529f1ee09846f1eb4c14e3-idlefroicker",
+      "name": "IdleFroicker · Chaos League Sunday Slam #104",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "pyroar",
+          "name": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Unnerve",
+          "moves": [
+            "Protect",
+            "Heat Wave",
+            "Hyper Beam",
+            "Overheat"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Protect",
+            "Eruption",
+            "Overheat",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "vileplume",
+          "name": "Vileplume",
+          "item": "Focus Sash",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sleep Powder",
+            "Leaf Storm",
+            "Sludge Bomb",
+            "After You"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Knock Off",
+            "Close Combat",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Flip Turn",
+            "Last Respects",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "malamar",
+          "name": "Malamar",
+          "item": "Sitrus Berry",
+          "ability": "Contrary",
+          "moves": [
+            "Superpower",
+            "Topsy-Turvy",
+            "Rock Slide",
+            "Trick Room"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8888888888888888,
+      "sampleCount": 9,
+      "tournament": "Chaos League Sunday Slam #104",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "IdleFroicker",
+      "record": "8-1-0"
+    },
+    {
+      "id": "6a529f1ee09846f1eb4c14e3-nefastto",
+      "name": "Nefastto · Chaos League Sunday Slam #104",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "High Jump Kick",
+            "Knock Off",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Mental Herb",
+          "ability": "Prankster",
+          "moves": [
+            "Tailwind",
+            "Encore",
+            "Taunt",
+            "Dazzling Gleam"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite X",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Fake Out",
+            "Focus Blast",
+            "Grass Knot"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Shadow Ball",
+            "Rage Powder",
+            "Life Dew"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Unburden",
+          "moves": [
+            "Dire Claw",
+            "Close Combat",
+            "Taunt",
+            "Fake Out"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Chaos League Sunday Slam #104",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Nefastto",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a57380e6355385f44dd5183-nirvana",
+      "name": "NIRVANA · Champions Tour LEPE M-B #9",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "hisuian-typhlosion",
+          "name": "Hisuian Typhlosion",
+          "item": "Choice Scarf",
+          "ability": "Blaze",
+          "moves": [
+            "Eruption",
+            "Heat Wave",
+            "Infernal Parade",
+            "Solar Beam"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Solar Power",
+          "moves": [
+            "Heat Wave",
+            "Solar Beam",
+            "Focus Blast",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Lum Berry",
+          "ability": "Multiscale",
+          "moves": [
+            "Dragon Dance",
+            "Outrage",
+            "Rock Slide",
+            "Extreme Speed"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Focus Sash",
+          "ability": "Speed Boost",
+          "moves": [
+            "Protect",
+            "Flare Blitz",
+            "Close Combat",
+            "Coaching"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Life Orb",
+          "ability": "Pixilate",
+          "moves": [
+            "Quick Attack",
+            "Hyper Voice",
+            "Protect",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Quick Claw",
+          "ability": "Intimidate",
+          "moves": [
+            "Bulk Up",
+            "Fake Out",
+            "Knock Off",
+            "Drain Punch"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.25,
+      "sampleCount": 4,
+      "tournament": "Champions Tour LEPE M-B #9",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "NIRVANA",
+      "record": "1-3-0"
+    },
+    {
+      "id": "6a4f486e063cb29d318e781e-kiri99",
+      "name": "Kiri99 · Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "gengar",
+          "name": "Gengar",
+          "item": "Gengarite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Shadow Ball",
+            "Protect",
+            "Perish Song",
+            "Substitute"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Throat Chop",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Expert Belt",
+          "ability": "Intimidate",
+          "moves": [
+            "Knock Off",
+            "Fake Out",
+            "Drain Punch",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Leftovers",
+          "ability": "Torrent",
+          "moves": [
+            "Protect",
+            "Moonblast",
+            "Perish Song",
+            "Flip Turn"
+          ]
+        },
+        {
+          "slug": "altaria",
+          "name": "Altaria",
+          "item": "Wide Lens",
+          "ability": "Cloud Nine",
+          "moves": [
+            "Protect",
+            "Roost",
+            "Perish Song",
+            "Sing"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Encore",
+            "Fake Out",
+            "Disable",
+            "Detect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Kiri99",
+      "record": "3-1-1"
+    },
+    {
+      "id": "6a545f013ee4505de4ad5e7e-upinhuu",
+      "name": "uPinhuu · 🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "bellibolt",
+          "name": "Bellibolt",
+          "item": "Magnet",
+          "ability": "Electromorphosis",
+          "moves": [
+            "Parabolic Charge",
+            "Volt Switch",
+            "Thunderbolt",
+            "Soak"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Trick Room",
+            "Psychic Noise",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Eruption",
+            "Protect",
+            "Weather Ball",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Iron Head",
+            "Play Rough",
+            "Protect",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Knock Off",
+            "Rock Slide",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Life Orb",
+          "ability": "Scrappy",
+          "moves": [
+            "Fake Out",
+            "Last Resort"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "uPinhuu",
+      "record": "2-3-0"
+    }
+  ],
+  "movePool": [
+    "Acid Spray",
+    "Amnesia",
+    "Assurance",
+    "Beat Up",
+    "Body Slam",
+    "Brick Break",
+    "Bulk Up",
+    "Close Combat",
+    "Coaching",
+    "Counter",
+    "Crunch",
+    "Curse",
+    "Dark Pulse",
+    "Detect",
+    "Dig",
+    "Double-Edge",
+    "Dragon Claw",
+    "Dragon Dance",
+    "Dragon Pulse",
+    "Dragon Tail",
+    "Drain Punch",
+    "Dynamic Punch",
+    "Encore",
+    "Endeavor",
+    "Endure",
+    "Facade",
+    "Fake Out",
+    "Fake Tears",
+    "Fire Punch",
+    "Fling",
+    "Focus Blast",
+    "Focus Punch",
+    "Foul Play",
+    "Giga Impact",
+    "Grass Knot",
+    "Head Smash",
+    "Helping Hand",
+    "High Jump Kick",
+    "Hyper Beam",
+    "Ice Punch",
+    "Iron Defense",
+    "Iron Head",
+    "Iron Tail",
+    "Knock Off",
+    "Lash Out",
+    "Low Kick",
+    "Low Sweep",
+    "Mega Kick",
+    "Outrage",
+    "Payback",
+    "Poison Jab",
+    "Protect",
+    "Quick Guard",
+    "Rain Dance",
+    "Rest",
+    "Reversal",
+    "Roar",
+    "Rock Slide",
+    "Rock Tomb",
+    "Round",
+    "Scary Face",
+    "Sleep Talk",
+    "Sludge Bomb",
+    "Smack Down",
+    "Snarl",
+    "Snore",
+    "Spite",
+    "Stone Edge",
+    "Substitute",
+    "Sunny Day",
+    "Super Fang",
+    "Swagger",
+    "Swords Dance",
+    "Taunt",
+    "Thief",
+    "Throat Chop",
+    "Thunder Punch",
+    "Torment",
+    "Trailblaze",
+    "Upper Hand",
+    "Uproar",
+    "Zen Headbutt"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Scrafty",
+      "base_name": "Scrafty",
+      "saved_name": "Scrafty",
+      "types": "Dark/Fighting",
+      "abilities": "Shed Skin|Moxie|Intimidate",
+      "weight": "66.1 lbs.",
+      "image_path": "pokemon_champions_assets\\pokemon\\Scrafty.png",
+      "form": "",
+      "hp": 140,
+      "atk": 110,
+      "def": 135,
+      "spa": 65,
+      "spd": 135,
+      "spe": 78,
+      "total": 663
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "move",
+          "rank": 1,
+          "name": "Fake Out",
+          "percentage": "90.0%",
+          "percentage_value": 90,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Scraftinite",
+          "percentage": "90.3%",
+          "percentage_value": 90.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Adamant",
+          "percentage": "48.4%",
+          "percentage_value": 48.4,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        "stat_points": {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "26.6%",
+          "percentage_value": 26.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        "ability": {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "ability",
+          "rank": 1,
+          "name": "Intimidate",
+          "percentage": "97.2%",
+          "percentage_value": 97.2,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Fake Out",
+          "Knock Off",
+          "Drain Punch",
+          "Close Combat",
+          "Ice Punch",
+          "Protect",
+          "Detect",
+          "Iron Head",
+          "Rock Slide",
+          "Throat Chop"
+        ],
+        "held_item": [
+          "Scraftinite",
+          "Sitrus Berry",
+          "Roseli Berry",
+          "Leftovers",
+          "Life Orb",
+          "Focus Sash",
+          "Expert Belt",
+          "White Herb",
+          "Black Glasses",
+          "Black Belt"
+        ],
+        "teammate": [
+          "Farigiraf",
+          "Torkoal",
+          "Sylveon",
+          "Pyroar",
+          "Venusaur",
+          "Sinistcha",
+          "Mamoswine",
+          "Vileplume",
+          "Staraptor",
+          "Incineroar"
+        ],
+        "stat_alignment": [
+          "Adamant",
+          "Brave",
+          "Careful",
+          "Impish",
+          "Sassy",
+          "Jolly",
+          "Relaxed",
+          "Lonely",
+          "Naughty",
+          "Gentle"
+        ],
+        "stat_points": [
+          "HP 32 / Atk 32 / Def 0 / SpA 0 / SpD 2 / Spe 0",
+          "HP 32 / Atk 32 / Def 2 / SpA 0 / SpD 0 / Spe 0",
+          "HP 32 / Atk 32 / Def 1 / SpA 0 / SpD 1 / Spe 0",
+          "HP 31 / Atk 30 / Def 0 / SpA 0 / SpD 0 / Spe 5",
+          "HP 32 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 2",
+          "HP 0 / Atk 32 / Def 2 / SpA 0 / SpD 32 / Spe 0",
+          "HP 32 / Atk 30 / Def 0 / SpA 0 / SpD 4 / Spe 0",
+          "HP 0 / Atk 32 / Def 32 / SpA 0 / SpD 2 / Spe 0"
+        ],
+        "ability": [
+          "Intimidate",
+          "Moxie",
+          "Shed Skin"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "move",
+          "rank": 1,
+          "name": "Fake Out",
+          "percentage": "90.0%",
+          "percentage_value": 90,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "move",
+          "rank": 2,
+          "name": "Knock Off",
+          "percentage": "89.8%",
+          "percentage_value": 89.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "move",
+          "rank": 3,
+          "name": "Drain Punch",
+          "percentage": "61.9%",
+          "percentage_value": 61.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "move",
+          "rank": 4,
+          "name": "Close Combat",
+          "percentage": "36.9%",
+          "percentage_value": 36.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "move",
+          "rank": 5,
+          "name": "Ice Punch",
+          "percentage": "27.3%",
+          "percentage_value": 27.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "move",
+          "rank": 6,
+          "name": "Protect",
+          "percentage": "19.5%",
+          "percentage_value": 19.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "move",
+          "rank": 7,
+          "name": "Detect",
+          "percentage": "14.6%",
+          "percentage_value": 14.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "move",
+          "rank": 8,
+          "name": "Iron Head",
+          "percentage": "13.8%",
+          "percentage_value": 13.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "move",
+          "rank": 9,
+          "name": "Rock Slide",
+          "percentage": "8.5%",
+          "percentage_value": 8.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "move",
+          "rank": 10,
+          "name": "Throat Chop",
+          "percentage": "6.6%",
+          "percentage_value": 6.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Scraftinite",
+          "percentage": "90.3%",
+          "percentage_value": 90.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Sitrus Berry",
+          "percentage": "2.0%",
+          "percentage_value": 2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Roseli Berry",
+          "percentage": "2.0%",
+          "percentage_value": 2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Leftovers",
+          "percentage": "2.0%",
+          "percentage_value": 2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Life Orb",
+          "percentage": "1.1%",
+          "percentage_value": 1.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Focus Sash",
+          "percentage": "0.7%",
+          "percentage_value": 0.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Expert Belt",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "held_item",
+          "rank": 8,
+          "name": "White Herb",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Black Glasses",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Black Belt",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Torkoal",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Sylveon",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Pyroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Venusaur",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Mamoswine",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Vileplume",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Staraptor",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Adamant",
+          "percentage": "48.4%",
+          "percentage_value": 48.4,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Brave",
+          "percentage": "37.3%",
+          "percentage_value": 37.3,
+          "stat_up": "Attack",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Careful",
+          "percentage": "7.5%",
+          "percentage_value": 7.5,
+          "stat_up": "Sp. Def",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Impish",
+          "percentage": "3.0%",
+          "percentage_value": 3,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Sassy",
+          "percentage": "1.5%",
+          "percentage_value": 1.5,
+          "stat_up": "Sp. Def",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Jolly",
+          "percentage": "1.2%",
+          "percentage_value": 1.2,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Relaxed",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Lonely",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Attack",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Naughty",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Gentle",
+          "percentage": "0.0%",
+          "percentage_value": 0,
+          "stat_up": "Sp. Def",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "26.6%",
+          "percentage_value": 26.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "21.7%",
+          "percentage_value": 21.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "6.7%",
+          "percentage_value": 6.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 1,
+          "sp_atk_points": 0,
+          "sp_def_points": 1,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "2.8%",
+          "percentage_value": 2.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 31,
+          "attack_points": 30,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 5
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "1.9%",
+          "percentage_value": 1.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 2
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "1.1%",
+          "percentage_value": 1.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 32,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "1.1%",
+          "percentage_value": 1.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 30,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 4,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "0.9%",
+          "percentage_value": 0.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 32,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "ability",
+          "rank": 1,
+          "name": "Intimidate",
+          "percentage": "97.2%",
+          "percentage_value": 97.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "ability",
+          "rank": 2,
+          "name": "Moxie",
+          "percentage": "2.6%",
+          "percentage_value": 2.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Scrafty",
+          "column_position": 51,
+          "position": 51,
+          "category": "ability",
+          "rank": 3,
+          "name": "Shed Skin",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Scrafty.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Scrafty.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Scrafty.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Scrafty.csv"
+      }
+    ]
+  }
+}

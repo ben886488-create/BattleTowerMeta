@@ -1,0 +1,6146 @@
+{
+  "pokemon": {
+    "slug": "metagross",
+    "name": "Metagross",
+    "baseName": "Metagross",
+    "savedName": "Metagross",
+    "form": "",
+    "types": [
+      "Steel",
+      "Psychic"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Metagross.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/376.png",
+    "stats": {
+      "hp": 155,
+      "attack": 155,
+      "defense": 150,
+      "spAttack": 115,
+      "spDefense": 110,
+      "speed": 90,
+      "total": 775
+    },
+    "rank": 21,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Psychic Fangs",
+    "topItem": "Metagrossite",
+    "topTeammate": "Garchomp"
+  },
+  "moves": [
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "move",
+      "rank": 1,
+      "name": "Psychic Fangs",
+      "percentage": 0.902,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "move",
+        "rank": 1,
+        "name": "Psychic Fangs",
+        "percentage": "90.2%",
+        "percentage_value": 90.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "move",
+      "rank": 2,
+      "name": "Protect",
+      "percentage": 0.834,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "move",
+        "rank": 2,
+        "name": "Protect",
+        "percentage": "83.4%",
+        "percentage_value": 83.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "move",
+      "rank": 3,
+      "name": "Iron Head",
+      "percentage": 0.609,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "move",
+        "rank": 3,
+        "name": "Iron Head",
+        "percentage": "60.9%",
+        "percentage_value": 60.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "move",
+      "rank": 4,
+      "name": "Bullet Punch",
+      "percentage": 0.381,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "move",
+        "rank": 4,
+        "name": "Bullet Punch",
+        "percentage": "38.1%",
+        "percentage_value": 38.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "move",
+      "rank": 5,
+      "name": "Stomping Tantrum",
+      "percentage": 0.252,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "move",
+        "rank": 5,
+        "name": "Stomping Tantrum",
+        "percentage": "25.2%",
+        "percentage_value": 25.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "move",
+      "rank": 6,
+      "name": "Ice Punch",
+      "percentage": 0.245,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "move",
+        "rank": 6,
+        "name": "Ice Punch",
+        "percentage": "24.5%",
+        "percentage_value": 24.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "move",
+      "rank": 7,
+      "name": "Body Press",
+      "percentage": 0.239,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "move",
+        "rank": 7,
+        "name": "Body Press",
+        "percentage": "23.9%",
+        "percentage_value": 23.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "move",
+      "rank": 8,
+      "name": "Meteor Mash",
+      "percentage": 0.153,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "move",
+        "rank": 8,
+        "name": "Meteor Mash",
+        "percentage": "15.3%",
+        "percentage_value": 15.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "move",
+      "rank": 9,
+      "name": "Hammer Arm",
+      "percentage": 0.072,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "move",
+        "rank": 9,
+        "name": "Hammer Arm",
+        "percentage": "7.2%",
+        "percentage_value": 7.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "move",
+      "rank": 10,
+      "name": "Earthquake",
+      "percentage": 0.054,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "move",
+        "rank": 10,
+        "name": "Earthquake",
+        "percentage": "5.4%",
+        "percentage_value": 5.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Metagrossite",
+      "percentage": 0.922,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Metagrossite",
+        "percentage": "92.2%",
+        "percentage_value": 92.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Life Orb",
+      "percentage": 0.02,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Life Orb",
+        "percentage": "2.0%",
+        "percentage_value": 2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Leftovers",
+      "percentage": 0.8,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Leftovers",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Sitrus Berry",
+      "percentage": 0.6,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Sitrus Berry",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Choice Scarf",
+      "percentage": 0.6,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Choice Scarf",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Metal Coat",
+      "percentage": 0.5,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Metal Coat",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Silk Scarf",
+      "percentage": 0.4,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Silk Scarf",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Occa Berry",
+      "percentage": 0.4,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Occa Berry",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Expert Belt",
+      "percentage": 0.3,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Expert Belt",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Muscle Band",
+      "percentage": 0.3,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Muscle Band",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "ability",
+      "rank": 1,
+      "name": "Clear Body",
+      "percentage": 0.995,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "ability",
+        "rank": 1,
+        "name": "Clear Body",
+        "percentage": "99.5%",
+        "percentage_value": 99.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "ability",
+      "rank": 2,
+      "name": "Light Metal",
+      "percentage": 0.5,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "ability",
+        "rank": 2,
+        "name": "Light Metal",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Whimsicott",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Whimsicott",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Pelipper",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Pelipper",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Grimmsnarl",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Grimmsnarl",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Archaludon",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Archaludon",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Farigiraf",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Farigiraf",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Charizard",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Charizard",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Staraptor",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Staraptor",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Adamant",
+      "percentage": 0.48,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Adamant",
+        "percentage": "48.0%",
+        "percentage_value": 48,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Jolly",
+      "percentage": 0.453,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Jolly",
+        "percentage": "45.3%",
+        "percentage_value": 45.3,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Impish",
+      "percentage": 0.023,
+      "statUp": "Defense",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Impish",
+        "percentage": "2.3%",
+        "percentage_value": 2.3,
+        "stat_up": "Defense",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Brave",
+      "percentage": 0.022,
+      "statUp": "Attack",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Brave",
+        "percentage": "2.2%",
+        "percentage_value": 2.2,
+        "stat_up": "Attack",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Careful",
+      "percentage": 1,
+      "statUp": "Sp. Def",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Careful",
+        "percentage": "1.0%",
+        "percentage_value": 1,
+        "stat_up": "Sp. Def",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Naughty",
+      "percentage": 0.3,
+      "statUp": "Attack",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Naughty",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Sassy",
+      "percentage": 0.2,
+      "statUp": "Sp. Def",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Sassy",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Sp. Def",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Relaxed",
+      "percentage": 0.2,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Relaxed",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Lonely",
+      "percentage": 0.1,
+      "statUp": "Attack",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Lonely",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Attack",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Lax",
+      "percentage": 0.1,
+      "statUp": "Defense",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Lax",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Defense",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.21,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "21.0%",
+        "percentage_value": 21,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.137,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "13.7%",
+        "percentage_value": 13.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 14,
+        "attack_points": 27,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 25
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.109,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "10.9%",
+        "percentage_value": 10.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 16,
+        "attack_points": 25,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 25
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.038,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "3.8%",
+        "percentage_value": 3.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 30,
+        "attack_points": 32,
+        "defense_points": 1,
+        "sp_atk_points": 0,
+        "sp_def_points": 1,
+        "speed_points": 2
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.028,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "2.8%",
+        "percentage_value": 2.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.025,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "2.5%",
+        "percentage_value": 2.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.021,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "2.1%",
+        "percentage_value": 2.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 2
+      }
+    },
+    {
+      "pokemon": "Metagross",
+      "position": 21,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.018,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Metagross",
+        "column_position": 21,
+        "position": 21,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "1.8%",
+        "percentage_value": 1.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 10,
+        "attack_points": 23,
+        "defense_points": 1,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a5055f965724db9ded41c56-pointee",
+      "name": "Pointee · Weekly Qualifier for RookideeVGC Grand Tourney",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Tough Claws",
+          "moves": [
+            "Psychic Fangs",
+            "Hard Press",
+            "Body Press",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bulk Up",
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Light Clay",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Aurora Veil",
+            "Freeze-Dry",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Sitrus Berry",
+          "ability": "Levitate",
+          "moves": [
+            "Hydro Pump",
+            "Volt Switch",
+            "Will-O-Wisp",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Thick Fat",
+          "moves": [
+            "Sludge Bomb",
+            "Earth Power",
+            "Giga Drain",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Draco Meteor",
+            "Snarl",
+            "Dark Pulse",
+            "Earth Power"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Weekly Qualifier for RookideeVGC Grand Tourney",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Pointee",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a505ee7063cb29d318e8401-gabeeel",
+      "name": "Gabeeel · VGC UU Regulation M-B Weekly #1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Drain Punch",
+            "Knock Off",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Glimmoranite",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Sludge Bomb",
+            "Power Gem",
+            "Earth Power",
+            "Spiky Shield"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Expert Belt",
+          "ability": "Gale Wings",
+          "moves": [
+            "Brave Bird",
+            "Flare Blitz",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Sitrus Berry",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Moonblast",
+            "Calm Mind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Colbur Berry",
+          "ability": "Clear Body",
+          "moves": [
+            "Bullet Punch",
+            "Iron Head",
+            "Psychic Fangs",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Focus Sash",
+          "ability": "Oblivious",
+          "moves": [
+            "Earthquake",
+            "High Horsepower",
+            "Ice Shard",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "VGC UU Regulation M-B Weekly #1",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Gabeeel",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a505ee7063cb29d318e8401-businesspiggy",
+      "name": "businesspiggy · VGC UU Regulation M-B Weekly #1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "eelektross",
+          "name": "Eelektross",
+          "item": "Eelektrossite",
+          "ability": "Levitate",
+          "moves": [
+            "Wild Charge",
+            "Close Combat",
+            "Heavy Slam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sceptile",
+          "name": "Sceptile",
+          "item": "Sceptilite",
+          "ability": "Overgrow",
+          "moves": [
+            "Energy Ball",
+            "Dragon Pulse",
+            "Earth Power",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Brave Bird",
+            "Flare Blitz",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "krookodile",
+          "name": "Krookodile",
+          "item": "Life Orb",
+          "ability": "Intimidate",
+          "moves": [
+            "High Horsepower",
+            "Knock Off",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Mystic Water",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Moonblast",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Shuca Berry",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Bullet Punch",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 3,
+      "tournament": "VGC UU Regulation M-B Weekly #1",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "businesspiggy",
+      "record": "2-1-0"
+    },
+    {
+      "id": "6a4dfee8063cb29d318e6805-strassenlaufer",
+      "name": "Strassenlaufer · VGC UmbreNews 14.07.2026 #23 - Champion",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Reflect",
+            "Light Screen",
+            "Foul Play",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Damp",
+          "moves": [
+            "Wave Crash",
+            "Earthquake",
+            "Ice Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Weather Ball",
+            "Tailwind",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Coba Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Body Press",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "VGC UmbreNews 14.07.2026 #23 - Champion",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Strassenlaufer",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a4dbb9665724db9ded3ff83-giozztan",
+      "name": "Giozztan · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Thunder Punch",
+            "Psychic Fangs",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Flare Blitz",
+            "Dual Wingbeat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Dragon Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Protect",
+            "Bulk Up"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Moonblast",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Giozztan",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a4dbc1e063cb29d318e66e7-thebardo",
+      "name": "TheBardo · The Grim Challenge #3 - Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Ice Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Unburden",
+          "moves": [
+            "Close Combat",
+            "Fake Out",
+            "Dire Claw",
+            "Coaching"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Haban Berry",
+          "ability": "Levitate",
+          "moves": [
+            "Draco Meteor",
+            "Snarl",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Life Dew",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Dragon Dance",
+            "Knock Off",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Leftovers",
+          "ability": "Levitate",
+          "moves": [
+            "Volt Switch",
+            "Hydro Pump",
+            "Electroweb",
+            "Will-O-Wisp"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "The Grim Challenge #3 - Champions",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "TheBardo",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a53c2d1e09846f1eb4c161b-troubled",
+      "name": "Troubled · The Drywall Series #11",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Damp Rock",
+          "ability": "Drizzle",
+          "moves": [
+            "Tailwind",
+            "Weather Ball",
+            "Hurricane",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Damp",
+          "moves": [
+            "Wave Crash",
+            "High Horsepower",
+            "Protect",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Light Screen",
+            "Reflect",
+            "Parting Shot",
+            "Spirit Break"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Protect",
+            "Flash Cannon"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Sap Sipper",
+          "moves": [
+            "Skill Swap",
+            "Twin Beam",
+            "Energy Ball",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Psychic Fangs",
+            "Protect",
+            "Iron Head",
+            "Body Press"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.875,
+      "sampleCount": 8,
+      "tournament": "The Drywall Series #11",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Troubled",
+      "record": "7-1-0"
+    },
+    {
+      "id": "6a53c2d1e09846f1eb4c161b-metallegssolid",
+      "name": "MetalLegsSolid · The Drywall Series #11",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "chesnaught",
+          "name": "Chesnaught",
+          "item": "Chesnaughtite",
+          "ability": "Bulletproof",
+          "moves": [
+            "Body Press",
+            "Spiky Shield",
+            "Leech Seed",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Stomping Tantrum",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Flash Cannon",
+            "Electro Shot",
+            "Dragon Pulse",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Dire Claw",
+            "Coaching"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Foul Play",
+            "Reflect",
+            "Light Screen",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Weather Ball",
+            "Tailwind",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7142857142857143,
+      "sampleCount": 7,
+      "tournament": "The Drywall Series #11",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "MetalLegsSolid",
+      "record": "5-2-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-whayron",
+      "name": "Whayron - Dragão/Psíquico · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "dragapult",
+          "name": "Dragapult",
+          "item": "White Herb",
+          "ability": "Clear Body",
+          "moves": [
+            "Protect",
+            "Draco Meteor",
+            "Shadow Ball",
+            "Flamethrower"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Protect",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Aura Sphere"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Protect",
+            "Meteor Mash",
+            "Psychic Fangs",
+            "Hammer Arm"
+          ]
+        },
+        {
+          "slug": "gardevoir",
+          "name": "Gardevoir",
+          "item": "Gardevoirite",
+          "ability": "Synchronize",
+          "moves": [
+            "Protect",
+            "Moonblast",
+            "Hyper Voice",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Protect",
+            "Heat Wave",
+            "Psychic",
+            "Dazzling Gleam"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Protect",
+            "Psychic",
+            "Dazzling Gleam",
+            "Trick Room"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 8,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Whayron - Dragão/Psíquico",
+      "record": "6-2-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-fael",
+      "name": "Fael - Grama/Metal · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sceptile",
+          "name": "Sceptile",
+          "item": "Sceptilite",
+          "ability": "Overgrow",
+          "moves": [
+            "Energy Ball",
+            "Earth Power",
+            "Dragon Pulse",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mow-rotom",
+          "name": "Mow Rotom",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Discharge",
+            "Volt Switch",
+            "Leaf Storm",
+            "Trick"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Psychic Fangs",
+            "Rock Slide",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Encore",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Iron Head",
+            "Sucker Punch",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "corviknight",
+          "name": "Corviknight",
+          "item": "Leftovers",
+          "ability": "Mirror Armor",
+          "moves": [
+            "Brave Bird",
+            "Bulk Up",
+            "Body Press",
+            "Tailwind"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Fael - Grama/Metal",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-mrliip",
+      "name": "Mrliip - Inseto/Psíquico · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Protect",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psyshock",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur",
+          "ability": "armor tail",
+          "moves": [
+            "Psychic",
+            "Protect",
+            "trick room",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "vivillon",
+          "name": "Vivillon",
+          "item": "Focus Sash",
+          "ability": "Compound Eyes",
+          "moves": [
+            "Sleep Powder",
+            "Rage Powder",
+            "Hurricane",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "item": "Choice Scarf",
+          "ability": "Sharpness",
+          "moves": [
+            "Stone Axe",
+            "U-turn",
+            "X-Scissor",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "ariados",
+          "name": "Ariados",
+          "item": "Sitrus Berry",
+          "ability": "Insomnia",
+          "moves": [
+            "Knock Off",
+            "String Shot",
+            "Rage Powder",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Mrliip - Inseto/Psíquico",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a51f42365724db9ded43093-gotou",
+      "name": "Gotou · Tenki's Cart Weekly #109 - Reg MB",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Ice Punch",
+            "Psychic Fangs",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Light of Ruin",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Dual Wingbeat",
+            "Flare Blitz",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Life Orb",
+          "ability": "Levitate",
+          "moves": [
+            "Draco Meteor",
+            "Dark Pulse",
+            "Protect",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Bulk Up",
+            "Shadow Sneak",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Encore",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 10,
+      "tournament": "Tenki's Cart Weekly #109 - Reg MB",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Gotou",
+      "record": "8-2-0"
+    },
+    {
+      "id": "6a51f42365724db9ded43093-anton1",
+      "name": "Anton1 · Tenki's Cart Weekly #109 - Reg MB",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Body Press",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Throat Chop",
+            "Parting Shot",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Dual Wingbeat",
+            "Rock Slide",
+            "Tailwind",
+            "Ice Fang"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Life Dew",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "kommo-o",
+          "name": "Kommo-o",
+          "item": "Leftovers",
+          "ability": "Soundproof",
+          "moves": [
+            "Clanging Scales",
+            "Aura Sphere",
+            "Clangorous Soul",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hisuian-samurott",
+          "name": "Hisuian Samurott",
+          "item": "Scope Lens",
+          "ability": "Sharpness",
+          "moves": [
+            "Night Slash",
+            "Aqua Cutter",
+            "Sucker Punch",
+            "Detect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "Tenki's Cart Weekly #109 - Reg MB",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Anton1",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a51f42365724db9ded43093-theredfury08",
+      "name": "Alessio Ferrara · Tenki's Cart Weekly #109 - Reg MB",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Weather Ball",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Torrent",
+          "moves": [
+            "Wave Crash",
+            "Ice Punch",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Flash Cannon",
+            "Dragon Pulse",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Psychic Fangs",
+            "Iron Head",
+            "Stomping Tantrum",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Spirit Break",
+            "Light Screen",
+            "Reflect",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Life Dew",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "Tenki's Cart Weekly #109 - Reg MB",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Alessio Ferrara",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a4f9758063cb29d318e79a9-choker",
+      "name": "Sở Tâm · Sky Pillar Saturday Showdown S8 #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Focus Sash",
+          "ability": "Drizzle",
+          "moves": [
+            "Tailwind",
+            "Protect",
+            "Weather Ball",
+            "Hurricane"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Protect",
+            "Flash Cannon",
+            "Dragon Pulse"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Life Orb",
+          "ability": "Swift Swim",
+          "moves": [
+            "Aqua Jet",
+            "Wave Crash",
+            "Protect",
+            "Last Respects"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Inner Focus",
+          "moves": [
+            "Hurricane",
+            "Weather Ball",
+            "Protect",
+            "Draco Meteor"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Psychic Fangs",
+            "Protect",
+            "Meteor Mash",
+            "Hammer Arm"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Roseli Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Light Screen",
+            "Reflect",
+            "Foul Play",
+            "Rain Dance"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 8,
+      "tournament": "Sky Pillar Saturday Showdown S8 #10",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Sở Tâm",
+      "record": "6-2-0"
+    },
+    {
+      "id": "6a4f9758063cb29d318e79a9-ceodamsen",
+      "name": "Nghi Xu · Sky Pillar Saturday Showdown S8 #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Psychic Fangs",
+            "Bullet Punch",
+            "Body Press",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Focus Sash",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Tailwind",
+            "Wide Guard",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Darkest Lariat",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Quick Attack",
+            "Hyper Beam",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7142857142857143,
+      "sampleCount": 7,
+      "tournament": "Sky Pillar Saturday Showdown S8 #10",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Nghi Xu",
+      "record": "5-2-0"
+    },
+    {
+      "id": "6a420fbf83fd320299bd3c3c-alinin",
+      "name": "alinin · Sketch Academy Sunday Regulation M-B Tournament",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Damp",
+          "moves": [
+            "Wave Crash",
+            "Earthquake",
+            "Ice Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Weather Ball",
+            "Tailwind",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Coba Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Foul Play",
+            "Parting Shot",
+            "Reflect",
+            "Light Screen"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Body Press",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "Sketch Academy Sunday Regulation M-B Tournament",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "alinin",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a420fbf83fd320299bd3c3c-n8_dawgg",
+      "name": "N8_dawgg · Sketch Academy Sunday Regulation M-B Tournament",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Damp",
+          "moves": [
+            "Wave Crash",
+            "Earthquake",
+            "Flip Turn",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Focus Sash",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Weather Ball",
+            "Tailwind",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Chople Berry",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Thunder Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Light Screen",
+            "Reflect",
+            "Foul Play",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Life Dew",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Sketch Academy Sunday Regulation M-B Tournament",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "N8_dawgg",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a33cff8e334c3c9befd9250-yash321",
+      "name": "Yash321 · Rising Stars - S1 (Double Battle)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Bullet Punch",
+            "Iron Head",
+            "Protect",
+            "Psychic Fangs"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Brave Bird",
+            "Close Combat",
+            "Protect",
+            "Roost"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Fake Out",
+            "Light Screen",
+            "Reflect",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Baneful Bunker",
+            "Toxic",
+            "Infestation",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Sitrus Berry",
+          "ability": "Competitive",
+          "moves": [
+            "Protect",
+            "Scald",
+            "Icy Wind",
+            "Life Dew"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.42857142857142855,
+      "sampleCount": 7,
+      "tournament": "Rising Stars - S1 (Double Battle)",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Yash321",
+      "record": "3-4-0"
+    },
+    {
+      "id": "6a3854f7ceacae7d6441c118-giozztan",
+      "name": "Giozztan · PWC - Battle in the Colosseum #19 - Reg M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Thunder Punch",
+            "Psychic Fangs",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Flare Blitz",
+            "Dual Wingbeat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Dragon Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Shadow Sneak",
+            "Protect",
+            "Bulk Up"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Moonblast",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "PWC - Battle in the Colosseum #19 - Reg M-B",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Giozztan",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a4fcb1f65724db9ded413ac-hbeeeee",
+      "name": "HBeeeee · Pep_uni Pokémon Champions #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Earth Power",
+            "Dark Pulse",
+            "Draco Meteor",
+            "Snarl"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Sitrus Berry",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Dragon Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Hammer Arm",
+            "Bullet Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Protect",
+            "Heat Wave",
+            "Solar Beam",
+            "Weather Ball"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Roseli Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Fake Out",
+            "Foul Play",
+            "Reflect",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Baneful Bunker",
+            "Wide Guard"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6363636363636364,
+      "sampleCount": 11,
+      "tournament": "Pep_uni Pokémon Champions #2",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "HBeeeee",
+      "record": "7-3-1"
+    },
+    {
+      "id": "6a4fcb1f65724db9ded413ac-timotheus",
+      "name": "Timotheus · Pep_uni Pokémon Champions #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Rock Slide",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Quick Attack",
+            "Yawn",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Psychic Fangs",
+            "Bullet Punch",
+            "Body Press",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "item": "Choice Scarf",
+          "ability": "Sharpness",
+          "moves": [
+            "Stone Axe",
+            "X-Scissor",
+            "Night Slash",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Last Respects",
+            "Wave Crash",
+            "Aqua Jet",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5555555555555556,
+      "sampleCount": 9,
+      "tournament": "Pep_uni Pokémon Champions #2",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Timotheus",
+      "record": "5-3-1"
+    },
+    {
+      "id": "6a4fcb1f65724db9ded413ac-link322",
+      "name": "Link322 · Pep_uni Pokémon Champions #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Weather Ball",
+            "Tailwind",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Foul Play",
+            "Reflect",
+            "Light Screen",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Damp",
+          "moves": [
+            "Wave Crash",
+            "Earthquake",
+            "Ice Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Psychic Fangs",
+            "Meteor Mash",
+            "Body Press",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Coba Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Shadow Ball",
+            "Life Dew",
+            "Rage Powder"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5555555555555556,
+      "sampleCount": 9,
+      "tournament": "Pep_uni Pokémon Champions #2",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Link322",
+      "record": "5-3-1"
+    },
+    {
+      "id": "6a5117e465724db9ded421f1-renades",
+      "name": "RenaDes · Øutcast's Warm Up Cup",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Flamethrower",
+            "Giga Drain",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Ice Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Beam",
+            "Hyper Voice",
+            "Quick Attack",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Accelerock",
+            "Rock Slide",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Life Orb",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Øutcast's Warm Up Cup",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "RenaDes",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a55808a232a1a55ee10be16-jvvieree",
+      "name": "jvvieree · 𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Protect",
+            "Solar Beam"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Protect",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Toxic",
+            "Infestation",
+            "Baneful Bunker",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Dark Pulse",
+            "Draco Meteor",
+            "Snarl",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Protect",
+            "Ice Punch"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8333333333333334,
+      "sampleCount": 6,
+      "tournament": "𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "jvvieree",
+      "record": "5-1-0"
+    },
+    {
+      "id": "6a55808a232a1a55ee10be16-buggs",
+      "name": "Buggs · 𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Foul Play",
+            "Parting Shot",
+            "Reflect",
+            "Light Screen"
+          ]
+        },
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Damp",
+          "moves": [
+            "Wave Crash",
+            "Earthquake",
+            "Ice Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Weather Ball",
+            "Tailwind",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Body Press",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Buggs",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a55808a232a1a55ee10be16-bencamelo",
+      "name": "bencamelo · 𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "snorlax",
+          "name": "Snorlax",
+          "item": "Life Orb",
+          "ability": "Thick Fat",
+          "moves": [
+            "Protect",
+            "Double-Edge",
+            "Crunch",
+            "Hammer Arm"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Encore",
+            "Focus Blast",
+            "Zap Cannon",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Protect",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Throat Chop",
+            "Flare Blitz",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Scald",
+            "Ice Beam",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Occa Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Trick Room",
+            "Protect",
+            "Matcha Gotcha",
+            "Rage Powder"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "bencamelo",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a291b172d97f3b0c2612db9-xylluloid",
+      "name": "Xylluloid · Mystery Community Tournament#1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Giga Drain",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Sitrus Berry",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Aqua Jet",
+            "Last Respects",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Focus Sash",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Tailwind",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Dark Pulse",
+            "Snarl",
+            "Draco Meteor",
+            "Flamethrower"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Defense",
+            "Psychic Fangs",
+            "Body Press",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7142857142857143,
+      "sampleCount": 7,
+      "tournament": "Mystery Community Tournament#1",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Xylluloid",
+      "record": "5-2-0"
+    },
+    {
+      "id": "6a5162b8063cb29d318e9199-itachiuchiha23",
+      "name": "Itachiuchiha23 · MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Parting Shot",
+            "Reflect",
+            "Light Screen",
+            "Foul Play"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Weather Ball",
+            "Tailwind",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Coba Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Damp",
+          "moves": [
+            "Wave Crash",
+            "Earthquake",
+            "Ice Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Body Press",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Itachiuchiha23",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a5162b8063cb29d318e9199-martinbadobi",
+      "name": "Martinbadobi · MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Beam",
+            "Quick Attack",
+            "Detect",
+            "Hyper Voice"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Fake Out",
+            "Parting Shot",
+            "Darkest Lariat"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Focus Sash",
+          "ability": "Unnerve",
+          "moves": [
+            "Protect",
+            "Tailwind",
+            "Dual Wingbeat",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Protect",
+            "Heat Wave",
+            "Solar Beam",
+            "Weather Ball"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Bullet Punch",
+            "Body Press",
+            "Psychic Fangs",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Protect",
+            "Rock Slide",
+            "Earth Power",
+            "Dragon Claw"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Martinbadobi",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a54c9d3232a1a55ee10b346-guicortez14",
+      "name": "TFO | Guicortez14 · Intimidators Champions Challenge #27 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Protect",
+            "Dual Wingbeat",
+            "Close Combat",
+            "Roost"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metal Coat",
+          "ability": "Clear Body",
+          "moves": [
+            "Meteor Mash",
+            "Psychic Fangs",
+            "Bullet Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Protect",
+            "Nasty Plot",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Spirit Break",
+            "Reflect",
+            "Light Screen",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Life Orb",
+          "ability": "Adaptability",
+          "moves": [
+            "Last Respects",
+            "Protect",
+            "Wave Crash",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Rage Powder",
+            "Protect",
+            "Matcha Gotcha",
+            "Life Dew"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "Intimidators Champions Challenge #27 REG M-B",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "TFO | Guicortez14",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a54c9d3232a1a55ee10b346-rokusasu",
+      "name": "rokusasu · Intimidators Champions Challenge #27 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Detect",
+            "Rock Slide",
+            "Close Combat",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Life Orb",
+          "ability": "Adaptability",
+          "moves": [
+            "Protect",
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Thunderbolt",
+            "Roar",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Draco Meteor",
+            "Snarl",
+            "Earth Power",
+            "Dark Pulse"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Protect",
+            "Moonblast",
+            "Energy Ball",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Protect",
+            "Psychic Fangs",
+            "Iron Head",
+            "Stomping Tantrum"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Intimidators Champions Challenge #27 REG M-B",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "rokusasu",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a54c9156355385f44dd38cd-felipet",
+      "name": "NMR | FelipeT · Intimidators Champions Challenge #26 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Focus Sash",
+          "ability": "Unnerve",
+          "moves": [
+            "Tailwind",
+            "Sunny Day",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "pyroar",
+          "name": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Unnerve",
+          "moves": [
+            "Heat Wave",
+            "Overheat",
+            "Protect",
+            "Hyper Voice"
+          ]
+        },
+        {
+          "slug": "hisuian-samurott",
+          "name": "Hisuian Samurott",
+          "item": "Choice Scarf",
+          "ability": "Sharpness",
+          "moves": [
+            "Sacred Sword",
+            "Night Slash",
+            "Razor Shell",
+            "Flip Turn"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Sitrus Berry",
+          "ability": "Clear Body",
+          "moves": [
+            "Psychic Fangs",
+            "Bullet Punch",
+            "Body Press",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Rock Slide",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Giga Drain",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Intimidators Champions Challenge #26 REG M-B",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "NMR | FelipeT",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a54c9156355385f44dd38cd-puxcci",
+      "name": "Puxcci · Intimidators Champions Challenge #26 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Body Press",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Focus Sash",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Tailwind",
+            "Protect",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Quick Attack",
+            "Yawn",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hisuian-samurott",
+          "name": "Hisuian Samurott",
+          "item": "Black Glasses",
+          "ability": "Sharpness",
+          "moves": [
+            "Ceaseless Edge",
+            "Sucker Punch",
+            "Sacred Sword",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "Intimidators Champions Challenge #26 REG M-B",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Puxcci",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a4d3355063cb29d318e5f6a-yuyin_sm",
+      "name": "Yuyin_sm · Circuito Pretemporada: Pokémon Champions #4",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Foul Play",
+            "Parting Shot",
+            "Reflect",
+            "Light Screen"
+          ]
+        },
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Damp",
+          "moves": [
+            "Wave Crash",
+            "Earthquake",
+            "Ice Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Weather Ball",
+            "Tailwind",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Body Press",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 3,
+      "tournament": "Circuito Pretemporada: Pokémon Champions #4",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Yuyin_sm",
+      "record": "0-3-0"
+    },
+    {
+      "id": "6a529f1ee09846f1eb4c14e3-alexiannonevgc",
+      "name": "AlexIannoneVGC · Chaos League Sunday Slam #104",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Dragon Dance",
+            "Knock Off",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Protect",
+            "Iron Head",
+            "Psychic Fangs",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Protect",
+            "Trick Room",
+            "Matcha Gotcha",
+            "Rage Powder"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Dire Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "heat-rotom",
+          "name": "Heat Rotom",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Electroweb",
+            "Thunderbolt",
+            "Overheat",
+            "Volt Switch"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Hyper Beam",
+            "Quick Attack",
+            "Detect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.875,
+      "sampleCount": 8,
+      "tournament": "Chaos League Sunday Slam #104",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "AlexIannoneVGC",
+      "record": "7-1-0"
+    },
+    {
+      "id": "6a529f1ee09846f1eb4c14e3-slowerpokr",
+      "name": "Slowerpokr · Chaos League Sunday Slam #104",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Torrent",
+          "moves": [
+            "Wave Crash",
+            "High Horsepower",
+            "Ice Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Body Press",
+            "Meteor Mash",
+            "Protect",
+            "Psychic Fangs"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Focus Sash",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Weather Ball",
+            "Protect",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Life Orb",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Draco Meteor",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Foul Play",
+            "Light Screen",
+            "Reflect",
+            "Scary Face"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Trick Room",
+            "Life Dew",
+            "Rage Powder"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "Chaos League Sunday Slam #104",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Slowerpokr",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a529f1ee09846f1eb4c14e3-zeppy2",
+      "name": "Zeppy2 · Chaos League Sunday Slam #104",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Brave Bird",
+            "Steel Wing",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Tailwind",
+            "Charm",
+            "Moonblast",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Bulk Up",
+            "Shadow Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Trick Room",
+            "Ally Switch",
+            "Psychic",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "paldean-tauros-aqua-breed",
+          "name": "Paldean Tauros Aqua Breed",
+          "item": "White Herb",
+          "ability": "Intimidate",
+          "moves": [
+            "Aqua Jet",
+            "Close Combat",
+            "Protect",
+            "Liquidation"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Stomping Tantrum",
+            "Psychic Fangs",
+            "Protect",
+            "Meteor Mash"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Chaos League Sunday Slam #104",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Zeppy2",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a4220ea83fd320299bd3c65-gotou",
+      "name": "Gotou · Champions Collective #14",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Ice Punch",
+            "Psychic Fangs",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Light of Ruin",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Dual Wingbeat",
+            "Flare Blitz",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Life Orb",
+          "ability": "Levitate",
+          "moves": [
+            "Draco Meteor",
+            "Dark Pulse",
+            "Protect",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "ceruledge",
+          "name": "Ceruledge",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Bitter Blade",
+            "Bulk Up",
+            "Shadow Sneak",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Encore",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "Champions Collective #14",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Gotou",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a4220ea83fd320299bd3c65-enjevgc",
+      "name": "EnjeVGC · Champions Collective #14",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Protect",
+            "Iron Head",
+            "Bullet Punch",
+            "Psychic Fangs"
+          ]
+        },
+        {
+          "slug": "dragapult",
+          "name": "Dragapult",
+          "item": "Life Orb",
+          "ability": "Clear Body",
+          "moves": [
+            "Protect",
+            "Dragon Darts",
+            "Phantom Force",
+            "Will-O-Wisp"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "moves": [
+            "Protect",
+            "Freeze-Dry",
+            "Blizzard",
+            "Aurora Veil"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Focus Sash",
+          "ability": "Unnerve",
+          "moves": [
+            "Protect",
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Sitrus Berry",
+          "ability": "Levitate",
+          "moves": [
+            "Protect",
+            "Thunderbolt",
+            "Hydro Pump",
+            "Nasty Plot"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Dire Claw",
+            "Close Combat",
+            "Acrobatics",
+            "Fake Out"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "Champions Collective #14",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "EnjeVGC",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a4bc2dd063cb29d318e4b78-s7rife",
+      "name": "Joshua Santana Rodríguez · Chacho Cup #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "lycanroc-dusk",
+          "name": "Lycanroc Dusk",
+          "item": "Focus Sash",
+          "ability": "Tough Claws",
+          "moves": [
+            "Accelerock",
+            "Rock Slide",
+            "Quick Guard",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Psychic Fangs",
+            "Iron Head",
+            "Ice Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Hyper Beam",
+            "Quick Attack",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Life Orb",
+          "ability": "Levitate",
+          "moves": [
+            "Dark Pulse",
+            "Dragon Pulse",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Solar Power",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Icy Wind",
+            "Scald",
+            "Protect",
+            "Aqua Ring"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Chacho Cup #2",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Joshua Santana Rodríguez",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a50864165724db9ded41db6-vinny7g",
+      "name": "Vinny7G · 4fun sabadín",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Hyper Beam",
+            "Quick Attack",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Darkest Lariat",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Focus Sash",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Tailwind",
+            "Dual Wingbeat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Bullet Punch",
+            "Body Press",
+            "Psychic Fangs",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "4fun sabadín",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Vinny7G",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a50864165724db9ded41db6-kyotokugt",
+      "name": "KyotokuGT · 4fun sabadín",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Protect",
+            "Iron Head",
+            "Bullet Punch",
+            "Psychic Fangs"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Tyranitarite",
+          "ability": "Sand Stream",
+          "moves": [
+            "Protect",
+            "Rock Slide",
+            "Knock Off",
+            "Dragon Dance"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Sand Rush",
+          "moves": [
+            "Protect",
+            "High Horsepower",
+            "Iron Head",
+            "Swords Dance"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Protect",
+            "Helping Hand",
+            "Psychic",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Multiscale",
+          "moves": [
+            "Protect",
+            "Tailwind",
+            "Dragon Claw",
+            "Extreme Speed"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Choice Scarf",
+          "ability": "Snow Cloak",
+          "moves": [
+            "Aurora Veil",
+            "Blizzard",
+            "Freeze-Dry",
+            "Dazzling Gleam"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "4fun sabadín",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "KyotokuGT",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a545f013ee4505de4ad5e7e-barnabebryan",
+      "name": "𝐈𝐌𝐎 | Barnabé · 🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Focus Sash",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Tailwind",
+            "Wide Guard",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Overheat",
+            "Leech Seed",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Choice Scarf",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Knock Off",
+            "Earthquake",
+            "Low Kick"
+          ]
+        },
+        {
+          "slug": "houndstone",
+          "name": "Houndstone",
+          "item": "Sitrus Berry",
+          "ability": "Sand Rush",
+          "moves": [
+            "Last Respects",
+            "Will-O-Wisp",
+            "Ally Switch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Foul Play",
+            "Reflect",
+            "Light Screen",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Ice Punch",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "𝐈𝐌𝐎 | Barnabé",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a545f013ee4505de4ad5e7e-ayolosss",
+      "name": "𝗖𝗔𝗢𝗦 | Ayolosss · 🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Chople Berry",
+          "ability": "Sand Stream",
+          "moves": [
+            "Protect",
+            "Crunch",
+            "Low Kick",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Zen Headbutt",
+            "Protect",
+            "Meteor Mash",
+            "Stomping Tantrum"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Sitrus Berry",
+          "ability": "Levitate",
+          "moves": [
+            "Hydro Pump",
+            "Will-O-Wisp",
+            "Thunderbolt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Taunt",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Icy Wind",
+            "Recover",
+            "Protect",
+            "Scald"
+          ]
+        },
+        {
+          "slug": "dragapult",
+          "name": "Dragapult",
+          "item": "Life Orb",
+          "ability": "Infiltrator",
+          "moves": [
+            "Draco Meteor",
+            "Protect",
+            "Shadow Ball",
+            "Flamethrower"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "𝗖𝗔𝗢𝗦 | Ayolosss",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a46629683fd320299bd6543-corba9",
+      "name": "Corba9 · 🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Foul Play",
+            "Light Screen",
+            "Reflect",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Damp",
+          "moves": [
+            "Wave Crash",
+            "Earthquake",
+            "Ice Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Weather Ball",
+            "Hurricane",
+            "Tailwind",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Coba Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Meteor Mash",
+            "Psychic Fangs",
+            "Body Press",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7,
+      "sampleCount": 10,
+      "tournament": "🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Corba9",
+      "record": "7-3-0"
+    }
+  ],
+  "movePool": [
+    "Aerial Ace",
+    "Agility",
+    "Body Press",
+    "Body Slam",
+    "Brick Break",
+    "Brutal Swing",
+    "Bulldoze",
+    "Bullet Punch",
+    "Cosmic Power",
+    "Double-Edge",
+    "Earthquake",
+    "Endure",
+    "Expanding Force",
+    "Explosion",
+    "Facade",
+    "Flash Cannon",
+    "Focus Punch",
+    "Future Sight",
+    "Giga Impact",
+    "Grass Knot",
+    "Gravity",
+    "Gyro Ball",
+    "Hammer Arm",
+    "Hard Press",
+    "Hyper Beam",
+    "Ice Punch",
+    "Icy Wind",
+    "Iron Defense",
+    "Iron Head",
+    "Light Screen",
+    "Magnet Rise",
+    "Meteor Beam",
+    "Meteor Mash",
+    "Mud-Slap",
+    "Protect",
+    "Psych Up",
+    "Psychic",
+    "Psychic Fangs",
+    "Psychic Noise",
+    "Psycho Cut",
+    "Psyshock",
+    "Rain Dance",
+    "Reflect",
+    "Rest",
+    "Rock Slide",
+    "Rock Tomb",
+    "Round",
+    "Sandstorm",
+    "Scary Face",
+    "Self-Destruct",
+    "Shadow Ball",
+    "Shadow Claw",
+    "Shadow Punch",
+    "Sleep Talk",
+    "Sludge Bomb",
+    "Snore",
+    "Stealth Rock",
+    "Steel Beam",
+    "Steel Roller",
+    "Stomping Tantrum",
+    "Stone Edge",
+    "Substitute",
+    "Sunny Day",
+    "Swagger",
+    "Thunder Punch",
+    "Trailblaze",
+    "Trick",
+    "Zen Headbutt"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Metagross",
+      "base_name": "Metagross",
+      "saved_name": "Metagross",
+      "types": "Steel/Psychic",
+      "abilities": "Clear Body|Light Metal",
+      "weight": "1212.5 lbs.",
+      "image_path": "pokemon_champions_assets\\pokemon\\Metagross.png",
+      "form": "",
+      "hp": 155,
+      "atk": 155,
+      "def": 150,
+      "spa": 115,
+      "spd": 110,
+      "spe": 90,
+      "total": 775
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "move",
+          "rank": 1,
+          "name": "Psychic Fangs",
+          "percentage": "90.2%",
+          "percentage_value": 90.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Metagrossite",
+          "percentage": "92.2%",
+          "percentage_value": 92.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Adamant",
+          "percentage": "48.0%",
+          "percentage_value": 48,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        "stat_points": {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "21.0%",
+          "percentage_value": 21,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        "ability": {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "ability",
+          "rank": 1,
+          "name": "Clear Body",
+          "percentage": "99.5%",
+          "percentage_value": 99.5,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Psychic Fangs",
+          "Protect",
+          "Iron Head",
+          "Bullet Punch",
+          "Stomping Tantrum",
+          "Ice Punch",
+          "Body Press",
+          "Meteor Mash",
+          "Hammer Arm",
+          "Earthquake"
+        ],
+        "held_item": [
+          "Metagrossite",
+          "Life Orb",
+          "Leftovers",
+          "Sitrus Berry",
+          "Choice Scarf",
+          "Metal Coat",
+          "Silk Scarf",
+          "Occa Berry",
+          "Expert Belt",
+          "Muscle Band"
+        ],
+        "teammate": [
+          "Garchomp",
+          "Whimsicott",
+          "Sinistcha",
+          "Pelipper",
+          "Grimmsnarl",
+          "Archaludon",
+          "Incineroar",
+          "Farigiraf",
+          "Charizard",
+          "Staraptor"
+        ],
+        "stat_alignment": [
+          "Adamant",
+          "Jolly",
+          "Impish",
+          "Brave",
+          "Careful",
+          "Naughty",
+          "Sassy",
+          "Relaxed",
+          "Lonely",
+          "Lax"
+        ],
+        "stat_points": [
+          "HP 2 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 32",
+          "HP 14 / Atk 27 / Def 0 / SpA 0 / SpD 0 / Spe 25",
+          "HP 16 / Atk 25 / Def 0 / SpA 0 / SpD 0 / Spe 25",
+          "HP 30 / Atk 32 / Def 1 / SpA 0 / SpD 1 / Spe 2",
+          "HP 32 / Atk 32 / Def 0 / SpA 0 / SpD 2 / Spe 0",
+          "HP 0 / Atk 32 / Def 2 / SpA 0 / SpD 0 / Spe 32",
+          "HP 32 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 2",
+          "HP 10 / Atk 23 / Def 1 / SpA 0 / SpD 0 / Spe 32"
+        ],
+        "ability": [
+          "Clear Body",
+          "Light Metal"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "move",
+          "rank": 1,
+          "name": "Psychic Fangs",
+          "percentage": "90.2%",
+          "percentage_value": 90.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "move",
+          "rank": 2,
+          "name": "Protect",
+          "percentage": "83.4%",
+          "percentage_value": 83.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "move",
+          "rank": 3,
+          "name": "Iron Head",
+          "percentage": "60.9%",
+          "percentage_value": 60.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "move",
+          "rank": 4,
+          "name": "Bullet Punch",
+          "percentage": "38.1%",
+          "percentage_value": 38.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "move",
+          "rank": 5,
+          "name": "Stomping Tantrum",
+          "percentage": "25.2%",
+          "percentage_value": 25.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "move",
+          "rank": 6,
+          "name": "Ice Punch",
+          "percentage": "24.5%",
+          "percentage_value": 24.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "move",
+          "rank": 7,
+          "name": "Body Press",
+          "percentage": "23.9%",
+          "percentage_value": 23.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "move",
+          "rank": 8,
+          "name": "Meteor Mash",
+          "percentage": "15.3%",
+          "percentage_value": 15.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "move",
+          "rank": 9,
+          "name": "Hammer Arm",
+          "percentage": "7.2%",
+          "percentage_value": 7.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "move",
+          "rank": 10,
+          "name": "Earthquake",
+          "percentage": "5.4%",
+          "percentage_value": 5.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Metagrossite",
+          "percentage": "92.2%",
+          "percentage_value": 92.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Life Orb",
+          "percentage": "2.0%",
+          "percentage_value": 2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Leftovers",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Sitrus Berry",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Choice Scarf",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Metal Coat",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Silk Scarf",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Occa Berry",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Expert Belt",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Muscle Band",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Whimsicott",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Pelipper",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Grimmsnarl",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Archaludon",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Charizard",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Staraptor",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Adamant",
+          "percentage": "48.0%",
+          "percentage_value": 48,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Jolly",
+          "percentage": "45.3%",
+          "percentage_value": 45.3,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Impish",
+          "percentage": "2.3%",
+          "percentage_value": 2.3,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Brave",
+          "percentage": "2.2%",
+          "percentage_value": 2.2,
+          "stat_up": "Attack",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Careful",
+          "percentage": "1.0%",
+          "percentage_value": 1,
+          "stat_up": "Sp. Def",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Naughty",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Sassy",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Sp. Def",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Relaxed",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Lonely",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Attack",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Lax",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "21.0%",
+          "percentage_value": 21,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "13.7%",
+          "percentage_value": 13.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 14,
+          "attack_points": 27,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 25
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "10.9%",
+          "percentage_value": 10.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 16,
+          "attack_points": 25,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 25
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "3.8%",
+          "percentage_value": 3.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 30,
+          "attack_points": 32,
+          "defense_points": 1,
+          "sp_atk_points": 0,
+          "sp_def_points": 1,
+          "speed_points": 2
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "2.8%",
+          "percentage_value": 2.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "2.5%",
+          "percentage_value": 2.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "2.1%",
+          "percentage_value": 2.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 2
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "1.8%",
+          "percentage_value": 1.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 10,
+          "attack_points": 23,
+          "defense_points": 1,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "ability",
+          "rank": 1,
+          "name": "Clear Body",
+          "percentage": "99.5%",
+          "percentage_value": 99.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Metagross",
+          "column_position": 21,
+          "position": 21,
+          "category": "ability",
+          "rank": 2,
+          "name": "Light Metal",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Metagross.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Metagross.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Metagross.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Metagross.csv"
+      }
+    ]
+  }
+}

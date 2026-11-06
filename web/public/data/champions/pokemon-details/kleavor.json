@@ -1,0 +1,2910 @@
+{
+  "pokemon": {
+    "slug": "kleavor",
+    "name": "Kleavor",
+    "baseName": "Kleavor",
+    "savedName": "Kleavor",
+    "form": "",
+    "types": [
+      "Bug",
+      "Rock"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Kleavor.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/900.png",
+    "stats": {
+      "hp": 145,
+      "attack": 155,
+      "defense": 115,
+      "spAttack": 65,
+      "spDefense": 90,
+      "speed": 105,
+      "total": 675
+    },
+    "rank": 84,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Stone Axe",
+    "topItem": "Choice Scarf",
+    "topTeammate": "Whimsicott"
+  },
+  "moves": [
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "move",
+      "rank": 1,
+      "name": "Stone Axe",
+      "percentage": 0.955,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "move",
+        "rank": 1,
+        "name": "Stone Axe",
+        "percentage": "95.5%",
+        "percentage_value": 95.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "move",
+      "rank": 2,
+      "name": "X-Scissor",
+      "percentage": 0.845,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "move",
+        "rank": 2,
+        "name": "X-Scissor",
+        "percentage": "84.5%",
+        "percentage_value": 84.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "move",
+      "rank": 3,
+      "name": "Protect",
+      "percentage": 0.455,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "move",
+        "rank": 3,
+        "name": "Protect",
+        "percentage": "45.5%",
+        "percentage_value": 45.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "move",
+      "rank": 4,
+      "name": "Close Combat",
+      "percentage": 0.426,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "move",
+        "rank": 4,
+        "name": "Close Combat",
+        "percentage": "42.6%",
+        "percentage_value": 42.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "move",
+      "rank": 5,
+      "name": "Night Slash",
+      "percentage": 0.345,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "move",
+        "rank": 5,
+        "name": "Night Slash",
+        "percentage": "34.5%",
+        "percentage_value": 34.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "move",
+      "rank": 6,
+      "name": "Tailwind",
+      "percentage": 0.207,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "move",
+        "rank": 6,
+        "name": "Tailwind",
+        "percentage": "20.7%",
+        "percentage_value": 20.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "move",
+      "rank": 7,
+      "name": "U-turn",
+      "percentage": 0.196,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "move",
+        "rank": 7,
+        "name": "U-turn",
+        "percentage": "19.6%",
+        "percentage_value": 19.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "move",
+      "rank": 8,
+      "name": "Rock Slide",
+      "percentage": 0.114,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "move",
+        "rank": 8,
+        "name": "Rock Slide",
+        "percentage": "11.4%",
+        "percentage_value": 11.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "move",
+      "rank": 9,
+      "name": "Aerial Ace",
+      "percentage": 0.106,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "move",
+        "rank": 9,
+        "name": "Aerial Ace",
+        "percentage": "10.6%",
+        "percentage_value": 10.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "move",
+      "rank": 10,
+      "name": "Feint",
+      "percentage": 0.081,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "move",
+        "rank": 10,
+        "name": "Feint",
+        "percentage": "8.1%",
+        "percentage_value": 8.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Choice Scarf",
+      "percentage": 0.338,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Choice Scarf",
+        "percentage": "33.8%",
+        "percentage_value": 33.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Focus Sash",
+      "percentage": 0.282,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Focus Sash",
+        "percentage": "28.2%",
+        "percentage_value": 28.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Life Orb",
+      "percentage": 0.144,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Life Orb",
+        "percentage": "14.4%",
+        "percentage_value": 14.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "held_item",
+      "rank": 4,
+      "name": "White Herb",
+      "percentage": 0.05,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "held_item",
+        "rank": 4,
+        "name": "White Herb",
+        "percentage": "5.0%",
+        "percentage_value": 5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Wide Lens",
+      "percentage": 0.035,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Wide Lens",
+        "percentage": "3.5%",
+        "percentage_value": 3.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Sitrus Berry",
+      "percentage": 0.033,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Sitrus Berry",
+        "percentage": "3.3%",
+        "percentage_value": 3.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Expert Belt",
+      "percentage": 0.026,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Expert Belt",
+        "percentage": "2.6%",
+        "percentage_value": 2.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Quick Claw",
+      "percentage": 0.02,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Quick Claw",
+        "percentage": "2.0%",
+        "percentage_value": 2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Muscle Band",
+      "percentage": 0.018,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Muscle Band",
+        "percentage": "1.8%",
+        "percentage_value": 1.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Lum Berry",
+      "percentage": 1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Lum Berry",
+        "percentage": "1.0%",
+        "percentage_value": 1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "ability",
+      "rank": 1,
+      "name": "Sharpness",
+      "percentage": 0.96,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "ability",
+        "rank": 1,
+        "name": "Sharpness",
+        "percentage": "96.0%",
+        "percentage_value": 96,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "ability",
+      "rank": 2,
+      "name": "Sheer Force",
+      "percentage": 0.037,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "ability",
+        "rank": 2,
+        "name": "Sheer Force",
+        "percentage": "3.7%",
+        "percentage_value": 3.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "ability",
+      "rank": 3,
+      "name": "Swarm",
+      "percentage": 0.3,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "ability",
+        "rank": 3,
+        "name": "Swarm",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Whimsicott",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Whimsicott",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Charizard",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Charizard",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Kingambit",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Kingambit",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Farigiraf",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Farigiraf",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Sneasler",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Sneasler",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Raichu",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Raichu",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Talonflame",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Talonflame",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Adamant",
+      "percentage": 0.583,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Adamant",
+        "percentage": "58.3%",
+        "percentage_value": 58.3,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Jolly",
+      "percentage": 0.359,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Jolly",
+        "percentage": "35.9%",
+        "percentage_value": 35.9,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Brave",
+      "percentage": 0.028,
+      "statUp": "Attack",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Brave",
+        "percentage": "2.8%",
+        "percentage_value": 2.8,
+        "stat_up": "Attack",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Careful",
+      "percentage": 0.011,
+      "statUp": "Sp. Def",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Careful",
+        "percentage": "1.1%",
+        "percentage_value": 1.1,
+        "stat_up": "Sp. Def",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Naughty",
+      "percentage": 0.5,
+      "statUp": "Attack",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Naughty",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Impish",
+      "percentage": 0.4,
+      "statUp": "Defense",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Impish",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Defense",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Relaxed",
+      "percentage": 0.3,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Relaxed",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Naive",
+      "percentage": 0.2,
+      "statUp": "Speed",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Naive",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Sassy",
+      "percentage": 0.1,
+      "statUp": "Sp. Def",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Sassy",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Sp. Def",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Lonely",
+      "percentage": 0.1,
+      "statUp": "Attack",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Lonely",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Attack",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.481,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "48.1%",
+        "percentage_value": 48.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.082,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "8.2%",
+        "percentage_value": 8.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.074,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "7.4%",
+        "percentage_value": 7.4,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.028,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "2.8%",
+        "percentage_value": 2.8,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.021,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "2.1%",
+        "percentage_value": 2.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.012,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "1.2%",
+        "percentage_value": 1.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 8,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 26
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.011,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "1.1%",
+        "percentage_value": 1.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 32,
+        "defense_points": 32,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Kleavor",
+      "position": 84,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.011,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Kleavor",
+        "column_position": 84,
+        "position": 84,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "1.1%",
+        "percentage_value": 1.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 32,
+        "speed_points": 0
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a4dbb9665724db9ded3ff83-pokimono",
+      "name": "pokimono · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Kangaskhanite",
+          "ability": "Scrappy",
+          "moves": [
+            "Fake Out",
+            "Last Resort"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Foul Play",
+            "Trick Room",
+            "Endeavor",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Heat Wave",
+            "Solar Beam",
+            "Eruption",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "chesnaught",
+          "name": "Chesnaught",
+          "item": "Chesnaughtite",
+          "ability": "Bulletproof",
+          "moves": [
+            "Wood Hammer",
+            "Wide Guard",
+            "Hammer Arm",
+            "Spiky Shield"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Leftovers",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Protect",
+            "Moonblast",
+            "Calm Mind"
+          ]
+        },
+        {
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "item": "Choice Scarf",
+          "ability": "Sharpness",
+          "moves": [
+            "Stone Axe",
+            "Night Slash",
+            "X-Scissor",
+            "Close Combat"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "pokimono",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-pedroslz",
+      "name": "PedroSlz - Grama/Inseto · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Fake Tears",
+            "Sunny Day",
+            "Tailwind",
+            "Moonblast"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Protect",
+            "Giga Drain",
+            "Earth Power",
+            "Sludge Bomb"
+          ]
+        },
+        {
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "item": "Life Orb",
+          "ability": "Sharpness",
+          "moves": [
+            "Stone Axe",
+            "Protect",
+            "X-Scissor",
+            "Night Slash"
+          ]
+        },
+        {
+          "slug": "volcarona",
+          "name": "Volcarona",
+          "item": "Choice Scarf",
+          "ability": "Flame Body",
+          "moves": [
+            "Heat Wave",
+            "Overheat",
+            "Giga Drain",
+            "Bug Buzz"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Wide Lens",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Helping Hand",
+            "Triple Axel",
+            "Taunt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "araquanid",
+          "name": "Araquanid",
+          "item": "Mystic Water",
+          "ability": "Water Bubble",
+          "moves": [
+            "Liquidation",
+            "Leech Life",
+            "Protect",
+            "Wide Guard"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "PedroSlz - Grama/Inseto",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-aerxdri",
+      "name": "aerxdri - Elétrico/Inseto · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Protect",
+            "Zap Cannon",
+            "Focus Blast",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "vivillon",
+          "name": "Vivillon",
+          "item": "Choice Scarf",
+          "ability": "Compound Eyes",
+          "moves": [
+            "Rage Powder",
+            "Sleep Powder",
+            "Tailwind",
+            "Hurricane"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "Sitrus Berry",
+          "ability": "Levitate",
+          "moves": [
+            "Hydro Pump",
+            "Thunderbolt",
+            "Will-O-Wisp",
+            "Light Screen"
+          ]
+        },
+        {
+          "slug": "volcarona",
+          "name": "Volcarona",
+          "item": "Life Orb",
+          "ability": "Flame Body",
+          "moves": [
+            "Protect",
+            "Fiery Dance",
+            "Quiver Dance",
+            "Bug Buzz"
+          ]
+        },
+        {
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "item": "Focus Sash",
+          "ability": "Sharpness",
+          "moves": [
+            "Protect",
+            "Stone Axe",
+            "Swords Dance",
+            "X-Scissor"
+          ]
+        },
+        {
+          "slug": "scizor",
+          "name": "Scizor",
+          "item": "Scizorite",
+          "ability": "Technician",
+          "moves": [
+            "Protect",
+            "Bullet Punch",
+            "Swords Dance",
+            "Bug Bite"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "aerxdri - Elétrico/Inseto",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-mrliip",
+      "name": "Mrliip - Inseto/Psíquico · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Protect",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psyshock",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur",
+          "ability": "armor tail",
+          "moves": [
+            "Psychic",
+            "Protect",
+            "trick room",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "vivillon",
+          "name": "Vivillon",
+          "item": "Focus Sash",
+          "ability": "Compound Eyes",
+          "moves": [
+            "Sleep Powder",
+            "Rage Powder",
+            "Hurricane",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "item": "Choice Scarf",
+          "ability": "Sharpness",
+          "moves": [
+            "Stone Axe",
+            "U-turn",
+            "X-Scissor",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "ariados",
+          "name": "Ariados",
+          "item": "Sitrus Berry",
+          "ability": "Insomnia",
+          "moves": [
+            "Knock Off",
+            "String Shot",
+            "Rage Powder",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Mrliip - Inseto/Psíquico",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a33cff8e334c3c9befd9250-tyrant_zilla",
+      "name": "Tyrant_zilla · Rising Stars - S1 (Double Battle)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Roost",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psyshock",
+            "Ally Switch",
+            "Helping Hand",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "item": "Focus Sash",
+          "ability": "Sharpness",
+          "moves": [
+            "Stone Axe",
+            "Acrobatics",
+            "X-Scissor",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Bright Powder",
+          "ability": "Prankster",
+          "moves": [
+            "Charm",
+            "Moonblast",
+            "Fake Tears",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Metronome",
+          "ability": "Scrappy",
+          "moves": [
+            "Last Resort",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "typhlosion",
+          "name": "Typhlosion",
+          "item": "Choice Scarf",
+          "ability": "Flash Fire",
+          "moves": [
+            "Eruption",
+            "Heat Wave",
+            "Will-O-Wisp",
+            "Focus Blast"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8888888888888888,
+      "sampleCount": 9,
+      "tournament": "Rising Stars - S1 (Double Battle)",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Tyrant_zilla",
+      "record": "8-1-0"
+    },
+    {
+      "id": "6a4fcb1f65724db9ded413ac-timotheus",
+      "name": "Timotheus · Pep_uni Pokémon Champions #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Rock Slide",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Quick Attack",
+            "Yawn",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Psychic Fangs",
+            "Bullet Punch",
+            "Body Press",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "item": "Choice Scarf",
+          "ability": "Sharpness",
+          "moves": [
+            "Stone Axe",
+            "X-Scissor",
+            "Night Slash",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Last Respects",
+            "Wave Crash",
+            "Aqua Jet",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5555555555555556,
+      "sampleCount": 9,
+      "tournament": "Pep_uni Pokémon Champions #2",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Timotheus",
+      "record": "5-3-1"
+    },
+    {
+      "id": "6a55808a232a1a55ee10be16-kalarse",
+      "name": "kalarse · 𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "item": "Focus Sash",
+          "ability": "Sharpness",
+          "moves": [
+            "Stone Axe",
+            "Close Combat",
+            "Feint",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Dire Claw",
+            "Close Combat",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Flip Turn",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Coba Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Encore",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8333333333333334,
+      "sampleCount": 6,
+      "tournament": "𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "kalarse",
+      "record": "5-1-0"
+    },
+    {
+      "id": "6a5162b8063cb29d318e9199-jumbosaur",
+      "name": "Makin K · MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "item": "Focus Sash",
+          "ability": "Sharpness",
+          "moves": [
+            "Stone Axe",
+            "X-Scissor",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tsareena",
+          "name": "Tsareena",
+          "item": "Sitrus Berry",
+          "ability": "Queenly Majesty",
+          "moves": [
+            "Trop Kick",
+            "Triple Axel",
+            "Taunt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "lucario",
+          "name": "Lucario",
+          "item": "Lucarionite",
+          "ability": "Inner Focus",
+          "moves": [
+            "Vacuum Wave",
+            "Detect",
+            "Aura Sphere",
+            "Flash Cannon"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "No Item",
+          "ability": "Gale Wings",
+          "moves": [
+            "Flare Blitz",
+            "Protect",
+            "Tailwind",
+            "Acrobatics"
+          ]
+        },
+        {
+          "slug": "azumarill",
+          "name": "Azumarill",
+          "item": "Life Orb",
+          "ability": "Huge Power",
+          "moves": [
+            "Play Rough",
+            "Aqua Jet",
+            "Liquidation",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Light Clay",
+          "ability": "Snow Warning",
+          "moves": [
+            "Freeze-Dry",
+            "Moonblast",
+            "Protect",
+            "Aurora Veil"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Makin K",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a545f013ee4505de4ad5e7e-cogao",
+      "name": "Z2R Cogao · 🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Light of Ruin",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Fairy Feather",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Protect",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "kleavor",
+          "name": "Kleavor",
+          "item": "Focus Sash",
+          "ability": "Sharpness",
+          "moves": [
+            "Stone Axe",
+            "X-Scissor",
+            "Feint",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Choice Scarf",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Last Respects",
+            "Flip Turn",
+            "Aqua Jet"
+          ]
+        },
+        {
+          "slug": "blastoise",
+          "name": "Blastoise",
+          "item": "Blastoisinite",
+          "ability": "Rain Dish",
+          "moves": [
+            "Ice Beam",
+            "Dark Pulse",
+            "Aura Sphere",
+            "Water Spout"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Protect",
+            "Helping Hand",
+            "Low Kick",
+            "Psychic Fangs"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Z2R Cogao",
+      "record": "4-2-0"
+    }
+  ],
+  "movePool": [
+    "Acrobatics",
+    "Aerial Ace",
+    "Agility",
+    "Air Cutter",
+    "Air Slash",
+    "Ancient Power",
+    "Baton Pass",
+    "Brick Break",
+    "Brutal Swing",
+    "Bug Bite",
+    "Bug Buzz",
+    "Close Combat",
+    "Counter",
+    "Defog",
+    "Double Hit",
+    "Double Team",
+    "Double-Edge",
+    "Dual Wingbeat",
+    "Endure",
+    "Facade",
+    "Feint",
+    "Focus Energy",
+    "Fury Cutter",
+    "Giga Impact",
+    "Helping Hand",
+    "Hyper Beam",
+    "Light Screen",
+    "Lunge",
+    "Night Slash",
+    "Pounce",
+    "Protect",
+    "Quick Attack",
+    "Quick Guard",
+    "Rain Dance",
+    "Rest",
+    "Reversal",
+    "Rock Blast",
+    "Rock Slide",
+    "Rock Tomb",
+    "Sandstorm",
+    "Scary Face",
+    "Skitter Smack",
+    "Sleep Talk",
+    "Smack Down",
+    "Stealth Rock",
+    "Stone Axe",
+    "Stone Edge",
+    "Struggle Bug",
+    "Substitute",
+    "Sunny Day",
+    "Swift",
+    "Swords Dance",
+    "Tailwind",
+    "Thief",
+    "Trailblaze",
+    "U-turn",
+    "Vacuum Wave",
+    "X-Scissor"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Kleavor",
+      "base_name": "Kleavor",
+      "saved_name": "Kleavor",
+      "types": "Bug/Rock",
+      "abilities": "Swarm|Sheer Force|Sharpness",
+      "image_path": "pokemon_champions_assets\\pokemon\\Kleavor.png",
+      "form": "",
+      "hp": 145,
+      "atk": 155,
+      "def": 115,
+      "spa": 65,
+      "spd": 90,
+      "spe": 105,
+      "total": 675
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "move",
+          "rank": 1,
+          "name": "Stone Axe",
+          "percentage": "95.5%",
+          "percentage_value": 95.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Choice Scarf",
+          "percentage": "33.8%",
+          "percentage_value": 33.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Whimsicott",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Adamant",
+          "percentage": "58.3%",
+          "percentage_value": 58.3,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        "stat_points": {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "48.1%",
+          "percentage_value": 48.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        "ability": {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "ability",
+          "rank": 1,
+          "name": "Sharpness",
+          "percentage": "96.0%",
+          "percentage_value": 96,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Stone Axe",
+          "X-Scissor",
+          "Protect",
+          "Close Combat",
+          "Night Slash",
+          "Tailwind",
+          "U-turn",
+          "Rock Slide",
+          "Aerial Ace",
+          "Feint"
+        ],
+        "held_item": [
+          "Choice Scarf",
+          "Focus Sash",
+          "Life Orb",
+          "White Herb",
+          "Wide Lens",
+          "Sitrus Berry",
+          "Expert Belt",
+          "Quick Claw",
+          "Muscle Band",
+          "Lum Berry"
+        ],
+        "teammate": [
+          "Whimsicott",
+          "Charizard",
+          "Kingambit",
+          "Garchomp",
+          "Farigiraf",
+          "Sneasler",
+          "Basculegion Male",
+          "Incineroar",
+          "Raichu",
+          "Talonflame"
+        ],
+        "stat_alignment": [
+          "Adamant",
+          "Jolly",
+          "Brave",
+          "Careful",
+          "Naughty",
+          "Impish",
+          "Relaxed",
+          "Naive",
+          "Sassy",
+          "Lonely"
+        ],
+        "stat_points": [
+          "HP 2 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 32",
+          "HP 0 / Atk 32 / Def 2 / SpA 0 / SpD 0 / Spe 32",
+          "HP 0 / Atk 32 / Def 0 / SpA 0 / SpD 2 / Spe 32",
+          "HP 0 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 32",
+          "HP 32 / Atk 32 / Def 2 / SpA 0 / SpD 0 / Spe 0",
+          "HP 8 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 26",
+          "HP 2 / Atk 32 / Def 32 / SpA 0 / SpD 0 / Spe 0",
+          "HP 0 / Atk 32 / Def 2 / SpA 0 / SpD 32 / Spe 0"
+        ],
+        "ability": [
+          "Sharpness",
+          "Sheer Force",
+          "Swarm"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "move",
+          "rank": 1,
+          "name": "Stone Axe",
+          "percentage": "95.5%",
+          "percentage_value": 95.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "move",
+          "rank": 2,
+          "name": "X-Scissor",
+          "percentage": "84.5%",
+          "percentage_value": 84.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "move",
+          "rank": 3,
+          "name": "Protect",
+          "percentage": "45.5%",
+          "percentage_value": 45.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "move",
+          "rank": 4,
+          "name": "Close Combat",
+          "percentage": "42.6%",
+          "percentage_value": 42.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "move",
+          "rank": 5,
+          "name": "Night Slash",
+          "percentage": "34.5%",
+          "percentage_value": 34.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "move",
+          "rank": 6,
+          "name": "Tailwind",
+          "percentage": "20.7%",
+          "percentage_value": 20.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "move",
+          "rank": 7,
+          "name": "U-turn",
+          "percentage": "19.6%",
+          "percentage_value": 19.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "move",
+          "rank": 8,
+          "name": "Rock Slide",
+          "percentage": "11.4%",
+          "percentage_value": 11.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "move",
+          "rank": 9,
+          "name": "Aerial Ace",
+          "percentage": "10.6%",
+          "percentage_value": 10.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "move",
+          "rank": 10,
+          "name": "Feint",
+          "percentage": "8.1%",
+          "percentage_value": 8.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Choice Scarf",
+          "percentage": "33.8%",
+          "percentage_value": 33.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Focus Sash",
+          "percentage": "28.2%",
+          "percentage_value": 28.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Life Orb",
+          "percentage": "14.4%",
+          "percentage_value": 14.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "held_item",
+          "rank": 4,
+          "name": "White Herb",
+          "percentage": "5.0%",
+          "percentage_value": 5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Wide Lens",
+          "percentage": "3.5%",
+          "percentage_value": 3.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Sitrus Berry",
+          "percentage": "3.3%",
+          "percentage_value": 3.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Expert Belt",
+          "percentage": "2.6%",
+          "percentage_value": 2.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Quick Claw",
+          "percentage": "2.0%",
+          "percentage_value": 2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Muscle Band",
+          "percentage": "1.8%",
+          "percentage_value": 1.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Lum Berry",
+          "percentage": "1.0%",
+          "percentage_value": 1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Whimsicott",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Charizard",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Sneasler",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Raichu",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Talonflame",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Adamant",
+          "percentage": "58.3%",
+          "percentage_value": 58.3,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Jolly",
+          "percentage": "35.9%",
+          "percentage_value": 35.9,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Brave",
+          "percentage": "2.8%",
+          "percentage_value": 2.8,
+          "stat_up": "Attack",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Careful",
+          "percentage": "1.1%",
+          "percentage_value": 1.1,
+          "stat_up": "Sp. Def",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Naughty",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Impish",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Relaxed",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Naive",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Sassy",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Sp. Def",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Lonely",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Attack",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "48.1%",
+          "percentage_value": 48.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "8.2%",
+          "percentage_value": 8.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "7.4%",
+          "percentage_value": 7.4,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "2.8%",
+          "percentage_value": 2.8,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "2.1%",
+          "percentage_value": 2.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "1.2%",
+          "percentage_value": 1.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 8,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 26
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "1.1%",
+          "percentage_value": 1.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 32,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "1.1%",
+          "percentage_value": 1.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 32,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "ability",
+          "rank": 1,
+          "name": "Sharpness",
+          "percentage": "96.0%",
+          "percentage_value": 96,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "ability",
+          "rank": 2,
+          "name": "Sheer Force",
+          "percentage": "3.7%",
+          "percentage_value": 3.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Kleavor",
+          "column_position": 84,
+          "position": 84,
+          "category": "ability",
+          "rank": 3,
+          "name": "Swarm",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Kleavor.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Kleavor.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Kleavor.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Kleavor.csv"
+      }
+    ]
+  }
+}

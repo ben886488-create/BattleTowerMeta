@@ -1,0 +1,4340 @@
+{
+  "pokemon": {
+    "slug": "annihilape",
+    "name": "Annihilape",
+    "baseName": "Annihilape",
+    "savedName": "Annihilape",
+    "form": "",
+    "types": [
+      "Fighting",
+      "Ghost"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Annihilape.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/979.png",
+    "stats": {
+      "hp": 185,
+      "attack": 135,
+      "defense": 100,
+      "spAttack": 70,
+      "spDefense": 110,
+      "speed": 110,
+      "total": 710
+    },
+    "rank": 39,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Protect",
+    "topItem": "Leftovers",
+    "topTeammate": "Incineroar"
+  },
+  "moves": [
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "move",
+      "rank": 1,
+      "name": "Protect",
+      "percentage": 0.766,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "move",
+        "rank": 1,
+        "name": "Protect",
+        "percentage": "76.6%",
+        "percentage_value": 76.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "move",
+      "rank": 2,
+      "name": "Rage Fist",
+      "percentage": 0.719,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "move",
+        "rank": 2,
+        "name": "Rage Fist",
+        "percentage": "71.9%",
+        "percentage_value": 71.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "move",
+      "rank": 3,
+      "name": "Drain Punch",
+      "percentage": 0.599,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "move",
+        "rank": 3,
+        "name": "Drain Punch",
+        "percentage": "59.9%",
+        "percentage_value": 59.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "move",
+      "rank": 4,
+      "name": "Bulk Up",
+      "percentage": 0.408,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "move",
+        "rank": 4,
+        "name": "Bulk Up",
+        "percentage": "40.8%",
+        "percentage_value": 40.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "move",
+      "rank": 5,
+      "name": "Close Combat",
+      "percentage": 0.372,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "move",
+        "rank": 5,
+        "name": "Close Combat",
+        "percentage": "37.2%",
+        "percentage_value": 37.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "move",
+      "rank": 6,
+      "name": "Phantom Force",
+      "percentage": 0.231,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "move",
+        "rank": 6,
+        "name": "Phantom Force",
+        "percentage": "23.1%",
+        "percentage_value": 23.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "move",
+      "rank": 7,
+      "name": "Rock Tomb",
+      "percentage": 0.177,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "move",
+        "rank": 7,
+        "name": "Rock Tomb",
+        "percentage": "17.7%",
+        "percentage_value": 17.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "move",
+      "rank": 8,
+      "name": "Ice Punch",
+      "percentage": 0.127,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "move",
+        "rank": 8,
+        "name": "Ice Punch",
+        "percentage": "12.7%",
+        "percentage_value": 12.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "move",
+      "rank": 9,
+      "name": "Taunt",
+      "percentage": 0.118,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "move",
+        "rank": 9,
+        "name": "Taunt",
+        "percentage": "11.8%",
+        "percentage_value": 11.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "move",
+      "rank": 10,
+      "name": "Rock Slide",
+      "percentage": 0.092,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "move",
+        "rank": 10,
+        "name": "Rock Slide",
+        "percentage": "9.2%",
+        "percentage_value": 9.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Leftovers",
+      "percentage": 0.321,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Leftovers",
+        "percentage": "32.1%",
+        "percentage_value": 32.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Focus Sash",
+      "percentage": 0.239,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Focus Sash",
+        "percentage": "23.9%",
+        "percentage_value": 23.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Sitrus Berry",
+      "percentage": 0.162,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Sitrus Berry",
+        "percentage": "16.2%",
+        "percentage_value": 16.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Choice Scarf",
+      "percentage": 0.089,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Choice Scarf",
+        "percentage": "8.9%",
+        "percentage_value": 8.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Life Orb",
+      "percentage": 0.049,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Life Orb",
+        "percentage": "4.9%",
+        "percentage_value": 4.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Roseli Berry",
+      "percentage": 0.022,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Roseli Berry",
+        "percentage": "2.2%",
+        "percentage_value": 2.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Expert Belt",
+      "percentage": 0.021,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Expert Belt",
+        "percentage": "2.1%",
+        "percentage_value": 2.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Lum Berry",
+      "percentage": 0.017,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Lum Berry",
+        "percentage": "1.7%",
+        "percentage_value": 1.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Black Belt",
+      "percentage": 1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Black Belt",
+        "percentage": "1.0%",
+        "percentage_value": 1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Spell Tag",
+      "percentage": 0.9,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Spell Tag",
+        "percentage": "0.9%",
+        "percentage_value": 0.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "ability",
+      "rank": 1,
+      "name": "Defiant",
+      "percentage": 0.973,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "ability",
+        "rank": 1,
+        "name": "Defiant",
+        "percentage": "97.3%",
+        "percentage_value": 97.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "ability",
+      "rank": 2,
+      "name": "Inner Focus",
+      "percentage": 0.021,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "ability",
+        "rank": 2,
+        "name": "Inner Focus",
+        "percentage": "2.1%",
+        "percentage_value": 2.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "ability",
+      "rank": 3,
+      "name": "Vital Spirit",
+      "percentage": 0.6,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "ability",
+        "rank": 3,
+        "name": "Vital Spirit",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Charizard",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Charizard",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Venusaur",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Venusaur",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Maushold Family of Four",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Maushold Family of Four",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Whimsicott",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Whimsicott",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Toxapex",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Toxapex",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Metagross",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Metagross",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Farigiraf",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Farigiraf",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Adamant",
+      "percentage": 0.52,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Adamant",
+        "percentage": "52.0%",
+        "percentage_value": 52,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Jolly",
+      "percentage": 0.335,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Jolly",
+        "percentage": "33.5%",
+        "percentage_value": 33.5,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Careful",
+      "percentage": 0.078,
+      "statUp": "Sp. Def",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Careful",
+        "percentage": "7.8%",
+        "percentage_value": 7.8,
+        "stat_up": "Sp. Def",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Brave",
+      "percentage": 0.029,
+      "statUp": "Attack",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Brave",
+        "percentage": "2.9%",
+        "percentage_value": 2.9,
+        "stat_up": "Attack",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Impish",
+      "percentage": 0.02,
+      "statUp": "Defense",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Impish",
+        "percentage": "2.0%",
+        "percentage_value": 2,
+        "stat_up": "Defense",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Lonely",
+      "percentage": 0.4,
+      "statUp": "Attack",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Lonely",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Attack",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Sassy",
+      "percentage": 0.3,
+      "statUp": "Sp. Def",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Sassy",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Sp. Def",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Naughty",
+      "percentage": 0.3,
+      "statUp": "Attack",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Naughty",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Relaxed",
+      "percentage": 0.3,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Relaxed",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Naive",
+      "percentage": 0.2,
+      "statUp": "Speed",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Naive",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.172,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "17.2%",
+        "percentage_value": 17.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.119,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "11.9%",
+        "percentage_value": 11.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 1,
+        "sp_atk_points": 0,
+        "sp_def_points": 1,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.051,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "5.1%",
+        "percentage_value": 5.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.036,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "3.6%",
+        "percentage_value": 3.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 2
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.035,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "3.5%",
+        "percentage_value": 3.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.015,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "1.5%",
+        "percentage_value": 1.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.014,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "1.4%",
+        "percentage_value": 1.4,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 6,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 28
+      }
+    },
+    {
+      "pokemon": "Annihilape",
+      "position": 39,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.013,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Annihilape",
+        "column_position": 39,
+        "position": 39,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "1.3%",
+        "percentage_value": 1.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 23,
+        "attack_points": 15,
+        "defense_points": 15,
+        "sp_atk_points": 0,
+        "sp_def_points": 10,
+        "speed_points": 3
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a46b0e683fd320299bd6881-rrdrumond",
+      "name": "Rod · X1 Remote Battle League 2ª Edição - Reg M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Roseli Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Foul Play",
+            "Scary Face",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Trick Room",
+            "Psychic",
+            "Thunderbolt",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Tailwind",
+            "Soak",
+            "Hurricane"
+          ]
+        },
+        {
+          "slug": "greninja",
+          "name": "Greninja",
+          "item": "Life Orb",
+          "ability": "Protean",
+          "moves": [
+            "Ice Beam",
+            "Grass Knot",
+            "Rock Tomb",
+            "Gunk Shot"
+          ]
+        },
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite X",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Rising Voltage",
+            "Fake Out",
+            "Volt Switch",
+            "Volt Tackle"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Phantom Force",
+            "Encore",
+            "Gunk Shot",
+            "Close Combat"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.3333333333333333,
+      "sampleCount": 3,
+      "tournament": "X1 Remote Battle League 2ª Edição - Reg M-B",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Rod",
+      "record": "1-2-0"
+    },
+    {
+      "id": "6a46b0e683fd320299bd6881-leomondstraus",
+      "name": "LeomondStraus · X1 Remote Battle League 2ª Edição - Reg M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Reflect",
+            "Light Screen",
+            "Parting Shot",
+            "Spirit Break"
+          ]
+        },
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Damp Rock",
+          "ability": "Drizzle",
+          "moves": [
+            "Hurricane",
+            "Weather Ball",
+            "Tailwind",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Damp",
+          "moves": [
+            "Wave Crash",
+            "High Horsepower",
+            "Ice Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Snarl"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Rage Fist",
+            "Drain Punch",
+            "Throat Chop",
+            "U-turn"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Encore",
+            "Quash",
+            "Thunder Wave",
+            "Rain Dance"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.3333333333333333,
+      "sampleCount": 3,
+      "tournament": "X1 Remote Battle League 2ª Edição - Reg M-B",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "LeomondStraus",
+      "record": "1-2-0"
+    },
+    {
+      "id": "6a5055f965724db9ded41c56-dumbores",
+      "name": "Dumbores · Weekly Qualifier for RookideeVGC Grand Tourney",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Leftovers",
+          "ability": "Defiant",
+          "moves": [
+            "Rage Fist",
+            "Drain Punch",
+            "Bulk Up",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Tailwind",
+            "Protect",
+            "Moonblast",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Flip Turn",
+            "Last Respects",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Parting Shot",
+            "Flare Blitz",
+            "Fake Out",
+            "Taunt"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Light Clay",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Aurora Veil",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "Weekly Qualifier for RookideeVGC Grand Tourney",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Dumbores",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a4dbb9665724db9ded3ff83-cateco13",
+      "name": "CaTeco13 · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "scolipede",
+          "name": "Scolipede",
+          "item": "Scolipite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Protect",
+            "Stomping Tantrum",
+            "Gunk Shot",
+            "Leech Life"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Coaching",
+            "Close Combat",
+            "Rage Fist",
+            "Taunt"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Earth Power",
+            "Snarl",
+            "Draco Meteor",
+            "Dark Pulse"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "White Herb",
+          "ability": "Pressure",
+          "moves": [
+            "Rock Slide",
+            "Dual Wingbeat",
+            "Tailwind",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "hatterene",
+          "name": "Hatterene",
+          "item": "Sitrus Berry",
+          "ability": "Magic Bounce",
+          "moves": [
+            "Trick Room",
+            "Draining Kiss",
+            "Helping Hand",
+            "Magic Powder"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Life Orb",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Quick Attack",
+            "Detect",
+            "Hyper Beam"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "CaTeco13",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a4dbc1e063cb29d318e66e7-flamingraccoon",
+      "name": "FlamingRaccoon · The Grim Challenge #3 - Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Leftovers",
+          "ability": "Defiant",
+          "moves": [
+            "Rage Fist",
+            "Drain Punch",
+            "Bulk Up",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Light Screen",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Solar Power",
+          "moves": [
+            "Weather Ball",
+            "Heat Wave",
+            "Solar Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Protect",
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Yawn",
+            "Quick Attack",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Chople Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Taunt",
+            "Follow Me",
+            "Beat Up",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "The Grim Challenge #3 - Champions",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "FlamingRaccoon",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a3200c5e334c3c9befd8430-desu",
+      "name": "Desu · The Grand Champions Festival Encore",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Dragon Claw",
+            "Stomping Tantrum"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Solar Beam",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Protect",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Close Combat",
+            "Phantom Force",
+            "Rock Tomb",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8947368421052632,
+      "sampleCount": 19,
+      "tournament": "The Grand Champions Festival Encore",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Desu",
+      "record": "17-2-0"
+    },
+    {
+      "id": "6a3200c5e334c3c9befd8430-padovgc",
+      "name": "PadoVGC · The Grand Champions Festival Encore",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Solar Beam",
+            "Weather Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Sleep Powder",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Rage Fist",
+            "Close Combat",
+            "Phantom Force",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8888888888888888,
+      "sampleCount": 18,
+      "tournament": "The Grand Champions Festival Encore",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "PadoVGC",
+      "record": "16-2-0"
+    },
+    {
+      "id": "6a3200c5e334c3c9befd8430-kangourou007",
+      "name": "Kangourou007 · The Grand Champions Festival Encore",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Solar Beam",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Stomping Tantrum"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Weather Ball",
+            "Heat Wave",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Toxic",
+            "Infestation",
+            "Baneful Bunker",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Phantom Force",
+            "Close Combat",
+            "Rock Tomb",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8125,
+      "sampleCount": 16,
+      "tournament": "The Grand Champions Festival Encore",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Kangourou007",
+      "record": "13-3-0"
+    },
+    {
+      "id": "6a53c2d1e09846f1eb4c161b-airpod",
+      "name": "Airpod · The Drywall Series #11",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Solar Beam",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Close Combat",
+            "Phantom Force",
+            "Rock Tomb",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Stomping Tantrum"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Toxic",
+            "Infestation",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7142857142857143,
+      "sampleCount": 7,
+      "tournament": "The Drywall Series #11",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Airpod",
+      "record": "5-2-0"
+    },
+    {
+      "id": "6a51f42365724db9ded43093-lellocartello",
+      "name": "LelloCartello · Tenki's Cart Weekly #109 - Reg MB",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Dragon Claw",
+            "Stomping Tantrum"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Solar Beam",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Protect",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Close Combat",
+            "Phantom Force",
+            "Rock Tomb",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7,
+      "sampleCount": 10,
+      "tournament": "Tenki's Cart Weekly #109 - Reg MB",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "LelloCartello",
+      "record": "7-3-0"
+    },
+    {
+      "id": "6a51f42365724db9ded43093-bonzo713",
+      "name": "Bonzo713 · Tenki's Cart Weekly #109 - Reg MB",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Leftovers",
+          "ability": "Defiant",
+          "moves": [
+            "Rage Fist",
+            "Drain Punch",
+            "Bulk Up",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Chople Berry",
+          "ability": "Friend Guard",
+          "moves": [
+            "Follow Me",
+            "Feint",
+            "Protect",
+            "Beat Up"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Kasib Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Rage Powder",
+            "Matcha Gotcha",
+            "Protect",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Choice Scarf",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Power Gem",
+            "Trick"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 8,
+      "tournament": "Tenki's Cart Weekly #109 - Reg MB",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Bonzo713",
+      "record": "6-2-0"
+    },
+    {
+      "id": "6a32e8b12d97f3b0c26189cc-satorugojofan",
+      "name": "satorugojofan · Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "pelipper",
+          "name": "Pelipper",
+          "item": "Sitrus Berry",
+          "ability": "Drizzle",
+          "moves": [
+            "Weather Ball",
+            "Hurricane",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Swampertite",
+          "ability": "Torrent",
+          "moves": [
+            "Protect",
+            "Wave Crash",
+            "High Horsepower",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Protect",
+            "Giga Drain",
+            "Sludge Bomb",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Dragon Pulse",
+            "Flash Cannon",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Reflect",
+            "Light Screen",
+            "Spirit Break",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Close Combat",
+            "Rock Tomb",
+            "Phantom Force",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7272727272727273,
+      "sampleCount": 11,
+      "tournament": "Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "satorugojofan",
+      "record": "8-3-0"
+    },
+    {
+      "id": "6a43db49c87cd9ff0a313918-maxuki549",
+      "name": "Maxuki549 · Pokepal Smackdown #149 (Champions) (Reg M-B)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Garchompite",
+          "ability": "Rough Skin",
+          "moves": [
+            "Stomping Tantrum",
+            "Protect",
+            "Dragon Tail",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Spirit Break",
+            "Light Screen",
+            "Parting Shot",
+            "Reflect"
+          ]
+        },
+        {
+          "slug": "heat-rotom",
+          "name": "Heat Rotom",
+          "item": "Life Orb",
+          "ability": "Levitate",
+          "moves": [
+            "Overheat",
+            "Nasty Plot",
+            "Thunderbolt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Trick Room",
+            "Rage Powder",
+            "Life Dew"
+          ]
+        },
+        {
+          "slug": "steelix",
+          "name": "Steelix",
+          "item": "Steelixite",
+          "ability": "Rock Head",
+          "moves": [
+            "Heavy Slam",
+            "Body Press",
+            "Protect",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Leftovers",
+          "ability": "Defiant",
+          "moves": [
+            "Drain Punch",
+            "Rage Fist",
+            "Coaching",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Pokepal Smackdown #149 (Champions) (Reg M-B)",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Maxuki549",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a55808a232a1a55ee10be16-juliiihd",
+      "name": "JuliiiHD · 𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Throat Chop",
+            "Flare Blitz",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Protect",
+            "Sludge Bomb",
+            "Solar Beam",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Protect",
+            "Close Combat",
+            "Phantom Force",
+            "Rock Tomb"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Protect",
+            "Weather Ball",
+            "Heat Wave",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Baneful Bunker",
+            "Infestation",
+            "Toxic",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Rock Slide",
+            "Earthquake"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8333333333333334,
+      "sampleCount": 6,
+      "tournament": "𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "JuliiiHD",
+      "record": "5-1-0"
+    },
+    {
+      "id": "6a55808a232a1a55ee10be16-pollitoa7",
+      "name": "PollitoA7 · 𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Solar Beam",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Throat Chop",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Close Combat",
+            "Phantom Force",
+            "Rock Tomb",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Baneful Bunker",
+            "Wide Guard",
+            "Toxic"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "PollitoA7",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a5162b8063cb29d318e9199-noctivvgc",
+      "name": "NoctivVGC · MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Solar Beam",
+            "Weather Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Focus Sash",
+          "ability": "Unnerve",
+          "moves": [
+            "Rock Slide",
+            "Tailwind",
+            "Wide Guard",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Fake Out",
+            "Parting Shot",
+            "Throat Chop"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Scald",
+            "Ice Beam",
+            "Protect",
+            "Life Dew"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect",
+            "Sleep Powder"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Kasib Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Drain Punch",
+            "Shadow Claw",
+            "Taunt",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "MEGA SATURDAY CHAMPIONSHIPS SERIES #1 EDITION",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "NoctivVGC",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a42222fc87cd9ff0a31292b-lojica1",
+      "name": "Louie John Valencia · King of Champions III",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Solar Beam",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Stomping Tantrum"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Rage Fist",
+            "Close Combat",
+            "Phantom Force",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Throat Chop",
+            "Flare Blitz",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Baneful Bunker",
+            "Wide Guard"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 1,
+      "sampleCount": 9,
+      "tournament": "King of Champions III",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Louie John Valencia",
+      "record": "9-0-0"
+    },
+    {
+      "id": "6a54c9d3232a1a55ee10b346-antzim",
+      "name": "AntZim · Intimidators Champions Challenge #27 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Helping Hand",
+            "Weather Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Phantom Force",
+            "Close Combat",
+            "Rock Tomb",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Stomping Tantrum",
+            "Rock Slide",
+            "Dragon Claw"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Earth Power",
+            "Sludge Bomb",
+            "Solar Beam",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Intimidators Champions Challenge #27 REG M-B",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "AntZim",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a5497ab232a1a55ee10b2b8-dumbores",
+      "name": "Dumbores · HeroicTitan’s VGC Battle Arena",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "raichu",
+          "name": "Raichu",
+          "item": "Raichunite Y",
+          "ability": "Lightning Rod",
+          "moves": [
+            "Zap Cannon",
+            "Focus Blast",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Leftovers",
+          "ability": "Defiant",
+          "moves": [
+            "Rage Fist",
+            "Drain Punch",
+            "Bulk Up",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Tailwind",
+            "Protect",
+            "Moonblast",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Wave Crash",
+            "Flip Turn",
+            "Last Respects",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Parting Shot",
+            "Flare Blitz",
+            "Fake Out",
+            "Taunt"
+          ]
+        },
+        {
+          "slug": "alolan-ninetales",
+          "name": "Alolan Ninetales",
+          "item": "Light Clay",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Freeze-Dry",
+            "Aurora Veil",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "HeroicTitan’s VGC Battle Arena",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Dumbores",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a442f7183fd320299bd5187-ronansting",
+      "name": "Marius Wels · HALL OF  FAME BELGIUM (Invitational)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Psyshock",
+            "Nasty Plot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Wide Lens",
+          "ability": "Technician",
+          "moves": [
+            "Population Bomb",
+            "Follow Me",
+            "Beat Up",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Sitrus Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Rage Fist",
+            "Drain Punch",
+            "Bulk Up",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Encore",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "moves": [
+            "Life Dew",
+            "Hypnosis",
+            "Muddy Water",
+            "Coil"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "HALL OF  FAME BELGIUM (Invitational)",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Marius Wels",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a4bc2dd063cb29d318e4b78-mew3king",
+      "name": "Iván Cabrera · Chacho Cup #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Coba Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Bulk Up",
+            "Drain Punch",
+            "Protect",
+            "Rage Fist"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Light Screen",
+            "Reflect",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Focus Sash",
+          "ability": "Adaptability",
+          "moves": [
+            "Flip Turn",
+            "Last Respects",
+            "Protect",
+            "Wave Crash"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Solar Beam",
+            "Weather Ball",
+            "Heat Wave",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "clefable",
+          "name": "Clefable",
+          "item": "Bright Powder",
+          "ability": "Unaware",
+          "moves": [
+            "Protect",
+            "Dazzling Gleam",
+            "Follow Me",
+            "Alluring Voice"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Earth Power",
+            "Protect",
+            "Sludge Bomb",
+            "Giga Drain"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Chacho Cup #2",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Iván Cabrera",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a392e4ac87cd9ff0a30d0b0-snorlaxpikachu1",
+      "name": "Snorlaxpikachu1 · Alpensee Tour (Reg M-B) #66",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "altaria",
+          "name": "Altaria",
+          "item": "Sitrus Berry",
+          "ability": "Cloud Nine",
+          "moves": [
+            "Tailwind",
+            "Will-O-Wisp",
+            "Draco Meteor",
+            "Roost"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Fairy Aura",
+          "moves": [
+            "Moonblast",
+            "Dazzling Gleam",
+            "Calm Mind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Make It Rain",
+            "Shadow Ball",
+            "Power Gem",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Close Combat",
+            "Dire Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Payapa Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Close Combat",
+            "Phantom Force",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "Alpensee Tour (Reg M-B) #66",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Snorlaxpikachu1",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a545f013ee4505de4ad5e7e-daikyh",
+      "name": "Daiky · 🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Solar Power",
+          "moves": [
+            "Weather Ball",
+            "Heat Wave",
+            "Protect",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Rock Slide",
+            "Earthquake",
+            "Stomping Tantrum",
+            "Dragon Claw"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Parting Shot",
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Rage Fist",
+            "Protect",
+            "Close Combat",
+            "Phantom Force"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Baneful Bunker",
+            "Infestation",
+            "Toxic",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Solar Beam",
+            "Protect",
+            "Sludge Bomb",
+            "Earth Power"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Daiky",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a46629683fd320299bd6543-crisvgc",
+      "name": "CrisVGC · 🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Solar Beam",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Throat Chop",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Close Combat",
+            "Phantom Force",
+            "Rock Tomb",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Baneful Bunker",
+            "Wide Guard",
+            "Toxic"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 10,
+      "tournament": "🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "CrisVGC",
+      "record": "8-2-0"
+    },
+    {
+      "id": "6a519dad65724db9ded42bc9-soralex",
+      "name": "Soralex · [PR] Mt. Moon Champions VGC Weekly #6 2026",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Tailwind",
+            "Protect",
+            "Dazzling Gleam",
+            "Taunt"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Leftovers",
+          "ability": "Defiant",
+          "moves": [
+            "Rage Fist",
+            "Drain Punch",
+            "Gunk Shot",
+            "Ice Punch"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Muscle Band",
+          "ability": "Sand Veil",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Multiscale",
+          "moves": [
+            "Dragon Pulse",
+            "Air Slash",
+            "Heat Wave",
+            "Extreme Speed"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Solar Power",
+          "moves": [
+            "Protect",
+            "Scorching Sands",
+            "Heat Wave",
+            "Dragon Pulse"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Sitrus Berry",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sleep Powder",
+            "Giga Drain",
+            "Sludge Bomb",
+            "Weather Ball"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.3333333333333333,
+      "sampleCount": 3,
+      "tournament": "[PR] Mt. Moon Champions VGC Weekly #6 2026",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Soralex",
+      "record": "1-2-0"
+    }
+  ],
+  "movePool": [
+    "Acrobatics",
+    "Assurance",
+    "Beat Up",
+    "Body Slam",
+    "Brick Break",
+    "Bulk Up",
+    "Bulldoze",
+    "Close Combat",
+    "Coaching",
+    "Counter",
+    "Cross Chop",
+    "Curse",
+    "Dig",
+    "Double-Edge",
+    "Drain Punch",
+    "Dynamic Punch",
+    "Earthquake",
+    "Encore",
+    "Endeavor",
+    "Endure",
+    "Facade",
+    "Fire Punch",
+    "Fling",
+    "Focus Blast",
+    "Focus Energy",
+    "Focus Punch",
+    "Giga Impact",
+    "Gunk Shot",
+    "Helping Hand",
+    "Hyper Beam",
+    "Ice Punch",
+    "Lash Out",
+    "Low Kick",
+    "Low Sweep",
+    "Night Shade",
+    "Night Slash",
+    "Outrage",
+    "Overheat",
+    "Phantom Force",
+    "Poison Jab",
+    "Protect",
+    "Rage Fist",
+    "Rain Dance",
+    "Rest",
+    "Reversal",
+    "Rock Slide",
+    "Rock Tomb",
+    "Scary Face",
+    "Screech",
+    "Seed Bomb",
+    "Seismic Toss",
+    "Shadow Ball",
+    "Shadow Claw",
+    "Shadow Punch",
+    "Sleep Talk",
+    "Smack Down",
+    "Spite",
+    "Stealth Rock",
+    "Stomping Tantrum",
+    "Stone Edge",
+    "Storm Throw",
+    "Substitute",
+    "Sunny Day",
+    "Swagger",
+    "Taunt",
+    "Thief",
+    "Thrash",
+    "Throat Chop",
+    "Thunder",
+    "Thunder Punch",
+    "Thunderbolt",
+    "Torment",
+    "U-turn",
+    "Uproar",
+    "Vacuum Wave"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Annihilape",
+      "base_name": "Annihilape",
+      "saved_name": "Annihilape",
+      "types": "Fighting/Ghost",
+      "abilities": "Vital Spirit|Inner Focus|Defiant",
+      "weight": "123.5 lbs.",
+      "image_path": "pokemon_champions_assets\\pokemon\\Annihilape.png",
+      "form": "",
+      "hp": 185,
+      "atk": 135,
+      "def": 100,
+      "spa": 70,
+      "spd": 110,
+      "spe": 110,
+      "total": 710
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "move",
+          "rank": 1,
+          "name": "Protect",
+          "percentage": "76.6%",
+          "percentage_value": 76.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Leftovers",
+          "percentage": "32.1%",
+          "percentage_value": 32.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Adamant",
+          "percentage": "52.0%",
+          "percentage_value": 52,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        "stat_points": {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "17.2%",
+          "percentage_value": 17.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        "ability": {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "ability",
+          "rank": 1,
+          "name": "Defiant",
+          "percentage": "97.3%",
+          "percentage_value": 97.3,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Protect",
+          "Rage Fist",
+          "Drain Punch",
+          "Bulk Up",
+          "Close Combat",
+          "Phantom Force",
+          "Rock Tomb",
+          "Ice Punch",
+          "Taunt",
+          "Rock Slide"
+        ],
+        "held_item": [
+          "Leftovers",
+          "Focus Sash",
+          "Sitrus Berry",
+          "Choice Scarf",
+          "Life Orb",
+          "Roseli Berry",
+          "Expert Belt",
+          "Lum Berry",
+          "Black Belt",
+          "Spell Tag"
+        ],
+        "teammate": [
+          "Incineroar",
+          "Charizard",
+          "Garchomp",
+          "Venusaur",
+          "Maushold Family of Four",
+          "Whimsicott",
+          "Sinistcha",
+          "Toxapex",
+          "Metagross",
+          "Farigiraf"
+        ],
+        "stat_alignment": [
+          "Adamant",
+          "Jolly",
+          "Careful",
+          "Brave",
+          "Impish",
+          "Lonely",
+          "Sassy",
+          "Naughty",
+          "Relaxed",
+          "Naive"
+        ],
+        "stat_points": [
+          "HP 2 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 32",
+          "HP 0 / Atk 32 / Def 1 / SpA 0 / SpD 1 / Spe 32",
+          "HP 32 / Atk 32 / Def 2 / SpA 0 / SpD 0 / Spe 0",
+          "HP 32 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 2",
+          "HP 0 / Atk 32 / Def 2 / SpA 0 / SpD 0 / Spe 32",
+          "HP 0 / Atk 32 / Def 0 / SpA 0 / SpD 2 / Spe 32",
+          "HP 6 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 28",
+          "HP 23 / Atk 15 / Def 15 / SpA 0 / SpD 10 / Spe 3"
+        ],
+        "ability": [
+          "Defiant",
+          "Inner Focus",
+          "Vital Spirit"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "move",
+          "rank": 1,
+          "name": "Protect",
+          "percentage": "76.6%",
+          "percentage_value": 76.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "move",
+          "rank": 2,
+          "name": "Rage Fist",
+          "percentage": "71.9%",
+          "percentage_value": 71.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "move",
+          "rank": 3,
+          "name": "Drain Punch",
+          "percentage": "59.9%",
+          "percentage_value": 59.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "move",
+          "rank": 4,
+          "name": "Bulk Up",
+          "percentage": "40.8%",
+          "percentage_value": 40.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "move",
+          "rank": 5,
+          "name": "Close Combat",
+          "percentage": "37.2%",
+          "percentage_value": 37.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "move",
+          "rank": 6,
+          "name": "Phantom Force",
+          "percentage": "23.1%",
+          "percentage_value": 23.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "move",
+          "rank": 7,
+          "name": "Rock Tomb",
+          "percentage": "17.7%",
+          "percentage_value": 17.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "move",
+          "rank": 8,
+          "name": "Ice Punch",
+          "percentage": "12.7%",
+          "percentage_value": 12.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "move",
+          "rank": 9,
+          "name": "Taunt",
+          "percentage": "11.8%",
+          "percentage_value": 11.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "move",
+          "rank": 10,
+          "name": "Rock Slide",
+          "percentage": "9.2%",
+          "percentage_value": 9.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Leftovers",
+          "percentage": "32.1%",
+          "percentage_value": 32.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Focus Sash",
+          "percentage": "23.9%",
+          "percentage_value": 23.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Sitrus Berry",
+          "percentage": "16.2%",
+          "percentage_value": 16.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Choice Scarf",
+          "percentage": "8.9%",
+          "percentage_value": 8.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Life Orb",
+          "percentage": "4.9%",
+          "percentage_value": 4.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Roseli Berry",
+          "percentage": "2.2%",
+          "percentage_value": 2.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Expert Belt",
+          "percentage": "2.1%",
+          "percentage_value": 2.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Lum Berry",
+          "percentage": "1.7%",
+          "percentage_value": 1.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Black Belt",
+          "percentage": "1.0%",
+          "percentage_value": 1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Spell Tag",
+          "percentage": "0.9%",
+          "percentage_value": 0.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Charizard",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Venusaur",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Maushold Family of Four",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Whimsicott",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Toxapex",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Metagross",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Adamant",
+          "percentage": "52.0%",
+          "percentage_value": 52,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Jolly",
+          "percentage": "33.5%",
+          "percentage_value": 33.5,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Careful",
+          "percentage": "7.8%",
+          "percentage_value": 7.8,
+          "stat_up": "Sp. Def",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Brave",
+          "percentage": "2.9%",
+          "percentage_value": 2.9,
+          "stat_up": "Attack",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Impish",
+          "percentage": "2.0%",
+          "percentage_value": 2,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Lonely",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Attack",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Sassy",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Sp. Def",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Naughty",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Relaxed",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Naive",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "17.2%",
+          "percentage_value": 17.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "11.9%",
+          "percentage_value": 11.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 1,
+          "sp_atk_points": 0,
+          "sp_def_points": 1,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "5.1%",
+          "percentage_value": 5.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "3.6%",
+          "percentage_value": 3.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 2
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "3.5%",
+          "percentage_value": 3.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "1.5%",
+          "percentage_value": 1.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "1.4%",
+          "percentage_value": 1.4,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 6,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 28
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "1.3%",
+          "percentage_value": 1.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 23,
+          "attack_points": 15,
+          "defense_points": 15,
+          "sp_atk_points": 0,
+          "sp_def_points": 10,
+          "speed_points": 3
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "ability",
+          "rank": 1,
+          "name": "Defiant",
+          "percentage": "97.3%",
+          "percentage_value": 97.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "ability",
+          "rank": 2,
+          "name": "Inner Focus",
+          "percentage": "2.1%",
+          "percentage_value": 2.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Annihilape",
+          "column_position": 39,
+          "position": 39,
+          "category": "ability",
+          "rank": 3,
+          "name": "Vital Spirit",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Annihilape.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Annihilape.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Annihilape.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Annihilape.csv"
+      }
+    ]
+  }
+}

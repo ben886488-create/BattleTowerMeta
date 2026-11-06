@@ -98,7 +98,8 @@ export function buildTierEmaScores(
       const weightedPoints = item?.weightedPoints ?? 0;
       const top32SharePct = totalTop32 > 0 ? (top32Count / totalTop32) * 100 : 0;
       const signal = buildTierDailySignal(top32Count, weightedPoints, top32SharePct);
-      ema[key] = previousDay == null ? signal : alpha * signal + (1 - alpha) * ema[key];
+      const previousEma = ema[key] ?? 0;
+      ema[key] = previousDay == null ? signal : alpha * signal + (1 - alpha) * previousEma;
     }
 
     previousDay = day;

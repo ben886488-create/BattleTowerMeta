@@ -1,0 +1,3009 @@
+{
+  "pokemon": {
+    "slug": "camerupt",
+    "name": "Camerupt",
+    "baseName": "Camerupt",
+    "savedName": "Camerupt",
+    "form": "",
+    "types": [
+      "Fire",
+      "Ground"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Camerupt.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/323.png",
+    "stats": {
+      "hp": 145,
+      "attack": 120,
+      "defense": 90,
+      "spAttack": 125,
+      "spDefense": 95,
+      "speed": 60,
+      "total": 635
+    },
+    "rank": 57,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Earth Power",
+    "topItem": "Cameruptite",
+    "topTeammate": "Farigiraf"
+  },
+  "moves": [
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "move",
+      "rank": 1,
+      "name": "Earth Power",
+      "percentage": 0.969,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "move",
+        "rank": 1,
+        "name": "Earth Power",
+        "percentage": "96.9%",
+        "percentage_value": 96.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "move",
+      "rank": 2,
+      "name": "Protect",
+      "percentage": 0.895,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "move",
+        "rank": 2,
+        "name": "Protect",
+        "percentage": "89.5%",
+        "percentage_value": 89.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "move",
+      "rank": 3,
+      "name": "Heat Wave",
+      "percentage": 0.828,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "move",
+        "rank": 3,
+        "name": "Heat Wave",
+        "percentage": "82.8%",
+        "percentage_value": 82.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "move",
+      "rank": 4,
+      "name": "Ancient Power",
+      "percentage": 0.712,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "move",
+        "rank": 4,
+        "name": "Ancient Power",
+        "percentage": "71.2%",
+        "percentage_value": 71.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "move",
+      "rank": 5,
+      "name": "Eruption",
+      "percentage": 0.381,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "move",
+        "rank": 5,
+        "name": "Eruption",
+        "percentage": "38.1%",
+        "percentage_value": 38.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "move",
+      "rank": 6,
+      "name": "Flamethrower",
+      "percentage": 0.038,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "move",
+        "rank": 6,
+        "name": "Flamethrower",
+        "percentage": "3.8%",
+        "percentage_value": 3.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "move",
+      "rank": 7,
+      "name": "Flash Cannon",
+      "percentage": 0.035,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "move",
+        "rank": 7,
+        "name": "Flash Cannon",
+        "percentage": "3.5%",
+        "percentage_value": 3.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "move",
+      "rank": 8,
+      "name": "Rock Slide",
+      "percentage": 0.029,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "move",
+        "rank": 8,
+        "name": "Rock Slide",
+        "percentage": "2.9%",
+        "percentage_value": 2.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "move",
+      "rank": 9,
+      "name": "Solar Beam",
+      "percentage": 0.026,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "move",
+        "rank": 9,
+        "name": "Solar Beam",
+        "percentage": "2.6%",
+        "percentage_value": 2.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "move",
+      "rank": 10,
+      "name": "Earthquake",
+      "percentage": 0.014,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "move",
+        "rank": 10,
+        "name": "Earthquake",
+        "percentage": "1.4%",
+        "percentage_value": 1.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Cameruptite",
+      "percentage": 0.963,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Cameruptite",
+        "percentage": "96.3%",
+        "percentage_value": 96.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Life Orb",
+      "percentage": 0.6,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Life Orb",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Charcoal",
+      "percentage": 0.6,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Charcoal",
+        "percentage": "0.6%",
+        "percentage_value": 0.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Quick Claw",
+      "percentage": 0.4,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Quick Claw",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Choice Scarf",
+      "percentage": 0.4,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Choice Scarf",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Sitrus Berry",
+      "percentage": 0.3,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Sitrus Berry",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Focus Sash",
+      "percentage": 0.2,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Focus Sash",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Leftovers",
+      "percentage": 0.2,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Leftovers",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Soft Sand",
+      "percentage": 0.2,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Soft Sand",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Passho Berry",
+      "percentage": 0.1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Passho Berry",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "ability",
+      "rank": 1,
+      "name": "Solid Rock",
+      "percentage": 0.921,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "ability",
+        "rank": 1,
+        "name": "Solid Rock",
+        "percentage": "92.1%",
+        "percentage_value": 92.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "ability",
+      "rank": 2,
+      "name": "Magma Armor",
+      "percentage": 0.043,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "ability",
+        "rank": 2,
+        "name": "Magma Armor",
+        "percentage": "4.3%",
+        "percentage_value": 4.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "ability",
+      "rank": 3,
+      "name": "Anger Point",
+      "percentage": 0.036,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "ability",
+        "rank": 3,
+        "name": "Anger Point",
+        "percentage": "3.6%",
+        "percentage_value": 3.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Farigiraf",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Farigiraf",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Kingambit",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Kingambit",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Sylveon",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Sylveon",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Vivillon Fancy Pattern",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Vivillon Fancy Pattern",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Sneasler",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Sneasler",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Kangaskhan",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Kangaskhan",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Torkoal",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Torkoal",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Staraptor",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Staraptor",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Quiet",
+      "percentage": 0.9,
+      "statUp": "Sp. Atk",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Quiet",
+        "percentage": "90.0%",
+        "percentage_value": 90,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Modest",
+      "percentage": 0.071,
+      "statUp": "Sp. Atk",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Modest",
+        "percentage": "7.1%",
+        "percentage_value": 7.1,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Jolly",
+      "percentage": 0.5,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Jolly",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Sassy",
+      "percentage": 0.5,
+      "statUp": "Sp. Def",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Sassy",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "Sp. Def",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Relaxed",
+      "percentage": 0.4,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Relaxed",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Mild",
+      "percentage": 0.4,
+      "statUp": "Sp. Atk",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Mild",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Calm",
+      "percentage": 0.3,
+      "statUp": "Sp. Def",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Calm",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Sp. Def",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Brave",
+      "percentage": 0.2,
+      "statUp": "Attack",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Brave",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Attack",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Rash",
+      "percentage": 0.2,
+      "statUp": "Sp. Atk",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Rash",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Bold",
+      "percentage": 0.2,
+      "statUp": "Defense",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Bold",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Defense",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.555,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "55.5%",
+        "percentage_value": 55.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.132,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "13.2%",
+        "percentage_value": 13.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.055,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "5.5%",
+        "percentage_value": 5.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 30,
+        "attack_points": 0,
+        "defense_points": 11,
+        "sp_atk_points": 25,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.034,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "3.4%",
+        "percentage_value": 3.4,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 1,
+        "sp_atk_points": 32,
+        "sp_def_points": 1,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.027,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "2.7%",
+        "percentage_value": 2.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 29,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 5
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "1.0%",
+        "percentage_value": 1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 32,
+        "sp_def_points": 32,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.9,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "0.9%",
+        "percentage_value": 0.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 32,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Camerupt",
+      "position": 57,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.9,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Camerupt",
+        "column_position": 57,
+        "position": 57,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "0.9%",
+        "percentage_value": 0.9,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 0,
+        "defense_points": 32,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a5055f965724db9ded41c56-vincenzocaiafa",
+      "name": "Vincenzocaiafa · Weekly Qualifier for RookideeVGC Grand Tourney",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Trick Room",
+            "Protect",
+            "Helping Hand",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "vivillon",
+          "name": "Vivillon",
+          "item": "Focus Sash",
+          "ability": "Compound Eyes",
+          "moves": [
+            "Hurricane",
+            "Sleep Powder",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "camerupt",
+          "name": "Camerupt",
+          "item": "Cameruptite",
+          "ability": "Solid Rock",
+          "moves": [
+            "Heat Wave",
+            "Earth Power",
+            "Ancient Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Play Rough",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hatterene",
+          "name": "Hatterene",
+          "item": "Life Orb",
+          "ability": "Magic Bounce",
+          "moves": [
+            "Trick Room",
+            "Psychic",
+            "Dazzling Gleam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Roseli Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Brick Break",
+            "Knock Off",
+            "Ice Punch"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "Weekly Qualifier for RookideeVGC Grand Tourney",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Vincenzocaiafa",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a4f9758063cb29d318e79a9-tristran",
+      "name": "TrisTran · Sky Pillar Saturday Showdown S8 #10",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "aggron",
+          "name": "Aggron",
+          "item": "Aggronite",
+          "ability": "Heavy Metal",
+          "moves": [
+            "Heavy Slam",
+            "Body Press",
+            "Iron Defense",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Chople Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Darkest Lariat",
+            "Parting Shot",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "vileplume",
+          "name": "Vileplume",
+          "item": "Focus Sash",
+          "ability": "Chlorophyll",
+          "moves": [
+            "After You",
+            "Solar Beam",
+            "Sleep Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Eruption",
+            "Heat Wave",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Trick Room",
+            "Twin Beam",
+            "Thunderbolt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "camerupt",
+          "name": "Camerupt",
+          "item": "Cameruptite",
+          "ability": "Solid Rock",
+          "moves": [
+            "Eruption",
+            "Earth Power",
+            "Heat Wave",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Sky Pillar Saturday Showdown S8 #10",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "TrisTran",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a5117e465724db9ded421f1-yohaniee",
+      "name": "Yohaniee · Øutcast's Warm Up Cup",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "tinkaton",
+          "name": "Tinkaton",
+          "item": "Shuca Berry",
+          "ability": "Mold Breaker",
+          "moves": [
+            "Gigaton Hammer",
+            "Knock Off",
+            "Play Rough",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Silk Scarf",
+          "ability": "Scrappy",
+          "moves": [
+            "Fake Out",
+            "Last Resort"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Cud Chew",
+          "moves": [
+            "Thunderbolt",
+            "Trick Room",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Life Orb",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Protect",
+            "Dazzling Gleam",
+            "Sparkling Aria"
+          ]
+        },
+        {
+          "slug": "camerupt",
+          "name": "Camerupt",
+          "item": "Cameruptite",
+          "ability": "Magma Armor",
+          "moves": [
+            "Eruption",
+            "Heat Wave",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "aromatisse",
+          "name": "Aromatisse",
+          "item": "Babiri Berry",
+          "ability": "Aroma Veil",
+          "moves": [
+            "Sunny Day",
+            "Moonblast",
+            "Trick Room",
+            "Helping Hand"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Øutcast's Warm Up Cup",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Yohaniee",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a539b48c0a6bab82fbbca0a-marti666",
+      "name": "Marti666 · London Corviknight VGC Weekly tour 5!",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "camerupt",
+          "name": "Camerupt",
+          "item": "Cameruptite",
+          "ability": "Solid Rock",
+          "moves": [
+            "Protect",
+            "Ancient Power",
+            "Earth Power",
+            "Heat Wave"
+          ]
+        },
+        {
+          "slug": "mimikyu",
+          "name": "Mimikyu",
+          "item": "Mental Herb",
+          "ability": "Disguise",
+          "moves": [
+            "Play Rough",
+            "Trick Room",
+            "Protect",
+            "Shadow Sneak"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Helping Hand",
+            "Trick Room",
+            "Thunderbolt",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "drampa",
+          "name": "Drampa",
+          "item": "Drampanite",
+          "ability": "Cloud Nine",
+          "moves": [
+            "Protect",
+            "Dragon Pulse",
+            "Earth Power",
+            "Hyper Voice"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Protect",
+            "Kowtow Cleave",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Protect",
+            "Trick Room",
+            "Rage Powder"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "London Corviknight VGC Weekly tour 5!",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Marti666",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a42222fc87cd9ff0a31292b-elctrolychee",
+      "name": "Brent Santiago · King of Champions III",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Protect",
+            "Psychic",
+            "Helping Hand",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Life Orb",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Darkest Lariat",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "camerupt",
+          "name": "Camerupt",
+          "item": "Cameruptite",
+          "ability": "Solid Rock",
+          "moves": [
+            "Protect",
+            "Heat Wave",
+            "Earth Power",
+            "Ancient Power"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Swords Dance",
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch"
+          ]
+        },
+        {
+          "slug": "vivillon",
+          "name": "Vivillon",
+          "item": "Focus Sash",
+          "ability": "Compound Eyes",
+          "moves": [
+            "Hurricane",
+            "Sleep Powder",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "abomasnow",
+          "name": "Abomasnow",
+          "item": "Abomasite",
+          "ability": "Snow Warning",
+          "moves": [
+            "Grass Knot",
+            "Blizzard",
+            "Ice Shard",
+            "Earth Power"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "King of Champions III",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Brent Santiago",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a467bb683fd320299bd6627-marti666",
+      "name": "Marti666 · Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "camerupt",
+          "name": "Camerupt",
+          "item": "Cameruptite",
+          "ability": "Solid Rock",
+          "moves": [
+            "Protect",
+            "Ancient Power",
+            "Earth Power",
+            "Heat Wave"
+          ]
+        },
+        {
+          "slug": "mimikyu",
+          "name": "Mimikyu",
+          "item": "Mental Herb",
+          "ability": "Disguise",
+          "moves": [
+            "Play Rough",
+            "Trick Room",
+            "Protect",
+            "Shadow Sneak"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Helping Hand",
+            "Trick Room",
+            "Thunderbolt",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "drampa",
+          "name": "Drampa",
+          "item": "Drampanite",
+          "ability": "Cloud Nine",
+          "moves": [
+            "Protect",
+            "Dragon Pulse",
+            "Earth Power",
+            "Hyper Voice"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Protect",
+            "Kowtow Cleave",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Protect",
+            "Trick Room",
+            "Rage Powder"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Hatterene Series W29/2026 - 6pm UTC - M-B",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Marti666",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a529f1ee09846f1eb4c14e3-marti666",
+      "name": "Marti666 · Chaos League Sunday Slam #104",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "camerupt",
+          "name": "Camerupt",
+          "item": "Cameruptite",
+          "ability": "Solid Rock",
+          "moves": [
+            "Protect",
+            "Ancient Power",
+            "Earth Power",
+            "Heat Wave"
+          ]
+        },
+        {
+          "slug": "mimikyu",
+          "name": "Mimikyu",
+          "item": "Mental Herb",
+          "ability": "Disguise",
+          "moves": [
+            "Play Rough",
+            "Trick Room",
+            "Protect",
+            "Shadow Sneak"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Helping Hand",
+            "Trick Room",
+            "Thunderbolt",
+            "Psychic"
+          ]
+        },
+        {
+          "slug": "drampa",
+          "name": "Drampa",
+          "item": "Drampanite",
+          "ability": "Cloud Nine",
+          "moves": [
+            "Protect",
+            "Dragon Pulse",
+            "Earth Power",
+            "Hyper Voice"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Protect",
+            "Kowtow Cleave",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Colbur Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Protect",
+            "Trick Room",
+            "Rage Powder"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 4,
+      "tournament": "Chaos League Sunday Slam #104",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Marti666",
+      "record": "3-1-0"
+    },
+    {
+      "id": "6a57380e6355385f44dd5183-dell",
+      "name": "Dell · Champions Tour LEPE M-B #9",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "abomasnow",
+          "name": "Abomasnow",
+          "item": "Abomasite",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Grass Knot",
+            "Earth Power",
+            "Ice Shard"
+          ]
+        },
+        {
+          "slug": "camerupt",
+          "name": "Camerupt",
+          "item": "Cameruptite",
+          "ability": "Solid Rock",
+          "moves": [
+            "Heat Wave",
+            "Earth Power",
+            "Ancient Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Life Orb",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "vivillon",
+          "name": "Vivillon",
+          "item": "Focus Sash",
+          "ability": "Compound Eyes",
+          "moves": [
+            "Sleep Powder",
+            "Pollen Puff",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Cud Chew",
+          "moves": [
+            "Twin Beam",
+            "Trick Room",
+            "Helping Hand",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "Champions Tour LEPE M-B #9",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Dell",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a4f486e063cb29d318e781e-stositime",
+      "name": "StosiTime · Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Life Orb",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Moonblast",
+            "Calm Mind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Choice Scarf",
+          "ability": "Intimidate",
+          "moves": [
+            "Final Gambit",
+            "Brave Bird",
+            "U-turn",
+            "Close Combat"
+          ]
+        },
+        {
+          "slug": "camerupt",
+          "name": "Camerupt",
+          "item": "Cameruptite",
+          "ability": "Solid Rock",
+          "moves": [
+            "Ancient Power",
+            "Heat Wave",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Charcoal",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Flare Blitz",
+            "Throat Chop"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Sunny Day",
+            "Psychic",
+            "Helping Hand",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "meowscarada",
+          "name": "Meowscarada",
+          "item": "Focus Sash",
+          "ability": "Overgrow",
+          "moves": [
+            "Flower Trick",
+            "Throat Chop",
+            "Low Kick",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 4,
+      "tournament": "Amyverse VGC Arena #1 ❤️ Pokémon Champions",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "StosiTime",
+      "record": "2-2-0"
+    },
+    {
+      "id": "6a519dad65724db9ded42bc9-iannsebastian",
+      "name": "IannSebastian · [PR] Mt. Moon Champions VGC Weekly #6 2026",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "dragalge",
+          "name": "Dragalge",
+          "item": "Life Orb",
+          "ability": "Adaptability",
+          "moves": [
+            "Dragon Pulse",
+            "Sludge Bomb",
+            "Muddy Water",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psyshock",
+            "Trick Room",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Leftovers",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Strength Sap",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "camerupt",
+          "name": "Camerupt",
+          "item": "Cameruptite",
+          "ability": "Solid Rock",
+          "moves": [
+            "Ancient Power",
+            "Protect",
+            "Heat Wave",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "mr-rime",
+          "name": "Mr. Rime",
+          "item": "Expert Belt",
+          "ability": "Screen Cleaner",
+          "moves": [
+            "Freeze-Dry",
+            "Psyshock",
+            "Fake Out",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Play Rough",
+            "Sucker Punch",
+            "Iron Head",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 2,
+      "tournament": "[PR] Mt. Moon Champions VGC Weekly #6 2026",
+      "placing": null,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "IannSebastian",
+      "record": "1-1-0"
+    }
+  ],
+  "movePool": [
+    "Amnesia",
+    "Ancient Power",
+    "Body Press",
+    "Body Slam",
+    "Bulldoze",
+    "Burning Jealousy",
+    "Charm",
+    "Curse",
+    "Dig",
+    "Double-Edge",
+    "Earth Power",
+    "Earthquake",
+    "Endeavor",
+    "Endure",
+    "Eruption",
+    "Facade",
+    "Fire Blast",
+    "Fire Spin",
+    "Fissure",
+    "Flame Charge",
+    "Flamethrower",
+    "Flare Blitz",
+    "Flash Cannon",
+    "Focus Energy",
+    "Giga Impact",
+    "Growth",
+    "Heat Crash",
+    "Heat Wave",
+    "Heavy Slam",
+    "Helping Hand",
+    "High Horsepower",
+    "Howl",
+    "Hyper Beam",
+    "Iron Head",
+    "Lash Out",
+    "Lava Plume",
+    "Mud Shot",
+    "Mud-Slap",
+    "Overheat",
+    "Protect",
+    "Rain Dance",
+    "Rest",
+    "Roar",
+    "Rock Slide",
+    "Rock Tomb",
+    "Round",
+    "Sandstorm",
+    "Scary Face",
+    "Scorching Sands",
+    "Self-Destruct",
+    "Sleep Talk",
+    "Smack Down",
+    "Snore",
+    "Solar Beam",
+    "Spit Up",
+    "Stealth Rock",
+    "Stockpile",
+    "Stomping Tantrum",
+    "Stone Edge",
+    "Substitute",
+    "Sunny Day",
+    "Swallow",
+    "Temper Flare",
+    "Trailblaze",
+    "Will-O-Wisp",
+    "Yawn",
+    "Zen Headbutt"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Camerupt",
+      "base_name": "Camerupt",
+      "saved_name": "Camerupt",
+      "types": "Fire/Ground",
+      "abilities": "Magma Armor|Solid Rock|Anger Point",
+      "image_path": "pokemon_champions_assets\\pokemon\\Camerupt.png",
+      "form": "",
+      "hp": 145,
+      "atk": 120,
+      "def": 90,
+      "spa": 125,
+      "spd": 95,
+      "spe": 60,
+      "total": 635
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "move",
+          "rank": 1,
+          "name": "Earth Power",
+          "percentage": "96.9%",
+          "percentage_value": 96.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Cameruptite",
+          "percentage": "96.3%",
+          "percentage_value": 96.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Quiet",
+          "percentage": "90.0%",
+          "percentage_value": 90,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Speed"
+        },
+        "stat_points": {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "55.5%",
+          "percentage_value": 55.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        "ability": {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "ability",
+          "rank": 1,
+          "name": "Solid Rock",
+          "percentage": "92.1%",
+          "percentage_value": 92.1,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Earth Power",
+          "Protect",
+          "Heat Wave",
+          "Ancient Power",
+          "Eruption",
+          "Flamethrower",
+          "Flash Cannon",
+          "Rock Slide",
+          "Solar Beam",
+          "Earthquake"
+        ],
+        "held_item": [
+          "Cameruptite",
+          "Life Orb",
+          "Charcoal",
+          "Quick Claw",
+          "Choice Scarf",
+          "Sitrus Berry",
+          "Focus Sash",
+          "Leftovers",
+          "Soft Sand",
+          "Passho Berry"
+        ],
+        "teammate": [
+          "Farigiraf",
+          "Kingambit",
+          "Sylveon",
+          "Vivillon Fancy Pattern",
+          "Sneasler",
+          "Incineroar",
+          "Kangaskhan",
+          "Torkoal",
+          "Sinistcha",
+          "Staraptor"
+        ],
+        "stat_alignment": [
+          "Quiet",
+          "Modest",
+          "Jolly",
+          "Sassy",
+          "Relaxed",
+          "Mild",
+          "Calm",
+          "Brave",
+          "Rash",
+          "Bold"
+        ],
+        "stat_points": [
+          "HP 32 / Atk 0 / Def 2 / SpA 32 / SpD 0 / Spe 0",
+          "HP 32 / Atk 0 / Def 0 / SpA 32 / SpD 2 / Spe 0",
+          "HP 30 / Atk 0 / Def 11 / SpA 25 / SpD 0 / Spe 0",
+          "HP 32 / Atk 0 / Def 1 / SpA 32 / SpD 1 / Spe 0",
+          "HP 29 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 5",
+          "HP 0 / Atk 0 / Def 2 / SpA 32 / SpD 32 / Spe 0",
+          "HP 2 / Atk 0 / Def 0 / SpA 32 / SpD 32 / Spe 0",
+          "HP 2 / Atk 0 / Def 32 / SpA 32 / SpD 0 / Spe 0"
+        ],
+        "ability": [
+          "Solid Rock",
+          "Magma Armor",
+          "Anger Point"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "move",
+          "rank": 1,
+          "name": "Earth Power",
+          "percentage": "96.9%",
+          "percentage_value": 96.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "move",
+          "rank": 2,
+          "name": "Protect",
+          "percentage": "89.5%",
+          "percentage_value": 89.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "move",
+          "rank": 3,
+          "name": "Heat Wave",
+          "percentage": "82.8%",
+          "percentage_value": 82.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "move",
+          "rank": 4,
+          "name": "Ancient Power",
+          "percentage": "71.2%",
+          "percentage_value": 71.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "move",
+          "rank": 5,
+          "name": "Eruption",
+          "percentage": "38.1%",
+          "percentage_value": 38.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "move",
+          "rank": 6,
+          "name": "Flamethrower",
+          "percentage": "3.8%",
+          "percentage_value": 3.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "move",
+          "rank": 7,
+          "name": "Flash Cannon",
+          "percentage": "3.5%",
+          "percentage_value": 3.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "move",
+          "rank": 8,
+          "name": "Rock Slide",
+          "percentage": "2.9%",
+          "percentage_value": 2.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "move",
+          "rank": 9,
+          "name": "Solar Beam",
+          "percentage": "2.6%",
+          "percentage_value": 2.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "move",
+          "rank": 10,
+          "name": "Earthquake",
+          "percentage": "1.4%",
+          "percentage_value": 1.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Cameruptite",
+          "percentage": "96.3%",
+          "percentage_value": 96.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Life Orb",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Charcoal",
+          "percentage": "0.6%",
+          "percentage_value": 0.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Quick Claw",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Choice Scarf",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Sitrus Berry",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Focus Sash",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Leftovers",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Soft Sand",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Passho Berry",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Sylveon",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Vivillon Fancy Pattern",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Sneasler",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Kangaskhan",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Torkoal",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Staraptor",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Quiet",
+          "percentage": "90.0%",
+          "percentage_value": 90,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Modest",
+          "percentage": "7.1%",
+          "percentage_value": 7.1,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Jolly",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Sassy",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "Sp. Def",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Relaxed",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Mild",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Calm",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Sp. Def",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Brave",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Attack",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Rash",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Bold",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Defense",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "55.5%",
+          "percentage_value": 55.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "13.2%",
+          "percentage_value": 13.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "5.5%",
+          "percentage_value": 5.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 30,
+          "attack_points": 0,
+          "defense_points": 11,
+          "sp_atk_points": 25,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "3.4%",
+          "percentage_value": 3.4,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 1,
+          "sp_atk_points": 32,
+          "sp_def_points": 1,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "2.7%",
+          "percentage_value": 2.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 29,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 5
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "1.0%",
+          "percentage_value": 1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 32,
+          "sp_def_points": 32,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "0.9%",
+          "percentage_value": 0.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 32,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "0.9%",
+          "percentage_value": 0.9,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 32,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "ability",
+          "rank": 1,
+          "name": "Solid Rock",
+          "percentage": "92.1%",
+          "percentage_value": 92.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "ability",
+          "rank": 2,
+          "name": "Magma Armor",
+          "percentage": "4.3%",
+          "percentage_value": 4.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Camerupt",
+          "column_position": 57,
+          "position": 57,
+          "category": "ability",
+          "rank": 3,
+          "name": "Anger Point",
+          "percentage": "3.6%",
+          "percentage_value": 3.6,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Camerupt.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Camerupt.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Camerupt.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Camerupt.csv"
+      }
+    ]
+  }
+}

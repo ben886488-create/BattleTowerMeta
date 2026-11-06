@@ -1,0 +1,5812 @@
+{
+  "pokemon": {
+    "slug": "toxapex",
+    "name": "Toxapex",
+    "baseName": "Toxapex",
+    "savedName": "Toxapex",
+    "form": "",
+    "types": [
+      "Poison",
+      "Water"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Toxapex.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/748.png",
+    "stats": {
+      "hp": 125,
+      "attack": 83,
+      "defense": 172,
+      "spAttack": 73,
+      "spDefense": 162,
+      "speed": 55,
+      "total": 670
+    },
+    "rank": 47,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Toxic",
+    "topItem": "Leftovers",
+    "topTeammate": "Charizard"
+  },
+  "moves": [
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "move",
+      "rank": 1,
+      "name": "Toxic",
+      "percentage": 0.976,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "move",
+        "rank": 1,
+        "name": "Toxic",
+        "percentage": "97.6%",
+        "percentage_value": 97.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "move",
+      "rank": 2,
+      "name": "Baneful Bunker",
+      "percentage": 0.957,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "move",
+        "rank": 2,
+        "name": "Baneful Bunker",
+        "percentage": "95.7%",
+        "percentage_value": 95.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "move",
+      "rank": 3,
+      "name": "Infestation",
+      "percentage": 0.952,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "move",
+        "rank": 3,
+        "name": "Infestation",
+        "percentage": "95.2%",
+        "percentage_value": 95.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "move",
+      "rank": 4,
+      "name": "Wide Guard",
+      "percentage": 0.848,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "move",
+        "rank": 4,
+        "name": "Wide Guard",
+        "percentage": "84.8%",
+        "percentage_value": 84.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "move",
+      "rank": 5,
+      "name": "Recover",
+      "percentage": 0.138,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "move",
+        "rank": 5,
+        "name": "Recover",
+        "percentage": "13.8%",
+        "percentage_value": 13.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "move",
+      "rank": 6,
+      "name": "Stockpile",
+      "percentage": 0.018,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "move",
+        "rank": 6,
+        "name": "Stockpile",
+        "percentage": "1.8%",
+        "percentage_value": 1.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "move",
+      "rank": 7,
+      "name": "Haze",
+      "percentage": 0.015,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "move",
+        "rank": 7,
+        "name": "Haze",
+        "percentage": "1.5%",
+        "percentage_value": 1.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "move",
+      "rank": 8,
+      "name": "Liquidation",
+      "percentage": 1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "move",
+        "rank": 8,
+        "name": "Liquidation",
+        "percentage": "1.0%",
+        "percentage_value": 1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "move",
+      "rank": 9,
+      "name": "Protect",
+      "percentage": 0.9,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "move",
+        "rank": 9,
+        "name": "Protect",
+        "percentage": "0.9%",
+        "percentage_value": 0.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "move",
+      "rank": 10,
+      "name": "Toxic Spikes",
+      "percentage": 0.9,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "move",
+        "rank": 10,
+        "name": "Toxic Spikes",
+        "percentage": "0.9%",
+        "percentage_value": 0.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Leftovers",
+      "percentage": 0.942,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Leftovers",
+        "percentage": "94.2%",
+        "percentage_value": 94.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Sitrus Berry",
+      "percentage": 0.032,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Sitrus Berry",
+        "percentage": "3.2%",
+        "percentage_value": 3.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Bright Powder",
+      "percentage": 0.5,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Bright Powder",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Quick Claw",
+      "percentage": 0.4,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Quick Claw",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Shuca Berry",
+      "percentage": 0.4,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Shuca Berry",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Mental Herb",
+      "percentage": 0.3,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Mental Herb",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Payapa Berry",
+      "percentage": 0.1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Payapa Berry",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Lum Berry",
+      "percentage": 0.1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Lum Berry",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Poison Barb",
+      "percentage": 0.1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Poison Barb",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Wide Lens",
+      "percentage": 0.1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Wide Lens",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "ability",
+      "rank": 1,
+      "name": "Regenerator",
+      "percentage": 0.962,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "ability",
+        "rank": 1,
+        "name": "Regenerator",
+        "percentage": "96.2%",
+        "percentage_value": 96.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "ability",
+      "rank": 2,
+      "name": "Merciless",
+      "percentage": 0.026,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "ability",
+        "rank": 2,
+        "name": "Merciless",
+        "percentage": "2.6%",
+        "percentage_value": 2.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "ability",
+      "rank": 3,
+      "name": "Limber",
+      "percentage": 0.012,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "ability",
+        "rank": 3,
+        "name": "Limber",
+        "percentage": "1.2%",
+        "percentage_value": 1.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Charizard",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Charizard",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Venusaur",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Venusaur",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Annihilape",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Annihilape",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Grimmsnarl",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Grimmsnarl",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Hydreigon",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Hydreigon",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Metagross",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Metagross",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Mamoswine",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Mamoswine",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Bold",
+      "percentage": 0.588,
+      "statUp": "Defense",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Bold",
+        "percentage": "58.8%",
+        "percentage_value": 58.8,
+        "stat_up": "Defense",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Impish",
+      "percentage": 0.164,
+      "statUp": "Defense",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Impish",
+        "percentage": "16.4%",
+        "percentage_value": 16.4,
+        "stat_up": "Defense",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Calm",
+      "percentage": 0.085,
+      "statUp": "Sp. Def",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Calm",
+        "percentage": "8.5%",
+        "percentage_value": 8.5,
+        "stat_up": "Sp. Def",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Relaxed",
+      "percentage": 0.063,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Relaxed",
+        "percentage": "6.3%",
+        "percentage_value": 6.3,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Sassy",
+      "percentage": 0.039,
+      "statUp": "Sp. Def",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Sassy",
+        "percentage": "3.9%",
+        "percentage_value": 3.9,
+        "stat_up": "Sp. Def",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Careful",
+      "percentage": 0.029,
+      "statUp": "Sp. Def",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Careful",
+        "percentage": "2.9%",
+        "percentage_value": 2.9,
+        "stat_up": "Sp. Def",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Modest",
+      "percentage": 0.4,
+      "statUp": "Sp. Atk",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Modest",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Quiet",
+      "percentage": 0.4,
+      "statUp": "Sp. Atk",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Quiet",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Adamant",
+      "percentage": 0.3,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Adamant",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Brave",
+      "percentage": 0.3,
+      "statUp": "Attack",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Brave",
+        "percentage": "0.3%",
+        "percentage_value": 0.3,
+        "stat_up": "Attack",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.322,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "32.2%",
+        "percentage_value": 32.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 18,
+        "sp_atk_points": 0,
+        "sp_def_points": 16,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.15,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "15.0%",
+        "percentage_value": 15,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 15,
+        "sp_atk_points": 0,
+        "sp_def_points": 19,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.123,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "12.3%",
+        "percentage_value": 12.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 21,
+        "sp_atk_points": 0,
+        "sp_def_points": 13,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.057,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "5.7%",
+        "percentage_value": 5.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 32,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.044,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "4.4%",
+        "percentage_value": 4.4,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 32,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.023,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "2.3%",
+        "percentage_value": 2.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 8,
+        "sp_atk_points": 0,
+        "sp_def_points": 26,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.014,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "1.4%",
+        "percentage_value": 1.4,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 20,
+        "sp_atk_points": 0,
+        "sp_def_points": 14,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Toxapex",
+      "position": 47,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.011,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Toxapex",
+        "column_position": 47,
+        "position": 47,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "1.1%",
+        "percentage_value": 1.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 28,
+        "sp_atk_points": 0,
+        "sp_def_points": 6,
+        "speed_points": 0
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a5055f965724db9ded41c56-natsukivgc",
+      "name": "NatsukiVGC · Weekly Qualifier for RookideeVGC Grand Tourney",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Claw",
+            "Extreme Speed",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Weekly Qualifier for RookideeVGC Grand Tourney",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "NatsukiVGC",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a4dfee8063cb29d318e6805-florens44",
+      "name": "Florens44 · VGC UmbreNews 14.07.2026 #23 - Champion",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Focus Sash",
+          "ability": "Oblivious",
+          "moves": [
+            "Ice Shard",
+            "High Horsepower",
+            "Rock Tomb",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Dark Pulse",
+            "Draco Meteor",
+            "Snarl",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Solar Beam",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "VGC UmbreNews 14.07.2026 #23 - Champion",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Florens44",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a4dbb9665724db9ded3ff83-uroboro17",
+      "name": "Uroboro17 · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Leaf Storm",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Protect",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Snarl",
+            "Dark Pulse",
+            "Draco Meteor",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "aegislash",
+          "name": "Aegislash",
+          "item": "Spell Tag",
+          "ability": "Stance Change",
+          "moves": [
+            "Shadow Sneak",
+            "Close Combat",
+            "Iron Head",
+            "King's Shield"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Uroboro17",
+      "record": "3-2-0"
+    },
+    {
+      "id": "6a3200c5e334c3c9befd8430-desu",
+      "name": "Desu · The Grand Champions Festival Encore",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Dragon Claw",
+            "Stomping Tantrum"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Solar Beam",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Protect",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Close Combat",
+            "Phantom Force",
+            "Rock Tomb",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8947368421052632,
+      "sampleCount": 19,
+      "tournament": "The Grand Champions Festival Encore",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Desu",
+      "record": "17-2-0"
+    },
+    {
+      "id": "6a3200c5e334c3c9befd8430-padovgc",
+      "name": "PadoVGC · The Grand Champions Festival Encore",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Solar Beam",
+            "Weather Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Sleep Powder",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Rage Fist",
+            "Close Combat",
+            "Phantom Force",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8888888888888888,
+      "sampleCount": 18,
+      "tournament": "The Grand Champions Festival Encore",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "PadoVGC",
+      "record": "16-2-0"
+    },
+    {
+      "id": "6a3200c5e334c3c9befd8430-kangourou007",
+      "name": "Kangourou007 · The Grand Champions Festival Encore",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Solar Beam",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Stomping Tantrum"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Weather Ball",
+            "Heat Wave",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Toxic",
+            "Infestation",
+            "Baneful Bunker",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Phantom Force",
+            "Close Combat",
+            "Rock Tomb",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8125,
+      "sampleCount": 16,
+      "tournament": "The Grand Champions Festival Encore",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Kangourou007",
+      "record": "13-3-0"
+    },
+    {
+      "id": "6a3200c5e334c3c9befd8430-whimsicott",
+      "name": "Whimsicott · The Grand Champions Festival Encore",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Claw",
+            "Extreme Speed",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Poison Jab",
+            "Close Combat",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Flare Blitz",
+            "Close Combat",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8125,
+      "sampleCount": 16,
+      "tournament": "The Grand Champions Festival Encore",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Whimsicott",
+      "record": "13-3-0"
+    },
+    {
+      "id": "6a53c2d1e09846f1eb4c161b-florens44",
+      "name": "Florens44 · The Drywall Series #11",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Focus Sash",
+          "ability": "Oblivious",
+          "moves": [
+            "Ice Shard",
+            "High Horsepower",
+            "Rock Tomb",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Dark Pulse",
+            "Draco Meteor",
+            "Snarl",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Merciless",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Solar Beam",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7142857142857143,
+      "sampleCount": 7,
+      "tournament": "The Drywall Series #11",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Florens44",
+      "record": "5-2-0"
+    },
+    {
+      "id": "6a53c2d1e09846f1eb4c161b-airpod",
+      "name": "Airpod · The Drywall Series #11",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Solar Beam",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Close Combat",
+            "Phantom Force",
+            "Rock Tomb",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Stomping Tantrum"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Toxic",
+            "Infestation",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7142857142857143,
+      "sampleCount": 7,
+      "tournament": "The Drywall Series #11",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Airpod",
+      "record": "5-2-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-comox",
+      "name": "comox - Dark/Venenoso · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Protect",
+            "Giga Drain",
+            "Toxic",
+            "Leech Seed"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Protect",
+            "Fake Out",
+            "Flare Blitz",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Protect",
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "weavile",
+          "name": "Weavile",
+          "item": "Focus Sash",
+          "ability": "Pickpocket",
+          "moves": [
+            "Protect",
+            "Fake Out",
+            "Triple Axel",
+            "Low Kick"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Baneful Bunker",
+            "Wide Guard",
+            "Toxic",
+            "Infestation"
+          ]
+        },
+        {
+          "slug": "gengar",
+          "name": "Gengar",
+          "item": "Gengarite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Protect",
+            "Shadow Ball",
+            "Perish Song",
+            "Disable"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "comox - Dark/Venenoso",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a51f42365724db9ded43093-lellocartello",
+      "name": "LelloCartello · Tenki's Cart Weekly #109 - Reg MB",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Dragon Claw",
+            "Stomping Tantrum"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Solar Beam",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Protect",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Close Combat",
+            "Phantom Force",
+            "Rock Tomb",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7,
+      "sampleCount": 10,
+      "tournament": "Tenki's Cart Weekly #109 - Reg MB",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "LelloCartello",
+      "record": "7-3-0"
+    },
+    {
+      "id": "6a51f42365724db9ded43093-minhduc",
+      "name": "MinhDuc · Tenki's Cart Weekly #109 - Reg MB",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Solar Power",
+          "moves": [
+            "Heat Wave",
+            "Solar Beam",
+            "Weather Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Stomping Tantrum",
+            "Dragon Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Toxic",
+            "Infestation",
+            "Baneful Bunker",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "flapple",
+          "name": "Flapple",
+          "item": "Choice Scarf",
+          "ability": "Hustle",
+          "moves": [
+            "Grav Apple",
+            "Outrage",
+            "Dragon Rush",
+            "U-turn"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Shuca Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Darkest Lariat",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Thunderbolt",
+            "Trick Room",
+            "Helping Hand"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "Tenki's Cart Weekly #109 - Reg MB",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "MinhDuc",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a51f42365724db9ded43093-thomasvgc",
+      "name": "ThomasVgc · Tenki's Cart Weekly #109 - Reg MB",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Solar Power",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Draco Meteor",
+            "Snarl",
+            "Earth Power",
+            "Dark Pulse"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Focus Sash",
+          "ability": "Oblivious",
+          "moves": [
+            "Rock Slide",
+            "Ice Shard",
+            "High Horsepower",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Leaf Storm",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "Tenki's Cart Weekly #109 - Reg MB",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "ThomasVgc",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a51f42365724db9ded43093-freemangordon",
+      "name": "FreemanGordon · Tenki's Cart Weekly #109 - Reg MB",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Claw",
+            "Extreme Speed",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "Tenki's Cart Weekly #109 - Reg MB",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "FreemanGordon",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a51f42365724db9ded43093-tantomisso",
+      "name": "Tantomisso · Tenki's Cart Weekly #109 - Reg MB",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Dragon Claw",
+            "Stomping Tantrum"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Leaf Storm",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Protect",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Haban Berry",
+          "ability": "Levitate",
+          "moves": [
+            "Snarl",
+            "Dark Pulse",
+            "Draco Meteor",
+            "Tailwind"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "Tenki's Cart Weekly #109 - Reg MB",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Tantomisso",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a32e8b12d97f3b0c26189cc-daikyh",
+      "name": "daikyh · Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Leaf Storm",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Focus Sash",
+          "ability": "Oblivious",
+          "moves": [
+            "High Horsepower",
+            "Rock Tomb",
+            "Ice Shard",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Stomping Tantrum"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Toxic",
+            "Infestation",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 9,
+      "tournament": "Talon's FIGHT CLUB #93 POKEMON CHAMPIONS",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "daikyh",
+      "record": "6-3-0"
+    },
+    {
+      "id": "6a420fbf83fd320299bd3c3c-systemsolo",
+      "name": "systemsolo · Sketch Academy Sunday Regulation M-B Tournament",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Mental Herb",
+          "ability": "Prankster",
+          "moves": [
+            "Protect",
+            "Moonblast",
+            "Tailwind",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "eternal-flower-floette",
+          "name": "Eternal Flower Floette",
+          "item": "Floettite",
+          "ability": "Flower Veil",
+          "moves": [
+            "Protect",
+            "Moonblast",
+            "Dazzling Gleam",
+            "Calm Mind"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Baneful Bunker",
+            "Infestation",
+            "Toxic",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Parting Shot",
+            "Flare Blitz",
+            "Will-O-Wisp",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Protect",
+            "Scale Shot",
+            "Earthquake",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Protect",
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "Sketch Academy Sunday Regulation M-B Tournament",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "systemsolo",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a33cff8e334c3c9befd9250-yash321",
+      "name": "Yash321 · Rising Stars - S1 (Double Battle)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Bullet Punch",
+            "Iron Head",
+            "Protect",
+            "Psychic Fangs"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Brave Bird",
+            "Close Combat",
+            "Protect",
+            "Roost"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Fake Out",
+            "Light Screen",
+            "Reflect",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Baneful Bunker",
+            "Toxic",
+            "Infestation",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "milotic",
+          "name": "Milotic",
+          "item": "Sitrus Berry",
+          "ability": "Competitive",
+          "moves": [
+            "Protect",
+            "Scald",
+            "Icy Wind",
+            "Life Dew"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.42857142857142855,
+      "sampleCount": 7,
+      "tournament": "Rising Stars - S1 (Double Battle)",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Yash321",
+      "record": "3-4-0"
+    },
+    {
+      "id": "6a33cff8e334c3c9befd9250-suvam00619",
+      "name": "Suvam00619 · Rising Stars - S1 (Double Battle)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Earth Power",
+            "Sludge Bomb",
+            "Giga Drain",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Leftovers",
+          "ability": "Hospitality",
+          "moves": [
+            "Protect",
+            "Matcha Gotcha",
+            "Life Dew",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "wash-rotom",
+          "name": "Wash Rotom",
+          "item": "White Herb",
+          "ability": "Levitate",
+          "moves": [
+            "Hydro Pump",
+            "Dark Pulse",
+            "Shadow Ball",
+            "Volt Switch"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Sitrus Berry",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Baneful Bunker",
+            "Wide Guard",
+            "Toxic"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Chople Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Focus Sash",
+          "ability": "Corrosion",
+          "moves": [
+            "Spiky Shield",
+            "Power Gem",
+            "Mortal Spin",
+            "Earth Power"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.42857142857142855,
+      "sampleCount": 7,
+      "tournament": "Rising Stars - S1 (Double Battle)",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Suvam00619",
+      "record": "3-4-0"
+    },
+    {
+      "id": "6a4685c383fd320299bd6675-dade",
+      "name": "Dade · Pokémon Champions #1 - (Floette Eternal Flower)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Toxic",
+            "Infestation",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Dragoninite",
+          "ability": "Multiscale",
+          "moves": [
+            "Dragon Pulse",
+            "Heat Wave",
+            "Roost",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Sitrus Berry",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Foul Play",
+            "Light Screen",
+            "Reflect",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Giga Drain",
+            "Sludge Bomb",
+            "Leech Seed",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sylveon",
+          "name": "Sylveon",
+          "item": "Fairy Feather",
+          "ability": "Pixilate",
+          "moves": [
+            "Hyper Voice",
+            "Hyper Beam",
+            "Quick Attack",
+            "Detect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.75,
+      "sampleCount": 12,
+      "tournament": "Pokémon Champions #1 - (Floette Eternal Flower)",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Dade",
+      "record": "9-3-0"
+    },
+    {
+      "id": "6a4fcb1f65724db9ded413ac-hbeeeee",
+      "name": "HBeeeee · Pep_uni Pokémon Champions #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Earth Power",
+            "Dark Pulse",
+            "Draco Meteor",
+            "Snarl"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Sitrus Berry",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Dragon Claw",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Hammer Arm",
+            "Bullet Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Protect",
+            "Heat Wave",
+            "Solar Beam",
+            "Weather Ball"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Roseli Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Fake Out",
+            "Foul Play",
+            "Reflect",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Baneful Bunker",
+            "Wide Guard"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6363636363636364,
+      "sampleCount": 11,
+      "tournament": "Pep_uni Pokémon Champions #2",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "HBeeeee",
+      "record": "7-3-1"
+    },
+    {
+      "id": "6a4fcb1f65724db9ded413ac-uroboro17",
+      "name": "Uroboro17 · Pep_uni Pokémon Champions #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Leaf Storm",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Protect",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Snarl",
+            "Dark Pulse",
+            "Draco Meteor",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "aegislash",
+          "name": "Aegislash",
+          "item": "Spell Tag",
+          "ability": "Stance Change",
+          "moves": [
+            "Shadow Sneak",
+            "Close Combat",
+            "Iron Head",
+            "King's Shield"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6,
+      "sampleCount": 10,
+      "tournament": "Pep_uni Pokémon Champions #2",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Uroboro17",
+      "record": "6-3-1"
+    },
+    {
+      "id": "6a55808a232a1a55ee10be16-juliiihd",
+      "name": "JuliiiHD · 𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Throat Chop",
+            "Flare Blitz",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Protect",
+            "Sludge Bomb",
+            "Solar Beam",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Protect",
+            "Close Combat",
+            "Phantom Force",
+            "Rock Tomb"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Protect",
+            "Weather Ball",
+            "Heat Wave",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Baneful Bunker",
+            "Infestation",
+            "Toxic",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Rock Slide",
+            "Earthquake"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8333333333333334,
+      "sampleCount": 6,
+      "tournament": "𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "JuliiiHD",
+      "record": "5-1-0"
+    },
+    {
+      "id": "6a55808a232a1a55ee10be16-jvvieree",
+      "name": "jvvieree · 𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Protect",
+            "Solar Beam"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Protect",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Toxic",
+            "Infestation",
+            "Baneful Bunker",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Dark Pulse",
+            "Draco Meteor",
+            "Snarl",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Metagrossite",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Protect",
+            "Ice Punch"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8333333333333334,
+      "sampleCount": 6,
+      "tournament": "𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "jvvieree",
+      "record": "5-1-0"
+    },
+    {
+      "id": "6a55808a232a1a55ee10be16-pollitoa7",
+      "name": "PollitoA7 · 𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Solar Beam",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Throat Chop",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Close Combat",
+            "Phantom Force",
+            "Rock Tomb",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Baneful Bunker",
+            "Wide Guard",
+            "Toxic"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "PollitoA7",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a291b172d97f3b0c2612db9-boyhachiiz",
+      "name": "BoyHachiiz · Mystery Community Tournament#1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Leaf Storm",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Focus Sash",
+          "ability": "Oblivious",
+          "moves": [
+            "High Horsepower",
+            "Rock Tomb",
+            "Ice Shard",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Stomping Tantrum"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Toxic",
+            "Infestation",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7142857142857143,
+      "sampleCount": 7,
+      "tournament": "Mystery Community Tournament#1",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "BoyHachiiz",
+      "record": "5-2-0"
+    },
+    {
+      "id": "6a291b172d97f3b0c2612db9-surapitch",
+      "name": "surapitch · Mystery Community Tournament#1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Toxic",
+            "Infestation",
+            "Baneful Bunker",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Parting Shot",
+            "Throat Chop"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Focus Sash",
+          "ability": "Oblivious",
+          "moves": [
+            "Ice Shard",
+            "High Horsepower",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Fake Out",
+            "Dire Claw",
+            "Close Combat",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sharpedo",
+          "name": "Sharpedo",
+          "item": "Sharpedonite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Crunch",
+            "Waterfall",
+            "Psychic Fangs",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Mystery Community Tournament#1",
+      "placing": 12,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "surapitch",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a42222fc87cd9ff0a31292b-lojica1",
+      "name": "Louie John Valencia · King of Champions III",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Solar Beam",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Stomping Tantrum"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Rage Fist",
+            "Close Combat",
+            "Phantom Force",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Throat Chop",
+            "Flare Blitz",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Baneful Bunker",
+            "Wide Guard"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 1,
+      "sampleCount": 9,
+      "tournament": "King of Champions III",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Louie John Valencia",
+      "record": "9-0-0"
+    },
+    {
+      "id": "6a42222fc87cd9ff0a31292b-chocopau",
+      "name": "Ryan Pareja · King of Champions III",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Dragon Claw",
+            "Stomping Tantrum"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Solar Beam",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Protect",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Roseli Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Fake Out",
+            "Spirit Break",
+            "Light Screen",
+            "Parting Shot"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "King of Champions III",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Ryan Pareja",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a54c9d3232a1a55ee10b346-antzim",
+      "name": "AntZim · Intimidators Champions Challenge #27 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Helping Hand",
+            "Weather Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Phantom Force",
+            "Close Combat",
+            "Rock Tomb",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Stomping Tantrum",
+            "Rock Slide",
+            "Dragon Claw"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Earth Power",
+            "Sludge Bomb",
+            "Solar Beam",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Intimidators Champions Challenge #27 REG M-B",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "AntZim",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a54c9156355385f44dd38cd-gostzin",
+      "name": "NMR | Gostzin I · Intimidators Champions Challenge #26 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Protect",
+            "Solar Beam",
+            "Weather Ball"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker",
+            "Infestation"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Flare Blitz",
+            "Throat Chop"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Foul Play",
+            "Reflect",
+            "Light Screen",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Focus Sash",
+          "ability": "Oblivious",
+          "moves": [
+            "Ice Shard",
+            "Icicle Crash",
+            "Protect",
+            "Earthquake"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sleep Powder",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "Intimidators Champions Challenge #26 REG M-B",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "NMR | Gostzin I",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a54c9156355385f44dd38cd-lucardrgs",
+      "name": "lucardrgs · Intimidators Champions Challenge #26 REG M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Roost",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "runerigus",
+          "name": "Runerigus",
+          "item": "Sitrus Berry",
+          "ability": "Wandering Spirit",
+          "moves": [
+            "Earthquake",
+            "Poltergeist",
+            "Protect",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Draco Meteor",
+            "Dark Pulse",
+            "Earth Power",
+            "Snarl"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Toxic",
+            "Infestation",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Reflect",
+            "Light Screen",
+            "Parting Shot",
+            "Scary Face"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "Intimidators Champions Challenge #26 REG M-B",
+      "placing": 13,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "lucardrgs",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a5497ab232a1a55ee10b2b8-heroictitan",
+      "name": "HeroicTitan · HeroicTitan’s VGC Battle Arena",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Weather Ball",
+            "Heat Wave",
+            "Solar Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Energy Ball",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Focus Sash",
+          "ability": "Oblivious",
+          "moves": [
+            "Icicle Crash",
+            "Ice Shard",
+            "High Horsepower",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "White Herb",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Darkest Lariat",
+            "Close Combat",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Twin Beam",
+            "Thunderbolt",
+            "Helping Hand",
+            "Trick Room"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.9,
+      "sampleCount": 10,
+      "tournament": "HeroicTitan’s VGC Battle Arena",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "HeroicTitan",
+      "record": "9-1-0"
+    },
+    {
+      "id": "6a4220ea83fd320299bd3c65-dzhupito",
+      "name": "Dzhupito · Champions Collective #14",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Focus Sash",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Earth Power",
+            "Sleep Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Heat Wave",
+            "Dark Pulse",
+            "Draco Meteor",
+            "Snarl"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7272727272727273,
+      "sampleCount": 11,
+      "tournament": "Champions Collective #14",
+      "placing": 2,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Dzhupito",
+      "record": "8-3-0"
+    },
+    {
+      "id": "6a4220ea83fd320299bd3c65-uroboro17",
+      "name": "Uroboro17 · Champions Collective #14",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Leaf Storm",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Protect",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Snarl",
+            "Dark Pulse",
+            "Draco Meteor",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "aegislash",
+          "name": "Aegislash",
+          "item": "Spell Tag",
+          "ability": "Stance Change",
+          "moves": [
+            "Shadow Sneak",
+            "Close Combat",
+            "Iron Head",
+            "King's Shield"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Champions Collective #14",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Uroboro17",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a4bc2dd063cb29d318e4b78-mrsidi",
+      "name": "Sidi Ismael Haidala González · Chacho Cup #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Solar Beam",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Dark Pulse",
+            "Draco Meteor",
+            "Snarl",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Throat Chop",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "mamoswine",
+          "name": "Mamoswine",
+          "item": "Focus Sash",
+          "ability": "Oblivious",
+          "moves": [
+            "High Horsepower",
+            "Ice Shard",
+            "Rock Tomb",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8333333333333334,
+      "sampleCount": 6,
+      "tournament": "Chacho Cup #2",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Sidi Ismael Haidala González",
+      "record": "5-1-0"
+    },
+    {
+      "id": "6a39cb01c87cd9ff0a30d791-squantahn",
+      "name": "Squantahn · Cashed Out Gaming Season 1 M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "aggron",
+          "name": "Aggron",
+          "item": "Aggronite",
+          "ability": "Heavy Metal",
+          "moves": [
+            "Body Press",
+            "Heavy Slam",
+            "Iron Defense",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Focus Sash",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Life Dew"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Baneful Bunker",
+            "Infestation",
+            "Toxic",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Chople Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Darkest Lariat",
+            "Roar"
+          ]
+        },
+        {
+          "slug": "staraptor",
+          "name": "Staraptor",
+          "item": "Choice Scarf",
+          "ability": "Intimidate",
+          "moves": [
+            "Brave Bird",
+            "Close Combat",
+            "U-turn",
+            "Final Gambit"
+          ]
+        },
+        {
+          "slug": "swampert",
+          "name": "Swampert",
+          "item": "Life Orb",
+          "ability": "Damp",
+          "moves": [
+            "Wave Crash",
+            "Ice Punch",
+            "Protect",
+            "High Horsepower"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "Cashed Out Gaming Season 1 M-B",
+      "placing": 11,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Squantahn",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a392e4ac87cd9ff0a30d0b0-viophoenixvgc",
+      "name": "VioPhoenixVGC · Alpensee Tour (Reg M-B) #66",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Claw",
+            "Extreme Speed",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Iron Head",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8333333333333334,
+      "sampleCount": 12,
+      "tournament": "Alpensee Tour (Reg M-B) #66",
+      "placing": 1,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "VioPhoenixVGC",
+      "record": "10-2-0"
+    },
+    {
+      "id": "6a392e4ac87cd9ff0a30d0b0-trevyah",
+      "name": "trevYah · Alpensee Tour (Reg M-B) #66",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "froslass",
+          "name": "Froslass",
+          "item": "Froslassite",
+          "ability": "Cursed Body",
+          "moves": [
+            "Blizzard",
+            "Shadow Ball",
+            "Aurora Veil",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "dragonite",
+          "name": "Dragonite",
+          "item": "Life Orb",
+          "ability": "Inner Focus",
+          "moves": [
+            "Dragon Claw",
+            "Extreme Speed",
+            "Low Kick",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Toxic",
+            "Wide Guard",
+            "Baneful Bunker"
+          ]
+        },
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "Focus Sash",
+          "ability": "Poison Touch",
+          "moves": [
+            "Close Combat",
+            "Poison Jab",
+            "Fake Out",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Black Glasses",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Swords Dance",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "blaziken",
+          "name": "Blaziken",
+          "item": "Blazikenite",
+          "ability": "Speed Boost",
+          "moves": [
+            "Close Combat",
+            "Flare Blitz",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7272727272727273,
+      "sampleCount": 11,
+      "tournament": "Alpensee Tour (Reg M-B) #66",
+      "placing": 4,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "trevYah",
+      "record": "8-3-0"
+    },
+    {
+      "id": "6a545f013ee4505de4ad5e7e-daikyh",
+      "name": "Daiky · 🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Solar Power",
+          "moves": [
+            "Weather Ball",
+            "Heat Wave",
+            "Protect",
+            "Helping Hand"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Rock Slide",
+            "Earthquake",
+            "Stomping Tantrum",
+            "Dragon Claw"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Parting Shot",
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Rage Fist",
+            "Protect",
+            "Close Combat",
+            "Phantom Force"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Baneful Bunker",
+            "Infestation",
+            "Toxic",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Solar Beam",
+            "Protect",
+            "Sludge Bomb",
+            "Earth Power"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "🐦‍🔥 Champion Of Galar #3 • Pokémon Champion 🇧🇷",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Daiky",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a46629683fd320299bd6543-asteriio",
+      "name": "Asteriio · 🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Weather Ball",
+            "Heat Wave",
+            "Solar Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Focus Sash",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sleep Powder",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "hydreigon",
+          "name": "Hydreigon",
+          "item": "Choice Scarf",
+          "ability": "Levitate",
+          "moves": [
+            "Draco Meteor",
+            "Dark Pulse",
+            "Snarl",
+            "Earth Power"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Toxic",
+            "Infestation",
+            "Baneful Bunker",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Throat Chop",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Earthquake",
+            "Rock Slide",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 10,
+      "tournament": "🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Asteriio",
+      "record": "8-2-0"
+    },
+    {
+      "id": "6a46629683fd320299bd6543-crisvgc",
+      "name": "CrisVGC · 🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Stomping Tantrum",
+            "Rock Slide"
+          ]
+        },
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Solar Beam",
+            "Sludge Bomb",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Parting Shot",
+            "Throat Chop",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Heat Wave",
+            "Weather Ball",
+            "Helping Hand",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "annihilape",
+          "name": "Annihilape",
+          "item": "Focus Sash",
+          "ability": "Defiant",
+          "moves": [
+            "Close Combat",
+            "Phantom Force",
+            "Rock Tomb",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "toxapex",
+          "name": "Toxapex",
+          "item": "Leftovers",
+          "ability": "Regenerator",
+          "moves": [
+            "Infestation",
+            "Baneful Bunker",
+            "Wide Guard",
+            "Toxic"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 10,
+      "tournament": "🍋Sitrus-Series🍋|Champions-MB|#67| $50 for 1st",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "CrisVGC",
+      "record": "8-2-0"
+    }
+  ],
+  "movePool": [
+    "Acid Spray",
+    "Baneful Bunker",
+    "Bite",
+    "Blizzard",
+    "Body Slam",
+    "Chilling Water",
+    "Cross Poison",
+    "Endure",
+    "Facade",
+    "Giga Impact",
+    "Gunk Shot",
+    "Haze",
+    "Hex",
+    "Hydro Pump",
+    "Hyper Beam",
+    "Ice Beam",
+    "Ice Spinner",
+    "Icy Wind",
+    "Infestation",
+    "Iron Defense",
+    "Light Screen",
+    "Liquidation",
+    "Lunge",
+    "Mud Shot",
+    "Muddy Water",
+    "Pain Split",
+    "Payback",
+    "Pin Missile",
+    "Poison Jab",
+    "Pounce",
+    "Protect",
+    "Rain Dance",
+    "Recover",
+    "Rest",
+    "Round",
+    "Scary Face",
+    "Sleep Talk",
+    "Sludge Bomb",
+    "Sludge Wave",
+    "Smack Down",
+    "Snore",
+    "Spit Up",
+    "Stockpile",
+    "Substitute",
+    "Surf",
+    "Swallow",
+    "Tera Blast",
+    "Toxic",
+    "Toxic Spikes",
+    "Venoshock",
+    "Water Pulse",
+    "Wide Guard"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Toxapex",
+      "base_name": "Toxapex",
+      "saved_name": "Toxapex",
+      "types": "Poison/Water",
+      "abilities": "Merciless|Limber|Regenerator",
+      "image_path": "pokemon_champions_assets\\pokemon\\Toxapex.png",
+      "form": "",
+      "hp": 125,
+      "atk": 83,
+      "def": 172,
+      "spa": 73,
+      "spd": 162,
+      "spe": 55,
+      "total": 670
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "move",
+          "rank": 1,
+          "name": "Toxic",
+          "percentage": "97.6%",
+          "percentage_value": 97.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Leftovers",
+          "percentage": "94.2%",
+          "percentage_value": 94.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Charizard",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Bold",
+          "percentage": "58.8%",
+          "percentage_value": 58.8,
+          "stat_up": "Defense",
+          "stat_down": "Attack"
+        },
+        "stat_points": {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "32.2%",
+          "percentage_value": 32.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 18,
+          "sp_atk_points": 0,
+          "sp_def_points": 16,
+          "speed_points": 0
+        },
+        "ability": {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "ability",
+          "rank": 1,
+          "name": "Regenerator",
+          "percentage": "96.2%",
+          "percentage_value": 96.2,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Toxic",
+          "Baneful Bunker",
+          "Infestation",
+          "Wide Guard",
+          "Recover",
+          "Stockpile",
+          "Haze",
+          "Liquidation",
+          "Protect",
+          "Toxic Spikes"
+        ],
+        "held_item": [
+          "Leftovers",
+          "Sitrus Berry",
+          "Bright Powder",
+          "Quick Claw",
+          "Shuca Berry",
+          "Mental Herb",
+          "Payapa Berry",
+          "Lum Berry",
+          "Poison Barb",
+          "Wide Lens"
+        ],
+        "teammate": [
+          "Charizard",
+          "Garchomp",
+          "Incineroar",
+          "Venusaur",
+          "Annihilape",
+          "Grimmsnarl",
+          "Hydreigon",
+          "Metagross",
+          "Mamoswine",
+          "Sinistcha"
+        ],
+        "stat_alignment": [
+          "Bold",
+          "Impish",
+          "Calm",
+          "Relaxed",
+          "Sassy",
+          "Careful",
+          "Modest",
+          "Quiet",
+          "Adamant",
+          "Brave"
+        ],
+        "stat_points": [
+          "HP 32 / Atk 0 / Def 18 / SpA 0 / SpD 16 / Spe 0",
+          "HP 32 / Atk 0 / Def 15 / SpA 0 / SpD 19 / Spe 0",
+          "HP 32 / Atk 0 / Def 21 / SpA 0 / SpD 13 / Spe 0",
+          "HP 32 / Atk 0 / Def 2 / SpA 0 / SpD 32 / Spe 0",
+          "HP 32 / Atk 0 / Def 32 / SpA 0 / SpD 2 / Spe 0",
+          "HP 32 / Atk 0 / Def 8 / SpA 0 / SpD 26 / Spe 0",
+          "HP 32 / Atk 0 / Def 20 / SpA 0 / SpD 14 / Spe 0",
+          "HP 32 / Atk 0 / Def 28 / SpA 0 / SpD 6 / Spe 0"
+        ],
+        "ability": [
+          "Regenerator",
+          "Merciless",
+          "Limber"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "move",
+          "rank": 1,
+          "name": "Toxic",
+          "percentage": "97.6%",
+          "percentage_value": 97.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "move",
+          "rank": 2,
+          "name": "Baneful Bunker",
+          "percentage": "95.7%",
+          "percentage_value": 95.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "move",
+          "rank": 3,
+          "name": "Infestation",
+          "percentage": "95.2%",
+          "percentage_value": 95.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "move",
+          "rank": 4,
+          "name": "Wide Guard",
+          "percentage": "84.8%",
+          "percentage_value": 84.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "move",
+          "rank": 5,
+          "name": "Recover",
+          "percentage": "13.8%",
+          "percentage_value": 13.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "move",
+          "rank": 6,
+          "name": "Stockpile",
+          "percentage": "1.8%",
+          "percentage_value": 1.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "move",
+          "rank": 7,
+          "name": "Haze",
+          "percentage": "1.5%",
+          "percentage_value": 1.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "move",
+          "rank": 8,
+          "name": "Liquidation",
+          "percentage": "1.0%",
+          "percentage_value": 1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "move",
+          "rank": 9,
+          "name": "Protect",
+          "percentage": "0.9%",
+          "percentage_value": 0.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "move",
+          "rank": 10,
+          "name": "Toxic Spikes",
+          "percentage": "0.9%",
+          "percentage_value": 0.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Leftovers",
+          "percentage": "94.2%",
+          "percentage_value": 94.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Sitrus Berry",
+          "percentage": "3.2%",
+          "percentage_value": 3.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Bright Powder",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Quick Claw",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Shuca Berry",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Mental Herb",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Payapa Berry",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Lum Berry",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Poison Barb",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Wide Lens",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Charizard",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Venusaur",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Annihilape",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Grimmsnarl",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Hydreigon",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Metagross",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Mamoswine",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Bold",
+          "percentage": "58.8%",
+          "percentage_value": 58.8,
+          "stat_up": "Defense",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Impish",
+          "percentage": "16.4%",
+          "percentage_value": 16.4,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Calm",
+          "percentage": "8.5%",
+          "percentage_value": 8.5,
+          "stat_up": "Sp. Def",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Relaxed",
+          "percentage": "6.3%",
+          "percentage_value": 6.3,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Sassy",
+          "percentage": "3.9%",
+          "percentage_value": 3.9,
+          "stat_up": "Sp. Def",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Careful",
+          "percentage": "2.9%",
+          "percentage_value": 2.9,
+          "stat_up": "Sp. Def",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Modest",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Quiet",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Adamant",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Brave",
+          "percentage": "0.3%",
+          "percentage_value": 0.3,
+          "stat_up": "Attack",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "32.2%",
+          "percentage_value": 32.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 18,
+          "sp_atk_points": 0,
+          "sp_def_points": 16,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "15.0%",
+          "percentage_value": 15,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 15,
+          "sp_atk_points": 0,
+          "sp_def_points": 19,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "12.3%",
+          "percentage_value": 12.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 21,
+          "sp_atk_points": 0,
+          "sp_def_points": 13,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "5.7%",
+          "percentage_value": 5.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 32,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "4.4%",
+          "percentage_value": 4.4,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 32,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "2.3%",
+          "percentage_value": 2.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 8,
+          "sp_atk_points": 0,
+          "sp_def_points": 26,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "1.4%",
+          "percentage_value": 1.4,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 20,
+          "sp_atk_points": 0,
+          "sp_def_points": 14,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "1.1%",
+          "percentage_value": 1.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 28,
+          "sp_atk_points": 0,
+          "sp_def_points": 6,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "ability",
+          "rank": 1,
+          "name": "Regenerator",
+          "percentage": "96.2%",
+          "percentage_value": 96.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "ability",
+          "rank": 2,
+          "name": "Merciless",
+          "percentage": "2.6%",
+          "percentage_value": 2.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Toxapex",
+          "column_position": 47,
+          "position": 47,
+          "category": "ability",
+          "rank": 3,
+          "name": "Limber",
+          "percentage": "1.2%",
+          "percentage_value": 1.2,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Toxapex.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Toxapex.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Toxapex.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Toxapex.csv"
+      }
+    ]
+  }
+}

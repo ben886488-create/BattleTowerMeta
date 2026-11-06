@@ -1,4 +1,4 @@
-export type CardMetaInput = Record<string, unknown> | null | undefined;
+export type CardMetaInput = object | null | undefined;
 
 export interface NormalizedCardMeta {
   name: string;
@@ -103,7 +103,9 @@ function extractIllustratorFromText(value: unknown) {
 }
 
 export function normalizeCardMeta(input: CardMetaInput): NormalizedCardMeta {
-  const card = input && typeof input === "object" ? input : {};
+  const card: Record<string, unknown> = input && typeof input === "object"
+    ? input as Record<string, unknown>
+    : {};
   const packCode = buildPackCode(card);
   const setCode = normalizeSetCode(card.setCode ?? card.set_code ?? card.set);
   const setName = firstText(card.packVersion, card.packName, card.setName, card.set_name, card.expansion);

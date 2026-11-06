@@ -1,0 +1,3046 @@
+{
+  "pokemon": {
+    "slug": "gallade",
+    "name": "Gallade",
+    "baseName": "Gallade",
+    "savedName": "Gallade",
+    "form": "",
+    "types": [
+      "Psychic",
+      "Fighting"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Gallade.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/475.png",
+    "stats": {
+      "hp": 143,
+      "attack": 145,
+      "defense": 85,
+      "spAttack": 85,
+      "spDefense": 135,
+      "speed": 100,
+      "total": 693
+    },
+    "rank": 48,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Sacred Sword",
+    "topItem": "Focus Sash",
+    "topTeammate": "Farigiraf"
+  },
+  "moves": [
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "move",
+      "rank": 1,
+      "name": "Sacred Sword",
+      "percentage": 0.945,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "move",
+        "rank": 1,
+        "name": "Sacred Sword",
+        "percentage": "94.5%",
+        "percentage_value": 94.5,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "move",
+      "rank": 2,
+      "name": "Psycho Cut",
+      "percentage": 0.841,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "move",
+        "rank": 2,
+        "name": "Psycho Cut",
+        "percentage": "84.1%",
+        "percentage_value": 84.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "move",
+      "rank": 3,
+      "name": "Leaf Blade",
+      "percentage": 0.73,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "move",
+        "rank": 3,
+        "name": "Leaf Blade",
+        "percentage": "73.0%",
+        "percentage_value": 73,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "move",
+      "rank": 4,
+      "name": "Protect",
+      "percentage": 0.46,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "move",
+        "rank": 4,
+        "name": "Protect",
+        "percentage": "46.0%",
+        "percentage_value": 46,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "move",
+      "rank": 5,
+      "name": "Trick Room",
+      "percentage": 0.291,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "move",
+        "rank": 5,
+        "name": "Trick Room",
+        "percentage": "29.1%",
+        "percentage_value": 29.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "move",
+      "rank": 6,
+      "name": "Wide Guard",
+      "percentage": 0.177,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "move",
+        "rank": 6,
+        "name": "Wide Guard",
+        "percentage": "17.7%",
+        "percentage_value": 17.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "move",
+      "rank": 7,
+      "name": "Night Slash",
+      "percentage": 0.117,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "move",
+        "rank": 7,
+        "name": "Night Slash",
+        "percentage": "11.7%",
+        "percentage_value": 11.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "move",
+      "rank": 8,
+      "name": "Rock Slide",
+      "percentage": 0.042,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "move",
+        "rank": 8,
+        "name": "Rock Slide",
+        "percentage": "4.2%",
+        "percentage_value": 4.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "move",
+      "rank": 9,
+      "name": "Shadow Sneak",
+      "percentage": 0.034,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "move",
+        "rank": 9,
+        "name": "Shadow Sneak",
+        "percentage": "3.4%",
+        "percentage_value": 3.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "move",
+      "rank": 10,
+      "name": "Drain Punch",
+      "percentage": 0.034,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "move",
+        "rank": 10,
+        "name": "Drain Punch",
+        "percentage": "3.4%",
+        "percentage_value": 3.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Focus Sash",
+      "percentage": 0.216,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Focus Sash",
+        "percentage": "21.6%",
+        "percentage_value": 21.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Expert Belt",
+      "percentage": 0.21,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Expert Belt",
+        "percentage": "21.0%",
+        "percentage_value": 21,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Iron Ball",
+      "percentage": 0.17,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Iron Ball",
+        "percentage": "17.0%",
+        "percentage_value": 17,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Galladite",
+      "percentage": 0.119,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Galladite",
+        "percentage": "11.9%",
+        "percentage_value": 11.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Life Orb",
+      "percentage": 0.072,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Life Orb",
+        "percentage": "7.2%",
+        "percentage_value": 7.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Choice Scarf",
+      "percentage": 0.037,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Choice Scarf",
+        "percentage": "3.7%",
+        "percentage_value": 3.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Scope Lens",
+      "percentage": 0.031,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Scope Lens",
+        "percentage": "3.1%",
+        "percentage_value": 3.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "held_item",
+      "rank": 8,
+      "name": "White Herb",
+      "percentage": 0.024,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "held_item",
+        "rank": 8,
+        "name": "White Herb",
+        "percentage": "2.4%",
+        "percentage_value": 2.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Sitrus Berry",
+      "percentage": 0.017,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Sitrus Berry",
+        "percentage": "1.7%",
+        "percentage_value": 1.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Muscle Band",
+      "percentage": 0.013,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Muscle Band",
+        "percentage": "1.3%",
+        "percentage_value": 1.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "ability",
+      "rank": 1,
+      "name": "Sharpness",
+      "percentage": 0.948,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "ability",
+        "rank": 1,
+        "name": "Sharpness",
+        "percentage": "94.8%",
+        "percentage_value": 94.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "ability",
+      "rank": 2,
+      "name": "Justified",
+      "percentage": 0.04,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "ability",
+        "rank": 2,
+        "name": "Justified",
+        "percentage": "4.0%",
+        "percentage_value": 4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "ability",
+      "rank": 3,
+      "name": "Steadfast",
+      "percentage": 0.012,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "ability",
+        "rank": 3,
+        "name": "Steadfast",
+        "percentage": "1.2%",
+        "percentage_value": 1.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Farigiraf",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Farigiraf",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Torkoal",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Torkoal",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Mawile",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Mawile",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Kangaskhan",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Kangaskhan",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Kingambit",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Kingambit",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Chandelure",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Chandelure",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Vivillon Fancy Pattern",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Vivillon Fancy Pattern",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Kommo-o",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Kommo-o",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Brave",
+      "percentage": 0.389,
+      "statUp": "Attack",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Brave",
+        "percentage": "38.9%",
+        "percentage_value": 38.9,
+        "stat_up": "Attack",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Adamant",
+      "percentage": 0.387,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Adamant",
+        "percentage": "38.7%",
+        "percentage_value": 38.7,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Jolly",
+      "percentage": 0.177,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Jolly",
+        "percentage": "17.7%",
+        "percentage_value": 17.7,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Impish",
+      "percentage": 0.016,
+      "statUp": "Defense",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Impish",
+        "percentage": "1.6%",
+        "percentage_value": 1.6,
+        "stat_up": "Defense",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Relaxed",
+      "percentage": 0.012,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Relaxed",
+        "percentage": "1.2%",
+        "percentage_value": 1.2,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Careful",
+      "percentage": 0.8,
+      "statUp": "Sp. Def",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Careful",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "Sp. Def",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Sassy",
+      "percentage": 0.4,
+      "statUp": "Sp. Def",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Sassy",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "Sp. Def",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Lonely",
+      "percentage": 0.2,
+      "statUp": "Attack",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Lonely",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Attack",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Naughty",
+      "percentage": 0.2,
+      "statUp": "Attack",
+      "statDown": "Sp. Def",
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Naughty",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Def"
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Hasty",
+      "percentage": 0.1,
+      "statUp": "Speed",
+      "statDown": "Defense",
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Hasty",
+        "percentage": "0.1%",
+        "percentage_value": 0.1,
+        "stat_up": "Speed",
+        "stat_down": "Defense"
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.212,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "21.2%",
+        "percentage_value": 21.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.197,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "19.7%",
+        "percentage_value": 19.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.132,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "13.2%",
+        "percentage_value": 13.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 21,
+        "attack_points": 32,
+        "defense_points": 13,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.071,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "7.1%",
+        "percentage_value": 7.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 2,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.04,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "4.0%",
+        "percentage_value": 4,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.017,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "1.7%",
+        "percentage_value": 1.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 0,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.012,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "1.2%",
+        "percentage_value": 1.2,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 32,
+        "defense_points": 32,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Gallade",
+      "position": 48,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.011,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Gallade",
+        "column_position": 48,
+        "position": 48,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "1.1%",
+        "percentage_value": 1.1,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 2
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a46b0e683fd320299bd6881-vitoovgc",
+      "name": "vitooVGC · X1 Remote Battle League 2ª Edição - Reg M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "crabominable",
+          "name": "Crabominable",
+          "item": "Crabominite",
+          "ability": "Iron Fist",
+          "moves": [
+            "Ice Hammer",
+            "Drain Punch",
+            "Mach Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Trick Room",
+            "Psychic",
+            "Helping Hand",
+            "Ally Switch"
+          ]
+        },
+        {
+          "slug": "vileplume",
+          "name": "Vileplume",
+          "item": "Focus Sash",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sleep Powder",
+            "Sludge Bomb",
+            "After You",
+            "Energy Ball"
+          ]
+        },
+        {
+          "slug": "torkoal",
+          "name": "Torkoal",
+          "item": "Charcoal",
+          "ability": "Drought",
+          "moves": [
+            "Eruption",
+            "Protect",
+            "Solar Beam",
+            "Heat Wave"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Intimidate",
+          "moves": [
+            "Play Rough",
+            "Sucker Punch",
+            "Protect",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "gallade",
+          "name": "Gallade",
+          "item": "Iron Ball",
+          "ability": "Sharpness",
+          "moves": [
+            "Sacred Sword",
+            "Psycho Cut",
+            "Trick Room",
+            "Leaf Blade"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 3,
+      "tournament": "X1 Remote Battle League 2ª Edição - Reg M-B",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "vitooVGC",
+      "record": "2-1-0"
+    },
+    {
+      "id": "6a4dfee8063cb29d318e6805-tinixium",
+      "name": "Tinixium · VGC UmbreNews 14.07.2026 #23 - Champion",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "hatterene",
+          "name": "Hatterene",
+          "item": "Focus Sash",
+          "ability": "Magic Bounce",
+          "moves": [
+            "Psychic",
+            "Dazzling Gleam",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Iron Head",
+            "Protect",
+            "Sucker Punch",
+            "Play Rough"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Dragon Claw",
+            "Rock Slide",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gallade",
+          "name": "Gallade",
+          "item": "Expert Belt",
+          "ability": "Sharpness",
+          "moves": [
+            "Psycho Cut",
+            "Wide Guard",
+            "Sacred Sword",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Brave Bird",
+            "Tailwind",
+            "Protect",
+            "Flare Blitz"
+          ]
+        },
+        {
+          "slug": "scrafty",
+          "name": "Scrafty",
+          "item": "Scraftinite",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Drain Punch",
+            "Knock Off",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 6,
+      "tournament": "VGC UmbreNews 14.07.2026 #23 - Champion",
+      "placing": 9,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Tinixium",
+      "record": "4-2-0"
+    },
+    {
+      "id": "6a4dbb9665724db9ded3ff83-gooyet",
+      "name": "gooyet · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Sitrus Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Psychic",
+            "Thunderbolt",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Play Rough",
+            "Sucker Punch",
+            "Swords Dance",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Passho Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Throat Chop",
+            "Flare Blitz",
+            "Fake Out",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "araquanid",
+          "name": "Araquanid",
+          "item": "Mystic Water",
+          "ability": "Water Bubble",
+          "moves": [
+            "Liquidation",
+            "Lunge",
+            "Wide Guard",
+            "Reflect"
+          ]
+        },
+        {
+          "slug": "gallade",
+          "name": "Gallade",
+          "item": "Iron Ball",
+          "ability": "Sharpness",
+          "moves": [
+            "Sacred Sword",
+            "Leaf Blade",
+            "Psycho Cut",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Leftovers",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Life Dew",
+            "Rage Powder",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.8,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "gooyet",
+      "record": "4-1-0"
+    },
+    {
+      "id": "6a53c2d1e09846f1eb4c161b-zeeb",
+      "name": "Zeeb · The Drywall Series #11",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "mudsdale",
+          "name": "Mudsdale",
+          "item": "Sitrus Berry",
+          "ability": "Inner Focus",
+          "moves": [
+            "Earthquake",
+            "Heavy Slam",
+            "Protect",
+            "Curse"
+          ]
+        },
+        {
+          "slug": "oranguru",
+          "name": "Oranguru",
+          "item": "Colbur Berry",
+          "ability": "Telepathy",
+          "moves": [
+            "Psychic Noise",
+            "Instruct",
+            "Protect",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "sableye",
+          "name": "Sableye",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Gravity",
+            "Light Screen",
+            "Reflect",
+            "Rain Dance"
+          ]
+        },
+        {
+          "slug": "scovillain",
+          "name": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Moody",
+          "moves": [
+            "Giga Drain",
+            "Leech Seed",
+            "Rage Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Flash Cannon",
+            "Dragon Pulse",
+            "Electro Shot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gallade",
+          "name": "Gallade",
+          "item": "Galladite",
+          "ability": "Sharpness",
+          "moves": [
+            "Sacred Sword",
+            "Leaf Blade",
+            "Wide Guard",
+            "Trick Room"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "The Drywall Series #11",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Zeeb",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a487796063cb29d318e2971-rkbnunes",
+      "name": "Rkbnunes - Psíquico/Pedra · Thalera Champions Cheese #10 - Dual Type Edition",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "delphox",
+          "name": "Delphox",
+          "item": "Delphoxite",
+          "ability": "Blaze",
+          "moves": [
+            "Protect",
+            "Psychic",
+            "Heat Wave",
+            "Grass Knot"
+          ]
+        },
+        {
+          "slug": "aerodactyl",
+          "name": "Aerodactyl",
+          "item": "Aerodactylite",
+          "ability": "Unnerve",
+          "moves": [
+            "Dual Wingbeat",
+            "Rock Slide",
+            "Protect",
+            "Tailwind"
+          ]
+        },
+        {
+          "slug": "meowstic",
+          "name": "Meowstic",
+          "item": "Sitrus Berry",
+          "ability": "Prankster",
+          "moves": [
+            "Fake Out",
+            "Sunny Day",
+            "Helping Hand",
+            "Psyshock"
+          ]
+        },
+        {
+          "slug": "gallade",
+          "name": "Gallade",
+          "item": "Choice Scarf",
+          "ability": "Sharpness",
+          "moves": [
+            "Sacred Sword",
+            "Psycho Cut",
+            "Night Slash",
+            "Leaf Blade"
+          ]
+        },
+        {
+          "slug": "hisuian-arcanine",
+          "name": "Hisuian Arcanine",
+          "item": "Life Orb",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Extreme Speed",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "glimmora",
+          "name": "Glimmora",
+          "item": "Focus Sash",
+          "ability": "Toxic Debris",
+          "moves": [
+            "Sludge Bomb",
+            "Energy Ball",
+            "Earth Power",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5714285714285714,
+      "sampleCount": 7,
+      "tournament": "Thalera Champions Cheese #10 - Dual Type Edition",
+      "placing": 7,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Rkbnunes - Psíquico/Pedra",
+      "record": "4-3-0"
+    },
+    {
+      "id": "6a33cff8e334c3c9befd9250-ravichawda",
+      "name": "Ravichawda · Rising Stars - S1 (Double Battle)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "chandelure",
+          "name": "Chandelure",
+          "item": "Focus Sash",
+          "ability": "Flash Fire",
+          "moves": [
+            "Protect",
+            "Heat Wave",
+            "Shadow Ball",
+            "Trick Room"
+          ]
+        },
+        {
+          "slug": "kommo-o",
+          "name": "Kommo-o",
+          "item": "Life Orb",
+          "ability": "Soundproof",
+          "moves": [
+            "Clanging Scales",
+            "Aura Sphere",
+            "Flamethrower",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Chople Berry",
+          "ability": "Defiant",
+          "moves": [
+            "Kowtow Cleave",
+            "Sucker Punch",
+            "Low Kick",
+            "Iron Head"
+          ]
+        },
+        {
+          "slug": "kangaskhan",
+          "name": "Kangaskhan",
+          "item": "Kangaskhanite",
+          "ability": "Scrappy",
+          "moves": [
+            "Fake Out",
+            "Double-Edge",
+            "Sucker Punch",
+            "Brick Break"
+          ]
+        },
+        {
+          "slug": "gallade",
+          "name": "Gallade",
+          "item": "Expert Belt",
+          "ability": "Sharpness",
+          "moves": [
+            "Sacred Sword",
+            "Leaf Blade",
+            "Psycho Cut",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Sitrus Berry",
+          "ability": "Adaptability",
+          "moves": [
+            "Protect",
+            "Wave Crash",
+            "Last Respects",
+            "Aqua Jet"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.625,
+      "sampleCount": 8,
+      "tournament": "Rising Stars - S1 (Double Battle)",
+      "placing": 5,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Ravichawda",
+      "record": "5-3-0"
+    },
+    {
+      "id": "6a4685c383fd320299bd6675-migueldaponte",
+      "name": "migueldaponte · Pokémon Champions #1 - (Floette Eternal Flower)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "venusaur",
+          "name": "Venusaur",
+          "item": "Focus Sash",
+          "ability": "Chlorophyll",
+          "moves": [
+            "Sludge Bomb",
+            "Earth Power",
+            "Sleep Powder",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gallade",
+          "name": "Gallade",
+          "item": "Scope Lens",
+          "ability": "Sharpness",
+          "moves": [
+            "Sacred Sword",
+            "Psycho Cut",
+            "Leaf Blade",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "mawile",
+          "name": "Mawile",
+          "item": "Mawilite",
+          "ability": "Hyper Cutter",
+          "moves": [
+            "Iron Head",
+            "Play Rough",
+            "Sucker Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Solar Power",
+          "moves": [
+            "Heat Wave",
+            "Solar Beam",
+            "Hurricane",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "farigiraf",
+          "name": "Farigiraf",
+          "item": "Colbur Berry",
+          "ability": "Armor Tail",
+          "moves": [
+            "Hyper Voice",
+            "Twin Beam",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Chople Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Fake Out",
+            "Flare Blitz",
+            "Throat Chop",
+            "Parting Shot"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.7777777777777778,
+      "sampleCount": 9,
+      "tournament": "Pokémon Champions #1 - (Floette Eternal Flower)",
+      "placing": 10,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "migueldaponte",
+      "record": "7-2-0"
+    },
+    {
+      "id": "6a55808a232a1a55ee10be16-a0deko",
+      "name": "A0Deko · 𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "drampa",
+          "name": "Drampa",
+          "item": "Drampanite",
+          "ability": "Berserk",
+          "moves": [
+            "Earth Power",
+            "Dragon Pulse",
+            "Hyper Voice",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "kingambit",
+          "name": "Kingambit",
+          "item": "Life Orb",
+          "ability": "Defiant",
+          "moves": [
+            "Sucker Punch",
+            "Kowtow Cleave",
+            "Iron Head",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gallade",
+          "name": "Gallade",
+          "item": "Focus Sash",
+          "ability": "Sharpness",
+          "moves": [
+            "Sacred Sword",
+            "Psycho Cut",
+            "Trick Room",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "chandelure",
+          "name": "Chandelure",
+          "item": "Colbur Berry",
+          "ability": "Flash Fire",
+          "moves": [
+            "Heat Wave",
+            "Shadow Ball",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Sitrus Berry",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Life Dew"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Leftovers",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Moonblast",
+            "Calm Mind",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.5,
+      "sampleCount": 6,
+      "tournament": "𝗡𝗲𝗺𝗲 𝗪𝗲𝗲𝗸𝗹𝘆 𝗠-𝗕 𝗧𝗼𝘂𝗿 🏆 #𝟲𝟱",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "A0Deko",
+      "record": "3-3-0"
+    },
+    {
+      "id": "6a47aff0063cb29d318e1b77-lokeres",
+      "name": "Jesus toscano · Cusca Champions Weekly ⚡ #2 (PCVGC)",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sneasler",
+          "name": "Sneasler",
+          "item": "White Herb",
+          "ability": "Unburden",
+          "moves": [
+            "Dire Claw",
+            "Close Combat",
+            "Protect",
+            "Fake Out"
+          ]
+        },
+        {
+          "slug": "incineroar",
+          "name": "Incineroar",
+          "item": "Sitrus Berry",
+          "ability": "Intimidate",
+          "moves": [
+            "Flare Blitz",
+            "Fake Out",
+            "Darkest Lariat",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Solar Power",
+          "moves": [
+            "Heat Wave",
+            "Flare Blitz",
+            "Solar Beam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Moonblast",
+            "Tailwind",
+            "Sunny Day",
+            "Encore"
+          ]
+        },
+        {
+          "slug": "gallade",
+          "name": "Gallade",
+          "item": "Quick Claw",
+          "ability": "Sharpness",
+          "moves": [
+            "Solar Blade",
+            "Sacred Sword",
+            "Triple Axel",
+            "Wide Guard"
+          ]
+        },
+        {
+          "slug": "ditto",
+          "name": "Ditto",
+          "item": "Life Orb",
+          "ability": "Imposter",
+          "moves": [
+            "Transform"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.3333333333333333,
+      "sampleCount": 3,
+      "tournament": "Cusca Champions Weekly ⚡ #2 (PCVGC)",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Jesus toscano",
+      "record": "1-2-0"
+    },
+    {
+      "id": "6a50864165724db9ded41db6-ironsoul",
+      "name": "IronSoul · 4fun sabadín",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "sceptile",
+          "name": "Sceptile",
+          "item": "Sceptilite",
+          "ability": "Overgrow",
+          "moves": [
+            "Energy Ball",
+            "Dragon Pulse",
+            "Earth Power",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gallade",
+          "name": "Gallade",
+          "item": "Galladite",
+          "ability": "Inner Focus",
+          "moves": [
+            "Close Combat",
+            "Psycho Cut",
+            "Ice Punch",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "jolteon",
+          "name": "Jolteon",
+          "item": "Life Orb",
+          "ability": "Volt Absorb",
+          "moves": [
+            "Discharge",
+            "Weather Ball",
+            "Shadow Ball",
+            "Alluring Voice"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Brave Bird",
+            "Flare Blitz",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "excadrill",
+          "name": "Excadrill",
+          "item": "Focus Sash",
+          "ability": "Sand Rush",
+          "moves": [
+            "Iron Head",
+            "High Horsepower",
+            "Rock Slide",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "tyranitar",
+          "name": "Tyranitar",
+          "item": "Chople Berry",
+          "ability": "Sand Stream",
+          "moves": [
+            "Rock Slide",
+            "Crunch",
+            "Low Kick",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "4fun sabadín",
+      "placing": 6,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "IronSoul",
+      "record": "2-3-0"
+    }
+  ],
+  "movePool": [
+    "Aerial Ace",
+    "Agility",
+    "Air Slash",
+    "Alluring Voice",
+    "Aqua Cutter",
+    "Aura Sphere",
+    "Body Slam",
+    "Brick Break",
+    "Bulk Up",
+    "Bulldoze",
+    "Calm Mind",
+    "Charge Beam",
+    "Charm",
+    "Close Combat",
+    "Coaching",
+    "Confuse Ray",
+    "Dazzling Gleam",
+    "Destiny Bond",
+    "Disable",
+    "Double Team",
+    "Drain Punch",
+    "Draining Kiss",
+    "Earthquake",
+    "Encore",
+    "Endure",
+    "Energy Ball",
+    "Expanding Force",
+    "Facade",
+    "Feint",
+    "Fire Punch",
+    "Fling",
+    "Focus Blast",
+    "Focus Punch",
+    "Future Sight",
+    "Giga Impact",
+    "Grass Knot",
+    "Heal Pulse",
+    "Helping Hand",
+    "Hex",
+    "Hyper Beam",
+    "Hyper Voice",
+    "Hypnosis",
+    "Ice Punch",
+    "Icy Wind",
+    "Imprison",
+    "Knock Off",
+    "Leaf Blade",
+    "Life Dew",
+    "Light Screen",
+    "Low Kick",
+    "Low Sweep",
+    "Magic Room",
+    "Mean Look",
+    "Mega Kick",
+    "Memento",
+    "Misty Terrain",
+    "Mystical Fire",
+    "Night Shade",
+    "Night Slash",
+    "Pain Split",
+    "Poison Jab",
+    "Protect",
+    "Psych Up",
+    "Psychic",
+    "Psychic Terrain",
+    "Psycho Cut",
+    "Psyshock",
+    "Quick Guard",
+    "Rain Dance",
+    "Reflect",
+    "Rest",
+    "Reversal",
+    "Rock Slide",
+    "Rock Tomb",
+    "Round",
+    "Sacred Sword",
+    "Safeguard",
+    "Shadow Ball",
+    "Shadow Claw",
+    "Shadow Sneak",
+    "Skill Swap",
+    "Sleep Talk",
+    "Snore",
+    "Solar Blade",
+    "Stone Edge",
+    "Stored Power",
+    "Substitute",
+    "Sunny Day",
+    "Swords Dance",
+    "Taunt",
+    "Thief",
+    "Throat Chop",
+    "Thunder Punch",
+    "Thunder Wave",
+    "Thunderbolt",
+    "Trick",
+    "Trick Room",
+    "Triple Axel",
+    "Upper Hand",
+    "Vacuum Wave",
+    "Wide Guard",
+    "Will-O-Wisp",
+    "Wonder Room",
+    "X-Scissor",
+    "Zen Headbutt"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Gallade",
+      "base_name": "Gallade",
+      "saved_name": "Gallade",
+      "types": "Psychic/Fighting",
+      "abilities": "Steadfast|Sharpness|Justified",
+      "image_path": "pokemon_champions_assets\\pokemon\\Gallade.png",
+      "form": "",
+      "hp": 143,
+      "atk": 145,
+      "def": 85,
+      "spa": 85,
+      "spd": 135,
+      "spe": 100,
+      "total": 693
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "move",
+          "rank": 1,
+          "name": "Sacred Sword",
+          "percentage": "94.5%",
+          "percentage_value": 94.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Focus Sash",
+          "percentage": "21.6%",
+          "percentage_value": 21.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Brave",
+          "percentage": "38.9%",
+          "percentage_value": 38.9,
+          "stat_up": "Attack",
+          "stat_down": "Speed"
+        },
+        "stat_points": {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "21.2%",
+          "percentage_value": 21.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        "ability": {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "ability",
+          "rank": 1,
+          "name": "Sharpness",
+          "percentage": "94.8%",
+          "percentage_value": 94.8,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Sacred Sword",
+          "Psycho Cut",
+          "Leaf Blade",
+          "Protect",
+          "Trick Room",
+          "Wide Guard",
+          "Night Slash",
+          "Rock Slide",
+          "Shadow Sneak",
+          "Drain Punch"
+        ],
+        "held_item": [
+          "Focus Sash",
+          "Expert Belt",
+          "Iron Ball",
+          "Galladite",
+          "Life Orb",
+          "Choice Scarf",
+          "Scope Lens",
+          "White Herb",
+          "Sitrus Berry",
+          "Muscle Band"
+        ],
+        "teammate": [
+          "Farigiraf",
+          "Torkoal",
+          "Mawile",
+          "Incineroar",
+          "Kangaskhan",
+          "Kingambit",
+          "Basculegion Male",
+          "Chandelure",
+          "Vivillon Fancy Pattern",
+          "Kommo-o"
+        ],
+        "stat_alignment": [
+          "Brave",
+          "Adamant",
+          "Jolly",
+          "Impish",
+          "Relaxed",
+          "Careful",
+          "Sassy",
+          "Lonely",
+          "Naughty",
+          "Hasty"
+        ],
+        "stat_points": [
+          "HP 32 / Atk 32 / Def 2 / SpA 0 / SpD 0 / Spe 0",
+          "HP 2 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 32",
+          "HP 21 / Atk 32 / Def 13 / SpA 0 / SpD 0 / Spe 0",
+          "HP 0 / Atk 32 / Def 2 / SpA 0 / SpD 0 / Spe 32",
+          "HP 32 / Atk 32 / Def 0 / SpA 0 / SpD 2 / Spe 0",
+          "HP 0 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 32",
+          "HP 2 / Atk 32 / Def 32 / SpA 0 / SpD 0 / Spe 0",
+          "HP 32 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 2"
+        ],
+        "ability": [
+          "Sharpness",
+          "Justified",
+          "Steadfast"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "move",
+          "rank": 1,
+          "name": "Sacred Sword",
+          "percentage": "94.5%",
+          "percentage_value": 94.5,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "move",
+          "rank": 2,
+          "name": "Psycho Cut",
+          "percentage": "84.1%",
+          "percentage_value": 84.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "move",
+          "rank": 3,
+          "name": "Leaf Blade",
+          "percentage": "73.0%",
+          "percentage_value": 73,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "move",
+          "rank": 4,
+          "name": "Protect",
+          "percentage": "46.0%",
+          "percentage_value": 46,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "move",
+          "rank": 5,
+          "name": "Trick Room",
+          "percentage": "29.1%",
+          "percentage_value": 29.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "move",
+          "rank": 6,
+          "name": "Wide Guard",
+          "percentage": "17.7%",
+          "percentage_value": 17.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "move",
+          "rank": 7,
+          "name": "Night Slash",
+          "percentage": "11.7%",
+          "percentage_value": 11.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "move",
+          "rank": 8,
+          "name": "Rock Slide",
+          "percentage": "4.2%",
+          "percentage_value": 4.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "move",
+          "rank": 9,
+          "name": "Shadow Sneak",
+          "percentage": "3.4%",
+          "percentage_value": 3.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "move",
+          "rank": 10,
+          "name": "Drain Punch",
+          "percentage": "3.4%",
+          "percentage_value": 3.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Focus Sash",
+          "percentage": "21.6%",
+          "percentage_value": 21.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Expert Belt",
+          "percentage": "21.0%",
+          "percentage_value": 21,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Iron Ball",
+          "percentage": "17.0%",
+          "percentage_value": 17,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Galladite",
+          "percentage": "11.9%",
+          "percentage_value": 11.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Life Orb",
+          "percentage": "7.2%",
+          "percentage_value": 7.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Choice Scarf",
+          "percentage": "3.7%",
+          "percentage_value": 3.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Scope Lens",
+          "percentage": "3.1%",
+          "percentage_value": 3.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "held_item",
+          "rank": 8,
+          "name": "White Herb",
+          "percentage": "2.4%",
+          "percentage_value": 2.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Sitrus Berry",
+          "percentage": "1.7%",
+          "percentage_value": 1.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Muscle Band",
+          "percentage": "1.3%",
+          "percentage_value": 1.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Torkoal",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Mawile",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Kangaskhan",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Chandelure",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Vivillon Fancy Pattern",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Kommo-o",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Brave",
+          "percentage": "38.9%",
+          "percentage_value": 38.9,
+          "stat_up": "Attack",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Adamant",
+          "percentage": "38.7%",
+          "percentage_value": 38.7,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Jolly",
+          "percentage": "17.7%",
+          "percentage_value": 17.7,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Impish",
+          "percentage": "1.6%",
+          "percentage_value": 1.6,
+          "stat_up": "Defense",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Relaxed",
+          "percentage": "1.2%",
+          "percentage_value": 1.2,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Careful",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "Sp. Def",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Sassy",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "Sp. Def",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Lonely",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Attack",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Naughty",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Def"
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Hasty",
+          "percentage": "0.1%",
+          "percentage_value": 0.1,
+          "stat_up": "Speed",
+          "stat_down": "Defense"
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "21.2%",
+          "percentage_value": 21.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "19.7%",
+          "percentage_value": 19.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "13.2%",
+          "percentage_value": 13.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 21,
+          "attack_points": 32,
+          "defense_points": 13,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "7.1%",
+          "percentage_value": 7.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 2,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "4.0%",
+          "percentage_value": 4,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "1.7%",
+          "percentage_value": 1.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 0,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "1.2%",
+          "percentage_value": 1.2,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 32,
+          "defense_points": 32,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "1.1%",
+          "percentage_value": 1.1,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 2
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "ability",
+          "rank": 1,
+          "name": "Sharpness",
+          "percentage": "94.8%",
+          "percentage_value": 94.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "ability",
+          "rank": 2,
+          "name": "Justified",
+          "percentage": "4.0%",
+          "percentage_value": 4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Gallade",
+          "column_position": 48,
+          "position": 48,
+          "category": "ability",
+          "rank": 3,
+          "name": "Steadfast",
+          "percentage": "1.2%",
+          "percentage_value": 1.2,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Gallade.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Gallade.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Gallade.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Gallade.csv"
+      }
+    ]
+  }
+}

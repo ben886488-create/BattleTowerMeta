@@ -6,6 +6,10 @@
   --accent-primary-deep: #2563eb;
   --accent-secondary: #ffd166;
   --accent-secondary-deep: #b88900;
+  --champions-accent-violet: #a78bfa;
+  --champions-accent-violet-rgb: 167, 139, 250;
+  --champions-accent-cyan: #22d3ee;
+  --champions-accent-cyan-rgb: 34, 211, 238;
   --accent-success: #00ff88;
   --accent-danger: #ff3b4f;
   --accent-warning: #ffcc33;
@@ -21,6 +25,15 @@
   --bg-page: #02040a;
   --bg-panel: rgba(5, 10, 20, 0.94);
   --bg-card: rgba(8, 15, 28, 0.96);
+  --bg-control: rgba(2, 5, 12, 0.82);
+  --bg-topbar: rgba(3, 5, 10, 0.92);
+  --bg-table-head: rgba(5, 8, 17, 0.96);
+  --bg-hover: rgba(77, 163, 255, 0.065);
+  --bg-selected: rgba(77, 163, 255, 0.18);
+  --panel-background:
+    linear-gradient(135deg, rgba(77, 163, 255, 0.032), transparent 44%),
+    linear-gradient(315deg, rgba(255, 209, 102, 0.026), transparent 44%),
+    var(--bg-panel);
   --text-main: #f8fafc;
   --text-secondary: #a8b3c7;
   --text-muted: #64748b;
@@ -58,14 +71,17 @@
   --radius-panel: 0px;
   --radius-pill: 0px;
   --control-height: 42px;
+  --topbar-height: 68px;
+  --ticker-height: 38px;
   --page-max: 1480px;
   --page-wide: 1620px;
   --page-fluid-max: 1760px;
   --page-gutter-left: clamp(80px, 8vw, 180px);
   --page-gutter-right: clamp(40px, 6vw, 140px);
 
-  --shadow-panel: 0 24px 70px rgba(0, 0, 0, 0.34);
-  --focus-ring: 0 0 0 1px rgba(77, 163, 255, 0.5);
+  --shadow-panel: none;
+  --shadow-floating: 0 24px 70px rgba(0, 0, 0, 0.2);
+  --focus-ring: 0 0 0 2px rgba(77, 163, 255, 0.28);
 
   --dur-instant: 80ms;
   --dur-fast: 160ms;
@@ -96,7 +112,7 @@ body{
   margin: 0;
   min-height: 100vh;
   min-height: 100dvh;
-  color: var(--text);
+  color: var(--text-soft);
   font-family: var(--font-body);
   font-weight: 500;
   background:
@@ -211,7 +227,21 @@ a:focus-visible,
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible{
-  outline: none;
+  outline: 1px solid var(--accent);
+  outline-offset: 3px;
   border-color: var(--border-accent);
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: none;
   box-shadow: var(--focus-ring);
+}
+
+@media (max-width: 900px) {
+  :root {
+    --topbar-height: 62px;
+    --ticker-height: 34px;
+  }
 }

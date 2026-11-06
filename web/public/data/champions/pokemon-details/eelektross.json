@@ -1,0 +1,2597 @@
+{
+  "pokemon": {
+    "slug": "eelektross",
+    "name": "Eelektross",
+    "baseName": "Eelektross",
+    "savedName": "Eelektross",
+    "form": "",
+    "types": [
+      "Electric"
+    ],
+    "sprite": "https://championsbattledata.com/pokemon_champions_assets/pokemon/Eelektross.png",
+    "artwork": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/604.png",
+    "stats": {
+      "hp": 160,
+      "attack": 135,
+      "defense": 100,
+      "spAttack": 125,
+      "spDefense": 100,
+      "speed": 70,
+      "total": 690
+    },
+    "rank": 76,
+    "usage": null,
+    "format": "Doubles",
+    "season": "Current",
+    "topMove": "Protect",
+    "topItem": "Eelektrossite",
+    "topTeammate": "Garchomp"
+  },
+  "moves": [
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "move",
+      "rank": 1,
+      "name": "Protect",
+      "percentage": 0.8,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "move",
+        "rank": 1,
+        "name": "Protect",
+        "percentage": "80.0%",
+        "percentage_value": 80,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "move",
+      "rank": 2,
+      "name": "Flamethrower",
+      "percentage": 0.583,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "move",
+        "rank": 2,
+        "name": "Flamethrower",
+        "percentage": "58.3%",
+        "percentage_value": 58.3,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "move",
+      "rank": 3,
+      "name": "Giga Drain",
+      "percentage": 0.578,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "move",
+        "rank": 3,
+        "name": "Giga Drain",
+        "percentage": "57.8%",
+        "percentage_value": 57.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "move",
+      "rank": 4,
+      "name": "Thunderbolt",
+      "percentage": 0.572,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "move",
+        "rank": 4,
+        "name": "Thunderbolt",
+        "percentage": "57.2%",
+        "percentage_value": 57.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "move",
+      "rank": 5,
+      "name": "Discharge",
+      "percentage": 0.276,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "move",
+        "rank": 5,
+        "name": "Discharge",
+        "percentage": "27.6%",
+        "percentage_value": 27.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "move",
+      "rank": 6,
+      "name": "Dragon Pulse",
+      "percentage": 0.149,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "move",
+        "rank": 6,
+        "name": "Dragon Pulse",
+        "percentage": "14.9%",
+        "percentage_value": 14.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "move",
+      "rank": 7,
+      "name": "Drain Punch",
+      "percentage": 0.139,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "move",
+        "rank": 7,
+        "name": "Drain Punch",
+        "percentage": "13.9%",
+        "percentage_value": 13.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "move",
+      "rank": 8,
+      "name": "Supercell Slam",
+      "percentage": 0.112,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "move",
+        "rank": 8,
+        "name": "Supercell Slam",
+        "percentage": "11.2%",
+        "percentage_value": 11.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "move",
+      "rank": 9,
+      "name": "Grass Knot",
+      "percentage": 0.11,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "move",
+        "rank": 9,
+        "name": "Grass Knot",
+        "percentage": "11.0%",
+        "percentage_value": 11,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "move",
+      "rank": 10,
+      "name": "Coil",
+      "percentage": 0.079,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "move",
+        "rank": 10,
+        "name": "Coil",
+        "percentage": "7.9%",
+        "percentage_value": 7.9,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "items": [
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "held_item",
+      "rank": 1,
+      "name": "Eelektrossite",
+      "percentage": 0.916,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "held_item",
+        "rank": 1,
+        "name": "Eelektrossite",
+        "percentage": "91.6%",
+        "percentage_value": 91.6,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "held_item",
+      "rank": 2,
+      "name": "Life Orb",
+      "percentage": 0.02,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "held_item",
+        "rank": 2,
+        "name": "Life Orb",
+        "percentage": "2.0%",
+        "percentage_value": 2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "held_item",
+      "rank": 3,
+      "name": "Expert Belt",
+      "percentage": 0.012,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "held_item",
+        "rank": 3,
+        "name": "Expert Belt",
+        "percentage": "1.2%",
+        "percentage_value": 1.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "held_item",
+      "rank": 4,
+      "name": "Leftovers",
+      "percentage": 0.012,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "held_item",
+        "rank": 4,
+        "name": "Leftovers",
+        "percentage": "1.2%",
+        "percentage_value": 1.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "held_item",
+      "rank": 5,
+      "name": "Magnet",
+      "percentage": 0.011,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "held_item",
+        "rank": 5,
+        "name": "Magnet",
+        "percentage": "1.1%",
+        "percentage_value": 1.1,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "held_item",
+      "rank": 6,
+      "name": "Sitrus Berry",
+      "percentage": 0.8,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "held_item",
+        "rank": 6,
+        "name": "Sitrus Berry",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "held_item",
+      "rank": 7,
+      "name": "Quick Claw",
+      "percentage": 0.7,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "held_item",
+        "rank": 7,
+        "name": "Quick Claw",
+        "percentage": "0.7%",
+        "percentage_value": 0.7,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "held_item",
+      "rank": 8,
+      "name": "Bright Powder",
+      "percentage": 0.4,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "held_item",
+        "rank": 8,
+        "name": "Bright Powder",
+        "percentage": "0.4%",
+        "percentage_value": 0.4,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "held_item",
+      "rank": 9,
+      "name": "Focus Sash",
+      "percentage": 0.2,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "held_item",
+        "rank": 9,
+        "name": "Focus Sash",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "held_item",
+      "rank": 10,
+      "name": "Wise Glasses",
+      "percentage": 0.2,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "held_item",
+        "rank": 10,
+        "name": "Wise Glasses",
+        "percentage": "0.2%",
+        "percentage_value": 0.2,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "ability",
+      "rank": 1,
+      "name": "Levitate",
+      "percentage": 1,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "ability",
+        "rank": 1,
+        "name": "Levitate",
+        "percentage": "100.0%",
+        "percentage_value": 100,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "teammates": [
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "teammate",
+      "rank": 1,
+      "name": "Garchomp",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "teammate",
+        "rank": 1,
+        "name": "Garchomp",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "teammate",
+      "rank": 2,
+      "name": "Whimsicott",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "teammate",
+        "rank": 2,
+        "name": "Whimsicott",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "teammate",
+      "rank": 3,
+      "name": "Farigiraf",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "teammate",
+        "rank": 3,
+        "name": "Farigiraf",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "teammate",
+      "rank": 4,
+      "name": "Sinistcha",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "teammate",
+        "rank": 4,
+        "name": "Sinistcha",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "teammate",
+      "rank": 5,
+      "name": "Incineroar",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "teammate",
+        "rank": 5,
+        "name": "Incineroar",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "teammate",
+      "rank": 6,
+      "name": "Basculegion Male",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "teammate",
+        "rank": 6,
+        "name": "Basculegion Male",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "teammate",
+      "rank": 7,
+      "name": "Kingambit",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "teammate",
+        "rank": 7,
+        "name": "Kingambit",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "teammate",
+      "rank": 8,
+      "name": "Sylveon",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "teammate",
+        "rank": 8,
+        "name": "Sylveon",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "teammate",
+      "rank": 9,
+      "name": "Torkoal",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "teammate",
+        "rank": 9,
+        "name": "Torkoal",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "teammate",
+      "rank": 10,
+      "name": "Sneasler",
+      "percentage": null,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "teammate",
+        "rank": 10,
+        "name": "Sneasler",
+        "percentage": "",
+        "percentage_value": null,
+        "stat_up": "",
+        "stat_down": ""
+      }
+    }
+  ],
+  "spreads": [
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "stat_alignment",
+      "rank": 1,
+      "name": "Modest",
+      "percentage": 0.561,
+      "statUp": "Sp. Atk",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "stat_alignment",
+        "rank": 1,
+        "name": "Modest",
+        "percentage": "56.1%",
+        "percentage_value": 56.1,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "stat_alignment",
+      "rank": 2,
+      "name": "Quiet",
+      "percentage": 0.14,
+      "statUp": "Sp. Atk",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "stat_alignment",
+        "rank": 2,
+        "name": "Quiet",
+        "percentage": "14.0%",
+        "percentage_value": 14,
+        "stat_up": "Sp. Atk",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "stat_alignment",
+      "rank": 3,
+      "name": "Adamant",
+      "percentage": 0.108,
+      "statUp": "Attack",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "stat_alignment",
+        "rank": 3,
+        "name": "Adamant",
+        "percentage": "10.8%",
+        "percentage_value": 10.8,
+        "stat_up": "Attack",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "stat_alignment",
+      "rank": 4,
+      "name": "Timid",
+      "percentage": 0.078,
+      "statUp": "Speed",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "stat_alignment",
+        "rank": 4,
+        "name": "Timid",
+        "percentage": "7.8%",
+        "percentage_value": 7.8,
+        "stat_up": "Speed",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "stat_alignment",
+      "rank": 5,
+      "name": "Brave",
+      "percentage": 0.037,
+      "statUp": "Attack",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "stat_alignment",
+        "rank": 5,
+        "name": "Brave",
+        "percentage": "3.7%",
+        "percentage_value": 3.7,
+        "stat_up": "Attack",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "stat_alignment",
+      "rank": 6,
+      "name": "Jolly",
+      "percentage": 0.011,
+      "statUp": "Speed",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "stat_alignment",
+        "rank": 6,
+        "name": "Jolly",
+        "percentage": "1.1%",
+        "percentage_value": 1.1,
+        "stat_up": "Speed",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "stat_alignment",
+      "rank": 7,
+      "name": "Careful",
+      "percentage": 1,
+      "statUp": "Sp. Def",
+      "statDown": "Sp. Atk",
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "stat_alignment",
+        "rank": 7,
+        "name": "Careful",
+        "percentage": "1.0%",
+        "percentage_value": 1,
+        "stat_up": "Sp. Def",
+        "stat_down": "Sp. Atk"
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "stat_alignment",
+      "rank": 8,
+      "name": "Bold",
+      "percentage": 0.8,
+      "statUp": "Defense",
+      "statDown": "Attack",
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "stat_alignment",
+        "rank": 8,
+        "name": "Bold",
+        "percentage": "0.8%",
+        "percentage_value": 0.8,
+        "stat_up": "Defense",
+        "stat_down": "Attack"
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "stat_alignment",
+      "rank": 9,
+      "name": "Relaxed",
+      "percentage": 0.5,
+      "statUp": "Defense",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "stat_alignment",
+        "rank": 9,
+        "name": "Relaxed",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "Defense",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "stat_alignment",
+      "rank": 10,
+      "name": "Sassy",
+      "percentage": 0.5,
+      "statUp": "Sp. Def",
+      "statDown": "Speed",
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "stat_alignment",
+        "rank": 10,
+        "name": "Sassy",
+        "percentage": "0.5%",
+        "percentage_value": 0.5,
+        "stat_up": "Sp. Def",
+        "stat_down": "Speed"
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "stat_points",
+      "rank": 1,
+      "name": "",
+      "percentage": 0.126,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "stat_points",
+        "rank": 1,
+        "name": "",
+        "percentage": "12.6%",
+        "percentage_value": 12.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 2,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 32
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "stat_points",
+      "rank": 2,
+      "name": "",
+      "percentage": 0.115,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "stat_points",
+        "rank": 2,
+        "name": "",
+        "percentage": "11.5%",
+        "percentage_value": 11.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 2,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "stat_points",
+      "rank": 3,
+      "name": "",
+      "percentage": 0.053,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "stat_points",
+        "rank": 3,
+        "name": "",
+        "percentage": "5.3%",
+        "percentage_value": 5.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 1,
+        "sp_atk_points": 32,
+        "sp_def_points": 1,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "stat_points",
+      "rank": 4,
+      "name": "",
+      "percentage": 0.046,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "stat_points",
+        "rank": 4,
+        "name": "",
+        "percentage": "4.6%",
+        "percentage_value": 4.6,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "stat_points",
+      "rank": 5,
+      "name": "",
+      "percentage": 0.043,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "stat_points",
+        "rank": 5,
+        "name": "",
+        "percentage": "4.3%",
+        "percentage_value": 4.3,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 2
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "stat_points",
+      "rank": 6,
+      "name": "",
+      "percentage": 0.017,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "stat_points",
+        "rank": 6,
+        "name": "",
+        "percentage": "1.7%",
+        "percentage_value": 1.7,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 2,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "stat_points",
+      "rank": 7,
+      "name": "",
+      "percentage": 0.015,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "stat_points",
+        "rank": 7,
+        "name": "",
+        "percentage": "1.5%",
+        "percentage_value": 1.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 0,
+        "defense_points": 0,
+        "sp_atk_points": 32,
+        "sp_def_points": 0,
+        "speed_points": 0
+      }
+    },
+    {
+      "pokemon": "Eelektross",
+      "position": 76,
+      "category": "stat_points",
+      "rank": 8,
+      "name": "",
+      "percentage": 0.015,
+      "statUp": null,
+      "statDown": null,
+      "raw": {
+        "pokemon": "Eelektross",
+        "column_position": 76,
+        "position": 76,
+        "category": "stat_points",
+        "rank": 8,
+        "name": "",
+        "percentage": "1.5%",
+        "percentage_value": 1.5,
+        "stat_up": "",
+        "stat_down": "",
+        "hp_points": 32,
+        "attack_points": 32,
+        "defense_points": 0,
+        "sp_atk_points": 0,
+        "sp_def_points": 0,
+        "speed_points": 2
+      }
+    }
+  ],
+  "teams": [
+    {
+      "id": "6a505ee7063cb29d318e8401-businesspiggy",
+      "name": "businesspiggy · VGC UU Regulation M-B Weekly #1",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "eelektross",
+          "name": "Eelektross",
+          "item": "Eelektrossite",
+          "ability": "Levitate",
+          "moves": [
+            "Wild Charge",
+            "Close Combat",
+            "Heavy Slam",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "sceptile",
+          "name": "Sceptile",
+          "item": "Sceptilite",
+          "ability": "Overgrow",
+          "moves": [
+            "Energy Ball",
+            "Dragon Pulse",
+            "Earth Power",
+            "Detect"
+          ]
+        },
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Sharp Beak",
+          "ability": "Gale Wings",
+          "moves": [
+            "Brave Bird",
+            "Flare Blitz",
+            "Tailwind",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "krookodile",
+          "name": "Krookodile",
+          "item": "Life Orb",
+          "ability": "Intimidate",
+          "moves": [
+            "High Horsepower",
+            "Knock Off",
+            "Earthquake",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "primarina",
+          "name": "Primarina",
+          "item": "Mystic Water",
+          "ability": "Liquid Voice",
+          "moves": [
+            "Hyper Voice",
+            "Moonblast",
+            "Aqua Jet",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "metagross",
+          "name": "Metagross",
+          "item": "Shuca Berry",
+          "ability": "Clear Body",
+          "moves": [
+            "Iron Head",
+            "Psychic Fangs",
+            "Bullet Punch",
+            "Protect"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.6666666666666666,
+      "sampleCount": 3,
+      "tournament": "VGC UU Regulation M-B Weekly #1",
+      "placing": 3,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "businesspiggy",
+      "record": "2-1-0"
+    },
+    {
+      "id": "6a4dbb9665724db9ded3ff83-enigmaflam3s708",
+      "name": "Enigmaflam3s708 · Top Deck VGC Trials #3",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "charizard",
+          "name": "Charizard",
+          "item": "Charizardite Y",
+          "ability": "Blaze",
+          "moves": [
+            "Protect",
+            "Heat Wave",
+            "Weather Ball",
+            "Solar Beam"
+          ]
+        },
+        {
+          "slug": "sinistcha",
+          "name": "Sinistcha",
+          "item": "Leftovers",
+          "ability": "Hospitality",
+          "moves": [
+            "Matcha Gotcha",
+            "Rage Powder",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Life Orb",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Rock Slide",
+            "Protect",
+            "Dragon Claw"
+          ]
+        },
+        {
+          "slug": "eelektross",
+          "name": "Eelektross",
+          "item": "Eelektrossite",
+          "ability": "Levitate",
+          "moves": [
+            "Protect",
+            "Flamethrower",
+            "Giga Drain",
+            "Thunderbolt"
+          ]
+        },
+        {
+          "slug": "grimmsnarl",
+          "name": "Grimmsnarl",
+          "item": "Light Clay",
+          "ability": "Prankster",
+          "moves": [
+            "Reflect",
+            "Light Screen",
+            "Spirit Break",
+            "Parting Shot"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Aqua Jet",
+            "Wave Crash",
+            "Protect",
+            "Last Respects"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "Top Deck VGC Trials #3",
+      "placing": 16,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Enigmaflam3s708",
+      "record": "2-3-0"
+    },
+    {
+      "id": "6a4bc2dd063cb29d318e4b78-momemanz",
+      "name": "‎Iriome Miguel Delgado Correa · Chacho Cup #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "talonflame",
+          "name": "Talonflame",
+          "item": "Charcoal",
+          "ability": "Gale Wings",
+          "moves": [
+            "Tailwind",
+            "Overheat",
+            "Brave Bird",
+            "Quick Guard"
+          ]
+        },
+        {
+          "slug": "eelektross",
+          "name": "Eelektross",
+          "item": "Eelektrossite",
+          "ability": "Levitate",
+          "moves": [
+            "Discharge",
+            "Thunderbolt",
+            "Grass Knot",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "gholdengo",
+          "name": "Gholdengo",
+          "item": "Life Orb",
+          "ability": "Good as Gold",
+          "moves": [
+            "Nasty Plot",
+            "Make It Rain",
+            "Shadow Ball",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "falinks",
+          "name": "Falinks",
+          "item": "Falinksite",
+          "ability": "Defiant",
+          "moves": [
+            "Close Combat",
+            "Protect",
+            "No Retreat",
+            "Knock Off"
+          ]
+        },
+        {
+          "slug": "maushold",
+          "name": "Maushold",
+          "item": "Wide Lens",
+          "ability": "Technician",
+          "moves": [
+            "Population Bomb",
+            "Follow Me",
+            "Taunt",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "garchomp",
+          "name": "Garchomp",
+          "item": "Choice Scarf",
+          "ability": "Rough Skin",
+          "moves": [
+            "Earthquake",
+            "Dragon Claw",
+            "Rock Slide",
+            "Iron Head"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 2,
+      "tournament": "Chacho Cup #2",
+      "placing": 14,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "‎Iriome Miguel Delgado Correa",
+      "record": "0-2-0"
+    },
+    {
+      "id": "6a4bc2dd063cb29d318e4b78-roslak",
+      "name": "Samuel Ramírez Alonso · Chacho Cup #2",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "reuniclus",
+          "name": "Reuniclus",
+          "item": "Life Orb",
+          "ability": "Overcoat",
+          "moves": [
+            "Psychic",
+            "Focus Blast",
+            "Trick Room",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "polteageist",
+          "name": "Polteageist",
+          "item": "Focus Sash",
+          "ability": "Weak Armor",
+          "moves": [
+            "Shadow Ball",
+            "Calm Mind",
+            "Trick Room",
+            "Giga Drain"
+          ]
+        },
+        {
+          "slug": "aurorus",
+          "name": "Aurorus",
+          "item": "Light Clay",
+          "ability": "Snow Warning",
+          "moves": [
+            "Blizzard",
+            "Aurora Veil",
+            "Freeze-Dry",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "rampardos",
+          "name": "Rampardos",
+          "item": "Expert Belt",
+          "ability": "Sheer Force",
+          "moves": [
+            "Head Smash",
+            "Rock Slide",
+            "Zen Headbutt",
+            "Swords Dance"
+          ]
+        },
+        {
+          "slug": "eelektross",
+          "name": "Eelektross",
+          "item": "Muscle Band",
+          "ability": "Levitate",
+          "moves": [
+            "Supercell Slam",
+            "Drain Punch",
+            "Light Screen",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "emboar",
+          "name": "Emboar",
+          "item": "Emboarite",
+          "ability": "Reckless",
+          "moves": [
+            "Flare Blitz",
+            "Drain Punch",
+            "Thunder Punch",
+            "Bulk Up"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0,
+      "sampleCount": 2,
+      "tournament": "Chacho Cup #2",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Samuel Ramírez Alonso",
+      "record": "0-2-0"
+    },
+    {
+      "id": "6a39cb01c87cd9ff0a30d791-incarcerated",
+      "name": "Incarcerated · Cashed Out Gaming Season 1 M-B",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "eelektross",
+          "name": "Eelektross",
+          "item": "Eelektrossite",
+          "ability": "Levitate",
+          "moves": [
+            "Protect",
+            "Thunderbolt",
+            "Giga Drain",
+            "Flamethrower"
+          ]
+        },
+        {
+          "slug": "torterra",
+          "name": "Torterra",
+          "item": "White Herb",
+          "ability": "Shell Armor",
+          "moves": [
+            "Protect",
+            "Shell Smash",
+            "Seed Bomb",
+            "Earthquake"
+          ]
+        },
+        {
+          "slug": "krookodile",
+          "name": "Krookodile",
+          "item": "Life Orb",
+          "ability": "Intimidate",
+          "moves": [
+            "Earthquake",
+            "Protect",
+            "Iron Head",
+            "Knock Off"
+          ]
+        },
+        {
+          "slug": "whimsicott",
+          "name": "Whimsicott",
+          "item": "Focus Sash",
+          "ability": "Prankster",
+          "moves": [
+            "Tailwind",
+            "Moonblast",
+            "Encore",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "basculegion",
+          "name": "Basculegion",
+          "item": "Mystic Water",
+          "ability": "Adaptability",
+          "moves": [
+            "Protect",
+            "Aqua Jet",
+            "Last Respects",
+            "Wave Crash"
+          ]
+        },
+        {
+          "slug": "hisuian-goodra",
+          "name": "Hisuian Goodra",
+          "item": "Leftovers",
+          "ability": "Shell Armor",
+          "moves": [
+            "Draco Meteor",
+            "Flash Cannon",
+            "Dragon Pulse",
+            "Shelter"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.16666666666666666,
+      "sampleCount": 6,
+      "tournament": "Cashed Out Gaming Season 1 M-B",
+      "placing": 15,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "Incarcerated",
+      "record": "1-5-0"
+    },
+    {
+      "id": "6a50864165724db9ded41db6-capra336",
+      "name": "capra336 · 4fun sabadín",
+      "source": "Limitless",
+      "pokemon": [
+        {
+          "slug": "starmie",
+          "name": "Starmie",
+          "item": "Starminite",
+          "ability": "Natural Cure",
+          "moves": [
+            "Liquidation",
+            "Psycho Cut",
+            "Ice Spinner",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "politoed",
+          "name": "Politoed",
+          "item": "Damp Rock",
+          "ability": "Drizzle",
+          "moves": [
+            "Protect",
+            "Muddy Water",
+            "Earth Power",
+            "Surf"
+          ]
+        },
+        {
+          "slug": "archaludon",
+          "name": "Archaludon",
+          "item": "Leftovers",
+          "ability": "Stamina",
+          "moves": [
+            "Electro Shot",
+            "Protect",
+            "Flash Cannon",
+            "Draco Meteor"
+          ]
+        },
+        {
+          "slug": "eelektross",
+          "name": "Eelektross",
+          "item": "Eelektrossite",
+          "ability": "Levitate",
+          "moves": [
+            "Discharge",
+            "Thunder",
+            "Knock Off",
+            "Stomping Tantrum"
+          ]
+        },
+        {
+          "slug": "goodra",
+          "name": "Goodra",
+          "item": "Shell Bell",
+          "ability": "Hydration",
+          "moves": [
+            "Thunderbolt",
+            "Dragon Pulse",
+            "Focus Blast",
+            "Protect"
+          ]
+        },
+        {
+          "slug": "morpeko",
+          "name": "Morpeko",
+          "item": "Focus Sash",
+          "ability": "Hunger Switch",
+          "moves": [
+            "Protect",
+            "Endeavor",
+            "Fake Out",
+            "Aura Wheel"
+          ]
+        }
+      ],
+      "usage": null,
+      "winRate": 0.4,
+      "sampleCount": 5,
+      "tournament": "4fun sabadín",
+      "placing": 8,
+      "format": "M-B",
+      "season": "M-B",
+      "player": "capra336",
+      "record": "2-3-0"
+    }
+  ],
+  "movePool": [
+    "Acid Spray",
+    "Acrobatics",
+    "Body Press",
+    "Body Slam",
+    "Bounce",
+    "Brick Break",
+    "Bulk Up",
+    "Bulldoze",
+    "Charge",
+    "Charge Beam",
+    "Close Combat",
+    "Coil",
+    "Confuse Ray",
+    "Crunch",
+    "Crush Claw",
+    "Discharge",
+    "Dragon Claw",
+    "Dragon Pulse",
+    "Dragon Tail",
+    "Drain Punch",
+    "Eerie Impulse",
+    "Electric Terrain",
+    "Electro Ball",
+    "Electroweb",
+    "Endure",
+    "Facade",
+    "Fire Punch",
+    "Flamethrower",
+    "Flash Cannon",
+    "Focus Punch",
+    "Gastro Acid",
+    "Giga Drain",
+    "Giga Impact",
+    "Grass Knot",
+    "Heavy Slam",
+    "Hex",
+    "Hyper Beam",
+    "Iron Tail",
+    "Knock Off",
+    "Light Screen",
+    "Liquidation",
+    "Lunge",
+    "Muddy Water",
+    "Outrage",
+    "Poison Fang",
+    "Protect",
+    "Psychic Fangs",
+    "Rain Dance",
+    "Rest",
+    "Rising Voltage",
+    "Rock Slide",
+    "Rock Tomb",
+    "Round",
+    "Scary Face",
+    "Sleep Talk",
+    "Snore",
+    "Stomping Tantrum",
+    "Substitute",
+    "Sunny Day",
+    "Super Fang",
+    "Supercell Slam",
+    "Superpower",
+    "Thrash",
+    "Throat Chop",
+    "Thunder",
+    "Thunder Fang",
+    "Thunder Punch",
+    "Thunder Wave",
+    "Thunderbolt",
+    "U-turn",
+    "Volt Switch",
+    "Waterfall",
+    "Wild Charge",
+    "Zap Cannon",
+    "Zen Headbutt"
+  ],
+  "raw": {
+    "metadata": {
+      "title": "Eelektross",
+      "base_name": "Eelektross",
+      "saved_name": "Eelektross",
+      "types": "Electric",
+      "abilities": "Levitate",
+      "weight": "177.5 lbs.",
+      "image_path": "pokemon_champions_assets\\pokemon\\Eelektross.png",
+      "form": "",
+      "hp": 160,
+      "atk": 135,
+      "def": 100,
+      "spa": 125,
+      "spd": 100,
+      "spe": 70,
+      "total": 690
+    },
+    "battle": {
+      "top": {
+        "move": {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "move",
+          "rank": 1,
+          "name": "Protect",
+          "percentage": "80.0%",
+          "percentage_value": 80,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "held_item": {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Eelektrossite",
+          "percentage": "91.6%",
+          "percentage_value": 91.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "teammate": {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        "stat_alignment": {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Modest",
+          "percentage": "56.1%",
+          "percentage_value": 56.1,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        "stat_points": {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "12.6%",
+          "percentage_value": 12.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        "ability": {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "ability",
+          "rank": 1,
+          "name": "Levitate",
+          "percentage": "100.0%",
+          "percentage_value": 100,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      },
+      "values": {
+        "move": [
+          "Protect",
+          "Flamethrower",
+          "Giga Drain",
+          "Thunderbolt",
+          "Discharge",
+          "Dragon Pulse",
+          "Drain Punch",
+          "Supercell Slam",
+          "Grass Knot",
+          "Coil"
+        ],
+        "held_item": [
+          "Eelektrossite",
+          "Life Orb",
+          "Expert Belt",
+          "Leftovers",
+          "Magnet",
+          "Sitrus Berry",
+          "Quick Claw",
+          "Bright Powder",
+          "Focus Sash",
+          "Wise Glasses"
+        ],
+        "teammate": [
+          "Garchomp",
+          "Whimsicott",
+          "Farigiraf",
+          "Sinistcha",
+          "Incineroar",
+          "Basculegion Male",
+          "Kingambit",
+          "Sylveon",
+          "Torkoal",
+          "Sneasler"
+        ],
+        "stat_alignment": [
+          "Modest",
+          "Quiet",
+          "Adamant",
+          "Timid",
+          "Brave",
+          "Jolly",
+          "Careful",
+          "Bold",
+          "Relaxed",
+          "Sassy"
+        ],
+        "stat_points": [
+          "HP 2 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 32",
+          "HP 32 / Atk 0 / Def 2 / SpA 32 / SpD 0 / Spe 0",
+          "HP 32 / Atk 0 / Def 1 / SpA 32 / SpD 1 / Spe 0",
+          "HP 32 / Atk 0 / Def 0 / SpA 32 / SpD 2 / Spe 0",
+          "HP 32 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 2",
+          "HP 32 / Atk 32 / Def 0 / SpA 0 / SpD 2 / Spe 0",
+          "HP 32 / Atk 0 / Def 0 / SpA 32 / SpD 0 / Spe 0",
+          "HP 32 / Atk 32 / Def 0 / SpA 0 / SpD 0 / Spe 2"
+        ],
+        "ability": [
+          "Levitate"
+        ]
+      },
+      "rows": [
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "move",
+          "rank": 1,
+          "name": "Protect",
+          "percentage": "80.0%",
+          "percentage_value": 80,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "move",
+          "rank": 2,
+          "name": "Flamethrower",
+          "percentage": "58.3%",
+          "percentage_value": 58.3,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "move",
+          "rank": 3,
+          "name": "Giga Drain",
+          "percentage": "57.8%",
+          "percentage_value": 57.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "move",
+          "rank": 4,
+          "name": "Thunderbolt",
+          "percentage": "57.2%",
+          "percentage_value": 57.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "move",
+          "rank": 5,
+          "name": "Discharge",
+          "percentage": "27.6%",
+          "percentage_value": 27.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "move",
+          "rank": 6,
+          "name": "Dragon Pulse",
+          "percentage": "14.9%",
+          "percentage_value": 14.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "move",
+          "rank": 7,
+          "name": "Drain Punch",
+          "percentage": "13.9%",
+          "percentage_value": 13.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "move",
+          "rank": 8,
+          "name": "Supercell Slam",
+          "percentage": "11.2%",
+          "percentage_value": 11.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "move",
+          "rank": 9,
+          "name": "Grass Knot",
+          "percentage": "11.0%",
+          "percentage_value": 11,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "move",
+          "rank": 10,
+          "name": "Coil",
+          "percentage": "7.9%",
+          "percentage_value": 7.9,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "held_item",
+          "rank": 1,
+          "name": "Eelektrossite",
+          "percentage": "91.6%",
+          "percentage_value": 91.6,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "held_item",
+          "rank": 2,
+          "name": "Life Orb",
+          "percentage": "2.0%",
+          "percentage_value": 2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "held_item",
+          "rank": 3,
+          "name": "Expert Belt",
+          "percentage": "1.2%",
+          "percentage_value": 1.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "held_item",
+          "rank": 4,
+          "name": "Leftovers",
+          "percentage": "1.2%",
+          "percentage_value": 1.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "held_item",
+          "rank": 5,
+          "name": "Magnet",
+          "percentage": "1.1%",
+          "percentage_value": 1.1,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "held_item",
+          "rank": 6,
+          "name": "Sitrus Berry",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "held_item",
+          "rank": 7,
+          "name": "Quick Claw",
+          "percentage": "0.7%",
+          "percentage_value": 0.7,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "held_item",
+          "rank": 8,
+          "name": "Bright Powder",
+          "percentage": "0.4%",
+          "percentage_value": 0.4,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "held_item",
+          "rank": 9,
+          "name": "Focus Sash",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "held_item",
+          "rank": 10,
+          "name": "Wise Glasses",
+          "percentage": "0.2%",
+          "percentage_value": 0.2,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "teammate",
+          "rank": 1,
+          "name": "Garchomp",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "teammate",
+          "rank": 2,
+          "name": "Whimsicott",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "teammate",
+          "rank": 3,
+          "name": "Farigiraf",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "teammate",
+          "rank": 4,
+          "name": "Sinistcha",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "teammate",
+          "rank": 5,
+          "name": "Incineroar",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "teammate",
+          "rank": 6,
+          "name": "Basculegion Male",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "teammate",
+          "rank": 7,
+          "name": "Kingambit",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "teammate",
+          "rank": 8,
+          "name": "Sylveon",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "teammate",
+          "rank": 9,
+          "name": "Torkoal",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "teammate",
+          "rank": 10,
+          "name": "Sneasler",
+          "percentage": "",
+          "percentage_value": null,
+          "stat_up": "",
+          "stat_down": ""
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "stat_alignment",
+          "rank": 1,
+          "name": "Modest",
+          "percentage": "56.1%",
+          "percentage_value": 56.1,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "stat_alignment",
+          "rank": 2,
+          "name": "Quiet",
+          "percentage": "14.0%",
+          "percentage_value": 14,
+          "stat_up": "Sp. Atk",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "stat_alignment",
+          "rank": 3,
+          "name": "Adamant",
+          "percentage": "10.8%",
+          "percentage_value": 10.8,
+          "stat_up": "Attack",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "stat_alignment",
+          "rank": 4,
+          "name": "Timid",
+          "percentage": "7.8%",
+          "percentage_value": 7.8,
+          "stat_up": "Speed",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "stat_alignment",
+          "rank": 5,
+          "name": "Brave",
+          "percentage": "3.7%",
+          "percentage_value": 3.7,
+          "stat_up": "Attack",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "stat_alignment",
+          "rank": 6,
+          "name": "Jolly",
+          "percentage": "1.1%",
+          "percentage_value": 1.1,
+          "stat_up": "Speed",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "stat_alignment",
+          "rank": 7,
+          "name": "Careful",
+          "percentage": "1.0%",
+          "percentage_value": 1,
+          "stat_up": "Sp. Def",
+          "stat_down": "Sp. Atk"
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "stat_alignment",
+          "rank": 8,
+          "name": "Bold",
+          "percentage": "0.8%",
+          "percentage_value": 0.8,
+          "stat_up": "Defense",
+          "stat_down": "Attack"
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "stat_alignment",
+          "rank": 9,
+          "name": "Relaxed",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "Defense",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "stat_alignment",
+          "rank": 10,
+          "name": "Sassy",
+          "percentage": "0.5%",
+          "percentage_value": 0.5,
+          "stat_up": "Sp. Def",
+          "stat_down": "Speed"
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "stat_points",
+          "rank": 1,
+          "name": "",
+          "percentage": "12.6%",
+          "percentage_value": 12.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 2,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 32
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "stat_points",
+          "rank": 2,
+          "name": "",
+          "percentage": "11.5%",
+          "percentage_value": 11.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 2,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "stat_points",
+          "rank": 3,
+          "name": "",
+          "percentage": "5.3%",
+          "percentage_value": 5.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 1,
+          "sp_atk_points": 32,
+          "sp_def_points": 1,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "stat_points",
+          "rank": 4,
+          "name": "",
+          "percentage": "4.6%",
+          "percentage_value": 4.6,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "stat_points",
+          "rank": 5,
+          "name": "",
+          "percentage": "4.3%",
+          "percentage_value": 4.3,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 2
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "stat_points",
+          "rank": 6,
+          "name": "",
+          "percentage": "1.7%",
+          "percentage_value": 1.7,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 2,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "stat_points",
+          "rank": 7,
+          "name": "",
+          "percentage": "1.5%",
+          "percentage_value": 1.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 0,
+          "defense_points": 0,
+          "sp_atk_points": 32,
+          "sp_def_points": 0,
+          "speed_points": 0
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "stat_points",
+          "rank": 8,
+          "name": "",
+          "percentage": "1.5%",
+          "percentage_value": 1.5,
+          "stat_up": "",
+          "stat_down": "",
+          "hp_points": 32,
+          "attack_points": 32,
+          "defense_points": 0,
+          "sp_atk_points": 0,
+          "sp_def_points": 0,
+          "speed_points": 2
+        },
+        {
+          "pokemon": "Eelektross",
+          "column_position": 76,
+          "position": 76,
+          "category": "ability",
+          "rank": 1,
+          "name": "Levitate",
+          "percentage": "100.0%",
+          "percentage_value": 100,
+          "stat_up": "",
+          "stat_down": ""
+        }
+      ]
+    },
+    "battleDataCsvs": [
+      {
+        "season": "Current",
+        "format": "Doubles",
+        "path": "pokemon_champions_assets/battle_data/Doubles/Eelektross.csv"
+      },
+      {
+        "season": "Current",
+        "format": "Singles",
+        "path": "pokemon_champions_assets/battle_data/Singles/Eelektross.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Doubles/Eelektross.csv"
+      },
+      {
+        "season": "Current",
+        "format": "M4",
+        "path": "pokemon_champions_assets/battle_data/M4/16_07_2026/Singles/Eelektross.csv"
+      }
+    ]
+  }
+}

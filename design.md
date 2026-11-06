@@ -1,7 +1,9 @@
 # BattleTowerMeta 设计规范
 
-> 版本：1.2  
-> 更新日期：2026-07-09  
+> 版本：1.3
+>
+> 更新日期：2026-11-06
+>
 > 风格定位：Editorial Intelligence Terminal／编辑部竞技情报终端
 
 ## 0. 强制使用约定
@@ -40,6 +42,8 @@
 | `--accent-primary-deep` | `#2563EB` | 深蓝强调、压暗背景上的蓝色边线 |
 | `--accent-secondary` | `#FFD166` | 金色辅色；重要计数、百分比、A Tier、特殊标签、图表第二色 |
 | `--accent-secondary-deep` | `#B88900` | 深金；小面积文字、边线或低亮辅助状态 |
+| `--champions-accent-violet` | `#A78BFA` | Pokémon Champions 分区的 secondary accent；只用于速度、计算器、模拟器等局部情报讯号 |
+| `--champions-accent-cyan` | `#22D3EE` | Pokémon Champions 分区的 cyan 细节讯号；用于速度线与计算器辅助状态 |
 | `--accent-success` | `#00FF88` | 在线、成功、正增长、胜场 |
 | `--accent-danger` | `#FF3B4F` | 错误、负增长、败场、S Tier |
 | `--accent-warning` | `#FFCC33` | 警告、中性提醒、谨慎提示 |
@@ -67,6 +71,12 @@
 | `--bg-page` | `#02040A` | 全站主背景；接近黑色，不偏蓝灰 |
 | `--bg-panel` | `rgba(5, 10, 20, 0.94)` | 主要面板、筛选器、终端框 |
 | `--bg-card` | `rgba(8, 15, 28, 0.96)` | 卡片、浮层、较高层级表面 |
+| `--bg-control` | `rgba(2, 5, 12, 0.82)` | 输入框、次按钮与紧凑控件 |
+| `--bg-topbar` | `rgba(3, 5, 10, 0.92)` | 全站导航背景 |
+| `--bg-table-head` | `rgba(5, 8, 17, 0.96)` | 表头背景 |
+| `--bg-hover` | `rgba(77, 163, 255, 0.065)` | 数据行 hover |
+| `--bg-selected` | `rgba(77, 163, 255, 0.18)` | 主按钮 hover 与选中提示背景 |
+| `--panel-background` | 本节面板双色极淡渐变 + `--bg-panel` | 共用面板背景，避免逐页建立不同渐变 |
 | `--bg` | `var(--bg-page)` | 旧组件兼容背景 alias |
 | `--bg-deep` | `#010208` | 更深背景、滚动槽、遮罩 |
 | `--surface` | `var(--bg-panel)` | 旧组件兼容面板 alias |
@@ -152,6 +162,22 @@
 - 字距使用 `0.12em–0.24em`。
 - 标签不得承担长段正文内容。
 
+### 2.3 共用字号 token
+
+字号层级统一由 `fonts.css` 定义，页面与组件引用 token，不能把 Hero 字号套用到数据页：
+
+| Token | 桌面 | `760px` 以下 |
+| --- | --- | --- |
+| `--type-display-size` | `clamp(67px, 9vw, 141px)` | `clamp(54px, 14vw, 72px)` |
+| `--type-page-size` | `clamp(43px, 5.2vw, 75px)` | `clamp(42px, 11vw, 64px)` |
+| `--type-card-size` | `clamp(27px, 2.6vw, 38px)` | `clamp(26px, 7vw, 34px)` |
+| `--type-section-size` | `clamp(16px, 1.4vw, 20px)` | `18px` |
+
+- `--font-label` 使用 `--font-num`；终端标签、导航与数字共用 D-DIN 字体系统。
+- 中文展示标题使用中文衬线字体与 `oblique 8deg`；英文使用展示字体与 italic。
+- 数据页标题统一 `0.92` 行高；区块标题使用正文字体，不能被全局规则改成超大展示标题。
+- 长玩家名、长牌组名与英文标题必须容许换行，不能用裁切来掩盖文字溢出。
+
 ## 3. 间距与留白
 
 ### 3.1 间距 token
@@ -233,6 +259,8 @@
 ```css
 box-shadow: 0 24px 70px rgba(0, 0, 0, 0.2);
 ```
+
+对应 token：普通面板使用 `--shadow-panel: none`，账户菜单等浮层使用 `--shadow-floating`。
 
 - 在线状态点允许使用小范围同色光晕。
 - 禁止为每张卡片添加大面积蓝色、金色或橙色发光。
@@ -351,6 +379,7 @@ box-shadow: none;
 - 边框使用 `rgba(77, 163, 255, 0.65)`。
 - 字体使用 mono/tabular nums，字重 `800–900`。
 - overlay 不得遮住主要卡名区域；不得使用页面各自的 count badge。
+- Creator pack 的独立 decklist PNG 是唯一的大型 overlay 例外：数量牌固定覆盖卡片下方约 24%，以五栏卡表在影片／缩图中仍能一眼辨识张数；仍须复用 `CardImageWithCount.vue`，不可另造 badge。
 
 Hover tooltip 规则：
 
@@ -434,6 +463,8 @@ outline-offset: 3px;
 
 - 在线状态点：6px 圆形 LED，使用 `--positive`；这是唯一允许的非图表圆形。
 - 错误提示使用 `--negative`，不得只依靠颜色，还应提供文字。
+- 链接和按钮保留 1px 蓝色键盘 outline；输入框使用 `--focus-ring` 的 2px 浅蓝焦点框。不得以清除所有 outline 的全局规则覆盖。
+- `checkbox`、`radio`、`range` 保留各自的数据控件形状与尺寸，不能套用文字输入框的 42px 高度；其关联 label 提供足够的点击范围。
 
 ## 5. 响应式规则
 
@@ -472,4 +503,5 @@ outline-offset: 3px;
 - [ ] 已检查中文和英文。
 - [ ] 已检查 1440×900、390×844。
 - [ ] 没有破坏 Tier、胜负或其他数据语义色。
+- [ ] 如涉及 PNG 匯出，已暫停擷取區域的入場動畫，確認沒有空白資料列或裁切標題，完成後恢復網頁動畫。
 - [ ] 如新增视觉规则，已同步更新本文件与 `theme.css`。

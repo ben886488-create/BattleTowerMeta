@@ -37,7 +37,9 @@
     </div>
 
     <span v-if="quantityText" class="card-display__quantity mono" aria-hidden="true">
-      <span class="card-display__quantity-icon" aria-hidden="true"></span>
+      <span class="card-display__quantity-icon" aria-hidden="true">
+        <span class="card-display__quantity-icon-ball"></span>
+      </span>
       {{ quantityText }}
     </span>
 
@@ -345,10 +347,64 @@ onBeforeUnmount(() => {
 .card-display__quantity-icon {
   width: 10px;
   height: 14px;
-  display: inline-block;
-  border: 1px solid rgba(124, 203, 255, 0.72);
-  background: linear-gradient(180deg, rgba(77, 163, 255, 0.2), rgba(77, 163, 255, 0.04));
-  box-shadow: inset 0 1px 0 rgba(248, 250, 252, 0.12);
+  display: block;
+  position: relative;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  border: 1px solid rgba(248, 250, 252, 0.92);
+  border-radius: 1px;
+  isolation: isolate;
+}
+
+.card-display__quantity-icon::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -3px;
+  left: 2px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(248, 250, 252, 0.78);
+  border-radius: 1px;
+  transform: rotate(5deg);
+}
+
+.card-display__quantity-icon-ball {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 5px;
+  height: 5px;
+  border: 1px solid rgba(248, 250, 252, 0.92);
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: rgba(3, 10, 20, 0.96);
+  transform: translate(-50%, -50%);
+}
+
+.card-display__quantity-icon-ball::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -3px;
+  right: -3px;
+  height: 1px;
+  background: rgba(248, 250, 252, 0.92);
+  transform: translateY(-50%);
+}
+
+.card-display__quantity-icon-ball::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: rgba(248, 250, 252, 0.96);
+  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 760px), (hover: none) {

@@ -93,7 +93,7 @@
             <td>
               <RouterLink
                 class="playerLink"
-                :to="{ name: `${lang}-player-profile`, params: { playerSlug: row.playerSlug } }"
+                :to="playerProfileTo(row.playerSlug)"
               >
                 {{ row.player }}
               </RouterLink>
@@ -143,7 +143,7 @@
           <span class="mobileRank mono">#{{ (currentPage - 1) * pageSize + index + 1 }}</span>
           <RouterLink
             class="playerLink mobilePlayer"
-            :to="{ name: `${lang}-player-profile`, params: { playerSlug: row.playerSlug } }"
+            :to="playerProfileTo(row.playerSlug)"
           >
             {{ row.player }}
           </RouterLink>
@@ -228,6 +228,7 @@ import {
   type TopCutFilter,
 } from "../lib/playerEntries";
 import { getCountryDisplayName } from "../lib/countryNames";
+import { routeLang as getRouteLang, withLang } from "../lib/siteI18n";
 
 const deckIconModules = import.meta.glob("../assets/deck-icons/*.{png,webp,svg}", {
   eager: true,
@@ -273,12 +274,13 @@ type PlayerAccumulator = PlayerSummary & {
 
 const route = useRoute();
 
-const lang = computed<"zh" | "en">(() => {
-  const seg = String(route.path).split("/")[1];
-  return seg === "en" ? "en" : "zh";
-});
+const lang = computed<"zh" | "en">(() => getRouteLang(route));
 
 const isZh = computed(() => lang.value === "zh");
+
+function playerProfileTo(playerSlug: string) {
+  return withLang(`/pocket/players/${playerSlug}`, lang.value);
+}
 
 const ui = computed(() => {
   if (isZh.value) {
