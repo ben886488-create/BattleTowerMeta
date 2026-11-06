@@ -11,6 +11,13 @@ export interface GameVersion {
   releaseMs: number;
 }
 
+export interface PlayerDeck {
+  deckId?: string;
+  deckName?: string;
+  deckIcons?: string[];
+  slot?: string | null;
+}
+
 export interface PlayerEntry {
   player: string;
   playerSlug?: string;
@@ -25,6 +32,7 @@ export interface PlayerEntry {
   deckId?: string;
   deckName?: string;
   deckIcons?: string[];
+  decks?: PlayerDeck[];
   wins?: number;
   losses?: number;
   ties?: number;
@@ -195,3 +203,11 @@ export function compareText(a: string, b: string): number {
   return a.localeCompare(b, "en", { sensitivity: "base" });
 }
 
+
+export function registeredPlayerDecks(entry: PlayerEntry): PlayerDeck[] {
+  return entry.decks?.length ? entry.decks : [entry];
+}
+
+export function uniquePlayerDecks(entry: PlayerEntry): PlayerDeck[] {
+  return [...new Map(registeredPlayerDecks(entry).map(deck => [deck.deckId || deck.deckName || '', deck])).values()];
+}

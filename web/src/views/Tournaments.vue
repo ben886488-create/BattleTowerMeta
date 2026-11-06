@@ -76,14 +76,6 @@
     <!-- Filters -->
     <div class="filters">
       <div class="f">
-        <label>{{ isZh ? '牌組賽制' : 'Deck format' }}</label>
-        <select v-model="filters.deckMode" :aria-label="isZh ? '牌組賽制' : 'Deck format'">
-          <option value="all">{{ isZh ? '全部賽制' : 'All formats' }}</option>
-          <option value="single">{{ isZh ? '單牌組' : 'Single deck' }}</option>
-          <option value="dual">{{ isZh ? '雙牌組' : 'Dual deck' }}</option>
-        </select>
-      </div>
-      <div class="f">
         <label>{{ isZh ? "玩家數" : "Players " }}
         </label>
         <input
@@ -257,16 +249,15 @@
               <td class="num mono">{{ t.players ?? "—" }}</td>
 
               <td>
-                <RouterLink v-if="t.multideck" :to="tournamentDetailTo(t.id)">{{ isZh ? '查看雙牌組牌表' : 'View both decklists' }} ↗</RouterLink>
-                <div v-else-if="t.topDecks.length" class="topDecksGrid" :aria-label="ui.top4AriaLabel">
+                <div v-if="t.topDecks.length" class="topDecksGrid" :aria-label="ui.top4AriaLabel">
                   <div v-for="(d, i) in t.topDecks" :key="i" class="deckPair" :title="deckPairTitle(d, i + 1)">
-                    <div class="deckIconsWrap">
+                    <div v-for="(registered, deckIndex) in d.registeredDecks || [d]" :key="deckIndex" class="deckIconsWrap">
                       <div class="deckIconsRow">
                         <template v-for="slot in 2" :key="slot">
                           <img
-                            v-if="d.iconUrls[slot - 1]"
+                            v-if="registered.iconUrls[slot - 1]"
                             :class="['deckIcon', slot === 2 ? 'deckIcon--second' : '']"
-                            :src="d.iconUrls[slot - 1]!"
+                            :src="registered.iconUrls[slot - 1]!"
                             :alt="deckAlt(i + 1, slot)"
                             loading="lazy"
                             decoding="async"
@@ -274,10 +265,10 @@
                           />
 
                           <span
-                            v-else-if="d.iconKeys[slot - 1]"
+                            v-else-if="registered.iconKeys[slot - 1]"
                             :class="['deckIconFallback', slot === 2 ? 'deckIconFallback--second' : '']"
                             aria-hidden="true"
-                            :title="missingIconTitle(d.iconKeys[slot - 1], i + 1, slot)"
+                            :title="missingIconTitle(registered.iconKeys[slot - 1], i + 1, slot)"
                           ></span>
 
                           <template v-else></template>
@@ -371,23 +362,23 @@
             <div class="top-decks-title">{{ isZh ? "前四名牌組" : "Top 4 Decks" }}</div>
             <div class="topDecksGrid">
               <div v-for="(d, i) in t.topDecks" :key="i" class="deckPair" :title="deckPairTitle(d, i + 1)">
-                <div class="deckIconsWrap">
+                <div v-for="(registered, deckIndex) in d.registeredDecks || [d]" :key="deckIndex" class="deckIconsWrap">
                   <div class="deckIconsRow">
                     <template v-for="slot in 2" :key="slot">
                       <img
-                        v-if="d.iconUrls[slot - 1]"
+                        v-if="registered.iconUrls[slot - 1]"
                         :class="['deckIcon', slot === 2 ? 'deckIcon--second' : '']"
-                        :src="d.iconUrls[slot - 1]!"
+                        :src="registered.iconUrls[slot - 1]!"
                         :alt="deckAlt(i + 1, slot)"
                         loading="lazy"
                         decoding="async"
                         draggable="false"
                       />
                       <span
-                        v-else-if="d.iconKeys[slot - 1]"
+                        v-else-if="registered.iconKeys[slot - 1]"
                         :class="['deckIconFallback', slot === 2 ? 'deckIconFallback--second' : '']"
                         aria-hidden="true"
-                        :title="missingIconTitle(d.iconKeys[slot - 1], i + 1, slot)"
+                        :title="missingIconTitle(registered.iconKeys[slot - 1], i + 1, slot)"
                       ></span>
                     </template>
                   </div>
@@ -427,6 +418,7 @@
 </template>
 
 <script setup lang="ts">
+import { expandStandingDecks } from "../lib/pocketDecks";
 import { useRoute } from "vue-router";
 import { computed, reactive, ref, watch, onMounted } from "vue";
 import { routeLang as getRouteLang, withLang } from "../lib/siteI18n";
@@ -514,6 +506,7 @@ const deckIconModules = import.meta.glob("../assets/deck-icons/*.{png,webp,svg}"
 type TopDeck = {
   iconKeys: (string | undefined)[];
   iconUrls: (string | undefined)[];
+  registeredDecks?: TopDeck[];
 };
 
 type TournamentRow = {
@@ -632,7 +625,6 @@ function versionLabel(code?: string) {
 const setOptions = computed(() => GAME_VERSIONS.map((v) => v.code).reverse());
 
 const filters = reactive({
-  deckMode: (route.query.deckMode === 'dual' ? 'dual' : 'all') as 'all' | 'single' | 'dual',
   minPlayers: undefined as number | undefined,
   time: "all" as string,
   set: "" as string,
@@ -859,9 +851,8 @@ function formatTimelineFullDate(ms: number) {
   });
 }
 
-const formatTournaments = computed(() => tournaments.value.filter(t => filters.deckMode === 'all' || (filters.deckMode === 'dual' ? t.multideck : !t.multideck)));
 const tournamentTimelineMaxDayMs = computed(() => {
-  const latest = formatTournaments.value.reduce((max, tournament) => {
+  const latest = tournaments.value.reduce((max, tournament) => {
     return Math.max(max, tournament.dateMs ? startOfUtcDayMs(tournament.dateMs) : 0);
   }, 0);
   return latest || startOfUtcDayMs(Date.now());
@@ -872,7 +863,7 @@ const tournamentTimelineCounts = computed(() => {
   const endMs = tournamentTimelineMaxDayMs.value;
   const startMs = endMs - (TOURNAMENT_TIMELINE_DAYS - 1) * DAY_MS;
 
-  for (const tournament of formatTournaments.value) {
+  for (const tournament of tournaments.value) {
     if (!tournament.dateMs) continue;
     const dayMs = startOfUtcDayMs(tournament.dateMs);
     if (dayMs < startMs || dayMs > endMs) continue;
@@ -887,7 +878,7 @@ const timelineWindowTournaments = computed(() => {
   const endMs = tournamentTimelineMaxDayMs.value;
   const startMs = endMs - (TOURNAMENT_TIMELINE_DAYS - 1) * DAY_MS;
 
-  return formatTournaments.value.filter((tournament) => {
+  return tournaments.value.filter((tournament) => {
     if (!tournament.dateMs) return false;
     const dayMs = startOfUtcDayMs(tournament.dateMs);
     return dayMs >= startMs && dayMs <= endMs;
@@ -1032,12 +1023,11 @@ async function ensureTopDecksForIds(ids: string[]) {
       const standings = await fetchJson<any[]>(standingsUrl(id));
       const top4Rows = pickTopN(standings, 4);
       const topDecks: TopDeck[] = top4Rows.map((r) => {
-        const keys = getDeckIconKeys(r);
-        const urls = keys.map((k) => resolveDeckIconUrl(k)) as (string | undefined)[];
-        return {
-          iconKeys: [keys[0], keys[1]],
-          iconUrls: [urls[0], urls[1]],
-        };
+        const registeredDecks = expandStandingDecks([r]).map(row => {
+          const keys = getDeckIconKeys(row);
+          return { iconKeys: [keys[0], keys[1]], iconUrls: [resolveDeckIconUrl(keys[0]), resolveDeckIconUrl(keys[1])] };
+        });
+        return { ...registeredDecks[0]!, registeredDecks };
       });
       topDecksCache.set(id, topDecks);
     } catch {
@@ -1056,15 +1046,12 @@ async function ensureTopDecksForIds(ids: string[]) {
 onMounted(async () => {
   const rows: TournamentRow[] = [];
 
-  const singleList = await fetchJson<TournamentIndexRow[]>(`${BASE_URL}data/tournaments.json`).catch(
+  const list = await fetchJson<TournamentIndexRow[]>(`${BASE_URL}data/tournaments.json`).catch(
     async () =>
       await fetchJson<TournamentIndexRow[]>(
         new URL("../data/tournaments.json", import.meta.url).toString()
       )
   );
-
-  const dualList = await fetchJson<(TournamentIndexRow & { multideck?: boolean })[]>(`${BASE_URL}data/multideck/tournaments.json`).catch(() => []);
-  const list = [...new Map([...singleList, ...dualList].map(row => [row.id, row])).values()];
 
   for (const r of list) {
     const g = String(r?.game ?? "").toUpperCase();
@@ -1088,7 +1075,7 @@ onMounted(async () => {
       dateStr: dateISO ?? "—",
       name: r?.name ?? id,
       players: typeof r?.players === "number" ? r.players : Number(r?.players) || undefined,
-      set: ('multideck' in r && r.multideck === true) ? (r?.set ? String(r.set) : undefined) : set || undefined,
+      set: set || undefined,
       swiss,
       topDecks: topDecksCache.get(id) ?? [],
       standingsUrl: `https://play.limitlesstcg.com/tournament/${id}/standings`,
@@ -1151,8 +1138,6 @@ function inTimeRange(t: TournamentRow) {
 
 const filtered = computed(() => {
   return tournaments.value.filter((t) => {
-    if (filters.deckMode === 'dual' && !t.multideck) return false;
-    if (filters.deckMode === 'single' && t.multideck) return false;
     if (filters.minPlayers != null && Number.isFinite(filters.minPlayers)) {
       if ((t.players ?? 0) < (filters.minPlayers as number)) return false;
     }
@@ -1619,7 +1604,7 @@ watch([total, pageSize], () => {
 
 .filters {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px;
   margin: 10px 0 12px;
 }

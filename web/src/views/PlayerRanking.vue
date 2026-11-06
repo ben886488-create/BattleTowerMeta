@@ -223,6 +223,7 @@ import {
   compareText,
   filterPlayerEntries,
   loadPlayerEntries,
+  uniquePlayerDecks,
   type DecoratedPlayerEntry,
   type TimeFilterValue,
   type TopCutFilter,
@@ -455,11 +456,12 @@ const rows = computed<PlayerSummary[]>(() => {
     else if (entry.placing === 2) existing.secondCount += 1;
     else if (entry.placing === 3 || entry.placing === 4) existing.top4Count += 1;
 
-    const deckKey = String(entry.deckId || entry.deckName || "").trim();
+    for (const deck of uniquePlayerDecks(entry)) {
+    const deckKey = String(deck.deckId || deck.deckName || "").trim();
     if (deckKey) {
       const bucket = existing.deckBuckets.get(deckKey) ?? {
         key: deckKey,
-        name: String(entry.deckName || deckKey),
+        name: String(deck.deckName || deckKey),
         events: 0,
         points: 0,
         bestFinish: null,
@@ -472,11 +474,12 @@ const rows = computed<PlayerSummary[]>(() => {
         bucket.bestFinish =
           bucket.bestFinish == null ? entry.placing : Math.min(bucket.bestFinish, entry.placing);
       }
-      if (bucket.iconUrls.length === 0 && entry.deckIcons?.length) {
-        bucket.iconUrls = entry.deckIcons.map(resolveDeckIconUrl).filter(Boolean);
+      if (bucket.iconUrls.length === 0 && deck.deckIcons?.length) {
+        bucket.iconUrls = deck.deckIcons.map(resolveDeckIconUrl).filter(Boolean);
       }
 
       existing.deckBuckets.set(deckKey, bucket);
+    }
     }
 
     map.set(entry.player, existing);

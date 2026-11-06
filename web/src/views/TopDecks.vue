@@ -368,6 +368,7 @@ import {
   loadTournamentPairings,
   loadTournamentStandings,
 } from "../lib/publicData";
+import { expandStandingDecks, deckResultPairings } from "../lib/pocketDecks";
 import { routeLang as getRouteLang } from "../lib/siteI18n";
 
 const DECK_ROWS_PER_PAGE = 20;
@@ -1435,7 +1436,7 @@ const aggregated = computed(() => {
 
     if (!Array.isArray(standings)) continue;
 
-    for (const row of standings) {
+    for (const row of expandStandingDecks(standings)) {
       const place = getPlace(row);
       if (!qualifiesByTopCut(place, filters.topCut)) continue;
 
@@ -1502,7 +1503,7 @@ const aggregated = computed(() => {
       return { key: deck.key };
     });
 
-    for (const match of pairings) {
+    for (const match of deckResultPairings(pairings, standings)) {
       const side1 = lookupStandingForPairingSide(standingLookup, match, 1);
       const side2 = lookupStandingForPairingSide(standingLookup, match, 2);
 

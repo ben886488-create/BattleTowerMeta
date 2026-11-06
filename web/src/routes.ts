@@ -61,7 +61,7 @@ export const routes: RouteRecordRaw[] = [
       {
         path: 'pocket',
         name: 'pocket-meta',
-        component: () => import('./views/PocketMeta.vue'),
+        component: () => import('./views/TierList.vue'),
       },
       {
         path: 'pocket/tournaments',

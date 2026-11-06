@@ -24,7 +24,6 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import { useRoute } from 'vue-router';
 import { siteContext } from "../lib/siteSeo";
 import type { SiteLang } from "../lib/siteI18n";
 
@@ -33,8 +32,7 @@ const props = defineProps<{
   lang: SiteLang;
 }>();
 
-const route = useRoute();
-const copy = computed(() => siteContext(props.path, props.lang, route.query.deckMode));
+const copy = computed(() => siteContext(props.path, props.lang));
 const headingId = computed(() => `site-context-${props.path.replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "") || "home"}`);
 </script>
 

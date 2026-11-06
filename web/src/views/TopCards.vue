@@ -322,6 +322,7 @@ import cardsCatalogUrl from "../assets/limitless_dump/limitless_cards.json?url";
 import setsCatalogUrl from "../assets/limitless_dump/limitless_sets.json?url";
 import oneCopyDiskIcon from "../assets/deck-disks/3.png";
 import twoCopyDiskIcon from "../assets/deck-disks/4.png";
+import { expandStandingDecks } from "../lib/pocketDecks";
 import { routeLang as getRouteLang } from "../lib/siteI18n";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -801,8 +802,8 @@ function getPlace(row: AnyRecord) {
 }
 
 function qualifiesByTopCut(place: number | null, topCut: TopCutValue) {
-  if (place == null) return false;
   if (topCut === "all") return true;
+  if (place == null) return false;
   const cutoff = Number(topCut);
   return Number.isFinite(cutoff) ? place <= cutoff : true;
 }
@@ -1407,7 +1408,7 @@ const inclusionAnalytics = computed<InclusionAnalytics>(() => {
     const standings = standingsCache.get(tournament.id);
     if (!standings) continue;
 
-    for (const row of standings) {
+    for (const row of expandStandingDecks(standings)) {
       const place = getPlace(row);
       if (!qualifiesByTopCut(place, filters.topCut)) continue;
 

@@ -309,7 +309,7 @@ const lang = computed<"zh" | "en">(() => {
 const isZh = computed(() => lang.value === "zh");
 
 const multideck = computed(() => details.value?.multideck === true || standings.value.some(row => Object.keys(row.decks || {}).length > 1));
-const listRoute = computed(() => ({ path: '/pocket/tournaments', query: { ...(lang.value === 'en' ? { lang: 'en' } : {}), deckMode: multideck.value ? 'dual' : undefined } }));
+const listRoute = computed(() => ({ path: '/pocket/tournaments', query: { ...(lang.value === 'en' ? { lang: 'en' } : {}) } }));
 const externalStandingsUrl = computed(
   () => `https://play.limitlesstcg.com/tournament/${tournamentId.value}/standings`
 );

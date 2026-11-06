@@ -1,6 +1,6 @@
 import json, os, datetime, math, re, hashlib
 from urllib.parse import quote
-from pocket_multideck import is_multideck, merge_index
+from pocket_decks import is_multideck, load_tournament_index, expand_standings, deck_pairings
 
 # ===================== 公共配置（和原代码一致） =====================
 MIN_PLAYERS = int(os.environ.get("MIN_PLAYERS", "32"))
@@ -90,7 +90,7 @@ def validate_tournament(summary, details):
     return True, "ok"
 
 def get_deck_id_from_standing(standing):
-    deck_info = standing.get("deck", {})
+    deck_info = standing.get("deck") or {}
     return normalize_deck_id(deck_info.get("id"))
 
 def safe_int(value, default=0):
@@ -145,7 +145,20 @@ def build_player_entry(summary, details, standing):
         0,
     ) or None
 
+    registered = [{
+        "deckId": normalize_deck_id((row.get("deck") or {}).get("id")),
+        "deckName": str((row.get("deck") or {}).get("name") or "").strip(),
+        "deckIcons": normalize_icon_list((row.get("deck") or {}).get("icons")),
+        "slot": row.get("_deckSlot"),
+    } for row in expand_standings([standing]) if normalize_deck_id((row.get("deck") or {}).get("id")) != "unknown"]
+    if len(registered) == 1:
+        only = registered[0]
+        deck_info = {"id": only["deckId"], "name": only["deckName"], "icons": only["deckIcons"]}
+    elif len(registered) > 1:
+        deck_info = {"name": " + ".join(row["deckName"] for row in registered), "icons": [icon for row in registered for icon in row["deckIcons"]]}
+
     return {
+        **({"decks": registered} if is_multideck({}, [standing]) else {}),
         "player": player_name,
         "playerSlug": make_player_slug(player_name),
         "country": (standing or {}).get("country") or "",
@@ -293,16 +306,13 @@ def tier_label(score, top32_share_pct, next_score_gap, is_leader=False):
 def main():
     # 1. 读取本地的赛事列表
     tournaments_path = "web/public/data/tournaments.json"
-    with open(tournaments_path, "r", encoding="utf-8") as f:
-        original_tournaments = json.load(f)
+    original_tournaments = load_tournament_index(tournaments_path)
     print(f"读取到本地 {len(original_tournaments)} 场赛事数据")
     
     # 初始化缺失赛事ID列表（核心新增）
     missing_tournament_ids = []
     invalid_tournament_ids = []
     invalid_tournament_details = []
-    multideck_tournament_ids = set()
-    multideck_tournaments = []
     
     # 2. 初始化统计字典
     deck_total_counts = {}  # 所有赛事牌组出场次数
@@ -354,16 +364,11 @@ def main():
             invalid_tournament_details.append({"id": tid, "reason": reason})
             continue
 
-        if is_multideck(details, standings):
-            multideck_tournament_ids.add(tid)
-            multideck_tournaments.append({**t, "multideck": True})
-            continue
+        multi = is_multideck(details, standings)
+        t["multideck"] = multi
+        deck_rows = expand_standings(standings)
+        p2deck = {(row["player"], str(row.get("_deckSlot") or "")): get_deck_id_from_standing(row) for row in deck_rows}
 
-        # 构建「玩家→牌组ID」映射
-        p2deck = {}
-        for s in standings:
-            p2deck[s["player"]] = get_deck_id_from_standing(s)
-        
         # 统计：全赛事牌组出场数 + 选手出场次数
         for s in standings:
             entry = build_player_entry(t, details, s)
@@ -374,6 +379,7 @@ def main():
                 if entry["country"] and not player_country.get(player_name):
                     player_country[player_name] = entry["country"]
 
+        for s in deck_rows:
             deck = get_deck_id_from_standing(s)
             if deck == "unknown":
                 continue
@@ -382,8 +388,16 @@ def main():
         
         tournament_day = parse_tournament_day(t, details)
 
-        # 统计：Top32数据
+        # Player placement points are counted once per event, independently of deck slots.
         for s in standings:
+            placing = safe_int(s.get("placing"))
+            if 0 < placing <= TOP_CUT_N:
+                player = s["player"]
+                player_points[player] = player_points.get(player, 0) + points_by_placing(placing)
+                player_country[player] = s.get("country", "")
+
+        # 统计：Top32数据
+        for s in deck_rows:
             placing = s.get("placing")
             if not placing or placing > TOP_CUT_N:
                 continue
@@ -406,19 +420,15 @@ def main():
                 day_points[deck] = day_points.get(deck, 0.0) + pts
                 daily_top32_slots[tournament_day] = daily_top32_slots.get(tournament_day, 0.0) + 1.0
             
-            # 玩家得分/国家
-            player = s["player"]
-            player_points[player] = player_points.get(player, 0) + pts
-            player_country[player] = s.get("country", "")
-        
         # 统计：胜率矩阵
-        for m in pairings:
+        for m in deck_pairings(pairings, multi):
             p1, p2 = m.get("player1"), m.get("player2")
             winner = m.get("winner")
-            if not p1 or not p2 or winner in (0, -1, None):
+            if not p1 or not p2 or winner not in (p1, p2):
                 continue
             
-            d1, d2 = p2deck.get(p1, "unknown"), p2deck.get(p2, "unknown")
+            d1 = p2deck.get((p1, str(m.get("p1deck") or "") if multi else ""), "unknown")
+            d2 = p2deck.get((p2, str(m.get("p2deck") or "") if multi else ""), "unknown")
             if d1 == "unknown" or d2 == "unknown":
                 continue
             
@@ -447,8 +457,7 @@ def main():
         print("无缺失赛事数据")
     
     # 2. 过滤tournaments列表，移除缺失ID的条目
-    excluded_ids = set(missing_tournament_ids) | set(invalid_tournament_ids) | multideck_tournament_ids
-    merge_index(multideck_tournaments)
+    excluded_ids = set(missing_tournament_ids) | set(invalid_tournament_ids)
 
     filtered_tournaments = [
         t for t in original_tournaments
@@ -572,6 +581,7 @@ def main():
         "top_cut_n": TOP_CUT_N,
         "tournaments_count": len(filtered_tournaments),  # 改为过滤后的赛事数量
         "total_entries_all": total_entries_all,
+        "total_player_entries": len(player_entries),
         "top32_total_slots": top32_total_slots,
         "weights": {"data1": W1, "data2": W2, "data3": W3, "data4_ema": W4},
         "ema": {

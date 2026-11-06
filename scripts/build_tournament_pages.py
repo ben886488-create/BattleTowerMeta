@@ -22,7 +22,7 @@ import json
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
-from pocket_multideck import is_multideck, standing_decks
+from pocket_decks import is_multideck, standing_decks, load_tournament_index
 
 
 def find_project_root() -> Path:
@@ -675,9 +675,7 @@ def load_tournament_rows(selected_ids=None):
         raise RuntimeError(f"讀取 tournaments.json 失敗: {tournaments_err}")
 
     tournaments_raw = tournaments_raw if isinstance(tournaments_raw, list) else []
-    multideck_rows, _ = load_json(DATA_DIR / "multideck/tournaments.json", default=[])
-    if isinstance(multideck_rows, list):
-        tournaments_raw = list({str(row.get("id")): row for row in [*tournaments_raw, *multideck_rows] if isinstance(row, dict) and row.get("id")}.values())
+    tournaments_raw = load_tournament_index(DATA_DIR / "tournaments.json")
     rows = [
         row for row in tournaments_raw
         if isinstance(row, dict) and clean_str(row.get("id"))

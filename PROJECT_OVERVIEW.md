@@ -231,18 +231,15 @@ web/src/lib/siteI18n.ts
 | `CountryRanking.vue` | 地區排行榜 | 國旗、長名稱、mobile 排版 |
 | `BattleHub.vue` | 排位記錄與互動功能容器 | 內部主要由 components 負責 |
 
-#### 7.1.1 Pocket 雙牌組支援（2026-11-06）
+#### 7.1.1 Pocket 多牌組資料相容（2026-11-06）
 
-- `/pocket` 由 `PocketMeta.vue` 提供單／雙牌組切換；雙牌組網址為 `/pocket?deckMode=dual`，英文再加 `&lang=en`。
-- `PocketMultiDeckMeta.vue` 呈現牌組登錄佔比、雙牌組搭配、小局勝率、對戰矩陣及資料覆蓋範圍。
-- Limitless 官方資料契約：details 的 `multideck`、standings 的 `decks`／`decklists`，以及 pairings 的 `games`。牌組必須按編號對應；以每小局的 `p1deck`／`p2deck` 與 `winner` 歸屬牌組戰績。
-- 牌組登錄佔比的分母是已辨識的牌組欄位數，每位選手預期兩副。搭配順序合併，搭配戰績按整場對局計算，Top 32 按選手名次計算。單牌組 Tier／玩家排名仍使用單牌組資料集。
-- 沒有小局資料或牌組選擇時不推算牌組勝負；輪空、自動判負與未確定賽果另行排除或標示。兩副牌表在賽事詳情中獨立展示，持續使用 `CardImageWithCount.vue`。
-- `scripts/fetch_raw_data.py` 以官方欄位識別並保存雙牌組來源；`scripts/process_data.py` 會把舊索引中的多牌組賽事移到獨立索引。
-- 來源索引：`web/public/data/multideck/tournaments.json`；raw 路徑維持 `web/public/data/raw/<id>/`；衍生統計：`web/public/data/multideck/meta.json`。
-- 每日 Actions 已加入 `python scripts/build_multideck_views.py`。預設維持 64 人門檻；可使用 `--fetch-id <id>` 補抓指定賽事，只有完整抓取成功才替換來源。超過兩副的賽事不納入此雙牌組環境。
-- 雙牌組回補：設定 `DAYS_BACK`、`MIN_PLAYERS` 後執行 `python scripts/fetch_raw_data.py --multideck-only`，再執行 `python scripts/build_multideck_views.py`；回補以官方 metadata 辨識，不依賴賽事名稱。
-- 驗證：`python -m unittest discover -s scripts -p test_pocket_multideck.py -v`、`cd web; npx.cmd tsx --test src/lib/pocketMultideck.test.ts`、`npx.cmd vue-tsc -b` 及 production build。
+- 單牌組與雙牌組賽事統一保存在 `web/public/data/tournaments.json`，共用原有牌組環境、最強牌組、泛用卡片、玩家與地區統計，沒有獨立的雙牌組環境或資料集。
+- 以官方 `multideck`、`decks`／`decklists` 識別多牌組來源；`scripts/pocket_decks.py` 及前端 `pocketDecks.ts` 把每副登錄牌組展開為一份牌組／卡片樣本，保留牌組編號。同牌型登錄兩副仍是兩份樣本。
+- 玩家參賽、排名分數與地區統計每位選手每場只計一次；`player_entries.json` 的 `decks` 保留完整牌組清單，玩家牌組偏好與賽事履歷能顯示兩副。
+- 一般賽事沿用既有對局統計；雙牌組牌組戰績取自 `games` 的實際牌組選擇與勝負，不把整場賽果複製到兩副牌。缺少小局、牌組編號或已確定賽果時不推算勝負。兩種結果樣本在原有統計內合併，頁面的方法說明列明此口徑。
+- 賽事清單及時間線預設包含所有賽事，前四名的兩副牌組以同一名選手的一欄顯示；賽事詳情保留每位選手兩份牌表。
+- 原有每日流程直接重建這些共同資料，不再輸出或持續保存 `data/multideck/`。讀取 helper 能把舊索引合併回主索引，便於既有 checkout 遷移。
+- 驗證：`python -m unittest discover -s scripts -p test_pocket_decks.py`、`cd web; npx.cmd tsx --test src/lib/pocketDecks.test.ts`、`npx.cmd vue-tsc --noEmit`、`npm run build`。
 
 ### 7.2 Pokemon Champions
 

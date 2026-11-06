@@ -1095,6 +1095,7 @@ import {
   loadTournamentPairings,
   loadTournamentStandings,
 } from "../lib/publicData";
+import { expandStandingDecks, deckResultPairings, standingDeckKey } from "../lib/pocketDecks";
 import { routeLang as getRouteLang } from "../lib/siteI18n";
 
 const DeckDiscussionPanel = defineAsyncComponent(() => import("../components/DeckDiscussionPanel.vue"));
@@ -3130,7 +3131,7 @@ const internalRelevantPairingIds = computed(() => {
     const standings = internalStandingsCache[tournament.id];
     if (!Array.isArray(standings) || standings.length === 0) continue;
 
-    const hasQualifiedTarget = standings.some((row) => {
+    const hasQualifiedTarget = expandStandingDecks(standings).some((row) => {
       const place = getPlace(row);
       if (!qualifiesByTopCut(place, leftPanelFilters.topCut)) return false;
       return isTargetDeckIdentity(extractDeckIdentityFromRow(row));
@@ -4379,8 +4380,8 @@ function normalizeTournament(raw: AnyRecord): NormalizedTournament {
         raw.createdAt,
     ),
     players: playerCount,
-    standings: resolvedStandings,
-    pairings: resolvedPairings,
+    standings: expandStandingDecks(resolvedStandings),
+    pairings: deckResultPairings(resolvedPairings, resolvedStandings),
   };
 }
 
@@ -4817,7 +4818,7 @@ function registerStandingKeys(
     .filter(Boolean);
 
   for (const key of keys) {
-    map.set(key, entry);
+    map.set(standingDeckKey(key, row._deckSlot), entry);
   }
 }
 
@@ -4840,7 +4841,8 @@ function lookupStandingForSide(
     .filter(Boolean);
 
   for (const key of keys) {
-    const hit = map.get(key);
+    const slot = row._multideck ? row[side === 1 ? "p1deck" : "p2deck"] : undefined;
+    const hit = map.get(standingDeckKey(key, slot));
     if (hit) return hit;
   }
 

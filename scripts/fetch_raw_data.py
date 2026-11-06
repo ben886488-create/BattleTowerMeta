@@ -1,10 +1,9 @@
 import shutil
-import argparse
 import json, os, datetime, time, random, sys, re
 from html import unescape
 from urllib.request import urlopen, Request
 from urllib.error import HTTPError, URLError
-from pocket_multideck import MULTIDECK_INDEX, is_multideck, read_index
+from pocket_decks import is_multideck, load_tournament_index
 
 # ===================== 公共配置 =====================
 BASE = "https://play.limitlesstcg.com/api"
@@ -375,17 +374,15 @@ def load_existing_tournaments():
         return []
 
 # ===================== 核心逻辑（新增 + 近期刷新） =====================
-def main(multideck_only=False):
+def main():
     global failed_tournaments
     failed_tournaments = []
-    if not multideck_only:
-        fetch_upcoming_tournaments()
+    fetch_upcoming_tournaments()
 
-    existing_tournaments = load_existing_tournaments()
-    existing_tournaments += read_index()
+    existing_tournaments = load_tournament_index(TOURNAMENTS_JSON_PATH)
     existing_tids = {t["id"] for t in existing_tournaments if "id" in t}
 
-    migrated_files, migrated_rows = (0, 0) if multideck_only else migrate_existing_hoopa_ex_icons(existing_tids)
+    migrated_files, migrated_rows = migrate_existing_hoopa_ex_icons(existing_tids)
     print(
         f"✅ Hoopa ex 圖示正規化完成 | "
         f"更新檔案：{migrated_files} | 更新列：{migrated_rows}"
@@ -405,6 +402,7 @@ def main(multideck_only=False):
 
     total_candidates = len(refresh_tournaments)
     if total_candidates == 0:
+        write_json(TOURNAMENTS_JSON_PATH, existing_tournaments)
         print("\n⚠️ 無符合條件的賽事需要更新，結束流程")
         return
 
@@ -424,9 +422,6 @@ def main(multideck_only=False):
 
         try:
             details = get_json(f"{BASE}/tournaments/{tid}/details", api_type="details", tid=tid)
-
-            if multideck_only and not is_multideck(details):
-                continue
 
             ok, reason = validate_tournament(t, details)
             if not ok:
@@ -482,11 +477,7 @@ def main(multideck_only=False):
             unique_tids.add(t["id"])
             unique_tournaments.append(t)
 
-    # Keep match-based single-deck statistics separate from game-based dual-deck statistics.
-    multi_tournaments = [t for t in unique_tournaments if t.get("multideck") is True]
-    single_tournaments = [t for t in unique_tournaments if t.get("multideck") is not True]
-    write_json(str(MULTIDECK_INDEX), multi_tournaments)
-    write_json(TOURNAMENTS_JSON_PATH, single_tournaments)
+    write_json(TOURNAMENTS_JSON_PATH, unique_tournaments)
     print(f"✅ 合格賽事列表已保存 | 總唯一賽事數：{len(unique_tournaments)}")
 
     if excluded_tournaments:
@@ -505,6 +496,4 @@ def main(multideck_only=False):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Refresh Pocket tournament sources")
-    parser.add_argument("--multideck-only", action="store_true", help="Discover multi-deck events without downloading single-deck standings or pairings")
-    main(multideck_only=parser.parse_args().multideck_only)
+    main()

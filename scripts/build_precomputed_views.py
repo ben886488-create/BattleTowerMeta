@@ -3,6 +3,7 @@ import json
 import math
 import os
 import re
+from pocket_decks import expand_standings, deck_pairings, is_multideck, load_tournament_index
 from pathlib import Path
 from urllib.parse import quote
 
@@ -356,7 +357,7 @@ def build_standing_lookup(standings):
         for key in keys:
             norm = normalize_entity_key(key)
             if norm:
-                lookup[norm] = entry
+                lookup[(norm, str(row.get("_deckSlot") or ""))] = entry
     return lookup
 
 
@@ -402,7 +403,8 @@ def lookup_pairing_side(lookup, row, side):
         row.get("p1Id" if side == 1 else "p2Id"),
     ]
     for key in keys:
-        hit = lookup.get(normalize_entity_key(key))
+        slot = str(row.get("p1deck" if side == 1 else "p2deck") or "") if row.get("_multideck") else ""
+        hit = lookup.get((normalize_entity_key(key), slot))
         if hit:
             return hit
     return None
@@ -655,8 +657,9 @@ def build_top_decks_scope(tournaments, top_cut, extra_matchup_keys=None):
             rec["ties"] += 1
 
     for tournament in tournaments:
-        standings = tournament["standings"]
-        pairings = tournament["pairings"]
+        raw_standings = tournament["standings"]
+        standings = expand_standings(raw_standings)
+        pairings = deck_pairings(tournament["pairings"], is_multideck(tournament, raw_standings))
         day_ms = tournament_day_ms(tournament)
 
         for row in standings:
@@ -1234,8 +1237,9 @@ def build_profile_scope(target_key, tournaments, top_cut):
         )
 
     for tournament in tournaments:
-        standings = tournament["standings"]
-        pairings = tournament["pairings"]
+        raw_standings = tournament["standings"]
+        standings = expand_standings(raw_standings)
+        pairings = deck_pairings(tournament["pairings"], is_multideck(tournament, raw_standings))
         tournament_has_target = False
         lookup = build_standing_lookup(standings)
 
@@ -1265,7 +1269,7 @@ def build_profile_scope(target_key, tournaments, top_cut):
             player = extract_player_name(row)
             if player and place is not None:
                 finish = {
-                    "key": f"{tournament['id']}::{player}",
+                    "key": f"{tournament['id']}::{player}::{row.get('_deckSlot', '')}",
                     "player": player,
                     "tournamentName": clean_text(tournament.get("name")) or tournament["id"],
                     "dateMs": tournament["startMs"],
@@ -1503,7 +1507,7 @@ def build_profile_scope(target_key, tournaments, top_cut):
 
 
 def load_tournaments():
-    rows = read_json(DATA_DIR / "tournaments.json")
+    rows = load_tournament_index(DATA_DIR / "tournaments.json")
     tournaments = []
     missing = []
     for raw in rows:

@@ -210,7 +210,7 @@
               </tr>
               <tr v-for="item in bestFinishes" :key="item.key">
                 <td>
-                  <RouterLink class="deckCell deckCell--link" :to="deckProfileTo(item.deckKey)">
+                  <RouterLink class="deckCell deckCell--link" :to="item.deckKey ? deckProfileTo(item.deckKey) : withLang(`/pocket/tournaments/${item.tournamentId}`, lang)">
                     <div class="deckIcons deckIcons--small">
                       <img
                         v-for="(icon, index) in item.iconUrls"
@@ -260,6 +260,8 @@ import {
   VERSION_BY_CODE,
   compareText,
   loadPlayerEntries,
+  registeredPlayerDecks,
+  uniquePlayerDecks,
   type DecoratedPlayerEntry,
 } from "../lib/playerEntries";
 import { getCountryDisplayName } from "../lib/countryNames";
@@ -317,6 +319,7 @@ type TopDeckSummary = {
 
 type FinishRow = {
   key: string;
+  tournamentId: string;
   deckKey: string;
   deckName: string;
   iconUrls: string[];
@@ -651,17 +654,18 @@ const topDecks = computed<TopDeckSummary[]>(() => {
   const deckMap = new Map<string, TopDeckSummary>();
 
   for (const entry of filteredEntries.value) {
-    const key = String(entry.deckId || entry.deckName || "").trim();
+    for (const deck of uniquePlayerDecks(entry)) {
+    const key = String(deck.deckId || deck.deckName || "").trim();
     if (!key) continue;
 
     const existing = deckMap.get(key) ?? {
       key,
-      name: localizedDeckName(entry.deckName || key, entry.deckIcons),
+      name: localizedDeckName(deck.deckName || key, deck.deckIcons),
       events: 0,
       points: 0,
       bestFinish: null,
       bestFinishLabel: "--",
-      iconUrls: (entry.deckIcons || []).map(resolveDeckIconUrl).filter(Boolean),
+      iconUrls: (deck.deckIcons || []).map(resolveDeckIconUrl).filter(Boolean),
       finishCounts: emptyFinishCounts(),
     };
 
@@ -669,8 +673,8 @@ const topDecks = computed<TopDeckSummary[]>(() => {
     existing.points += Number(entry.points || 0);
     applyFinishBucket(existing.finishCounts, entry.placing);
 
-    if (!existing.iconUrls.length && entry.deckIcons?.length) {
-      existing.iconUrls = entry.deckIcons.map(resolveDeckIconUrl).filter(Boolean);
+    if (!existing.iconUrls.length && deck.deckIcons?.length) {
+      existing.iconUrls = deck.deckIcons.map(resolveDeckIconUrl).filter(Boolean);
     }
 
     if (entry.placing != null && Number.isFinite(entry.placing)) {
@@ -681,6 +685,7 @@ const topDecks = computed<TopDeckSummary[]>(() => {
     }
 
     deckMap.set(key, existing);
+    }
   }
 
   return Array.from(deckMap.values())
@@ -700,8 +705,9 @@ const bestFinishes = computed<FinishRow[]>(() => {
     .filter((entry) => entry.placing != null && Number.isFinite(entry.placing))
     .map((entry) => ({
       key: `${entry.tournamentId}::${entry.player}::${entry.deckId || entry.deckName}`,
-      deckKey: String(entry.deckId || entry.deckName || ""),
-      deckName: localizedDeckName(entry.deckName, entry.deckIcons),
+      tournamentId: entry.tournamentId,
+      deckKey: registeredPlayerDecks(entry).length === 1 ? String(entry.deckId || entry.deckName || "") : "",
+      deckName: registeredPlayerDecks(entry).map(deck => localizedDeckName(deck.deckName, deck.deckIcons)).join(" + "),
       iconUrls: (entry.deckIcons || []).map(resolveDeckIconUrl).filter(Boolean),
       tournamentName: entry.tournamentName,
       dateLabel: formatDate(entry.startMs),

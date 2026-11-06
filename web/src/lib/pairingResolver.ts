@@ -1,3 +1,4 @@
+import { expandStandingDecks, standingDeckKey } from "./pocketDecks";
 type AnyRecord = Record<string, any>;
 
 export interface StandingLookupEntry<TDeck> {
@@ -146,7 +147,7 @@ export function buildStandingLookup<TDeck>(
 ) {
   const map = new Map<string, StandingLookupEntry<TDeck>>();
 
-  for (const row of standings) {
+  for (const row of expandStandingDecks(standings)) {
     const deck = getDeck(row);
     if (!deck) continue;
 
@@ -173,7 +174,7 @@ export function buildStandingLookup<TDeck>(
       .filter(Boolean);
 
     for (const key of keys) {
-      map.set(key, entry);
+      map.set(standingDeckKey(key, row._deckSlot), entry);
     }
   }
 
@@ -199,7 +200,8 @@ export function lookupStandingForPairingSide<TDeck>(
     .filter(Boolean);
 
   for (const key of keys) {
-    const hit = map.get(key);
+    const slot = row._multideck ? row[side === 1 ? "p1deck" : "p2deck"] : undefined;
+    const hit = map.get(standingDeckKey(key, slot));
     if (hit) return hit;
   }
 

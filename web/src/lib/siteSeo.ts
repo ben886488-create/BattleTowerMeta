@@ -387,16 +387,15 @@ export function siteSeoEntry(path: string): SeoEntry {
   };
 }
 
-export function siteContext(path: string, lang: SiteLang, deckMode?: unknown) {
-  if (normalizedPath(path) === '/pocket' && deckMode === 'dual') {
-    return context(
-      { zh: '如何閱讀雙牌組環境', en: 'How to read the dual-deck environment' },
-      { zh: '本頁分開比較登錄牌組、小局勝率及雙牌組搭配，不把同一場對局的勝負同時計到選手的兩副牌。', en: 'This view separates registered decks, game win rates, and two-deck lineups. A match result is never assigned to both of a player’s decks.' },
-      { zh: '資料來自 Limitless 的 multideck、decks、decklists 及 games 記錄。牌組勝率只使用有牌組編號及已確定賽果的小局；搭配戰績與 Top 32 按選手及整場對局計算。', en: 'The source is Limitless multi-deck registrations and individual games. Deck rates require explicit deck selections and resolved game results; lineup records and Top 32 finishes use player entries and whole matches.' },
-      { zh: '登錄佔比不等於實際使用率。缺少牌組選擇、未回報小局、輪空及自動判負不會補成牌組戰績；未有樣本時顯示 —。時間範圍以最新收錄賽事日期為基準。', en: 'Registration share is not play rate. Missing selections, unreported games, byes, and automatic losses are not invented as deck results. No sample is shown as —. Time windows end at the latest collected event.' },
-    )[lang];
+export function siteContext(path: string, lang: SiteLang) {
+  const copy = siteSeoEntry(path).context?.[lang] ?? null;
+  if (copy && (path === '/pocket' || path === '/pocket/top-decks' || path.startsWith('/pocket/decks/'))) {
+    const method = lang === 'zh'
+      ? '單、雙牌組賽事合併統計，每副登錄牌組各計一份。一般賽事沿用對局結果；雙牌組的牌組戰績按有牌組編號的小局計算，缺漏記錄不推算。'
+      : 'Single- and dual-deck events share the same statistics, counting each registered deck once. Standard events retain match results; dual-deck results use games with explicit deck selections. Missing records are excluded.';
+    return { ...copy, method: `${copy.method} ${method}` };
   }
-  return siteSeoEntry(path).context?.[lang] ?? null;
+  return copy;
 }
 
 export function canonicalUrl(path: string, lang: SiteLang) {
@@ -406,13 +405,11 @@ export function canonicalUrl(path: string, lang: SiteLang) {
 
 export function siteHead(route: Pick<RouteLocationNormalizedLoaded, "path"> & Partial<Pick<RouteLocationNormalizedLoaded, 'query'>>, lang: SiteLang) {
   const entry = siteSeoEntry(route.path);
-  const dual = route.path === '/pocket' && route.query?.deckMode === 'dual';
-  const title = dual ? (lang === 'zh' ? 'PTCG Pocket 雙牌組環境與小局數據｜BattleTowerMeta' : 'PTCG Pocket Dual-Deck Meta & Game Results | BattleTowerMeta') : entry.title[lang];
-  const description = dual ? (lang === 'zh' ? '比較 Limitless 雙牌組賽事的登錄牌組、搭配、小局勝率、對戰矩陣及資料覆蓋範圍。' : 'Compare registered decks, lineups, individual-game win rates, matchups, and data coverage in Limitless dual-deck tournaments.') : entry.description[lang];
-  const variantUrl = (url: string) => dual ? `${url}${url.includes('?') ? '&' : '?'}deckMode=dual` : url;
-  const canonical = variantUrl(canonicalUrl(route.path, lang));
-  const zhUrl = variantUrl(canonicalUrl(route.path, "zh"));
-  const enUrl = variantUrl(canonicalUrl(route.path, "en"));
+  const title = entry.title[lang];
+  const description = entry.description[lang];
+  const canonical = canonicalUrl(route.path, lang);
+  const zhUrl = canonicalUrl(route.path, "zh");
+  const enUrl = canonicalUrl(route.path, "en");
 
   return {
     title,
